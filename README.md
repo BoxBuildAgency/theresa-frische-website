@@ -170,14 +170,36 @@ added later, you **must** add a cookie-consent banner and update the privacy pol
 
 ---
 
+## Images to replace with Theresa's originals
+
+All imagery lives in `public/images/`. The two real photos Theresa supplied (the About headshot
+and the Weekly Wellbeing lake) were extracted from the supplied PDFs, optimised, and the lake's 90°
+rotation corrected. The three background images are **tasteful on-brand placeholders downloaded
+from Unsplash** (Unsplash License — free for commercial use, no attribution required). Swap each
+file in place — keep the **same filename, roughly the same aspect ratio, and similar dimensions** —
+and the site picks them up with no code changes.
+
+| File | Where it appears | Aspect / size | Source | Replace? |
+| --- | --- | --- | --- | --- |
+| `hero.jpg` | Home hero, full-bleed behind the headline | landscape, ~2000×1325 | Unsplash `1465146344425-f00d5f5c8f07` (soft dried grasses) | ✅ placeholder — swap for Theresa's hero photo |
+| `band-quote.jpg` | Home testimonial band (under a forest scrim) | landscape, ~1700×956 | Unsplash `1500382017468-9049fed747ef` (warm field) | ✅ placeholder |
+| `band-cta.jpg` | "Book a discovery call" CTA band (recurs site-wide, under a forest scrim) | landscape, ~1700×1134 | Unsplash `1473580044384-7ba9967e16a0` (warm sand) | ✅ placeholder |
+| `about-theresa.jpg` | About page portrait | portrait 4:5, ~886×1120 | Theresa's own (from PDF) | ⚠️ low-res — replace with the original high-res headshot |
+| `weekly-wellbeing-lake.jpg` | Weekly Wellbeing hero | landscape, ~2000×975 | Theresa's own (from PDF, rotation fixed) | ⚠️ low-res — replace with the original high-res photo |
+| `og-default.jpg` | Social share / Open Graph card | 1200×630 | generated | optional — replace with a branded card |
+
+The hero scrim is tuned for a **light, warm** image so the charcoal/green Cormorant headline keeps
+WCAG-AA contrast; if you swap in a darker hero, lighten the scrim in `HomePage.tsx` (the
+`from-cream/95 …` gradient). The two band images sit under a strong forest-green overlay
+(`bg-forest/85`–`/88`), so almost any calm, natural photo reads as subtle texture there.
+
+Keep replacements sized for the web (long edge ~2000px, JPEG q≈80) so performance stays tight —
+only the hero and the Weekly Wellbeing image use `priority`.
+
 ## Assumptions & notes for handover
 
-- **Hero background:** the warm-sand home hero uses an on-brand CSS gradient (no stock photo was
-  supplied for it). The two real photos — the About headshot and the Weekly Wellbeing lake photo —
-  were extracted from the supplied PDFs, optimised, and placed in `public/images/`. The lake photo
-  was rotated 90° in the source and has been corrected.
 - **Organisations images:** none were supplied, so that page uses typographic/colour layout blocks
-  rather than placeholder image boxes. Drop images into `public/images/` and wire them into
+  rather than placeholder image boxes. Drop an image into `public/images/` and wire it into
   `OrganisationsPage.tsx` if/when provided.
 - **Legal pages — two fields pending Theresa:** the **postal address** and **VAT status** were
   marked pending in `business-details.md`, which explicitly instructed to ship clearly-marked

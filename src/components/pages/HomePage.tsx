@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { Locale } from "@/content/types";
 import { getContent } from "@/content";
 import { Section, Eyebrow } from "@/components/ui/Section";
@@ -16,14 +17,26 @@ export function HomePage({ locale }: { locale: Locale }) {
       <PersonServiceJsonLd content={c} />
 
       {/* HERO */}
-      <section className="relative overflow-hidden bg-sand">
+      <section className="relative isolate overflow-hidden bg-sand">
+        {/* Full-bleed background image: soft, warm dried grasses. */}
+        <Image
+          src="/images/hero.jpg"
+          alt=""
+          aria-hidden="true"
+          fill
+          priority
+          sizes="100vw"
+          className="-z-20 object-cover object-center"
+        />
+        {/* Warm cream scrim — strongest on the left so the headline keeps
+            WCAG-AA contrast, softening to the right where there is no text. */}
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute inset-0 bg-gradient-to-br from-sand-deep via-sand to-cream"
+          className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-r from-cream/95 via-cream/80 to-cream/45"
         />
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute -right-32 top-1/4 h-[36rem] w-[36rem] rounded-full bg-sage/10 blur-3xl"
+          className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-t from-cream/70 via-transparent to-cream/30"
         />
         <Container className="relative py-24 sm:py-32">
           <div className="max-w-3xl">
@@ -58,10 +71,21 @@ export function HomePage({ locale }: { locale: Locale }) {
         </p>
       </Section>
 
-      {/* TESTIMONIAL */}
-      <Section tone="forest" containerSize="narrow" className="text-center">
-        <QuoteBlock quote={h.testimonial} tone="forest" className="mx-auto max-w-2xl" />
-      </Section>
+      {/* TESTIMONIAL — soft warm imagery under a deep forest scrim */}
+      <section className="relative isolate overflow-hidden bg-forest py-24 sm:py-28">
+        <Image
+          src="/images/band-quote.jpg"
+          alt=""
+          aria-hidden="true"
+          fill
+          sizes="100vw"
+          className="-z-20 object-cover object-center"
+        />
+        <div aria-hidden="true" className="absolute inset-0 -z-10 bg-forest/85" />
+        <Container size="narrow" className="relative text-center">
+          <QuoteBlock quote={h.testimonial} tone="forest" className="mx-auto max-w-2xl" />
+        </Container>
+      </section>
 
       {/* AUDIENCE */}
       <Section tone="cream">

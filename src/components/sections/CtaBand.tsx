@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { Locale } from "@/content/types";
 import { getContent } from "@/content";
 import { Container } from "@/components/ui/Container";
@@ -19,7 +20,17 @@ export function CtaBand({ locale }: { locale: Locale }) {
   return (
     <section className="bg-sand">
       <Container className="py-20">
-        <div className="flex flex-col items-start gap-8 rounded-3xl bg-forest px-8 py-14 text-cream sm:px-14 lg:flex-row lg:items-center lg:justify-between">
+        <div className="relative isolate flex flex-col items-start gap-8 overflow-hidden rounded-3xl bg-forest px-8 py-14 text-cream sm:px-14 lg:flex-row lg:items-center lg:justify-between">
+          {/* Subtle warm-sand texture behind the deep forest panel */}
+          <Image
+            src="/images/band-cta.jpg"
+            alt=""
+            aria-hidden="true"
+            fill
+            sizes="(max-width: 1024px) 100vw, 1100px"
+            className="-z-20 object-cover object-center"
+          />
+          <div aria-hidden="true" className="absolute inset-0 -z-10 bg-forest/88" />
           <div className="max-w-xl">
             <h2 className="font-serif text-3xl font-light leading-tight text-cream sm:text-4xl">
               {heading}
