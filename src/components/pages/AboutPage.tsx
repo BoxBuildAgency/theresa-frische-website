@@ -1,0 +1,112 @@
+import Image from "next/image";
+import type { Locale } from "@/content/types";
+import { getContent } from "@/content";
+import { Section, Eyebrow } from "@/components/ui/Section";
+import { QuoteBlock, SectionHeader } from "@/components/ui/Pieces";
+import { CtaBand } from "@/components/sections/CtaBand";
+import { PersonServiceJsonLd } from "@/components/site/JsonLd";
+
+export function AboutPage({ locale }: { locale: Locale }) {
+  const c = getContent(locale);
+  const a = c.about;
+
+  return (
+    <>
+      <PersonServiceJsonLd content={c} />
+
+      {/* INTRO with portrait */}
+      <section className="border-b border-line bg-sand">
+        <div className="mx-auto grid max-w-6xl gap-12 px-6 py-20 sm:px-8 lg:grid-cols-[1fr_0.8fr] lg:items-center lg:py-24">
+          <div className="order-2 lg:order-1">
+            <Eyebrow>{a.eyebrow}</Eyebrow>
+            <h1 className="mt-5 font-serif text-4xl font-light leading-tight text-ink sm:text-5xl">
+              {a.name}
+            </h1>
+            <p className="mt-3 font-serif text-2xl font-light italic text-forest">{a.subtitle}</p>
+            <p className="eyebrow mt-6 normal-case tracking-normal text-ink-muted">{a.credentials}</p>
+            <p className="mt-6 max-w-xl border-l-2 border-sage pl-5 text-lg leading-relaxed text-ink-soft">
+              {a.lead}
+            </p>
+          </div>
+          <div className="order-1 lg:order-2">
+            <div className="relative mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden rounded-3xl border border-line bg-cream shadow-sm">
+              <Image
+                src="/images/about-theresa.jpg"
+                alt={a.imageAlt}
+                fill
+                priority
+                sizes="(max-width: 1024px) 80vw, 380px"
+                className="object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* INTRO paragraphs */}
+      <Section tone="cream" containerSize="narrow">
+        <div className="space-y-6">
+          {a.intro.map((p, i) => (
+            <p key={i} className="text-lg leading-relaxed text-ink-soft">
+              {p}
+            </p>
+          ))}
+        </div>
+      </Section>
+
+      {/* LIVED EXPERIENCE */}
+      <Section tone="sand" containerSize="narrow">
+        <SectionHeader heading={a.lived.heading} eyebrow={locale === "de" ? "Gelebte Erfahrung" : "Lived experience"} />
+        <div className="mt-8 space-y-6">
+          {a.lived.body.map((p, i) => (
+            <p key={i} className="text-lg leading-relaxed text-ink-soft">
+              {p}
+            </p>
+          ))}
+        </div>
+        <p className="mt-8 font-serif text-2xl font-light italic leading-snug text-forest">
+          {a.lived.emphasis}
+        </p>
+      </Section>
+
+      {/* PHILOSOPHY */}
+      <Section tone="cream" containerSize="narrow">
+        <SectionHeader heading={a.philosophy.heading} eyebrow={locale === "de" ? "Meine Haltung" : "My philosophy"} />
+        <div className="mt-8 space-y-6">
+          {a.philosophy.body.map((p, i) => (
+            <p key={i} className="text-lg leading-relaxed text-ink-soft">
+              {p}
+            </p>
+          ))}
+        </div>
+      </Section>
+
+      {/* QUOTES */}
+      <Section tone="forest" containerSize="narrow">
+        <div className="space-y-14">
+          {a.quotes.map((q, i) => (
+            <QuoteBlock key={i} quote={q} tone="forest" />
+          ))}
+        </div>
+      </Section>
+
+      {/* EDUCATION */}
+      <Section tone="sand" containerSize="narrow">
+        <SectionHeader
+          heading={a.education.heading}
+          eyebrow={locale === "de" ? "Qualifikationen" : "Qualifications"}
+        />
+        <ul className="mt-10 divide-y divide-line">
+          {a.education.items.map((item) => (
+            <li key={item.title} className="grid gap-1 py-5 sm:grid-cols-[0.9fr_1.4fr] sm:gap-6">
+              <h3 className="font-serif text-lg text-ink">{item.title}</h3>
+              <p className="text-sm leading-relaxed text-ink-soft">{item.body}</p>
+            </li>
+          ))}
+        </ul>
+      </Section>
+
+      <CtaBand locale={locale} />
+    </>
+  );
+}

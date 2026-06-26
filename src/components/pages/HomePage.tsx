@@ -1,0 +1,105 @@
+import type { Locale } from "@/content/types";
+import { getContent } from "@/content";
+import { Section, Eyebrow } from "@/components/ui/Section";
+import { Container } from "@/components/ui/Container";
+import { ButtonLink } from "@/components/ui/Button";
+import { FeatureCard, MetaList, QuoteBlock, SectionHeader } from "@/components/ui/Pieces";
+import { CtaBand } from "@/components/sections/CtaBand";
+import { PersonServiceJsonLd } from "@/components/site/JsonLd";
+
+export function HomePage({ locale }: { locale: Locale }) {
+  const c = getContent(locale);
+  const h = c.home;
+
+  return (
+    <>
+      <PersonServiceJsonLd content={c} />
+
+      {/* HERO */}
+      <section className="relative overflow-hidden bg-sand">
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0 bg-gradient-to-br from-sand-deep via-sand to-cream"
+        />
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute -right-32 top-1/4 h-[36rem] w-[36rem] rounded-full bg-sage/10 blur-3xl"
+        />
+        <Container className="relative py-24 sm:py-32">
+          <div className="max-w-3xl">
+            <Eyebrow>{h.eyebrow}</Eyebrow>
+            <h1 className="mt-6 font-serif text-4xl font-light leading-[1.08] text-ink sm:text-6xl">
+              {h.heroTitle} <span className="accent">{h.heroTitleAccent}</span>
+            </h1>
+            <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink-soft">{h.heroLead}</p>
+            <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:items-center">
+              <ButtonLink href={h.heroPrimary.href} variant="primary" size="lg">
+                {h.heroPrimary.label}
+              </ButtonLink>
+              <ButtonLink href={h.heroSecondary.href} variant="outline" size="lg">
+                {h.heroSecondary.label}
+              </ButtonLink>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* INTRO PARAGRAPHS */}
+      <Section tone="cream" containerSize="narrow">
+        <div className="space-y-6">
+          {h.heroParas.map((p, i) => (
+            <p key={i} className="text-lg leading-relaxed text-ink-soft">
+              {p}
+            </p>
+          ))}
+        </div>
+        <p className="mt-10 border-l-2 border-sage pl-6 font-serif text-2xl font-light italic leading-snug text-forest">
+          {h.heroEmphasis}
+        </p>
+      </Section>
+
+      {/* TESTIMONIAL */}
+      <Section tone="forest" containerSize="narrow" className="text-center">
+        <QuoteBlock quote={h.testimonial} tone="forest" className="mx-auto max-w-2xl" />
+      </Section>
+
+      {/* AUDIENCE */}
+      <Section tone="cream">
+        <SectionHeader eyebrow={h.audience.eyebrow} heading={h.audience.heading} intro={h.audience.intro} />
+        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {h.audience.items.map((item) => (
+            <FeatureCard key={item.title} item={item} />
+          ))}
+        </div>
+      </Section>
+
+      {/* APPROACH */}
+      <Section tone="sand">
+        <SectionHeader eyebrow={h.approach.eyebrow} heading={h.approach.heading} intro={h.approach.intro} />
+        <div className="mt-12 grid gap-5 sm:grid-cols-2">
+          {h.approach.items.map((item, i) => (
+            <FeatureCard key={item.title} item={item} index={i} />
+          ))}
+        </div>
+      </Section>
+
+      {/* PRACTICAL INFO */}
+      <Section tone="cream">
+        <div className="grid items-center gap-12 lg:grid-cols-2">
+          <div>
+            <SectionHeader eyebrow={h.practical.eyebrow} heading={h.practical.heading} />
+            <p className="mt-8 max-w-md text-lg leading-relaxed text-ink-soft">{h.practical.closing}</p>
+            <ButtonLink href={c.cta.primary.href} variant="primary" size="lg" className="mt-8">
+              {c.cta.primary.label}
+            </ButtonLink>
+          </div>
+          <div className="rounded-3xl border border-line bg-sand/50 p-8 sm:p-10">
+            <MetaList items={h.practical.items} />
+          </div>
+        </div>
+      </Section>
+
+      <CtaBand locale={locale} />
+    </>
+  );
+}

@@ -1,26 +1,127 @@
 @import "tailwindcss";
 
+/*
+  Theresa Frische — design tokens.
+  Warm sand / dried-grass palette with deep forest-sage green accents.
+  Cormorant Garamond (display serif) over Inter (UI/body sans).
+  Font CSS variables are injected by next/font in the route-group layouts.
+*/
+
+@theme {
+  /* Surfaces */
+  --color-cream: #faf7f0;
+  --color-sand: #f4efe4;
+  --color-sand-deep: #ece4d4;
+
+  /* Greens */
+  --color-forest: #2f4233;
+  --color-forest-dark: #25361e;
+  --color-sage: #7c8b7a;
+  --color-sage-soft: #9aa899;
+
+  /* Ink / text */
+  --color-ink: #2b2622;
+  --color-ink-soft: #5b534b;
+  --color-ink-muted: #857c70;
+
+  /* Lines & subtle fills */
+  --color-line: #e3dccd;
+  --color-line-strong: #d4cab5;
+
+  /* Fonts */
+  --font-serif: var(--font-cormorant), Georgia, "Times New Roman", serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
+  --text-eyebrow: 0.75rem;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: var(--color-cream);
+  --foreground: var(--color-ink);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  body {
+    background-color: var(--color-cream);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background-color: color-mix(in srgb, var(--color-sage) 35%, transparent);
+    color: var(--color-forest-dark);
+  }
+
+  h1, h2, h3 {
+    font-family: var(--font-serif);
+    font-weight: 300;
+    letter-spacing: -0.01em;
+    color: var(--color-ink);
+  }
+
+  a { color: inherit; }
+
+  :focus-visible {
+    outline: 2px solid var(--color-forest);
+    outline-offset: 2px;
+    border-radius: 2px;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  .eyebrow {
+    font-family: var(--font-sans);
+    font-size: var(--text-eyebrow);
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--color-sage);
+  }
+
+  .accent {
+    font-style: italic;
+    color: var(--color-forest);
+  }
+
+  .prose-tf { color: var(--color-ink-soft); line-height: 1.75; }
+  .prose-tf p { margin-bottom: 1.25rem; }
+  .prose-tf h2 {
+    font-size: 1.6rem;
+    line-height: 1.25;
+    color: var(--color-ink);
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  .prose-tf ul { list-style: none; margin: 0 0 1.5rem; padding: 0; }
+  .prose-tf ul li { position: relative; padding-left: 1.4rem; margin-bottom: 0.6rem; }
+  .prose-tf ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.7em;
+    width: 0.4rem;
+    height: 0.4rem;
+    border-radius: 9999px;
+    background-color: var(--color-sage);
+  }
+  .prose-tf a {
+    color: var(--color-forest);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
