@@ -39,8 +39,9 @@ export function CtaBand({ locale }: { locale: Locale }) {
           </div>
           <ButtonLink
             href={c.cta.primary.href}
+            variant="onDark"
             size="lg"
-            className="shrink-0 bg-cream text-forest hover:bg-cream/90"
+            className="shrink-0"
           >
             {c.cta.primary.label}
           </ButtonLink>

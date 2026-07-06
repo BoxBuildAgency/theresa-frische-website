@@ -1,16 +1,19 @@
 import Link from "next/link";
 import { clsx } from "@/lib/clsx";
 
-type Variant = "primary" | "outline" | "ghost";
+type Variant = "primary" | "outline" | "ghost" | "onDark";
 type Size = "md" | "lg";
 
 const base =
-  "inline-flex items-center justify-center gap-2 rounded-full font-medium tracking-wide transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 disabled:opacity-60 disabled:pointer-events-none";
+  "inline-flex items-center justify-center gap-2 rounded-full font-medium tracking-wide transition-all duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 disabled:opacity-60 disabled:pointer-events-none";
 
 const variants: Record<Variant, string> = {
   primary: "bg-forest text-cream hover:bg-forest-dark",
   outline: "border border-forest/40 text-forest hover:border-forest hover:bg-forest/5",
   ghost: "text-forest hover:bg-forest/5",
+  // Solid CTA for use on forest/dark backgrounds: cream fill + forest text,
+  // clearly visible at rest, with a distinct darker-cream + subtle-lift hover.
+  onDark: "bg-cream text-forest shadow-sm hover:bg-sand-deep hover:shadow-md",
 };
 
 const sizes: Record<Size, string> = {
