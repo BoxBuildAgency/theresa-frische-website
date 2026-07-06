@@ -71,6 +71,18 @@ export function localizedPath(locale: Locale, enPath: string): string {
   return enPath;
 }
 
+/** Build a two-level breadcrumb trail (Home › Page) for an inner page. */
+export function pageCrumbs(
+  locale: Locale,
+  enPath: string,
+  label: string,
+): { label: string; href: string }[] {
+  return [
+    { label: locale === "de" ? "Startseite" : "Home", href: locale === "de" ? "/de" : "/" },
+    { label, href: localizedPath(locale, enPath) },
+  ];
+}
+
 /** hreflang alternate map for a given route key. */
 export function alternatesForKey(key: string): { en: string; de: string } | null {
   const r = ROUTES.find((x) => x.key === key);

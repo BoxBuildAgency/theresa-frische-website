@@ -15,7 +15,7 @@ export const faq3En: FaqCategory[] = [
       },
       {
         q: "What is Somatic Experiencing?",
-        a: "Somatic Experiencing is a body-oriented way of working with stress and overwhelming experiences. It gently supports the nervous system toward greater regulation and a sense of grounding. By noticing what is happening in the body, we can create more ease, steadiness and choice.",
+        a: "Somatic Experiencing is a body-oriented way of working with stress and overwhelming experiences. It gently supports the nervous system toward greater regulation and a sense of grounding. By noticing what is happening in the body, we can create more ease, steadiness and choice. For a fuller introduction, you can read [what Somatic Experiencing is and how it helps with stress](/blog/what-is-somatic-experiencing).",
       },
       {
         q: "What is systemic counselling?",
@@ -104,7 +104,7 @@ export const faq3De: FaqCategory[] = [
       },
       {
         q: "Was ist Somatic Experiencing?",
-        a: "Somatic Experiencing ist eine körperorientierte Arbeitsweise mit Stress und überfordernden Erfahrungen. Sie unterstützt das Nervensystem behutsam dabei, zu mehr Regulation und einem Gefühl von Geerdetsein zu finden. Indem wir wahrnehmen, was im Körper geschieht, können mehr Leichtigkeit, Stabilität und Wahlfreiheit entstehen.",
+        a: "Somatic Experiencing ist eine körperorientierte Arbeitsweise mit Stress und überfordernden Erfahrungen. Sie unterstützt das Nervensystem behutsam dabei, zu mehr Regulation und einem Gefühl von Geerdetsein zu finden. Indem wir wahrnehmen, was im Körper geschieht, können mehr Leichtigkeit, Stabilität und Wahlfreiheit entstehen. Für eine ausführlichere Einführung können Sie lesen, [was Somatic Experiencing ist und wie es bei Stress hilft](/de/blog/what-is-somatic-experiencing).",
       },
       {
         q: "Was ist systemische Beratung?",

@@ -4,11 +4,15 @@ import { getContent } from "@/content";
 import { Section, Eyebrow } from "@/components/ui/Section";
 import { QuoteBlock, SectionHeader } from "@/components/ui/Pieces";
 import { CtaBand } from "@/components/sections/CtaBand";
+import { FurtherReading } from "@/components/sections/FurtherReading";
 import { PersonServiceJsonLd } from "@/components/site/JsonLd";
+import { Breadcrumbs } from "@/components/site/Breadcrumbs";
+import { pageCrumbs } from "@/lib/site";
 
 export function AboutPage({ locale }: { locale: Locale }) {
   const c = getContent(locale);
   const a = c.about;
+  const crumbs = pageCrumbs(locale, "/about", a.eyebrow);
 
   return (
     <>
@@ -18,6 +22,7 @@ export function AboutPage({ locale }: { locale: Locale }) {
       <section className="border-b border-line bg-sand">
         <div className="mx-auto grid max-w-6xl gap-12 px-6 py-20 sm:px-8 lg:grid-cols-[1fr_0.8fr] lg:items-center lg:py-24">
           <div className="order-2 lg:order-1">
+            <Breadcrumbs items={crumbs} className="mb-6" />
             <Eyebrow>{a.eyebrow}</Eyebrow>
             <h1 className="mt-5 font-serif text-4xl font-light leading-tight text-ink sm:text-5xl">
               {a.name}
@@ -105,6 +110,8 @@ export function AboutPage({ locale }: { locale: Locale }) {
           ))}
         </ul>
       </Section>
+
+      <FurtherReading locale={locale} pageKey="about" tone="cream" />
 
       <CtaBand locale={locale} />
     </>

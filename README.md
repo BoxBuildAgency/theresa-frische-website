@@ -137,8 +137,24 @@ all update automatically. (A post may optionally carry `draft: true` with `body:
 until finished.)
 
 **Add / edit an FAQ:** each category is `{ id, title, items: [{ q, a }] }` in a `faq-*.ts` file
-(`*En` + `*De`). Keep the same `id` across EN/DE — it powers the jump-nav anchor. Answers are plain
-text (no markdown) so the FAQPage JSON-LD stays clean.
+(`*En` + `*De`). Keep the same `id` across EN/DE — it powers the jump-nav anchor. Answers may
+contain the same `[label](/path)` internal links as posts (EN `/path`, DE `/de/path`); the FAQPage
+JSON-LD strips them so the schema stays plain text.
+
+### Internal linking
+
+The internal-link architecture lives in `src/content/blog/related.ts`:
+
+- `RELATED` — for each post, the 3 hand-picked, same-cluster posts shown in the "Continue reading"
+  block (never random, never self; rendered in the current locale).
+- `PAGE_POSTS` — which posts each service/pillar page (`work-together`, `organisations`, `about`,
+  `weekly-wellbeing`) links out to via the **Further reading** band (`FurtherReading` component).
+
+Every post carries an in-body link to a service page plus the recurring discovery-call CTA; blog
+posts and the main content pages render **breadcrumbs** (`Breadcrumbs` component) with
+`BreadcrumbList` JSON-LD. All internal links stay within their own locale (EN → `/…`, DE →
+`/de/…`); only the language toggle crosses locales. To re-audit the link graph, crawl the running
+site and check for broken links, orphans, and cross-locale links.
 
 ---
 

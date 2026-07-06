@@ -5,10 +5,14 @@ import { Section, Eyebrow } from "@/components/ui/Section";
 import { Container } from "@/components/ui/Container";
 import { MetaList, QuoteBlock, SectionHeader } from "@/components/ui/Pieces";
 import { ButtonLink } from "@/components/ui/Button";
+import { FurtherReading } from "@/components/sections/FurtherReading";
+import { Breadcrumbs } from "@/components/site/Breadcrumbs";
+import { pageCrumbs } from "@/lib/site";
 
 export function WeeklyWellbeingPage({ locale }: { locale: Locale }) {
   const c = getContent(locale);
   const w = c.weeklyWellbeing;
+  const crumbs = pageCrumbs(locale, "/weekly-wellbeing", w.eyebrow);
 
   return (
     <>
@@ -36,6 +40,7 @@ export function WeeklyWellbeingPage({ locale }: { locale: Locale }) {
 
       {/* INTRO + facts */}
       <Section tone="cream">
+        <Breadcrumbs items={crumbs} className="mb-10" />
         <div className="grid gap-12 lg:grid-cols-[1.3fr_1fr] lg:items-start">
           <p className="text-lg leading-relaxed text-ink-soft">{w.intro}</p>
           <div className="rounded-3xl border border-line bg-sand/50 p-8">
@@ -70,6 +75,8 @@ export function WeeklyWellbeingPage({ locale }: { locale: Locale }) {
           ))}
         </div>
       </Section>
+
+      <FurtherReading locale={locale} pageKey="weekly-wellbeing" tone="sand" />
 
       {/* CLOSING */}
       <Section tone="cream" containerSize="narrow" className="text-center">

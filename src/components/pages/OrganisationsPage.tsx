@@ -3,15 +3,18 @@ import { getContent } from "@/content";
 import { Section } from "@/components/ui/Section";
 import { FeatureCard, MetaList, QuoteBlock, SectionHeader } from "@/components/ui/Pieces";
 import { PageHero } from "@/components/sections/PageHero";
+import { FurtherReading } from "@/components/sections/FurtherReading";
 import { ButtonLink } from "@/components/ui/Button";
+import { pageCrumbs } from "@/lib/site";
 
 export function OrganisationsPage({ locale }: { locale: Locale }) {
   const c = getContent(locale);
   const o = c.organisations;
+  const crumbs = pageCrumbs(locale, "/organisations", o.eyebrow);
 
   return (
     <>
-      <PageHero eyebrow={o.eyebrow} title={o.heading} lead={o.lead} />
+      <PageHero eyebrow={o.eyebrow} title={o.heading} lead={o.lead} crumbs={crumbs} />
 
       {/* INTRO + facts */}
       <Section tone="cream">
@@ -82,6 +85,8 @@ export function OrganisationsPage({ locale }: { locale: Locale }) {
           ))}
         </div>
       </Section>
+
+      <FurtherReading locale={locale} pageKey="organisations" tone="cream" />
 
       {/* CLOSING */}
       <Section tone="sand" containerSize="narrow" className="text-center">

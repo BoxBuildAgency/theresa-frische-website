@@ -78,7 +78,7 @@ export const setAEn: BlogPost[] = [
       },
       {
         type: "p",
-        text: "If any of this resonates, you are welcome to [book a free discovery call](/contact) and see whether working together feels right. Feeling out of place after building a whole life abroad is not a failure of adaptation. It is a very human signal that connection, not just competence, deserves your attention.",
+        text: "If any of this resonates, you are welcome to [book a free discovery call](/contact) and see whether [individual counselling](/work-together) feels right. Feeling out of place after building a whole life abroad is not a failure of adaptation. It is a very human signal that connection, not just competence, deserves your attention.",
       },
     ],
   },
@@ -169,7 +169,7 @@ export const setAEn: BlogPost[] = [
       },
       {
         type: "p",
-        text: "If you would like to explore this together, you can learn more about how we [work together](/work-together) or simply [book a free discovery call](/contact). Reaching for support is not an admission that the relationship has failed. It is a shared decision to keep growing, together.",
+        text: "If you would like to explore this together, you can learn more about how we [work together](/work-together) or simply [book a free discovery call](/contact). You will also find [answers to common questions about couples counselling](/faq) in the FAQ. Reaching for support is not an admission that the relationship has failed. It is a shared decision to keep growing, together.",
       },
     ],
   },
@@ -334,7 +334,7 @@ export const setAEn: BlogPost[] = [
       },
       {
         type: "p",
-        text: "You do not need special equipment or an empty schedule. You need a minute or two, a willingness to begin again each time your attention drifts, and enough gentleness with yourself to keep the practice sustainable. Consistency matters far more than duration.",
+        text: "You do not need special equipment or an empty schedule. You need a minute or two, a willingness to begin again each time your attention drifts, and enough gentleness with yourself to keep the practice sustainable. If you would value support in building that gentler relationship with yourself, you can read about how we might [work together](/work-together). Consistency matters far more than duration.",
       },
       {
         type: "p",
@@ -423,7 +423,7 @@ export const setADe: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Wenn Ihnen etwas davon vertraut vorkommt, sind Sie herzlich eingeladen, [ein kostenloses Kennenlerngespräch zu buchen](/de/contact) und zu sehen, ob eine Zusammenarbeit sich stimmig anfühlt. Sich fehl am Platz zu fühlen, nachdem man sich im Ausland ein ganzes Leben aufgebaut hat, ist kein Scheitern der Anpassung. Es ist ein sehr menschliches Signal, dass Verbindung, und nicht nur Kompetenz, Ihre Aufmerksamkeit verdient.",
+        text: "Wenn Ihnen etwas davon vertraut vorkommt, sind Sie herzlich eingeladen, [ein kostenloses Kennenlerngespräch zu buchen](/de/contact) und zu sehen, ob sich [die Einzelberatung](/de/work-together) stimmig anfühlt. Sich fehl am Platz zu fühlen, nachdem man sich im Ausland ein ganzes Leben aufgebaut hat, ist kein Scheitern der Anpassung. Es ist ein sehr menschliches Signal, dass Verbindung, und nicht nur Kompetenz, Ihre Aufmerksamkeit verdient.",
       },
     ],
   },
@@ -514,7 +514,7 @@ export const setADe: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Wenn Sie das gemeinsam erkunden möchten, erfahren Sie mehr darüber, wie wir [zusammenarbeiten](/de/work-together), oder [buchen Sie einfach ein kostenloses Kennenlerngespräch](/de/contact). Nach Unterstützung zu greifen ist kein Eingeständnis, dass die Beziehung gescheitert ist. Es ist eine gemeinsame Entscheidung, weiterzuwachsen, zusammen.",
+        text: "Wenn Sie das gemeinsam erkunden möchten, erfahren Sie mehr darüber, wie wir [zusammenarbeiten](/de/work-together), oder [buchen Sie einfach ein kostenloses Kennenlerngespräch](/de/contact). Antworten auf häufige Fragen zur Paarberatung finden Sie in den [FAQ](/de/faq). Nach Unterstützung zu greifen ist kein Eingeständnis, dass die Beziehung gescheitert ist. Es ist eine gemeinsame Entscheidung, weiterzuwachsen, zusammen.",
       },
     ],
   },
@@ -680,7 +680,7 @@ export const setADe: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Sie brauchen keine besondere Ausrüstung und keinen leeren Kalender. Sie brauchen ein oder zwei Minuten, die Bereitschaft, jedes Mal neu zu beginnen, wenn Ihre Aufmerksamkeit abschweift, und genug Sanftheit mit sich selbst, um die Praxis tragfähig zu halten. Beständigkeit zählt weit mehr als Dauer.",
+        text: "Sie brauchen keine besondere Ausrüstung und keinen leeren Kalender. Sie brauchen ein oder zwei Minuten, die Bereitschaft, jedes Mal neu zu beginnen, wenn Ihre Aufmerksamkeit abschweift, und genug Sanftheit mit sich selbst, um die Praxis tragfähig zu halten. Wenn Sie sich Begleitung dabei wünschen, diese freundlichere Beziehung zu sich selbst aufzubauen, können Sie lesen, wie wir [zusammenarbeiten](/de/work-together) könnten. Beständigkeit zählt weit mehr als Dauer.",
       },
       {
         type: "p",

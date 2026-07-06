@@ -4,15 +4,18 @@ import { Container } from "@/components/ui/Container";
 import { PageHero } from "@/components/sections/PageHero";
 import { CtaBand } from "@/components/sections/CtaBand";
 import { FaqJsonLd } from "@/components/site/JsonLd";
+import { renderInline } from "@/lib/inline";
+import { pageCrumbs } from "@/lib/site";
 
 export function FaqPage({ locale }: { locale: Locale }) {
   const c = getContent(locale);
   const f = c.faq;
+  const crumbs = pageCrumbs(locale, "/faq", f.eyebrow);
 
   return (
     <>
       <FaqJsonLd faq={f} />
-      <PageHero eyebrow={f.eyebrow} title={f.heading} lead={f.intro} />
+      <PageHero eyebrow={f.eyebrow} title={f.heading} lead={f.intro} crumbs={crumbs} />
 
       <section className="bg-cream py-16 sm:py-20">
         <Container>
@@ -56,7 +59,9 @@ export function FaqPage({ locale }: { locale: Locale }) {
                             +
                           </span>
                         </summary>
-                        <p className="mt-3 max-w-2xl leading-relaxed text-ink-soft">{item.a}</p>
+                        <p className="mt-3 max-w-2xl leading-relaxed text-ink-soft [&_a]:text-forest [&_a]:underline [&_a]:underline-offset-2">
+                          {renderInline(item.a)}
+                        </p>
                       </details>
                     ))}
                   </div>

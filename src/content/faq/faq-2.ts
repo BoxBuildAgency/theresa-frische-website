@@ -37,7 +37,7 @@ export const faq2En: FaqCategory[] = [
     items: [
       {
         q: "How does couples counselling work?",
-        a: "Couples counselling takes place online by video, so you can meet from wherever you are. Sessions offer a calm, balanced space where both of you can speak openly and feel heard, with me supporting the conversation between you. We look at the patterns in your relationship and work towards better understanding, connection, and communication. Everything happens at a pace that feels safe and respectful for you both.",
+        a: "Couples counselling takes place online by video, so you can meet from wherever you are. Sessions offer a calm, balanced space where both of you can speak openly and feel heard, with me supporting the conversation between you. We look at the patterns in your relationship and work towards better understanding, connection, and communication — you can read more about [navigating distance and reconnecting as a couple](/blog/growing-apart-growing-together). Everything happens at a pace that feels safe and respectful for you both.",
       },
       {
         q: "Do both partners need to attend?",
@@ -126,7 +126,7 @@ export const faq2De: FaqCategory[] = [
     items: [
       {
         q: "Wie läuft eine Paarberatung ab?",
-        a: "Die Paarberatung findet online per Video statt, sodass Sie sich von überall aus treffen können. Die Sitzungen bieten einen ruhigen, ausgewogenen Raum, in dem Sie beide offen sprechen und sich gehört fühlen können, während ich das Gespräch zwischen Ihnen begleite. Wir schauen auf die Muster in Ihrer Beziehung und arbeiten an mehr Verständnis, Verbindung und Kommunikation. Alles geschieht in einem Tempo, das sich für Sie beide sicher und respektvoll anfühlt.",
+        a: "Die Paarberatung findet online per Video statt, sodass Sie sich von überall aus treffen können. Die Sitzungen bieten einen ruhigen, ausgewogenen Raum, in dem Sie beide offen sprechen und sich gehört fühlen können, während ich das Gespräch zwischen Ihnen begleite. Wir schauen auf die Muster in Ihrer Beziehung und arbeiten an mehr Verständnis, Verbindung und Kommunikation — mehr darüber, wie Sie [Distanz überwinden und als Paar wieder zueinanderfinden](/de/blog/growing-apart-growing-together), können Sie nachlesen. Alles geschieht in einem Tempo, das sich für Sie beide sicher und respektvoll anfühlt.",
       },
       {
         q: "Müssen beide Partner teilnehmen?",

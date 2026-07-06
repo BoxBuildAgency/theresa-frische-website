@@ -1,5 +1,6 @@
 import type { Locale, SiteContent } from "@/content/types";
 import { SITE_URL } from "@/lib/site";
+import { stripInlineLinks } from "@/lib/inline";
 
 function Script({ data }: { data: object }) {
   return (
@@ -56,7 +57,7 @@ export function FaqJsonLd({ faq }: { faq: SiteContent["faq"] }) {
       cat.items.map((item) => ({
         "@type": "Question",
         name: item.q,
-        acceptedAnswer: { "@type": "Answer", text: item.a },
+        acceptedAnswer: { "@type": "Answer", text: stripInlineLinks(item.a) },
       })),
     ),
   };

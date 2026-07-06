@@ -6,35 +6,9 @@ import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/Section";
 import { CtaBand } from "@/components/sections/CtaBand";
 import { ArticleJsonLd } from "@/components/site/JsonLd";
-
-/** Render inline markdown-style links [label](/href) within body text. */
-function renderInline(text: string): React.ReactNode {
-  const re = /\[([^\]]+)\]\(([^)]+)\)/g;
-  const parts: React.ReactNode[] = [];
-  let last = 0;
-  let key = 0;
-  let m: RegExpExecArray | null;
-  while ((m = re.exec(text)) !== null) {
-    if (m.index > last) parts.push(text.slice(last, m.index));
-    const [, label, href] = m;
-    if (/^https?:\/\//.test(href)) {
-      parts.push(
-        <a key={key++} href={href} target="_blank" rel="noopener noreferrer">
-          {label}
-        </a>,
-      );
-    } else {
-      parts.push(
-        <Link key={key++} href={href}>
-          {label}
-        </Link>,
-      );
-    }
-    last = re.lastIndex;
-  }
-  if (last < text.length) parts.push(text.slice(last));
-  return parts.length ? parts : text;
-}
+import { Breadcrumbs } from "@/components/site/Breadcrumbs";
+import { RELATED, RELATED_FALLBACK } from "@/content/blog/related";
+import { renderInline } from "@/lib/inline";
 
 function Block({ block }: { block: BlogBlock }) {
   switch (block.type) {
@@ -76,9 +50,27 @@ export function BlogPostPage({ locale, slug }: { locale: Locale; slug: string })
     day: "numeric",
   }).format(new Date(post.date));
 
-  const related = getPublishedPosts(locale)
-    .filter((p) => p.slug !== post.slug)
-    .slice(0, 2);
+  // Cluster-driven related posts: 3 hand-picked same-cluster slugs, same locale,
+  // never self. Fall back to fill from other posts if any slug is missing.
+  const all = getPublishedPosts(locale);
+  const relatedSlugs = RELATED[post.slug] ?? RELATED_FALLBACK;
+  const related = relatedSlugs
+    .filter((s) => s !== post.slug)
+    .map((s) => all.find((p) => p.slug === s))
+    .filter((p): p is NonNullable<typeof p> => Boolean(p));
+  for (const p of all) {
+    if (related.length >= 3) break;
+    if (p.slug !== post.slug && !related.some((r) => r.slug === p.slug)) related.push(p);
+  }
+  const relatedPosts = related.slice(0, 3);
+
+  const homeHref = locale === "de" ? "/de" : "/";
+  const homeLabel = locale === "de" ? "Startseite" : "Home";
+  const crumbs = [
+    { label: homeLabel, href: homeHref },
+    { label: "Blog", href: base },
+    { label: post.title, href: `${base}/${post.slug}` },
+  ];
 
   return (
     <article className="bg-cream">
@@ -94,10 +86,8 @@ export function BlogPostPage({ locale, slug }: { locale: Locale; slug: string })
       {/* Header */}
       <header className="border-b border-line bg-sand">
         <Container size="narrow" className="py-16 sm:py-20">
-          <Link href={base} className="text-sm text-ink-muted transition-colors hover:text-forest">
-            ← {c.blog.backToBlog}
-          </Link>
-          <Eyebrow className="mt-6">{post.category}</Eyebrow>
+          <Breadcrumbs items={crumbs} className="mb-8" />
+          <Eyebrow className="mt-2">{post.category}</Eyebrow>
           <h1 className="mt-4 font-serif text-4xl font-light leading-tight text-ink sm:text-5xl">
             {post.title}
           </h1>
@@ -129,13 +119,21 @@ export function BlogPostPage({ locale, slug }: { locale: Locale; slug: string })
         </aside>
       </Container>
 
-      {/* Related */}
-      {related.length > 0 && (
+      {/* Related — cluster-driven, 3 same-locale posts */}
+      {relatedPosts.length > 0 && (
         <section className="border-t border-line bg-sand">
-          <Container size="narrow" className="py-16">
-            <h2 className="font-serif text-2xl text-ink">{c.blog.relatedHeading}</h2>
-            <div className="mt-8 grid gap-6 sm:grid-cols-2">
-              {related.map((p) => (
+          <Container className="py-16">
+            <div className="flex items-baseline justify-between gap-4">
+              <h2 className="font-serif text-2xl text-ink">{c.blog.relatedHeading}</h2>
+              <Link
+                href={base}
+                className="shrink-0 text-sm font-medium text-forest transition-colors hover:text-forest-dark"
+              >
+                {c.blog.backToBlog} <span aria-hidden="true">→</span>
+              </Link>
+            </div>
+            <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              {relatedPosts.map((p) => (
                 <article key={p.slug} className="rounded-2xl border border-line bg-cream p-6">
                   <p className="text-xs font-medium text-forest">{p.category}</p>
                   <h3 className="mt-3 font-serif text-xl leading-snug text-ink">

@@ -4,15 +4,18 @@ import { Section } from "@/components/ui/Section";
 import { MetaList, QuoteBlock, SectionHeader } from "@/components/ui/Pieces";
 import { PageHero } from "@/components/sections/PageHero";
 import { CtaBand } from "@/components/sections/CtaBand";
+import { FurtherReading } from "@/components/sections/FurtherReading";
 import { ButtonLink } from "@/components/ui/Button";
+import { pageCrumbs } from "@/lib/site";
 
 export function WorkTogetherPage({ locale }: { locale: Locale }) {
   const c = getContent(locale);
   const w = c.workTogether;
+  const crumbs = pageCrumbs(locale, "/work-together", w.eyebrow);
 
   return (
     <>
-      <PageHero eyebrow={w.eyebrow} title={w.heading} lead={w.intro} />
+      <PageHero eyebrow={w.eyebrow} title={w.heading} lead={w.intro} crumbs={crumbs} />
 
       {/* DISCOVERY CALL STEPS */}
       <Section tone="cream">
@@ -56,6 +59,8 @@ export function WorkTogetherPage({ locale }: { locale: Locale }) {
         </ButtonLink>
         <p className="mt-6 text-sm text-ink-muted">{w.closing.note}</p>
       </Section>
+
+      <FurtherReading locale={locale} pageKey="work-together" />
 
       <CtaBand locale={locale} />
     </>

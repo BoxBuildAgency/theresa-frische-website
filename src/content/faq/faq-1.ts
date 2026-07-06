@@ -45,7 +45,7 @@ export const faq1En: FaqCategory[] = [
       },
       {
         q: "What's the difference between counselling, psychotherapy, and coaching?",
-        a: "These are distinct services, and it helps to understand how they differ. Psychotherapy and clinical treatment for mental health conditions are provided by other, appropriately qualified professionals, and coaching tends to focus on specific goals or performance. What I offer is counselling: a non-clinical, reflective space to explore your experience, find clarity, and draw on your own strengths. If you are looking for psychotherapy or medical care, I am happy to point you toward the right kind of support.",
+        a: "These are distinct services, and it helps to understand how they differ. Psychotherapy and clinical treatment for mental health conditions are provided by other, appropriately qualified professionals, and coaching tends to focus on specific goals or performance. What I offer is counselling: a non-clinical, reflective space to explore your experience, find clarity, and draw on your own strengths. You can read a fuller comparison of [counselling, therapy, and coaching](/blog/counselling-vs-therapy-vs-coaching) if it helps. If you are looking for psychotherapy or medical care, I am happy to point you toward the right kind of support.",
       },
       {
         q: "Is counselling the same as therapy?",
@@ -83,7 +83,7 @@ export const faq1En: FaqCategory[] = [
       },
       {
         q: "How does online counselling work?",
-        a: "We meet by secure video call at a time we arrange together. Once your session is booked, you will receive the details you need to join from a private, comfortable space of your own. Many people find that online counselling feels just as warm and personal as meeting in the same room. If you have any questions about the setup, we can go through them in the discovery call.",
+        a: "We meet by secure video call at a time we arrange together. Once your session is booked, you will receive the details you need to join from a private, comfortable space of your own. Many people find that online counselling feels just as warm and personal as meeting in the same room. You can read more about [how online counselling works](/blog/how-online-counselling-works), and if you have any questions about the setup, we can go through them in the discovery call.",
       },
       {
         q: "What languages do you offer?",
@@ -166,7 +166,7 @@ export const faq1De: FaqCategory[] = [
       },
       {
         q: "Was ist der Unterschied zwischen Beratung, Psychotherapie und Coaching?",
-        a: "Dies sind eigenständige Angebote, und es hilft zu verstehen, wie sie sich unterscheiden. Psychotherapie und klinische Angebote bei psychischen Erkrankungen werden von anderen, entsprechend qualifizierten Fachpersonen erbracht, und Coaching richtet sich eher auf konkrete Ziele oder Leistung. Was ich anbiete, ist Beratung: ein nicht-klinischer, reflektierender Raum, um Ihr Erleben zu erkunden, Klarheit zu finden und aus Ihren eigenen Stärken zu schöpfen. Wenn Sie Psychotherapie oder ärztliche Versorgung suchen, verweise ich Sie gern an die passende Unterstützung.",
+        a: "Dies sind eigenständige Angebote, und es hilft zu verstehen, wie sie sich unterscheiden. Psychotherapie und klinische Angebote bei psychischen Erkrankungen werden von anderen, entsprechend qualifizierten Fachpersonen erbracht, und Coaching richtet sich eher auf konkrete Ziele oder Leistung. Was ich anbiete, ist Beratung: ein nicht-klinischer, reflektierender Raum, um Ihr Erleben zu erkunden, Klarheit zu finden und aus Ihren eigenen Stärken zu schöpfen. Einen ausführlicheren Vergleich von [Beratung, Therapie und Coaching](/de/blog/counselling-vs-therapy-vs-coaching) können Sie nachlesen, wenn es hilft. Wenn Sie Psychotherapie oder ärztliche Versorgung suchen, verweise ich Sie gern an die passende Unterstützung.",
       },
       {
         q: "Ist Beratung dasselbe wie Therapie?",
@@ -204,7 +204,7 @@ export const faq1De: FaqCategory[] = [
       },
       {
         q: "Wie funktioniert Online-Beratung?",
-        a: "Wir treffen uns per sicherem Videogespräch zu einer gemeinsam vereinbarten Zeit. Sobald Ihre Sitzung gebucht ist, erhalten Sie die nötigen Angaben, um von einem geschützten, angenehmen eigenen Ort aus teilzunehmen. Viele empfinden Online-Beratung als ebenso warm und persönlich wie ein Treffen im selben Raum. Wenn Sie Fragen zum Ablauf haben, können wir sie im Kennenlerngespräch besprechen.",
+        a: "Wir treffen uns per sicherem Videogespräch zu einer gemeinsam vereinbarten Zeit. Sobald Ihre Sitzung gebucht ist, erhalten Sie die nötigen Angaben, um von einem geschützten, angenehmen eigenen Ort aus teilzunehmen. Viele empfinden Online-Beratung als ebenso warm und persönlich wie ein Treffen im selben Raum. Mehr darüber, [wie Online-Beratung funktioniert](/de/blog/how-online-counselling-works), können Sie nachlesen, und wenn Sie Fragen zum Ablauf haben, können wir sie im Kennenlerngespräch besprechen.",
       },
       {
         q: "Welche Sprachen bieten Sie an?",
