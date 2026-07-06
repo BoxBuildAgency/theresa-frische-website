@@ -1,4 +1,6 @@
 import type { SiteContent } from "./types";
+import { blogPostsEn } from "./blog/posts.en";
+import { faqCategoriesEn } from "./faq/faq.en";
 
 // English content — primary locale at `/`.
 // Copy is taken from CONTENT.md (the compliance-scrubbed source of truth) and
@@ -443,178 +445,7 @@ export const en: SiteContent = {
     authorBody:
       "Theresa Frische is a Systemic & Integrative Counsellor working online with internationals, expats, and couples navigating change. Sessions are offered in English and German.",
     minRead: "min read",
-    posts: [
-      {
-        slug: "functioning-well-vs-feeling-well",
-        title: "When \"Functioning Well\" Isn't the Same as Feeling Well",
-        category: "Stress & Burnout",
-        date: "2026-05-28",
-        readingTime: "6",
-        excerpt:
-          "Why high-functioning stress often goes unnoticed, and what the early signs of burnout can look like from the inside.",
-        body: [
-          { type: "p", text: "From the outside, everything looks fine. You meet your deadlines, you show up for the people who depend on you, you keep the plates spinning. And yet, somewhere underneath the steady surface, something feels off — a low hum of fatigue that sleep doesn't quite touch, a flatness where enthusiasm used to be, a sense that you are managing your life rather than living it." },
-          { type: "p", text: "This is the quiet paradox of high-functioning stress. The very competence that earns praise can also hide how depleted a person has become. When you are good at coping, the people around you — and often you yourself — assume you are doing well. Feeling well, however, is a different question altogether." },
-          { type: "h2", text: "Functioning is a behaviour. Feeling is an experience." },
-          { type: "p", text: "Functioning describes what you can still do: get to work, answer the emails, hold the conversations. Feeling describes what it costs you to do it. For many capable, conscientious people, these two can drift far apart before anyone notices. You can be highly functional and quietly running on empty at the same time." },
-          { type: "p", text: "The gap tends to widen slowly. Coping strategies that once felt sustainable — pushing through, staying busy, putting your own needs last — keep working just well enough that there is never an obvious moment to stop. Until, gradually, the effort required to keep going starts to outweigh what you have to give." },
-          { type: "h2", text: "Early signs that are easy to dismiss" },
-          { type: "p", text: "Overwhelm rarely announces itself dramatically. More often it shows up in small, dismissible ways — the kind of signals it is tempting to explain away as a busy phase." },
-          { type: "ul", items: [
-            "Rest that doesn't restore — waking tired, weekends that don't refill the tank.",
-            "A shrinking emotional range — less joy, less irritation, a general sense of \"meh\".",
-            "Small tasks feeling disproportionately heavy.",
-            "Withdrawing from the people and activities that usually sustain you.",
-            "A body that keeps the score — tension, disrupted sleep, a stomach that knots before the week begins.",
-          ] },
-          { type: "p", text: "None of these are failures. They are information. The body and nervous system have ways of signalling when the load has become too much for too long — and learning to read those signals early is far kinder than waiting until they become impossible to ignore." },
-          { type: "h2", text: "Why \"I should be able to handle this\" keeps people stuck" },
-          { type: "p", text: "One of the most common things I hear is some version of \"other people manage, so I should too.\" But the amount of strain you are carrying is not a measure of your strength, and continuing to cope is not the same as being well. The belief that you should be fine can become the very thing that stops you from getting support while it is still light work to do so." },
-          { type: "p", text: "There is also a quieter cost. When you spend a long time overriding your own signals — staying calm when you are not, saying yes when you mean no — you can begin to lose contact with yourself. The disconnection people describe is often exactly this: a kind of low-grade estrangement from their own inner life." },
-          { type: "h2", text: "A different starting point" },
-          { type: "p", text: "Reconnecting usually begins not with doing more, but with noticing. With giving yourself permission to ask a simple, honest question: how am I, actually? Not how am I performing, or how am I managing — but how am I." },
-          { type: "p", text: "Counselling can offer a steady, reflective space to slow down and listen to what has gone unnamed. Sometimes that means making sense of how the strain built up. Sometimes it means gently experimenting with new ways of responding — to your own needs, your relationships, and the pace of your life. The aim is not to make you function even better, but to help you feel more like yourself again." },
-          { type: "p", text: "If you recognise yourself in any of this, it does not mean something is wrong with you. It may simply mean that something has shifted, and that the ways of coping that carried you this far are asking to be updated. That is not a breakdown. It is an invitation to come back into relationship with yourself." },
-        ],
-      },
-      {
-        slug: "what-is-somatic-experiencing",
-        title: "What Is Somatic Experiencing — and How Does It Help With Stress?",
-        category: "Somatic Experiencing & Nervous System Regulation",
-        date: "2026-05-12",
-        readingTime: "6",
-        excerpt:
-          "An accessible introduction to Somatic Experiencing, the nervous system, and why the body matters when we're under stress.",
-        body: [
-          { type: "p", text: "Most of us are used to thinking about stress as something that happens in the mind — a matter of thoughts, worries, and to-do lists. And it is. But stress also lives in the body. Your heart rate, your breathing, the tension in your shoulders, the knot in your stomach: these are not side effects of a stressful life. They are part of how stress actually works." },
-          { type: "p", text: "Somatic Experiencing (SE) is a body-oriented approach, developed by Dr Peter Levine, that takes this seriously. It works with the nervous system and the felt sense of the body to support people in moving through stress and overwhelming experiences — not by analysing them from a distance, but by gently helping the body complete what it could not at the time." },
-          { type: "h2", text: "A quick tour of the nervous system" },
-          { type: "p", text: "Your autonomic nervous system is constantly, quietly scanning for safety and threat — long before conscious thought gets involved. When it senses a demand it perceives as too much, it mobilises: the familiar fight-or-flight surge of energy. When something feels overwhelming or inescapable, it can do the opposite — shutting down, numbing, going still." },
-          { type: "p", text: "These responses are intelligent and protective. The difficulty is that, under sustained pressure, the nervous system can get stuck in a state of high activation or shutdown even after the demand has passed. You may notice this as feeling permanently wired, on edge, exhausted, or strangely flat — as though the body never quite got the message that it is safe to settle." },
-          { type: "h2", text: "What Somatic Experiencing actually involves" },
-          { type: "p", text: "SE is gentle and gradual. Rather than asking you to relive difficult events in detail, it pays careful attention to the body's present-moment experience — sensations, small impulses, subtle shifts of tension and ease." },
-          { type: "ul", items: [
-            "Building awareness of body sensations, a little at a time, within a window you can tolerate.",
-            "Noticing where there is tension or activation — and, just as importantly, where there is steadiness and ease.",
-            "Allowing the nervous system to discharge held energy slowly, so settling feels safe rather than flooding.",
-            "Strengthening your felt sense of grounding, so that regulation becomes more available in daily life.",
-          ] },
-          { type: "p", text: "An important principle is that more is not better. SE works within a person's capacity, moving back and forth between activation and calm so the system learns, experientially, that it can move out of stress and back into balance. Over time, that flexibility tends to generalise — you recover a little faster, settle a little more easily." },
-          { type: "h2", text: "Why the body matters when we're under stress" },
-          { type: "p", text: "Insight alone — understanding why you feel as you do — is valuable, but it does not always change how the body responds. You can know, rationally, that you are safe and still feel your chest tighten the moment a certain email arrives. That gap is exactly where body-oriented work can help. By involving the nervous system directly, SE supports change at the level where stress is actually held." },
-          { type: "p", text: "In my own work, Somatic Experiencing is one perspective among several. I draw on it alongside systemic and mindfulness-based approaches, depending on what feels useful for the person in front of me. For some people, attention to the body is the missing piece; for others, it is one strand of a broader exploration." },
-          { type: "h2", text: "A gentler relationship with your own responses" },
-          { type: "p", text: "Perhaps the most quietly powerful thing SE offers is a change in relationship to your own reactions. Instead of fighting your tension or being frightened by your fatigue, you begin to meet these states with curiosity — as meaningful signals from a system that has been doing its best to protect you. From that place, grounding and steadiness have room to grow." },
-        ],
-      },
-      {
-        slug: "why-big-life-changes-feel-harder",
-        title: "Why Big Life Changes Feel Harder Than They \"Should\"",
-        category: "Life Transitions",
-        date: "2026-04-22",
-        readingTime: "5",
-        excerpt:
-          "Why transitions are emotionally demanding even when they are positive — and what helps when you feel unsteady through change.",
-        body: [
-          { type: "p", text: "A new job. A move to a city you chose. A relationship beginning, or a long-held dream finally arriving. By every external measure, things are going well — and yet you feel unexpectedly unsteady, tired, or strangely sad. If a part of you is quietly asking why this is so hard when nothing is wrong, you are not alone." },
-          { type: "p", text: "We tend to assume that difficult feelings belong to difficult events. So when a positive change leaves us disoriented, we often add a second layer of distress on top of the first: I shouldn't feel this way. But transitions are demanding by their very nature — not because something has gone wrong, but because change asks a great deal of us, even when it is welcome." },
-          { type: "h2", text: "Every gain contains a loss" },
-          { type: "p", text: "Beneath almost every meaningful change is something being left behind. A new role means letting go of the comfort of competence you had in the old one. A move forward in life can quietly close the door on a version of yourself, or a way of living, that you were attached to. These losses are often invisible — even to us — which is part of why the feelings that come with them can be so confusing." },
-          { type: "p", text: "Naming the loss inside the gain is often a relief. It explains the grief that can sit, unexpectedly, beside genuine excitement. You are not being ungrateful. You are metabolising a real change." },
-          { type: "h2", text: "Transitions ask the nervous system to recalibrate" },
-          { type: "p", text: "Familiarity is a form of safety. Even routines we complain about provide a kind of scaffolding the nervous system relies on. When that scaffolding changes — new surroundings, new people, new expectations — the body has to work harder, orienting to everything afresh. That extra effort is real, and it is tiring, which is why transitions so often come with a fatigue that pure logic can't account for." },
-          { type: "ul", items: [
-            "The \"in-between\" feeling — no longer who you were, not yet who you are becoming.",
-            "Heightened sensitivity, self-doubt, or a shorter fuse than usual.",
-            "Tiredness that rest doesn't fully resolve.",
-            "Waves of emotion that seem out of proportion to events.",
-          ] },
-          { type: "h2", text: "The space between is not a mistake" },
-          { type: "p", text: "Many traditions describe transition as a threshold — a liminal space between an old structure and a new one. It is uncomfortable precisely because it is unformed. But it is also where genuine reorientation happens. Rushing to feel settled can short-circuit the very process that allows something new to take shape." },
-          { type: "p", text: "What helps, more often than not, is permission: to feel unsteady without treating it as a problem to be solved; to move at a humane pace; to stay in contact with your values while the outer details rearrange themselves." },
-          { type: "h2", text: "Support through the in-between" },
-          { type: "p", text: "Counselling can offer a steady point of reference while everything else is shifting — a reflective space to make sense of what is being left behind, what is being asked of you, and what matters most as you move forward. Not to speed the transition up, but to help you move through it with more steadiness and self-understanding." },
-          { type: "p", text: "If a change that should feel good is leaving you more tender than you expected, consider it a sign of how much the moment is asking of you — and how much it matters. That is not weakness. It is the ordinary, demanding work of becoming." },
-        ],
-      },
-      {
-        slug: "built-a-life-abroad-not-at-home",
-        title: "When You've Built a Life Abroad but Don't Feel at Home",
-        category: "Expat Life",
-        date: "2026-04-02",
-        readingTime: "5",
-        excerpt:
-          "Why emotional loneliness can persist in a new country, and how subtle disconnection shows up in everyday expat life.",
-        body: [],
-        draft: true,
-      },
-      {
-        slug: "growing-apart-growing-together",
-        title: "Growing Apart, Growing Together: Navigating Distance in Long-Term Relationships",
-        category: "Relationships",
-        date: "2026-03-18",
-        readingTime: "6",
-        excerpt:
-          "Understanding emotional distance in couples, and practical first steps toward reconnection.",
-        body: [],
-        draft: true,
-      },
-      {
-        slug: "love-across-cultures",
-        title: "Love Across Cultures: Navigating Intercultural Relationships",
-        category: "International & Cross-Cultural Relationships",
-        date: "2026-03-04",
-        readingTime: "6",
-        excerpt:
-          "The joys and challenges of cross-cultural partnerships, and how to build shared understanding.",
-        body: [],
-        draft: true,
-      },
-      {
-        slug: "mindfulness-is-not-clearing-your-mind",
-        title: "Mindfulness Isn't About Clearing Your Mind — Here's What It Actually Is",
-        category: "Mindfulness",
-        date: "2026-02-19",
-        readingTime: "5",
-        excerpt:
-          "Debunking common myths and how a regular practice supports emotional regulation.",
-        body: [],
-        draft: true,
-      },
-      {
-        slug: "burnout-in-leadership",
-        title: "Burnout in Leadership: Why Leaders Often Hide It Longest",
-        category: "Burnout in Leadership",
-        date: "2026-02-05",
-        readingTime: "6",
-        excerpt:
-          "The particular pressures leaders face, and why psychological support matters at every level.",
-        body: [],
-        draft: true,
-      },
-      {
-        slug: "workplace-wellbeing-that-works",
-        title: "What Makes a Workplace Wellbeing Programme Actually Work?",
-        category: "Workplace Wellbeing",
-        date: "2026-01-22",
-        readingTime: "6",
-        excerpt:
-          "How sustainable wellbeing cultures are built, beyond one-off events.",
-        body: [],
-        draft: true,
-      },
-      {
-        slug: "resilience-is-not-toughing-it-out",
-        title: "Resilience Isn't About Toughing It Out",
-        category: "Resilience in Times of Change",
-        date: "2026-01-08",
-        readingTime: "5",
-        excerpt:
-          "Reframing resilience as flexibility and recovery, not just endurance.",
-        body: [],
-        draft: true,
-      },
-    ],
+    posts: blogPostsEn,
   },
 
   faq: {
@@ -625,44 +456,8 @@ export const en: SiteContent = {
     heading: "Frequently asked questions",
     intro:
       "A few of the questions people often ask before getting started. If yours isn't here, you're warmly welcome to get in touch.",
-    items: [
-      {
-        q: "How do I get started?",
-        a: "The first step is a free 15-minute discovery call. It's a relaxed, no-obligation conversation where you can share what brings you here, ask any questions, and get a sense of whether working together feels right.",
-      },
-      {
-        q: "What languages do you offer sessions in?",
-        a: "Sessions are available in both English and German, for individuals and couples internationally.",
-      },
-      {
-        q: "Are sessions online or in person?",
-        a: "Individual and couples sessions are offered online via video, allowing me to work with clients internationally. For organisations, workshops and trainings can be delivered online or on-site in Germany and Switzerland.",
-      },
-      {
-        q: "How long are sessions, and how often do we meet?",
-        a: "Individual sessions last 60 minutes; couples sessions run 60–120 minutes. How often we meet is something we agree on together, based on what feels right for your situation.",
-      },
-      {
-        q: "What is Somatic Experiencing, and how is it used in our sessions?",
-        a: "Somatic Experiencing is a body-oriented approach to working with stress and overwhelming experiences. It supports the nervous system in releasing held tension and returning to a greater sense of safety and regulation. It's drawn on alongside systemic and mindfulness-based approaches, depending on what feels useful for you.",
-      },
-      {
-        q: "Is this covered by health insurance (Krankenkasse)?",
-        a: "Sessions are self-pay and not reimbursed by statutory or private health insurance. This allows for a flexible, confidential way of working — with no insurance paperwork, no reporting requirements, and no need to fit your experience into clinical categories.",
-      },
-      {
-        q: "How is couples counselling different from individual counselling?",
-        a: "Couples counselling focuses on relational patterns — communication, connection, and recurring conflict. Sessions are usually longer (60–120 minutes) to allow space for both perspectives to be heard.",
-      },
-      {
-        q: "How can I join the Weekly Wellbeing Community?",
-        a: "The community meets online via Teams on Tuesdays from 20:30–21:30, in English. Get in touch using the contact form to receive more information and a link to join.",
-      },
-      {
-        q: "Can my organisation book a one-off session, or only longer programmes?",
-        a: "Both. I offer everything from single keynote talks and workshops (2–4 hours) to multi-day trainings and structured 8-week programmes — tailored to what your organisation needs.",
-      },
-    ],
+    jumpLabel: "Jump to a topic",
+    categories: faqCategoriesEn,
   },
 
   contact: {

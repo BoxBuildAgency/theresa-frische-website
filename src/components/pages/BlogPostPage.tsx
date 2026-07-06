@@ -7,17 +7,46 @@ import { Eyebrow } from "@/components/ui/Section";
 import { CtaBand } from "@/components/sections/CtaBand";
 import { ArticleJsonLd } from "@/components/site/JsonLd";
 
+/** Render inline markdown-style links [label](/href) within body text. */
+function renderInline(text: string): React.ReactNode {
+  const re = /\[([^\]]+)\]\(([^)]+)\)/g;
+  const parts: React.ReactNode[] = [];
+  let last = 0;
+  let key = 0;
+  let m: RegExpExecArray | null;
+  while ((m = re.exec(text)) !== null) {
+    if (m.index > last) parts.push(text.slice(last, m.index));
+    const [, label, href] = m;
+    if (/^https?:\/\//.test(href)) {
+      parts.push(
+        <a key={key++} href={href} target="_blank" rel="noopener noreferrer">
+          {label}
+        </a>,
+      );
+    } else {
+      parts.push(
+        <Link key={key++} href={href}>
+          {label}
+        </Link>,
+      );
+    }
+    last = re.lastIndex;
+  }
+  if (last < text.length) parts.push(text.slice(last));
+  return parts.length ? parts : text;
+}
+
 function Block({ block }: { block: BlogBlock }) {
   switch (block.type) {
     case "h2":
       return <h2>{block.text}</h2>;
     case "p":
-      return <p>{block.text}</p>;
+      return <p>{renderInline(block.text)}</p>;
     case "ul":
       return (
         <ul>
           {block.items.map((item, i) => (
-            <li key={i}>{item}</li>
+            <li key={i}>{renderInline(item)}</li>
           ))}
         </ul>
       );

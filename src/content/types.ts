@@ -35,6 +35,17 @@ export interface CrisisItem {
   href?: string;
 }
 
+export interface FaqItem {
+  q: string;
+  a: string;
+}
+
+export interface FaqCategory {
+  id: string; // stable anchor id, used by the jump nav
+  title: string;
+  items: FaqItem[];
+}
+
 export interface BlogPost {
   slug: string;
   title: string;
@@ -218,7 +229,8 @@ export interface SiteContent {
     eyebrow: string;
     heading: string;
     intro: string;
-    items: { q: string; a: string }[];
+    jumpLabel: string; // heading for the category jump-nav
+    categories: FaqCategory[];
   };
 
   contact: {

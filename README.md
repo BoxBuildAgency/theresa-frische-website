@@ -68,9 +68,15 @@ src/
     ui/               buttons, container, cards, etc.
   content/
     types.ts          the SiteContent shape both locales implement
-    en.ts             English copy (source of truth)
-    de.ts             German translation
-    index.ts          getContent() / blog helpers
+    en.ts             English copy (source of truth) — imports blog + faq modules
+    de.ts             German translation — imports blog + faq modules
+    index.ts          getContent() / blog helpers (posts sorted newest-first)
+    blog/             blog posts, split out of en.ts/de.ts
+      set-existing.ts, set-a.ts … set-e.ts   post batches (each exports *En / *De)
+      posts.en.ts / posts.de.ts              assemble all 20 posts in order
+    faq/              FAQ, grouped into categories
+      faq-1.ts, faq-2.ts, faq-3.ts           category batches (*En / *De)
+      faq.en.ts / faq.de.ts                  assemble all 9 categories
   lib/
     site.ts           routes table + EN↔DE path mapping
     seo.ts            per-page metadata (canonical + hreflang + OG)
@@ -98,32 +104,41 @@ design, so the language attribute is always correct). Path mapping lives in `cou
   is enforced by `src/content/types.ts`, so TypeScript will flag anything missing.
 - **Keep both languages in sync** and keep the compliance rules above.
 
-### Add a blog post
+### Blog & FAQ content
 
-1. In `src/content/en.ts`, add an entry to `blog.posts`:
+There are **20 full blog posts** (EN + DE) and **9 FAQ categories (~59 questions)**. To keep files
+manageable, blog posts and the FAQ live in their own modules under `src/content/blog/` and
+`src/content/faq/`, assembled by `posts.en.ts` / `posts.de.ts` and `faq.en.ts` / `faq.de.ts` and
+imported into `en.ts` / `de.ts`. Posts are shown newest-first (sorted by `date`).
 
-   ```ts
-   {
-     slug: "my-new-post",          // URL slug (keep identical in de.ts)
-     title: "My New Post",
-     category: "Mindfulness",
-     date: "2026-07-01",           // ISO date
-     readingTime: "5",
-     excerpt: "One-sentence summary.",
-     body: [
-       { type: "p", text: "A paragraph." },
-       { type: "h2", text: "A subheading" },
-       { type: "ul", items: ["point one", "point two"] },
-       { type: "quote", text: "A quote.", attribution: "Author" },
-     ],
-   }
-   ```
+**Add a blog post:** add an entry to one of the `set-*.ts` files in `src/content/blog/` (in the
+`*En` array), and the **same post** (same `slug`) translated into the matching `*De` array:
 
-2. Add the **same post** (same `slug`) to `src/content/de.ts`, translated.
-3. That's it — the index card, the `/blog/[slug]` page, sitemap, and JSON-LD update automatically.
+```ts
+{
+  slug: "my-new-post",          // URL slug — identical in the En and De arrays
+  title: "My New Post",
+  category: "Mindfulness",
+  date: "2026-07-01",           // ISO date (controls ordering)
+  readingTime: "5",
+  excerpt: "One-sentence summary.",
+  body: [
+    { type: "p", text: "A paragraph, with an [internal link](/work-together)." },
+    { type: "h2", text: "A subheading" },
+    { type: "ul", items: ["point one", "point two"] },
+    { type: "quote", text: "A quote.", attribution: "Author" },
+  ],
+}
+```
 
-The 7 "stub" posts have `draft: true` and an empty `body: []`. They are **hidden** from the site
-(index, routes, sitemap) until you give them a `body` and remove `draft: true`.
+Inside `p` and `ul` text you can embed internal links as markdown — `[label](/path)` — EN posts use
+`/path`, DE posts use `/de/path`. The index card, `/blog/[slug]` page, sitemap, and Article JSON-LD
+all update automatically. (A post may optionally carry `draft: true` with `body: []` to hide it
+until finished.)
+
+**Add / edit an FAQ:** each category is `{ id, title, items: [{ q, a }] }` in a `faq-*.ts` file
+(`*En` + `*De`). Keep the same `id` across EN/DE — it powers the jump-nav anchor. Answers are plain
+text (no markdown) so the FAQPage JSON-LD stays clean.
 
 ---
 

@@ -1,4 +1,6 @@
 import type { SiteContent } from "./types";
+import { blogPostsDe } from "./blog/posts.de";
+import { faqCategoriesDe } from "./faq/faq.de";
 
 // Deutscher Inhalt — Locale unter `/de`.
 // Texte sind durchgehend in reiner Beratungssprache gehalten. Bitte keine
@@ -443,178 +445,7 @@ export const de: SiteContent = {
     authorBody:
       "Theresa Frische ist Systemische & Integrative Beraterin und arbeitet online mit internationalen Menschen, Expats und Paaren, die Veränderung navigieren. Die Sitzungen werden auf Deutsch und Englisch angeboten.",
     minRead: "Min. Lesezeit",
-    posts: [
-      {
-        slug: "functioning-well-vs-feeling-well",
-        title: "Wenn „gut funktionieren\" nicht dasselbe ist wie sich gut fühlen",
-        category: "Stress & Überforderung",
-        date: "2026-05-28",
-        readingTime: "6",
-        excerpt:
-          "Warum hochfunktionaler Stress oft unbemerkt bleibt und wie die frühen Anzeichen von Überforderung von innen aussehen können.",
-        body: [
-          { type: "p", text: "Von außen sieht alles in Ordnung aus. Sie halten Ihre Termine ein, Sie sind für die Menschen da, die auf Sie zählen, Sie halten alle Bälle in der Luft. Und doch fühlt sich irgendwo unter der ruhigen Oberfläche etwas falsch an — ein leises Summen von Erschöpfung, das der Schlaf nicht ganz erreicht, eine Flachheit dort, wo früher Begeisterung war, ein Gefühl, dass Sie Ihr Leben eher verwalten als leben." },
-          { type: "p", text: "Das ist das stille Paradox hochfunktionalen Stresses. Genau die Tüchtigkeit, die Lob einbringt, kann zugleich verbergen, wie erschöpft ein Mensch geworden ist. Wenn Sie gut darin sind zu bewältigen, gehen die Menschen um Sie herum — und oft auch Sie selbst — davon aus, dass es Ihnen gut geht. Sich gut zu fühlen ist jedoch eine ganz andere Frage." },
-          { type: "h2", text: "Funktionieren ist ein Verhalten. Fühlen ist ein Erleben." },
-          { type: "p", text: "Funktionieren beschreibt, was Sie noch tun können: zur Arbeit kommen, die E-Mails beantworten, die Gespräche führen. Fühlen beschreibt, was es Sie kostet, das zu tun. Bei vielen fähigen, gewissenhaften Menschen können diese beiden weit auseinanderdriften, bevor es jemand bemerkt. Sie können hochfunktional sein und zugleich still auf Reserve laufen." },
-          { type: "p", text: "Die Kluft weitet sich meist langsam. Bewältigungsstrategien, die sich einmal tragfähig anfühlten — durchhalten, beschäftigt bleiben, die eigenen Bedürfnisse hintanstellen — funktionieren gerade so gut, dass es nie einen offensichtlichen Moment zum Innehalten gibt. Bis allmählich die Anstrengung, weiterzumachen, das übersteigt, was Sie zu geben haben." },
-          { type: "h2", text: "Frühe Anzeichen, die sich leicht abtun lassen" },
-          { type: "p", text: "Überforderung kündigt sich selten dramatisch an. Häufiger zeigt sie sich auf kleine, leicht abzutuende Weise — die Art von Signalen, die man verführerisch leicht als bloß stressige Phase erklären kann." },
-          { type: "ul", items: [
-            "Ruhe, die nicht erholt — müde aufwachen, Wochenenden, die den Tank nicht wieder füllen.",
-            "Eine schrumpfende emotionale Bandbreite — weniger Freude, weniger Gereiztheit, ein allgemeines Gefühl von „naja\".",
-            "Kleine Aufgaben fühlen sich unverhältnismäßig schwer an.",
-            "Rückzug von den Menschen und Tätigkeiten, die Sie sonst tragen.",
-            "Ein Körper, der mitzählt — Anspannung, gestörter Schlaf, ein Magen, der sich verknotet, bevor die Woche beginnt.",
-          ] },
-          { type: "p", text: "Nichts davon ist ein Versagen. Es sind Informationen. Körper und Nervensystem haben Wege zu signalisieren, wenn die Last zu lange zu groß geworden ist — und zu lernen, diese Signale früh zu lesen, ist weitaus freundlicher, als zu warten, bis sie unmöglich zu übersehen sind." },
-          { type: "h2", text: "Warum „ich sollte das doch hinbekommen\" Menschen festhält" },
-          { type: "p", text: "Eines der häufigsten Dinge, die ich höre, ist eine Variante von „andere schaffen das, also sollte ich das auch\". Aber das Maß der Belastung, die Sie tragen, ist kein Maßstab für Ihre Stärke, und weiter zu bewältigen ist nicht dasselbe, wie es Ihnen gut geht. Die Überzeugung, dass es Ihnen eigentlich gut gehen müsste, kann genau das werden, was Sie davon abhält, sich Unterstützung zu holen, solange das noch leicht zu tun ist." },
-          { type: "p", text: "Es gibt auch einen leiseren Preis. Wenn Sie lange Zeit Ihre eigenen Signale übergehen — ruhig bleiben, obwohl Sie es nicht sind, Ja sagen, wenn Sie Nein meinen — können Sie den Kontakt zu sich selbst verlieren. Die Entfremdung, die Menschen beschreiben, ist oft genau das: eine Art leise Entfremdung vom eigenen Innenleben." },
-          { type: "h2", text: "Ein anderer Ausgangspunkt" },
-          { type: "p", text: "Wiederverbindung beginnt meist nicht damit, mehr zu tun, sondern damit, wahrzunehmen. Damit, sich selbst die Erlaubnis zu geben, eine einfache, ehrliche Frage zu stellen: Wie geht es mir eigentlich? Nicht wie funktioniere ich oder wie bewältige ich — sondern wie es mir geht." },
-          { type: "p", text: "Beratung kann einen verlässlichen, reflexiven Raum bieten, um zur Ruhe zu kommen und dem zuzuhören, was unbenannt geblieben ist. Manchmal heißt das, zu verstehen, wie sich die Belastung aufgebaut hat. Manchmal heißt es, behutsam mit neuen Weisen des Reagierens zu experimentieren — auf Ihre eigenen Bedürfnisse, Ihre Beziehungen und das Tempo Ihres Lebens. Das Ziel ist nicht, dass Sie noch besser funktionieren, sondern Ihnen dabei zu helfen, sich wieder mehr wie Sie selbst zu fühlen." },
-          { type: "p", text: "Wenn Sie sich in irgendetwas davon wiedererkennen, bedeutet das nicht, dass mit Ihnen etwas nicht stimmt. Es kann einfach bedeuten, dass sich etwas verschoben hat und dass die Bewältigungsweisen, die Sie bis hierher getragen haben, danach verlangen, aktualisiert zu werden. Das ist kein Zusammenbruch. Es ist eine Einladung, wieder in Beziehung mit sich selbst zu treten." },
-        ],
-      },
-      {
-        slug: "what-is-somatic-experiencing",
-        title: "Was ist Somatic Experiencing — und wie hilft es bei Stress?",
-        category: "Somatic Experiencing & Regulation des Nervensystems",
-        date: "2026-05-12",
-        readingTime: "6",
-        excerpt:
-          "Eine zugängliche Einführung in Somatic Experiencing, das Nervensystem und warum der Körper zählt, wenn wir unter Stress stehen.",
-        body: [
-          { type: "p", text: "Die meisten von uns sind es gewohnt, Stress als etwas zu betrachten, das im Kopf geschieht — eine Sache von Gedanken, Sorgen und To-do-Listen. Und das ist er auch. Aber Stress lebt auch im Körper. Ihr Herzschlag, Ihre Atmung, die Anspannung in den Schultern, der Knoten im Magen: Das sind keine Nebenwirkungen eines stressigen Lebens. Sie sind Teil dessen, wie Stress tatsächlich wirkt." },
-          { type: "p", text: "Somatic Experiencing (SE) ist ein körperorientierter Ansatz, entwickelt von Dr. Peter Levine, der dies ernst nimmt. Er arbeitet mit dem Nervensystem und dem gespürten Sinn des Körpers, um Menschen dabei zu unterstützen, durch Stress und überwältigende Erfahrungen hindurchzugehen — nicht indem er sie aus der Distanz analysiert, sondern indem er dem Körper behutsam hilft, zu vollenden, was er damals nicht vollenden konnte." },
-          { type: "h2", text: "Ein kurzer Rundgang durch das Nervensystem" },
-          { type: "p", text: "Ihr autonomes Nervensystem scannt ständig und leise nach Sicherheit und Bedrohung — lange bevor bewusstes Denken ins Spiel kommt. Wenn es eine Anforderung wahrnimmt, die es als zu viel einschätzt, mobilisiert es: der vertraute Energieschub von Kampf oder Flucht. Wenn sich etwas überwältigend oder ausweglos anfühlt, kann es das Gegenteil tun — herunterfahren, taub werden, erstarren." },
-          { type: "p", text: "Diese Reaktionen sind intelligent und schützend. Die Schwierigkeit besteht darin, dass das Nervensystem unter anhaltendem Druck in einem Zustand hoher Aktivierung oder des Herunterfahrens steckenbleiben kann, selbst nachdem die Anforderung vorüber ist. Sie bemerken das vielleicht als ein Gefühl, dauerhaft unter Strom zu stehen, angespannt, erschöpft oder seltsam flach zu sein — als hätte der Körper die Botschaft nie ganz erhalten, dass es sicher ist, sich zu beruhigen." },
-          { type: "h2", text: "Was Somatic Experiencing tatsächlich umfasst" },
-          { type: "p", text: "SE ist behutsam und allmählich. Statt Sie zu bitten, schwierige Ereignisse im Detail noch einmal zu durchleben, richtet es sorgfältige Aufmerksamkeit auf das gegenwärtige Erleben des Körpers — Empfindungen, kleine Impulse, feine Verschiebungen von Anspannung und Leichtigkeit." },
-          { type: "ul", items: [
-            "Ein Bewusstsein für Körperempfindungen aufbauen, Stück für Stück, innerhalb eines Bereichs, den Sie aushalten können.",
-            "Bemerken, wo Anspannung oder Aktivierung ist — und, ebenso wichtig, wo Stabilität und Leichtigkeit sind.",
-            "Dem Nervensystem erlauben, gehaltene Energie langsam zu entladen, sodass sich das Beruhigen sicher anfühlt statt überflutend.",
-            "Ihren gespürten Sinn von Erdung stärken, sodass Regulation im Alltag verfügbarer wird.",
-          ] },
-          { type: "p", text: "Ein wichtiges Prinzip ist, dass mehr nicht besser ist. SE arbeitet innerhalb der Kapazität eines Menschen und bewegt sich hin und her zwischen Aktivierung und Ruhe, sodass das System erfahrungsbasiert lernt, dass es aus dem Stress heraus und zurück ins Gleichgewicht gelangen kann. Mit der Zeit neigt diese Flexibilität dazu, sich zu verallgemeinern — Sie erholen sich ein wenig schneller, beruhigen sich ein wenig leichter." },
-          { type: "h2", text: "Warum der Körper zählt, wenn wir unter Stress stehen" },
-          { type: "p", text: "Einsicht allein — zu verstehen, warum Sie sich fühlen, wie Sie sich fühlen — ist wertvoll, ändert aber nicht immer, wie der Körper reagiert. Sie können rational wissen, dass Sie sicher sind, und dennoch spüren, wie sich Ihre Brust zusammenzieht, sobald eine bestimmte E-Mail eintrifft. Genau in dieser Kluft kann körperorientierte Arbeit helfen. Indem SE das Nervensystem direkt einbezieht, unterstützt es Veränderung auf der Ebene, auf der Stress tatsächlich gehalten wird." },
-          { type: "p", text: "In meiner eigenen Arbeit ist Somatic Experiencing eine Perspektive unter mehreren. Ich schöpfe daraus neben systemischen und achtsamkeitsbasierten Ansätzen, je nachdem, was sich für den Menschen vor mir hilfreich anfühlt. Für manche Menschen ist die Aufmerksamkeit für den Körper das fehlende Stück; für andere ist sie ein Strang einer umfassenderen Erkundung." },
-          { type: "h2", text: "Eine sanftere Beziehung zu den eigenen Reaktionen" },
-          { type: "p", text: "Das vielleicht still wirksamste, was SE bietet, ist eine Veränderung in der Beziehung zu den eigenen Reaktionen. Statt Ihre Anspannung zu bekämpfen oder sich von Ihrer Erschöpfung erschrecken zu lassen, beginnen Sie, diesen Zuständen mit Neugier zu begegnen — als bedeutsame Signale eines Systems, das sein Bestes getan hat, um Sie zu schützen. Von dort aus haben Erdung und Stabilität Raum zu wachsen." },
-        ],
-      },
-      {
-        slug: "why-big-life-changes-feel-harder",
-        title: "Warum sich große Lebensveränderungen schwerer anfühlen, als sie „sollten\"",
-        category: "Lebensübergänge",
-        date: "2026-04-22",
-        readingTime: "5",
-        excerpt:
-          "Warum Übergänge emotional fordernd sind, selbst wenn sie positiv sind — und was hilft, wenn Sie sich durch Veränderung hindurch unsicher fühlen.",
-        body: [
-          { type: "p", text: "Ein neuer Job. Ein Umzug in eine Stadt, die Sie gewählt haben. Eine Beziehung, die beginnt, oder ein lang gehegter Traum, der endlich Wirklichkeit wird. Nach jedem äußeren Maßstab läuft es gut — und doch fühlen Sie sich unerwartet unsicher, müde oder seltsam traurig. Wenn ein Teil von Ihnen leise fragt, warum das so schwer ist, obwohl nichts falsch läuft, sind Sie damit nicht allein." },
-          { type: "p", text: "Wir neigen anzunehmen, dass schwierige Gefühle zu schwierigen Ereignissen gehören. Wenn uns also eine positive Veränderung desorientiert, fügen wir oft eine zweite Schicht der Belastung auf die erste: So sollte ich mich nicht fühlen. Aber Übergänge sind ihrer Natur nach fordernd — nicht weil etwas schiefgelaufen ist, sondern weil Veränderung uns viel abverlangt, selbst wenn sie willkommen ist." },
-          { type: "h2", text: "Jeder Gewinn enthält einen Verlust" },
-          { type: "p", text: "Unter fast jeder bedeutsamen Veränderung liegt etwas, das zurückgelassen wird. Eine neue Rolle bedeutet, die Geborgenheit der Kompetenz loszulassen, die Sie in der alten hatten. Ein Schritt nach vorn im Leben kann leise die Tür zu einer Version Ihrer selbst oder einer Lebensweise schließen, an der Sie hingen. Diese Verluste sind oft unsichtbar — auch für uns selbst —, was mit ein Grund dafür ist, dass die Gefühle, die mit ihnen kommen, so verwirrend sein können." },
-          { type: "p", text: "Den Verlust im Gewinn zu benennen ist oft eine Erleichterung. Es erklärt die Trauer, die unerwartet neben echter Vorfreude sitzen kann. Sie sind nicht undankbar. Sie verarbeiten eine reale Veränderung." },
-          { type: "h2", text: "Übergänge verlangen vom Nervensystem, sich neu einzustellen" },
-          { type: "p", text: "Vertrautheit ist eine Form von Sicherheit. Selbst Routinen, über die wir uns beklagen, bieten eine Art Gerüst, auf das sich das Nervensystem verlässt. Wenn sich dieses Gerüst verändert — neue Umgebung, neue Menschen, neue Erwartungen —, muss der Körper härter arbeiten und sich an alles aufs Neue orientieren. Diese zusätzliche Anstrengung ist real, und sie ist ermüdend, weshalb Übergänge so oft mit einer Erschöpfung einhergehen, die reine Logik nicht erklären kann." },
-          { type: "ul", items: [
-            "Das „Dazwischen\"-Gefühl — nicht mehr, wer Sie waren, noch nicht, wer Sie werden.",
-            "Erhöhte Empfindsamkeit, Selbstzweifel oder eine kürzere Zündschnur als sonst.",
-            "Müdigkeit, die sich durch Ruhe nicht ganz auflöst.",
-            "Wellen von Gefühlen, die im Verhältnis zu den Ereignissen unangemessen scheinen.",
-          ] },
-          { type: "h2", text: "Der Raum dazwischen ist kein Fehler" },
-          { type: "p", text: "Viele Traditionen beschreiben Übergang als eine Schwelle — einen liminalen Raum zwischen einer alten Struktur und einer neuen. Er ist gerade deshalb unbequem, weil er ungeformt ist. Aber er ist auch der Ort, an dem echte Neuorientierung geschieht. Sich zu beeilen, um sich gefestigt zu fühlen, kann genau den Prozess kurzschließen, der es etwas Neuem erlaubt, Gestalt anzunehmen." },
-          { type: "p", text: "Was meist hilft, ist Erlaubnis: sich unsicher fühlen zu dürfen, ohne es als Problem zu behandeln, das gelöst werden muss; sich in einem menschlichen Tempo zu bewegen; in Kontakt mit Ihren Werten zu bleiben, während sich die äußeren Einzelheiten neu ordnen." },
-          { type: "h2", text: "Begleitung durch das Dazwischen" },
-          { type: "p", text: "Beratung kann einen verlässlichen Bezugspunkt bieten, während sich alles andere verschiebt — einen reflexiven Raum, um zu verstehen, was zurückgelassen wird, was von Ihnen verlangt wird und was am meisten zählt, während Sie sich vorwärtsbewegen. Nicht um den Übergang zu beschleunigen, sondern um Ihnen zu helfen, mit mehr Stabilität und Selbstverständnis hindurchzugehen." },
-          { type: "p", text: "Wenn eine Veränderung, die sich gut anfühlen sollte, Sie verletzlicher zurücklässt, als Sie erwartet haben, nehmen Sie es als Zeichen dafür, wie viel der Moment Ihnen abverlangt — und wie sehr er zählt. Das ist keine Schwäche. Es ist die ganz gewöhnliche, fordernde Arbeit des Werdens." },
-        ],
-      },
-      {
-        slug: "built-a-life-abroad-not-at-home",
-        title: "Wenn Sie sich im Ausland ein Leben aufgebaut haben, sich aber nicht zu Hause fühlen",
-        category: "Expat-Leben",
-        date: "2026-04-02",
-        readingTime: "5",
-        excerpt:
-          "Warum emotionale Einsamkeit in einem neuen Land fortbestehen kann und wie sich subtile Entfremdung im Alltag von Expats zeigt.",
-        body: [],
-        draft: true,
-      },
-      {
-        slug: "growing-apart-growing-together",
-        title: "Auseinanderwachsen, Zusammenwachsen: Distanz in langjährigen Beziehungen navigieren",
-        category: "Beziehungen",
-        date: "2026-03-18",
-        readingTime: "6",
-        excerpt:
-          "Emotionale Distanz in Paaren verstehen und praktische erste Schritte zurück zur Verbindung.",
-        body: [],
-        draft: true,
-      },
-      {
-        slug: "love-across-cultures",
-        title: "Liebe über Kulturen hinweg: Interkulturelle Beziehungen navigieren",
-        category: "Internationale & interkulturelle Beziehungen",
-        date: "2026-03-04",
-        readingTime: "6",
-        excerpt:
-          "Die Freuden und Herausforderungen interkultureller Partnerschaften und wie man ein gemeinsames Verständnis aufbaut.",
-        body: [],
-        draft: true,
-      },
-      {
-        slug: "mindfulness-is-not-clearing-your-mind",
-        title: "Bei Achtsamkeit geht es nicht darum, den Kopf frei zu bekommen — das ist sie wirklich",
-        category: "Achtsamkeit",
-        date: "2026-02-19",
-        readingTime: "5",
-        excerpt:
-          "Verbreitete Mythen entkräften und wie eine regelmäßige Praxis die emotionale Regulation unterstützt.",
-        body: [],
-        draft: true,
-      },
-      {
-        slug: "burnout-in-leadership",
-        title: "Überforderung in Führungsrollen: Warum Führungskräfte sie am längsten verbergen",
-        category: "Überforderung in Führungsrollen",
-        date: "2026-02-05",
-        readingTime: "6",
-        excerpt:
-          "Die besonderen Belastungen, denen Führungskräfte ausgesetzt sind, und warum psychologische Unterstützung auf jeder Ebene zählt.",
-        body: [],
-        draft: true,
-      },
-      {
-        slug: "workplace-wellbeing-that-works",
-        title: "Was macht ein Programm für Wohlbefinden am Arbeitsplatz wirklich wirksam?",
-        category: "Wohlbefinden am Arbeitsplatz",
-        date: "2026-01-22",
-        readingTime: "6",
-        excerpt:
-          "Wie nachhaltige Kulturen des Wohlbefindens entstehen, über einmalige Veranstaltungen hinaus.",
-        body: [],
-        draft: true,
-      },
-      {
-        slug: "resilience-is-not-toughing-it-out",
-        title: "Bei Widerstandskraft geht es nicht darum, durchzubeißen",
-        category: "Widerstandskraft in Zeiten der Veränderung",
-        date: "2026-01-08",
-        readingTime: "5",
-        excerpt:
-          "Widerstandskraft neu denken als Flexibilität und Erholung, nicht nur als Durchhalten.",
-        body: [],
-        draft: true,
-      },
-    ],
+    posts: blogPostsDe,
   },
 
   faq: {
@@ -625,44 +456,8 @@ export const de: SiteContent = {
     heading: "Häufig gestellte Fragen",
     intro:
       "Einige der Fragen, die Menschen vor dem Einstieg oft stellen. Wenn Ihre Frage nicht dabei ist, melden Sie sich gerne bei mir.",
-    items: [
-      {
-        q: "Wie fange ich an?",
-        a: "Der erste Schritt ist ein kostenloses 15-minütiges Kennenlerngespräch. Es ist ein entspanntes, unverbindliches Gespräch, in dem Sie teilen können, was Sie herführt, Ihre Fragen stellen und ein Gefühl dafür bekommen, ob sich eine Zusammenarbeit stimmig anfühlt.",
-      },
-      {
-        q: "In welchen Sprachen bieten Sie Sitzungen an?",
-        a: "Die Sitzungen sind auf Deutsch und Englisch verfügbar, für Einzelpersonen und Paare international.",
-      },
-      {
-        q: "Finden die Sitzungen online oder vor Ort statt?",
-        a: "Einzel- und Paarsitzungen werden online per Video angeboten, sodass ich mit Klient:innen international arbeiten kann. Für Organisationen können Workshops und Trainings online oder vor Ort in Deutschland und der Schweiz durchgeführt werden.",
-      },
-      {
-        q: "Wie lange dauern die Sitzungen und wie oft treffen wir uns?",
-        a: "Einzelsitzungen dauern 60 Minuten; Paarsitzungen 60–120 Minuten. Wie oft wir uns treffen, vereinbaren wir gemeinsam, je nachdem, was sich für Ihre Situation stimmig anfühlt.",
-      },
-      {
-        q: "Was ist Somatic Experiencing und wie wird es in unseren Sitzungen genutzt?",
-        a: "Somatic Experiencing ist ein körperorientierter Ansatz für die Arbeit mit Stress und überwältigenden Erfahrungen. Er unterstützt das Nervensystem dabei, gehaltene Anspannung zu lösen und zu einem größeren Gefühl von Sicherheit und Regulation zurückzukehren. Er wird neben systemischen und achtsamkeitsbasierten Ansätzen genutzt, je nachdem, was sich für Sie hilfreich anfühlt.",
-      },
-      {
-        q: "Wird das von der Krankenkasse übernommen?",
-        a: "Die Sitzungen sind Selbstzahlerleistungen und werden weder von der gesetzlichen noch von der privaten Krankenversicherung erstattet. Das ermöglicht eine flexible, vertrauliche Art zu arbeiten — ohne Schriftverkehr mit der Versicherung, ohne Meldepflichten und ohne die Notwendigkeit, Ihr Erleben in klinische Kategorien zu pressen.",
-      },
-      {
-        q: "Wie unterscheidet sich Paarberatung von Einzelberatung?",
-        a: "Die Paarberatung richtet den Blick auf beziehungsbezogene Muster — Kommunikation, Verbindung und wiederkehrende Konflikte. Die Sitzungen sind in der Regel länger (60–120 Minuten), um Raum dafür zu schaffen, dass beide Perspektiven gehört werden.",
-      },
-      {
-        q: "Wie kann ich an der Weekly Wellbeing Community teilnehmen?",
-        a: "Die Community trifft sich online über Teams, dienstags von 20:30–21:30, auf Englisch. Melden Sie sich über das Kontaktformular, um mehr Informationen und einen Link zur Teilnahme zu erhalten.",
-      },
-      {
-        q: "Kann meine Organisation eine einzelne Sitzung buchen oder nur längere Programme?",
-        a: "Beides. Ich biete alles von einzelnen Keynote-Vorträgen und Workshops (2–4 Stunden) bis hin zu mehrtägigen Trainings und strukturierten 8-Wochen-Programmen — zugeschnitten auf das, was Ihre Organisation braucht.",
-      },
-    ],
+    jumpLabel: "Zu einem Thema springen",
+    categories: faqCategoriesDe,
   },
 
   contact: {
