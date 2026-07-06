@@ -12,7 +12,8 @@ export const metadata: Metadata = {
   },
   description:
     "Online counselling in English and German for individuals and couples navigating change, transition, and life across borders.",
-  icons: { icon: "/favicon.ico" },
+  // Icons are handled by the App Router file convention (src/app/favicon.ico,
+  // icon.svg, apple-icon.png) — no manual `icons` entry, which would override it.
 };
 
 export default function EnRootLayout({ children }: { children: React.ReactNode }) {

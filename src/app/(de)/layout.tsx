@@ -12,7 +12,8 @@ export const metadata: Metadata = {
   },
   description:
     "Online-Beratung auf Deutsch und Englisch für Einzelpersonen und Paare in Veränderung, Übergängen und im Leben zwischen Kulturen.",
-  icons: { icon: "/favicon.ico" },
+  // Icons are handled by the App Router file convention (src/app/favicon.ico,
+  // icon.svg, apple-icon.png) — no manual `icons` entry, which would override it.
 };
 
 export default function DeRootLayout({ children }: { children: React.ReactNode }) {
