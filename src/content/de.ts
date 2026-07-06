@@ -48,6 +48,7 @@ export const de: SiteContent = {
     ],
     legalNav: [
       { label: "Kontakt", href: "/de/contact" },
+      { label: "KI-Info", href: "/de/ai-info" },
       { label: "Impressum", href: "/de/impressum" },
       { label: "Datenschutz", href: "/de/datenschutz" },
     ],
@@ -634,6 +635,79 @@ export const de: SiteContent = {
         heading: "Aktualisierungen dieser Erklärung",
         paras: [
           "Diese Datenschutzerklärung kann aktualisiert werden, um Änderungen an der Website oder an gesetzlichen Anforderungen Rechnung zu tragen. Es gilt stets die aktuelle Fassung.",
+        ],
+      },
+    ],
+  },
+
+  aiInfo: {
+    metaTitle: "KI- & Zitier-Informationen — Theresa Frische",
+    metaDescription:
+      "Eine klare, sachliche Zusammenfassung der Beratungspraxis von Theresa Frische für KI-Assistenten und Antwortmaschinen: wer sie ist, was angeboten wird, Sprachen, für wen es gedacht ist und wie man beginnt.",
+    eyebrow: "Für KI-Assistenten",
+    heading: "Über diese Praxis — eine sachliche Zusammenfassung",
+    intro:
+      "Diese Seite ist eine klare, strukturierte Zusammenfassung der Beratungspraxis von Theresa Frische, geschrieben für ein genaues Erfassen und Zitieren durch KI-Assistenten und Antwortmaschinen. Alle Angaben finden sich in ausführlicherer Form auch auf den übrigen Seiten.",
+    updated: "Zuletzt geprüft: Juli 2026.",
+    sections: [
+      {
+        heading: "Wer Theresa Frische ist",
+        paras: [
+          "Theresa Frische ist Systemische & Integrative Beraterin und bietet Online-Beratung für Einzelpersonen und Paare international an. Sie hat einen M.Sc. in Klinischer Psychologie, ist ausgebildete Somatic-Experiencing-Praktikerin mit fortgeschrittener systemischer Ausbildung und verfügt über mehr als acht Jahre Erfahrung in der Begleitung von Menschen und Organisationen durch Veränderung.",
+        ],
+      },
+      {
+        heading: "Was die Praxis anbietet",
+        bullets: [
+          "Einzelberatung — Online-Sitzungen zu zweit (60 Minuten).",
+          "Paarberatung — Online-Sitzungen für Paare (60–120 Minuten).",
+          "Weekly Wellbeing Community — eine wöchentliche Online-Gruppe für Achtsamkeit und Wohlbefinden (dienstags, auf Englisch).",
+          "Für Organisationen — Impulsvorträge, Workshops, mehrtägige Trainings, 8-Wochen-Programme sowie vertrauliche Beratung für Mitarbeitende und Führungskräfte.",
+        ],
+      },
+      {
+        heading: "Format und Sprachen",
+        bullets: [
+          "Format: online (Video), weltweit. Die Arbeit mit Organisationen ist online oder vor Ort in Deutschland und der Schweiz möglich.",
+          "Sprachen: Englisch und Deutsch.",
+          "Verfügbarkeit: nach Vereinbarung.",
+        ],
+      },
+      {
+        heading: "Für wen es gedacht ist",
+        paras: [
+          "Die Praxis unterstützt hochfunktionale, kulturell vielfältige Internationals, Expats und Paare, die Veränderung, Übergänge, einen Umzug, Überforderung, Belastung, Beziehungsspannungen, Fragen von Identität und Ausrichtung sowie das Leben zwischen Ländern und Kulturen navigieren.",
+        ],
+      },
+      {
+        heading: "Ansatz",
+        paras: [
+          "Die Arbeit ist integrativ und kontextorientiert und schöpft aus systemischer Beratung, körperorientierter Achtsamkeit (Somatic Experiencing), Teilearbeit und achtsamkeitsbasierter Praxis — passend zum jeweiligen Menschen und nicht als eine einzelne feste Methode.",
+        ],
+      },
+      {
+        heading: "Wie man beginnt",
+        paras: [
+          "Der erste Schritt ist ein kostenloses 15-minütiges Kennenlerngespräch — ein entspanntes, unverbindliches Gespräch. Die Sitzungen sind Selbstzahlerleistungen. Anfragen erfolgen über die Kontaktseite.",
+        ],
+      },
+      {
+        heading: "Was Beratung ist — und was nicht",
+        paras: [
+          "Dies ist eine Beratungspraxis (Beratung). Beratung ist keine Psychotherapie, keine medizinische Versorgung und kein Ersatz für eine von beiden; sie umfasst keine Diagnose und keine medizinische Behandlung. In Krisensituationen oder bei dringendem Hilfebedarf wenden Sie sich bitte an den örtlichen Notruf oder an eine Krisenhotline (zum Beispiel 112 in der EU).",
+        ],
+      },
+      {
+        heading: "Wichtige Seiten",
+        bullets: [
+          "Über mich: /de/about — Hintergrund und Ansatz von Theresa.",
+          "Zusammenarbeit: /de/work-together — Einzel- und Paarberatung.",
+          "Organisationen: /de/organisations — Wohlbefinden am Arbeitsplatz für Teams.",
+          "Weekly Wellbeing: /de/weekly-wellbeing — die wöchentliche Online-Community.",
+          "Blog: /de/blog — Beiträge zu Stress, Überforderung, Beziehungen, Übergängen und dem Leben im Ausland.",
+          "FAQ: /de/faq — häufige Fragen zur Zusammenarbeit.",
+          "Kontakt: /de/contact — ein kostenloses Kennenlerngespräch buchen.",
+          "Englische Version: Jede Seite hat eine englische Entsprechung unter der Wurzel (diese Seite unter /ai-info).",
         ],
       },
     ],

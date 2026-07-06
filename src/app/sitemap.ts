@@ -27,5 +27,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
   ];
 
-  return [...staticEntries, ...blogEntries];
+  // AI / answer-engine resources.
+  const aiEntries: MetadataRoute.Sitemap = [
+    { url: `${SITE_URL}/llms.txt`, changeFrequency: "monthly", priority: 0.4 },
+    { url: `${SITE_URL}/llms-full.txt`, changeFrequency: "monthly", priority: 0.3 },
+  ];
+
+  return [...staticEntries, ...blogEntries, ...aiEntries];
 }

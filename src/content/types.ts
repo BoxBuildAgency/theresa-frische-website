@@ -281,6 +281,16 @@ export interface SiteContent {
     sections: { heading: string; paras: string[]; bullets?: string[] }[];
   };
 
+  aiInfo: {
+    metaTitle: string;
+    metaDescription: string;
+    eyebrow: string;
+    heading: string;
+    intro: string;
+    updated: string; // "Last reviewed: ..." line
+    sections: { heading: string; paras?: string[]; bullets?: string[] }[];
+  };
+
   notFound: {
     title: string;
     body: string;

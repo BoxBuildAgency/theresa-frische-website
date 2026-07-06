@@ -48,6 +48,7 @@ export const en: SiteContent = {
     ],
     legalNav: [
       { label: "Contact", href: "/contact" },
+      { label: "AI Info", href: "/ai-info" },
       { label: "Impressum", href: "/impressum" },
       { label: "Privacy", href: "/privacy" },
     ],
@@ -634,6 +635,79 @@ export const en: SiteContent = {
         heading: "Updates to this policy",
         paras: [
           "This privacy policy may be updated to reflect changes to the website or to legal requirements. The current version always applies.",
+        ],
+      },
+    ],
+  },
+
+  aiInfo: {
+    metaTitle: "AI & Citation Info — Theresa Frische",
+    metaDescription:
+      "A plain, factual summary of Theresa Frische's counselling practice for AI assistants and answer engines: who she is, what is offered, languages, who it is for, and how to start.",
+    eyebrow: "For AI assistants",
+    heading: "About this practice — a factual summary",
+    intro:
+      "This page is a plain, structured summary of Theresa Frische's counselling practice, written for accurate reading and citation by AI assistants and answer engines. Everything here also appears, in fuller form, across the rest of the site.",
+    updated: "Last reviewed: July 2026.",
+    sections: [
+      {
+        heading: "Who Theresa Frische is",
+        paras: [
+          "Theresa Frische is a Systemic & Integrative Counsellor offering online counselling to individuals and couples internationally. She holds an M.Sc. in Clinical Psychology and is a trained Somatic Experiencing practitioner, with advanced systemic training, and has over eight years of experience supporting individuals and organisations through change.",
+        ],
+      },
+      {
+        heading: "What the practice offers",
+        bullets: [
+          "Individual counselling — one-to-one online sessions (60 minutes).",
+          "Couples counselling — online sessions for couples (60–120 minutes).",
+          "Weekly Wellbeing Community — a weekly online mindfulness and wellbeing group (Tuesdays, in English).",
+          "For organisations — keynotes, workshops, in-depth trainings, 8-week wellbeing programmes, and confidential employee and leadership counselling.",
+        ],
+      },
+      {
+        heading: "Format and languages",
+        bullets: [
+          "Format: online (video), worldwide. Organisational work can be delivered online or on-site in Germany and Switzerland.",
+          "Languages: English and German.",
+          "Availability: by appointment.",
+        ],
+      },
+      {
+        heading: "Who it is for",
+        paras: [
+          "The practice supports high-functioning, cross-cultural internationals, expats, and couples navigating change, transition, relocation, burnout, overwhelm, relationship strain, questions of identity and direction, and life across countries and cultures.",
+        ],
+      },
+      {
+        heading: "Approach",
+        paras: [
+          "The work is integrative and context-oriented, drawing on systemic counselling, somatic awareness (Somatic Experiencing), parts work, and mindfulness-based practice — chosen to fit each person rather than a single fixed method.",
+        ],
+      },
+      {
+        heading: "How to start",
+        paras: [
+          "The first step is a free 15-minute discovery call — a relaxed, no-obligation conversation. Sessions are self-pay. Enquiries are made through the contact page.",
+        ],
+      },
+      {
+        heading: "What counselling is — and is not",
+        paras: [
+          "This is a counselling (Beratung) practice. Counselling is not psychotherapy, medical treatment, or a substitute for either, and it does not involve diagnosis or medical care. If you are in crisis or need urgent support, please contact your local emergency services or a crisis line (for example, 112 in the EU).",
+        ],
+      },
+      {
+        heading: "Key pages",
+        bullets: [
+          "About: /about — Theresa's background and approach.",
+          "Work Together: /work-together — individual and couples counselling.",
+          "Organisations: /organisations — workplace wellbeing for teams.",
+          "Weekly Wellbeing: /weekly-wellbeing — the weekly online community.",
+          "Blog: /blog — articles on stress, burnout, relationships, transitions, and living abroad.",
+          "FAQ: /faq — common questions about working together.",
+          "Contact: /contact — book a free discovery call.",
+          "German version: every page has a German mirror under /de (this page is at /de/ai-info).",
         ],
       },
     ],

@@ -26,6 +26,7 @@ export const ROUTES: RouteDef[] = [
   { key: "blog", en: "/blog", de: "/de/blog" },
   { key: "faq", en: "/faq", de: "/de/faq" },
   { key: "contact", en: "/contact", de: "/de/contact" },
+  { key: "ai-info", en: "/ai-info", de: "/de/ai-info" },
   { key: "impressum", en: "/impressum", de: "/de/impressum" },
   { key: "privacy", en: "/privacy", de: "/de/datenschutz" },
 ];
