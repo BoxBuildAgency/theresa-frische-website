@@ -96,27 +96,27 @@ export const faq2De: FaqCategory[] = [
     items: [
       {
         q: "Bei welchen Themen unterstützen Sie Einzelpersonen?",
-        a: "Ich unterstütze Menschen bei Stress, Überforderung und Erschöpfung, in Lebensübergängen, in Beziehungen, bei Fragen zu Identität und Orientierung, in den Herausforderungen eines internationalen Lebens und in ihrer persönlichen Entwicklung. Viele meiner Klient:innen sind sehr leistungsfähige Menschen, die nach außen alles im Griff zu haben scheinen und sich innerlich dennoch überdehnt fühlen. Die Beratung bietet Ihnen einen ruhigen, vertraulichen Raum, um innezuhalten, das Getragene zu sortieren und mit mehr Klarheit weiterzugehen.",
+        a: "Ich begleite Menschen bei Stress, Überforderung und Erschöpfung, in Lebensübergängen, in Beziehungen, bei Fragen zu Identität und Orientierung, in den Herausforderungen eines internationalen Lebens und in ihrer persönlichen Entwicklung. Viele meiner Klient:innen sind sehr leistungsfähige Menschen, die nach außen alles im Griff zu haben scheinen und sich innerlich dennoch am Limit fühlen. Die Beratung bietet Ihnen einen ruhigen, vertraulichen Raum, um innezuhalten, das Erlebte zu ordnen und mit mehr Klarheit weiterzugehen.",
       },
       {
         q: "Kann Beratung bei Erschöpfung und Überforderung helfen?",
-        a: "Ja. Sich dauerhaft ausgelaugt zu fühlen, ständig auf Reserve zu laufen oder nicht mehr abschalten zu können, erleben viele leistungsfähige Menschen, und das verdient es, ernst genommen zu werden. In der Beratung schauen wir behutsam, was Sie auslaugt, was Ihre Überforderung Ihnen mitteilen möchte und wie Sie Ihre Energie und Ihre Grenzen wieder aufbauen können. Das Ziel ist, dass Sie sich geerdeter, gestärkter und mehr im Einklang mit dem fühlen, was Ihnen wichtig ist.",
+        a: "Ja. Sich dauerhaft ausgelaugt zu fühlen, ständig auf Reserve zu laufen oder nicht mehr abschalten zu können, kennen viele leistungsfähige Menschen, und das sollte man ernst nehmen. In der Beratung schauen wir behutsam, was Sie auslaugt, was Ihre Überforderung Ihnen sagen möchte und wie Sie Ihre Energie und Ihre Grenzen wieder aufbauen können. Ziel ist, dass Sie sich geerdeter und gestärkter fühlen und wieder mehr im Einklang mit dem sind, was Ihnen wichtig ist.",
       },
       {
         q: "Ich funktioniere gut, bin aber erschöpft — ist das etwas für mich?",
-        a: "Auf jeden Fall. Viele Menschen, die zu mir kommen, wirken nach außen erfolgreich und verlässlich und fühlen sich innerlich müde, überdehnt oder abgeschnitten. Sie müssen sich nicht in einer Krise befinden, um von Beratung zu profitieren. Hier ist ein Raum, in dem Sie den Druck, weiter zu funktionieren, ablegen und sich einmal auf Ihr eigenes Wohlbefinden konzentrieren dürfen.",
+        a: "Auf jeden Fall. Viele Menschen, die zu mir kommen, wirken nach außen erfolgreich und verlässlich, fühlen sich innerlich aber müde, ausgelaugt oder abgeschnitten. Sie müssen nicht in einer Krise sein, um von einer Beratung zu profitieren. Hier ist ein Raum, in dem Sie den Druck, immer weiter funktionieren zu müssen, ablegen und sich einmal ganz auf Ihr eigenes Wohlbefinden konzentrieren dürfen.",
       },
       {
         q: "Kann Beratung bei einem großen Lebensübergang helfen?",
-        a: "Ja. Große Veränderungen wie eine neue Rolle, ein Umzug ins Ausland, die Elternschaft, das Ende einer Beziehung oder ein ungewisser nächster Abschnitt können verunsichern, selbst wenn die Veränderung eine positive ist. Beratung bietet verlässliche Begleitung, während Sie wieder Boden unter den Füßen und Ihre eigene Richtung finden. Gemeinsam schaffen wir Raum, um nachzudenken, sich einzustellen und in Ihrem eigenen Tempo weiterzugehen.",
+        a: "Ja. Große Veränderungen wie eine neue Aufgabe, ein Umzug ins Ausland, ein Kind, das Ende einer Beziehung oder ein ungewisser nächster Abschnitt können verunsichern, selbst wenn die Veränderung eine positive ist. Beratung bietet verlässliche Begleitung, während Sie wieder Boden unter den Füßen und Ihre eigene Richtung finden. Gemeinsam schaffen wir Raum, um nachzudenken, anzukommen und in Ihrem eigenen Tempo weiterzugehen.",
       },
       {
         q: "Kann Beratung mir bei Identität und Orientierung helfen?",
-        a: "Ja. Fragen wie wer bin ich jetzt, was will ich wirklich und wo gehöre ich hin tauchen häufig auf, besonders in Übergängen oder nachdem man jahrelang andere an die erste Stelle gesetzt hat. Beratung gibt Ihnen Raum, diesen Fragen ehrlich und ohne Druck nachzugehen. Mein Anliegen ist, dass Sie sich wieder mit Ihren eigenen Werten und Ihrer Orientierung verbinden, damit sich Ihre Entscheidungen mehr wie Ihre eigenen anfühlen.",
+        a: "Ja. Fragen wie „Wer bin ich jetzt?“, „Was will ich wirklich?“ und „Wo gehöre ich hin?“ tauchen häufig auf, besonders in Übergängen oder nachdem man jahrelang andere an die erste Stelle gesetzt hat. Beratung gibt Ihnen Raum, diesen Fragen ehrlich und ohne Druck nachzugehen. Mir ist wichtig, dass Sie wieder Zugang zu Ihren eigenen Werten und Ihrer Richtung finden, damit sich Ihre Entscheidungen wieder wie Ihre eigenen anfühlen.",
       },
       {
         q: "Kann Beratung mir helfen, mit Stress umzugehen?",
-        a: "Ja. Wenn sich Stress über längere Zeit aufbaut, kann er beeinflussen, wie Sie schlafen, denken, sich mit anderen verbinden und sich im Alltag fühlen. In der Beratung schauen wir, was Ihren Stress nährt, und finden praktische, tragfähige Wege, sich zu stabilisieren. Mit der Zeit erleben viele Klient:innen, dass sie sich ruhiger und klarer fühlen und mehr auf das Leben antworten können, statt nur zu reagieren.",
+        a: "Ja. Wenn sich Stress über längere Zeit anstaut, kann er beeinflussen, wie Sie schlafen, denken, mit anderen umgehen und sich im Alltag fühlen. In der Beratung schauen wir, was Ihren Stress nährt, und finden praktische, tragfähige Wege, wieder zur Ruhe zu kommen. Mit der Zeit erleben viele Klient:innen, dass sie ruhiger und klarer werden und dem Leben eher gelassen begegnen, statt nur zu reagieren.",
       },
     ],
   },
@@ -126,27 +126,27 @@ export const faq2De: FaqCategory[] = [
     items: [
       {
         q: "Wie läuft eine Paarberatung ab?",
-        a: "Die Paarberatung findet online per Video statt, sodass Sie sich von überall aus treffen können. Die Sitzungen bieten einen ruhigen, ausgewogenen Raum, in dem Sie beide offen sprechen und sich gehört fühlen können, während ich das Gespräch zwischen Ihnen begleite. Wir schauen auf die Muster in Ihrer Beziehung und arbeiten an mehr Verständnis, Verbindung und Kommunikation — mehr darüber, wie Sie [Distanz überwinden und als Paar wieder zueinanderfinden](/de/blog/growing-apart-growing-together), können Sie nachlesen. Alles geschieht in einem Tempo, das sich für Sie beide sicher und respektvoll anfühlt.",
+        a: "Die Paarberatung findet online per Video statt, sodass Sie sich von überall aus treffen können. Die Sitzungen bieten einen ruhigen, ausgewogenen Raum, in dem Sie beide offen sprechen und sich gehört fühlen, während ich das Gespräch zwischen Ihnen begleite. Wir schauen auf die Muster in Ihrer Beziehung und arbeiten an mehr Verständnis, Nähe und Kommunikation — mehr dazu, wie Sie [Distanz überwinden und als Paar wieder zueinanderfinden](/de/blog/growing-apart-growing-together), können Sie nachlesen. Alles geschieht in einem Tempo, das sich für Sie beide sicher und respektvoll anfühlt.",
       },
       {
         q: "Müssen beide Partner teilnehmen?",
-        a: "In der Regel nehmen beide Partner gemeinsam teil, da vieles aus dem Gespräch entsteht, das sich zwischen Ihnen entfaltet. Es ist jedoch völlig in Ordnung, wenn ein Partner allein beginnt, falls der andere noch nicht bereit oder für eine Sitzung nicht verfügbar ist. Auch der Beginn für sich allein kann hilfreiche Einsichten bringen und öffnet oft die Tür, später gemeinsam weiterzuarbeiten.",
+        a: "In der Regel nehmen beide Partner gemeinsam teil, denn vieles entsteht gerade aus dem Gespräch zwischen Ihnen. Es ist aber völlig in Ordnung, wenn eine:r von Ihnen allein beginnt, falls der oder die andere noch nicht so weit oder für eine Sitzung verhindert ist. Auch ein Beginn allein kann hilfreiche Erkenntnisse bringen und öffnet oft die Tür, später gemeinsam weiterzuarbeiten.",
       },
       {
         q: "Wobei kann eine Paarberatung helfen?",
-        a: "Paarberatung kann bei Kommunikationsschwierigkeiten, emotionaler Distanz, wiederkehrenden Konflikten und dem Wiederaufbau von Nähe und Verbindung helfen. Sie ist auch wertvoll in gemeinsamen Übergängen wie einem Umzug, neuen Familienphasen oder dem Leben über Kulturen und Zeitzonen hinweg. Was auch immer Sie beschäftigt, das Ziel ist, dass Sie einander besser verstehen und sich wieder mehr als ein Team fühlen.",
+        a: "Paarberatung kann bei Kommunikationsschwierigkeiten, emotionaler Distanz und wiederkehrenden Konflikten helfen und dabei, Nähe und Verbindung wieder aufzubauen. Wertvoll ist sie auch in gemeinsamen Übergängen wie einem Umzug, neuen Familienphasen oder einem Leben über Kulturen und Zeitzonen hinweg. Was auch immer Sie beschäftigt: Ziel ist, dass Sie einander besser verstehen und sich wieder mehr als Team erleben.",
       },
       {
         q: "Wie lange dauern Paarsitzungen?",
-        a: "Paarsitzungen dauern in der Regel zwischen 60 und 120 Minuten, je nachdem, was Ihnen entspricht und woran Sie arbeiten möchten. Das längere Format kann einem Paar mehr Raum geben, ein Thema in Ruhe und ohne Zeitdruck zu erkunden. Wir stimmen die passende Dauer gemeinsam ab, und sie lässt sich im Verlauf anpassen.",
+        a: "Paarsitzungen dauern in der Regel 60 bis 120 Minuten, je nachdem, was Ihnen entspricht und woran Sie arbeiten möchten. Das längere Format gibt Ihnen als Paar mehr Raum, ein Thema in Ruhe und ohne Zeitdruck zu vertiefen. Die passende Dauer stimmen wir gemeinsam ab, und sie lässt sich im Verlauf anpassen.",
       },
       {
         q: "Können wir aus verschiedenen Ländern oder Zeitzonen teilnehmen?",
-        a: "Ja. Da die Sitzungen online stattfinden, können Sie beide von unterschiedlichen Orten oder aus verschiedenen Zeitzonen teilnehmen und sich dennoch gemeinsam im selben virtuellen Raum treffen. Das eignet sich gut für Paare, die reisen, eine Zeit lang getrennt leben oder umziehen. Ich arbeite nach Absprache über Zeitzonen hinweg, mit Sitz in der mitteleuropäischen Zeit, sodass wir einen Termin finden, der für Sie beide passt.",
+        a: "Ja. Da die Sitzungen online stattfinden, können Sie beide von unterschiedlichen Orten oder aus verschiedenen Zeitzonen teilnehmen und sich trotzdem gemeinsam im selben virtuellen Raum treffen. Das eignet sich gut für Paare, die viel reisen, eine Zeit lang getrennt leben oder umziehen. Ich arbeite in der mitteleuropäischen Zeit (MEZ) und stimme Termine über Zeitzonen hinweg ab, sodass wir eine Zeit finden, die für Sie beide passt.",
       },
       {
         q: "Ist Paarberatung nur für Beziehungen in der Krise?",
-        a: "Nein. Paarberatung ist nicht nur für Beziehungen gedacht, die es schwer haben. Viele Paare kommen, um eine bereits gute Beziehung zu stärken, ihre Verbindung zu vertiefen oder einen gemeinsamen Übergang zu gestalten. Sie kann ein fürsorglicher, vorausschauender Weg sein, in jeder Phase in Ihre Beziehung zu investieren.",
+        a: "Nein. Paarberatung ist nicht nur für Beziehungen gedacht, die gerade in einer schwierigen Phase sind. Viele Paare kommen, um eine ohnehin gute Beziehung zu stärken, ihre Verbindung zu vertiefen oder einen gemeinsamen Übergang zu gestalten. Sie ist ein achtsamer, vorausschauender Weg, in jeder Phase in Ihre Beziehung zu investieren.",
       },
     ],
   },
@@ -155,24 +155,24 @@ export const faq2De: FaqCategory[] = [
     title: "International & Expat-Leben",
     items: [
       {
-        q: "Arbeiten Sie mit Expats und internationalen Menschen?",
-        a: "Ja. Die Begleitung von internationalen Menschen und Expats steht im Zentrum meiner Arbeit, und ich biete Sitzungen sowohl auf Englisch als auch auf Deutsch an. Ich kenne die besondere Mischung aus Chancen und Druck, die das Aufbauen eines Lebens fern der Heimat mit sich bringt. Ob Sie gerade angekommen, längst angekommen oder irgendwo dazwischen sind, Sie sind hier sehr willkommen.",
+        q: "Arbeiten Sie mit Expats und Internationals?",
+        a: "Ja. Die Begleitung von Expats und Internationals steht im Zentrum meiner Arbeit, und ich biete Sitzungen auf Deutsch und auf Englisch an. Ich kenne die besondere Mischung aus Chancen und Druck, die es mit sich bringt, sich fern der Heimat ein Leben aufzubauen. Ob Sie gerade erst angekommen, längst angekommen oder irgendwo dazwischen sind: Sie sind hier sehr willkommen.",
       },
       {
         q: "Können wir zusammenarbeiten, wenn ich in einem anderen Land lebe?",
-        a: "Ja. Alle Sitzungen finden online per Video statt, sodass wir zusammenarbeiten können, wo immer Sie auf der Welt sind. Ich begleite Klient:innen international und arbeite nach Absprache über Zeitzonen hinweg, mit Sitz in der mitteleuropäischen Zeit. Sie brauchen nur einen ungestörten Raum und eine stabile Verbindung.",
+        a: "Ja. Alle Sitzungen finden online per Video statt, sodass wir zusammenarbeiten können, wo immer auf der Welt Sie sind. Ich begleite Klient:innen international, arbeite in der mitteleuropäischen Zeit (MEZ) und stimme Termine über Zeitzonen hinweg ab. Sie brauchen nur einen ungestörten Ort und eine stabile Internetverbindung.",
       },
       {
         q: "Verstehen Sie die Herausforderungen des Lebens zwischen den Kulturen?",
-        a: "Ja. Das Leben zwischen den Kulturen kann ein leises Gefühl mit sich bringen, nirgends ganz dazuzugehören, verbunden mit Fragen zu Identität, Sprache und Zuhause. Viele internationale Menschen tragen diese Erfahrung, ohne sie je in Worte zu fassen. In der Beratung können wir erkunden, was das Leben zwischen den Welten für Sie bedeutet, und dazu beitragen, dass Sie sich in sich selbst mehr angekommen und zuhause fühlen.",
+        a: "Ja. Ein Leben zwischen den Kulturen kann ein leises Gefühl mit sich bringen, nirgends ganz dazuzugehören, dazu Fragen zu Identität, Sprache und Zuhause. Viele Internationals tragen diese Erfahrung mit sich, ohne sie je in Worte zu fassen. In der Beratung können wir erkunden, was das Leben zwischen den Welten für Sie bedeutet, und dazu beitragen, dass Sie in sich selbst mehr ankommen und sich zuhause fühlen.",
       },
       {
         q: "Können Sie bei Umzugsstress helfen?",
-        a: "Ja. Ein Umzug kann zugleich aufregend und erschöpfend sein und bringt praktische Umwälzungen, den Verlust vertrauter Unterstützung und viel Anpassung auf einmal mit sich. Beratung bietet verlässliche Begleitung, während Sie an einem neuen Ort Boden unter den Füßen finden. Gemeinsam können wir die Überforderung lindern und dazu beitragen, dass Sie sich wieder mit einem Gefühl von Stabilität und Orientierung verbinden.",
+        a: "Ja. Ein Umzug kann aufregend und erschöpfend zugleich sein: praktische Umwälzungen, der Verlust vertrauter Unterstützung und viel Anpassung auf einmal. Beratung bietet verlässliche Begleitung, während Sie an einem neuen Ort Boden unter den Füßen finden. Gemeinsam können wir die Überforderung lindern und dazu beitragen, dass Sie wieder Stabilität und Orientierung spüren.",
       },
       {
         q: "Arbeiten Sie mit interkulturellen Paaren?",
-        a: "Ja. Interkulturelle Paare bewegen sich oft zwischen Unterschieden in Sprache, familiären Erwartungen und Vorstellungen von Zuhause, was einer Beziehung ebenso Reichtum wie Reibung geben kann. Ich arbeite mit Paaren auf Englisch und auf Deutsch und kann Sie online über verschiedene Orte und Zeitzonen hinweg begleiten. Mein Anliegen ist, dass Sie einander tiefer verstehen und eine gemeinsame Art zu leben aufbauen, die Sie beide würdigt.",
+        a: "Ja. Interkulturelle Paare begegnen oft Unterschieden in Sprache, familiären Erwartungen und Vorstellungen von Zuhause, was eine Beziehung ebenso bereichern wie belasten kann. Ich arbeite mit Paaren auf Deutsch und auf Englisch und kann Sie online über verschiedene Orte und Zeitzonen hinweg begleiten. Mir ist wichtig, dass Sie einander tiefer verstehen und eine gemeinsame Art zu leben finden, die Sie beide würdigt.",
       },
     ],
   },

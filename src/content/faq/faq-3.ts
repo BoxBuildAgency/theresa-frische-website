@@ -96,27 +96,27 @@ export const faq3De: FaqCategory[] = [
     items: [
       {
         q: "Wie sieht Ihr grundsätzlicher Ansatz aus?",
-        a: "Meine Arbeit ist integrativ und kontextorientiert, das heißt, ich greife auf verschiedene Arbeitsweisen zurück, anstatt einer festen Methode zu folgen. Ich verbinde Systemische Beratung, Körperbewusstsein (Somatic Experiencing), Teilearbeit und achtsamkeitsbasierte Praxis und gestalte unsere Sitzungen ganz auf Sie als Person abgestimmt. Mir ist wichtig, Sie dort abzuholen, wo Sie gerade stehen, und so zu arbeiten, dass es sich unterstützend und geerdet anfühlt.",
+        a: "Meine Arbeit ist integrativ und kontextorientiert, das heißt, ich greife auf verschiedene Arbeitsweisen zurück, statt einer festen Methode zu folgen. Ich verbinde systemische Beratung, Körperwahrnehmung (Somatic Experiencing), Teilearbeit und achtsamkeitsbasierte Praxis und gestalte unsere Sitzungen ganz auf Sie als Person abgestimmt. Mir ist wichtig, Sie dort abzuholen, wo Sie gerade stehen, und so zu arbeiten, dass es sich unterstützend und geerdet anfühlt.",
       },
       {
         q: "Folgen Sie einer Methode oder mehreren?",
-        a: "Mehreren. Statt eine einzelne Technik anzuwenden, verwebe ich verschiedene Ansätze, je nachdem, was für Sie und Ihre Situation am hilfreichsten erscheint. So bleibe ich flexibel und feinfühlig, und unsere Arbeit kann sich anpassen, wenn sich Ihre Bedürfnisse mit der Zeit verändern.",
+        a: "Mehreren. Statt nur eine Technik anzuwenden, verbinde ich verschiedene Ansätze, je nachdem, was für Sie und Ihre Situation am hilfreichsten ist. So bleibe ich flexibel und feinfühlig, und unsere Arbeit kann sich mit Ihren Bedürfnissen verändern.",
       },
       {
         q: "Was ist Somatic Experiencing?",
-        a: "Somatic Experiencing ist eine körperorientierte Arbeitsweise mit Stress und überfordernden Erfahrungen. Sie unterstützt das Nervensystem behutsam dabei, zu mehr Regulation und einem Gefühl von Geerdetsein zu finden. Indem wir wahrnehmen, was im Körper geschieht, können mehr Leichtigkeit, Stabilität und Wahlfreiheit entstehen. Für eine ausführlichere Einführung können Sie lesen, [was Somatic Experiencing ist und wie es bei Stress hilft](/de/blog/what-is-somatic-experiencing).",
+        a: "Somatic Experiencing ist eine körperorientierte Arbeitsweise mit Stress und überfordernden Erfahrungen. Sie unterstützt das Nervensystem behutsam dabei, wieder in Regulation und ins Gleichgewicht zu kommen. Indem wir wahrnehmen, was im Körper geschieht, können mehr Leichtigkeit, Stabilität und Wahlfreiheit entstehen. Eine ausführlichere Einführung finden Sie hier: [Was Somatic Experiencing ist und wie es bei Stress hilft](/de/blog/what-is-somatic-experiencing).",
       },
       {
         q: "Was ist systemische Beratung?",
-        a: "Systemische Beratung erkundet die relationalen und kontextuellen Muster in Ihrem Leben und wie diese Ihr Erleben prägen. Sie betrachtet die Verbindungen zwischen Ihnen und den Menschen und Umfeldern um Sie herum, statt etwas isoliert zu sehen. Dieser weitere Blick bringt oft neues Verständnis und neue Möglichkeiten mit sich.",
+        a: "Die systemische Beratung schaut auf die Muster in Ihren Beziehungen und Lebenszusammenhängen und darauf, wie diese Ihr Erleben prägen. Sie betrachtet die Verbindungen zwischen Ihnen und den Menschen und Umfeldern um Sie herum, statt etwas losgelöst zu sehen. Dieser weitere Blick bringt oft neues Verständnis und neue Möglichkeiten mit sich.",
       },
       {
         q: "Was ist Teilearbeit?",
-        a: "Teilearbeit ist eine Möglichkeit, die verschiedenen Anteile in Ihnen mit Neugier und Mitgefühl zu erkunden. Wir schaffen Raum für die unterschiedlichen inneren Stimmen und Reaktionen, die Sie in sich tragen, und begegnen ihnen mit Freundlichkeit statt mit Wertung. Das kann Ihnen helfen, sich mit sich selbst wohler und ganzer zu fühlen.",
+        a: "Teilearbeit ist eine Möglichkeit, die verschiedenen Anteile in Ihnen mit Neugier und Mitgefühl zu erkunden. Wir schaffen Raum für die unterschiedlichen inneren Stimmen und Reaktionen, die Sie in sich tragen, und begegnen ihnen mit Freundlichkeit statt mit Wertung. Das kann Ihnen helfen, sich mit sich selbst wohler und im Einklang zu fühlen.",
       },
       {
         q: "Wie setzen Sie Achtsamkeit ein?",
-        a: "Ich greife auf achtsamkeitsbasierte Praxis zurück, um Ihnen zu helfen, ein Bewusstsein für Ihre Gedanken und Ihre Reaktivität zu entwickeln. Wenn dieses Bewusstsein wächst, entsteht ein wenig mehr Raum und damit mehr Wahlfreiheit darin, wie Sie reagieren. Mit der Zeit kann daraus ein ruhigeres, stabileres Verhältnis zum Alltag entstehen.",
+        a: "Ich greife auf achtsamkeitsbasierte Praxis zurück, um Ihnen zu helfen, Ihre Gedanken und automatischen Reaktionen bewusster wahrzunehmen. Wächst dieses Bewusstsein, entsteht ein wenig mehr Raum und damit mehr Freiheit, wie Sie reagieren. Mit der Zeit kann daraus ein ruhigeres, stabileres Verhältnis zum Alltag werden.",
       },
     ],
   },
@@ -126,23 +126,23 @@ export const faq3De: FaqCategory[] = [
     items: [
       {
         q: "Was ist die Weekly Wellbeing Community?",
-        a: "Die Weekly Wellbeing Community ist eine ruhige, wöchentliche Online-Gruppe für Achtsamkeit, Stressreduktion und Verbundenheit in der Gemeinschaft. Sie ist ein sanfter, einladender Raum, um innezuhalten, durchzuatmen und sich gemeinsam mit anderen neu zu verbinden. Sie sind herzlich eingeladen, so zu kommen, wie Sie sind.",
+        a: "Die Weekly Wellbeing Community ist eine ruhige, wöchentliche Online-Gruppe für Achtsamkeit, Stressreduktion und Verbundenheit. Sie ist ein sanfter, einladender Raum, um innezuhalten, durchzuatmen und gemeinsam mit anderen wieder zu sich zu finden. Sie sind herzlich eingeladen, so zu kommen, wie Sie sind.",
       },
       {
         q: "Wann findet die Gruppe statt?",
-        a: "Die Gruppe trifft sich jeden Dienstag von 20:30 bis 21:30 Uhr. Sie findet online über Teams statt, sodass Sie bequem von überall aus teilnehmen können.",
+        a: "Die Gruppe trifft sich jeden Dienstag von 20:30 bis 21:30 Uhr. Sie findet online über Teams statt, sodass Sie bequem von überall teilnehmen können.",
       },
       {
         q: "Wie kann ich teilnehmen?",
-        a: "Um teilzunehmen, nehmen Sie einfach über die Kontaktseite Kontakt auf, und ich sende Ihnen den Link zu. Ich würde mich freuen, Sie in der Gruppe willkommen zu heißen.",
+        a: "Melden Sie sich einfach über die Kontaktseite, und ich sende Ihnen den Link zu. Ich freue mich, Sie in der Gruppe begrüßen zu dürfen.",
       },
       {
         q: "Wie ist das Format, und ist die Teilnahme kostenlos?",
-        a: "Es ist eine entspannte, wöchentliche Online-Sitzung auf Englisch über Teams, mit Fokus auf Achtsamkeit, Stressreduktion und Verbundenheit mit anderen. Für aktuelle Details, auch zur Teilnahme, nehmen Sie gern über die Kontaktseite Kontakt auf, und ich teile Ihnen sehr gerne alles Weitere mit.",
+        a: "Es ist ein entspanntes, wöchentliches Online-Treffen auf Englisch über Teams, mit Fokus auf Achtsamkeit, Stressreduktion und Verbundenheit. Für aktuelle Details, auch zur Teilnahme, melden Sie sich gern über die Kontaktseite, und ich teile Ihnen sehr gern alles Weitere mit.",
       },
       {
         q: "Brauche ich Erfahrung mit Achtsamkeit?",
-        a: "Überhaupt nicht. Es ist keine Erfahrung nötig, und die Gruppe steht sowohl völligen Anfänger:innen als auch Menschen mit bestehender Praxis offen. Sie sind genau so willkommen, wie Sie sind.",
+        a: "Überhaupt nicht. Vorerfahrung ist nicht nötig, und die Gruppe steht völligen Anfänger:innen ebenso offen wie Menschen mit bestehender Praxis. Sie sind genau so willkommen, wie Sie sind.",
       },
     ],
   },
@@ -152,27 +152,27 @@ export const faq3De: FaqCategory[] = [
     items: [
       {
         q: "Arbeiten Sie mit Unternehmen?",
-        a: "Ja. Ich arbeite mit Unternehmen und Institutionen in Deutschland und der Schweiz, sowohl online als auch vor Ort. Mein Fokus liegt auf Wohlbefinden am Arbeitsplatz und darauf, Menschen und Teams dabei zu unterstützen, sich stabiler, gestärkter und verbundener zu fühlen.",
+        a: "Ja. Ich arbeite mit Unternehmen und Institutionen in Deutschland und der Schweiz, online wie vor Ort. Mein Fokus liegt auf Wohlbefinden am Arbeitsplatz und darauf, Menschen und Teams zu unterstützen, sich stabiler, gestärkter und verbundener zu fühlen.",
       },
       {
         q: "Welche Formate bieten Sie für Organisationen an?",
-        a: "Ich biete Keynote-Vorträge von 30 bis 60 Minuten, Workshops und Seminare von 2 bis 4 Stunden, vertiefende Trainings von 1 bis 3 Tagen sowie strukturierte 8-Wochen-Programme an. Darüber hinaus biete ich vertrauliche Mitarbeiterberatung und Führungskräfteberatung im Rahmen eines Employee Assistance Programme (EAP). Das passende Format gestalten wir gern gemeinsam, abgestimmt auf Ihre Organisation.",
+        a: "Ich biete Keynote-Vorträge von 30 bis 60 Minuten, Workshops und Seminare von 2 bis 4 Stunden, vertiefende Trainings von 1 bis 3 Tagen sowie strukturierte 8-Wochen-Programme an. Darüber hinaus biete ich vertrauliche Beratung für Mitarbeitende und Führungskräfte im Rahmen eines Employee Assistance Programme (EAP) an. Das passende Format gestalten wir gern gemeinsam, abgestimmt auf Ihre Organisation.",
       },
       {
-        q: "Können Sie einen einzelnen Workshop oder Keynote durchführen?",
-        a: "Ja. Einzelne Keynotes und Workshops sind sehr willkommen, ebenso wie längere Programme, wenn Sie etwas Vertiefenderes wünschen. Wir können mit einer einzelnen Sitzung beginnen und darauf aufbauen, wenn es sich als sinnvoll erweist.",
+        q: "Können Sie eine einzelne Keynote oder einen einzelnen Workshop durchführen?",
+        a: "Ja. Einzelne Keynotes und Workshops sind sehr willkommen, ebenso längere Programme, wenn Sie etwas Vertiefenderes wünschen. Wir können mit einem einzelnen Termin beginnen und darauf aufbauen, wenn es sich als sinnvoll erweist.",
       },
       {
         q: "Bieten Sie Unterstützung für Mitarbeitende oder Führungskräfte (EAP) an?",
-        a: "Ja. Im Rahmen eines Employee Assistance Programme (EAP) biete ich vertrauliche Mitarbeiterberatung und Führungskräfteberatung an. Das gibt Ihren Mitarbeitenden einen unterstützenden, geschützten Raum, um Dinge zu besprechen und wieder festeren Boden unter den Füßen zu finden.",
+        a: "Ja. Im Rahmen eines Employee Assistance Programme (EAP) biete ich vertrauliche Beratung für Mitarbeitende und Führungskräfte an. Das gibt Ihren Mitarbeitenden einen unterstützenden, geschützten Raum, um Dinge zu besprechen und wieder festeren Boden unter den Füßen zu finden.",
       },
       {
         q: "Finden die Sitzungen für Organisationen online oder vor Ort statt?",
-        a: "Beides. Ich arbeite mit Organisationen online oder vor Ort, ganz wie es Ihnen am besten passt. Wir wählen den Rahmen, der zu Ihrem Team, Ihrem Standort und dem gewünschten Format passt.",
+        a: "Beides. Ich arbeite mit Organisationen online oder vor Ort, ganz wie es Ihnen am besten passt. Gemeinsam wählen wir den Rahmen, der zu Ihrem Team, Ihrem Standort und dem gewünschten Format passt.",
       },
       {
         q: "Welche Themen decken Sie für Teams ab?",
-        a: "Zu den Themen gehören Stress- und Burnout-Prävention, emotionale Regulation, Achtsamkeit am Arbeitsplatz, Kommunikation und Teamdynamik, positive Psychologie, Resilienz und Wandel sowie Nervensystem-Regulation. Diese unterstützen mentale Gesundheit am Arbeitsplatz und das alltägliche Wohlbefinden im Team. Den Schwerpunkt stimmen wir gern darauf ab, was Ihre Mitarbeitenden am meisten brauchen.",
+        a: "Zu den Themen gehören Stress- und Burnout-Prävention, Emotionsregulation, Achtsamkeit am Arbeitsplatz, Kommunikation und Teamdynamik, positive Psychologie, Resilienz und Veränderung sowie die Regulation des Nervensystems. Sie fördern die mentale Gesundheit am Arbeitsplatz und das alltägliche Wohlbefinden im Team. Den Schwerpunkt stimmen wir gern darauf ab, was Ihre Mitarbeitenden am meisten brauchen.",
       },
     ],
   },

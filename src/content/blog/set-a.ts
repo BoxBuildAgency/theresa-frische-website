@@ -348,53 +348,53 @@ export const setADe: BlogPost[] = [
   {
     slug: "built-a-life-abroad-not-at-home",
     title:
-      "Wenn Sie sich im Ausland ein Leben aufgebaut haben, sich aber nicht zu Hause fühlen",
+      "Wenn Sie sich im Ausland ein Leben aufgebaut haben und sich trotzdem nicht zu Hause fühlen",
     category: "Expat-Leben",
     date: "2026-04-02",
     readingTime: "6",
     excerpt:
-      "Warum emotionale Einsamkeit in einem neuen Land fortbestehen kann und wie sich subtile Entfremdung im Alltag von Expats zeigt.",
+      "Warum emotionale Einsamkeit in einem neuen Land bleiben kann und wie sich eine leise Entfremdung im Alltag von Expats zeigt.",
     body: [
       {
         type: "p",
-        text: "Auf dem Papier funktioniert alles. Sie haben die Wohnung, den Job, die Routine, vielleicht die Partnerschaft und die Freund:innen, mit denen Sie sich zum Essen treffen. Sie wissen, wo es das gute Brot gibt, und können sich über das Wetter beschweren wie ein:e Einheimische:r. Und doch gibt es unter all dieser Kompetenz ein leises Gefühl, dass Sie noch immer ein wenig außerhalb Ihres eigenen Lebens stehen.",
+        text: "Auf dem Papier stimmt alles. Sie haben die Wohnung, den Job, den Alltag, vielleicht die Partnerschaft und die Freund:innen, mit denen Sie sich zum Essen treffen. Sie wissen, wo es das gute Brot gibt, und können übers Wetter schimpfen wie ein:e Einheimische:r. Und doch bleibt unter all dieser Selbstverständlichkeit ein leises Gefühl, noch immer ein Stück weit neben dem eigenen Leben zu stehen.",
       },
       {
         type: "p",
-        text: "Das ist eine der häufigsten Erfahrungen, die Internationals in die Beratung mitbringen, und eine der am wenigsten besprochenen. Emotionale Einsamkeit in einem neuen Land ist nicht dasselbe wie Alleinsein. Sie können von Menschen umgeben sein und dennoch spüren, dass niemand Sie wirklich kennt und dass Sie sich selbst nicht mehr ganz kennen.",
+        text: "Das ist eine der häufigsten Erfahrungen, die Internationals in die Beratung mitbringen — und eine, über die kaum jemand spricht. Emotionale Einsamkeit in einem neuen Land ist etwas anderes als Alleinsein. Sie können von Menschen umgeben sein und trotzdem spüren, dass niemand Sie wirklich kennt und dass Sie sich selbst nicht mehr ganz kennen.",
       },
       {
         type: "h2",
-        text: "Gut funktionieren ist nicht dasselbe wie sich zu Hause fühlen",
+        text: "Gut funktionieren heißt nicht, sich zu Hause zu fühlen",
       },
       {
         type: "p",
-        text: "Die meisten leistungsfähigen Internationals können sehr gut ein Leben aufbauen. Sie kommen an, organisieren, passen sich an. Kompetenz kann jedoch leise zur Maske werden. Es ist durchaus möglich, ein volles, erfolgreiches Leben im Ausland zu führen und sich darin trotzdem getrennt zu fühlen. Wenn Ihnen diese Lücke zwischen dem Funktionieren und dem Fühlen bekannt vorkommt, hilft Ihnen vielleicht unser Beitrag über [den Unterschied zwischen gut funktionieren und sich gut fühlen](/de/blog/functioning-well-vs-feeling-well).",
+        text: "Die meisten Internationals, die viel leisten, können hervorragend ein Leben aufbauen. Sie kommen an, organisieren sich, passen sich an. Doch dieses Können kann unmerklich zur Maske werden. Es ist gut möglich, ein volles, erfolgreiches Leben im Ausland zu führen und sich mitten darin nicht verbunden zu fühlen. Wenn Ihnen dieser Abstand zwischen dem Funktionieren und dem Fühlen bekannt vorkommt, hilft Ihnen vielleicht unser Beitrag darüber, [warum gut funktionieren nicht heißt, dass es einem gut geht](/de/blog/functioning-well-vs-feeling-well).",
       },
       {
         type: "p",
-        text: "Die Einsamkeit, die hier fortbesteht, entsteht selten aus einem Mangel an Aktivität. Es geht um einen Mangel an mühelosem Dazugehören: die Freundschaften, die ohne Terminplanung entstanden, die gemeinsamen Bezüge, das Gefühl, verstanden zu werden, ohne erst den ganzen Kontext erklären zu müssen.",
+        text: "Die Einsamkeit, die hier bleibt, hat selten mit zu wenig Aktivität zu tun. Es fehlt vielmehr das mühelose Dazugehören: Freundschaften, die ganz von selbst entstanden, gemeinsame Anspielungen, das Gefühl, verstanden zu werden, ohne erst den ganzen Hintergrund erklären zu müssen.",
       },
       {
         type: "h2",
-        text: "Die kleinen täglichen Entfremdungen",
+        text: "Die kleinen Entfremdungen im Alltag",
       },
       {
         type: "p",
-        text: "Emotionale Distanz im Ausland zeigt sich meist nicht in dramatischen Momenten, sondern in kleinen, sich summierenden. Ein Witz, der anders ankommt. Ein Formular, das Sie nicht lesen können. Ein Gespräch, in dem Sie jedem Wort folgen und den Sinn darunter trotzdem verfehlen. Jedes für sich ist geringfügig. Zusammen ergeben sie über Monate eine leise Erschöpfung, die viele Menschen nicht recht benennen können.",
+        text: "Emotionale Distanz im Ausland zeigt sich meist nicht in großen Momenten, sondern in kleinen, die sich summieren. Ein Witz, der anders ankommt. Ein Formular, mit dem Sie nichts anfangen können. Ein Gespräch, in dem Sie jedem Wort folgen und den Sinn darunter trotzdem nicht fassen. Für sich genommen ist jedes eine Kleinigkeit. Über Monate ergeben sie zusammen eine leise Erschöpfung, die viele nicht recht in Worte fassen können.",
       },
       {
         type: "ul",
         items: [
-          "Sie bemerken, dass Sie alltägliche Gespräche im Kopf durchgehen, bevor Sie sie führen",
-          "Sie fühlen sich nur dann ganz Sie selbst, wenn Sie Ihre Muttersprache sprechen, was nun selten vorkommt",
-          "Sie spüren, dass Ihre engsten Menschen zu Hause Ihren Alltag nicht mehr ganz verstehen",
-          "Sie sind überall kompetent und nirgendwo geborgen",
+          "Sie merken, dass Sie ganz alltägliche Gespräche im Kopf durchspielen, bevor Sie sie führen",
+          "Ganz Sie selbst fühlen Sie sich nur in Ihrer Muttersprache — die Sie kaum noch sprechen",
+          "Sie spüren, dass die Menschen, die Ihnen zu Hause am nächsten sind, Ihren Alltag nicht mehr ganz nachvollziehen können",
+          "Überall kommen Sie zurecht, und nirgends fühlen Sie sich geborgen",
         ],
       },
       {
         type: "p",
-        text: "Sprach- und Kulturmüdigkeit ist real. Den ganzen Tag in einer zweiten Sprache zu agieren kostet still Kraft, selbst wenn Sie fließend sprechen. Es verbraucht Energie, die früher frei war, und diese freie Kapazität haben Sie oft in Verbindung investiert.",
+        text: "Diese Erschöpfung durch Sprache und Kultur ist nicht eingebildet. Den ganzen Tag in einer zweiten Sprache unterwegs zu sein, kostet leise Kraft, auch wenn Sie sie fließend beherrschen. Es verbraucht Energie, die früher einfach da war — und genau diese Reserve haben Sie sonst in Nähe und Kontakt gesteckt.",
       },
       {
         type: "h2",
@@ -402,15 +402,15 @@ export const setADe: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Die gute Nachricht ist, dass Zugehörigkeit wieder aufgebaut werden kann, allerdings meist nicht dadurch, dass man sich mehr um Geselligkeit bemüht. Sie wächst aus kleinerem, ehrlicherem Kontakt: aus Beziehungen, in denen Sie müde, unsicher oder heimwehkrank sein dürfen, ohne etwas vorzuspielen. Sie wächst auch aus Ihrer Beziehung zu sich selbst und aus dem Wiederherstellen der alltäglichen Gewohnheiten, die Sie stabil halten.",
+        text: "Die gute Nachricht: Zugehörigkeit lässt sich wieder aufbauen — nur meist nicht dadurch, dass man sich noch mehr um Geselligkeit bemüht. Sie wächst aus kleineren, ehrlicheren Begegnungen: aus Beziehungen, in denen Sie müde, unsicher oder von Heimweh geplagt sein dürfen, ohne etwas vorzuspielen. Und sie wächst aus Ihrem Verhältnis zu sich selbst und daraus, die alltäglichen Gewohnheiten zurückzuholen, die Ihnen Halt geben.",
       },
       {
         type: "p",
-        text: "Praktiken, die Ihr Nervensystem regulieren, statt nur Ihren Kalender zu füllen, helfen meist am meisten. Einfache, wiederholbare Momente der Erdung können einen neuen Ort weniger wie eine Bühne und mehr wie ein Zuhause wirken lassen. Wenn Sie sich dabei strukturierte Unterstützung wünschen, ist unser [wöchentliches Wohlbefinden](/de/weekly-wellbeing) genau um solche sanften, tragfähigen Rhythmen herum aufgebaut.",
+        text: "Am meisten helfen meist die Dinge, die Ihr Nervensystem beruhigen, statt bloß den Kalender zu füllen. Einfache Momente der Erdung, die sich wiederholen lassen, können einen neuen Ort weniger wie eine Bühne und mehr wie ein Zuhause wirken lassen. Wenn Sie sich dabei einen festen Rahmen wünschen, ist unser Angebot [Wöchentliches Wohlbefinden](/de/weekly-wellbeing) genau um solche sanften, tragfähigen Rhythmen herum aufgebaut.",
       },
       {
         type: "quote",
-        text: "Zugehörigkeit ist nichts, was Sie arrangieren. Sie ist etwas, das Sie zulassen, ein ehrliches Gespräch nach dem anderen.",
+        text: "Zugehörigkeit lässt sich nicht organisieren. Sie ist etwas, das Sie zulassen — ein ehrliches Gespräch nach dem anderen.",
         attribution: "Theresa Frische",
       },
       {
@@ -419,89 +419,89 @@ export const setADe: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Es gibt keine Schwelle, die Sie erreichen müssen, bevor Sie sich melden. Doch wenn die Entfremdung anhaltend geworden ist, wenn sie Ihre Stimmung, Ihren Schlaf oder Ihr Gefühl von Zuversicht dämpft, kann es helfen, mit jemandem darüber zu sprechen, der das Terrain kennt. Beratung bietet einen Raum, die Einsamkeit zu verstehen, statt sie zu übergehen.",
+        text: "Es gibt keine Schwelle, die Sie erst erreichen müssten, bevor Sie sich melden dürfen. Doch wenn die Entfremdung anhält, wenn sie auf Ihre Stimmung, Ihren Schlaf oder Ihre Zuversicht drückt, kann es guttun, mit jemandem darüber zu sprechen, der dieses Terrain kennt. Beratung bietet einen Raum, die Einsamkeit zu verstehen, statt sich über sie hinwegzusetzen.",
       },
       {
         type: "p",
-        text: "Wenn Ihnen etwas davon vertraut vorkommt, sind Sie herzlich eingeladen, [ein kostenloses Kennenlerngespräch zu buchen](/de/contact) und zu sehen, ob sich [die Einzelberatung](/de/work-together) stimmig anfühlt. Sich fehl am Platz zu fühlen, nachdem man sich im Ausland ein ganzes Leben aufgebaut hat, ist kein Scheitern der Anpassung. Es ist ein sehr menschliches Signal, dass Verbindung, und nicht nur Kompetenz, Ihre Aufmerksamkeit verdient.",
+        text: "Wenn Ihnen etwas davon vertraut vorkommt, sind Sie herzlich eingeladen, [ein kostenloses Kennenlerngespräch zu buchen](/de/contact) und zu schauen, ob sich [die Einzelberatung](/de/work-together) für Sie stimmig anfühlt. Sich fehl am Platz zu fühlen, nachdem man sich im Ausland ein ganzes Leben aufgebaut hat, ist kein Scheitern beim Ankommen. Es ist ein sehr menschliches Signal, dass Verbindung — und nicht nur Tüchtigkeit — Ihre Aufmerksamkeit verdient.",
       },
     ],
   },
   {
     slug: "growing-apart-growing-together",
     title:
-      "Auseinanderwachsen, Zusammenwachsen: Distanz in langjährigen Beziehungen navigieren",
+      "Auseinanderwachsen, zusammenwachsen: Was hilft, wenn sich in einer langen Beziehung Distanz einschleicht",
     category: "Beziehungen",
     date: "2026-03-18",
     readingTime: "6",
     excerpt:
-      "Emotionale Distanz in Paaren verstehen und praktische erste Schritte zurück zur Verbindung.",
+      "Emotionale Distanz in Paaren verstehen — und erste, praktische Schritte zurück zueinander.",
     body: [
       {
         type: "p",
-        text: "Nur wenige Paare entfernen sich absichtlich voneinander. Es geschieht allmählich, in den Zwischenräumen geschäftiger Wochen und geteilter Organisation, bis Sie eines Tages über den Tisch blicken und merken, dass Sie viel mehr gemeinsam einen Haushalt führen, als sich einander wirklich zu begegnen.",
+        text: "Nur wenige Paare entfernen sich mit Absicht voneinander. Es passiert nach und nach, in den Lücken zwischen vollen Wochen und geteilter Organisation, bis Sie eines Tages über den Tisch schauen und merken: Sie führen viel eher gemeinsam einen Haushalt, als dass Sie einander wirklich begegnen.",
       },
       {
         type: "p",
-        text: "Emotionale Distanz in einer langjährigen Beziehung ist verbreitet, und sie ist für sich genommen kein Zeichen dafür, dass etwas zerbrochen ist. Oft ist sie ein Zeichen dafür, dass zwei Menschen weitergewachsen sind, manchmal in unterschiedliche Richtungen, ohne innezuhalten, um zu aktualisieren, wie sie einander kennen.",
+        text: "Emotionale Distanz in einer langen Beziehung ist etwas ganz Verbreitetes, und für sich genommen ist sie kein Zeichen dafür, dass etwas zerbrochen wäre. Oft heißt sie schlicht, dass zwei Menschen sich weiterentwickelt haben, manchmal in unterschiedliche Richtungen, ohne zwischendurch innezuhalten und nachzuholen, wie gut sie einander eigentlich noch kennen.",
       },
       {
         type: "h2",
-        text: "Wie Distanz leise entsteht",
+        text: "Wie sich Distanz leise einschleicht",
       },
       {
         type: "p",
-        text: "Distanz kündigt sich selten an. Sie sammelt sich durch kleine Auslassungen: die Gespräche, die Sie gar nicht mehr beginnen, die Gefühle, die Sie lieber nicht erwähnen, weil es spät ist, die Annahme, dass Ihr:e Partner:in ohnehin weiß, was Sie meinen. Mit der Zeit verhärten sich diese Lücken zu einer Art höflichem Nebeneinanderher-Leben.",
+        text: "Distanz kündigt sich selten an. Sie sammelt sich in lauter kleinen Auslassungen: die Gespräche, die Sie gar nicht erst anfangen, die Gefühle, die Sie lieber nicht ansprechen, weil es schon spät ist, die Annahme, der oder die andere wisse ohnehin, was Sie meinen. Mit der Zeit verfestigen sich diese Lücken zu einem höflichen Nebeneinanderher.",
       },
       {
         type: "ul",
         items: [
           "Gespräche, die an der Oberfläche von Terminen und To-do-Listen bleiben",
-          "Das Gefühl, eher effiziente Mitverwalter:innen als enge Vertraute zu sein",
+          "Das Gefühl, eher ein eingespieltes Organisationsteam zu sein als ein vertrautes Paar",
           "Bestimmte Themen zu meiden, weil sie scheinbar zu nichts Gutem führen",
-          "Ein Gefühl, einander zu vermissen, obwohl Sie im selben Raum sind",
+          "Einander zu vermissen, obwohl Sie im selben Raum sitzen",
         ],
       },
       {
         type: "p",
-        text: "Nichts davon bedeutet, dass die Verbindung verschwunden ist. Es bedeutet, dass sie leise geworden ist, und Leises lässt sich mit Aufmerksamkeit wieder lauter stellen.",
+        text: "Nichts davon heißt, dass die Verbindung weg ist. Es heißt, dass sie leise geworden ist — und Leises lässt sich mit Aufmerksamkeit wieder lauter stellen.",
       },
       {
         type: "h2",
-        text: "Auseinanderwachsen und Zusammenwachsen sind keine Gegensätze",
+        text: "Auseinanderwachsen und zusammenwachsen sind keine Gegensätze",
       },
       {
         type: "p",
-        text: "Es ist ein Mythos, dass sich gesunde Paare nie verändern. Menschen sollen sich weiterentwickeln, und lange Beziehungen verlangen von Ihnen, eine:n Partner:in immer wieder neu kennenzulernen, der oder die nicht mehr dieselbe Person ist wie vor fünf Jahren. Schwierigkeiten entstehen weniger durch die Veränderung selbst als dadurch, dass man ihr keinen Raum gibt, sodass man am Ende eine Erinnerung liebt statt die Person, die vor einem steht.",
+        text: "Es ist ein Irrglaube, dass sich gute Paare nie verändern. Menschen entwickeln sich nun einmal weiter, und lange Beziehungen verlangen, dass Sie einander immer wieder neu kennenlernen — den Menschen, der oder die nicht mehr dieselbe Person ist wie vor fünf Jahren. Schwierig wird es weniger durch die Veränderung selbst als dadurch, dass man ihr keinen Raum lässt, sodass man am Ende eine Erinnerung liebt statt den Menschen, der einem gegenübersitzt.",
       },
       {
         type: "p",
-        text: "Wiederannäherung ist also zum Teil ein Akt der Neugier. Sie bedeutet, sich wieder dafür zu interessieren, wer Ihr:e Partner:in jetzt ist, und ihn oder sie neugierig darauf werden zu lassen, wer Sie geworden sind.",
+        text: "Wieder zueinanderzufinden ist deshalb zum Teil eine Sache der Neugier. Es heißt, sich erneut dafür zu interessieren, wer der oder die andere heute ist — und ihn oder sie neugierig darauf werden zu lassen, wer Sie geworden sind.",
       },
       {
         type: "h2",
-        text: "Praktische erste Schritte zurück zur Verbindung",
+        text: "Erste praktische Schritte zurück zueinander",
       },
       {
         type: "p",
-        text: "Sie brauchen keine große Geste, um zu beginnen. Kleine, beständige Zuwendungen zueinander bewirken meist mehr als ein einziges dramatisches Gespräch. Ein paar Ausgangspunkte, die viele Paare hilfreich finden:",
+        text: "Sie brauchen keine große Geste, um anzufangen. Kleine, verlässliche Schritte aufeinander zu bewirken meist mehr als ein einziges dramatisches Gespräch. Ein paar Ansätze, die viele Paare hilfreich finden:",
       },
       {
         type: "ul",
         items: [
-          "Reservieren Sie kurze, geschützte Zeit zum Reden, ohne Handys und ohne Organisation",
-          "Stellen Sie täglich eine wirklich offene Frage und hören Sie dann zu, ohne zu reparieren",
-          "Sprechen Sie laut aus, was Sie schätzen, auch wenn es offensichtlich scheint",
-          "Bemerken Sie Einladungen zur Verbindung, die kleinen Gesten, die sagen achte auf mich, und gehen Sie darauf ein",
+          "Nehmen Sie sich bewusst kurze, geschützte Zeit zum Reden — ohne Handys und ohne Organisatorisches",
+          "Stellen Sie täglich eine wirklich offene Frage und hören Sie dann einfach zu, ohne gleich eine Lösung zu suchen",
+          "Sagen Sie laut, was Sie aneinander schätzen, auch wenn es selbstverständlich scheint",
+          "Achten Sie auf die leisen Signale, mit denen Ihr Gegenüber um Zuwendung bittet, und gehen Sie darauf ein",
         ],
       },
       {
         type: "p",
-        text: "Wenn kulturelle oder sprachliche Unterschiede Teil Ihrer Geschichte sind, drücken Sie beide Nähe vielleicht unterschiedlicher aus, als Ihnen bewusst ist. Unsere Gedanken über [Liebe über Kulturen hinweg](/de/blog/love-across-cultures) könnten dazu eine hilfreiche Ergänzung sein.",
+        text: "Wenn kulturelle oder sprachliche Unterschiede zu Ihrer Geschichte gehören, drücken Sie Nähe vielleicht unterschiedlicher aus, als Ihnen bewusst ist. Unsere Gedanken über die [Liebe über Kulturen hinweg](/de/blog/love-across-cultures) sind dazu vielleicht eine hilfreiche Ergänzung.",
       },
       {
         type: "quote",
-        text: "Sie müssen nicht mehr dieselben Menschen sein, die Sie einmal waren, um sich wieder nah zu sein. Sie müssen nur bereit sein, den Menschen zu begegnen, die Sie geworden sind.",
+        text: "Sie müssen nicht mehr die sein, die Sie früher waren, um sich wieder nah zu sein. Sie müssen nur bereit sein, den Menschen zu begegnen, die Sie geworden sind.",
         attribution: "Theresa Frische",
       },
       {
@@ -510,60 +510,60 @@ export const setADe: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Manchmal sind die Gespräche, die Sie am dringendsten brauchen, allein am schwersten zu beginnen. Ein neutraler, warmer Raum kann es möglich machen, das auszusprechen, was immer wieder stecken bleibt, und einander ohne die üblichen Abwehrhaltungen zu hören. Genau das bietet Paarberatung.",
+        text: "Manchmal sind gerade die Gespräche, die Sie am dringendsten führen müssten, allein am schwersten zu beginnen. Ein neutraler, warmer Raum kann es möglich machen, das auszusprechen, was immer wieder stecken bleibt, und einander ohne die üblichen Abwehrhaltungen zuzuhören. Genau das bietet die Paarberatung.",
       },
       {
         type: "p",
-        text: "Wenn Sie das gemeinsam erkunden möchten, erfahren Sie mehr darüber, wie wir [zusammenarbeiten](/de/work-together), oder [buchen Sie einfach ein kostenloses Kennenlerngespräch](/de/contact). Antworten auf häufige Fragen zur Paarberatung finden Sie in den [FAQ](/de/faq). Nach Unterstützung zu greifen ist kein Eingeständnis, dass die Beziehung gescheitert ist. Es ist eine gemeinsame Entscheidung, weiterzuwachsen, zusammen.",
+        text: "Wenn Sie das gemeinsam erkunden möchten, erfahren Sie mehr darüber, wie wir [zusammenarbeiten](/de/work-together), oder [buchen Sie einfach ein kostenloses Kennenlerngespräch](/de/contact). Antworten auf häufige Fragen zur Paarberatung finden Sie in den [FAQ](/de/faq). Sich Unterstützung zu holen, ist kein Eingeständnis, dass die Beziehung gescheitert ist. Es ist eine gemeinsame Entscheidung, weiterzuwachsen — zusammen.",
       },
     ],
   },
   {
     slug: "love-across-cultures",
     title:
-      "Liebe über Kulturen hinweg: Interkulturelle Beziehungen navigieren",
+      "Liebe über Kulturen hinweg: Wie interkulturelle Beziehungen gelingen",
     category: "Internationale & interkulturelle Beziehungen",
     date: "2026-03-04",
     readingTime: "6",
     excerpt:
-      "Die Freuden und Herausforderungen interkultureller Partnerschaften und wie man ein gemeinsames Verständnis aufbaut.",
+      "Die schönen Seiten und die Herausforderungen interkultureller Partnerschaften — und wie man ein gemeinsames Verständnis aufbaut.",
     body: [
       {
         type: "p",
-        text: "Jemanden aus einer anderen Kultur zu lieben kann sich anfühlen, als würde einem eine weitere Welt geschenkt. Sie gewinnen neue Sprachen, neue Gerichte, neue Arten zu feiern und eine:n Partner:in, der oder die Sie Ihre eigenen Annahmen von außen sehen lässt. Es kann eine der bereicherndsten Erfahrungen sein, die eine Beziehung bietet.",
+        text: "Jemanden aus einer anderen Kultur zu lieben, kann sich anfühlen, als bekäme man eine ganze Welt dazugeschenkt. Sie gewinnen neue Sprachen, neue Gerichte, neue Arten zu feiern — und einen Menschen an Ihrer Seite, durch den Sie Ihre eigenen Selbstverständlichkeiten von außen sehen. Es kann zu den bereicherndsten Erfahrungen gehören, die eine Beziehung überhaupt bereithält.",
       },
       {
         type: "p",
-        text: "Es kann auch auf eine Weise still fordernd sein, die Sie überrascht. Genau die Unterschiede, die die Beziehung bereichern, sind dieselben, die Sie beide sich missverstanden fühlen lassen können, oft bei Dingen, die keiner von Ihnen zu erklären dachte.",
+        text: "Es kann aber auch auf eine Weise leise fordern, die Sie überrascht. Gerade die Unterschiede, die die Beziehung bereichern, sind dieselben, an denen Sie sich beide missverstanden fühlen können — oft bei Dingen, die keiner von Ihnen auf die Idee kam zu erklären.",
       },
       {
         type: "h2",
-        text: "Die Freuden, die man leicht unterschätzt",
+        text: "Die schönen Seiten, die man leicht unterschätzt",
       },
       {
         type: "p",
-        text: "Interkulturelle Paare entwickeln oft eine ungewöhnliche Fähigkeit zur Neugier. Weil so wenig als selbstverständlich gilt, lernen Sie zu fragen, statt anzunehmen, und diese Gewohnheit macht, einmal aufgebaut, die ganze Beziehung bewusster und lebendiger. Viele Paare beschreiben eine gemeinsame, ganz eigene Kultur, die sie zusammen geschaffen haben, die zu keinem der beiden Hintergründe ganz gehört und ganz ihnen.",
+        text: "Interkulturelle Paare entwickeln oft eine ungewöhnlich große Neugier aufeinander. Weil so wenig selbstverständlich ist, gewöhnen Sie sich an, zu fragen, statt vorauszusetzen — und diese Haltung macht, einmal eingeübt, die ganze Beziehung bewusster und lebendiger. Viele Paare erzählen von einer gemeinsamen, ganz eigenen Kultur, die sie zusammen geschaffen haben: keinem der beiden Hintergründe ganz zugehörig und dabei ganz die ihre.",
       },
       {
         type: "h2",
-        text: "Wo die Reibung meist liegt",
+        text: "Wo es meist reibt",
       },
       {
         type: "p",
-        text: "Kulturelle Unterschiede führen selten wegen großer, sichtbarer Werte zu Konflikten. Häufiger verbergen sie sich im Alltäglichen: wie direkt Sie sagen, was Sie meinen, wie Sie mit Meinungsverschiedenheiten umgehen, was als Zuneigung gilt, wie stark die Familie einbezogen sein sollte, was Schweigen bedeutet. Diese Regeln haben Sie beide so früh gelernt, dass sie sich weniger wie Kultur und mehr wie schlichte Tatsache anfühlen.",
+        text: "Kulturelle Unterschiede führen selten an großen, sichtbaren Werten zum Konflikt. Häufiger verstecken sie sich im Alltäglichen: wie direkt Sie sagen, was Sie meinen, wie Sie mit Meinungsverschiedenheiten umgehen, was als Zuneigung zählt, wie sehr die Familie mit einbezogen sein sollte, was ein Schweigen bedeutet. Diese Regeln haben Sie beide so früh gelernt, dass sie sich weniger wie Kultur anfühlen und mehr wie eine schlichte Tatsache.",
       },
       {
         type: "ul",
         items: [
-          "Unterschiedliche Instinkte, ob man Spannung direkt anspricht oder sie sich setzen lässt",
-          "Nicht übereinstimmende Erwartungen an familiäre Nähe, Feiertage und Verpflichtung",
-          "Kommunikationsstile, die für die andere Seite zu direkt oder zu indirekt wirken",
-          "Gefühlsausdruck, der über die Kluft hinweg entweder überwältigend oder zurückhaltend erscheint",
+          "Ein unterschiedliches Gespür dafür, ob man Spannungen offen anspricht oder sie erst einmal ruhen lässt",
+          "Auseinandergehende Erwartungen an familiäre Nähe, an Feiertage und an das, was man einander schuldig ist",
+          "Arten zu reden, die für die andere Seite zu direkt oder zu umständlich wirken",
+          "Gefühle zu zeigen, was für den einen zu viel und für die andere zu wenig sein kann",
         ],
       },
       {
         type: "p",
-        text: "Wenn diese Unterschiede aufeinandertreffen, schließt man leicht, dass der oder die andere schwierig sei, während Sie in Wahrheit beide einem Drehbuch folgen, das Sie nie gewählt haben. Das Drehbuch zu benennen ist oft die erste Erleichterung.",
+        text: "Wenn solche Unterschiede aufeinanderprallen, denkt man schnell, der oder die andere mache es einem schwer — dabei folgen Sie beide in Wahrheit einem Drehbuch, das Sie sich nie ausgesucht haben. Dieses Drehbuch zu benennen, bringt oft die erste Erleichterung.",
       },
       {
         type: "h2",
@@ -571,24 +571,24 @@ export const setADe: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Die Paare, die aufblühen, sind nicht jene mit den wenigsten Unterschieden. Es sind jene, die Unterschiede als Information betrachten statt als Urteil. Das heißt, neugierig auf das Warum hinter einer Reaktion zu werden, statt nur auf das Was zu reagieren.",
+        text: "Die Paare, die aufblühen, sind nicht die mit den wenigsten Unterschieden. Es sind die, die Unterschiede als Information verstehen und nicht als Urteil. Das heißt, neugierig auf das Warum hinter einer Reaktion zu werden, statt nur auf das Was zu reagieren.",
       },
       {
         type: "ul",
         items: [
-          "Fragen Sie, was ein Verhalten in der Familie Ihres Partners oder Ihrer Partnerin früher bedeutete, nicht nur, was es für Sie bedeutet",
-          "Einigen Sie sich auf einen gemeinsamen dritten Weg, statt auf die Normen einer Kultur zurückzufallen",
-          "Übersetzen Sie Gefühle, nicht nur Worte, wenn ein Satz härter ankommt als beabsichtigt",
+          "Fragen Sie, was ein Verhalten in der Familie des oder der anderen früher bedeutete — nicht nur, was es für Sie bedeutet",
+          "Einigen Sie sich auf einen gemeinsamen, dritten Weg, statt auf die Regeln einer der beiden Kulturen zurückzufallen",
+          "Übersetzen Sie Gefühle, nicht nur Worte, wenn ein Satz härter ankommt als gemeint",
           "Lassen Sie zu, dass Sie manches bewusst unterschiedlich machen, ohne es auflösen zu müssen",
         ],
       },
       {
         type: "p",
-        text: "Wenn eine:r oder beide von Ihnen zudem weit weg von zu Hause lebt, trägt die Beziehung womöglich zusätzliches Gewicht. Manches davon erkennen Sie vielleicht in unserem Beitrag darüber, sich [im Ausland ein Leben aufzubauen, ohne sich zu Hause zu fühlen](/de/blog/built-a-life-abroad-not-at-home), der die Einsamkeit beleuchtet, die still selbst eine liebevolle Partnerschaft erreichen kann.",
+        text: "Wenn eine:r oder beide von Ihnen zudem weit weg von zu Hause lebt, trägt die Beziehung womöglich noch zusätzliches Gewicht. Manches davon erkennen Sie vielleicht in unserem Beitrag darüber, wie es ist, sich [im Ausland ein Leben aufzubauen und sich trotzdem nicht zu Hause zu fühlen](/de/blog/built-a-life-abroad-not-at-home) — er beleuchtet die Einsamkeit, die sich leise selbst in eine liebevolle Partnerschaft schleichen kann.",
       },
       {
         type: "quote",
-        text: "In einer interkulturellen Beziehung ist Verständnis nichts, was Sie erben. Es ist etwas, das Sie gemeinsam aufbauen, ganz bewusst.",
+        text: "In einer interkulturellen Beziehung ist Verständnis nichts, was man erbt. Es ist etwas, das Sie gemeinsam aufbauen, ganz bewusst.",
         attribution: "Theresa Frische",
       },
       {
@@ -597,47 +597,47 @@ export const setADe: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Es hat echten Wert, wenn jemand Ihnen hilft, zwischen zwei inneren Welten zu übersetzen, besonders wenn derselbe Streit in immer neuem Gewand wiederkehrt. Beratung kann einen ruhigen Raum bieten, um langsamer zu werden, die Herkunft des anderen zu verstehen und die gemeinsame Kultur zu gestalten, die Sie wirklich wollen.",
+        text: "Es hilft wirklich, wenn jemand Sie dabei begleitet, zwischen zwei inneren Welten zu übersetzen — gerade dann, wenn derselbe Streit immer wieder in neuem Gewand zurückkehrt. Beratung kann einen ruhigen Raum bieten, um langsamer zu werden, die Herkunft des oder der anderen zu verstehen und die gemeinsame Kultur zu gestalten, die Sie wirklich wollen.",
       },
       {
         type: "p",
-        text: "Wenn das hilfreich klingt, sind Sie herzlich eingeladen, [ein kostenloses Kennenlerngespräch zu buchen](/de/contact) oder mehr darüber zu lesen, wie wir [zusammenarbeiten](/de/work-together) könnten. Über Kulturen hinweg zu lieben verlangt Ihnen ein wenig mehr ab und kann Ihnen dafür eine seltene Tiefe des Verstehens schenken.",
+        text: "Wenn das hilfreich klingt, sind Sie herzlich eingeladen, [ein kostenloses Kennenlerngespräch zu buchen](/de/contact) oder mehr darüber zu lesen, wie wir [zusammenarbeiten](/de/work-together) könnten. Über Kulturen hinweg zu lieben, verlangt Ihnen ein wenig mehr ab — und schenkt Ihnen dafür eine seltene Tiefe des Verstehens.",
       },
     ],
   },
   {
     slug: "mindfulness-is-not-clearing-your-mind",
     title:
-      "Bei Achtsamkeit geht es nicht darum, den Kopf frei zu bekommen — das ist sie wirklich",
+      "Achtsamkeit heißt nicht, den Kopf frei zu bekommen — worum es wirklich geht",
     category: "Achtsamkeit",
     date: "2026-02-19",
     readingTime: "5",
     excerpt:
-      "Verbreitete Mythen entkräften und wie eine regelmäßige Praxis die emotionale Regulation unterstützt.",
+      "Mit verbreiteten Mythen aufräumen — und wie eine regelmäßige Übung dabei hilft, mit Gefühlen umzugehen.",
     body: [
       {
         type: "p",
-        text: "Wenn Sie je versucht haben zu meditieren, nach neunzig Sekunden aufgegeben und daraus geschlossen haben, dass Ihr Kopf dafür einfach zu voll ist, sind Sie in bester Gesellschaft. Der Glaube, Achtsamkeit bedeute, den Kopf leer zu machen, ist wohl der häufigste Grund, warum Menschen beschließen, dass sie schlecht darin sind.",
+        text: "Wenn Sie schon einmal versucht haben zu meditieren, nach neunzig Sekunden aufgegeben und daraus geschlossen haben, dass Ihr Kopf dafür einfach zu voll ist, dann sind Sie in bester Gesellschaft. Der Glaube, Achtsamkeit hieße, den Kopf leer zu machen, ist wohl der häufigste Grund, warum Menschen beschließen, dass sie einfach nicht gut darin sind.",
       },
       {
         type: "p",
-        text: "Die Erleichterung ist diese: Bei Achtsamkeit ging es nie darum, den Kopf frei zu bekommen. Ein Kopf, der Gedanken hervorbringt, ist ein Kopf, der richtig arbeitet. Die Praxis besteht nicht darin, die Gedanken zu stoppen. Es geht darum, Ihre Beziehung zu ihnen zu verändern.",
+        text: "Das Beruhigende daran: Bei Achtsamkeit ging es nie darum, den Kopf frei zu bekommen. Ein Kopf, der Gedanken hervorbringt, ist ein Kopf, der genau richtig arbeitet. Es geht nicht darum, die Gedanken abzustellen, sondern darum, Ihr Verhältnis zu ihnen zu verändern.",
       },
       {
         type: "h2",
-        text: "Die Mythen, die man loslassen darf",
+        text: "Die Mythen, die man getrost loslassen darf",
       },
       {
         type: "p",
-        text: "Eine Handvoll Missverständnisse hält Menschen von einer Praxis fern, die ihnen wirklich helfen könnte. Es lohnt sich, sie klar zu benennen.",
+        text: "Eine Handvoll Missverständnisse hält Menschen von einer Übung ab, die ihnen wirklich guttun könnte. Es lohnt sich, sie klar beim Namen zu nennen.",
       },
       {
         type: "ul",
         items: [
-          "Mythos: Ihr Kopf soll leer werden. In Wirklichkeit bemerken Sie einfach, wenn er abschweift, und kehren sanft zurück.",
-          "Mythos: Sie müssen sich ruhig und glückselig fühlen. In Wirklichkeit lernen Sie, mit dem präsent zu sein, was gerade da ist, auch mit Unruhe.",
-          "Mythos: Es braucht eine Stunde am Tag. In Wirklichkeit bewirken ein paar ehrliche Minuten, regelmäßig geübt, mehr als eine gelegentliche lange Einheit.",
-          "Mythos: Sie machen es falsch, wenn Sie abgelenkt werden. In Wirklichkeit ist das Bemerken der Ablenkung die Praxis.",
+          "Mythos: Der Kopf soll leer werden. In Wahrheit bemerken Sie einfach, wenn er abschweift, und kehren sanft zurück.",
+          "Mythos: Man muss sich ruhig und glückselig fühlen. In Wahrheit lernen Sie, mit dem da zu sein, was gerade ist — auch mit Unruhe.",
+          "Mythos: Es braucht eine Stunde am Tag. In Wahrheit bewirken ein paar ehrliche Minuten, regelmäßig geübt, mehr als eine gelegentliche lange Einheit.",
+          "Mythos: Wer sich ablenken lässt, macht es falsch. In Wahrheit ist genau das Bemerken der Ablenkung die Übung.",
         ],
       },
       {
@@ -646,32 +646,32 @@ export const setADe: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Achtsamkeit ist der einfache, wiederholbare Akt, dem gegenwärtigen Moment Aufmerksamkeit zu schenken, ohne ihn sofort zu bewerten. Sie bemerken einen Gedanken, eine Empfindung, ein Gefühl. Sie lassen es da sein. Sie kehren zu Ihrem Atem oder Ihrem Körper zurück. Sie tun dies wieder und wieder, und jede Rückkehr ist eine kleine Wiederholung, die Ihre Fähigkeit stärkt, bei Ihrer eigenen Erfahrung zu bleiben.",
+        text: "Achtsamkeit ist die einfache Übung, die sich immer wiederholen lässt: dem gegenwärtigen Moment Aufmerksamkeit zu schenken, ohne ihn gleich zu bewerten. Sie bemerken einen Gedanken, eine Empfindung, ein Gefühl. Sie lassen es da sein. Sie kehren zu Ihrem Atem oder Ihrem Körper zurück. Das tun Sie wieder und wieder, und jede Rückkehr ist ein kleiner Schritt, der Ihre Fähigkeit stärkt, bei Ihrem eigenen Erleben zu bleiben.",
       },
       {
         type: "p",
-        text: "Das ist das Ganze. Es ist weit weniger mystisch, als es klingt, und weit nützlicher, als es scheint.",
+        text: "Das ist schon alles. Es ist weit weniger geheimnisvoll, als es klingt, und weit hilfreicher, als es scheint.",
       },
       {
         type: "h2",
-        text: "Wie sie die emotionale Regulation unterstützt",
+        text: "Wie sie dabei hilft, mit Gefühlen umzugehen",
       },
       {
         type: "p",
-        text: "Der alltägliche Gewinn ist etwas mehr Raum zwischen dem, was geschieht, und dem, wie Sie reagieren. Wenn Sie eine Welle von Stress oder Frust bemerken können, während sie aufsteigt, statt von ihr fortgerissen zu werden, gewinnen Sie einen Moment der Wahl, den Sie zuvor nicht hatten. Mit der Zeit formt diese kleine Pause um, wie Sie durch schwierige Tage gehen.",
+        text: "Der alltägliche Gewinn ist etwas mehr Raum zwischen dem, was geschieht, und dem, wie Sie darauf reagieren. Wenn Sie eine Welle von Stress oder Frust schon im Aufsteigen bemerken, statt sich von ihr mitreißen zu lassen, gewinnen Sie einen Moment der Wahl, den Sie vorher nicht hatten. Mit der Zeit verändert diese kleine Pause, wie Sie durch schwere Tage gehen.",
       },
       {
         type: "ul",
         items: [
           "Sie bemerken Anspannung im Körper früher, bevor sie zur Überforderung wird",
-          "Sie reagieren auf Stress mit etwas mehr Raum und etwas weniger Reaktivität",
-          "Sie stabilisieren eine gedrückte Stimmung, indem Sie freundlich bei ihr bleiben, statt gegen sie anzukämpfen",
-          "Sie finden nach einem schweren Moment schneller wieder Halt",
+          "Sie reagieren auf Stress mit etwas mehr Ruhe und etwas weniger Getriebensein",
+          "Sie fangen eine gedrückte Stimmung auf, indem Sie ihr freundlich begegnen, statt gegen sie anzukämpfen",
+          "Sie finden nach einem schweren Moment schneller wieder festen Boden",
         ],
       },
       {
         type: "quote",
-        text: "Das Ziel ist kein stiller Kopf. Das Ziel ist eine freundlichere Beziehung zu dem Kopf, den Sie bereits haben.",
+        text: "Das Ziel ist kein stiller Kopf. Das Ziel ist ein freundlicheres Verhältnis zu dem Kopf, den Sie ohnehin schon haben.",
         attribution: "Theresa Frische",
       },
       {
@@ -680,11 +680,11 @@ export const setADe: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Sie brauchen keine besondere Ausrüstung und keinen leeren Kalender. Sie brauchen ein oder zwei Minuten, die Bereitschaft, jedes Mal neu zu beginnen, wenn Ihre Aufmerksamkeit abschweift, und genug Sanftheit mit sich selbst, um die Praxis tragfähig zu halten. Wenn Sie sich Begleitung dabei wünschen, diese freundlichere Beziehung zu sich selbst aufzubauen, können Sie lesen, wie wir [zusammenarbeiten](/de/work-together) könnten. Beständigkeit zählt weit mehr als Dauer.",
+        text: "Sie brauchen keine besondere Ausrüstung und keinen freien Kalender. Sie brauchen ein, zwei Minuten, die Bereitschaft, jedes Mal neu anzufangen, wenn Ihre Aufmerksamkeit abschweift, und genug Nachsicht mit sich selbst, um dranzubleiben. Wenn Sie sich Begleitung dabei wünschen, dieses freundlichere Verhältnis zu sich selbst aufzubauen, können Sie nachlesen, wie wir [zusammenarbeiten](/de/work-together) könnten. Regelmäßigkeit zählt weit mehr als Dauer.",
       },
       {
         type: "p",
-        text: "Wenn Sie sich einen begleiteten, sanften Weg wünschen, dies in Ihr Leben einzubauen, bietet unser [wöchentliches Wohlbefinden](/de/weekly-wellbeing) genau diese Art von regelmäßigem, unaufgeregtem Rhythmus. Und wenn Sie tiefer in die körperbezogene Seite der Präsenz eintauchen möchten, freuen Sie sich vielleicht über unsere Gedanken darüber, [was Somatic Experiencing ist](/de/blog/what-is-somatic-experiencing). Wie auch immer Sie beginnen, denken Sie daran: Ein abschweifender Kopf ist kein Scheitern. Er ist einfach Ihre Einladung, neu zu beginnen.",
+        text: "Wenn Sie sich einen begleiteten, sanften Weg wünschen, das in Ihr Leben einzubauen, bietet unser Angebot [Wöchentliches Wohlbefinden](/de/weekly-wellbeing) genau diese Art von regelmäßigem, unaufgeregtem Rhythmus. Und wenn Sie tiefer in die körperbezogene Seite des Präsentseins eintauchen möchten, freuen Sie sich vielleicht über unsere Gedanken darüber, [was Somatic Experiencing ist](/de/blog/what-is-somatic-experiencing). Wie auch immer Sie beginnen — denken Sie daran: Ein abschweifender Kopf ist kein Scheitern. Er ist schlicht Ihre Einladung, neu anzufangen.",
       },
     ],
   },

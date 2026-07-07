@@ -84,54 +84,54 @@ export const de: SiteContent = {
   home: {
     metaTitle: "Theresa Frische — Systemische & Integrative Beraterin",
     metaDescription:
-      "Online-Beratung auf Deutsch und Englisch für Einzelpersonen und Paare in Zeiten von Veränderung, Übergang, Überforderung und einem Leben über Grenzen hinweg. Buchen Sie ein kostenloses 15-minütiges Kennenlerngespräch.",
+      "Online-Beratung auf Deutsch und Englisch für Einzelpersonen und Paare in Zeiten von Veränderung, Umbruch, Überforderung und einem Leben zwischen Ländern und Kulturen. Buchen Sie Ihr kostenloses Kennenlerngespräch (15 Minuten).",
     eyebrow: "Systemisch · Somatisch · Integrativ",
     heroTitle: "Ein Raum für das, was",
     heroTitleAccent: "sich in Ihnen verändert",
     heroLead:
-      "Für Einzelpersonen und Paare in Zeiten von Veränderung, Übergang und den leiseren Belastungen, die oft unbenannt bleiben.",
+      "Für Einzelpersonen und Paare in Zeiten von Veränderung und Umbruch — und für die leiseren Belastungen, für die es oft keine Worte gibt.",
     heroParas: [
-      "Das Leben verändert sich selten auf klare oder geradlinige Weise. Häufiger verschiebt sich etwas allmählich — bis sich in Ihnen selbst etwas anders anzufühlen beginnt.",
-      "Nach außen funktionieren Sie vielleicht noch, während sich im Inneren Anspannung, Erschöpfung oder ein leises Gefühl der Entfremdung von sich selbst zeigt.",
-      "Viele Menschen suchen Unterstützung nicht, weil etwas zerbrochen ist, sondern weil sich etwas verschoben hat — und vertraute Bewältigungsweisen sich nicht mehr ganz ausreichend anfühlen.",
+      "Das Leben verändert sich selten geradlinig. Meist verschiebt sich etwas ganz allmählich — bis sich in Ihnen etwas anders anfühlt als zuvor.",
+      "Nach außen funktionieren Sie vielleicht noch, während innerlich Anspannung, Erschöpfung oder das leise Gefühl wächst, sich selbst fremd geworden zu sein.",
+      "Viele Menschen suchen Unterstützung nicht, weil etwas zerbrochen ist, sondern weil sich etwas verschoben hat — und weil das, was früher getragen hat, nicht mehr recht trägt.",
     ],
     heroEmphasis:
-      "In dieser Arbeit geht es nicht darum, etwas Kaputtes zu reparieren. Es geht darum, einen reflexiven Raum zu schaffen, um sich selbst besser zu verstehen und sich auf ein Leben zuzubewegen, das mit Ihren Werten im Einklang steht.",
+      "In dieser Arbeit geht es nicht darum, etwas zu reparieren, das nicht mehr funktioniert. Es geht darum, einen geschützten Raum zu schaffen, in dem Sie sich selbst besser verstehen und sich einem Leben annähern, das zu Ihren Werten passt.",
     heroPrimary: { label: "Kennenlerngespräch buchen", href: "/de/contact" },
     heroSecondary: { label: "Angebote entdecken", href: "/de/work-together" },
     testimonial: {
-      text: "Theresa schafft einen Raum, der sich sicher, geerdet und zutiefst unterstützend anfühlt. Ich bin widerstandsfähiger, präsenter und stärker mit mir selbst verbunden geworden.",
+      text: "Theresa schafft einen Raum, der sich sicher, geerdet und zutiefst tragend anfühlt. Ich bin widerstandsfähiger und präsenter geworden und fühle mich wieder stärker mit mir selbst verbunden.",
       attribution: "Klient:in",
     },
     audience: {
       eyebrow: "Schwerpunkte",
-      heading: "Für wen das gedacht ist",
+      heading: "Für wen diese Arbeit gedacht ist",
       intro:
-        "Diese Arbeit ist für Menschen, die bedeutsame Übergänge durchleben — wo die innere Welt nach etwas anderem verlangt als nach dem bereits Bekannten.",
+        "Diese Arbeit ist für Menschen in bedeutsamen Übergängen — wenn das Innere nach etwas anderem verlangt als nach dem, was bisher vertraut war.",
       items: [
         {
           title: "Lebensübergänge",
-          body: "Umzug, Trennung, beruflicher Wandel, Verlust, Elternschaft — Veränderungen, die eine tiefe emotionale Anpassung verlangen.",
+          body: "Umzug, Trennung, beruflicher Wandel, Verlust, Elternschaft — Veränderungen, die einiges an innerer Anpassung verlangen.",
         },
         {
           title: "Beziehungen",
-          body: "Kommunikation, emotionale Distanz, wiederkehrende Konflikte und das Wiederherstellen von Verständnis und Nähe.",
+          body: "Kommunikation, emotionale Distanz, wiederkehrende Konflikte — und der Weg zurück zu Verständnis und Nähe.",
         },
         {
           title: "Identität & Orientierung",
-          body: "Phasen der Unsicherheit, Neuorientierung und Fragen nach Sinn und Lebensrichtung.",
+          body: "Phasen der Unsicherheit, Neuorientierung und Fragen nach Sinn und Richtung im Leben.",
         },
         {
-          title: "Leben über Grenzen hinweg",
-          body: "Die Komplexität eines Lebens zwischen Ländern, Kulturen und sich wandelnden sozialen Umfeldern.",
+          title: "Leben zwischen Ländern",
+          body: "Was es bedeutet, zwischen Ländern, Kulturen und immer wieder neuen sozialen Umfeldern zu leben.",
         },
         {
           title: "Überforderung & Erschöpfung",
-          body: "Begleitung beim Wiederverbinden und Regulieren, wenn die inneren Ressourcen erschöpft scheinen.",
+          body: "Begleitung dabei, wieder in Verbindung und ins Gleichgewicht zu kommen, wenn die eigenen Kräfte aufgebraucht scheinen.",
         },
         {
           title: "Persönliches Wachstum",
-          body: "Mehr Klarheit, emotionale Widerstandskraft und ein stabileres Selbstgefühl durch Veränderung hindurch.",
+          body: "Mehr Klarheit, emotionale Widerstandskraft und ein stabileres Selbstgefühl mitten in der Veränderung.",
         },
       ],
     },
@@ -139,23 +139,23 @@ export const de: SiteContent = {
       eyebrow: "Mein Ansatz",
       heading: "Integrativ und kontextorientiert",
       intro:
-        "Statt einer festen Methode zu folgen, schöpfe ich aus sich ergänzenden Perspektiven, um jedem Menschen mit Feingefühl zu begegnen. Im Zentrum dieser Arbeit steht mitfühlende Aufmerksamkeit — für das, was sich innerlich, in Beziehungen und im größeren Kontext Ihres Lebens zeigt.",
+        "Statt einer festen Methode zu folgen, schöpfe ich aus mehreren, einander ergänzenden Perspektiven, um jedem Menschen mit Feingefühl zu begegnen. Im Zentrum steht eine mitfühlende Aufmerksamkeit — für das, was sich in Ihnen, in Ihren Beziehungen und im größeren Zusammenhang Ihres Lebens zeigt.",
       items: [
         {
           title: "Systemische Beratung",
-          body: "Erkunden relationaler und kontextueller Muster und wie sie das emotionale Erleben und die Art, dem Leben zu begegnen, prägen.",
+          body: "Wir schauen auf Muster in Ihren Beziehungen und Lebensumständen — und darauf, wie sie Ihr Erleben und Ihren Umgang mit dem Leben prägen.",
         },
         {
           title: "Körperwahrnehmung (Somatic Awareness)",
-          body: "Aufmerksamkeit für die Reaktionen des Körpers auf Stress und Veränderung, zur Unterstützung von Regulation, Erdung und größerer innerer Stabilität.",
+          body: "Aufmerksamkeit dafür, wie der Körper auf Stress und Veränderung reagiert — als Weg zu mehr Regulation, Erdung und innerer Stabilität.",
         },
         {
           title: "Teile-Arbeit (Parts Work)",
-          body: "Erkunden der verschiedenen Anteile in Ihnen, die widersprüchliche Bedürfnisse, Ängste oder Reaktionen tragen — mit Neugier und Mitgefühl, hin zu mehr Integration.",
+          body: "Ein neugieriger, mitfühlender Blick auf die verschiedenen Anteile in Ihnen, die widersprüchliche Bedürfnisse, Ängste oder Reaktionen tragen — hin zu mehr innerem Zusammenhalt.",
         },
         {
           title: "Achtsamkeitsbasierte Praxis",
-          body: "Entwickeln eines Bewusstseins für Gedanken und Reaktionsmuster — um Raum und Wahlmöglichkeit darin zu schaffen, wie wir reagieren.",
+          body: "Ein wacheres Gespür für Gedanken und eingespielte Reaktionsmuster — damit mehr Raum und Wahlfreiheit entsteht, wie Sie reagieren.",
         },
       ],
     },
@@ -170,46 +170,46 @@ export const de: SiteContent = {
         { label: "Verfügbarkeit", value: "Nach Vereinbarung" },
       ],
       closing:
-        "Bereit für den ersten Schritt? Buchen Sie ein kostenloses 15-minütiges Kennenlerngespräch — ein entspannter, unverbindlicher Einstieg.",
+        "Bereit für den ersten Schritt? Buchen Sie Ihr kostenloses Kennenlerngespräch (15 Minuten) — ein entspannter, unverbindlicher Einstieg.",
     },
   },
 
   about: {
     metaTitle: "Über mich — Theresa Frische",
     metaDescription:
-      "Theresa Frische ist Systemische & Integrative Beraterin und begleitet internationale Menschen, Expats und Paare durch Veränderung. M.Sc. Clinical Psychology · Somatic Experiencing Practitioner.",
+      "Theresa Frische ist Systemische & Integrative Beraterin und begleitet Internationals, Expats und Paare durch Veränderung. M.Sc. Clinical Psychology · Somatic Experiencing Practitioner.",
     eyebrow: "Über mich",
     name: "Theresa Frische",
     subtitle: "Eine Beraterin für Menschen im Übergang.",
     credentials:
       "M.Sc. Clinical Psychology · Somatic Experiencing Practitioner · Systemische & Integrative Beraterin",
-    lead: "Seit über acht Jahren begleite ich Einzelpersonen und Organisationen durch bedeutsame Veränderung — mit tiefer Aufmerksamkeit für das ganze menschliche Erleben.",
+    lead: "Seit über acht Jahren begleite ich Einzelpersonen und Organisationen durch bedeutsame Veränderung — mit einer tiefen Aufmerksamkeit für den ganzen Menschen.",
     intro: [
-      "Ich weiß, wie es sich anfühlt, wenn das Leben zu viel wird — wenn sich Stress aufbaut, Beziehungen sich angespannt anfühlen oder Sie sich nicht mehr ganz bei sich selbst geerdet fühlen.",
-      "Mit der Zeit habe ich verstanden, wie tief unser Nervensystem, unsere Beziehungen und unsere Lebensumstände miteinander verwoben sind. Wenn ein Bereich überlastet wird, wirkt sich das oft auf alles andere aus — darauf, wie wir uns fühlen, wie wir uns verbinden und wie wir uns durch die Welt bewegen. Dieses Verständnis steht im Zentrum meiner Arbeit.",
+      "Ich weiß, wie es sich anfühlt, wenn das Leben zu viel wird — wenn der Druck steigt, Beziehungen sich anspannen oder Sie den festen Boden unter den Füßen verlieren.",
+      "Mit der Zeit habe ich verstanden, wie eng unser Nervensystem, unsere Beziehungen und unsere Lebensumstände miteinander verwoben sind. Gerät ein Bereich unter Druck, wirkt sich das oft auf alles andere aus — darauf, wie wir uns fühlen, wie wir in Verbindung gehen und wie wir uns durchs Leben bewegen. Dieses Verständnis steht im Zentrum meiner Arbeit.",
     ],
     imageAlt: "Porträt von Theresa Frische, Systemische & Integrative Beraterin, lächelnd am Fenster.",
     lived: {
       heading: "Ein Leben über Grenzen hinweg",
       body: [
-        "Mein eigenes Leben hat mich durch verschiedene Länder geführt, durch Fern- und interkulturelle Beziehungen und durch das Ankommen in immer neuen kulturellen und beruflichen Umfeldern. Bevor ich mich der Psychologie widmete, studierte ich zeitgenössischen Tanz und vertiefte mich in kontemplative Praxis.",
-        "Diese Erfahrungen haben mir ein tiefes Verständnis dafür gegeben, was es heißt, im Übergang zu sein — nicht nur äußerlich, sondern auch innerlich. Die Unsicherheit, die Desorientierung und das Bedürfnis, inmitten der Veränderung Halt zu finden.",
+        "Mein eigenes Leben hat mich durch verschiedene Länder geführt, durch Fern- und interkulturelle Beziehungen und durch das Ankommen in immer neuen kulturellen und beruflichen Umfeldern. Bevor ich zur Psychologie kam, habe ich zeitgenössischen Tanz studiert und mich in kontemplative Praxis vertieft.",
+        "Diese Erfahrungen haben mir ein tiefes Gespür dafür gegeben, was es heißt, im Übergang zu sein — nicht nur äußerlich, sondern auch innerlich: die Unsicherheit, das Gefühl der Orientierungslosigkeit und den Wunsch, mitten in der Veränderung Halt zu finden.",
       ],
       emphasis:
-        "Auch wenn die Geschichte jedes Menschen einzigartig ist, kenne ich die emotionale Landschaft, die große Lebensübergänge und beziehungsbezogene Komplexität oft mit sich bringen.",
+        "So einzigartig die Geschichte jedes Menschen auch ist — die innere Landschaft, die große Lebensübergänge und komplexe Beziehungen oft mit sich bringen, ist mir vertraut.",
     },
     philosophy: {
-      heading: "Menschen versteht man am besten in ihrem ganzen Erleben",
+      heading: "Den Menschen als Ganzes sehen",
       body: [
-        "Ich bin überzeugt, dass nachhaltiges Wohlbefinden dort entsteht, wo Menschen in ihrem ganzen Erleben verstanden werden — im Zusammenspiel von Körper, Geist und sozialem Umfeld.",
-        "In meiner Arbeit verbinde ich evidenzbasierte Psychologie mit einem körper- und systemorientierten Ansatz. Statt auf Etiketten oder Kategorien zu schauen, achte ich auf die zugrunde liegenden Zusammenhänge — wie Lebensgeschichte, Nervensystem, Beziehungsmuster und Lebenskontext unser Erleben prägen.",
-        "Mein Anliegen ist es, Menschen darin zu unterstützen, mehr innere Stabilität, Flexibilität und Widerstandskraft zu entwickeln — und ein erfülltes, werteorientiertes Leben in Verbindung mit sich selbst und anderen aufzubauen.",
+        "Ich bin überzeugt: Nachhaltiges Wohlbefinden entsteht dort, wo ein Mensch als Ganzes gesehen wird — im Zusammenspiel von Körper, Geist und sozialem Umfeld.",
+        "In meiner Arbeit verbinde ich evidenzbasierte Psychologie mit einem körper- und systemorientierten Ansatz. Statt in Schubladen zu denken, schaue ich auf die Zusammenhänge dahinter — darauf, wie Lebensgeschichte, Nervensystem, Beziehungsmuster und Lebensumstände unser Erleben prägen.",
+        "Mein Anliegen ist es, Menschen dabei zu begleiten, mehr innere Stabilität, Flexibilität und Widerstandskraft zu entwickeln — und ein erfülltes, werteorientiertes Leben zu gestalten, in Verbindung mit sich selbst und anderen.",
       ],
     },
     quotes: [
       { text: "Das Leben ist ein Gleichgewicht aus Festhalten und Loslassen.", attribution: "Rumi" },
       {
-        text: "Ihre empathische Art zu arbeiten macht es leicht, sich zu öffnen. Ihr breites psychologisches Wissen über verschiedene Ansätze hinweg hat mir geholfen, so vieles zu verstehen und einzuordnen — sie als Begleiterin in meinem Leben zu haben, ist für mich von unschätzbarem Wert.",
+        text: "Ihre einfühlsame Art macht es leicht, sich zu öffnen. Ihr breites psychologisches Wissen aus ganz unterschiedlichen Ansätzen hat mir geholfen, so vieles zu verstehen und einzuordnen — sie als Begleiterin in meinem Leben zu haben, ist für mich unbezahlbar.",
         attribution: "Klient:in",
       },
     ],
@@ -237,23 +237,23 @@ export const de: SiteContent = {
   workTogether: {
     metaTitle: "Zusammenarbeit — Theresa Frische",
     metaDescription:
-      "Online-Beratung für Einzelpersonen und Paare auf Deutsch und Englisch. Beginnen Sie mit einem kostenlosen 15-minütigen Kennenlerngespräch.",
+      "Online-Beratung für Einzelpersonen und Paare auf Deutsch und Englisch. Beginnen Sie mit einem kostenlosen Kennenlerngespräch (15 Minuten).",
     eyebrow: "Zusammenarbeit",
-    heading: "Der Einstieg",
+    heading: "So beginnen wir",
     intro:
-      "Die Sitzungen werden online auf Deutsch und Englisch angeboten, für Einzelpersonen und Paare weltweit. Der einfachste erste Schritt ist ein kostenloses, unverbindliches Kennenlerngespräch.",
+      "Die Sitzungen finden online statt, auf Deutsch und Englisch, für Einzelpersonen und Paare weltweit. Der einfachste erste Schritt ist ein kostenloses, unverbindliches Kennenlerngespräch.",
     discovery: {
-      heading: "Kostenloses 15-minütiges Kennenlerngespräch",
+      heading: "Kostenloses Kennenlerngespräch (15 Minuten)",
       intro:
-        "Ein kurzes, entspanntes Gespräch, um zu teilen, was Sie herführt, und zu spüren, ob sich eine Zusammenarbeit stimmig anfühlt — ganz ohne Verpflichtung, weiterzumachen.",
+        "Ein kurzes, entspanntes Gespräch, in dem Sie erzählen können, was Sie herführt, und wir gemeinsam spüren, ob eine Zusammenarbeit stimmig ist — ganz unverbindlich.",
       steps: [
         {
           title: "Kostenloses Kennenlerngespräch buchen",
-          body: "Wählen Sie eine Zeit, die für Sie passt. Wir sprechen kurz darüber, was Sie herführt.",
+          body: "Wählen Sie einen Zeitpunkt, der Ihnen passt. Wir sprechen kurz darüber, was Sie herführt.",
         },
         {
           title: "Spüren, ob es passt",
-          body: "Es gibt keinen Druck — dieses Gespräch ist einfach eine Gelegenheit, ein Gefühl für die Zusammenarbeit zu bekommen.",
+          body: "Ganz ohne Druck — dieses Gespräch ist einfach eine Gelegenheit, ein Gefühl für die Zusammenarbeit zu bekommen.",
         },
         {
           title: "Mit den Sitzungen beginnen",
@@ -268,7 +268,7 @@ export const de: SiteContent = {
     individual: {
       heading: "Einzelsitzungen",
       subheading: "Beratung im Einzelsetting",
-      body: "Die Beratung im Einzelsetting bietet einen vertraulichen, verlässlichen Raum, um zur Ruhe zu kommen und dem, was in Ihrem Leben geschieht, einen Sinn zu geben. Die Sitzungen schöpfen aus systemischen, somatischen, teileorientierten und achtsamkeitsbasierten Ansätzen, ausgerichtet an dem, was für Sie gerade da ist.",
+      body: "Die Einzelberatung bietet einen vertraulichen, verlässlichen Raum, um zur Ruhe zu kommen und dem, was Sie gerade beschäftigt, einen Sinn zu geben. Die Sitzungen schöpfen aus systemischen, somatischen, teileorientierten und achtsamkeitsbasierten Ansätzen — ausgerichtet an dem, was gerade bei Ihnen ansteht.",
       meta: [
         { label: "Dauer", value: "60 Minuten" },
         { label: "Format", value: "Online (Video)" },
@@ -278,7 +278,7 @@ export const de: SiteContent = {
     couples: {
       heading: "Paarsitzungen",
       subheading: "Paarberatung",
-      body: "Die Paarberatung unterstützt Partner:innen dabei, Muster der Entfremdung zu verstehen, die Kommunikation zu verbessern und zurück zu emotionaler Nähe zu finden. Die Sitzungen bieten einen strukturierten Raum, gehört zu werden und einander auf andere Weise zuzuhören.",
+      body: "Die Paarberatung unterstützt Partner:innen dabei, Muster der Entfremdung zu verstehen, wieder besser miteinander ins Gespräch zu kommen und zurück zu emotionaler Nähe zu finden. Die Sitzungen bieten einen geschützten Rahmen, in dem sich beide gehört fühlen und einander neu zuhören können.",
       meta: [
         { label: "Dauer", value: "60–120 Minuten" },
         { label: "Format", value: "Online (Video)" },
@@ -287,7 +287,7 @@ export const de: SiteContent = {
     },
     closing: {
       heading: "Bereit für den ersten Schritt?",
-      body: "Buchen Sie Ihr kostenloses 15-minütiges Kennenlerngespräch — ein entspannter, unverbindlicher Einstieg.",
+      body: "Buchen Sie Ihr kostenloses Kennenlerngespräch (15 Minuten) — ein entspannter, unverbindlicher Einstieg.",
       note: "Sitzungen sind Selbstzahlerleistungen · Antwort innerhalb von 2–3 Werktagen.",
     },
   },
@@ -300,7 +300,7 @@ export const de: SiteContent = {
     heading: "Mentale Gesundheit & Wohlbefinden am Arbeitsplatz",
     lead: "Mentale Gesundheit am Arbeitsplatz ist kein Luxus — sie ist die Grundlage für leistungsfähige, engagierte und widerstandsfähige Teams.",
     intro:
-      "Mit über acht Jahren Erfahrung unterstütze ich Organisationen in Deutschland und der Schweiz dabei, eine Kultur aufzubauen, die psychisches Wohlbefinden ernst nimmt. Stress am Arbeitsplatz, Kommunikationsschwierigkeiten und emotionale Erschöpfung haben reale Auswirkungen auf Einzelne und auf Organisationen als Ganzes — ich arbeite mit Unternehmen und Institutionen daran, psychologische Sicherheit, Widerstandskraft und die Bedingungen zu schaffen, unter denen Menschen ihre beste Arbeit nachhaltig leisten können.",
+      "Mit über acht Jahren Erfahrung unterstütze ich Organisationen in Deutschland und der Schweiz dabei, eine Kultur zu entwickeln, die psychisches Wohlbefinden ernst nimmt. Stress im Job, schwierige Kommunikation und emotionale Erschöpfung haben spürbare Folgen — für den Einzelnen wie für die ganze Organisation. Gemeinsam mit Unternehmen und Institutionen schaffe ich psychologische Sicherheit, Widerstandskraft und Rahmenbedingungen, unter denen Menschen dauerhaft ihr Bestes geben können.",
     facts: [
       { label: "Erfahrung", value: "8+ Jahre in der betrieblichen Gesundheitsförderung" },
       { label: "Sprachen", value: "Deutsch & Englisch" },
@@ -312,7 +312,7 @@ export const de: SiteContent = {
       intro: "Zugeschnitten auf Ihr Team und Ihren Kontext.",
       items: [
         {
-          title: "Keynote-Vorträge",
+          title: "Keynotes",
           body: "Inspirierende Impulse zu mentaler Gesundheit, Widerstandskraft und Achtsamkeit — für Konferenzen, große Gruppen oder Team-Events. (30–60 Min · online oder vor Ort)",
         },
         {
@@ -321,18 +321,18 @@ export const de: SiteContent = {
         },
         {
           title: "Vertiefende Trainings",
-          body: "Mehrtägige Trainings für Führungskräfte und Teams, ausgelegt auf nachhaltige Kompetenzentwicklung im Bereich Wohlbefinden. (1–3 Tage · online oder vor Ort)",
+          body: "Mehrtägige Trainings für Führungskräfte und Teams, die Kompetenzen rund um Wohlbefinden nachhaltig aufbauen. (1–3 Tage · online oder vor Ort)",
         },
         {
           title: "8-Wochen-Programme",
-          body: "Strukturierte Wohlbefindensprogramme zur Unterstützung nachhaltiger Stressreduktion, Achtsamkeit und emotionaler Regulation. (8 Wochen · 15–60 Min wöchentlich)",
+          body: "Strukturierte Programme, die Stressreduktion, Achtsamkeit und emotionale Regulation über einen längeren Zeitraum verankern. (8 Wochen · 15–60 Min wöchentlich)",
         },
       ],
     },
     individual: {
       heading: "Beratung für Mitarbeitende & Führungskräfte",
       intro:
-        "Vertrauliche Einzelbegleitung als Teil eines Mitarbeitendenunterstützungsprogramms — nach Vereinbarung, online verfügbar.",
+        "Vertrauliche Einzelbegleitung als Teil eines Mitarbeitendenunterstützungsprogramms — online und nach Vereinbarung.",
       items: [
         {
           title: "Beratung für Mitarbeitende",
@@ -364,7 +364,7 @@ export const de: SiteContent = {
         { label: "Durchführung", value: "Online oder vor Ort" },
         { label: "Sprachen", value: "Deutsch & Englisch" },
       ],
-      body: "Mein Stil in der Begleitung ist psychologisch fundiert und beziehungsorientiert, ruhig und zugewandt — er verbindet theoretische Fundierung mit praktischen, anwendbaren Werkzeugen.",
+      body: "Meine Art zu begleiten ist psychologisch fundiert und beziehungsorientiert, ruhig und zugewandt — sie verbindet fundiertes Wissen mit praktischen Werkzeugen für den Alltag.",
       emphasis:
         "Nachhaltige Leistung beginnt mit Menschen, die sich wirklich unterstützt fühlen — und nicht bloß verwaltet.",
     },
@@ -380,7 +380,7 @@ export const de: SiteContent = {
     ],
     closing: {
       heading: "Sprechen wir über Ihre Organisation",
-      body: "Für Anfragen zu Workshops, Programmen oder der Begleitung von Führungskräften melden Sie sich gerne direkt. Ich bespreche gern mit Ihnen, was für Ihren Kontext am hilfreichsten wäre.",
+      body: "Für Anfragen zu Workshops, Programmen oder der Begleitung von Führungskräften melden Sie sich gerne direkt. Gemeinsam finden wir heraus, was für Ihren Kontext am hilfreichsten ist.",
     },
   },
 
@@ -392,7 +392,7 @@ export const de: SiteContent = {
     heading: "Wöchentliche Online-Community für Achtsamkeit & Wohlbefinden",
     lead: "Ein ruhiger Online-Raum für Achtsamkeit, Stressreduktion und Verbundenheit in Gemeinschaft.",
     intro:
-      "Die Weekly Wellbeing Community bietet ein unterstützendes, geerdetes Umfeld, um zur Ruhe zu kommen, sich wieder zu verbinden und für Ihr emotionales Wohlbefinden zu sorgen. Die Sitzungen verbinden Achtsamkeitsübungen, Regulation des Nervensystems, Reflexion und mitfühlende Verbundenheit in Gemeinschaft — in einer Atmosphäre, die ruhig, einladend und wertungsfrei ist.",
+      "Die Weekly Wellbeing Community bietet ein geerdetes, unterstützendes Umfeld, um zur Ruhe zu kommen, wieder in Verbindung zu gehen und für Ihr emotionales Wohlbefinden zu sorgen. Die Sitzungen verbinden Achtsamkeitsübungen, Regulation des Nervensystems, Reflexion und ein mitfühlendes Miteinander — in einer Atmosphäre, die ruhig, einladend und frei von Bewertung ist.",
     imageAlt: "Eine Frau sitzt in der Abenddämmerung still auf einem hölzernen Steg neben ruhigem Wasser.",
     facts: [
       { label: "Wann", value: "Dienstags, 20:30–21:30" },
@@ -426,25 +426,25 @@ export const de: SiteContent = {
     ],
     closing: {
       heading: "Sie sind herzlich willkommen",
-      body: "Wenn Sie mehr Informationen über die Weekly Wellbeing Community erhalten möchten, melden Sie sich gerne bei mir.",
+      body: "Wenn Sie mehr über die Weekly Wellbeing Community erfahren möchten, melden Sie sich gerne bei mir.",
     },
   },
 
   blog: {
     metaTitle: "Blog — Gedanken & Perspektiven | Theresa Frische",
     metaDescription:
-      "Durchdachte, psychologisch fundierte Texte über emotionales Wohlbefinden, Beziehungen, Stress, Achtsamkeit und das Navigieren von Veränderung.",
+      "Durchdachte, psychologisch fundierte Texte über emotionales Wohlbefinden, Beziehungen, Stress, Achtsamkeit und den Umgang mit Veränderung.",
     eyebrow: "Blog",
     heading: "Gedanken & Perspektiven",
     intro:
-      "Durchdachte, psychologisch fundierte Texte über emotionales Wohlbefinden, Beziehungen, Stress, Achtsamkeit und das Navigieren von Veränderung — ruhig, reflektiert und zugänglich.",
+      "Durchdachte, psychologisch fundierte Texte über emotionales Wohlbefinden, Beziehungen, Stress, Achtsamkeit und den Umgang mit Veränderung — ruhig, reflektiert und verständlich.",
     allLabel: "Alle",
     readMore: "Weiterlesen",
     backToBlog: "Zurück zu allen Artikeln",
     relatedHeading: "Weiterlesen",
     authorHeading: "Über die Autorin",
     authorBody:
-      "Theresa Frische ist Systemische & Integrative Beraterin und arbeitet online mit internationalen Menschen, Expats und Paaren, die Veränderung navigieren. Die Sitzungen werden auf Deutsch und Englisch angeboten.",
+      "Theresa Frische ist Systemische & Integrative Beraterin und arbeitet online mit Internationals, Expats und Paaren, die sich in Zeiten der Veränderung befinden. Die Sitzungen finden auf Deutsch und Englisch statt.",
     minRead: "Min. Lesezeit",
     posts: blogPostsDe,
   },
@@ -456,7 +456,7 @@ export const de: SiteContent = {
     eyebrow: "FAQ",
     heading: "Häufig gestellte Fragen",
     intro:
-      "Einige der Fragen, die Menschen vor dem Einstieg oft stellen. Wenn Ihre Frage nicht dabei ist, melden Sie sich gerne bei mir.",
+      "Einige Fragen, die vor dem Einstieg häufig aufkommen. Wenn Ihre Frage nicht dabei ist, melden Sie sich gerne bei mir.",
     jumpLabel: "Zu einem Thema springen",
     categories: faqCategoriesDe,
   },
@@ -464,24 +464,24 @@ export const de: SiteContent = {
   contact: {
     metaTitle: "Kontakt — Kennenlerngespräch buchen | Theresa Frische",
     metaDescription:
-      "Melden Sie sich, um ein kostenloses 15-minütiges Kennenlerngespräch zu buchen oder Fragen zur Beratung, zur Weekly Wellbeing Community oder zur Zusammenarbeit mit Ihrer Organisation zu stellen.",
+      "Melden Sie sich, um ein kostenloses Kennenlerngespräch (15 Minuten) zu buchen oder Fragen zur Beratung, zur Weekly Wellbeing Community oder zur Zusammenarbeit mit Ihrer Organisation zu stellen.",
     eyebrow: "Kontakt",
     heading: "Kostenloses Kennenlerngespräch buchen",
-    lead: "Teilen Sie ein wenig davon, was Sie herführt, und ich melde mich bei Ihnen. Sie müssen nicht ins Detail gehen — ein paar Zeilen genügen. In der Regel antworte ich innerhalb von 2–3 Werktagen.",
+    lead: "Schreiben Sie mir kurz, was Sie herführt, und ich melde mich bei Ihnen. Sie müssen nicht ins Detail gehen — ein paar Zeilen genügen. In der Regel antworte ich innerhalb von 2–3 Werktagen.",
     form: {
       nameLabel: "Name",
       namePlaceholder: "Ihr Name",
       emailLabel: "E-Mail",
       emailPlaceholder: "sie@beispiel.de",
       messageLabel: "Nachricht",
-      messagePlaceholder: "Ein paar Worte dazu, was Sie herführt und was Sie fragen möchten.",
+      messagePlaceholder: "Ein paar Worte dazu, was Sie herführt und was Sie gerne fragen möchten.",
       consentLabel: "Ich habe die {privacy} gelesen und willige ein, dass meine Angaben verwendet werden, um meine Anfrage zu beantworten.",
       submit: "Nachricht senden",
       submitting: "Wird gesendet…",
-      successTitle: "Vielen Dank — Ihre Nachricht ist auf dem Weg.",
-      successBody: "Ich habe Ihre Nachricht erhalten und melde mich innerhalb von 2–3 Werktagen. Wenn Ihr Anliegen dringend ist, nutzen Sie bitte eine der hier aufgeführten Krisenanlaufstellen.",
-      errorTitle: "Etwas ist schiefgelaufen.",
-      errorGeneric: "Ihre Nachricht konnte gerade nicht gesendet werden. Bitte versuchen Sie es erneut oder schreiben Sie mir direkt an theresafrische@gmail.com.",
+      successTitle: "Vielen Dank — Ihre Nachricht ist unterwegs.",
+      successBody: "Ich habe Ihre Nachricht erhalten und melde mich innerhalb von 2–3 Werktagen. Wenn Ihr Anliegen dringend ist, wenden Sie sich bitte an eine der hier aufgeführten Krisenanlaufstellen.",
+      errorTitle: "Da ist etwas schiefgelaufen.",
+      errorGeneric: "Ihre Nachricht ließ sich gerade nicht senden. Bitte versuchen Sie es erneut oder schreiben Sie mir direkt an theresafrische@gmail.com.",
       validation: {
         name: "Bitte geben Sie Ihren Namen ein.",
         email: "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
@@ -490,7 +490,7 @@ export const de: SiteContent = {
       },
     },
     directHeading: "Lieber direkt schreiben?",
-    directBody: "Sie können mich auch gerne per E-Mail oder Telefon erreichen.",
+    directBody: "Sie erreichen mich auch gerne per E-Mail oder telefonisch.",
     emailLabel: "E-Mail",
     phoneLabel: "Telefon",
   },
@@ -643,11 +643,11 @@ export const de: SiteContent = {
   aiInfo: {
     metaTitle: "KI- & Zitier-Informationen — Theresa Frische",
     metaDescription:
-      "Eine klare, sachliche Zusammenfassung der Beratungspraxis von Theresa Frische für KI-Assistenten und Antwortmaschinen: wer sie ist, was angeboten wird, Sprachen, für wen es gedacht ist und wie man beginnt.",
+      "Eine klare, sachliche Zusammenfassung der Beratungspraxis von Theresa Frische für KI-Assistenten und Antwortmaschinen: wer sie ist, was sie anbietet, in welchen Sprachen, für wen es gedacht ist und wie man beginnt.",
     eyebrow: "Für KI-Assistenten",
     heading: "Über diese Praxis — eine sachliche Zusammenfassung",
     intro:
-      "Diese Seite ist eine klare, strukturierte Zusammenfassung der Beratungspraxis von Theresa Frische, geschrieben für ein genaues Erfassen und Zitieren durch KI-Assistenten und Antwortmaschinen. Alle Angaben finden sich in ausführlicherer Form auch auf den übrigen Seiten.",
+      "Diese Seite fasst die Beratungspraxis von Theresa Frische klar und strukturiert zusammen — so, dass KI-Assistenten und Antwortmaschinen die Angaben präzise erfassen und zitieren können. Alle Angaben finden sich ausführlicher auch auf den übrigen Seiten.",
     updated: "Zuletzt geprüft: Juli 2026.",
     sections: [
       {
@@ -676,7 +676,7 @@ export const de: SiteContent = {
       {
         heading: "Für wen es gedacht ist",
         paras: [
-          "Die Praxis unterstützt hochfunktionale, kulturell vielfältige Internationals, Expats und Paare, die Veränderung, Übergänge, einen Umzug, Überforderung, Belastung, Beziehungsspannungen, Fragen von Identität und Ausrichtung sowie das Leben zwischen Ländern und Kulturen navigieren.",
+          "Die Praxis unterstützt leistungsstarke, kulturell vielfältige Internationals, Expats und Paare, die mit Veränderung, Übergängen, einem Umzug, Überforderung, Belastung, Spannungen in Beziehungen, Fragen von Identität und Orientierung sowie dem Leben zwischen Ländern und Kulturen zu tun haben.",
         ],
       },
       {
