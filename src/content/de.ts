@@ -1,4 +1,6 @@
 import type { SiteContent } from "./types";
+import { wwmChildrenDe } from "./services/work-with-me";
+import { orgChildrenDe } from "./services/organisations";
 import { blogPostsDe } from "./blog/posts.de";
 import { faqCategoriesDe } from "./faq/faq.de";
 
@@ -18,9 +20,26 @@ export const de: SiteContent = {
   },
 
   nav: [
-    { label: "Über mich", href: "/de/about" },
-    { label: "Zusammenarbeit", href: "/de/work-together" },
-    { label: "Organisationen", href: "/de/organisations" },
+    { label: "Über mich", href: "/de/ueber-mich" },
+    {
+      label: "Angebot",
+      href: "/de/angebot",
+      children: [
+        { label: "Psychologische Beratung", href: "/de/angebot/psychologische-beratung" },
+        { label: "Paarberatung", href: "/de/angebot/paarberatung" },
+        { label: "Burnout-Prävention", href: "/de/angebot/burnout-praevention" },
+        { label: "Somatic Experiencing®", href: "/de/angebot/somatic-experiencing" },
+      ],
+    },
+    {
+      label: "Für Unternehmen",
+      href: "/de/fuer-unternehmen",
+      children: [
+        { label: "Vorträge, Workshops & Kurse", href: "/de/fuer-unternehmen/vortraege-workshops-kurse" },
+        { label: "Führungskräfte-Coaching", href: "/de/fuer-unternehmen/fuehrungskraefte-coaching" },
+        { label: "Beratung für Mitarbeitende", href: "/de/fuer-unternehmen/beratung-mitarbeitende" },
+      ],
+    },
     { label: "Weekly Wellbeing", href: "/de/weekly-wellbeing" },
     { label: "Blog", href: "/de/blog" },
     { label: "FAQ", href: "/de/faq" },
@@ -39,12 +58,20 @@ export const de: SiteContent = {
     line: "Theresa Frische · Systemische & Integrative Beraterin · Online-Praxis — international",
     nav: [
       { label: "Startseite", href: "/de" },
-      { label: "Über mich", href: "/de/about" },
-      { label: "Zusammenarbeit", href: "/de/work-together" },
-      { label: "Organisationen", href: "/de/organisations" },
+      { label: "Über mich", href: "/de/ueber-mich" },
+      { label: "Angebot", href: "/de/angebot" },
+      { label: "Psychologische Beratung", href: "/de/angebot/psychologische-beratung" },
+      { label: "Paarberatung", href: "/de/angebot/paarberatung" },
+      { label: "Burnout-Prävention", href: "/de/angebot/burnout-praevention" },
+      { label: "Somatic Experiencing®", href: "/de/angebot/somatic-experiencing" },
+      { label: "Für Unternehmen", href: "/de/fuer-unternehmen" },
+      { label: "Vorträge, Workshops & Kurse", href: "/de/fuer-unternehmen/vortraege-workshops-kurse" },
+      { label: "Führungskräfte-Coaching", href: "/de/fuer-unternehmen/fuehrungskraefte-coaching" },
+      { label: "Beratung für Mitarbeitende", href: "/de/fuer-unternehmen/beratung-mitarbeitende" },
       { label: "Weekly Wellbeing", href: "/de/weekly-wellbeing" },
       { label: "Blog", href: "/de/blog" },
       { label: "FAQ", href: "/de/faq" },
+      { label: "KI-Informationen", href: "/de/ai-info" },
     ],
     legalNav: [
       { label: "Kontakt", href: "/de/contact" },
@@ -85,49 +112,79 @@ export const de: SiteContent = {
     metaTitle: "Theresa Frische — Systemische & Integrative Beraterin",
     metaDescription:
       "Online-Beratung auf Deutsch und Englisch für Einzelpersonen und Paare in Zeiten von Veränderung, Umbruch, Überforderung und einem Leben zwischen Ländern und Kulturen. Buchen Sie Ihr kostenloses Kennenlerngespräch (15 Minuten).",
-    eyebrow: "Systemisch · Somatisch · Integrativ",
+    eyebrow: "Psychologische Beratung · Online",
     heroTitle: "Ein Raum für das, was",
     heroTitleAccent: "sich in Ihnen verändert",
     heroLead:
-      "Für Einzelpersonen und Paare in Zeiten von Veränderung und Umbruch — und für die leiseren Belastungen, für die es oft keine Worte gibt.",
+      "Vertrauliche Begleitung bei Stress, Burnout, Überforderung und Lebensübergängen — für Menschen, die viel leisten, viel tragen und wieder mehr Verbindung zu sich selbst finden möchten.",
     heroParas: [
       "Das Leben verändert sich selten geradlinig. Meist verschiebt sich etwas ganz allmählich — bis sich in Ihnen etwas anders anfühlt als zuvor.",
-      "Nach außen funktionieren Sie vielleicht noch, während innerlich Anspannung, Erschöpfung oder das leise Gefühl wächst, sich selbst fremd geworden zu sein.",
+      "Manchmal läuft im Außen alles weiter, während innen Erschöpfung, innere Unruhe oder Überforderung wachsen — oder das leise Gefühl, sich selbst fremd geworden zu sein.",
       "Viele Menschen suchen Unterstützung nicht, weil etwas zerbrochen ist, sondern weil sich etwas verschoben hat — und weil das, was früher getragen hat, nicht mehr recht trägt.",
     ],
     heroEmphasis:
-      "In dieser Arbeit geht es nicht darum, etwas zu reparieren, das nicht mehr funktioniert. Es geht darum, einen geschützten Raum zu schaffen, in dem Sie sich selbst besser verstehen und sich einem Leben annähern, das zu Ihren Werten passt.",
+      "In dieser Arbeit geht es nicht darum, etwas zu reparieren, das nicht mehr funktioniert. Es geht darum, einen vertraulichen Raum zu schaffen, in dem Sie sich selbst besser verstehen lernen, Ihre Ressourcen stärken und ein Leben gestalten, das zu Ihren Bedürfnissen und Werten passt.",
     heroPrimary: { label: "Kennenlerngespräch buchen", href: "/de/contact" },
-    heroSecondary: { label: "Angebote entdecken", href: "/de/work-together" },
+    heroSecondary: { label: "Angebote entdecken", href: "/de/angebot" },
+    reachLine:
+      "Online-Beratung auf Deutsch und Englisch — für Klient:innen in der Schweiz, in Deutschland und international.",
+    trustPillars: [
+      {
+        title: "Diskret",
+        body: "Ein geschützter, wertfreier Rahmen — für das, was sonst nirgends Raum findet.",
+      },
+      {
+        title: "Fundiert",
+        body: "Wissenschaftlich fundierte Methoden, sorgfältig auf Sie abgestimmt.",
+      },
+      {
+        title: "Flexibel",
+        body: "Eine Begleitung, die sich Ihrem Leben anpasst — nicht umgekehrt.",
+      },
+    ],
     testimonial: {
-      text: "Theresa schafft einen Raum, der sich sicher, geerdet und zutiefst tragend anfühlt. Ich bin widerstandsfähiger und präsenter geworden und fühle mich wieder stärker mit mir selbst verbunden.",
-      attribution: "Klient:in",
+      text: "Theresa schafft einen Raum, der sich sicher, geerdet und zutiefst unterstützend anfühlt. Durch ihre Begleitung bin ich widerstandsfähiger geworden, präsenter — und wieder mehr bei mir selbst.",
+      attribution: "Ariana",
     },
+    testimonials: [
+      {
+        text: "Theresa schafft einen Raum, der sich sicher, geerdet und zutiefst unterstützend anfühlt. Durch ihre Begleitung bin ich widerstandsfähiger geworden, präsenter — und wieder mehr bei mir selbst.",
+        attribution: "Ariana",
+      },
+      {
+        text: "Am meisten hat mich berührt, wie authentisch Theresa als Mensch präsent ist. Ihr körperorientierter Ansatz hat mir geholfen, meine Gefühle wieder zu spüren und zu verstehen.",
+        attribution: "Nicolas",
+      },
+    ],
     audience: {
       eyebrow: "Schwerpunkte",
-      heading: "Für wen diese Arbeit gedacht ist",
+      heading: "Für wen dieser Raum gedacht ist",
       intro:
-        "Diese Arbeit ist für Menschen in bedeutsamen Übergängen — wenn das Innere nach etwas anderem verlangt als nach dem, was bisher vertraut war.",
+        "Für Menschen in bedeutsamen Übergängen — wenn Altes nicht mehr trägt und Neues noch nicht greifbar ist.",
       items: [
         {
           title: "Lebensübergänge",
-          body: "Umzug, Trennung, beruflicher Wandel, Verlust, Elternschaft — Veränderungen, die einiges an innerer Anpassung verlangen.",
-        },
-        {
-          title: "Beziehungen",
-          body: "Kommunikation, emotionale Distanz, wiederkehrende Konflikte — und der Weg zurück zu Verständnis und Nähe.",
+          body: "Umzug, Trennung, beruflicher Wandel, Verlust, Elternschaft — Veränderungen, die viel innere Anpassung verlangen.",
         },
         {
           title: "Identität & Orientierung",
           body: "Phasen der Unsicherheit, Neuorientierung und Fragen nach Sinn und Richtung im Leben.",
         },
         {
-          title: "Leben zwischen Ländern",
-          body: "Was es bedeutet, zwischen Ländern, Kulturen und immer wieder neuen sozialen Umfeldern zu leben.",
+          title: "Überforderung & Burnout",
+          body: "Frühe Anzeichen von Burnout erkennen, anhaltenden Stress regulieren und zurück zu Verbindung und Balance finden — auch dann, wenn die eigenen Kräfte aufgebraucht scheinen.",
         },
         {
-          title: "Überforderung & Erschöpfung",
-          body: "Begleitung dabei, wieder in Verbindung und ins Gleichgewicht zu kommen, wenn die eigenen Kräfte aufgebraucht scheinen.",
+          title: "Emotions- & Nervensystemregulation",
+          body: "Umgang mit Sorgen, innerer Unruhe und körperlichen Stressreaktionen — und mit emotionalen Erfahrungen, die zu schwer sind, um sie allein zu tragen.",
+        },
+        {
+          title: "Beziehungsthemen & Paarberatung",
+          body: "Festgefahrene Muster durchbrechen, die Kommunikation verbessern und Konflikte konstruktiv lösen — und den Weg zurück zu Verständnis und Nähe finden.",
+        },
+        {
+          title: "Expat- & internationales Leben",
+          body: "Was es bedeutet, zwischen Ländern, Kulturen und sich wandelnden sozialen Welten zu leben. Beratung für Expats und internationale Paare auf Deutsch & Englisch — online in der Schweiz, in Deutschland und international.",
         },
         {
           title: "Persönliches Wachstum",
@@ -151,7 +208,7 @@ export const de: SiteContent = {
         },
         {
           title: "Teile-Arbeit (Parts Work)",
-          body: "Ein neugieriger, mitfühlender Blick auf die verschiedenen Anteile in Ihnen, die widersprüchliche Bedürfnisse, Ängste oder Reaktionen tragen — hin zu mehr innerem Zusammenhalt.",
+          body: "Ein neugieriger, mitfühlender Blick auf die verschiedenen Anteile in Ihnen, die widersprüchliche Bedürfnisse, Sorgen oder Reaktionen tragen — hin zu mehr innerem Zusammenhalt.",
         },
         {
           title: "Achtsamkeitsbasierte Praxis",
@@ -172,40 +229,127 @@ export const de: SiteContent = {
       closing:
         "Bereit für den ersten Schritt? Buchen Sie Ihr kostenloses Kennenlerngespräch (15 Minuten) — ein entspannter, unverbindlicher Einstieg.",
     },
+    steps: {
+      eyebrow: "Mein Ansatz",
+      heading: "Systemisch. Körperorientiert. Integrativ.",
+      intro:
+        "Ich verbinde wissenschaftlich fundierte Perspektiven — Systemische Beratung, Somatic Experiencing®, Anteilearbeit sowie achtsamkeitsbasierte Ansätze — mit einer integrativen Haltung und tiefem Respekt für die individuelle Geschichte und die inneren Ressourcen jedes Menschen. Für nachhaltige Veränderung statt kurzfristiger Lösungen.",
+      items: [
+        {
+          title: "01 Muster verstehen",
+          body: "Wiederkehrende Verhaltens- und Beziehungsmuster verstehen und Raum für Neues schaffen.",
+        },
+        {
+          title: "02 Nervensystem regulieren",
+          body: "Stress im Körper sanft lösen, um wieder ruhiger und präsenter sein zu können.",
+        },
+        {
+          title: "03 Innere Konflikte lösen",
+          body: "Widersprüchliche Bedürfnisse und innere Anteile in Einklang bringen.",
+        },
+        {
+          title: "04 Leben und Werte in Einklang bringen",
+          body: "Handeln und Entscheidungen wieder an dem ausrichten, was Ihnen wirklich wichtig ist.",
+        },
+      ],
+      closing:
+        "Psychologische Beratung ist ein gemeinsamer Prozess. Sie bleiben Expert:in für Ihr eigenes Leben; ich begleite Sie mit fachlicher Expertise, Empathie und neuen Perspektiven.",
+      ctaLabel: "Mehr über meine Philosophie",
+    },
+    privatePay: {
+      eyebrow: "Selbstzahler-Praxis",
+      heading: "Ihre Vorteile als Selbstzahler:in",
+      items: [
+        {
+          title: "Volle Diskretion & Privatsphäre",
+          body: "Keine Diagnosen in Krankenkassenakten. Keine Meldung an eine Versicherung — was besprochen wird, bleibt vertraulich.",
+        },
+        {
+          title: "Schnelle Hilfe",
+          body: "Wir beginnen, sobald Sie bereit sind — ohne ärztliche Überweisung, ohne Wartezeit über eine Kasse.",
+        },
+        {
+          title: "Maximale Flexibilität",
+          body: "Ortsunabhängig online, auf Deutsch und Englisch — für ein Leben, das sich über mehr als ein Land erstreckt.",
+        },
+      ],
+    },
+    aboutBlock: {
+      eyebrow: "Über mich",
+      heading: "Ich bin Theresa Frische",
+      body: "Mit einem Master of Science in Klinischer Psychologie und Weiterbildungen in systemischer Beratung, körperorientierten Verfahren und Achtsamkeit begleite ich Einzelpersonen und Paare durch emotionale Belastungsphasen und bedeutsame Lebensübergänge.",
+      ctaLabel: "Mehr über mich",
+    },
   },
 
   about: {
     metaTitle: "Über mich — Theresa Frische",
     metaDescription:
-      "Theresa Frische ist Systemische & Integrative Beraterin und begleitet Internationals, Expats und Paare durch Veränderung. M.Sc. Clinical Psychology · Somatic Experiencing Practitioner.",
+      "Theresa Frische ist Systemische & Integrative Beraterin und begleitet Internationals, Expats und Paare durch Veränderung. M.Sc. Klinische Psychologie · Somatic Experiencing® Practitioner.",
     eyebrow: "Über mich",
     name: "Theresa Frische",
     subtitle: "Eine Beraterin für Menschen im Übergang.",
     credentials:
-      "M.Sc. Clinical Psychology · Somatic Experiencing Practitioner · Systemische & Integrative Beraterin",
-    lead: "Seit über acht Jahren begleite ich Einzelpersonen und Organisationen durch bedeutsame Veränderung — mit einer tiefen Aufmerksamkeit für den ganzen Menschen.",
+      "M.Sc. Klinische Psychologie · Somatic Experiencing® Practitioner · Systemische & Integrative Beraterin",
+    lead: "Seit über acht Jahren begleite ich Menschen und Organisationen durch bedeutsame Veränderungsprozesse — mit tiefer Aufmerksamkeit für die gesamte menschliche Erfahrung.",
     intro: [
-      "Ich weiß, wie es sich anfühlt, wenn das Leben zu viel wird — wenn der Druck steigt, Beziehungen sich anspannen oder Sie den festen Boden unter den Füßen verlieren.",
-      "Mit der Zeit habe ich verstanden, wie eng unser Nervensystem, unsere Beziehungen und unsere Lebensumstände miteinander verwoben sind. Gerät ein Bereich unter Druck, wirkt sich das oft auf alles andere aus — darauf, wie wir uns fühlen, wie wir in Verbindung gehen und wie wir uns durchs Leben bewegen. Dieses Verständnis steht im Zentrum meiner Arbeit.",
+      "Ich weiß, wie es sich anfühlt, wenn das Leben zu viel wird — wenn sich Stress aufbaut, Beziehungen belastet sind oder man das Gefühl hat, den Boden unter den Füßen zu verlieren.",
+      "Mit der Zeit habe ich verstanden, wie eng Nervensystem, Beziehungen und Lebensumstände miteinander verwoben sind. Ist ein Bereich überlastet, wirkt sich das oft auf alles andere aus — wie wir fühlen, wie wir in Verbindung gehen, wie wir uns durch die Welt bewegen. Dieses Verständnis steht im Zentrum meiner Arbeit.",
     ],
     imageAlt: "Porträt von Theresa Frische, Systemische & Integrative Beraterin, lächelnd am Fenster.",
     lived: {
-      heading: "Ein Leben über Grenzen hinweg",
+      heading: "Ein Leben zwischen Welten",
       body: [
-        "Mein eigenes Leben hat mich durch verschiedene Länder geführt, durch Fern- und interkulturelle Beziehungen und durch das Ankommen in immer neuen kulturellen und beruflichen Umfeldern. Bevor ich zur Psychologie kam, habe ich zeitgenössischen Tanz studiert und mich in kontemplative Praxis vertieft.",
-        "Diese Erfahrungen haben mir ein tiefes Gespür dafür gegeben, was es heißt, im Übergang zu sein — nicht nur äußerlich, sondern auch innerlich: die Unsicherheit, das Gefühl der Orientierungslosigkeit und den Wunsch, mitten in der Veränderung Halt zu finden.",
+        "Mein eigenes Leben hat sich zwischen verschiedenen Ländern, Kulturen und Identitäten bewegt — geprägt von Fernbeziehungen und interkulturellen Partnerschaften sowie dem wiederholten Ankommen in neuen beruflichen Umfeldern. Bevor ich mich der Psychologie widmete, habe ich zeitgenössischen Tanz und klassisches Ballett studiert und mich intensiv mit kontemplativer Praxis auseinandergesetzt.",
+        "Diese Erfahrungen haben mir ein tiefes Verständnis dafür gegeben, was es bedeutet, im Übergang zu sein — nicht nur äußerlich, sondern innerlich: die Unsicherheit, die Orientierungslosigkeit, das Bedürfnis, inmitten von Veränderung Halt zu finden.",
       ],
       emphasis:
-        "So einzigartig die Geschichte jedes Menschen auch ist — die innere Landschaft, die große Lebensübergänge und komplexe Beziehungen oft mit sich bringen, ist mir vertraut.",
+        "So einzigartig die Geschichte jedes Menschen auch ist — ich verstehe die emotionale Landschaft, die große Lebensübergänge und komplexe Beziehungen oft mit sich bringen.",
     },
     philosophy: {
       heading: "Den Menschen als Ganzes sehen",
       body: [
-        "Ich bin überzeugt: Nachhaltiges Wohlbefinden entsteht dort, wo ein Mensch als Ganzes gesehen wird — im Zusammenspiel von Körper, Geist und sozialem Umfeld.",
-        "In meiner Arbeit verbinde ich evidenzbasierte Psychologie mit einem körper- und systemorientierten Ansatz. Statt in Schubladen zu denken, schaue ich auf die Zusammenhänge dahinter — darauf, wie Lebensgeschichte, Nervensystem, Beziehungsmuster und Lebensumstände unser Erleben prägen.",
+        "Ich bin davon überzeugt: Jeder Mensch trägt die Kapazität für Veränderung, Regulation und Wachstum bereits in sich. In meiner Arbeit geht es nicht darum, Sie zu „reparieren“ oder Ihnen vorgefertigte Ratschläge zu geben, sondern darum, Bedingungen zu schaffen, unter denen sich nachhaltige Entwicklung entfalten kann.",
+        "Ich verbinde evidenzbasierte Psychologie, systemische Beratung, körperorientierte Ansätze (Somatic Experiencing®), Anteilearbeit und Achtsamkeit zu einem integrativen Prozess, um Sie auf allen Ebenen anzusprechen — mental, emotional, körperlich, relational und in existenziellen Sinnfragen. Dabei denke ich nicht in Schubladen, sondern richte meinen Blick auf zugrundeliegende Zusammenhänge — darauf, wie Lebensgeschichte, Nervensystem, Beziehungsmuster und Lebenskontext unser Erleben prägen.",
         "Mein Anliegen ist es, Menschen dabei zu begleiten, mehr innere Stabilität, Flexibilität und Widerstandskraft zu entwickeln — und ein erfülltes, werteorientiertes Leben zu gestalten, in Verbindung mit sich selbst und anderen.",
       ],
     },
+    philosophySections: [
+      {
+        number: "01",
+        heading: "Muster verstehen & kontextualisieren",
+        paras: [
+          "Unsere heutigen Denk-, Fühl- und Verhaltensmuster sind keine Fehlfunktionen. Sie sind kluge Anpassungsleistungen unseres Systems an frühere Lebensumstände, Beziehungen oder Belastungssituationen. Früher waren diese Strategien schützend und oft überlebenswichtig — heute jedoch können sie uns im Alltag, im Beruf oder in Beziehungen im Weg stehen.",
+          "Gemeinsam betrachten wir Ihre wiederkehrenden Dynamiken ohne Bewertung. Wir erforschen behutsam, welche Funktion diese Muster einst hatten und warum sie bis heute fortbestehen. Indem wir ihre Ursprünge und Auslöser verstehen, verlieren alte Automatismen ihre Macht — und es entsteht der Freiraum, bewusste, neue Entscheidungen zu treffen.",
+        ],
+      },
+      {
+        number: "02",
+        heading: "Das Nervensystem & den Körper einbeziehen",
+        paras: [
+          "Reines Verstehen auf verstandesmäßiger Ebene reicht oft nicht aus, um tiefgreifende Veränderung zu bewirken. Der Verstand kann logisch erfassen, dass eine Situation sicher ist — während der Körper, unser Nervensystem, weiterhin mit Anspannung, Erstarrung oder Überforderung reagiert.",
+          "Über körperorientierte Ansätze wie Somatic Experiencing® lernen Sie, die feinen Signale Ihres Nervensystems wahrzunehmen und zu verstehen. Wir arbeiten daran, Stress behutsam zu lösen und die Selbstregulationsfähigkeit Ihres Organismus wiederherzustellen. Das Ergebnis ist eine wachsende innere Stabilität, mehr emotionale Belastbarkeit und eine neue, spürbare Präsenz im Alltag.",
+        ],
+      },
+      {
+        number: "03",
+        heading: "Innere Konflikte & Anteile integrieren",
+        paras: [
+          "Häufig erleben wir in herausfordernden Lebensphasen innere Widersprüche: Ein Teil von uns möchte Veränderung, ein anderer sucht Sicherheit; ein Teil möchte klare Grenzen setzen, ein anderer will niemanden enttäuschen. Solche inneren Zerreißproben kosten enorm viel Energie.",
+          "In Anlehnung an das Modell des Internal Family Systems (IFS) begegnen wir Ihren unterschiedlichen inneren Anteilen mit Neugier und Wertschätzung. Statt ungewollte Impulse oder Gefühle wegzudrücken, schaffen wir einen geschützten Raum, in dem alle Anteile gehört werden können. Indem wir die zugrundeliegenden Bedürfnisse und Befürchtungen dieser Anteile klären, lösen sich innere Blockaden — aus innerer Zerrissenheit wird Klarheit, Selbstmitgefühl und Handlungsfähigkeit.",
+        ],
+      },
+      {
+        number: "04",
+        heading: "Das Leben am eigenen Wertekompass ausrichten",
+        paras: [
+          "Achtsame Präsenz schafft den Raum, in dem Wahlfreiheit möglich wird. Nachhaltige Zufriedenheit entsteht dort, wo unser tägliches Handeln, unsere Entscheidungen und unsere Beziehungen im Einklang mit unseren tiefsten persönlichen Werten stehen.",
+          "Gemeinsam erarbeiten wir, was Ihnen wirklich wichtig ist — jenseits von externen Erwartungen, gesellschaftlichem Druck oder gelernten Anpassungsmustern. So gestalten wir schrittweise einen Lebensweg, der sich auch im Inneren stimmig, authentisch und erfüllt anfühlt.",
+        ],
+      },
+    ],
+    psyCoNote:
+      "Die Anerkennung dieses Hochschulabschlusses durch die Psychologieberufekommission (PsyKo) ist beantragt und derzeit pendent.",
     quotes: [
       { text: "Das Leben ist ein Gleichgewicht aus Festhalten und Loslassen.", attribution: "Rumi" },
       {
@@ -214,31 +358,31 @@ export const de: SiteContent = {
       },
     ],
     education: {
-      heading: "Ausbildung & Qualifikationen",
+      heading: "Qualifikationen & Fundament",
       items: [
         {
           title: "Systemische Weiterbildung",
-          body: "IF Weinheim/Mannheim · seit 2023 in Ausbildung",
+          body: "IF Weinheim/Mannheim, seit 2023",
         },
         {
-          title: "Körperorientierte Ausbildung",
-          body: "Somatic Experiencing (SE), vollständig ausgebildete Praktikerin · weitere Fortbildungen in Ego-State, Hakomi und körperorientierten Methoden für die Arbeit mit Stress und Überforderung",
+          title: "Körperorientierte Ansätze",
+          body: "Somatic Experiencing® (SE), zertifizierte Praktikerin; weitere Fortbildungen in Ego-State, Hakomi und körperorientierten Methoden für die Arbeit mit Stress und Überforderung",
         },
-        { title: "M.Sc. Clinical Psychology", body: "Universität Witten/Herdecke" },
+        { title: "M.Sc. Klinische Psychologie", body: "Universität Witten/Herdecke" },
         { title: "B.Sc. Psychologie", body: "Universität zu Köln" },
         {
           title: "Klassischer & zeitgenössischer Tanz",
-          body: "CODARTS Rotterdam & HfMDK Frankfurt",
+          body: "HfMDK Frankfurt & CODARTS Rotterdam",
         },
       ],
     },
   },
 
   workTogether: {
-    metaTitle: "Zusammenarbeit — Theresa Frische",
+    metaTitle: "Angebot — Psychologische Beratung & Paarberatung | Theresa Frische",
     metaDescription:
-      "Online-Beratung für Einzelpersonen und Paare auf Deutsch und Englisch. Beginnen Sie mit einem kostenlosen Kennenlerngespräch (15 Minuten).",
-    eyebrow: "Zusammenarbeit",
+      "Online-Beratung für Einzelpersonen und Paare auf Deutsch und Englisch: psychologische Beratung, Paarberatung, Burnout-Prävention und Somatic Experiencing®. Beginnen Sie mit einem kostenlosen Kennenlerngespräch (15 Minuten).",
+    eyebrow: "Angebot",
     heading: "So beginnen wir",
     intro:
       "Die Sitzungen finden online statt, auf Deutsch und Englisch, für Einzelpersonen und Paare weltweit. Der einfachste erste Schritt ist ein kostenloses, unverbindliches Kennenlerngespräch.",
@@ -290,13 +434,43 @@ export const de: SiteContent = {
       body: "Buchen Sie Ihr kostenloses Kennenlerngespräch (15 Minuten) — ein entspannter, unverbindlicher Einstieg.",
       note: "Sitzungen sind Selbstzahlerleistungen · Antwort innerhalb von 2–3 Werktagen.",
     },
+    cards: [
+      {
+        title: "Psychologische Beratung",
+        body: "Ein vertraulicher Raum für Reflexion und Klarheit — für Einzelpersonen.",
+        href: "/de/angebot/psychologische-beratung",
+      },
+      {
+        title: "Paarberatung",
+        body: "Ein geschützter Raum für echte Begegnung und neue Bewegung in der Beziehung.",
+        href: "/de/angebot/paarberatung",
+      },
+      {
+        title: "Burnout-Prävention",
+        body: "Stressmuster erkennen, bevor Erschöpfung zum Zusammenbruch führt.",
+        href: "/de/angebot/burnout-praevention",
+      },
+      {
+        title: "Somatic Experiencing®",
+        body: "Körperorientierte Verarbeitung von Stress und belastenden Erfahrungen.",
+        href: "/de/angebot/somatic-experiencing",
+      },
+    ],
+    switzerland: {
+      heading: "Begleitung in der Schweiz, in Deutschland und international",
+      paras: [
+        "Die Beratung findet ausschließlich online per Video statt — auf Deutsch und Englisch, für Klient:innen in der Schweiz, in Deutschland und international. Wer in Zürich, Zug oder einer anderen Schweizer Region lebt, arbeitet mit mir also von dort aus, ohne Anfahrt und ohne Wartezimmer.",
+        "Dieses Format passt besonders zu Internationals und Expats, die beruflich umgezogen sind: Sie können die Begleitung beibehalten, auch wenn sich der Wohnort, das Land oder die Arbeitssituation wieder verändert. Paare, die an unterschiedlichen Orten leben, können ebenfalls gemeinsam teilnehmen.",
+        "Termine vergebe ich nach Vereinbarung; Zeitzonen außerhalb Mitteleuropas lassen sich in vielen Fällen einrichten. Die Sitzungen sind Selbstzahlerleistungen — es braucht keine Überweisung und keine Meldung an eine Versicherung.",
+      ],
+    },
   },
 
   organisations: {
-    metaTitle: "Organisationen — Wohlbefinden am Arbeitsplatz | Theresa Frische",
+    metaTitle: "Für Unternehmen — Wohlbefinden am Arbeitsplatz | Theresa Frische",
     metaDescription:
       "Wohlbefinden am Arbeitsplatz, Keynotes, Workshops und Beratungsangebote für Mitarbeitende von Organisationen in Deutschland und der Schweiz. Über acht Jahre Erfahrung.",
-    eyebrow: "Für Organisationen",
+    eyebrow: "Für Unternehmen",
     heading: "Mentale Gesundheit & Wohlbefinden am Arbeitsplatz",
     lead: "Mentale Gesundheit am Arbeitsplatz ist kein Luxus — sie ist die Grundlage für leistungsfähige, engagierte und widerstandsfähige Teams.",
     intro:
@@ -304,7 +478,7 @@ export const de: SiteContent = {
     facts: [
       { label: "Erfahrung", value: "8+ Jahre in der betrieblichen Gesundheitsförderung" },
       { label: "Sprachen", value: "Deutsch & Englisch" },
-      { label: "Zertifizierung", value: "Somatic Experiencing (SE) Practitioner" },
+      { label: "Zertifizierung", value: "Somatic Experiencing® (SE) Practitioner" },
       { label: "Durchführung", value: "Online oder vor Ort, Deutschland & Schweiz" },
     ],
     formats: {
@@ -382,6 +556,23 @@ export const de: SiteContent = {
       heading: "Sprechen wir über Ihre Organisation",
       body: "Für Anfragen zu Workshops, Programmen oder der Begleitung von Führungskräften melden Sie sich gerne direkt. Gemeinsam finden wir heraus, was für Ihren Kontext am hilfreichsten ist.",
     },
+    cards: [
+      {
+        title: "Vorträge, Workshops & Kurse",
+        body: "Keynotes, Workshops, vertiefende Trainings und 8-Wochen-Programme.",
+        href: "/de/fuer-unternehmen/vortraege-workshops-kurse",
+      },
+      {
+        title: "Führungskräfte-Coaching",
+        body: "Einzelcoaching für Führungskräfte zu Selbstführung und tragfähigem Umgang mit Druck.",
+        href: "/de/fuer-unternehmen/fuehrungskraefte-coaching",
+      },
+      {
+        title: "Beratung für Mitarbeitende",
+        body: "Vertrauliche Einzelbegleitung, eingebettet in Ihr betriebliches Gesundheitsmanagement.",
+        href: "/de/fuer-unternehmen/beratung-mitarbeitende",
+      },
+    ],
   },
 
   weeklyWellbeing: {
@@ -452,7 +643,7 @@ export const de: SiteContent = {
   faq: {
     metaTitle: "FAQ — Theresa Frische",
     metaDescription:
-      "Antworten auf häufige Fragen zu Online-Beratungssitzungen, Sprachen, Format, Somatic Experiencing und der Weekly Wellbeing Community.",
+      "Antworten auf häufige Fragen zu Online-Beratungssitzungen, Sprachen, Format, Somatic Experiencing® und der Weekly Wellbeing Community.",
     eyebrow: "FAQ",
     heading: "Häufig gestellte Fragen",
     intro:
@@ -505,7 +696,8 @@ export const de: SiteContent = {
         lines: [
           "Theresa Frische",
           "Systemische & Integrative Beraterin (Beratung)",
-          "Anschrift: [Adresse wird ergänzt]",
+          "Scheffelstraße 23",
+          "79102 Freiburg im Breisgau",
           "Deutschland",
         ],
       },
@@ -516,12 +708,12 @@ export const de: SiteContent = {
       {
         heading: "Umsatzsteuer / Steuerstatus",
         lines: [
-          "Kleinunternehmer gemäß § 19 UStG — USt-Status wird bestätigt; kein Ausweis der Umsatzsteuer auf Rechnungen (Kleinunternehmer­regelung).",
+          "Kleinunternehmerin gemäß § 19 UStG. Gemäß § 19 UStG wird keine Umsatzsteuer berechnet.",
         ],
       },
       {
         heading: "Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV",
-        lines: ["Theresa Frische (Anschrift wie oben)"],
+        lines: ["Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV: Theresa Frische.", "Anschrift wie oben."],
       },
       {
         heading: "Art der Praxis",
@@ -567,8 +759,8 @@ export const de: SiteContent = {
       {
         heading: "Verantwortlicher",
         paras: [
-          "Verantwortlich für die Datenverarbeitung auf dieser Website ist:",
-          "Theresa Frische — Systemische & Integrative Beraterin. Anschrift: [Adresse wird ergänzt]. E-Mail: theresafrische@gmail.com. Telefon: +49 157 38920374.",
+          "Verantwortliche für die Datenverarbeitung auf dieser Website im Sinne der DSGVO ist:",
+          "Theresa Frische — Systemische & Integrative Beraterin. Scheffelstraße 23, 79102 Freiburg im Breisgau, Deutschland. E-Mail: theresafrische@gmail.com. Telefon: +49 157 38920374.",
         ],
       },
       {
@@ -640,6 +832,8 @@ export const de: SiteContent = {
     ],
   },
 
+  serviceChildren: { ...wwmChildrenDe, ...orgChildrenDe },
+
   aiInfo: {
     metaTitle: "KI- & Zitier-Informationen — Theresa Frische",
     metaDescription:
@@ -653,16 +847,18 @@ export const de: SiteContent = {
       {
         heading: "Wer Theresa Frische ist",
         paras: [
-          "Theresa Frische ist Systemische & Integrative Beraterin und bietet Online-Beratung für Einzelpersonen und Paare international an. Sie hat einen M.Sc. in Klinischer Psychologie, ist ausgebildete Somatic-Experiencing-Praktikerin mit fortgeschrittener systemischer Ausbildung und verfügt über mehr als acht Jahre Erfahrung in der Begleitung von Menschen und Organisationen durch Veränderung.",
+          "Theresa Frische ist Systemische & Integrative Beraterin und bietet psychologische Beratung online für Einzelpersonen und Paare international an. Sie hat einen M.Sc. in Klinischer Psychologie, ist zertifizierte Somatic Experiencing®-Praktikerin, absolviert seit 2023 eine systemische Weiterbildung am IF Weinheim/Mannheim und verfügt über mehr als acht Jahre Erfahrung in der Begleitung von Menschen und Organisationen durch Veränderung.",
         ],
       },
       {
         heading: "Was die Praxis anbietet",
         bullets: [
-          "Einzelberatung — Online-Sitzungen zu zweit (60 Minuten).",
+          "Psychologische Beratung im Einzelsetting — Online-Sitzungen zu zweit (60 Minuten).",
           "Paarberatung — Online-Sitzungen für Paare (60–120 Minuten).",
+          "Burnout-Prävention — Begleitung beim Erkennen und Regulieren von Stressmustern.",
+          "Somatic Experiencing® — körperorientierte Verarbeitung von Stress und belastenden Erfahrungen.",
           "Weekly Wellbeing Community — eine wöchentliche Online-Gruppe für Achtsamkeit und Wohlbefinden (dienstags, auf Englisch).",
-          "Für Organisationen — Impulsvorträge, Workshops, mehrtägige Trainings, 8-Wochen-Programme sowie vertrauliche Beratung für Mitarbeitende und Führungskräfte.",
+          "Für Unternehmen — Vorträge, Workshops und Kurse, Führungskräfte-Coaching sowie vertrauliche Beratung für Mitarbeitende.",
         ],
       },
       {
@@ -682,7 +878,7 @@ export const de: SiteContent = {
       {
         heading: "Ansatz",
         paras: [
-          "Die Arbeit ist integrativ und kontextorientiert und schöpft aus systemischer Beratung, körperorientierter Achtsamkeit (Somatic Experiencing), Teilearbeit und achtsamkeitsbasierter Praxis — passend zum jeweiligen Menschen und nicht als eine einzelne feste Methode.",
+          "Die Arbeit ist integrativ und kontextorientiert und schöpft aus systemischer Beratung, körperorientierten Ansätzen (Somatic Experiencing®), Anteilearbeit und achtsamkeitsbasierter Praxis — passend zum jeweiligen Menschen und nicht als eine einzelne feste Methode.",
         ],
       },
       {
@@ -700,9 +896,16 @@ export const de: SiteContent = {
       {
         heading: "Wichtige Seiten",
         bullets: [
-          "Über mich: /de/about — Hintergrund und Ansatz von Theresa.",
-          "Zusammenarbeit: /de/work-together — Einzel- und Paarberatung.",
-          "Organisationen: /de/organisations — Wohlbefinden am Arbeitsplatz für Teams.",
+          "Über mich: /de/ueber-mich — Hintergrund, Qualifikationen und Ansatz von Theresa.",
+          "Angebot (Übersicht): /de/angebot — alle Beratungsangebote für Einzelpersonen und Paare.",
+          "Psychologische Beratung: /de/angebot/psychologische-beratung — Einzelberatung online.",
+          "Paarberatung: /de/angebot/paarberatung — Beratung für Paare online.",
+          "Burnout-Prävention: /de/angebot/burnout-praevention — Stressmuster erkennen und regulieren.",
+          "Somatic Experiencing®: /de/angebot/somatic-experiencing — körperorientierte Arbeit mit Stress.",
+          "Für Unternehmen (Übersicht): /de/fuer-unternehmen — Wohlbefinden am Arbeitsplatz für Teams.",
+          "Vorträge, Workshops & Kurse: /de/fuer-unternehmen/vortraege-workshops-kurse — Keynotes, Workshops, Trainings und 8-Wochen-Programme.",
+          "Führungskräfte-Coaching: /de/fuer-unternehmen/fuehrungskraefte-coaching — Einzelcoaching für Führungskräfte.",
+          "Beratung für Mitarbeitende: /de/fuer-unternehmen/beratung-mitarbeitende — vertrauliche Einzelbegleitung im betrieblichen Kontext.",
           "Weekly Wellbeing: /de/weekly-wellbeing — die wöchentliche Online-Community.",
           "Blog: /de/blog — Beiträge zu Stress, Überforderung, Beziehungen, Übergängen und dem Leben im Ausland.",
           "FAQ: /de/faq — häufige Fragen zur Zusammenarbeit.",

@@ -1,3 +1,5 @@
+import Image from "next/image";
+import Link from "next/link";
 import type { Locale } from "@/content/types";
 import { getContent } from "@/content";
 import { Section } from "@/components/ui/Section";
@@ -25,6 +27,41 @@ export function OrganisationsPage({ locale }: { locale: Locale }) {
           </div>
         </div>
       </Section>
+
+      {/* THREE SUBPAGE CARDS */}
+      <Section tone="sand">
+        <ul className="grid gap-5 sm:grid-cols-3">
+          {o.cards.map((card) => (
+            <li key={card.href}>
+              <Link
+                href={card.href}
+                className="group flex h-full flex-col rounded-2xl border border-line bg-cream p-7 transition-colors hover:border-clay-deep/50"
+              >
+                <h2 className="font-serif text-xl font-light text-ink transition-colors group-hover:text-forest">
+                  {card.title}
+                </h2>
+                <p className="mt-3 flex-1 text-sm leading-relaxed text-ink-soft">{card.body}</p>
+                <span className="mt-5 text-sm font-medium text-forest">
+                  {locale === "de" ? "Mehr erfahren" : "Learn more"} <span aria-hidden="true">→</span>
+                </span>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </Section>
+
+      {/* HER PHOTOGRAPH — delivering a seminar */}
+      <div className="relative aspect-[3/2] w-full sm:aspect-[21/9]">
+        <Image
+          src="/images/organisations.jpg"
+          alt={locale === "de"
+            ? "Theresa Frische bei einem Seminar zu Wohlbefinden am Arbeitsplatz."
+            : "Theresa Frische delivering a workplace wellbeing seminar."}
+          fill
+          sizes="100vw"
+          className="object-cover"
+        />
+      </div>
 
       {/* FORMATS */}
       <Section tone="sand">

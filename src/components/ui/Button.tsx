@@ -32,6 +32,7 @@ export function ButtonLink({
   size = "md",
   className,
   external,
+  onClick,
 }: {
   href: string;
   children: React.ReactNode;
@@ -39,6 +40,7 @@ export function ButtonLink({
   size?: Size;
   className?: string;
   external?: boolean;
+  onClick?: () => void;
 }) {
   if (external) {
     return (
@@ -53,7 +55,7 @@ export function ButtonLink({
     );
   }
   return (
-    <Link href={href} className={classes(variant, size, className)}>
+    <Link href={href} className={classes(variant, size, className)} onClick={onClick}>
       {children}
     </Link>
   );

@@ -8,7 +8,7 @@ export function CrisisResources({ crisis }: { crisis: SiteContent["crisis"] }) {
   return (
     <section
       aria-label={crisis.heading}
-      className="rounded-2xl border border-forest/15 bg-forest p-6 text-cream sm:p-8"
+      className="rounded-2xl border border-clay/25 bg-pine p-6 text-cream sm:p-8"
     >
       <h2 className="font-serif text-2xl text-cream">{crisis.heading}</h2>
       <p className="mt-2 text-sm leading-relaxed text-cream/80">{crisis.intro}</p>

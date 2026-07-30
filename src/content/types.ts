@@ -12,6 +12,8 @@ export interface CtaLink {
 export interface NavItem {
   label: string;
   href: string;
+  /** Child pages, rendered as a desktop dropdown / mobile accordion. */
+  children?: NavItem[];
 }
 
 export interface FeatureItem {
@@ -33,6 +35,28 @@ export interface CrisisItem {
   label: string;
   value: string;
   href?: string;
+}
+
+/** A numbered or plain item used in card grids and service rows. */
+export interface CardLink {
+  title: string;
+  body: string;
+  href: string;
+}
+
+/** Long-form child page under Work With Me / For Organisations (v2). */
+export interface ServicePageContent {
+  metaTitle: string;
+  metaDescription: string;
+  eyebrow: string;
+  heading: string;
+  lead: string;
+  paras: string[];
+  /** Numbered service row (e.g. the four organisation formats, 01–04). */
+  numbered?: FeatureItem[];
+  facts?: MetaPair[];
+  /** "See also" contextual links rendered under the body. */
+  crossLinks?: CtaLink[];
 }
 
 export interface FaqItem {
@@ -142,6 +166,26 @@ export interface SiteContent {
       items: MetaPair[];
       closing: string;
     };
+    // ---- v2 additions ----
+    /** Reach framing: online, DE/EN, Switzerland + Germany + international (no location claim). */
+    reachLine: string;
+    /** Discreet · Evidence-based · Flexible */
+    trustPillars: FeatureItem[];
+    /** The four-step approach: 01 Understand Patterns … 04 Align Life & Values. */
+    steps: {
+      eyebrow: string;
+      heading: string;
+      intro: string;
+      items: FeatureItem[];
+      closing: string;
+      ctaLabel: string;
+    };
+    /** "Your Advantages as a Private-Pay Client" */
+    privatePay: { eyebrow: string; heading: string; items: FeatureItem[] };
+    /** Short about block on the home page, linking through to /about. */
+    aboutBlock: { eyebrow: string; heading: string; body: string; ctaLabel: string };
+    /** Client testimonials (first names only, no photos, no star ratings). */
+    testimonials: Quote[];
   };
 
   about: {
@@ -158,6 +202,11 @@ export interface SiteContent {
     philosophy: { heading: string; body: string[] };
     quotes: Quote[];
     education: { heading: string; items: FeatureItem[] };
+    // ---- v2 additions ----
+    /** Expanded philosophy sections 01–04. */
+    philosophySections: { number: string; heading: string; paras: string[] }[];
+    /** Factual, neutral PsyKo/PsyCo recognition line (application pending). */
+    psyCoNote: string;
   };
 
   workTogether: {
@@ -175,6 +224,11 @@ export interface SiteContent {
     individual: { heading: string; subheading: string; body: string; meta: MetaPair[] };
     couples: { heading: string; subheading: string; body: string; meta: MetaPair[] };
     closing: { heading: string; body: string; note: string };
+    // ---- v2 additions ----
+    /** Teaser cards linking to the four Work With Me child pages. */
+    cards: CardLink[];
+    /** Switzerland / international topical section (no in-person or location claim). */
+    switzerland: { heading: string; paras: string[] };
   };
 
   organisations: {
@@ -191,6 +245,9 @@ export interface SiteContent {
     approach: { heading: string; facts: MetaPair[]; body: string; emphasis: string };
     testimonials: Quote[];
     closing: { heading: string; body: string };
+    // ---- v2 additions ----
+    /** Teaser cards linking to the three For Organisations child pages. */
+    cards: CardLink[];
   };
 
   weeklyWellbeing: {
@@ -280,6 +337,12 @@ export interface SiteContent {
     intro: string;
     sections: { heading: string; paras: string[]; bullets?: string[] }[];
   };
+
+  /**
+   * Long-form child pages under Work With Me and For Organisations, keyed by the
+   * route key in lib/site.ts ROUTES (e.g. "wwm-couples-counselling").
+   */
+  serviceChildren: Record<string, ServicePageContent>;
 
   aiInfo: {
     metaTitle: string;

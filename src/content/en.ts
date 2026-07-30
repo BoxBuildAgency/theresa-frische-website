@@ -1,4 +1,6 @@
 import type { SiteContent } from "./types";
+import { wwmChildrenEn } from "./services/work-with-me";
+import { orgChildrenEn } from "./services/organisations";
 import { blogPostsEn } from "./blog/posts.en";
 import { faqCategoriesEn } from "./faq/faq.en";
 
@@ -19,8 +21,25 @@ export const en: SiteContent = {
 
   nav: [
     { label: "About", href: "/about" },
-    { label: "Work Together", href: "/work-together" },
-    { label: "Organisations", href: "/organisations" },
+    {
+      label: "Work With Me",
+      href: "/work-with-me",
+      children: [
+        { label: "Psychological Counselling", href: "/work-with-me/psychological-counselling" },
+        { label: "Couples Counselling", href: "/work-with-me/couples-counselling" },
+        { label: "Burnout Prevention", href: "/work-with-me/burnout-prevention" },
+        { label: "Somatic Experiencing®", href: "/work-with-me/somatic-experiencing" },
+      ],
+    },
+    {
+      label: "For Organisations",
+      href: "/organisations",
+      children: [
+        { label: "Talks, Workshops & Courses", href: "/organisations/talks-workshops-courses" },
+        { label: "Leadership Coaching", href: "/organisations/leadership-coaching" },
+        { label: "Employee Counselling", href: "/organisations/employee-counselling" },
+      ],
+    },
     { label: "Weekly Wellbeing", href: "/weekly-wellbeing" },
     { label: "Blog", href: "/blog" },
     { label: "FAQ", href: "/faq" },
@@ -40,11 +59,19 @@ export const en: SiteContent = {
     nav: [
       { label: "Home", href: "/" },
       { label: "About", href: "/about" },
-      { label: "Work Together", href: "/work-together" },
+      { label: "Work With Me", href: "/work-with-me" },
+      { label: "Psychological Counselling", href: "/work-with-me/psychological-counselling" },
+      { label: "Couples Counselling", href: "/work-with-me/couples-counselling" },
+      { label: "Burnout Prevention", href: "/work-with-me/burnout-prevention" },
+      { label: "Somatic Experiencing®", href: "/work-with-me/somatic-experiencing" },
       { label: "Organisations", href: "/organisations" },
+      { label: "Talks, Workshops & Courses", href: "/organisations/talks-workshops-courses" },
+      { label: "Leadership Coaching", href: "/organisations/leadership-coaching" },
+      { label: "Employee Counselling", href: "/organisations/employee-counselling" },
       { label: "Weekly Wellbeing", href: "/weekly-wellbeing" },
       { label: "Blog", href: "/blog" },
       { label: "FAQ", href: "/faq" },
+      { label: "AI Info", href: "/ai-info" },
     ],
     legalNav: [
       { label: "Contact", href: "/contact" },
@@ -85,49 +112,54 @@ export const en: SiteContent = {
     metaTitle: "Theresa Frische — Systemic & Integrative Counsellor",
     metaDescription:
       "Online counselling in English and German for individuals and couples navigating change, transition, burnout, and life across borders. Book a free 15-minute discovery call.",
-    eyebrow: "Systemic · Somatic · Integrative",
+    eyebrow: "Psychological Counselling · Online",
     heroTitle: "A space for what is",
     heroTitleAccent: "shifting within you",
     heroLead:
-      "For individuals and couples navigating change, transition, and the quieter pressures that often go unnamed.",
+      "Confidential support for stress, burnout, overwhelm and life transitions — for individuals and couples who carry a great deal, achieve a great deal, and want to feel connected to themselves again.",
     heroParas: [
       "Life rarely changes in clear or linear ways. More often, it shifts gradually — until something begins to feel different within yourself.",
-      "Outwardly, you may still be functioning, while inwardly there may be strain, fatigue, or a quiet sense of disconnection from yourself.",
+      "Sometimes life keeps moving on the outside while something no longer feels right on the inside. Outwardly, you may still be functioning, while inwardly there is exhaustion, inner restlessness, overwhelm, or the quiet sense of no longer feeling like yourself.",
       "Many people seek support not because something has broken, but because something has shifted — and familiar ways of coping no longer feel fully sufficient.",
+      "This practice offers you a confidential space to understand yourself more clearly, strengthen your inner resources, and build a life that fits your needs and values.",
     ],
     heroEmphasis:
       "This work is not about fixing what is broken. It is about creating a reflective space to better understand yourself and move toward a life aligned with your values.",
     heroPrimary: { label: "Book a discovery call", href: "/contact" },
-    heroSecondary: { label: "Explore services", href: "/work-together" },
+    heroSecondary: { label: "Explore services", href: "/work-with-me" },
     testimonial: {
-      text: "Theresa creates a space that feels safe, grounded, and deeply supportive. I've become more resilient, more present, and more connected to myself.",
-      attribution: "Client",
+      text: "Theresa creates a space that feels safe, grounded, and deeply supportive. Through her guidance I've become more resilient, more present — and more myself again.",
+      attribution: "Ariana",
     },
     audience: {
       eyebrow: "Areas of focus",
-      heading: "Who this is for",
+      heading: "Who this space is for",
       intro:
-        "This work is for people moving through meaningful transitions — where the inner world asks for something different than what is already known.",
+        "For people at meaningful crossroads — when the old no longer holds, and the new isn't tangible yet.",
       items: [
         {
           title: "Life Transitions",
-          body: "Relocation, separation, career shifts, loss, parenthood — changes that ask for deep emotional adaptation.",
+          body: "Relocation, separation, career change, loss, becoming a parent — changes that ask for deep inner adjustment and emotional adaptation.",
         },
         {
-          title: "Relationships",
-          body: "Communication, emotional distance, recurring conflict, and rebuilding understanding and closeness.",
+          title: "Identity & Orientation",
+          body: "Periods of uncertainty, reorientation, and questions of meaning, purpose, and life direction.",
         },
         {
-          title: "Identity & Direction",
-          body: "Periods of uncertainty, reorientation, and questions of purpose and life direction.",
+          title: "Overwhelm & Burnout",
+          body: "Recognising the early signs of burnout, regulating sustained stress, and finding your way back to connection and balance.",
         },
         {
-          title: "International Life",
-          body: "The complexity of living across countries, cultures, and shifting social environments.",
+          title: "Emotional & Nervous System Regulation",
+          body: "Working with worry, inner restlessness, and physical stress responses — and with emotional experiences too heavy to carry alone.",
         },
         {
-          title: "Burnout & Overwhelm",
-          body: "Supporting reconnection and regulation when internal resources feel depleted.",
+          title: "Relationship Challenges & Couples",
+          body: "Moving through entrenched patterns, easing emotional distance, improving communication, and resolving conflict constructively.",
+        },
+        {
+          title: "Expat & International Life",
+          body: "What it means to live between countries, cultures, and shifting social worlds. Counselling for expats and international couples in English and German — working online with people in Switzerland, Germany and beyond.",
         },
         {
           title: "Personal Growth",
@@ -172,37 +204,114 @@ export const en: SiteContent = {
       closing:
         "Ready to take the first step? Book a free 15-minute discovery call — a relaxed, no-obligation way to begin.",
     },
+    reachLine:
+      "Online counselling in German and English, for clients in Switzerland, Germany and internationally.",
+    trustPillars: [
+      {
+        title: "Discreet",
+        body: "A protected, judgment-free space — for what usually finds no room elsewhere.",
+      },
+      {
+        title: "Evidence-based",
+        body: "Scientifically grounded methods, carefully tailored to you.",
+      },
+      {
+        title: "Flexible",
+        body: "Support that adapts to your life — not the other way around.",
+      },
+    ],
+    steps: {
+      eyebrow: "My approach",
+      heading: "Systemic. Somatic. Integrative.",
+      intro:
+        "I combine scientifically grounded perspectives — systemic counselling, Somatic Experiencing®, parts work, and mindfulness-based approaches — with an integrative stance and deep respect for each person's individual story and inner resources. For lasting change rather than short-term fixes.",
+      items: [
+        {
+          title: "01 Understand Patterns",
+          body: "Understand recurring behavioural and relational patterns, and create room for something new.",
+        },
+        {
+          title: "02 Regulate the Nervous System",
+          body: "Gently release stress held in the body, to become calmer and more present again.",
+        },
+        {
+          title: "03 Resolve Inner Conflict",
+          body: "Bring conflicting needs and inner parts into alignment.",
+        },
+        {
+          title: "04 Align Life & Values",
+          body: "Realign your actions and decisions with what truly matters to you.",
+        },
+      ],
+      closing:
+        "Psychological counselling is a shared process. You remain the expert on your own life; I accompany you with professional expertise, empathy, and fresh perspectives.",
+      ctaLabel: "Learn more about my philosophy",
+    },
+    privatePay: {
+      eyebrow: "Private-pay practice",
+      heading: "Your advantages as a private-pay client",
+      items: [
+        {
+          title: "Complete Discretion & Privacy",
+          body: "No diagnoses in health-insurance records. No reporting to any insurer — what's discussed stays confidential.",
+        },
+        {
+          title: "Fast Access",
+          body: "We begin as soon as you're ready — no doctor's referral, no waiting time through an insurer.",
+        },
+        {
+          title: "Maximum Flexibility",
+          body: "Location-independent online, in English and German — for a life that spans more than one country.",
+        },
+      ],
+    },
+    aboutBlock: {
+      eyebrow: "About me",
+      heading: "I'm Theresa Frische",
+      body: "With a Master of Science in Clinical Psychology and further training in systemic counselling, somatic approaches and mindfulness, I support individuals and couples through emotionally challenging times and meaningful life transitions.",
+      ctaLabel: "More about me",
+    },
+    testimonials: [
+      {
+        text: "Theresa creates a space that feels safe, grounded, and deeply supportive. Through her guidance I've become more resilient, more present — and more myself again.",
+        attribution: "Ariana",
+      },
+      {
+        text: "What moved me most was how authentically present Theresa is as a person. Her body-oriented approach helped me feel and understand my emotions again.",
+        attribution: "Nicolas",
+      },
+    ],
   },
 
   about: {
     metaTitle: "About — Theresa Frische",
     metaDescription:
-      "Theresa Frische is a Systemic & Integrative Counsellor supporting internationals, expats, and couples through change. M.Sc. Clinical Psychology · Somatic Experiencing Practitioner.",
+      "Theresa Frische is a Systemic & Integrative Counsellor supporting internationals, expats, and couples through change. M.Sc. Clinical Psychology · Somatic Experiencing® Practitioner.",
     eyebrow: "About",
     name: "Theresa Frische",
-    subtitle: "A counsellor for those in transition.",
+    subtitle: "A counsellor for people in transition.",
     credentials:
-      "M.Sc. Clinical Psychology · Somatic Experiencing Practitioner · Systemic & Integrative Counsellor",
-    lead: "For over eight years, I have supported individuals and organisations through meaningful change — with deep attentiveness to the whole human experience.",
+      "M.Sc. Clinical Psychology · Somatic Experiencing® Practitioner · Systemic & Integrative Counsellor",
+    lead: "For over eight years, I have supported individuals and organisations through meaningful processes of change — with deep attention to the whole of human experience.",
     intro: [
-      "I know what it feels like when life becomes too much — when stress builds up, relationships feel strained, or you no longer feel fully grounded in yourself.",
-      "Over time, I've come to understand how deeply our nervous system, relationships, and life circumstances are interconnected. When one area becomes overloaded, it often affects everything else — how we feel, how we connect, and how we move through the world. This understanding is at the heart of my work.",
+      "I know what it feels like when life becomes too much — when stress builds up, relationships feel strained, or the ground beneath you seems to give way.",
+      "Over time, I've come to understand how closely the nervous system, relationships, and life circumstances are interwoven. When one area becomes overloaded, it often affects everything else — how we feel, how we connect, and how we move through the world. This understanding sits at the centre of my work.",
     ],
     imageAlt: "Portrait of Theresa Frische, Systemic & Integrative Counsellor, smiling by a window.",
     lived: {
-      heading: "A life across borders",
+      heading: "A life between worlds",
       body: [
-        "My own life has involved living across different countries, navigating long-distance and intercultural relationships, and adapting to new cultural and professional environments over time. Before dedicating myself to psychology, I studied contemporary dance and immersed myself in contemplative practice.",
-        "These experiences have given me a deep appreciation of what it means to be in transition — not just externally, but internally. The uncertainty, the disorientation, and the need to find stability within change.",
+        "My own life has moved between different countries, cultures and identities — shaped by long-distance relationships and intercultural partnerships, as well as repeatedly arriving in new professional environments. Before devoting myself to psychology, I studied contemporary dance and classical ballet, and engaged deeply with contemplative practice.",
+        "These experiences have given me a deep understanding of what it means to be in transition — not only outwardly, but inwardly: the uncertainty, the sense of losing one's bearings, the need to find steadiness amid change.",
       ],
       emphasis:
-        "While each person's story is unique, I understand the emotional landscape that often comes with major life transitions and relational complexity.",
+        "As unique as each person's story is, I understand the emotional landscape that major life transitions and complex relationships so often bring.",
     },
     philosophy: {
-      heading: "People are best understood in their whole experience",
+      heading: "Seeing the whole person",
       body: [
-        "I'm convinced that lasting wellbeing emerges where people are understood in their whole experience — through the interaction of body, mind, and social environment.",
-        "In my work, I combine evidence-based psychology with a body- and systems-oriented approach. Rather than focusing on labels or categories, I pay attention to the underlying connections — how life history, the nervous system, relationship patterns, and life context shape our experience.",
+        "I firmly believe that everyone already carries within them the capacity for change, regulation and growth. My work isn't about \"fixing\" you or handing you ready-made advice — it's about creating the conditions in which lasting development can unfold.",
+        "I bring together evidence-based psychology, systemic counselling, body-oriented approaches (Somatic Experiencing®), parts work, and mindfulness into an integrative process that meets you on every level — mental, emotional, physical, relational, and in matters of existential meaning. Rather than thinking in categories, I look at the underlying connections — how life history, the nervous system, relationship patterns and life context all shape our experience.",
         "My aim is to support people in developing greater inner stability, flexibility, and resilience — and in building a fulfilling, value-oriented life in connection with themselves and others.",
       ],
     },
@@ -214,31 +323,67 @@ export const en: SiteContent = {
       },
     ],
     education: {
-      heading: "Education & qualifications",
+      heading: "Qualifications & foundation",
       items: [
         {
-          title: "Advanced systemic training",
-          body: "IF Weinheim/Mannheim · in progress since 2023",
+          title: "Systemic training",
+          body: "IF Weinheim/Mannheim, in progress since 2023",
         },
         {
-          title: "Body-oriented training",
-          body: "Somatic Experiencing (SE), fully trained practitioner · further training in Ego-State, Hakomi, and body-oriented methods for working with stress and overwhelm",
+          title: "Somatic approaches",
+          body: "Somatic Experiencing® (SE), certified practitioner; further training in Ego State, Hakomi, and body-oriented methods for working with stress and overwhelm",
         },
         { title: "M.Sc. Clinical Psychology", body: "University of Witten/Herdecke" },
         { title: "B.Sc. Psychology", body: "University of Cologne" },
         {
           title: "Classical & Contemporary Dance",
-          body: "CODARTS Rotterdam & HfMDK Frankfurt",
+          body: "HfMDK Frankfurt & CODARTS Rotterdam",
         },
       ],
     },
+    philosophySections: [
+      {
+        number: "01",
+        heading: "Understanding & contextualising patterns",
+        paras: [
+          "Our present-day patterns of thinking, feeling and behaving are not malfunctions. They are intelligent adaptations our system made to earlier life circumstances, relationships, or difficult situations. In the past, these strategies were vital for protection or for getting through — today, though, they can get in our way at work, in relationships, or in daily life.",
+          "Together, we look at your recurring dynamics without judgment. We gently explore what function these patterns once served, and why they persist today. By understanding their origins and what sets them off, old automatic responses lose their grip — creating room for conscious, new choices.",
+        ],
+      },
+      {
+        number: "02",
+        heading: "Involving the nervous system & the body",
+        paras: [
+          "Understanding on a purely intellectual level is often not enough to create deep change. The mind may grasp logically that a situation is safe — while the body, our nervous system, continues to respond with stress, tension, freeze, or overwhelm.",
+          "Through body-oriented approaches such as Somatic Experiencing®, you learn to notice and understand the subtle signals of your nervous system. We work to gently release stress and restore your system's own capacity for self-regulation. The result is growing inner stability, greater emotional resilience, and a new, tangible sense of presence in everyday life.",
+        ],
+      },
+      {
+        number: "03",
+        heading: "Integrating inner conflicts & parts",
+        paras: [
+          "In challenging periods of life, we often experience inner contradictions: one part of us wants change, another seeks safety; one part wants to set clear boundaries, another doesn't want to disappoint anyone. These inner tugs-of-war cost an enormous amount of energy.",
+          "Drawing on the Internal Family Systems (IFS) model, we meet your different inner parts with curiosity and appreciation. Rather than pushing away unwanted impulses or feelings, we create a protected space in which all parts can be heard. By clarifying the underlying needs and fears of these parts, inner blocks dissolve — and inner conflict gives way to clarity, self-compassion, and the capacity to act.",
+        ],
+      },
+      {
+        number: "04",
+        heading: "Aligning life with your own compass of values",
+        paras: [
+          "Mindful presence creates the space in which freedom of choice becomes possible. Lasting fulfilment and wellbeing arise when our daily actions, decisions, and relationships align with our deepest personal values.",
+          "Together, we work out what truly matters to you — beyond outside expectations, social pressure, or learned patterns of adaptation. Step by step, we shape a life path that feels coherent, authentic, and fulfilling from within.",
+        ],
+      },
+    ],
+    psyCoNote:
+      "Recognition of this degree by the Swiss Psychology Professions Commission (PsyCo) has been applied for and is currently pending.",
   },
 
   workTogether: {
-    metaTitle: "Work Together — Theresa Frische",
+    metaTitle: "Work With Me — Theresa Frische",
     metaDescription:
       "Online counselling for individuals and couples in English and German. Start with a free 15-minute discovery call.",
-    eyebrow: "Work Together",
+    eyebrow: "Work With Me",
     heading: "Getting started",
     intro:
       "Sessions are offered online in English and German, to individuals and couples worldwide. The easiest first step is a free, no-obligation discovery call.",
@@ -290,6 +435,36 @@ export const en: SiteContent = {
       body: "Book your free 15-minute discovery call — a relaxed, no-obligation way to begin.",
       note: "Sessions are self-pay · Responding within 2–3 business days.",
     },
+    cards: [
+      {
+        title: "Psychological Counselling",
+        body: "A confidential space for reflection and clarity — for individuals.",
+        href: "/work-with-me/psychological-counselling",
+      },
+      {
+        title: "Couples Counselling",
+        body: "A protected space for honest encounter and fresh momentum for the relationship.",
+        href: "/work-with-me/couples-counselling",
+      },
+      {
+        title: "Burnout Prevention",
+        body: "Recognising stress patterns before exhaustion turns into collapse.",
+        href: "/work-with-me/burnout-prevention",
+      },
+      {
+        title: "Somatic Experiencing®",
+        body: "Body-oriented processing of stress and difficult experiences.",
+        href: "/work-with-me/somatic-experiencing",
+      },
+    ],
+    switzerland: {
+      heading: "Working across Switzerland, Germany and beyond",
+      paras: [
+        "All sessions take place online, by video, in English and German. That means we can work together wherever you are based — whether that is Zurich or Zug, elsewhere in Switzerland, anywhere in Germany, or further afield.",
+        "Online work is often a good fit for internationals and expats who have moved for work, for partners living between two countries, and for anyone whose week is too full or too unpredictable for a fixed commute to an appointment. You choose a quiet room and a time that genuinely works for you.",
+        "Sessions are usually scheduled within Central European hours, and other time zones can be arranged. If you are unsure whether the practicalities can work for your situation, the free 15-minute discovery call is the easiest place to ask.",
+      ],
+    },
   },
 
   organisations: {
@@ -304,7 +479,7 @@ export const en: SiteContent = {
     facts: [
       { label: "Experience", value: "8+ years in workplace health promotion" },
       { label: "Languages", value: "English & German" },
-      { label: "Certification", value: "Somatic Experiencing (SE) Practitioner" },
+      { label: "Certification", value: "Somatic Experiencing® (SE) Practitioner" },
       { label: "Delivery", value: "Online or on-site, Germany & Switzerland" },
     ],
     formats: {
@@ -361,7 +536,7 @@ export const en: SiteContent = {
       facts: [
         { label: "Experience", value: "8+ years" },
         { label: "Approach", value: "Systemic & evidence-based" },
-        { label: "Delivery", value: "Online or in-person" },
+        { label: "Delivery", value: "Online or on-site, Germany & Switzerland" },
         { label: "Languages", value: "English & German" },
       ],
       body: "My facilitation style is psychologically informed and relational, calm and engaging — combining theoretical grounding with practical, applicable tools.",
@@ -382,6 +557,23 @@ export const en: SiteContent = {
       heading: "Let's talk about your organisation",
       body: "For enquiries about workshops, programmes, or leadership support, please reach out directly. I'm happy to discuss what would be most useful for your context.",
     },
+    cards: [
+      {
+        title: "Talks, Workshops & Courses",
+        body: "Keynotes, workshops, in-depth trainings and 8-week programmes.",
+        href: "/organisations/talks-workshops-courses",
+      },
+      {
+        title: "Leadership Coaching",
+        body: "Individual coaching for leaders on self-leadership and sustainable pressure.",
+        href: "/organisations/leadership-coaching",
+      },
+      {
+        title: "Employee Counselling",
+        body: "Confidential one-to-one support, embedded in your workplace health management.",
+        href: "/organisations/employee-counselling",
+      },
+    ],
   },
 
   weeklyWellbeing: {
@@ -452,7 +644,7 @@ export const en: SiteContent = {
   faq: {
     metaTitle: "FAQ — Theresa Frische",
     metaDescription:
-      "Answers to common questions about online counselling sessions, languages, format, Somatic Experiencing, and the Weekly Wellbeing Community.",
+      "Answers to common questions about online counselling sessions, languages, format, Somatic Experiencing®, and the Weekly Wellbeing Community.",
     eyebrow: "FAQ",
     heading: "Frequently asked questions",
     intro:
@@ -505,7 +697,8 @@ export const en: SiteContent = {
         lines: [
           "Theresa Frische",
           "Systemic & Integrative Counsellor (Beratung)",
-          "Address: [to be added]",
+          "Scheffelstraße 23",
+          "79102 Freiburg im Breisgau",
           "Germany",
         ],
       },
@@ -516,12 +709,15 @@ export const en: SiteContent = {
       {
         heading: "VAT / tax status",
         lines: [
-          "Small business under § 19 UStG — VAT status to be confirmed. No VAT is shown on invoices (Kleinunternehmer­regelung).",
+          "Small business owner pursuant to § 19 UStG. In accordance with § 19 UStG, no VAT is charged.",
         ],
       },
       {
         heading: "Responsible for content pursuant to § 18 (2) MStV",
-        lines: ["Theresa Frische (address as above)"],
+        lines: [
+          "Theresa Frische",
+          "Scheffelstraße 23, 79102 Freiburg im Breisgau, Germany",
+        ],
       },
       {
         heading: "Nature of the practice",
@@ -568,7 +764,7 @@ export const en: SiteContent = {
         heading: "Controller",
         paras: [
           "The controller responsible for data processing on this website is:",
-          "Theresa Frische — Systemic & Integrative Counsellor. Address: [to be added]. Email: theresafrische@gmail.com. Phone: +49 157 38920374.",
+          "Theresa Frische — Systemic & Integrative Counsellor. Scheffelstraße 23, 79102 Freiburg im Breisgau, Germany. Email: theresafrische@gmail.com. Phone: +49 157 38920374.",
         ],
       },
       {
@@ -640,6 +836,8 @@ export const en: SiteContent = {
     ],
   },
 
+  serviceChildren: { ...wwmChildrenEn, ...orgChildrenEn },
+
   aiInfo: {
     metaTitle: "AI & Citation Info — Theresa Frische",
     metaDescription:
@@ -653,16 +851,19 @@ export const en: SiteContent = {
       {
         heading: "Who Theresa Frische is",
         paras: [
-          "Theresa Frische is a Systemic & Integrative Counsellor offering online counselling to individuals and couples internationally. She holds an M.Sc. in Clinical Psychology and is a trained Somatic Experiencing practitioner, with advanced systemic training, and has over eight years of experience supporting individuals and organisations through change.",
+          "Theresa Frische is a Systemic & Integrative Counsellor offering online psychological counselling to individuals and couples internationally. She holds an M.Sc. in Clinical Psychology and is a certified Somatic Experiencing® practitioner, with systemic training (IF Weinheim/Mannheim, in progress since 2023), and has over eight years of experience supporting individuals and organisations through change.",
         ],
       },
       {
         heading: "What the practice offers",
         bullets: [
+          "Psychological counselling — a confidential space for reflection, clarity, and orientation, offered online to individuals.",
           "Individual counselling — one-to-one online sessions (60 minutes).",
           "Couples counselling — online sessions for couples (60–120 minutes).",
+          "Burnout prevention — working with personal stress patterns before exhaustion turns into collapse.",
+          "Somatic Experiencing® — body-oriented work with stress, overwhelm, and difficult experiences.",
           "Weekly Wellbeing Community — a weekly online mindfulness and wellbeing group (Tuesdays, in English).",
-          "For organisations — keynotes, workshops, in-depth trainings, 8-week wellbeing programmes, and confidential employee and leadership counselling.",
+          "For organisations — keynotes, workshops, in-depth trainings, 8-week wellbeing programmes, leadership coaching, and confidential employee counselling.",
         ],
       },
       {
@@ -682,7 +883,7 @@ export const en: SiteContent = {
       {
         heading: "Approach",
         paras: [
-          "The work is integrative and context-oriented, drawing on systemic counselling, somatic awareness (Somatic Experiencing), parts work, and mindfulness-based practice — chosen to fit each person rather than a single fixed method.",
+          "The work is integrative and context-oriented, drawing on systemic counselling, somatic awareness (Somatic Experiencing®), parts work, and mindfulness-based practice — chosen to fit each person rather than a single fixed method.",
         ],
       },
       {
@@ -700,9 +901,16 @@ export const en: SiteContent = {
       {
         heading: "Key pages",
         bullets: [
-          "About: /about — Theresa's background and approach.",
-          "Work Together: /work-together — individual and couples counselling.",
-          "Organisations: /organisations — workplace wellbeing for teams.",
+          "About: /about — Theresa's background, qualifications, and working philosophy.",
+          "Work With Me: /work-with-me — overview of the counselling services for individuals and couples.",
+          "Psychological Counselling: /work-with-me/psychological-counselling — one-to-one counselling for individuals.",
+          "Couples Counselling: /work-with-me/couples-counselling — counselling for couples.",
+          "Burnout Prevention: /work-with-me/burnout-prevention — stress patterns, regulation, and recovery.",
+          "Somatic Experiencing®: /work-with-me/somatic-experiencing — body-oriented work with stress and overwhelm.",
+          "For Organisations: /organisations — workplace wellbeing for teams and leaders.",
+          "Talks, Workshops & Courses: /organisations/talks-workshops-courses — keynotes, workshops, in-depth trainings, and 8-week programmes.",
+          "Leadership Coaching: /organisations/leadership-coaching — individual coaching for leaders.",
+          "Employee Counselling: /organisations/employee-counselling — confidential one-to-one support for employees.",
           "Weekly Wellbeing: /weekly-wellbeing — the weekly online community.",
           "Blog: /blog — articles on stress, burnout, relationships, transitions, and living abroad.",
           "FAQ: /faq — common questions about working together.",

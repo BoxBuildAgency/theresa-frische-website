@@ -19,14 +19,14 @@ export function WeeklyWellbeingPage({ locale }: { locale: Locale }) {
       {/* HERO with lake image */}
       <section className="relative isolate overflow-hidden">
         <Image
-          src="/images/weekly-wellbeing-lake.jpg"
+          src="/images/weekly-wellbeing.jpg"
           alt={w.imageAlt}
           fill
           priority
           sizes="100vw"
           className="-z-10 object-cover"
         />
-        <div aria-hidden className="absolute inset-0 -z-10 bg-gradient-to-r from-forest-dark/80 via-forest-dark/55 to-forest-dark/25" />
+        <div aria-hidden className="absolute inset-0 -z-10 bg-gradient-to-r from-pine/85 via-pine/60 to-pine/30" />
         <Container className="py-28 sm:py-36">
           <div className="max-w-2xl text-cream">
             <Eyebrow className="!text-cream/80">{w.eyebrow}</Eyebrow>

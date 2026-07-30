@@ -48,9 +48,9 @@ export function QuoteBlock({
       )}
     >
       <blockquote className="font-serif text-2xl font-light italic leading-snug sm:text-3xl">
-        <span className={tone === "forest" ? "text-sage-soft" : "text-sage"}>“</span>
+        <span className={tone === "forest" ? "text-clay" : "text-clay-deep"}>“</span>
         {quote.text}
-        <span className={tone === "forest" ? "text-sage-soft" : "text-sage"}>”</span>
+        <span className={tone === "forest" ? "text-clay" : "text-clay-deep"}>”</span>
       </blockquote>
       <figcaption
         className={clsx(

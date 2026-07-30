@@ -14,6 +14,8 @@
   --color-sand-deep: #ece4d4;
 
   /* Greens */
+  /* Pine: the deep green used for hero bands, CTA bands and dark sections (v2). */
+  --color-pine: #1f2e27;
   --color-forest: #2f4233;
   --color-forest-dark: #25361e;
   --color-sage: #7c8b7a;
@@ -23,6 +25,18 @@
   --color-ink: #2b2622;
   --color-ink-soft: #5b534b;
   --color-ink-muted: #857c70;
+
+  /* Gold accent (v2). Contrast-checked against our surfaces:
+     - clay      #c4a35a  -> 5.91:1 on pine  = AA at any size. FAILS on light (2.25:1):
+                             use on dark backgrounds only, or as a border/icon on light.
+     - clay-deep #9c7c3d  -> 3.66:1 on cream = AA for LARGE text only (>=24px, or >=18.66px
+                             bold) and for borders/rules. Never for body or small text.
+     - clay-ink  #7a5f2c  -> 5.61:1 on cream, 5.23:1 on sand = AA at any size. Used for the
+                             12px uppercase eyebrows on light backgrounds, where clay-deep
+                             would fail. (This also fixes the previous sage eyebrow at 3.37:1.) */
+  --color-clay: #c4a35a;
+  --color-clay-deep: #9c7c3d;
+  --color-clay-ink: #7a5f2c;
 
   /* Lines & subtle fills */
   --color-line: #e3dccd;
@@ -78,10 +92,15 @@
   .eyebrow {
     font-family: var(--font-sans);
     font-size: var(--text-eyebrow);
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 0.22em;
     text-transform: uppercase;
-    color: var(--color-sage);
+    color: var(--color-clay-ink);
+  }
+
+  /* Eyebrow on a dark (pine) band: clay reads 5.91:1 there. */
+  .eyebrow-dark {
+    color: var(--color-clay);
   }
 
   .accent {
@@ -110,6 +129,15 @@
     border-radius: 9999px;
     background-color: var(--color-sage);
   }
+  /* Quote block rule, per the v2 design: thin gold rule. */
+  .quote-rule {
+    border-left: 3px solid var(--color-clay-deep);
+    padding-left: 1.5rem;
+  }
+  .quote-rule-dark {
+    border-left-color: var(--color-clay);
+  }
+
   .prose-tf a {
     color: var(--color-forest);
     text-decoration: underline;

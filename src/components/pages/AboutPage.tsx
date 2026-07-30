@@ -2,6 +2,7 @@ import Image from "next/image";
 import type { Locale } from "@/content/types";
 import { getContent } from "@/content";
 import { Section, Eyebrow } from "@/components/ui/Section";
+import { Container } from "@/components/ui/Container";
 import { QuoteBlock, SectionHeader } from "@/components/ui/Pieces";
 import { CtaBand } from "@/components/sections/CtaBand";
 import { FurtherReading } from "@/components/sections/FurtherReading";
@@ -86,14 +87,48 @@ export function AboutPage({ locale }: { locale: Locale }) {
         </div>
       </Section>
 
-      {/* QUOTES */}
-      <Section tone="forest" containerSize="narrow">
-        <div className="space-y-14">
-          {a.quotes.map((q, i) => (
-            <QuoteBlock key={i} quote={q} tone="forest" />
+      {/* PHILOSOPHY 01–04 */}
+      <Section tone="sand" containerSize="narrow">
+        <ol className="space-y-14">
+          {a.philosophySections.map((sec) => (
+            <li key={sec.number}>
+              <div className="flex items-baseline gap-4">
+                <span className="font-serif text-3xl font-light text-clay-deep">{sec.number}</span>
+                <h3 className="font-serif text-2xl font-light leading-snug text-ink">
+                  {sec.heading}
+                </h3>
+              </div>
+              <div className="mt-4 space-y-4">
+                {sec.paras.map((para, i) => (
+                  <p key={i} className="leading-relaxed text-ink-soft">
+                    {para}
+                  </p>
+                ))}
+              </div>
+            </li>
           ))}
-        </div>
+        </ol>
       </Section>
+
+      {/* QUOTES */}
+      <section className="relative isolate overflow-hidden bg-pine py-14 sm:py-24">
+        <Image
+          src="/images/band-olive.jpg"
+          alt=""
+          aria-hidden="true"
+          fill
+          sizes="100vw"
+          className="-z-20 object-cover object-center"
+        />
+        <div aria-hidden="true" className="absolute inset-0 -z-10 bg-pine/85" />
+        <Container size="narrow" className="relative">
+          <div className="space-y-14">
+            {a.quotes.map((q, i) => (
+              <QuoteBlock key={i} quote={q} tone="forest" />
+            ))}
+          </div>
+        </Container>
+      </section>
 
       {/* EDUCATION */}
       <Section tone="sand" containerSize="narrow">
@@ -109,6 +144,7 @@ export function AboutPage({ locale }: { locale: Locale }) {
             </li>
           ))}
         </ul>
+        <p className="mt-6 text-sm leading-relaxed text-ink-muted">{a.psyCoNote}</p>
       </Section>
 
       <FurtherReading locale={locale} pageKey="about" tone="cream" />

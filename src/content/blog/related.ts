@@ -26,9 +26,9 @@ export const RELATED: Record<string, string[]> = {
     "burnout-in-leadership",
   ],
   "reconnecting-with-yourself": [
-    "functioning-well-vs-feeling-well",
+    "act-values-based-living",
+    "understanding-inner-conflict-parts-work",
     "why-big-life-changes-feel-harder",
-    "running-on-empty-early-signs-of-burnout",
   ],
   "supporting-a-partner-through-burnout": [
     "growing-apart-growing-together",
@@ -78,13 +78,13 @@ export const RELATED: Record<string, string[]> = {
   ],
   "nervous-system-plain-english-guide": [
     "what-is-somatic-experiencing",
-    "mindfulness-is-not-clearing-your-mind",
-    "functioning-well-vs-feeling-well",
+    "why-mindfulness-calms-the-nervous-system",
+    "understanding-inner-conflict-parts-work",
   ],
   "mindfulness-is-not-clearing-your-mind": [
+    "why-mindfulness-calms-the-nervous-system",
     "what-is-somatic-experiencing",
     "nervous-system-plain-english-guide",
-    "running-on-empty-early-signs-of-burnout",
   ],
 
   // Transitions / Identity
@@ -111,6 +111,23 @@ export const RELATED: Record<string, string[]> = {
     "running-on-empty-early-signs-of-burnout",
   ],
 
+  // ACT / Mindfulness / Parts work (v2 additions)
+  "act-values-based-living": [
+    "understanding-inner-conflict-parts-work",
+    "reconnecting-with-yourself",
+    "why-big-life-changes-feel-harder",
+  ],
+  "why-mindfulness-calms-the-nervous-system": [
+    "mindfulness-is-not-clearing-your-mind",
+    "nervous-system-plain-english-guide",
+    "what-is-somatic-experiencing",
+  ],
+  "understanding-inner-conflict-parts-work": [
+    "act-values-based-living",
+    "reconnecting-with-yourself",
+    "what-is-somatic-experiencing",
+  ],
+
   // Positioning (cross-cutting)
   "counselling-vs-therapy-vs-coaching": [
     "how-online-counselling-works",
@@ -133,11 +150,31 @@ export const RELATED_FALLBACK = [
 
 /** Service / pillar page key -> the posts it should link out to (most relevant first). */
 export const PAGE_POSTS: Record<string, string[]> = {
-  "work-together": [
+  "work-with-me": [
     "functioning-well-vs-feeling-well",
     "why-big-life-changes-feel-harder",
     "growing-apart-growing-together",
     "how-online-counselling-works",
+  ],
+  "wwm-psychological-counselling": [
+    "counselling-vs-therapy-vs-coaching",
+    "how-online-counselling-works",
+    "functioning-well-vs-feeling-well",
+  ],
+  "wwm-couples-counselling": [
+    "growing-apart-growing-together",
+    "love-across-cultures",
+    "supporting-a-partner-through-burnout",
+  ],
+  "wwm-burnout-prevention": [
+    "running-on-empty-early-signs-of-burnout",
+    "functioning-well-vs-feeling-well",
+    "switching-off-always-on-job",
+  ],
+  "wwm-somatic-experiencing": [
+    "what-is-somatic-experiencing",
+    "nervous-system-plain-english-guide",
+    "understanding-inner-conflict-parts-work",
   ],
   organisations: [
     "workplace-wellbeing-that-works",
@@ -145,14 +182,29 @@ export const PAGE_POSTS: Record<string, string[]> = {
     "resilience-is-not-toughing-it-out",
     "switching-off-always-on-job",
   ],
+  "org-talks-workshops-courses": [
+    "workplace-wellbeing-that-works",
+    "why-mindfulness-calms-the-nervous-system",
+    "resilience-is-not-toughing-it-out",
+  ],
+  "org-leadership-coaching": [
+    "burnout-in-leadership",
+    "switching-off-always-on-job",
+    "resilience-is-not-toughing-it-out",
+  ],
+  "org-employee-counselling": [
+    "running-on-empty-early-signs-of-burnout",
+    "functioning-well-vs-feeling-well",
+    "workplace-wellbeing-that-works",
+  ],
   about: [
     "counselling-vs-therapy-vs-coaching",
     "what-is-somatic-experiencing",
     "belonging-third-culture-adults",
   ],
   "weekly-wellbeing": [
+    "why-mindfulness-calms-the-nervous-system",
     "mindfulness-is-not-clearing-your-mind",
-    "what-is-somatic-experiencing",
     "nervous-system-plain-english-guide",
   ],
 };

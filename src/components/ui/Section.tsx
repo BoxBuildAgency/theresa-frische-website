@@ -6,7 +6,7 @@ type Tone = "cream" | "sand" | "forest";
 const tones: Record<Tone, string> = {
   cream: "bg-cream text-ink",
   sand: "bg-sand text-ink",
-  forest: "bg-forest text-cream",
+  forest: "bg-pine text-cream",
 };
 
 export function Section({

@@ -5,6 +5,7 @@ import { setBEn } from "./set-b";
 import { setCEn } from "./set-c";
 import { setDEn } from "./set-d";
 import { setEEn } from "./set-e";
+import { setFEn } from "./set-f";
 
 // All English blog posts. Display order (newest-first) is applied in content/index.ts.
 export const blogPostsEn: BlogPost[] = [
@@ -14,4 +15,5 @@ export const blogPostsEn: BlogPost[] = [
   ...setCEn,
   ...setDEn,
   ...setEEn,
+  ...setFEn,
 ];

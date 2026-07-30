@@ -1,7 +1,8 @@
 # Theresa Frische — Counselling Website
 
-A production website for **Theresa Frische — Systemic & Integrative Counsellor**, an online,
-international counselling practice serving internationals, expats, and couples in transition.
+A production website for **Theresa Frische — Psychological Counselling (Systemic & Integrative)**,
+an online, international counselling practice serving internationals, expats, and couples in
+transition.
 Bilingual (English primary at `/`, German at `/de`), privacy-first, no tracking.
 
 Built with **Next.js (App Router) + TypeScript + Tailwind CSS v4**. Content is hard-coded in
@@ -72,8 +73,12 @@ src/
     de.ts             German translation — imports blog + faq modules
     index.ts          getContent() / blog helpers (posts sorted newest-first)
     blog/             blog posts, split out of en.ts/de.ts
-      set-existing.ts, set-a.ts … set-e.ts   post batches (each exports *En / *De)
-      posts.en.ts / posts.de.ts              assemble all 20 posts in order
+      set-existing.ts, set-a.ts … set-f.ts   post batches (each exports *En / *De)
+      posts.en.ts / posts.de.ts              assemble all 23 posts in order
+      related.ts                             cluster map: RELATED + PAGE_POSTS
+    services/         long-form Work With Me / For Organisations child pages
+      work-with-me.ts                        wwmChildrenEn / wwmChildrenDe
+      organisations.ts                       orgChildrenEn / orgChildrenDe
     faq/              FAQ, grouped into categories
       faq-1.ts, faq-2.ts, faq-3.ts           category batches (*En / *De)
       faq.en.ts / faq.de.ts                  assemble all 9 categories
@@ -82,12 +87,46 @@ src/
     seo.ts            per-page metadata (canonical + hreflang + OG)
     fonts.ts          next/font (Cormorant Garamond + Inter)
 public/
-  images/             about-theresa.jpg, weekly-wellbeing-lake.jpg, og-default.jpg
-  llm.txt
+  images/             her 8 photographs + og-default.jpg (see Images below)
+  llms.txt, llms-full.txt, llm.txt (legacy duplicate)
 ```
 
 The two locales render the **same** presentational components, fed by `content/en.ts` and
 `content/de.ts`. Only text differs.
+
+### Routes (v2)
+
+English is at the root, German under `/de` with keyword-rich German slugs. The single source of
+truth is the `ROUTES` table in `src/lib/site.ts` — it drives the language toggle, `hreflang`,
+canonicals, breadcrumbs and the sitemap, so **adding or renaming a page means editing that table
+and nothing else**.
+
+| Page | EN | DE |
+| --- | --- | --- |
+| Home | `/` | `/de` |
+| About | `/about` | `/de/ueber-mich` |
+| Work With Me | `/work-with-me` | `/de/angebot` |
+| → Psychological Counselling | `/work-with-me/psychological-counselling` | `/de/angebot/psychologische-beratung` |
+| → Couples Counselling | `/work-with-me/couples-counselling` | `/de/angebot/paarberatung` |
+| → Burnout Prevention | `/work-with-me/burnout-prevention` | `/de/angebot/burnout-praevention` |
+| → Somatic Experiencing® | `/work-with-me/somatic-experiencing` | `/de/angebot/somatic-experiencing` |
+| For Organisations | `/organisations` | `/de/fuer-unternehmen` |
+| → Talks, Workshops & Courses | `/organisations/talks-workshops-courses` | `/de/fuer-unternehmen/vortraege-workshops-kurse` |
+| → Leadership Coaching | `/organisations/leadership-coaching` | `/de/fuer-unternehmen/fuehrungskraefte-coaching` |
+| → Employee Counselling | `/organisations/employee-counselling` | `/de/fuer-unternehmen/beratung-mitarbeitende` |
+| Weekly Wellbeing | `/weekly-wellbeing` | `/de/weekly-wellbeing` |
+| Blog (23 posts) | `/blog`, `/blog/[slug]` | `/de/blog`, `/de/blog/[slug]` |
+| FAQ (9 categories, 59 Qs) | `/faq` | `/de/faq` |
+| Contact | `/contact` | `/de/contact` |
+| AI Info | `/ai-info` | `/de/ai-info` |
+| Impressum | `/impressum` | `/de/impressum` |
+| Privacy | `/privacy` | `/de/datenschutz` |
+
+The pre-v2 paths (`/work-together`, `/de/work-together`, `/de/about`, `/de/organisations`) 301 to
+their new homes via `redirects()` in `next.config.ts`.
+
+Main-nav dropdowns (desktop hover **and** click, mobile accordion) come from the optional
+`children` array on each `nav` item in `content/en.ts` / `de.ts`.
 
 ### Multiple root layouts (how the language toggle works)
 
@@ -106,7 +145,7 @@ design, so the language attribute is always correct). Path mapping lives in `cou
 
 ### Blog & FAQ content
 
-There are **20 full blog posts** (EN + DE) and **9 FAQ categories (~59 questions)**. To keep files
+There are **23 full blog posts** (EN + DE) and **9 FAQ categories (59 questions)**. To keep files
 manageable, blog posts and the FAQ live in their own modules under `src/content/blog/` and
 `src/content/faq/`, assembled by `posts.en.ts` / `posts.de.ts` and `faq.en.ts` / `faq.de.ts` and
 imported into `en.ts` / `de.ts`. Posts are shown newest-first (sorted by `date`).
@@ -201,37 +240,61 @@ added later, you **must** add a cookie-consent banner and update the privacy pol
 
 ---
 
-## Images to replace with Theresa's originals
+## Images
 
-All imagery lives in `public/images/`. The two real photos Theresa supplied (the About headshot
-and the Weekly Wellbeing lake) were extracted from the supplied PDFs, optimised, and the lake's 90°
-rotation corrected. The three background images are **tasteful on-brand placeholders downloaded
-from Unsplash** (Unsplash License — free for commercial use, no attribution required). Swap each
-file in place — keep the **same filename, roughly the same aspect ratio, and similar dimensions** —
-and the site picks them up with no code changes.
+All imagery is **Theresa's own photography**, supplied in `assets-v2/` and optimised into
+`public/images/` (long edge 2000px, JPEG q82; `next/image` negotiates WebP/AVIF per browser, with
+the JPEG as the fallback). The three earlier Unsplash placeholders have been retired — the files
+were overwritten with her photographs, so no code references changed.
 
-| File | Where it appears | Aspect / size | Source | Replace? |
-| --- | --- | --- | --- | --- |
-| `hero.jpg` | Home hero, full-bleed behind the headline | landscape, ~2000×1325 | Unsplash `1465146344425-f00d5f5c8f07` (soft dried grasses) | ✅ placeholder — swap for Theresa's hero photo |
-| `band-quote.jpg` | Home testimonial band (under a forest scrim) | landscape, ~1700×956 | Unsplash `1500382017468-9049fed747ef` (warm field) | ✅ placeholder |
-| `band-cta.jpg` | "Book a discovery call" CTA band (recurs site-wide, under a forest scrim) | landscape, ~1700×1134 | Unsplash `1473580044384-7ba9967e16a0` (warm sand) | ✅ placeholder |
-| `about-theresa.jpg` | About page portrait | portrait 4:5, ~886×1120 | Theresa's own (from PDF) | ⚠️ low-res — replace with the original high-res headshot |
-| `weekly-wellbeing-lake.jpg` | Weekly Wellbeing hero | landscape, ~2000×975 | Theresa's own (from PDF, rotation fixed) | ⚠️ low-res — replace with the original high-res photo |
-| `og-default.jpg` | Social share / Open Graph card | 1200×630 | generated | optional — replace with a branded card |
+| File | Source photograph | Placement |
+| --- | --- | --- |
+| `hero.jpg` | Blonde Haare am Strand | Home hero, full-bleed behind the headline (`priority`) |
+| `about-theresa.jpg` | Headshot | About portrait (4:5) and the Home about block |
+| `weekly-wellbeing.jpg` | Weekly Wellbeing | Weekly Wellbeing hero (`priority`) |
+| `organisations.jpg` | Organisation Page | For Organisations, her delivering a seminar |
+| `band-quote.jpg` | Schattenspiel | Home testimonials band (under a Pine scrim) |
+| `band-cta.jpg` | Wasserreflexion mit Horizont | The recurring CTA band (under a Pine scrim) |
+| `band-meadow.jpg` | Frühlingswiese im Morgentau | Work With Me — Switzerland/international band |
+| `band-olive.jpg` | Olivenzweig im Himmel | About quotes band (under a Pine scrim) |
+| `og-default.jpg` | generated | Open Graph / social card |
 
-The hero scrim is tuned for a **light, warm** image so the charcoal/green Cormorant headline keeps
-WCAG-AA contrast; if you swap in a darker hero, lighten the scrim in `HomePage.tsx` (the
-`from-cream/95 …` gradient). The two band images sit under a strong forest-green overlay
-(`bg-forest/85`–`/88`), so almost any calm, natural photo reads as subtle texture there.
+To swap a photograph, replace the file **keeping the same filename and roughly the same aspect
+ratio**; nothing else needs editing. The hero scrim is tuned for a light image — the headline
+measures ~12.6:1 against it (AA needs 4.5:1). If a darker hero is ever used, lighten the scrim
+gradient in `HomePage.tsx`.
 
-Keep replacements sized for the web (long edge ~2000px, JPEG q≈80) so performance stays tight —
-only the hero and the Weekly Wellbeing image use `priority`.
+## Design tokens (v2)
+
+Her v2 palette sits alongside the original warm-sand system, with contrast verified for every
+pairing (see the comments in `src/app/globals.css`):
+
+- **Pine `#1F2E27`** — hero/CTA/dark section backgrounds. Cream on Pine = 13.3:1.
+- **Clay `#C4A35A`** — gold accent for eyebrows, hairlines and quote marks **on Pine only**
+  (5.9:1 there; it fails at 2.2:1 on light, so it is never used as text on light).
+- **Clay Deep `#9C7C3D`** — 3.7:1 on light: large text, rules and borders only.
+- **Clay Ink `#7A5F2C`** — added because the 12px uppercase eyebrow is *small* text and needs
+  4.5:1, which Clay Deep does not reach. 5.6:1 on cream. (This also fixed the previous sage
+  eyebrow, which failed at 3.4:1.)
+
+Typography stays Cormorant Garamond + Inter (not Fraunces), and the primary button stays
+forest-on-cream (10.1:1) rather than her Clay Deep fill, which would fail AA for button text.
 
 ## Assumptions & notes for handover
 
-- **Organisations images:** none were supplied, so that page uses typographic/colour layout blocks
-  rather than placeholder image boxes. Drop an image into `public/images/` and wire it into
-  `OrganisationsPage.tsx` if/when provided.
+- **Open items still needing Theresa's input** (not invented here): no booking link exists, so the
+  CTA routes to the contact form; her document asks for a public phone number — confirm she is
+  happy for her personal mobile to be published; and AGB / terms & conditions would be sensible for
+  a private-pay practice but need her actual terms.
+- **Deliberately omitted pending her written go-ahead:** the psychotherapy-qualification claim
+  ("in postgraduate training as a licensed psychological psychotherapist" / "Approbationsausbildung"),
+  "Therapy/Therapie" as a heading or offering, `MedicalBusiness`/`HealthAndBeautyBusiness` schema,
+  and any "soon in Zug" / in-person or Swiss-location availability claim. Switzerland appears only
+  as an *online* audience reference, structured so a real location can be switched on later with a
+  content edit alone.
+- **On-site delivery for organisations** ("Online or on-site, Germany & Switzerland") is kept: it is
+  pre-existing approved copy about corporate workshops she travels to deliver, not a counselling
+  practice location. Worth confirming with her that this framing is still right.
 - **Legal pages — two fields pending Theresa:** the **postal address** and **VAT status** were
   marked pending in `business-details.md`, which explicitly instructed to ship clearly-marked
   placeholders and continue. They render as `Address: [to be added]` / `Anschrift: [Adresse wird

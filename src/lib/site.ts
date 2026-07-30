@@ -19,9 +19,46 @@ export interface RouteDef {
 
 export const ROUTES: RouteDef[] = [
   { key: "home", en: "/", de: "/de" },
-  { key: "about", en: "/about", de: "/de/about" },
-  { key: "work-together", en: "/work-together", de: "/de/work-together" },
-  { key: "organisations", en: "/organisations", de: "/de/organisations" },
+  { key: "about", en: "/about", de: "/de/ueber-mich" },
+  // Work With Me (v2: renamed from /work-together) + its four child pages
+  { key: "work-with-me", en: "/work-with-me", de: "/de/angebot" },
+  {
+    key: "wwm-psychological-counselling",
+    en: "/work-with-me/psychological-counselling",
+    de: "/de/angebot/psychologische-beratung",
+  },
+  {
+    key: "wwm-couples-counselling",
+    en: "/work-with-me/couples-counselling",
+    de: "/de/angebot/paarberatung",
+  },
+  {
+    key: "wwm-burnout-prevention",
+    en: "/work-with-me/burnout-prevention",
+    de: "/de/angebot/burnout-praevention",
+  },
+  {
+    key: "wwm-somatic-experiencing",
+    en: "/work-with-me/somatic-experiencing",
+    de: "/de/angebot/somatic-experiencing",
+  },
+  // For Organisations + its three child pages
+  { key: "organisations", en: "/organisations", de: "/de/fuer-unternehmen" },
+  {
+    key: "org-talks-workshops-courses",
+    en: "/organisations/talks-workshops-courses",
+    de: "/de/fuer-unternehmen/vortraege-workshops-kurse",
+  },
+  {
+    key: "org-leadership-coaching",
+    en: "/organisations/leadership-coaching",
+    de: "/de/fuer-unternehmen/fuehrungskraefte-coaching",
+  },
+  {
+    key: "org-employee-counselling",
+    en: "/organisations/employee-counselling",
+    de: "/de/fuer-unternehmen/beratung-mitarbeitende",
+  },
   { key: "weekly-wellbeing", en: "/weekly-wellbeing", de: "/de/weekly-wellbeing" },
   { key: "blog", en: "/blog", de: "/de/blog" },
   { key: "faq", en: "/faq", de: "/de/faq" },
@@ -30,6 +67,21 @@ export const ROUTES: RouteDef[] = [
   { key: "impressum", en: "/impressum", de: "/de/impressum" },
   { key: "privacy", en: "/privacy", de: "/de/datenschutz" },
 ];
+
+/** Route keys of the Work With Me child pages, in display order. */
+export const WWM_CHILD_KEYS = [
+  "wwm-psychological-counselling",
+  "wwm-couples-counselling",
+  "wwm-burnout-prevention",
+  "wwm-somatic-experiencing",
+] as const;
+
+/** Route keys of the For Organisations child pages, in display order. */
+export const ORG_CHILD_KEYS = [
+  "org-talks-workshops-courses",
+  "org-leadership-coaching",
+  "org-employee-counselling",
+] as const;
 
 /** Detect the active locale from a pathname. */
 export function localeFromPath(pathname: string): Locale {
@@ -81,6 +133,24 @@ export function pageCrumbs(
   return [
     { label: locale === "de" ? "Startseite" : "Home", href: locale === "de" ? "/de" : "/" },
     { label, href: localizedPath(locale, enPath) },
+  ];
+}
+
+/**
+ * Three-level breadcrumb trail for a child page: Home > Parent > Child.
+ * Paths are resolved from the ROUTES table so they stay correct per locale.
+ */
+export function childCrumbs(
+  locale: Locale,
+  parentEnPath: string,
+  parentLabel: string,
+  childEnPath: string,
+  childLabel: string,
+): { label: string; href: string }[] {
+  return [
+    { label: locale === "de" ? "Startseite" : "Home", href: locale === "de" ? "/de" : "/" },
+    { label: parentLabel, href: localizedPath(locale, parentEnPath) },
+    { label: childLabel, href: localizedPath(locale, childEnPath) },
   ];
 }
 

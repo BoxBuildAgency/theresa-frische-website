@@ -12,6 +12,7 @@ export function CtaBand({ locale }: { locale: Locale }) {
   const c = getContent(locale);
   const heading =
     locale === "de" ? "Bereit für den ersten Schritt?" : "Ready to take the first step?";
+  const eyebrow = locale === "de" ? "Kennenlerngespräch" : "Discovery call";
   const body =
     locale === "de"
       ? "Buchen Sie ein kostenloses 15-minütiges Kennenlerngespräch – entspannt und unverbindlich."
@@ -19,8 +20,8 @@ export function CtaBand({ locale }: { locale: Locale }) {
 
   return (
     <section className="bg-sand">
-      <Container className="py-20">
-        <div className="relative isolate flex flex-col items-start gap-8 overflow-hidden rounded-3xl bg-forest px-8 py-14 text-cream sm:px-14 lg:flex-row lg:items-center lg:justify-between">
+      <Container className="py-14 sm:py-24">
+        <div className="relative isolate flex flex-col items-start gap-8 overflow-hidden rounded-3xl bg-pine px-8 py-14 text-cream sm:px-14 sm:py-16 lg:flex-row lg:items-center lg:justify-between">
           {/* Subtle warm-sand texture behind the deep forest panel */}
           <Image
             src="/images/band-cta.jpg"
@@ -30,8 +31,9 @@ export function CtaBand({ locale }: { locale: Locale }) {
             sizes="(max-width: 1024px) 100vw, 1100px"
             className="-z-20 object-cover object-center"
           />
-          <div aria-hidden="true" className="absolute inset-0 -z-10 bg-forest/88" />
+          <div aria-hidden="true" className="absolute inset-0 -z-10 bg-pine/88" />
           <div className="max-w-xl">
+            <p className="eyebrow eyebrow-dark mb-3">{eyebrow}</p>
             <h2 className="font-serif text-3xl font-light leading-tight text-cream sm:text-4xl">
               {heading}
             </h2>
