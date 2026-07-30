@@ -2,6 +2,7 @@ import type { Locale } from "@/content/types";
 import { getContent } from "@/content";
 import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/Section";
+import { renderInline } from "@/lib/inline";
 
 /** Renders the Impressum and (separately) the Privacy page from typed content. */
 
@@ -46,18 +47,47 @@ export function PrivacyPage({ locale }: { locale: Locale }) {
             <section key={s.heading} className="mb-10">
               <h2>{s.heading}</h2>
               {s.paras.map((para, idx) => (
-                <p key={idx}>{para}</p>
+                <p key={idx}>{renderInline(para)}</p>
               ))}
               {s.bullets && (
                 <ul>
                   {s.bullets.map((b, idx) => (
-                    <li key={idx}>{b}</li>
+                    <li key={idx}>{renderInline(b)}</li>
                   ))}
                 </ul>
               )}
             </section>
           ))}
         </div>
+      </Container>
+    </article>
+  );
+}
+
+/**
+ * Terms & Conditions / AGB. Same shell as the Privacy page: conventional legal
+ * text, numbered clauses, version line at the end.
+ */
+export function TermsPage({ locale }: { locale: Locale }) {
+  const c = getContent(locale);
+  const t = c.terms;
+
+  return (
+    <article className="bg-cream">
+      <Container size="narrow" className="py-20 sm:py-24">
+        <Eyebrow>Legal</Eyebrow>
+        <h1 className="mt-4 font-serif text-4xl font-light text-ink sm:text-5xl">{t.heading}</h1>
+        <div className="prose-tf mt-12">
+          {t.sections.map((s) => (
+            <section key={s.heading} className="mb-10">
+              <h2>{s.heading}</h2>
+              {s.paras.map((para, idx) => (
+                <p key={idx}>{renderInline(para)}</p>
+              ))}
+            </section>
+          ))}
+        </div>
+        <p className="mt-4 border-t border-line pt-6 text-sm text-ink-muted">{t.version}</p>
       </Container>
     </article>
   );

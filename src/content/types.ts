@@ -344,6 +344,21 @@ export interface SiteContent {
    */
   serviceChildren: Record<string, ServicePageContent>;
 
+  /**
+   * Terms & Conditions / AGB. Legal text is conventional and precise — it is NOT
+   * transcreated, and the "not psychotherapy, not medical treatment" wording in
+   * section 2 must stay exactly as drafted. No prices are published.
+   */
+  terms: {
+    metaTitle: string;
+    metaDescription: string;
+    heading: string;
+    /** The 12 numbered clauses; the number is part of each heading. */
+    sections: { heading: string; paras: string[] }[];
+    /** "Version: 30 July 2026" / "Stand: 30. Juli 2026" */
+    version: string;
+  };
+
   aiInfo: {
     metaTitle: string;
     metaDescription: string;

@@ -52,3 +52,4 @@ This is a counselling (Beratung) practice. Counselling is not psychotherapy, med
 - [German version (Deutsch)](https://theresafrische.com/de): The full site in German.
 - [Impressum](https://theresafrische.com/impressum): Legal disclosure.
 - [Privacy Policy](https://theresafrische.com/privacy): How personal data is handled.
+- [Terms & Conditions](https://theresafrische.com/terms): Scope, sessions, payment, cancellation, confidentiality, withdrawal and liability.

@@ -121,6 +121,7 @@ and nothing else**.
 | AI Info | `/ai-info` | `/de/ai-info` |
 | Impressum | `/impressum` | `/de/impressum` |
 | Privacy | `/privacy` | `/de/datenschutz` |
+| Terms & Conditions | `/terms` | `/de/agb` |
 
 The pre-v2 paths (`/work-together`, `/de/work-together`, `/de/about`, `/de/organisations`) 301 to
 their new homes via `redirects()` in `next.config.ts`.
@@ -284,8 +285,10 @@ forest-on-cream (10.1:1) rather than her Clay Deep fill, which would fail AA for
 
 - **Open items still needing Theresa's input** (not invented here): no booking link exists, so the
   CTA routes to the contact form; her document asks for a public phone number — confirm she is
-  happy for her personal mobile to be published; and AGB / terms & conditions would be sensible for
-  a private-pay practice but need her actual terms.
+  happy for her personal mobile to be published. The Terms & Conditions / AGB are now live at
+  `/terms` and `/de/agb` from her supplied draft (24-hour cancellation notice, invoice payable within
+  14 days, full fee for a late cancellation or no-show, dated 30 July 2026) — she should have them
+  checked by a German lawyer before go-live, and no fees are published on the site.
 - **Deliberately omitted pending her written go-ahead:** the psychotherapy-qualification claim
   ("in postgraduate training as a licensed psychological psychotherapist" / "Approbationsausbildung"),
   "Therapy/Therapie" as a heading or offering, `MedicalBusiness`/`HealthAndBeautyBusiness` schema,

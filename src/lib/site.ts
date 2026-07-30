@@ -66,6 +66,7 @@ export const ROUTES: RouteDef[] = [
   { key: "ai-info", en: "/ai-info", de: "/de/ai-info" },
   { key: "impressum", en: "/impressum", de: "/de/impressum" },
   { key: "privacy", en: "/privacy", de: "/de/datenschutz" },
+  { key: "terms", en: "/terms", de: "/de/agb" },
 ];
 
 /** Route keys of the Work With Me child pages, in display order. */
