@@ -145,6 +145,22 @@ export function AboutPage({ locale }: { locale: Locale }) {
           ))}
         </ul>
         <p className="mt-6 text-sm leading-relaxed text-ink-muted">{a.psyCoNote}</p>
+
+        {/* ---------------------------------------------------------------
+            ASSOCIATION LOGOS — placeholder, intentionally empty (v3 §2.3).
+            Theresa is considering requesting the Somatic Experiencing
+            association logo. Third-party logos need WRITTEN PERMISSION from
+            the association before they may be displayed, so nothing is
+            rendered here yet.
+
+            To enable later: drop the artwork into public/images/ and render a
+            small, muted row here, e.g.
+              <ul className="mt-8 flex flex-wrap items-center gap-6 opacity-80">
+                <li><Image src="/images/logo-se-association.png" alt="…" width={120} height={48} /></li>
+              </ul>
+            Keep logos small and greyscale-ish so they don't undercut the
+            premium feel, per her design note.
+        --------------------------------------------------------------- */}
       </Section>
 
       <FurtherReading locale={locale} pageKey="about" tone="cream" />

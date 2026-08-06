@@ -117,7 +117,7 @@ export const en: SiteContent = {
     heroTitle: "A space for what is",
     heroTitleAccent: "shifting within you",
     heroLead:
-      "Confidential support for stress, burnout, overwhelm and life transitions — for individuals and couples who carry a great deal, achieve a great deal, and want to feel connected to themselves again.",
+      "Confidential support for stress, burnout, overwhelm and life transitions — for individuals and couples who carry a great deal, give a great deal, and want to feel connected to themselves again.",
     heroParas: [
       "Life rarely changes in clear or linear ways. More often, it shifts gradually — until something begins to feel different within yourself.",
       "Sometimes life keeps moving on the outside while something no longer feels right on the inside. Outwardly, you may still be functioning, while inwardly there is exhaustion, inner restlessness, overwhelm, or the quiet sense of no longer feeling like yourself.",
@@ -162,34 +162,6 @@ export const en: SiteContent = {
           title: "Expat & International Life",
           body: "What it means to live between countries, cultures, and shifting social worlds. Counselling for expats and international couples in English and German — working online with people in Switzerland, Germany and beyond.",
         },
-        {
-          title: "Personal Growth",
-          body: "Strengthening clarity, emotional resilience, and a steadier sense of self through change.",
-        },
-      ],
-    },
-    approach: {
-      eyebrow: "My approach",
-      heading: "Integrative and context-oriented",
-      intro:
-        "Rather than applying a fixed method, I draw from complementary perspectives to meet each person's experience with nuance. At the centre of this work is compassionate attention — to what is happening internally, relationally, and within the wider context of your life.",
-      items: [
-        {
-          title: "Systemic Counselling",
-          body: "Exploring relational and contextual patterns, and how they shape emotional experience and ways of responding to life.",
-        },
-        {
-          title: "Somatic Awareness",
-          body: "Attending to the body's responses to stress and change, supporting regulation, grounding, and greater internal stability.",
-        },
-        {
-          title: "Parts Work",
-          body: "Exploring the different parts of yourself that hold conflicting needs, fears, or responses — with curiosity and compassion, toward greater integration.",
-        },
-        {
-          title: "Mindfulness-Based Practice",
-          body: "Developing awareness of thoughts and patterns of reactivity — creating space and choice in how we respond.",
-        },
       ],
     },
     practical: {
@@ -225,7 +197,7 @@ export const en: SiteContent = {
       eyebrow: "My approach",
       heading: "Systemic. Somatic. Integrative.",
       intro:
-        "I combine scientifically grounded perspectives — systemic counselling, Somatic Experiencing®, parts work, and mindfulness-based approaches — with an integrative stance and deep respect for each person's individual story and inner resources. For lasting change rather than short-term fixes.",
+        "I combine scientifically grounded perspectives — systemic counselling, Somatic Experiencing®, parts work, and mindfulness-based approaches — with an integrative stance and deep respect for each person's individual story and inner resources.",
       items: [
         {
           title: "01 Understand Patterns",
@@ -348,7 +320,7 @@ export const en: SiteContent = {
         heading: "Understanding & contextualising patterns",
         paras: [
           "Our present-day patterns of thinking, feeling and behaving are not malfunctions. They are intelligent adaptations our system made to earlier life circumstances, relationships, or difficult situations. In the past, these strategies were vital for protection or for getting through — today, though, they can get in our way at work, in relationships, or in daily life.",
-          "Together, we look at your recurring dynamics without judgment. We gently explore what function these patterns once served, and why they persist today. By understanding their origins and what sets them off, old automatic responses lose their grip — creating room for conscious, new choices.",
+          "Together, we look at your recurring dynamics without judgment. We gently explore the valuable function these patterns serve within your system, and how they have protected you until now. Once that meaning is understood, old automatic responses stop feeling like the only option available — and new room opens up for considered, conscious choices in the here and now.",
         ],
       },
       {
@@ -364,7 +336,7 @@ export const en: SiteContent = {
         heading: "Integrating inner conflicts & parts",
         paras: [
           "In challenging periods of life, we often experience inner contradictions: one part of us wants change, another seeks safety; one part wants to set clear boundaries, another doesn't want to disappoint anyone. These inner tugs-of-war cost an enormous amount of energy.",
-          "Drawing on the Internal Family Systems (IFS) model, we meet your different inner parts with curiosity and appreciation. Rather than pushing away unwanted impulses or feelings, we create a protected space in which all parts can be heard. By clarifying the underlying needs and fears of these parts, inner blocks dissolve — and inner conflict gives way to clarity, self-compassion, and the capacity to act.",
+          "Drawing on the Internal Family Systems (IFS) model, we meet your different inner parts with curiosity and appreciation. Rather than pushing away unwanted impulses or feelings, we create a protected space in which every part can be heard. Once your adult self recognises the function each part is serving and tends compassionately to its needs and worries, blocks begin to dissolve — and inner conflict gives way to clarity, self-compassion, and renewed strength.",
         ],
       },
       {
@@ -434,7 +406,7 @@ export const en: SiteContent = {
     closing: {
       heading: "Ready to take the first step?",
       body: "Book your free 15-minute discovery call — a relaxed, no-obligation way to begin.",
-      note: "Sessions are self-pay · Responding within 2–3 business days.",
+      note: "Sessions are self-pay — the fee is agreed individually in the free discovery call, and is not billed to or reimbursed by health insurance · Responding within 2–3 business days.",
     },
     cards: [
       {
@@ -480,7 +452,6 @@ export const en: SiteContent = {
     facts: [
       { label: "Experience", value: "8+ years in workplace health promotion" },
       { label: "Languages", value: "English & German" },
-      { label: "Certification", value: "Somatic Experiencing® (SE) Practitioner" },
       { label: "Delivery", value: "Online or on-site, Germany & Switzerland" },
     ],
     formats: {
@@ -584,8 +555,11 @@ export const en: SiteContent = {
     eyebrow: "Weekly Wellbeing",
     heading: "Weekly online mindfulness & wellbeing community",
     lead: "A calm online space for mindfulness, stress reduction, and community connection.",
-    intro:
-      "The Weekly Wellbeing Community offers a supportive and grounded environment to slow down, reconnect, and care for your emotional wellbeing. Sessions combine mindfulness practices, nervous system regulation, reflection, and compassionate community connection — in an atmosphere that is calm, welcoming, and non-judgmental.",
+    intro: [
+      "The Weekly Wellbeing Community is your weekly invitation to self-care — a calm, protected space to arrive back with yourself and strengthen your emotional wellbeing for the long term.",
+      "In our weekly 60-minute meetings, we spend around 30 to 45 minutes on guided mindfulness practices and nervous system regulation. Afterwards, there is room for a compassionate, judgment-free exchange.",
+      "No pressure to perform and no obligation to share: here you are welcome exactly as you are. The aim is a deeper, more authentic sense of connection — with yourself and with a supportive community.",
+    ],
     imageAlt: "A woman sitting quietly on a wooden dock beside still water at dusk.",
     facts: [
       { label: "When", value: "Tuesdays, 20:30–21:30" },

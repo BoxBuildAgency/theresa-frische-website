@@ -117,7 +117,7 @@ export const de: SiteContent = {
     heroTitle: "Ein Raum für das, was",
     heroTitleAccent: "sich in Ihnen verändert",
     heroLead:
-      "Vertrauliche Begleitung bei Stress, Burnout, Überforderung und Lebensübergängen — für Menschen, die viel leisten, viel tragen und wieder mehr Verbindung zu sich selbst finden möchten.",
+      "Vertrauliche Begleitung bei Stress, Burnout, Überforderung und Lebensübergängen — für Menschen, die viel geben, viel tragen und wieder mehr Verbindung zu sich selbst finden möchten.",
     heroParas: [
       "Das Leben verändert sich selten geradlinig. Meist verschiebt sich etwas ganz allmählich — bis sich in Ihnen etwas anders anfühlt als zuvor.",
       "Manchmal läuft im Außen alles weiter, während innen Erschöpfung, innere Unruhe oder Überforderung wachsen — oder das leise Gefühl, sich selbst fremd geworden zu sein.",
@@ -187,34 +187,6 @@ export const de: SiteContent = {
           title: "Expat- & internationales Leben",
           body: "Was es bedeutet, zwischen Ländern, Kulturen und sich wandelnden sozialen Welten zu leben. Beratung für Expats und internationale Paare auf Deutsch & Englisch — online in der Schweiz, in Deutschland und international.",
         },
-        {
-          title: "Persönliches Wachstum",
-          body: "Mehr Klarheit, emotionale Widerstandskraft und ein stabileres Selbstgefühl mitten in der Veränderung.",
-        },
-      ],
-    },
-    approach: {
-      eyebrow: "Mein Ansatz",
-      heading: "Integrativ und kontextorientiert",
-      intro:
-        "Statt einer festen Methode zu folgen, schöpfe ich aus mehreren, einander ergänzenden Perspektiven, um jedem Menschen mit Feingefühl zu begegnen. Im Zentrum steht eine mitfühlende Aufmerksamkeit — für das, was sich in Ihnen, in Ihren Beziehungen und im größeren Zusammenhang Ihres Lebens zeigt.",
-      items: [
-        {
-          title: "Systemische Beratung",
-          body: "Wir schauen auf Muster in Ihren Beziehungen und Lebensumständen — und darauf, wie sie Ihr Erleben und Ihren Umgang mit dem Leben prägen.",
-        },
-        {
-          title: "Körperwahrnehmung (Somatic Awareness)",
-          body: "Aufmerksamkeit dafür, wie der Körper auf Stress und Veränderung reagiert — als Weg zu mehr Regulation, Erdung und innerer Stabilität.",
-        },
-        {
-          title: "Teile-Arbeit (Parts Work)",
-          body: "Ein neugieriger, mitfühlender Blick auf die verschiedenen Anteile in Ihnen, die widersprüchliche Bedürfnisse, Sorgen oder Reaktionen tragen — hin zu mehr innerem Zusammenhalt.",
-        },
-        {
-          title: "Achtsamkeitsbasierte Praxis",
-          body: "Ein wacheres Gespür für Gedanken und eingespielte Reaktionsmuster — damit mehr Raum und Wahlfreiheit entsteht, wie Sie reagieren.",
-        },
       ],
     },
     practical: {
@@ -234,7 +206,7 @@ export const de: SiteContent = {
       eyebrow: "Mein Ansatz",
       heading: "Systemisch. Körperorientiert. Integrativ.",
       intro:
-        "Ich verbinde wissenschaftlich fundierte Perspektiven — Systemische Beratung, Somatic Experiencing®, Anteilearbeit sowie achtsamkeitsbasierte Ansätze — mit einer integrativen Haltung und tiefem Respekt für die individuelle Geschichte und die inneren Ressourcen jedes Menschen. Für nachhaltige Veränderung statt kurzfristiger Lösungen.",
+        "Ich verbinde wissenschaftlich fundierte Perspektiven — Systemische Beratung, Somatic Experiencing®, Anteilearbeit sowie achtsamkeitsbasierte Ansätze — mit einer integrativen Haltung und tiefem Respekt für die individuelle Geschichte und die inneren Ressourcen jedes Menschen.",
       items: [
         {
           title: "01 Muster verstehen",
@@ -321,7 +293,7 @@ export const de: SiteContent = {
         heading: "Muster verstehen & kontextualisieren",
         paras: [
           "Unsere heutigen Denk-, Fühl- und Verhaltensmuster sind keine Fehlfunktionen. Sie sind kluge Anpassungsleistungen unseres Systems an frühere Lebensumstände, Beziehungen oder Belastungssituationen. Früher waren diese Strategien schützend und oft überlebenswichtig — heute jedoch können sie uns im Alltag, im Beruf oder in Beziehungen im Weg stehen.",
-          "Gemeinsam betrachten wir Ihre wiederkehrenden Dynamiken ohne Bewertung. Wir erforschen behutsam, welche Funktion diese Muster einst hatten und warum sie bis heute fortbestehen. Indem wir ihre Ursprünge und Auslöser verstehen, verlieren alte Automatismen ihre Macht — und es entsteht der Freiraum, bewusste, neue Entscheidungen zu treffen.",
+          "Gemeinsam betrachten wir Ihre wiederkehrenden Dynamiken ohne Bewertung. Wir erforschen behutsam, welche wertvolle Funktion diese Muster in Ihrem System erfüllen und wie sie Sie bisher geschützt haben. Sobald dieser Sinn verstanden ist, verlieren alte Automatismen ihre Alternativlosigkeit — und es entsteht neuer Freiraum für stimmige, bewusste Entscheidungen im Hier und Jetzt.",
         ],
       },
       {
@@ -337,7 +309,7 @@ export const de: SiteContent = {
         heading: "Innere Konflikte & Anteile integrieren",
         paras: [
           "Häufig erleben wir in herausfordernden Lebensphasen innere Widersprüche: Ein Teil von uns möchte Veränderung, ein anderer sucht Sicherheit; ein Teil möchte klare Grenzen setzen, ein anderer will niemanden enttäuschen. Solche inneren Zerreißproben kosten enorm viel Energie.",
-          "In Anlehnung an das Modell des Internal Family Systems (IFS) begegnen wir Ihren unterschiedlichen inneren Anteilen mit Neugier und Wertschätzung. Statt ungewollte Impulse oder Gefühle wegzudrücken, schaffen wir einen geschützten Raum, in dem alle Anteile gehört werden können. Indem wir die zugrundeliegenden Bedürfnisse und Befürchtungen dieser Anteile klären, lösen sich innere Blockaden — aus innerer Zerrissenheit wird Klarheit, Selbstmitgefühl und Handlungsfähigkeit.",
+          "In Anlehnung an das Modell des Internal Family Systems (IFS) begegnen wir Ihren unterschiedlichen inneren Anteilen mit Neugier und Wertschätzung. Statt ungewollte Impulse oder Gefühle wegzudrücken, schaffen wir einen geschützten Raum, in dem alle Anteile gehört werden können. Sobald Ihr erwachsenes Selbst ihre Funktion erkennt und sich mitfühlend um ihre Bedürfnisse und Befürchtungen kümmert, lösen sich Blockaden — und aus innerer Zerrissenheit entstehen Klarheit, Selbstmitgefühl und neue Kraft.",
         ],
       },
       {
@@ -433,7 +405,7 @@ export const de: SiteContent = {
     closing: {
       heading: "Bereit für den ersten Schritt?",
       body: "Buchen Sie Ihr kostenloses Kennenlerngespräch (15 Minuten) — ein entspannter, unverbindlicher Einstieg.",
-      note: "Sitzungen sind Selbstzahlerleistungen · Antwort innerhalb von 2–3 Werktagen.",
+      note: "Sitzungen sind Selbstzahlerleistungen — das Honorar wird individuell im kostenlosen Kennenlerngespräch vereinbart; eine Abrechnung mit oder Erstattung durch die Krankenkasse erfolgt nicht · Antwort innerhalb von 2–3 Werktagen.",
     },
     cards: [
       {
@@ -479,7 +451,6 @@ export const de: SiteContent = {
     facts: [
       { label: "Erfahrung", value: "8+ Jahre in der betrieblichen Gesundheitsförderung" },
       { label: "Sprachen", value: "Deutsch & Englisch" },
-      { label: "Zertifizierung", value: "Somatic Experiencing® (SE) Practitioner" },
       { label: "Durchführung", value: "Online oder vor Ort, Deutschland & Schweiz" },
     ],
     formats: {
@@ -507,7 +478,7 @@ export const de: SiteContent = {
     individual: {
       heading: "Beratung für Mitarbeitende & Führungskräfte",
       intro:
-        "Vertrauliche Einzelbegleitung als Teil eines Mitarbeitendenunterstützungsprogramms — online und nach Vereinbarung.",
+        "Vertrauliche Einzelbegleitung als Teil der betrieblichen Gesundheitsförderung — online und nach Vereinbarung.",
       items: [
         {
           title: "Beratung für Mitarbeitende",
@@ -583,8 +554,11 @@ export const de: SiteContent = {
     eyebrow: "Weekly Wellbeing",
     heading: "Wöchentliche Online-Community für Achtsamkeit & Wohlbefinden",
     lead: "Ein ruhiger Online-Raum für Achtsamkeit, Stressreduktion und Verbundenheit in Gemeinschaft.",
-    intro:
-      "Die Weekly Wellbeing Community bietet ein geerdetes, unterstützendes Umfeld, um zur Ruhe zu kommen, wieder in Verbindung zu gehen und für Ihr emotionales Wohlbefinden zu sorgen. Die Sitzungen verbinden Achtsamkeitsübungen, Regulation des Nervensystems, Reflexion und ein mitfühlendes Miteinander — in einer Atmosphäre, die ruhig, einladend und frei von Bewertung ist.",
+    intro: [
+      "Die Weekly Wellbeing Community ist Ihre wöchentliche Einladung zur Selbstfürsorge — ein ruhiger, geschützter Raum, um wieder bei sich anzukommen und Ihr emotionales Wohlbefinden nachhaltig zu stärken.",
+      "In unseren wöchentlichen 60-minütigen Treffen widmen wir uns etwa 30 bis 45 Minuten geleiteten Achtsamkeitsübungen sowie der Regulation des Nervensystems. Anschließend bleibt Raum für einen mitfühlenden, bewertungsfreien Austausch.",
+      "Ohne Leistungsdruck und ohne Zwang zum Teilen: Hier dürfen Sie einfach so sein, wie Sie gerade sind. Ziel ist eine tiefere, authentische Verbundenheit — mit sich selbst und mit einer unterstützenden Gemeinschaft.",
+    ],
     imageAlt: "Eine Frau sitzt in der Abenddämmerung still auf einem hölzernen Steg neben ruhigem Wasser.",
     facts: [
       { label: "Wann", value: "Dienstags, 20:30–21:30" },

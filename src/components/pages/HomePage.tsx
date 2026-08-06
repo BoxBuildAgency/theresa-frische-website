@@ -118,16 +118,6 @@ export function HomePage({ locale }: { locale: Locale }) {
         </div>
       </Section>
 
-      {/* APPROACH */}
-      <Section tone="sand">
-        <SectionHeader eyebrow={h.approach.eyebrow} heading={h.approach.heading} intro={h.approach.intro} />
-        <div className="mt-12 grid gap-5 sm:grid-cols-2">
-          {h.approach.items.map((item, i) => (
-            <FeatureCard key={item.title} item={item} index={i} />
-          ))}
-        </div>
-      </Section>
-
       {/* FOUR-STEP APPROACH (01–04) */}
       <Section tone="cream">
         <SectionHeader eyebrow={h.steps.eyebrow} heading={h.steps.heading} intro={h.steps.intro} />

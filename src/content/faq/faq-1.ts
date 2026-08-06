@@ -107,7 +107,7 @@ export const faq1En: FaqCategory[] = [
       },
       {
         q: "How do sessions work financially?",
-        a: "Sessions are self-pay, and I keep the arrangements straightforward and transparent. Rather than list figures here, I am always happy to talk through fees and any practical details with you personally. The free discovery call, or a message via the contact page, is the perfect place to ask. That way I can answer your questions clearly and directly.",
+        a: "Sessions are self-pay. The fee is agreed with you individually, and we talk it through in the free 15-minute discovery call — or by message via the contact page, whichever you prefer. Sessions are not billed to, and are not reimbursed by, statutory or private health insurance. That keeps the work flexible and discreet, with no insurance paperwork and no reporting requirements.",
       },
       {
         q: "Are sessions covered by health insurance / Krankenkasse?",
@@ -228,7 +228,7 @@ export const faq1De: FaqCategory[] = [
       },
       {
         q: "Wie läuft die Bezahlung der Sitzungen?",
-        a: "Die Sitzungen sind Selbstzahlerleistungen, und ich halte alles unkompliziert und transparent. Statt hier Beträge aufzuführen, bespreche ich das Honorar und alle praktischen Fragen lieber persönlich mit Ihnen. Am besten fragen Sie im kostenlosen Kennenlerngespräch oder mit einer kurzen Nachricht über die Kontaktseite. So kann ich Ihre Fragen klar und direkt beantworten.",
+        a: "Die Sitzungen sind Selbstzahlerleistungen. Das Honorar wird individuell mit Ihnen vereinbart und im kostenlosen 15-minütigen Kennenlerngespräch besprochen — oder, wenn Ihnen das lieber ist, per Nachricht über die Kontaktseite. Eine Abrechnung mit oder Erstattung durch die gesetzliche oder private Krankenkasse erfolgt nicht. Das hält die Zusammenarbeit flexibel und diskret, ohne Versicherungsunterlagen und ohne Meldepflichten.",
       },
       {
         q: "Werden die Sitzungen von der Krankenkasse übernommen?",

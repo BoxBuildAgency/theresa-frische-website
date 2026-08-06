@@ -42,7 +42,13 @@ export function WeeklyWellbeingPage({ locale }: { locale: Locale }) {
       <Section tone="cream">
         <Breadcrumbs items={crumbs} className="mb-10" />
         <div className="grid gap-12 lg:grid-cols-[1.3fr_1fr] lg:items-start">
-          <p className="text-lg leading-relaxed text-ink-soft">{w.intro}</p>
+          <div className="space-y-5">
+            {w.intro.map((para, i) => (
+              <p key={i} className="text-lg leading-relaxed text-ink-soft">
+                {para}
+              </p>
+            ))}
+          </div>
           <div className="rounded-3xl border border-line bg-sand/50 p-8">
             <MetaList items={w.facts} />
             <ButtonLink href={c.cta.primary.href} variant="primary" className="mt-6 w-full">

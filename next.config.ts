@@ -1,6 +1,28 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  async headers() {
+    // v3 §5.3 — keep the staging deploy out of search indexes.
+    //
+    // Every canonical points at https://theresafrische.com, which does not resolve
+    // yet, so the publicly crawlable *.netlify.app host could be indexed instead.
+    // This applies `X-Robots-Tag: noindex` ONLY when the request Host ends in
+    // .netlify.app, so it switches itself off automatically on the production
+    // domain — no site-wide noindex to remember to remove at go-live.
+    //
+    // Implemented here rather than in netlify.toml because Netlify's [[headers]]
+    // cannot be conditioned on the host, and rather than in middleware because
+    // this project deliberately ships without middleware. Next.js matches `has`
+    // host values as an anchored regex.
+    return [
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: ".*\\.netlify\\.app" }],
+        headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow" }],
+      },
+    ];
+  },
+
   async redirects() {
     // v2 re-slug (2026-07-30). Nothing was indexed under the old paths, but any
     // link already shared should still land in the right place.

@@ -233,6 +233,29 @@ The contact form collects **name, email, and a short message only** — no healt
 
 ---
 
+## Go-live checklist
+
+The staging deploy is deliberately kept out of search indexes. `next.config.ts` sends
+`X-Robots-Tag: noindex, nofollow` **only** when the request Host ends in `.netlify.app`, so it
+switches itself off automatically once the site is served from `theresafrische.com` — there is no
+site-wide noindex to remember to remove. Canonicals already point at the production domain, which is
+correct for go-live.
+
+At go-live, in order:
+
+1. Point `theresafrische.com` at Netlify and wait for HTTPS to provision.
+2. Verify the noindex is **gone** on production and **still present** on staging:
+   ```bash
+   curl -sI https://theresafrische.com/ | grep -i x-robots-tag     # expect: no output
+   curl -sI https://<site>.netlify.app/ | grep -i x-robots-tag     # expect: noindex, nofollow
+   ```
+3. Set the Resend env vars (`RESEND_API_KEY`, `CONTACT_TO_EMAIL`, `CONTACT_FROM_EMAIL`) and send a
+   test enquiry through the contact form.
+4. Submit `https://theresafrische.com/sitemap.xml` in Google Search Console, and confirm the
+   property is verified on the production domain (not the Netlify subdomain).
+5. Replace the two remaining placeholders if they have changed: nothing outstanding in the legal
+   pages, but re-check the Impressum address and the published phone number.
+
 ## Privacy / analytics
 
 There is **no analytics, no tracking, and no cookies** at launch, so **no cookie-consent banner is

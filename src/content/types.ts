@@ -154,12 +154,8 @@ export interface SiteContent {
       intro: string;
       items: FeatureItem[];
     };
-    approach: {
-      eyebrow: string;
-      heading: string;
-      intro: string;
-      items: FeatureItem[];
-    };
+    // NOTE: the duplicate `approach` block was removed in v3 (§1.3) — the home
+    // page has a single approach section, `steps` below (01–04).
     practical: {
       eyebrow: string;
       heading: string;
@@ -256,7 +252,8 @@ export interface SiteContent {
     eyebrow: string;
     heading: string;
     lead: string;
-    intro: string;
+    /** Her v3 description, as separate paragraphs. */
+    intro: string[];
     imageAlt: string;
     facts: MetaPair[];
     why: { heading: string; intro: string; items: string[] };

@@ -156,7 +156,7 @@ export const faq3De: FaqCategory[] = [
       },
       {
         q: "Welche Formate bieten Sie für Organisationen an?",
-        a: "Ich biete Keynote-Vorträge von 30 bis 60 Minuten, Workshops und Seminare von 2 bis 4 Stunden, vertiefende Trainings von 1 bis 3 Tagen sowie strukturierte 8-Wochen-Programme an. Darüber hinaus biete ich vertrauliche Beratung für Mitarbeitende und Führungskräfte im Rahmen eines Employee Assistance Programme (EAP) an. Das passende Format gestalten wir gern gemeinsam, abgestimmt auf Ihre Organisation.",
+        a: "Ich biete Keynote-Vorträge von 30 bis 60 Minuten, Workshops und Seminare von 2 bis 4 Stunden, vertiefende Trainings von 1 bis 3 Tagen sowie strukturierte 8-Wochen-Programme an. Darüber hinaus biete ich vertrauliche Beratung für Mitarbeitende und Führungskräfte im Rahmen der betrieblichen Gesundheitsförderung an. Das passende Format gestalten wir gern gemeinsam, abgestimmt auf Ihre Organisation.",
       },
       {
         q: "Können Sie eine einzelne Keynote oder einen einzelnen Workshop durchführen?",
@@ -164,7 +164,7 @@ export const faq3De: FaqCategory[] = [
       },
       {
         q: "Bieten Sie Unterstützung für Mitarbeitende oder Führungskräfte (EAP) an?",
-        a: "Ja. Im Rahmen eines Employee Assistance Programme (EAP) biete ich vertrauliche Beratung für Mitarbeitende und Führungskräfte an. Das gibt Ihren Mitarbeitenden einen unterstützenden, geschützten Raum, um Dinge zu besprechen und wieder festeren Boden unter den Füßen zu finden.",
+        a: "Ja. Im Rahmen der betrieblichen Gesundheitsförderung biete ich vertrauliche Beratung für Mitarbeitende und Führungskräfte an. Das gibt Ihren Mitarbeitenden einen unterstützenden, geschützten Raum, um Dinge zu besprechen und wieder festeren Boden unter den Füßen zu finden.",
       },
       {
         q: "Finden die Sitzungen für Organisationen online oder vor Ort statt?",
