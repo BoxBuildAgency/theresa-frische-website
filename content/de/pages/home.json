@@ -1,0 +1,158 @@
+{
+  "metaTitle": "Theresa Frische — Systemische & Integrative Beraterin",
+  "metaDescription": "Online-Beratung auf Deutsch und Englisch für Einzelpersonen und Paare in Zeiten von Veränderung, Umbruch, Überforderung und einem Leben zwischen Ländern und Kulturen. Buchen Sie Ihr kostenloses Kennenlerngespräch (15 Minuten).",
+  "eyebrow": "Psychologische Beratung · Online",
+  "heroTitle": "Ein Raum für das, was",
+  "heroTitleAccent": "sich in Ihnen verändert",
+  "heroLead": "Vertrauliche Begleitung bei Stress, Burnout, Überforderung und Lebensübergängen — für Menschen, die viel geben, viel tragen und wieder mehr Verbindung zu sich selbst finden möchten.",
+  "heroParas": [
+    "Das Leben verändert sich selten geradlinig. Meist verschiebt sich etwas ganz allmählich — bis sich in Ihnen etwas anders anfühlt als zuvor.",
+    "Manchmal läuft im Außen alles weiter, während innen Erschöpfung, innere Unruhe oder Überforderung wachsen — oder das leise Gefühl, sich selbst fremd geworden zu sein.",
+    "Viele Menschen suchen Unterstützung nicht, weil etwas zerbrochen ist, sondern weil sich etwas verschoben hat — und weil das, was früher getragen hat, nicht mehr recht trägt."
+  ],
+  "heroEmphasis": "In dieser Arbeit geht es nicht darum, etwas zu reparieren, das nicht mehr funktioniert. Es geht darum, einen vertraulichen Raum zu schaffen, in dem Sie sich selbst besser verstehen lernen, Ihre Ressourcen stärken und ein Leben gestalten, das zu Ihren Bedürfnissen und Werten passt.",
+  "heroPrimary": {
+    "label": "Kennenlerngespräch buchen",
+    "href": "/de/contact"
+  },
+  "heroSecondary": {
+    "label": "Angebote entdecken",
+    "href": "/de/angebot"
+  },
+  "reachLine": "Online-Beratung auf Deutsch und Englisch — für Klient:innen in der Schweiz, in Deutschland und international.",
+  "trustPillars": [
+    {
+      "title": "Diskret",
+      "body": "Ein geschützter, wertfreier Rahmen — für das, was sonst nirgends Raum findet."
+    },
+    {
+      "title": "Fundiert",
+      "body": "Wissenschaftlich fundierte Methoden, sorgfältig auf Sie abgestimmt."
+    },
+    {
+      "title": "Flexibel",
+      "body": "Eine Begleitung, die sich Ihrem Leben anpasst — nicht umgekehrt."
+    }
+  ],
+  "testimonial": {
+    "text": "Theresa schafft einen Raum, der sich sicher, geerdet und zutiefst unterstützend anfühlt. Durch ihre Begleitung bin ich widerstandsfähiger geworden, präsenter — und wieder mehr bei mir selbst.",
+    "attribution": "Ariana"
+  },
+  "testimonials": [
+    {
+      "text": "Theresa schafft einen Raum, der sich sicher, geerdet und zutiefst unterstützend anfühlt. Durch ihre Begleitung bin ich widerstandsfähiger geworden, präsenter — und wieder mehr bei mir selbst.",
+      "attribution": "Ariana"
+    },
+    {
+      "text": "Am meisten hat mich berührt, wie authentisch Theresa als Mensch präsent ist. Ihr körperorientierter Ansatz hat mir geholfen, meine Gefühle wieder zu spüren und zu verstehen.",
+      "attribution": "Nicolas"
+    }
+  ],
+  "audience": {
+    "eyebrow": "Schwerpunkte",
+    "heading": "Für wen dieser Raum gedacht ist",
+    "intro": "Für Menschen in bedeutsamen Übergängen — wenn Altes nicht mehr trägt und Neues noch nicht greifbar ist.",
+    "items": [
+      {
+        "title": "Lebensübergänge",
+        "body": "Umzug, Trennung, beruflicher Wandel, Verlust, Elternschaft — Veränderungen, die viel innere Anpassung verlangen."
+      },
+      {
+        "title": "Identität & Orientierung",
+        "body": "Phasen der Unsicherheit, Neuorientierung und Fragen nach Sinn und Richtung im Leben."
+      },
+      {
+        "title": "Überforderung & Burnout",
+        "body": "Frühe Anzeichen von Burnout erkennen, anhaltenden Stress regulieren und zurück zu Verbindung und Balance finden — auch dann, wenn die eigenen Kräfte aufgebraucht scheinen."
+      },
+      {
+        "title": "Emotions- & Nervensystemregulation",
+        "body": "Umgang mit Sorgen, innerer Unruhe und körperlichen Stressreaktionen — und mit emotionalen Erfahrungen, die zu schwer sind, um sie allein zu tragen."
+      },
+      {
+        "title": "Beziehungsthemen & Paarberatung",
+        "body": "Festgefahrene Muster durchbrechen, die Kommunikation verbessern und Konflikte konstruktiv lösen — und den Weg zurück zu Verständnis und Nähe finden."
+      },
+      {
+        "title": "Expat- & internationales Leben",
+        "body": "Was es bedeutet, zwischen Ländern, Kulturen und sich wandelnden sozialen Welten zu leben. Beratung für Expats und internationale Paare auf Deutsch & Englisch — online in der Schweiz, in Deutschland und international."
+      }
+    ]
+  },
+  "practical": {
+    "eyebrow": "Praktische Informationen",
+    "heading": "Die Zusammenarbeit",
+    "items": [
+      {
+        "label": "Format",
+        "value": "Online, weltweit"
+      },
+      {
+        "label": "Sprachen",
+        "value": "Deutsch & Englisch"
+      },
+      {
+        "label": "Einzelsitzungen",
+        "value": "60 Minuten"
+      },
+      {
+        "label": "Paarsitzungen",
+        "value": "60–120 Minuten"
+      },
+      {
+        "label": "Verfügbarkeit",
+        "value": "Nach Vereinbarung"
+      }
+    ],
+    "closing": "Bereit für den ersten Schritt? Buchen Sie Ihr kostenloses Kennenlerngespräch (15 Minuten) — ein entspannter, unverbindlicher Einstieg."
+  },
+  "steps": {
+    "eyebrow": "Mein Ansatz",
+    "heading": "Systemisch. Körperorientiert. Integrativ.",
+    "intro": "Ich verbinde wissenschaftlich fundierte Perspektiven — Systemische Beratung, Somatic Experiencing®, Anteilearbeit sowie achtsamkeitsbasierte Ansätze — mit einer integrativen Haltung und tiefem Respekt für die individuelle Geschichte und die inneren Ressourcen jedes Menschen.",
+    "items": [
+      {
+        "title": "01 Muster verstehen",
+        "body": "Wiederkehrende Verhaltens- und Beziehungsmuster verstehen und Raum für Neues schaffen."
+      },
+      {
+        "title": "02 Nervensystem regulieren",
+        "body": "Stress im Körper sanft lösen, um wieder ruhiger und präsenter sein zu können."
+      },
+      {
+        "title": "03 Innere Konflikte lösen",
+        "body": "Widersprüchliche Bedürfnisse und innere Anteile in Einklang bringen."
+      },
+      {
+        "title": "04 Leben und Werte in Einklang bringen",
+        "body": "Handeln und Entscheidungen wieder an dem ausrichten, was Ihnen wirklich wichtig ist."
+      }
+    ],
+    "closing": "Psychologische Beratung ist ein gemeinsamer Prozess. Sie bleiben Expert:in für Ihr eigenes Leben; ich begleite Sie mit fachlicher Expertise, Empathie und neuen Perspektiven.",
+    "ctaLabel": "Mehr über meine Philosophie"
+  },
+  "privatePay": {
+    "eyebrow": "Selbstzahler-Praxis",
+    "heading": "Ihre Vorteile als Selbstzahler:in",
+    "items": [
+      {
+        "title": "Volle Diskretion & Privatsphäre",
+        "body": "Keine Diagnosen in Krankenkassenakten. Keine Meldung an eine Versicherung — was besprochen wird, bleibt vertraulich."
+      },
+      {
+        "title": "Schnelle Hilfe",
+        "body": "Wir beginnen, sobald Sie bereit sind — ohne ärztliche Überweisung, ohne Wartezeit über eine Kasse."
+      },
+      {
+        "title": "Maximale Flexibilität",
+        "body": "Ortsunabhängig online, auf Deutsch und Englisch — für ein Leben, das sich über mehr als ein Land erstreckt."
+      }
+    ]
+  },
+  "aboutBlock": {
+    "eyebrow": "Über mich",
+    "heading": "Ich bin Theresa Frische",
+    "body": "Mit einem Master of Science in Klinischer Psychologie und Weiterbildungen in systemischer Beratung, körperorientierten Verfahren und Achtsamkeit begleite ich Einzelpersonen und Paare durch emotionale Belastungsphasen und bedeutsame Lebensübergänge.",
+    "ctaLabel": "Mehr über mich"
+  }
+}

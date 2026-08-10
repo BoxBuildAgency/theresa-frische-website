@@ -1,0 +1,46 @@
+{
+  "title": "Practical & Logistics",
+  "items": [
+    {
+      "q": "Are sessions online or in person?",
+      "a": "All sessions take place online via video, which makes it easy to meet wherever you are. This means we can work together comfortably from your own space, and I welcome clients internationally. Sessions are arranged by appointment. All you need is a private spot and a stable internet connection."
+    },
+    {
+      "q": "How does online counselling work?",
+      "a": "We meet by secure video call at a time we arrange together. Once your session is booked, you will receive the details you need to join from a private, comfortable space of your own. Many people find that online counselling feels just as warm and personal as meeting in the same room. You can read more about [how online counselling works](/blog/how-online-counselling-works), and if you have any questions about the setup, we can go through them in the discovery call."
+    },
+    {
+      "q": "What languages do you offer?",
+      "a": "I offer counselling in both English and German. You are welcome to choose whichever language feels most natural and comfortable for you. If it helps, we can even move between the two."
+    },
+    {
+      "q": "How long is a session?",
+      "a": "Individual sessions last around 60 minutes. Couples sessions are a little longer, usually between 60 and 120 minutes, to give you both enough space. We can talk about what suits you best when we arrange your appointment."
+    },
+    {
+      "q": "Which time zones do you work across?",
+      "a": "I am based in Central European Time and work with clients internationally, so scheduling across time zones is arranged by mutual agreement. We will simply find an appointment time that works well for both of us. Please feel free to mention your time zone when you get in touch."
+    },
+    {
+      "q": "How do I book, reschedule, or cancel?",
+      "a": "Booking, rescheduling, and cancelling are all arranged via the contact form or by email. Just get in touch and we will find a time together, or adjust an existing appointment if your plans change. If you ever need to cancel, as much notice as possible is always appreciated. We agree the practical details together so everything feels clear and comfortable."
+    },
+    {
+      "q": "What's your cancellation policy?",
+      "a": "If you need to cancel or reschedule, please let me know via the contact form or email, and as much notice as possible is greatly appreciated. I understand that life is unpredictable, so we agree the details together rather than applying rigid rules. The aim is to keep things fair and workable for both of us. You are always welcome to ask about this in the discovery call."
+    },
+    {
+      "q": "How do sessions work financially?",
+      "a": "Sessions are self-pay. The fee is agreed with you individually, and we talk it through in the free 15-minute discovery call — or by message via the contact page, whichever you prefer. Sessions are not billed to, and are not reimbursed by, statutory or private health insurance. That keeps the work flexible and discreet, with no insurance paperwork and no reporting requirements."
+    },
+    {
+      "q": "Are sessions covered by health insurance / Krankenkasse?",
+      "a": "Sessions are self-pay and are not reimbursed by statutory or private health insurance such as the Krankenkasse. Because counselling is a non-clinical service, there is no diagnosis, referral, or insurance paperwork involved, which keeps things simple and private. You are welcome to ask about fees in the free discovery call or via the contact page. I am always happy to explain how everything works."
+    },
+    {
+      "q": "Do you offer flexible or evening times?",
+      "a": "I do my best to be flexible and to find appointment times that fit around your life, including across different time zones. All sessions are online and arranged by appointment, so we have room to find something that works for you. The best thing is to let me know what suits you when you get in touch. We will do our best to find a good time together."
+    }
+  ],
+  "order": 3
+}

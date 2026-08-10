@@ -1,0 +1,32 @@
+{
+  "metaTitle": "Contact — Book a Discovery Call | Theresa Frische",
+  "metaDescription": "Get in touch to book a free 15-minute discovery call, or to ask about counselling, the Weekly Wellbeing Community, or work with your organisation.",
+  "eyebrow": "Contact",
+  "heading": "Book a free discovery call",
+  "lead": "Share a little about what brings you here, and I'll be in touch. There's no need to go into detail — a few lines are plenty. I usually respond within 2–3 business days.",
+  "form": {
+    "nameLabel": "Name",
+    "namePlaceholder": "Your name",
+    "emailLabel": "Email",
+    "emailPlaceholder": "you@example.com",
+    "messageLabel": "Message",
+    "messagePlaceholder": "A few words about what brings you here, and what you'd like to ask.",
+    "consentLabel": "I have read the {privacy} and consent to my details being used to respond to my enquiry.",
+    "submit": "Send message",
+    "submitting": "Sending…",
+    "successTitle": "Thank you — your message is on its way.",
+    "successBody": "I've received your message and will be in touch within 2–3 business days. If your matter is urgent, please use one of the crisis resources listed here.",
+    "errorTitle": "Something went wrong.",
+    "errorGeneric": "Your message couldn't be sent just now. Please try again, or email me directly at theresafrische@gmail.com.",
+    "validation": {
+      "name": "Please enter your name.",
+      "email": "Please enter a valid email address.",
+      "message": "Please enter a short message.",
+      "consent": "Please confirm you have read the privacy notice."
+    }
+  },
+  "directHeading": "Prefer to write directly?",
+  "directBody": "You're also welcome to reach me by email or phone.",
+  "emailLabel": "Email",
+  "phoneLabel": "Phone"
+}

@@ -1,0 +1,38 @@
+name: Site checks
+
+# Runs on every push and pull request, including the commits Keystatic makes when
+# Theresa saves an edit in the admin. If the compliance check fails, the build
+# fails and Netlify does not publish the change.
+on:
+  push:
+  pull_request:
+
+jobs:
+  verify:
+    name: Compliance, build and lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      # This one comes first, and on purpose: if the wording is wrong we want to
+      # say so in plain language before anything else has a chance to fail.
+      - name: Check the wording (counselling-only compliance)
+        run: npm run check:compliance
+
+      # Guards against a Keystatic schema that would silently drop content on save.
+      - name: Check the admin cannot drop content
+        run: npm run check:schema
+
+      - name: Build the site
+        run: npm run build
+
+      - name: Lint
+        run: npm run lint

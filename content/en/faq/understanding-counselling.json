@@ -1,0 +1,38 @@
+{
+  "title": "Understanding Counselling",
+  "items": [
+    {
+      "q": "What is counselling?",
+      "a": "Counselling is a supportive, confidential conversation that gives you space to reflect, gain clarity, and explore what matters to you. Working systemically and integratively, I look at you within the wider context of your relationships and life, drawing on approaches that fit your situation. It is a collaborative, non-clinical process focused on your own resources and goals. My role is to accompany you with warmth and without judgement."
+    },
+    {
+      "q": "What's the difference between counselling, psychotherapy, and coaching?",
+      "a": "These are distinct services, and it helps to understand how they differ. Psychotherapy and clinical treatment for mental health conditions are provided by other, appropriately qualified professionals, and coaching tends to focus on specific goals or performance. What I offer is counselling: a non-clinical, reflective space to explore your experience, find clarity, and draw on your own strengths. You can read a fuller comparison of [counselling, therapy, and coaching](/blog/counselling-vs-therapy-vs-coaching) if it helps. If you are looking for psychotherapy or medical care, I am happy to point you toward the right kind of support."
+    },
+    {
+      "q": "Is counselling the same as therapy?",
+      "a": "No. Counselling is a non-clinical, supportive process, and it is not psychotherapy or medical treatment. It does not involve diagnosis and is not aimed at treating mental health conditions, which are the domain of other qualified professionals. My work offers a warm, reflective space to explore your experience and move toward greater clarity. If you need clinical care, I will gladly help you find the right support."
+    },
+    {
+      "q": "What kinds of things can counselling help with?",
+      "a": "Many people come to explore stress, life transitions, relationships, self-worth, or a sense of feeling stuck or out of balance. Counselling offers space to reflect, understand yourself more fully, and reconnect with your own resources. It is a place for clarity and growth rather than a clinical service. If you are unsure whether your situation fits, the discovery call is a good place to ask."
+    },
+    {
+      "q": "Will you diagnose me?",
+      "a": "No. Counselling is a non-clinical service, so I do not provide any diagnosis or medical assessment. My focus is on listening, understanding, and supporting you as a whole person, not on labels or conditions. Diagnosis belongs to other qualified health professionals. If that is something you need, I am happy to help point you in the right direction."
+    },
+    {
+      "q": "Is what we talk about confidential?",
+      "a": "Yes. Everything we discuss is treated as confidential, and creating a safe, private space is central to how I work. This confidentiality is here so that you can speak openly and at your own pace. If you ever have questions about how confidentiality works, you are very welcome to ask."
+    },
+    {
+      "q": "Is counselling a replacement for medical or psychological care?",
+      "a": "No. Counselling is a non-clinical, supportive service and is not a substitute for medical or psychological care, diagnosis, or treatment. If you are experiencing a mental or physical health condition, please seek support from a qualified doctor or other appropriate professional. Counselling can sit alongside such care, but it does not replace it. If you are ever in crisis or need urgent help, please contact emergency services or a crisis line."
+    },
+    {
+      "q": "Can counselling help even if I'm not in crisis?",
+      "a": "Yes, absolutely. You do not need to be in crisis or at a low point to benefit from counselling. Many people value a reflective space to grow, gain clarity, strengthen relationships, or simply understand themselves better. Wherever you are in life, you are welcome."
+    }
+  ],
+  "order": 2
+}

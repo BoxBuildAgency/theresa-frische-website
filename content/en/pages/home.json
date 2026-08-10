@@ -1,0 +1,159 @@
+{
+  "metaTitle": "Theresa Frische — Systemic & Integrative Counsellor",
+  "metaDescription": "Online counselling in English and German for individuals and couples navigating change, transition, burnout, and life across borders. Book a free 15-minute discovery call.",
+  "eyebrow": "Psychological Counselling · Online",
+  "heroTitle": "A space for what is",
+  "heroTitleAccent": "shifting within you",
+  "heroLead": "Confidential support for stress, burnout, overwhelm and life transitions — for individuals and couples who carry a great deal, give a great deal, and want to feel connected to themselves again.",
+  "heroParas": [
+    "Life rarely changes in clear or linear ways. More often, it shifts gradually — until something begins to feel different within yourself.",
+    "Sometimes life keeps moving on the outside while something no longer feels right on the inside. Outwardly, you may still be functioning, while inwardly there is exhaustion, inner restlessness, overwhelm, or the quiet sense of no longer feeling like yourself.",
+    "Many people seek support not because something has broken, but because something has shifted — and familiar ways of coping no longer feel fully sufficient.",
+    "This practice offers you a confidential space to understand yourself more clearly, strengthen your inner resources, and build a life that fits your needs and values."
+  ],
+  "heroEmphasis": "This work is not about fixing what is broken. It is about creating a reflective space to better understand yourself and move toward a life aligned with your values.",
+  "heroPrimary": {
+    "label": "Book a discovery call",
+    "href": "/contact"
+  },
+  "heroSecondary": {
+    "label": "Explore services",
+    "href": "/work-with-me"
+  },
+  "testimonial": {
+    "text": "Theresa creates a space that feels safe, grounded, and deeply supportive. Through her guidance I've become more resilient, more present — and more myself again.",
+    "attribution": "Ariana"
+  },
+  "audience": {
+    "eyebrow": "Areas of focus",
+    "heading": "Who this space is for",
+    "intro": "For people at meaningful crossroads — when the old no longer holds, and the new isn't tangible yet.",
+    "items": [
+      {
+        "title": "Life Transitions",
+        "body": "Relocation, separation, career change, loss, becoming a parent — changes that ask for deep inner adjustment and emotional adaptation."
+      },
+      {
+        "title": "Identity & Orientation",
+        "body": "Periods of uncertainty, reorientation, and questions of meaning, purpose, and life direction."
+      },
+      {
+        "title": "Overwhelm & Burnout",
+        "body": "Recognising the early signs of burnout, regulating sustained stress, and finding your way back to connection and balance."
+      },
+      {
+        "title": "Emotional & Nervous System Regulation",
+        "body": "Working with worry, inner restlessness, and physical stress responses — and with emotional experiences too heavy to carry alone."
+      },
+      {
+        "title": "Relationship Challenges & Couples",
+        "body": "Moving through entrenched patterns, easing emotional distance, improving communication, and resolving conflict constructively."
+      },
+      {
+        "title": "Expat & International Life",
+        "body": "What it means to live between countries, cultures, and shifting social worlds. Counselling for expats and international couples in English and German — working online with people in Switzerland, Germany and beyond."
+      }
+    ]
+  },
+  "practical": {
+    "eyebrow": "Practical information",
+    "heading": "Working together",
+    "items": [
+      {
+        "label": "Format",
+        "value": "Online, worldwide"
+      },
+      {
+        "label": "Languages",
+        "value": "English & German"
+      },
+      {
+        "label": "Individual sessions",
+        "value": "60 minutes"
+      },
+      {
+        "label": "Couples sessions",
+        "value": "60–120 minutes"
+      },
+      {
+        "label": "Availability",
+        "value": "By appointment"
+      }
+    ],
+    "closing": "Ready to take the first step? Book a free 15-minute discovery call — a relaxed, no-obligation way to begin."
+  },
+  "reachLine": "Online counselling in German and English, for clients in Switzerland, Germany and internationally.",
+  "trustPillars": [
+    {
+      "title": "Discreet",
+      "body": "A protected, judgment-free space — for what usually finds no room elsewhere."
+    },
+    {
+      "title": "Evidence-based",
+      "body": "Scientifically grounded methods, carefully tailored to you."
+    },
+    {
+      "title": "Flexible",
+      "body": "Support that adapts to your life — not the other way around."
+    }
+  ],
+  "steps": {
+    "eyebrow": "My approach",
+    "heading": "Systemic. Somatic. Integrative.",
+    "intro": "I combine scientifically grounded perspectives — systemic counselling, Somatic Experiencing®, parts work, and mindfulness-based approaches — with an integrative stance and deep respect for each person's individual story and inner resources.",
+    "items": [
+      {
+        "title": "01 Understand Patterns",
+        "body": "Understand recurring behavioural and relational patterns, and create room for something new."
+      },
+      {
+        "title": "02 Regulate the Nervous System",
+        "body": "Gently release stress held in the body, to become calmer and more present again."
+      },
+      {
+        "title": "03 Resolve Inner Conflict",
+        "body": "Bring conflicting needs and inner parts into alignment."
+      },
+      {
+        "title": "04 Align Life & Values",
+        "body": "Realign your actions and decisions with what truly matters to you."
+      }
+    ],
+    "closing": "Psychological counselling is a shared process. You remain the expert on your own life; I accompany you with professional expertise, empathy, and fresh perspectives.",
+    "ctaLabel": "Learn more about my philosophy"
+  },
+  "privatePay": {
+    "eyebrow": "Private-pay practice",
+    "heading": "Your advantages as a private-pay client",
+    "items": [
+      {
+        "title": "Complete Discretion & Privacy",
+        "body": "No diagnoses in health-insurance records. No reporting to any insurer — what's discussed stays confidential."
+      },
+      {
+        "title": "Fast Access",
+        "body": "We begin as soon as you're ready — no doctor's referral, no waiting time through an insurer."
+      },
+      {
+        "title": "Maximum Flexibility",
+        "body": "Location-independent online, in English and German — for a life that spans more than one country."
+      }
+    ]
+  },
+  "aboutBlock": {
+    "eyebrow": "About me",
+    "heading": "I'm Theresa Frische",
+    "body": "With a Master of Science in Clinical Psychology and further training in systemic counselling, somatic approaches and mindfulness, I support individuals and couples through emotionally challenging times and meaningful life transitions.",
+    "ctaLabel": "More about me"
+  },
+  "testimonials": [
+    {
+      "text": "Theresa creates a space that feels safe, grounded, and deeply supportive. Through her guidance I've become more resilient, more present — and more myself again.",
+      "attribution": "Ariana"
+    },
+    {
+      "text": "What moved me most was how authentically present Theresa is as a person. Her body-oriented approach helped me feel and understand my emotions again.",
+      "attribution": "Nicolas"
+    }
+  ]
+}

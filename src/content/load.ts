@@ -1,0 +1,113 @@
+import fs from "node:fs";
+import path from "node:path";
+import type {
+  BlogPost,
+  FaqCategory,
+  Locale,
+  ServicePageContent,
+  SiteContent,
+} from "./types";
+
+/**
+ * Reads the Keystatic-managed JSON in `content/<locale>/` and rebuilds the exact
+ * `SiteContent` shape the components already expect.
+ *
+ * Why files rather than the old hand-written TypeScript modules: Keystatic edits
+ * data files and commits them, so the content has to live in files it can write.
+ * Nothing about the rendered output changes — this is a storage swap.
+ *
+ * Why synchronous `fs` rather than Keystatic's async reader: `getContent()` is
+ * called from `sitemap.ts`, from `generateMetadata`, and from server components
+ * at build time. Every page is statically generated, so reading from disk during
+ * the build is safe and keeps the whole content API synchronous. Client
+ * components only ever import `./types` (type-only, erased at compile time), so
+ * `fs` never reaches the browser bundle.
+ */
+
+const ROOT = path.join(process.cwd(), "content");
+
+function readJson<T>(...segments: string[]): T {
+  return JSON.parse(fs.readFileSync(path.join(ROOT, ...segments), "utf8")) as T;
+}
+
+/**
+ * Read every .json file in a directory, injecting the filename under `keyAs`.
+ * Keystatic derives an entry's filename from its slug field, so the slug/id is
+ * the filename rather than a duplicated value inside the file.
+ */
+function readDir<T>(keyAs: string, ...segments: string[]): T[] {
+  const dir = path.join(ROOT, ...segments);
+  if (!fs.existsSync(dir)) return [];
+  return fs
+    .readdirSync(dir)
+    .filter((f) => f.endsWith(".json"))
+    .map((f) => ({
+      [keyAs]: f.replace(/\.json$/, ""),
+      ...(JSON.parse(fs.readFileSync(path.join(dir, f), "utf8")) as object),
+    })) as T[];
+}
+
+type PageBag = Record<string, unknown>;
+
+export function loadContent(locale: Locale): SiteContent {
+  const site = readJson<PageBag>(locale, "site.json");
+  const page = <T>(name: string) => readJson<T>(locale, "pages", `${name}.json`);
+
+  // Blog posts: display order is applied in content/index.ts (newest first), so
+  // a new post added in the admin appears without any code change.
+  const posts = readDir<BlogPost>("slug", locale, "posts");
+
+  // FAQ categories carry an editable `order` field — it drives the jump-nav
+  // sequence, so it must not depend on filename or on read order.
+  const faqCategories = readDir<FaqCategory & { order?: number }>("id", locale, "faq")
+    .slice()
+    .sort((a, b) => (a.order ?? 999) - (b.order ?? 999))
+    .map((cat) => {
+      // `order` drives the jump-nav sequence in the admin; it is not part of the
+      // rendered shape, so it is dropped once the sort has been applied.
+      const rest = { ...cat } as FaqCategory & { order?: number };
+      delete rest.order;
+      return rest as FaqCategory;
+    });
+
+  // Service child pages are keyed by their route key (the filename).
+  const serviceChildren: Record<string, ServicePageContent> = {};
+  const servicesDir = path.join(ROOT, locale, "services");
+  if (fs.existsSync(servicesDir)) {
+    for (const file of fs.readdirSync(servicesDir).filter((f) => f.endsWith(".json"))) {
+      serviceChildren[file.replace(/\.json$/, "")] = JSON.parse(
+        fs.readFileSync(path.join(servicesDir, file), "utf8"),
+      ) as ServicePageContent;
+    }
+  }
+
+  return {
+    ...(site as unknown as Pick<
+      SiteContent,
+      | "locale"
+      | "htmlLang"
+      | "brand"
+      | "nav"
+      | "header"
+      | "footer"
+      | "cta"
+      | "disclaimer"
+      | "blogDisclaimer"
+      | "crisis"
+    >),
+    home: page<SiteContent["home"]>("home"),
+    about: page<SiteContent["about"]>("about"),
+    workTogether: page<SiteContent["workTogether"]>("workTogether"),
+    organisations: page<SiteContent["organisations"]>("organisations"),
+    weeklyWellbeing: page<SiteContent["weeklyWellbeing"]>("weeklyWellbeing"),
+    serviceChildren,
+    blog: { ...page<Omit<SiteContent["blog"], "posts">>("blog"), posts },
+    faq: { ...page<Omit<SiteContent["faq"], "categories">>("faq"), categories: faqCategories },
+    contact: page<SiteContent["contact"]>("contact"),
+    aiInfo: page<SiteContent["aiInfo"]>("aiInfo"),
+    impressum: page<SiteContent["impressum"]>("impressum"),
+    privacy: page<SiteContent["privacy"]>("privacy"),
+    terms: page<SiteContent["terms"]>("terms"),
+    notFound: page<SiteContent["notFound"]>("notFound"),
+  };
+}

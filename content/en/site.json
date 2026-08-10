@@ -1,0 +1,202 @@
+{
+  "locale": "en",
+  "htmlLang": "en",
+  "brand": {
+    "name": "Theresa Frische",
+    "tagline": "Systemic Counselling",
+    "title": "Systemic & Integrative Counsellor"
+  },
+  "nav": [
+    {
+      "label": "About",
+      "href": "/about"
+    },
+    {
+      "label": "Work With Me",
+      "href": "/work-with-me",
+      "children": [
+        {
+          "label": "Psychological Counselling",
+          "href": "/work-with-me/psychological-counselling"
+        },
+        {
+          "label": "Couples Counselling",
+          "href": "/work-with-me/couples-counselling"
+        },
+        {
+          "label": "Burnout Prevention",
+          "href": "/work-with-me/burnout-prevention"
+        },
+        {
+          "label": "Somatic Experiencing®",
+          "href": "/work-with-me/somatic-experiencing"
+        }
+      ]
+    },
+    {
+      "label": "For Organisations",
+      "href": "/organisations",
+      "children": [
+        {
+          "label": "Talks, Workshops & Courses",
+          "href": "/organisations/talks-workshops-courses"
+        },
+        {
+          "label": "Leadership Coaching",
+          "href": "/organisations/leadership-coaching"
+        },
+        {
+          "label": "Employee Counselling",
+          "href": "/organisations/employee-counselling"
+        }
+      ]
+    },
+    {
+      "label": "Weekly Wellbeing",
+      "href": "/weekly-wellbeing"
+    },
+    {
+      "label": "Blog",
+      "href": "/blog"
+    },
+    {
+      "label": "FAQ",
+      "href": "/faq"
+    }
+  ],
+  "header": {
+    "bookCta": {
+      "label": "Book a discovery call",
+      "href": "/contact"
+    },
+    "menuOpen": "Open menu",
+    "menuClose": "Close menu",
+    "langToggleLabel": "Switch language",
+    "otherLangCode": "DE",
+    "otherLangName": "Deutsch"
+  },
+  "footer": {
+    "line": "Theresa Frische · Systemic & Integrative Counsellor · Online Practice — International",
+    "nav": [
+      {
+        "label": "Home",
+        "href": "/"
+      },
+      {
+        "label": "About",
+        "href": "/about"
+      },
+      {
+        "label": "Work With Me",
+        "href": "/work-with-me"
+      },
+      {
+        "label": "Psychological Counselling",
+        "href": "/work-with-me/psychological-counselling"
+      },
+      {
+        "label": "Couples Counselling",
+        "href": "/work-with-me/couples-counselling"
+      },
+      {
+        "label": "Burnout Prevention",
+        "href": "/work-with-me/burnout-prevention"
+      },
+      {
+        "label": "Somatic Experiencing®",
+        "href": "/work-with-me/somatic-experiencing"
+      },
+      {
+        "label": "Organisations",
+        "href": "/organisations"
+      },
+      {
+        "label": "Talks, Workshops & Courses",
+        "href": "/organisations/talks-workshops-courses"
+      },
+      {
+        "label": "Leadership Coaching",
+        "href": "/organisations/leadership-coaching"
+      },
+      {
+        "label": "Employee Counselling",
+        "href": "/organisations/employee-counselling"
+      },
+      {
+        "label": "Weekly Wellbeing",
+        "href": "/weekly-wellbeing"
+      },
+      {
+        "label": "Blog",
+        "href": "/blog"
+      },
+      {
+        "label": "FAQ",
+        "href": "/faq"
+      },
+      {
+        "label": "AI Info",
+        "href": "/ai-info"
+      }
+    ],
+    "legalNav": [
+      {
+        "label": "Contact",
+        "href": "/contact"
+      },
+      {
+        "label": "AI Info",
+        "href": "/ai-info"
+      },
+      {
+        "label": "Impressum",
+        "href": "/impressum"
+      },
+      {
+        "label": "Privacy",
+        "href": "/privacy"
+      },
+      {
+        "label": "Terms",
+        "href": "/terms"
+      }
+    ],
+    "rights": "All rights reserved.",
+    "builtNote": "Online counselling in English & German, worldwide."
+  },
+  "cta": {
+    "primary": {
+      "label": "Book a free discovery call",
+      "href": "/contact"
+    },
+    "secondaryLabel": "Explore services"
+  },
+  "disclaimer": {
+    "heading": "An important note",
+    "body": "This is a counselling practice. Counselling is not psychotherapy, medical treatment, or a substitute for either. If you are in crisis or need urgent support, please contact your local emergency services or a crisis line."
+  },
+  "blogDisclaimer": "This article is for general information and reflection only. It is not psychotherapy, medical advice, or a substitute for either. If you are in crisis or need urgent support, please contact your local emergency services or a crisis line.",
+  "crisis": {
+    "heading": "If you need urgent support",
+    "intro": "Counselling is not a crisis service. If you are in crisis or need immediate help, please reach out to one of the resources below.",
+    "items": [
+      {
+        "label": "Emergency (EU)",
+        "value": "112"
+      },
+      {
+        "label": "Telefonseelsorge (DE) — free, 24h",
+        "value": "0800 111 0 111 · 0800 111 0 222"
+      },
+      {
+        "label": "Die Dargebotene Hand (CH)",
+        "value": "143"
+      },
+      {
+        "label": "International directory",
+        "value": "findahelpline.com",
+        "href": "https://findahelpline.com"
+      }
+    ]
+  }
+}

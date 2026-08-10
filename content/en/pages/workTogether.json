@@ -1,0 +1,102 @@
+{
+  "metaTitle": "Work With Me — Theresa Frische",
+  "metaDescription": "Online counselling for individuals and couples in English and German. Start with a free 15-minute discovery call.",
+  "eyebrow": "Work With Me",
+  "heading": "Getting started",
+  "intro": "Sessions are offered online in English and German, to individuals and couples worldwide. The easiest first step is a free, no-obligation discovery call.",
+  "discovery": {
+    "heading": "Free 15-minute discovery call",
+    "intro": "A short, relaxed conversation to share what brings you here and see whether working together feels right — no obligation to continue.",
+    "steps": [
+      {
+        "title": "Book a free discovery call",
+        "body": "Choose a time that works for you. We'll talk briefly about what's bringing you here."
+      },
+      {
+        "title": "See if it's a good fit",
+        "body": "There's no pressure — this call is simply a chance to get a feel for working together."
+      },
+      {
+        "title": "Begin sessions",
+        "body": "If it feels right, we'll schedule regular sessions at a pace that suits you."
+      }
+    ]
+  },
+  "quote": {
+    "text": "We cannot become what we want by remaining what we are.",
+    "attribution": "Max DePree"
+  },
+  "individual": {
+    "heading": "Individual sessions",
+    "subheading": "One-to-one counselling",
+    "body": "One-to-one counselling offers a confidential, steady space to slow down and make sense of what is happening in your life. Sessions draw from systemic, somatic, parts-based, and mindfulness-informed approaches, shaped by what is present for you.",
+    "meta": [
+      {
+        "label": "Duration",
+        "value": "60 minutes"
+      },
+      {
+        "label": "Format",
+        "value": "Online (video)"
+      },
+      {
+        "label": "Languages",
+        "value": "English & German"
+      }
+    ]
+  },
+  "couples": {
+    "heading": "Couples sessions",
+    "subheading": "Counselling for couples",
+    "body": "Couples counselling supports partners in understanding patterns of disconnection, improving communication, and finding their way back toward emotional closeness. Sessions offer a structured space to be heard and to hear one another differently.",
+    "meta": [
+      {
+        "label": "Duration",
+        "value": "60–120 minutes"
+      },
+      {
+        "label": "Format",
+        "value": "Online (video)"
+      },
+      {
+        "label": "Languages",
+        "value": "English & German"
+      }
+    ]
+  },
+  "closing": {
+    "heading": "Ready to take the first step?",
+    "body": "Book your free 15-minute discovery call — a relaxed, no-obligation way to begin.",
+    "note": "Sessions are self-pay — the fee is agreed individually in the free discovery call, and is not billed to or reimbursed by health insurance · Responding within 2–3 business days."
+  },
+  "cards": [
+    {
+      "title": "Psychological Counselling",
+      "body": "A confidential space for reflection and clarity — for individuals.",
+      "href": "/work-with-me/psychological-counselling"
+    },
+    {
+      "title": "Couples Counselling",
+      "body": "A protected space for honest encounter and fresh momentum for the relationship.",
+      "href": "/work-with-me/couples-counselling"
+    },
+    {
+      "title": "Burnout Prevention",
+      "body": "Recognising stress patterns before exhaustion turns into collapse.",
+      "href": "/work-with-me/burnout-prevention"
+    },
+    {
+      "title": "Somatic Experiencing®",
+      "body": "Body-oriented processing of stress and difficult experiences.",
+      "href": "/work-with-me/somatic-experiencing"
+    }
+  ],
+  "switzerland": {
+    "heading": "Working across Switzerland, Germany and beyond",
+    "paras": [
+      "All sessions take place online, by video, in English and German. That means we can work together wherever you are based — whether that is Zurich or Zug, elsewhere in Switzerland, anywhere in Germany, or further afield.",
+      "Online work is often a good fit for internationals and expats who have moved for work, for partners living between two countries, and for anyone whose week is too full or too unpredictable for a fixed commute to an appointment. You choose a quiet room and a time that genuinely works for you.",
+      "Sessions are usually scheduled within Central European hours, and other time zones can be arranged. If you are unsure whether the practicalities can work for your situation, the free 15-minute discovery call is the easiest place to ask."
+    ]
+  }
+}

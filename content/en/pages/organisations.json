@@ -1,0 +1,124 @@
+{
+  "metaTitle": "Organisations — Workplace Wellbeing | Theresa Frische",
+  "metaDescription": "Workplace wellbeing, keynotes, workshops, and employee counselling support for organisations in Germany and Switzerland. Over eight years of experience.",
+  "eyebrow": "For Organisations",
+  "heading": "Corporate mental health & workplace wellbeing",
+  "lead": "Mental health at work is not a luxury — it is the foundation for high-performing, engaged, and resilient teams.",
+  "intro": "With over eight years of experience, I support organisations in Germany and Switzerland in building a culture that takes psychological wellbeing seriously. Workplace stress, communication difficulties, and emotional exhaustion have a real impact on individuals and on organisations as a whole — I work with companies and institutions to build psychological safety, resilience, and the conditions for people to do their best work, sustainably.",
+  "facts": [
+    {
+      "label": "Experience",
+      "value": "8+ years in workplace health promotion"
+    },
+    {
+      "label": "Languages",
+      "value": "English & German"
+    },
+    {
+      "label": "Delivery",
+      "value": "Online or on-site, Germany & Switzerland"
+    }
+  ],
+  "formats": {
+    "heading": "Formats",
+    "intro": "Tailored to your team and context.",
+    "items": [
+      {
+        "title": "Keynote Talks",
+        "body": "Inspiring impulses on mental health, resilience, and mindfulness — for conferences, large groups, or team events. (30–60 min · online or on-site)"
+      },
+      {
+        "title": "Workshops & Seminars",
+        "body": "Interactive sessions combining evidence-based psychological approaches with practical tools and reflection. (2–4 hours · online or on-site)"
+      },
+      {
+        "title": "In-Depth Trainings",
+        "body": "Multi-day trainings for leaders and teams, designed for sustainable skill development in wellbeing. (1–3 days · online or on-site)"
+      },
+      {
+        "title": "8-Week Programmes",
+        "body": "Structured wellbeing programmes supporting sustainable stress reduction, mindfulness, and emotional regulation. (8 weeks · 15–60 min weekly)"
+      }
+    ]
+  },
+  "individual": {
+    "heading": "Counselling for employees & leaders",
+    "intro": "Confidential, one-to-one support as part of an employee assistance programme — available by arrangement, online.",
+    "items": [
+      {
+        "title": "Employee Counselling",
+        "body": "Confidential counselling support for employees navigating stress, overwhelm, or personal challenges."
+      },
+      {
+        "title": "Leadership Counselling",
+        "body": "Support for leaders navigating pressure, communication challenges, team dynamics, and emotional demands."
+      }
+    ]
+  },
+  "topics": {
+    "heading": "Areas I work with most",
+    "items": [
+      "Stress & Burnout Prevention",
+      "Emotional Regulation",
+      "Mindfulness in the Workplace",
+      "Communication & Team Dynamics",
+      "Positive Psychology",
+      "Resilience & Change Management",
+      "Nervous System Regulation"
+    ]
+  },
+  "approach": {
+    "heading": "How we work",
+    "facts": [
+      {
+        "label": "Experience",
+        "value": "8+ years"
+      },
+      {
+        "label": "Approach",
+        "value": "Systemic & evidence-based"
+      },
+      {
+        "label": "Delivery",
+        "value": "Online or on-site, Germany & Switzerland"
+      },
+      {
+        "label": "Languages",
+        "value": "English & German"
+      }
+    ],
+    "body": "My facilitation style is psychologically informed and relational, calm and engaging — combining theoretical grounding with practical, applicable tools.",
+    "emphasis": "Sustainable performance begins with people who feel genuinely supported — not just managed."
+  },
+  "testimonials": [
+    {
+      "text": "Theresa Frische delights as a seminar leader with her comprehensive expertise and the perfect balance of theory and practice. With sensitivity and clear structure, she creates an atmosphere of trust in which learning and personal growth go hand in hand. A clear recommendation for organisations wanting to support their employees' health and development.",
+      "attribution": "Sophia Vennen, HR, Trusted Shops"
+    },
+    {
+      "text": "Theresa is an outstanding trainer whose calm, clear guidance and engaging approach made the experience both inspiring and easy to apply in daily life.",
+      "attribution": "Workshop Participant, Cornings"
+    }
+  ],
+  "closing": {
+    "heading": "Let's talk about your organisation",
+    "body": "For enquiries about workshops, programmes, or leadership support, please reach out directly. I'm happy to discuss what would be most useful for your context."
+  },
+  "cards": [
+    {
+      "title": "Talks, Workshops & Courses",
+      "body": "Keynotes, workshops, in-depth trainings and 8-week programmes.",
+      "href": "/organisations/talks-workshops-courses"
+    },
+    {
+      "title": "Leadership Coaching",
+      "body": "Individual coaching for leaders on self-leadership and sustainable pressure.",
+      "href": "/organisations/leadership-coaching"
+    },
+    {
+      "title": "Employee Counselling",
+      "body": "Confidential one-to-one support, embedded in your workplace health management.",
+      "href": "/organisations/employee-counselling"
+    }
+  ]
+}

@@ -20,6 +20,16 @@ const nextConfig: NextConfig = {
         has: [{ type: "host", value: ".*\\.netlify\\.app" }],
         headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow" }],
       },
+      // The content admin is never indexed, on any host.
+      {
+        source: "/keystatic/:path*",
+        headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow" }],
+      },
+      { source: "/keystatic", headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow" }] },
+      {
+        source: "/api/keystatic/:path*",
+        headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow" }],
+      },
     ];
   },
 

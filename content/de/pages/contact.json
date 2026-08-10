@@ -1,0 +1,32 @@
+{
+  "metaTitle": "Kontakt — Kennenlerngespräch buchen | Theresa Frische",
+  "metaDescription": "Melden Sie sich, um ein kostenloses Kennenlerngespräch (15 Minuten) zu buchen oder Fragen zur Beratung, zur Weekly Wellbeing Community oder zur Zusammenarbeit mit Ihrer Organisation zu stellen.",
+  "eyebrow": "Kontakt",
+  "heading": "Kostenloses Kennenlerngespräch buchen",
+  "lead": "Schreiben Sie mir kurz, was Sie herführt, und ich melde mich bei Ihnen. Sie müssen nicht ins Detail gehen — ein paar Zeilen genügen. In der Regel antworte ich innerhalb von 2–3 Werktagen.",
+  "form": {
+    "nameLabel": "Name",
+    "namePlaceholder": "Ihr Name",
+    "emailLabel": "E-Mail",
+    "emailPlaceholder": "sie@beispiel.de",
+    "messageLabel": "Nachricht",
+    "messagePlaceholder": "Ein paar Worte dazu, was Sie herführt und was Sie gerne fragen möchten.",
+    "consentLabel": "Ich habe die {privacy} gelesen und willige ein, dass meine Angaben verwendet werden, um meine Anfrage zu beantworten.",
+    "submit": "Nachricht senden",
+    "submitting": "Wird gesendet…",
+    "successTitle": "Vielen Dank — Ihre Nachricht ist unterwegs.",
+    "successBody": "Ich habe Ihre Nachricht erhalten und melde mich innerhalb von 2–3 Werktagen. Wenn Ihr Anliegen dringend ist, wenden Sie sich bitte an eine der hier aufgeführten Krisenanlaufstellen.",
+    "errorTitle": "Da ist etwas schiefgelaufen.",
+    "errorGeneric": "Ihre Nachricht ließ sich gerade nicht senden. Bitte versuchen Sie es erneut oder schreiben Sie mir direkt an theresafrische@gmail.com.",
+    "validation": {
+      "name": "Bitte geben Sie Ihren Namen ein.",
+      "email": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+      "message": "Bitte geben Sie eine kurze Nachricht ein.",
+      "consent": "Bitte bestätigen Sie, dass Sie die Datenschutzerklärung gelesen haben."
+    }
+  },
+  "directHeading": "Lieber direkt schreiben?",
+  "directBody": "Sie erreichen mich auch gerne per E-Mail oder telefonisch.",
+  "emailLabel": "E-Mail",
+  "phoneLabel": "Telefon"
+}
