@@ -18,26 +18,40 @@ import { readFileSync, readdirSync, statSync } from "node:fs";
 import path from "node:path";
 
 const ROOT = process.cwd();
-const cfg = readFileSync(path.join(ROOT, "keystatic.config.ts"), "utf8");
 
-/** Crude but effective: which content paths does the config reference? */
-function schemaFor(kind, key) {
-  // Collections and singletons declare their `path`; pull the field names that
-  // follow within that block.
-  const marker = kind === "collection" ? `content/\${locale}/${key}/*` : key;
-  return marker;
-}
-void schemaFor;
+/**
+ * Read every Keystatic source file, so exposure is detected wherever the
+ * singleton/collection is declared (keystatic.config.ts or keystatic/*.ts).
+ */
+const cfg = [
+  path.join(ROOT, "keystatic.config.ts"),
+  ...readdirSync(path.join(ROOT, "keystatic"))
+    .filter((f) => f.endsWith(".ts"))
+    .map((f) => path.join(ROOT, "keystatic", f)),
+]
+  .map((f) => readFileSync(f, "utf8"))
+  .join("\n");
 
-/** Files the config exposes, derived from the `path:` templates it contains. */
+/** Which content files does the admin expose for editing? */
 const exposed = [];
-if (/path: `content\/\$\{locale\}\/posts\/\*`/.test(cfg)) exposed.push(/^content\/(en|de)\/posts\/[^/]+\.json$/);
-if (/path: `content\/\$\{locale\}\/faq\/\*`/.test(cfg)) exposed.push(/^content\/(en|de)\/faq\/[^/]+\.json$/);
-if (/path: `content\/\$\{locale\}\/services\/\$\{key\}`/.test(cfg)) exposed.push(/^content\/(en|de)\/services\/[^/]+\.json$/);
+const collectionPath = (dir) => new RegExp("path: `content/\\$\\{locale\\}/" + dir + "/\\*`");
+if (collectionPath("posts").test(cfg)) exposed.push(/^content\/(en|de)\/posts\/[^/]+\.json$/);
+if (collectionPath("faq").test(cfg)) exposed.push(/^content\/(en|de)\/faq\/[^/]+\.json$/);
+if (/path: `content\/\$\{locale\}\/services\/\$\{key\}`/.test(cfg))
+  exposed.push(/^content\/(en|de)\/services\/[^/]+\.json$/);
 if (/path: `content\/\$\{locale\}\/site`/.test(cfg)) exposed.push(/^content\/(en|de)\/site\.json$/);
-for (const p of ["impressum", "privacy", "terms"]) {
-  if (new RegExp(`path: \`content/\\$\\{locale\\}/pages/${p}\``).test(cfg))
-    exposed.push(new RegExp(`^content/(en|de)/pages/${p}\\.json$`));
+
+// Page singletons are declared either with a literal path template or via the
+// `at(locale, "name")` helper in keystatic/pages.ts.
+const PAGE_NAMES = [
+  "home", "about", "workTogether", "organisations", "weeklyWellbeing",
+  "blog", "faq", "contact", "aiInfo", "notFound", "impressum", "privacy", "terms",
+];
+for (const name of PAGE_NAMES) {
+  const literal = new RegExp("path: `content/\\$\\{locale\\}/pages/" + name + "`");
+  const viaHelper = new RegExp('at\\(locale, "' + name + '"\\)');
+  if (literal.test(cfg) || viaHelper.test(cfg))
+    exposed.push(new RegExp("^content/(en|de)/pages/" + name + "\\.json$"));
 }
 
 /** Declared field names per content shape, read from the config source. */
@@ -49,10 +63,25 @@ const DECLARED = {
   impressum: ["heading", "blocks", "metaTitle", "metaDescription"],
   privacy: ["heading", "intro", "sections", "metaTitle", "metaDescription"],
   terms: ["heading", "sections", "version", "metaTitle", "metaDescription"],
+  home: ["metaTitle", "metaDescription", "eyebrow", "heroTitle", "heroTitleAccent", "heroLead", "heroParas", "heroEmphasis", "heroPrimary", "heroSecondary", "testimonial", "audience", "practical", "reachLine", "trustPillars", "steps", "privatePay", "aboutBlock", "testimonials"],
+  about: ["metaTitle", "metaDescription", "eyebrow", "name", "subtitle", "credentials", "lead", "intro", "imageAlt", "lived", "philosophy", "quotes", "education", "philosophySections", "psyCoNote"],
+  workTogether: ["metaTitle", "metaDescription", "eyebrow", "heading", "intro", "discovery", "quote", "individual", "couples", "closing", "cards", "switzerland"],
+  organisations: ["metaTitle", "metaDescription", "eyebrow", "heading", "lead", "intro", "facts", "formats", "individual", "topics", "approach", "testimonials", "closing", "cards"],
+  weeklyWellbeing: ["metaTitle", "metaDescription", "eyebrow", "heading", "lead", "intro", "imageAlt", "facts", "why", "quotes", "closing"],
+  blog: ["metaTitle", "metaDescription", "eyebrow", "heading", "intro", "allLabel", "readMore", "backToBlog", "relatedHeading", "authorHeading", "authorBody", "minRead"],
+  faqPage: ["metaTitle", "metaDescription", "eyebrow", "heading", "intro", "jumpLabel"],
+  contact: ["metaTitle", "metaDescription", "eyebrow", "heading", "lead", "form", "directHeading", "directBody", "emailLabel", "phoneLabel"],
+  aiInfo: ["metaTitle", "metaDescription", "eyebrow", "heading", "intro", "updated", "sections"],
+  notFound: ["title", "body", "cta"],
 };
 
 function shapeOf(rel) {
   if (/\/posts\//.test(rel)) return "posts";
+  // pages/faq.json is the FAQ *page* chrome; faq/*.json are the categories.
+  if (/\/pages\/faq\.json$/.test(rel)) return "faqPage";
+  for (const p of ["home", "about", "workTogether", "organisations", "weeklyWellbeing", "blog", "contact", "aiInfo", "notFound"]) {
+    if (new RegExp(`/pages/${p}\\.json$`).test(rel)) return p;
+  }
   if (/\/faq\//.test(rel)) return "faq";
   if (/\/services\//.test(rel)) return "services";
   if (/\/site\.json$/.test(rel)) return "site";

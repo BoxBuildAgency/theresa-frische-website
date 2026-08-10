@@ -1,13 +1,17 @@
 import { config, collection, singleton, fields } from "@keystatic/core";
+import { blogBody, ctaLink, metaPair, paragraphs } from "./keystatic/fields";
 import {
-  blogBody,
-  ctaLink,
-  featureItems,
-  metaPair,
-  paragraphs,
-  quotes,
-  seo,
-} from "./keystatic/fields";
+  aboutPage,
+  aiInfoPage,
+  blogIndexPage,
+  contactPage,
+  faqIndexPage,
+  homePage,
+  notFoundPage,
+  organisationsPage,
+  weeklyWellbeingPage,
+  workWithMePage,
+} from "./keystatic/pages";
 
 /**
  * Keystatic admin for the Theresa Frische site.
@@ -412,6 +416,14 @@ export default config({
         "org-leadership-coaching_de",
         "org-employee-counselling_de",
       ],
+      "Main pages — English": [
+        "homeEn", "aboutEn", "workWithMeEn", "organisationsEn", "weeklyWellbeingEn",
+        "contactEn", "blogIndexEn", "faqIndexEn", "aiInfoEn", "notFoundEn",
+      ],
+      "Main pages — German": [
+        "homeDe", "aboutDe", "workWithMeDe", "organisationsDe", "weeklyWellbeingDe",
+        "contactDe", "blogIndexDe", "faqIndexDe", "aiInfoDe", "notFoundDe",
+      ],
       "Site-wide text": ["siteEn", "siteDe"],
       "Legal pages": ["impressumEn", "impressumDe", "privacyEn", "privacyDe", "termsEn", "termsDe"],
     },
@@ -423,6 +435,26 @@ export default config({
     faqDe: faq("de"),
   },
   singletons: {
+    homeEn: homePage("en"),
+    homeDe: homePage("de"),
+    aboutEn: aboutPage("en"),
+    aboutDe: aboutPage("de"),
+    workWithMeEn: workWithMePage("en"),
+    workWithMeDe: workWithMePage("de"),
+    organisationsEn: organisationsPage("en"),
+    organisationsDe: organisationsPage("de"),
+    weeklyWellbeingEn: weeklyWellbeingPage("en"),
+    weeklyWellbeingDe: weeklyWellbeingPage("de"),
+    blogIndexEn: blogIndexPage("en"),
+    blogIndexDe: blogIndexPage("de"),
+    faqIndexEn: faqIndexPage("en"),
+    faqIndexDe: faqIndexPage("de"),
+    contactEn: contactPage("en"),
+    contactDe: contactPage("de"),
+    aiInfoEn: aiInfoPage("en"),
+    aiInfoDe: aiInfoPage("de"),
+    notFoundEn: notFoundPage("en"),
+    notFoundDe: notFoundPage("de"),
     siteEn: site("en"),
     siteDe: site("de"),
     impressumEn: impressum("en"),
@@ -447,9 +479,3 @@ export default config({
     "org-employee-counselling_de": servicePage("de", "org-employee-counselling", "Beratung für Mitarbeitende — DE"),
   },
 });
-
-// `seo` and `featureItems`/`quotes` are used by the page singletons that are
-// still being schema'd (see README, "Adding the remaining pages to the admin").
-void seo;
-void featureItems;
-void quotes;

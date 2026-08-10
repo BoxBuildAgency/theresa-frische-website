@@ -269,23 +269,41 @@ Or on github.com: open the commit → **Revert**. Netlify rebuilds automatically
 
 ### What is in the admin today
 
-Fully editable, with complete schemas verified by `npm run check:schema`:
+**Everything.** `npm run check:schema` reports 106 content files exposed, 0 not exposed,
+and 0 undeclared fields — so there is no page Theresa can open, save, and accidentally
+strip. Grouped in the sidebar by how often she will need them:
 
-- **Blog articles** (EN + DE) — all 23, including the block-by-block article body
-- **FAQ categories** (EN + DE) — all 9, with their question lists and page order
+- **Blog articles** (EN + DE) — all 23, with the article body built block by block
+- **Questions & answers** (EN + DE) — all 9 categories, their questions, and page order
 - **Service pages** (EN + DE) — the four Work With Me and three For Organisations children
+- **Main pages** (EN + DE) — Home, About, Work With Me overview, For Organisations
+  overview, Weekly Wellbeing, Contact, Blog page, FAQ page, AI info, and the
+  "page not found" message
 - **Site-wide text** (EN + DE) — menus, footer, the discovery-call button, the disclaimer
   and the crisis resources (the last two flagged as safety-critical in the form)
 - **Legal pages** (EN + DE) — Impressum, Privacy/Datenschutz, Terms/AGB, each flagged as
   legally consequential
 
-**Not yet in the admin** (20 files — Home, About, Work With Me overview, Organisations
-overview, Weekly Wellbeing, Blog index, FAQ index, Contact, AI Info, 404, in both
-locales). These are edited in `content/<locale>/pages/*.json` for now. They are
-deliberately *not* exposed yet: Keystatic writes back only the fields its schema
-declares, so a partial schema would silently delete the fields it does not know about
-the first time Theresa saved that page. `npm run check:schema` reports them as "not
-exposed yet" and will start enforcing them as soon as they are added.
+Every page also has its own **Page title** and **Search description** fields for Google.
+Canonical URLs and hreflang stay generated in code from the routes table — making them
+editable would break the EN/DE pairing.
+
+A few fields carry warnings rather than being locked: the About qualifications and the
+recognition note (worded deliberately for regulatory reasons), the disclaimer and crisis
+resources, and the legal pages. They are editable, but the form says to check with José.
+
+### A note on the lockfile and CI
+
+CI installs with `npm install`, not `npm ci`. The lockfile is resolved on macOS, and on
+Linux npm hoists part of the tree differently (chokidar needs `picomatch@2`, tinyglobby
+needs `picomatch@4`, and the two platforms disagree about which sits at the root of
+`node_modules`). `npm ci` demands an exact lockfile/tree match and fails on the runner;
+`npm install` honours the lockfile where it can and reconciles the rest.
+
+**Worth watching on the first Netlify deploy:** Netlify also builds on Linux and runs
+`npm ci` when a lockfile is present, so it may hit the same error. If it does, the fix is
+to commit a lockfile generated on Linux (run `npm install` once in a Linux container or in
+CI and commit the result).
 
 ## Go-live checklist
 

@@ -9,51 +9,28 @@ import { fields } from "@keystatic/core";
  */
 
 /**
- * Per-page, per-locale SEO. Canonical URLs and hreflang are deliberately NOT
- * here — they are generated from the routes table in src/lib/site.ts, and making
- * them editable would break the EN/DE pairing.
+ * Per-page SEO, spread into a singleton's schema.
+ *
+ * Matches the shape already in the JSON (metaTitle + metaDescription) so nothing
+ * unused is written into the content files. Canonical URLs and hreflang are
+ * deliberately NOT editable — they are generated from the routes table in
+ * src/lib/site.ts, and hand-editing them would break the EN/DE pairing.
  */
-export const seo = () =>
-  fields.object(
-    {
-      metaTitle: fields.text({
-        label: "Page title (shown in the browser tab and in Google results)",
-        description:
-          "Aim for under about 60 characters so Google does not cut it off. Include what the page is about, e.g. 'Couples Counselling — Theresa Frische'.",
-        validation: { length: { min: 1 } },
-      }),
-      metaDescription: fields.text({
-        label: "Search description (the grey text under the title in Google)",
-        description:
-          "Aim for under about 155 characters. Write it as a sentence that would make someone click.",
-        multiline: true,
-        validation: { length: { min: 1 } },
-      }),
-      ogTitle: fields.text({
-        label: "Social share title (optional)",
-        description:
-          "Only fill this in if you want a different title when the page is shared on LinkedIn, WhatsApp or Facebook. Leave empty to reuse the page title above.",
-      }),
-      ogDescription: fields.text({
-        label: "Social share description (optional)",
-        description:
-          "Leave empty to reuse the search description above.",
-        multiline: true,
-      }),
-      ogImage: fields.image({
-        label: "Social share image (optional)",
-        description:
-          "The picture shown when the page is shared. Ideal size 1200 × 630 pixels. Leave empty to use the site default.",
-        directory: "public/images",
-        publicPath: "/images/",
-      }),
-    },
-    {
-      label: "Search engines & social sharing (SEO)",
-      description:
-        "How this page appears in Google and when shared on social media. Safe to edit — it does not change the page itself.",
-    },
-  );
+export const seoFields = () => ({
+  metaTitle: fields.text({
+    label: "Page title (shown in the browser tab and in Google results)",
+    description:
+      "Aim for under about 60 characters so Google does not cut it off. Around 60 is the sweet spot.",
+    validation: { length: { min: 1 } },
+  }),
+  metaDescription: fields.text({
+    label: "Search description (the grey text under the title in Google)",
+    description:
+      "Aim for under about 155 characters. Write it as a sentence that would make someone click.",
+    multiline: true,
+    validation: { length: { min: 1 } },
+  }),
+});
 
 /** A simple label/value row, used for the facts tables. */
 export const metaPair = () =>

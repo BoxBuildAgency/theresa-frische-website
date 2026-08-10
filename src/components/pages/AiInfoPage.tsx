@@ -29,10 +29,10 @@ export function AiInfoPage({ locale }: { locale: Locale }) {
           {a.sections.map((s) => (
             <section key={s.heading} className="mb-10">
               <h2>{s.heading}</h2>
-              {s.paras?.map((p, i) => (
+              {(s.paras ?? []).map((p, i) => (
                 <p key={i}>{p}</p>
               ))}
-              {s.bullets && (
+              {s.bullets && s.bullets.length > 0 && (
                 <ul>
                   {s.bullets.map((b, i) => (
                     <li key={i}>{b}</li>

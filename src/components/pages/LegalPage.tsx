@@ -49,7 +49,7 @@ export function PrivacyPage({ locale }: { locale: Locale }) {
               {s.paras.map((para, idx) => (
                 <p key={idx}>{renderInline(para)}</p>
               ))}
-              {s.bullets && (
+              {s.bullets && s.bullets.length > 0 && (
                 <ul>
                   {s.bullets.map((b, idx) => (
                     <li key={idx}>{renderInline(b)}</li>
