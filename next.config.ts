@@ -41,8 +41,10 @@ const nextConfig: NextConfig = {
       { source: "/de/work-together", destination: "/de/angebot", permanent: true },
       { source: "/de/about", destination: "/de/ueber-mich", permanent: true },
       { source: "/de/organisations", destination: "/de/fuer-unternehmen", permanent: true },
-      // Note: /llm.txt is kept as a real duplicate file in public/, not a
-      // redirect, so both paths serve content directly.
+      // Note: /llm.txt is kept as a real duplicate of /llms.txt, not a
+      // redirect, so both paths serve content directly. Both are served by
+      // route handlers under src/app/, not from public/ — see
+      // src/content/llms/serve.ts for why.
     ];
   },
 };

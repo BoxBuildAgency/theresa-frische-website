@@ -7,12 +7,24 @@ export const dynamic = "force-dynamic";
 
 // --- Validation -------------------------------------------------------------
 // Minimal fields only. No health-data / special-category fields are collected.
+//
+// `contactReference` is the honeypot. It must NOT be named anything a browser
+// recognises as an autofill token: this route previously used `company`, which
+// Chrome and Safari happily autofill from the saved address profile (they treat
+// "organization" as fillable even with autocomplete="off"). Genuine enquiries
+// were therefore being classified as bots and discarded while the visitor was
+// shown the success message. Do not rename this back to company/organisation/
+// address/url/tel or anything else in the autofill vocabulary.
+//
+// `company` is still accepted and ignored, so that a visitor running a cached
+// copy of the old JS bundle still gets their message through.
 const ContactSchema = z.object({
   name: z.string().trim().min(1).max(120),
   email: z.string().trim().email().max(200),
   message: z.string().trim().min(2).max(4000),
   consent: z.literal(true),
-  company: z.string().optional(), // honeypot — must be empty
+  contactReference: z.string().optional(), // honeypot — must be empty
+  company: z.string().optional(), // legacy field from older bundles — ignored
   locale: z.enum(["en", "de"]).optional(),
 });
 
@@ -37,37 +49,70 @@ function clientIp(req: NextRequest): string {
   return req.headers.get("x-nf-client-connection-ip") ?? "unknown";
 }
 
+/** Prefix for every log line, so the contact route is greppable in Netlify. */
+const TAG = "[contact]";
+
 export async function POST(req: NextRequest) {
   if (rateLimited(clientIp(req))) {
-    return NextResponse.json({ error: "rate_limited" }, { status: 429 });
+    return NextResponse.json(
+      { ok: false, error: "rate_limited", message: "Too many submissions. Please try again shortly." },
+      { status: 429 },
+    );
   }
 
   let json: unknown;
   try {
     json = await req.json();
   } catch {
-    return NextResponse.json({ error: "invalid_json" }, { status: 400 });
+    return NextResponse.json(
+      { ok: false, error: "invalid_json", message: "The request body was not valid JSON." },
+      { status: 400 },
+    );
   }
 
   const parsed = ContactSchema.safeParse(json);
   if (!parsed.success) {
-    return NextResponse.json({ error: "invalid_input" }, { status: 400 });
+    return NextResponse.json(
+      { ok: false, error: "invalid_input", message: "Please check the form fields and try again." },
+      { status: 400 },
+    );
   }
 
-  const { name, email, message, company, locale } = parsed.data;
+  const { name, email, message, contactReference, locale } = parsed.data;
 
-  // Honeypot tripped: pretend success, send nothing.
-  if (company && company.trim().length > 0) {
-    return NextResponse.json({ ok: true });
+  // Honeypot tripped: almost certainly a bot, so report success without sending
+  // (telling a bot it failed just invites a retry). Logged deliberately — if
+  // this ever fires for real people we need to see it rather than lose the
+  // enquiry in silence, which is exactly what went wrong before. No personal
+  // data is logged, only the fact of the trip.
+  if (contactReference && contactReference.trim().length > 0) {
+    console.warn(`${TAG} honeypot tripped — submission discarded without sending. locale=${locale ?? "en"}`);
+    return NextResponse.json({ ok: true, discarded: true });
   }
 
   const apiKey = process.env.RESEND_API_KEY;
   const to = process.env.CONTACT_TO_EMAIL;
   const from = process.env.CONTACT_FROM_EMAIL;
 
-  if (!apiKey || !to || !from) {
-    console.error("Contact form is not configured: missing RESEND_API_KEY / CONTACT_TO_EMAIL / CONTACT_FROM_EMAIL");
-    return NextResponse.json({ error: "not_configured" }, { status: 500 });
+  const missing = [
+    !apiKey && "RESEND_API_KEY",
+    !to && "CONTACT_TO_EMAIL",
+    !from && "CONTACT_FROM_EMAIL",
+  ].filter(Boolean);
+
+  if (missing.length > 0 || !apiKey || !to || !from) {
+    console.error(
+      `${TAG} NOT CONFIGURED — refusing to accept the enquiry. Missing env var(s): ${missing.join(", ")}. ` +
+        `Set them in Netlify → Site configuration → Environment variables, then redeploy.`,
+    );
+    return NextResponse.json(
+      {
+        ok: false,
+        error: "not_configured",
+        message: "The contact form is not configured on the server. Please email us directly.",
+      },
+      { status: 500 },
+    );
   }
 
   const resend = new Resend(apiKey);
@@ -83,22 +128,52 @@ export async function POST(req: NextRequest) {
     message,
   ].join("\n");
 
+  let data: { id?: string } | null = null;
+  let error: unknown = null;
+
   try {
-    const { error } = await resend.emails.send({
+    // The Resend SDK resolves with { data, error } instead of throwing, so the
+    // result has to be inspected. An unchecked call here would report success
+    // on a rejected send.
+    const result = await resend.emails.send({
       from,
       to: [to],
       replyTo: email,
       subject: `New enquiry from ${name}`,
       text,
     });
-    if (error) {
-      console.error("Resend error:", error);
-      return NextResponse.json({ error: "send_failed" }, { status: 502 });
-    }
+    data = result.data;
+    error = result.error;
+
+    // TEMPORARY debug logging — remove once the production send is confirmed.
+    // Shows the full Resend response in the Netlify function logs.
+    console.log(`${TAG} Resend response: ${JSON.stringify({ data, error })}`);
   } catch (err) {
-    console.error("Resend threw:", err);
-    return NextResponse.json({ error: "send_failed" }, { status: 502 });
+    console.error(`${TAG} Resend threw:`, err);
+    return NextResponse.json(
+      { ok: false, error: "send_failed", message: "The message could not be sent. Please email us directly." },
+      { status: 502 },
+    );
   }
 
-  return NextResponse.json({ ok: true });
+  if (error) {
+    console.error(`${TAG} Resend returned an error: ${JSON.stringify(error)}`);
+    return NextResponse.json(
+      { ok: false, error: "send_failed", message: "The message could not be sent. Please email us directly." },
+      { status: 502 },
+    );
+  }
+
+  // A send with no error but no id was never accepted for delivery. Treating
+  // that as success is how a message disappears without a trace.
+  if (!data?.id) {
+    console.error(`${TAG} Resend accepted the call but returned no message id: ${JSON.stringify(data)}`);
+    return NextResponse.json(
+      { ok: false, error: "send_failed", message: "The message could not be sent. Please email us directly." },
+      { status: 502 },
+    );
+  }
+
+  console.log(`${TAG} sent ok — resend id ${data.id}`);
+  return NextResponse.json({ ok: true, id: data.id });
 }

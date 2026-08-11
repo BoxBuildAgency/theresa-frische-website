@@ -37,8 +37,8 @@ export function ContactPage({ locale }: { locale: Locale }) {
                 <div className="flex items-baseline justify-between gap-4">
                   <dt className="text-ink-muted">{ct.emailLabel}</dt>
                   <dd>
-                    <a href="mailto:theresafrische@gmail.com" className="font-medium text-forest underline underline-offset-4">
-                      theresafrische@gmail.com
+                    <a href="mailto:info@theresafrische.com" className="font-medium text-forest underline underline-offset-4">
+                      info@theresafrische.com
                     </a>
                   </dd>
                 </div>

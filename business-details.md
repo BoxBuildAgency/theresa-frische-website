@@ -13,7 +13,7 @@
 - **Website / domain:** theresafrische.com
 
 ## Contact
-- **Email:** theresafrische@gmail.com
+- **Email:** info@theresafrische.com
 - **Phone:** +49 157 38920374
 
 ## Postal address  ⟨PENDING⟩

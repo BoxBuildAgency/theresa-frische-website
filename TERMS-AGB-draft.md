@@ -80,7 +80,7 @@ through an employer-funded programme, no session content is reported to the empl
 ### 8. Right of withdrawal (Widerrufsrecht)
 Where the Client is a consumer and the contract is concluded remotely, the Client has the right to
 withdraw within 14 days of entering the contract, without giving reasons. To exercise it, the Client
-notifies the Counsellor in clear terms (by email is sufficient) at theresafrische@gmail.com.
+notifies the Counsellor in clear terms (by email is sufficient) at info@theresafrische.com.
 
 If the Client expressly requests that counselling begin before the end of the withdrawal period, the
 Client owes a proportionate amount for services already provided. The right of withdrawal lapses
@@ -166,7 +166,7 @@ werden keine Gesprächsinhalte an den Arbeitgeber berichtet.
 Ist die Klient:in Verbraucher:in und wird der Vertrag im Fernabsatz geschlossen, steht ihr ein
 Widerrufsrecht zu. Die Klient:in kann den Vertrag binnen 14 Tagen ab Vertragsschluss ohne Angabe von
 Gründen widerrufen. Der Widerruf ist in eindeutiger Erklärung mitzuteilen; eine E-Mail an
-theresafrische@gmail.com genügt.
+info@theresafrische.com genügt.
 
 Verlangt die Klient:in ausdrücklich, dass die Beratung vor Ablauf der Widerrufsfrist beginnt, so
 schuldet sie einen angemessenen Betrag für die bereits erbrachte Leistung. Das Widerrufsrecht

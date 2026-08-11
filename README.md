@@ -61,6 +61,8 @@ src/
     api/contact/      Resend contact form handler
     sitemap.ts        all EN + DE routes + blog posts
     robots.ts
+    llms.txt/, llms-full.txt/, llm.txt/   route handlers serving src/content/llms/*.txt
+                      (served via Next, not public/, so the staging noindex applies)
     not-found.tsx
   components/
     site/             header, footer, language toggle, disclaimer, crisis box, contact form, JSON-LD
@@ -79,7 +81,6 @@ src/
     fonts.ts          next/font (Cormorant Garamond + Inter)
 public/
   images/             her 8 photographs + og-default.jpg (see Images below)
-  llms.txt, llms-full.txt, llm.txt (legacy duplicate)
 content/              THE EDITABLE CONTENT (Keystatic writes here)
   en/ , de/           site.json, pages/*.json, posts/*.json, faq/*.json, services/*.json
 keystatic.config.ts   the admin's forms and labels
@@ -166,7 +167,7 @@ UI for production.
 | Variable | Purpose |
 | --- | --- |
 | `RESEND_API_KEY` | API key from Theresa's Resend account |
-| `CONTACT_TO_EMAIL` | Where enquiries are delivered (currently `theresafrische@gmail.com`) |
+| `CONTACT_TO_EMAIL` | Where enquiries are delivered (currently `info@theresafrische.com`) |
 | `CONTACT_FROM_EMAIL` | The "from" sender — **must be on a domain verified in Resend** |
 
 The contact form collects **name, email, and a short message only** — no health data — and is
@@ -178,7 +179,7 @@ The contact form collects **name, email, and a short message only** — no healt
 
 1. **Resend:** in Theresa's own Resend account, add and verify the sending domain
    (e.g. `theresafrische.com`), then create an API key. Set `CONTACT_FROM_EMAIL` to an address on
-   that verified domain (e.g. `hello@theresafrische.com`). For an interim preview you can use
+   that verified domain (e.g. `info@theresafrische.com`). For an interim preview you can use
    `onboarding@resend.dev` as the sender.
 2. **Netlify:** create a new site from this repo. `netlify.toml` already configures the build and
    the `@netlify/plugin-nextjs` plugin — no manual build settings needed.
