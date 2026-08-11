@@ -104,7 +104,8 @@
     {
       "discriminant": "quote",
       "value": {
-        "text": "Wellbeing is not something you bolt on to a stressful workplace. It is something you build into how the workplace works."
+        "text": "Wellbeing is not something you bolt on to a stressful workplace. It is something you build into how the workplace works.",
+        "attribution": ""
       }
     },
     {
@@ -113,5 +114,6 @@
         "text": "If your organisation has tried the one-off events and sensed that something deeper is needed, that instinct is worth trusting. The most effective programmes are rarely the flashiest — they are the ones patient enough to become part of the culture. That is slower work, but it is the work that lasts."
       }
     }
-  ]
+  ],
+  "draft": false
 }

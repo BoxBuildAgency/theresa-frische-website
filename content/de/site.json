@@ -9,7 +9,8 @@
   "nav": [
     {
       "label": "Über mich",
-      "href": "/de/ueber-mich"
+      "href": "/de/ueber-mich",
+      "children": []
     },
     {
       "label": "Angebot",
@@ -53,15 +54,18 @@
     },
     {
       "label": "Weekly Wellbeing",
-      "href": "/de/weekly-wellbeing"
+      "href": "/de/weekly-wellbeing",
+      "children": []
     },
     {
       "label": "Blog",
-      "href": "/de/blog"
+      "href": "/de/blog",
+      "children": []
     },
     {
       "label": "FAQ",
-      "href": "/de/faq"
+      "href": "/de/faq",
+      "children": []
     }
   ],
   "header": {
@@ -182,15 +186,18 @@
     "items": [
       {
         "label": "Notruf (EU)",
-        "value": "112"
+        "value": "112",
+        "href": ""
       },
       {
         "label": "Telefonseelsorge (DE) — kostenlos, 24 h",
-        "value": "0800 111 0 111 · 0800 111 0 222"
+        "value": "0800 111 0 111 · 0800 111 0 222",
+        "href": ""
       },
       {
         "label": "Die Dargebotene Hand (CH)",
-        "value": "143"
+        "value": "143",
+        "href": ""
       },
       {
         "label": "Internationales Verzeichnis",

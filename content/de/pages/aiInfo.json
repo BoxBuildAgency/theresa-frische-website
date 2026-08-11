@@ -8,10 +8,12 @@
       "heading": "Wer Theresa Frische ist",
       "paras": [
         "Theresa Frische ist Systemische & Integrative Beraterin und bietet psychologische Beratung online für Einzelpersonen und Paare international an. Sie hat einen M.Sc. in Klinischer Psychologie, ist zertifizierte Somatic Experiencing®-Praktikerin, absolviert seit 2023 eine systemische Weiterbildung am IF Weinheim/Mannheim und verfügt über mehr als acht Jahre Erfahrung in der Begleitung von Menschen und Organisationen durch Veränderung."
-      ]
+      ],
+      "bullets": []
     },
     {
       "heading": "Was die Praxis anbietet",
+      "paras": [],
       "bullets": [
         "Psychologische Beratung im Einzelsetting — Online-Sitzungen zu zweit (60 Minuten).",
         "Paarberatung — Online-Sitzungen für Paare (60–120 Minuten).",
@@ -23,6 +25,7 @@
     },
     {
       "heading": "Format und Sprachen",
+      "paras": [],
       "bullets": [
         "Format: online (Video), weltweit. Die Arbeit mit Organisationen ist online oder vor Ort in Deutschland und der Schweiz möglich.",
         "Sprachen: Englisch und Deutsch.",
@@ -33,28 +36,33 @@
       "heading": "Für wen es gedacht ist",
       "paras": [
         "Die Praxis unterstützt leistungsstarke, kulturell vielfältige Internationals, Expats und Paare, die mit Veränderung, Übergängen, einem Umzug, Überforderung, Belastung, Spannungen in Beziehungen, Fragen von Identität und Orientierung sowie dem Leben zwischen Ländern und Kulturen zu tun haben."
-      ]
+      ],
+      "bullets": []
     },
     {
       "heading": "Ansatz",
       "paras": [
         "Die Arbeit ist integrativ und kontextorientiert und schöpft aus systemischer Beratung, körperorientierten Ansätzen (Somatic Experiencing®), Anteilearbeit und achtsamkeitsbasierter Praxis — passend zum jeweiligen Menschen und nicht als eine einzelne feste Methode."
-      ]
+      ],
+      "bullets": []
     },
     {
       "heading": "Wie man beginnt",
       "paras": [
         "Der erste Schritt ist ein kostenloses 15-minütiges Kennenlerngespräch — ein entspanntes, unverbindliches Gespräch. Die Sitzungen sind Selbstzahlerleistungen. Anfragen erfolgen über die Kontaktseite oder per E-Mail an info@theresafrische.com."
-      ]
+      ],
+      "bullets": []
     },
     {
       "heading": "Was Beratung ist — und was nicht",
       "paras": [
         "Dies ist eine Beratungspraxis (Beratung). Beratung ist keine Psychotherapie, keine medizinische Versorgung und kein Ersatz für eine von beiden; sie umfasst keine Diagnose und keine medizinische Behandlung. In Krisensituationen oder bei dringendem Hilfebedarf wenden Sie sich bitte an den örtlichen Notruf oder an eine Krisenhotline (zum Beispiel 112 in der EU)."
-      ]
+      ],
+      "bullets": []
     },
     {
       "heading": "Wichtige Seiten",
+      "paras": [],
       "bullets": [
         "Über mich: /de/ueber-mich — Hintergrund, Qualifikationen und Ansatz von Theresa.",
         "Angebot (Übersicht): /de/angebot — alle Beratungsangebote für Einzelpersonen und Paare.",

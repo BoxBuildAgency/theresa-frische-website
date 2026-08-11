@@ -103,7 +103,8 @@
     {
       "discriminant": "quote",
       "value": {
-        "text": "Das Stärkste, was eine Führungskraft vorleben kann, ist nicht Durchhalten. Es ist die Bereitschaft, menschlich zu sein — und sich um diese Menschlichkeit bewusst zu kümmern."
+        "text": "Das Stärkste, was eine Führungskraft vorleben kann, ist nicht Durchhalten. Es ist die Bereitschaft, menschlich zu sein — und sich um diese Menschlichkeit bewusst zu kümmern.",
+        "attribution": ""
       }
     },
     {
@@ -112,5 +113,6 @@
         "text": "Wenn Ihnen etwas davon vertraut vorkommt, heißt das nicht, dass Sie als Führungskraft versagen. Es kann schlicht bedeuten, dass die Rolle Ihnen still und über lange Zeit sehr viel abverlangt hat — und dass nun Sie an der Reihe sind, Unterstützung zu bekommen. Sie sind herzlich eingeladen, [ein Gespräch über Führungskräfte-Coaching zu beginnen](/de/fuer-unternehmen/fuehrungskraefte-coaching), wann immer der Zeitpunkt sich stimmig anfühlt."
       }
     }
-  ]
+  ],
+  "draft": false
 }

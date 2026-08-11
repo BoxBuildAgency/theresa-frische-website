@@ -97,7 +97,8 @@
     {
       "discriminant": "quote",
       "value": {
-        "text": "The most resilient people are not the ones who never bend. They are the ones who bend, recover, and find their footing again."
+        "text": "The most resilient people are not the ones who never bend. They are the ones who bend, recover, and find their footing again.",
+        "attribution": ""
       }
     },
     {
@@ -106,5 +107,6 @@
         "text": "If a season of change has you feeling stretched thin, that is not a lack of resilience — it may be resilience asking to be resourced. A [conversation about working together](/work-with-me) can be one steady place to start building the flexible, recoverable kind of strength that actually lasts."
       }
     }
-  ]
+  ],
+  "draft": false
 }

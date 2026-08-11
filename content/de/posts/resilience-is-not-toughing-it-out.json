@@ -97,7 +97,8 @@
     {
       "discriminant": "quote",
       "value": {
-        "text": "Die widerstandsfähigsten Menschen sind nicht jene, die sich nie biegen. Es sind jene, die sich biegen, sich erholen und wieder Halt finden."
+        "text": "Die widerstandsfähigsten Menschen sind nicht jene, die sich nie biegen. Es sind jene, die sich biegen, sich erholen und wieder Halt finden.",
+        "attribution": ""
       }
     },
     {
@@ -106,5 +107,6 @@
         "text": "Wenn eine Zeit der Veränderung Sie an Ihre Grenzen gebracht hat, ist das kein Mangel an Widerstandskraft — vielleicht ist es Widerstandskraft, die danach verlangt, gestärkt zu werden. Ein [Gespräch über eine Zusammenarbeit](/de/angebot) kann ein ruhiger Ausgangspunkt sein, um jene flexible, erholungsfähige Stärke aufzubauen, die wirklich Bestand hat."
       }
     }
-  ]
+  ],
+  "draft": false
 }

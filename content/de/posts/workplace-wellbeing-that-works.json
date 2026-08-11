@@ -104,7 +104,8 @@
     {
       "discriminant": "quote",
       "value": {
-        "text": "Wohlbefinden ist nichts, was man einem belastenden Arbeitsplatz nachträglich anfügt. Es ist etwas, das man in die Art einbaut, wie der Arbeitsplatz funktioniert."
+        "text": "Wohlbefinden ist nichts, was man einem belastenden Arbeitsplatz nachträglich anfügt. Es ist etwas, das man in die Art einbaut, wie der Arbeitsplatz funktioniert.",
+        "attribution": ""
       }
     },
     {
@@ -113,5 +114,6 @@
         "text": "Wenn Ihre Organisation die einmaligen Aktionen ausprobiert und dabei gespürt hat, dass etwas Tieferes nötig ist, dann ist diesem Gespür zu trauen. Die wirksamsten Programme sind selten die schillerndsten — es sind die, die geduldig genug sind, Teil der Kultur zu werden. Das ist die langsamere Arbeit, aber es ist die, die bleibt."
       }
     }
-  ]
+  ],
+  "draft": false
 }

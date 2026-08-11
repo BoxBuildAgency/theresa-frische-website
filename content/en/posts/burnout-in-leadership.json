@@ -103,7 +103,8 @@
     {
       "discriminant": "quote",
       "value": {
-        "text": "The strongest thing a leader can model is not endurance. It is the willingness to be human, and to look after that humanity on purpose."
+        "text": "The strongest thing a leader can model is not endurance. It is the willingness to be human, and to look after that humanity on purpose.",
+        "attribution": ""
       }
     },
     {
@@ -112,5 +113,6 @@
         "text": "If any of this feels familiar, it does not mean you are failing at leadership. It may simply mean the role has been asking a great deal of you, quietly, for a long time — and that it is your turn to be supported. You are welcome to [start a conversation about leadership coaching](/organisations/leadership-coaching) whenever the timing feels right."
       }
     }
-  ]
+  ],
+  "draft": false
 }
