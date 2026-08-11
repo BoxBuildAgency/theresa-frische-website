@@ -7,8 +7,13 @@ name: Regenerate lockfile on Linux
 #
 # Run it from the Actions tab, or: gh workflow run lockfile.yml --ref <branch>
 # Then download the artifact and commit the lockfile.
+# workflow_dispatch only works once this file is on the default branch, so while
+# it lives on a feature branch it is also triggered by pushing this file itself.
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/lockfile.yml"
 
 jobs:
   regenerate:
