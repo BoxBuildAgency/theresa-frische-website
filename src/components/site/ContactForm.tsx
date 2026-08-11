@@ -38,7 +38,7 @@ export function ContactForm({
       email: String(fd.get("email") ?? ""),
       message: String(fd.get("message") ?? ""),
       consent: fd.get("consent") === "on",
-      company: String(fd.get("company") ?? ""), // honeypot
+      contactReference: String(fd.get("contact_reference") ?? ""), // honeypot
       locale,
     };
 
@@ -53,7 +53,14 @@ export function ContactForm({
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
       });
-      if (!res.ok) throw new Error("Request failed");
+
+      // Success is shown only when the server confirms the message was accepted
+      // for delivery. A 2xx alone is not enough, and neither is the absence of a
+      // thrown error — the visitor must never be told their enquiry is on its
+      // way when it is not.
+      const body = (await res.json().catch(() => null)) as { ok?: boolean } | null;
+      if (!res.ok || body?.ok !== true) throw new Error("Request failed");
+
       setStatus("success");
     } catch {
       setStatus("error");
@@ -120,11 +127,26 @@ export function ContactForm({
         />
       </Field>
 
-      {/* Honeypot — hidden from real users */}
+      {/*
+        Honeypot — hidden from real users.
+
+        The field name matters. This was previously `company`, which browsers
+        recognise as an autofill token and fill from the saved address profile
+        even with autoComplete="off" — so genuine enquiries were being flagged
+        as bots and silently discarded. Keep the name outside the autofill
+        vocabulary (no company/organisation/address/url/tel/name).
+      */}
       <div aria-hidden="true" className="absolute left-[-9999px] h-0 w-0 overflow-hidden">
         <label>
-          Company
-          <input name="company" type="text" tabIndex={-1} autoComplete="off" />
+          Leave this field empty
+          <input
+            name="contact_reference"
+            type="text"
+            tabIndex={-1}
+            autoComplete="off"
+            data-1p-ignore
+            data-lpignore="true"
+          />
         </label>
       </div>
 
