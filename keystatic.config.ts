@@ -398,7 +398,11 @@ export default config({
     navigation: {
       "Blog articles": ["postsEn", "postsDe"],
       "Questions & answers": ["faqEn", "faqDe"],
-      "Service pages — English": [
+      // Named after their parents, so it is obvious that the child pages of
+      // "Work With Me" and "For Organisations" live here rather than inside
+      // those overview entries. Group headings wrap freely (no line clamp), so
+      // the extra length costs a second line and nothing else.
+      "Sub-pages of Work With Me & Organisations — English": [
         "wwm-psychological-counselling_en",
         "wwm-couples-counselling_en",
         "wwm-burnout-prevention_en",
@@ -407,7 +411,7 @@ export default config({
         "org-leadership-coaching_en",
         "org-employee-counselling_en",
       ],
-      "Service pages — German": [
+      "Sub-pages of Work With Me & Organisations — German": [
         "wwm-psychological-counselling_de",
         "wwm-couples-counselling_de",
         "wwm-burnout-prevention_de",
