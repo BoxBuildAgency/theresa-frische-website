@@ -385,11 +385,19 @@ export const weeklyWellbeingPage = (locale: Loc) =>
 /* ------------------------------------------------------------ BLOG INDEX */
 export const blogIndexPage = (locale: Loc) =>
   singleton({
-    label: `Blog page (headings & labels) — ${locale.toUpperCase()}`,
+    // Named to be unmistakable against the "Blog posts" collection. This entry
+    // holds only the furniture around the articles; the articles themselves are
+    // collection entries. Do not shorten this back to "Blog page".
+    label: `Blog page text only — ${locale.toUpperCase()}`,
     path: at(locale, "blog"),
     format: { data: "json" },
     schema: {
-      eyebrow: fields.text({ label: "Small label above the heading" }),
+      eyebrow: fields.text({
+        label: "Small label above the heading",
+        description:
+          "This form holds only the wording around the article list — headings and button text. " +
+          "The articles themselves are under 'Blog posts' in the sidebar.",
+      }),
       heading: fields.text({ label: "Page heading" }),
       intro: fields.text({ label: "Intro sentence", multiline: true }),
       allLabel: fields.text({ label: "'All' filter button" }),
@@ -406,11 +414,19 @@ export const blogIndexPage = (locale: Loc) =>
 /* ------------------------------------------------------------- FAQ INDEX */
 export const faqIndexPage = (locale: Loc) =>
   singleton({
-    label: `FAQ page (headings) — ${locale.toUpperCase()}`,
+    // Named to be unmistakable against the "FAQ categories" collection. This
+    // entry holds only the heading and intro above the questions; the questions
+    // themselves are collection entries. Do not shorten this back to "FAQ page".
+    label: `FAQ page text only — ${locale.toUpperCase()}`,
     path: at(locale, "faq"),
     format: { data: "json" },
     schema: {
-      eyebrow: fields.text({ label: "Small label above the heading" }),
+      eyebrow: fields.text({
+        label: "Small label above the heading",
+        description:
+          "This form holds only the heading and intro above the questions. " +
+          "The questions and answers themselves are under 'FAQ categories' in the sidebar.",
+      }),
       heading: fields.text({ label: "Page heading" }),
       intro: fields.text({ label: "Intro sentence", multiline: true }),
       jumpLabel: fields.text({
