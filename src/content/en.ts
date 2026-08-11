@@ -648,7 +648,7 @@ export const en: SiteContent = {
       successTitle: "Thank you — your message is on its way.",
       successBody: "I've received your message and will be in touch within 2–3 business days. If your matter is urgent, please use one of the crisis resources listed here.",
       errorTitle: "Something went wrong.",
-      errorGeneric: "Your message couldn't be sent just now. Please try again, or email me directly at theresafrische@gmail.com.",
+      errorGeneric: "Your message couldn't be sent just now. Please try again, or email me directly at info@theresafrische.com.",
       validation: {
         name: "Please enter your name.",
         email: "Please enter a valid email address.",
@@ -679,7 +679,7 @@ export const en: SiteContent = {
       },
       {
         heading: "Contact",
-        lines: ["Phone: +49 157 38920374", "Email: theresafrische@gmail.com"],
+        lines: ["Phone: +49 157 38920374", "Email: info@theresafrische.com"],
       },
       {
         heading: "VAT / tax status",
@@ -739,7 +739,7 @@ export const en: SiteContent = {
         heading: "Controller",
         paras: [
           "The controller responsible for data processing on this website is:",
-          "Theresa Frische — Systemic & Integrative Counsellor. Scheffelstraße 23, 79102 Freiburg im Breisgau, Germany. Email: theresafrische@gmail.com. Phone: +49 157 38920374.",
+          "Theresa Frische — Systemic & Integrative Counsellor. Scheffelstraße 23, 79102 Freiburg im Breisgau, Germany. Email: info@theresafrische.com. Phone: +49 157 38920374.",
         ],
       },
       {
@@ -873,7 +873,7 @@ export const en: SiteContent = {
       {
         heading: "8. Right of withdrawal (Widerrufsrecht)",
         paras: [
-          "Where the Client is a consumer and the contract is concluded remotely, the Client has the right to withdraw within 14 days of entering the contract, without giving reasons. To exercise it, the Client notifies the Counsellor in clear terms (by email is sufficient) at theresafrische@gmail.com.",
+          "Where the Client is a consumer and the contract is concluded remotely, the Client has the right to withdraw within 14 days of entering the contract, without giving reasons. To exercise it, the Client notifies the Counsellor in clear terms (by email is sufficient) at info@theresafrische.com.",
           "If the Client expressly requests that counselling begin before the end of the withdrawal period, the Client owes a proportionate amount for services already provided. The right of withdrawal lapses once the service has been fully performed, where the Client expressly consented to early commencement and acknowledged that consequence.",
         ],
       },
@@ -956,7 +956,7 @@ export const en: SiteContent = {
       {
         heading: "How to start",
         paras: [
-          "The first step is a free 15-minute discovery call — a relaxed, no-obligation conversation. Sessions are self-pay. Enquiries are made through the contact page.",
+          "The first step is a free 15-minute discovery call — a relaxed, no-obligation conversation. Sessions are self-pay. Enquiries are made through the contact page, or by email to info@theresafrische.com.",
         ],
       },
       {

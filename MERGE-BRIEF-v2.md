@@ -136,7 +136,7 @@ Leadership Coaching, Employee Counselling. Cross-link Employee Counselling to Bu
 ## 4. CONTACT DETAILS AND CTA
 
 Replace her `[Phone]` / `[Email]` / `[Booking Link]` placeholders:
-- Email: `theresafrische@gmail.com`
+- Email: `info@theresafrische.com`
 - Phone: `+49 157 38920374`
 - **No booking link exists yet.** The primary CTA remains the free 15-minute discovery call routed
   to the existing contact form. Do not invent a scheduling URL.

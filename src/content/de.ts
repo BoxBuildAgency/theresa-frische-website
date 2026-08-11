@@ -647,7 +647,7 @@ export const de: SiteContent = {
       successTitle: "Vielen Dank — Ihre Nachricht ist unterwegs.",
       successBody: "Ich habe Ihre Nachricht erhalten und melde mich innerhalb von 2–3 Werktagen. Wenn Ihr Anliegen dringend ist, wenden Sie sich bitte an eine der hier aufgeführten Krisenanlaufstellen.",
       errorTitle: "Da ist etwas schiefgelaufen.",
-      errorGeneric: "Ihre Nachricht ließ sich gerade nicht senden. Bitte versuchen Sie es erneut oder schreiben Sie mir direkt an theresafrische@gmail.com.",
+      errorGeneric: "Ihre Nachricht ließ sich gerade nicht senden. Bitte versuchen Sie es erneut oder schreiben Sie mir direkt an info@theresafrische.com.",
       validation: {
         name: "Bitte geben Sie Ihren Namen ein.",
         email: "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
@@ -678,7 +678,7 @@ export const de: SiteContent = {
       },
       {
         heading: "Kontakt",
-        lines: ["Telefon: +49 157 38920374", "E-Mail: theresafrische@gmail.com"],
+        lines: ["Telefon: +49 157 38920374", "E-Mail: info@theresafrische.com"],
       },
       {
         heading: "Umsatzsteuer / Steuerstatus",
@@ -735,7 +735,7 @@ export const de: SiteContent = {
         heading: "Verantwortlicher",
         paras: [
           "Verantwortliche für die Datenverarbeitung auf dieser Website im Sinne der DSGVO ist:",
-          "Theresa Frische — Systemische & Integrative Beraterin. Scheffelstraße 23, 79102 Freiburg im Breisgau, Deutschland. E-Mail: theresafrische@gmail.com. Telefon: +49 157 38920374.",
+          "Theresa Frische — Systemische & Integrative Beraterin. Scheffelstraße 23, 79102 Freiburg im Breisgau, Deutschland. E-Mail: info@theresafrische.com. Telefon: +49 157 38920374.",
         ],
       },
       {
@@ -869,7 +869,7 @@ export const de: SiteContent = {
       {
         heading: "8. Widerrufsrecht",
         paras: [
-          "Ist die Klient:in Verbraucher:in und wird der Vertrag im Fernabsatz geschlossen, steht ihr ein Widerrufsrecht zu. Die Klient:in kann den Vertrag binnen 14 Tagen ab Vertragsschluss ohne Angabe von Gründen widerrufen. Der Widerruf ist in eindeutiger Erklärung mitzuteilen; eine E-Mail an theresafrische@gmail.com genügt.",
+          "Ist die Klient:in Verbraucher:in und wird der Vertrag im Fernabsatz geschlossen, steht ihr ein Widerrufsrecht zu. Die Klient:in kann den Vertrag binnen 14 Tagen ab Vertragsschluss ohne Angabe von Gründen widerrufen. Der Widerruf ist in eindeutiger Erklärung mitzuteilen; eine E-Mail an info@theresafrische.com genügt.",
           "Verlangt die Klient:in ausdrücklich, dass die Beratung vor Ablauf der Widerrufsfrist beginnt, so schuldet sie einen angemessenen Betrag für die bereits erbrachte Leistung. Das Widerrufsrecht erlischt bei vollständiger Erbringung der Dienstleistung, wenn die Klient:in dem vorzeitigen Beginn ausdrücklich zugestimmt und ihre Kenntnis vom Erlöschen des Widerrufsrechts bestätigt hat.",
         ],
       },
@@ -951,7 +951,7 @@ export const de: SiteContent = {
       {
         heading: "Wie man beginnt",
         paras: [
-          "Der erste Schritt ist ein kostenloses 15-minütiges Kennenlerngespräch — ein entspanntes, unverbindliches Gespräch. Die Sitzungen sind Selbstzahlerleistungen. Anfragen erfolgen über die Kontaktseite.",
+          "Der erste Schritt ist ein kostenloses 15-minütiges Kennenlerngespräch — ein entspanntes, unverbindliches Gespräch. Die Sitzungen sind Selbstzahlerleistungen. Anfragen erfolgen über die Kontaktseite oder per E-Mail an info@theresafrische.com.",
         ],
       },
       {
