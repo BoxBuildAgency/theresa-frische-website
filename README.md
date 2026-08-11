@@ -292,18 +292,24 @@ A few fields carry warnings rather than being locked: the About qualifications a
 recognition note (worded deliberately for regulatory reasons), the disclaimer and crisis
 resources, and the legal pages. They are editable, but the form says to check with José.
 
-### A note on the lockfile and CI
+### A note on the lockfile
 
-CI installs with `npm install`, not `npm ci`. The lockfile is resolved on macOS, and on
-Linux npm hoists part of the tree differently (chokidar needs `picomatch@2`, tinyglobby
-needs `picomatch@4`, and the two platforms disagree about which sits at the root of
-`node_modules`). `npm ci` demands an exact lockfile/tree match and fails on the runner;
-`npm install` honours the lockfile where it can and reconciles the rest.
+**`package-lock.json` is generated on Linux, not on macOS. Keep it that way.**
 
-**Worth watching on the first Netlify deploy:** Netlify also builds on Linux and runs
-`npm ci` when a lockfile is present, so it may hit the same error. If it does, the fix is
-to commit a lockfile generated on Linux (run `npm install` once in a Linux container or in
-CI and commit the result).
+CI and Netlify both build on Linux, and both install with `npm ci`, which demands an exact
+lockfile/tree match. npm resolves that tree differently per platform: adding Keystatic
+brought in `tinyglobby`, and its `fdir` dependency hoists to `node_modules/fdir` on macOS
+but stays nested at `node_modules/tinyglobby/node_modules/fdir` on Linux. A macOS-resolved
+lockfile therefore fails `npm ci` on both. (npm reports the mismatch against `picomatch`,
+which is a downstream symptom, not the cause — don't chase it.)
+
+The Linux lockfile installs cleanly on macOS too, so local development is unaffected: just
+`npm ci` as normal.
+
+If you add or upgrade a dependency, regenerate the lockfile on Linux rather than committing
+whatever macOS produced. `.github/workflows/lockfile.yml` does this: run it from the Actions
+tab, and it regenerates the lockfile on `ubuntu-latest`, proves `npm ci` accepts its own
+output, and uploads it as an artifact for you to download and commit.
 
 ## Go-live checklist
 
