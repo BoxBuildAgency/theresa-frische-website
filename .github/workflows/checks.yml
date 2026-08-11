@@ -19,21 +19,14 @@ jobs:
           node-version: 20
           cache: npm
 
-      # `npm install`, not `npm ci`, and deliberately so.
-      #
-      # The lockfile is generated on macOS (arm64). On Linux npm hoists the tree
-      # differently — chokidar's anymatch/readdirp need picomatch@2 while
-      # tinyglobby needs picomatch@4, and the two platforms disagree about which
-      # one belongs at the root of node_modules. `npm ci` requires the lockfile to
-      # match the resolved tree exactly, so it fails on the runner with
-      # "lock file's picomatch@2.3.2 does not satisfy picomatch@4.0.5".
-      #
-      # `npm install` honours the lockfile where it can and reconciles the few
-      # platform-dependent positions where it cannot. The lockfile stays committed
-      # for local development. If we ever want strict `npm ci` here, the lockfile
-      # has to be generated on Linux.
+      # Strict install. The lockfile is generated on Linux (see
+      # .github/workflows/lockfile.yml), which is what this runner and Netlify
+      # both build on, so `npm ci` can enforce it exactly. If this ever fails with
+      # "can only install packages when your package.json and package-lock.json
+      # are in sync", the lockfile was regenerated on macOS — run the lockfile
+      # workflow and commit the artifact rather than switching to `npm install`.
       - name: Install dependencies
-        run: npm install --no-audit --no-fund
+        run: npm ci
 
       # This one comes first, and on purpose: if the wording is wrong we want to
       # say so in plain language before anything else has a chance to fail.
