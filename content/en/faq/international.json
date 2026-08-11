@@ -1,5 +1,6 @@
 {
   "title": "International & Expat Life",
+  "order": 6,
   "items": [
     {
       "q": "Do you work with expats and internationals?",
@@ -21,6 +22,5 @@
       "q": "Do you work with cross-cultural couples?",
       "a": "Yes. Cross-cultural couples often navigate differences in language, family expectations, and ideas of home, which can add richness as well as friction to a relationship. I work with couples in both English and German and can support you across different locations and time zones online. My aim is to help you understand each other more deeply and build a shared way of living that honours both of you."
     }
-  ],
-  "order": 6
+  ]
 }

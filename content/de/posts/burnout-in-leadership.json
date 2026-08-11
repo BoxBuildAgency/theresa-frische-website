@@ -6,77 +6,111 @@
   "excerpt": "Die besonderen Belastungen, denen Führungskräfte ausgesetzt sind, und warum psychologische Unterstützung auf jeder Ebene wichtig ist.",
   "body": [
     {
-      "type": "p",
-      "text": "In den meisten Führungsrollen steckt eine stille Annahme: dass die Person an der Spitze diejenige ist, die Halt gibt, während alle anderen ins Wanken geraten. Führungskräfte fangen Unsicherheit auf, tragen schwierige Entscheidungen und bewahren auch in der Sitzung nach der Sitzung ein ruhiges Gesicht. Gerade diese Erwartung — die Ruhige zu sein — macht Überforderung in Führungsrollen so leicht zu übersehen und so schwer beim Namen zu nennen."
+      "discriminant": "p",
+      "value": {
+        "text": "In den meisten Führungsrollen steckt eine stille Annahme: dass die Person an der Spitze diejenige ist, die Halt gibt, während alle anderen ins Wanken geraten. Führungskräfte fangen Unsicherheit auf, tragen schwierige Entscheidungen und bewahren auch in der Sitzung nach der Sitzung ein ruhiges Gesicht. Gerade diese Erwartung — die Ruhige zu sein — macht Überforderung in Führungsrollen so leicht zu übersehen und so schwer beim Namen zu nennen."
+      }
     },
     {
-      "type": "p",
-      "text": "In meiner Arbeit mit Organisationen sind manche der erschöpftesten Menschen, denen ich begegne, ausgerechnet jene, die von außen wirken, als hätten sie alles bestens im Griff. Sie liefern noch. Sie halten das Team noch zusammen. Und darunter zehren sie von Reserven, die längst aufgebraucht sind."
+      "discriminant": "p",
+      "value": {
+        "text": "In meiner Arbeit mit Organisationen sind manche der erschöpftesten Menschen, denen ich begegne, ausgerechnet jene, die von außen wirken, als hätten sie alles bestens im Griff. Sie liefern noch. Sie halten das Team noch zusammen. Und darunter zehren sie von Reserven, die längst aufgebraucht sind."
+      }
     },
     {
-      "type": "h2",
-      "text": "Das besondere Gewicht, das Führungskräfte tragen"
+      "discriminant": "h2",
+      "value": {
+        "text": "Das besondere Gewicht, das Führungskräfte tragen"
+      }
     },
     {
-      "type": "p",
-      "text": "Führung bringt Belastungen mit sich, die in keiner Stellenbeschreibung stehen. Da ist die emotionale Arbeit, die Sorgen anderer mitzutragen — diejenige zu sein, zu der andere kommen, wenn sie beunruhigt sind, ohne selbst immer einen Ort zu haben, an dem man die eigene Sorge abladen kann. Da ist die Einsamkeit von Entscheidungen, die über Existenzen bestimmen. Und da ist das ständige, leise Gefühl, beobachtet zu werden — den Ton anzugeben, ob einem danach ist oder nicht."
+      "discriminant": "p",
+      "value": {
+        "text": "Führung bringt Belastungen mit sich, die in keiner Stellenbeschreibung stehen. Da ist die emotionale Arbeit, die Sorgen anderer mitzutragen — diejenige zu sein, zu der andere kommen, wenn sie beunruhigt sind, ohne selbst immer einen Ort zu haben, an dem man die eigene Sorge abladen kann. Da ist die Einsamkeit von Entscheidungen, die über Existenzen bestimmen. Und da ist das ständige, leise Gefühl, beobachtet zu werden — den Ton anzugeben, ob einem danach ist oder nicht."
+      }
     },
     {
-      "type": "ul",
-      "items": [
-        "Verantwortung für Ergebnisse zu tragen, die von Faktoren weit außerhalb der eigenen Kontrolle abhängen.",
-        "Der emotionale Stoßdämpfer für ein Team zu sein, während die eigene Belastung nirgendwo hinkann.",
-        "Eine verschwommene Grenze zwischen Rolle und Selbst, sodass sich eine harte Arbeitswoche wie ein persönliches Versagen anfühlt.",
-        "Weniger Menschen auf Augenhöhe, denen gegenüber man ehrlich sein kann, und die Sorge, Offenheit könnte als Schwäche ausgelegt werden."
-      ]
+      "discriminant": "ul",
+      "value": {
+        "items": [
+          "Verantwortung für Ergebnisse zu tragen, die von Faktoren weit außerhalb der eigenen Kontrolle abhängen.",
+          "Der emotionale Stoßdämpfer für ein Team zu sein, während die eigene Belastung nirgendwo hinkann.",
+          "Eine verschwommene Grenze zwischen Rolle und Selbst, sodass sich eine harte Arbeitswoche wie ein persönliches Versagen anfühlt.",
+          "Weniger Menschen auf Augenhöhe, denen gegenüber man ehrlich sein kann, und die Sorge, Offenheit könnte als Schwäche ausgelegt werden."
+        ]
+      }
     },
     {
-      "type": "p",
-      "text": "Nichts davon macht Führungskräfte zerbrechlich. Es macht sie zu Menschen, die eine ungewöhnlich fordernde Aufgabe erfüllen — eine, die selten von sich aus die Erlaubnis mitliefert, müde sein zu dürfen."
+      "discriminant": "p",
+      "value": {
+        "text": "Nichts davon macht Führungskräfte zerbrechlich. Es macht sie zu Menschen, die eine ungewöhnlich fordernde Aufgabe erfüllen — eine, die selten von sich aus die Erlaubnis mitliefert, müde sein zu dürfen."
+      }
     },
     {
-      "type": "h2",
-      "text": "Warum Führungskräfte sie am längsten für sich behalten"
+      "discriminant": "h2",
+      "value": {
+        "text": "Warum Führungskräfte sie am längsten für sich behalten"
+      }
     },
     {
-      "type": "p",
-      "text": "Die Gründe, aus denen Führungskräfte ihre Erschöpfung verbergen, sind oft genau die Eigenschaften, die ihnen die Rolle eingebracht haben. Gewissenhaftigkeit. Ein starkes Pflichtgefühl. Der Wunsch, niemanden im Stich zu lassen. Wenn die eigene Identität damit verwoben ist, die Verlässliche zu sein, fühlt sich das Eingeständnis, dass man an seine Grenzen kommt, weniger nach Ehrlichkeit an als nach Verrat an denen, die sich auf einen verlassen."
+      "discriminant": "p",
+      "value": {
+        "text": "Die Gründe, aus denen Führungskräfte ihre Erschöpfung verbergen, sind oft genau die Eigenschaften, die ihnen die Rolle eingebracht haben. Gewissenhaftigkeit. Ein starkes Pflichtgefühl. Der Wunsch, niemanden im Stich zu lassen. Wenn die eigene Identität damit verwoben ist, die Verlässliche zu sein, fühlt sich das Eingeständnis, dass man an seine Grenzen kommt, weniger nach Ehrlichkeit an als nach Verrat an denen, die sich auf einen verlassen."
+      }
     },
     {
-      "type": "p",
-      "text": "Hinzu kommt eine reale Furcht, dass Verletzlichkeit an der Spitze Folgen hat. Eine Führungskraft, die sagt \"Ich bin überfordert\", sorgt sich vielleicht, das Team zu verunsichern, oder fragt sich, wie das weiter oben in der Hierarchie ankommt. Also wird die Belastung im Stillen bewältigt — frühere Morgen, längere Abende, ein aufrechterhaltenes Lächeln — bis die Kluft zwischen dem, wie die Dinge aussehen, und dem, wie sie sich anfühlen, sehr groß geworden ist. Wenn Sie dieses Muster wiedererkennen, kann es hilfreich sein, über [den Unterschied zwischen gut funktionieren und sich gut fühlen](/de/blog/functioning-well-vs-feeling-well) zu lesen."
+      "discriminant": "p",
+      "value": {
+        "text": "Hinzu kommt eine reale Furcht, dass Verletzlichkeit an der Spitze Folgen hat. Eine Führungskraft, die sagt \"Ich bin überfordert\", sorgt sich vielleicht, das Team zu verunsichern, oder fragt sich, wie das weiter oben in der Hierarchie ankommt. Also wird die Belastung im Stillen bewältigt — frühere Morgen, längere Abende, ein aufrechterhaltenes Lächeln — bis die Kluft zwischen dem, wie die Dinge aussehen, und dem, wie sie sich anfühlen, sehr groß geworden ist. Wenn Sie dieses Muster wiedererkennen, kann es hilfreich sein, über [den Unterschied zwischen gut funktionieren und sich gut fühlen](/de/blog/functioning-well-vs-feeling-well) zu lesen."
+      }
     },
     {
-      "type": "h2",
-      "text": "Die frühen Anzeichen — im Gewand einer Führungskraft"
+      "discriminant": "h2",
+      "value": {
+        "text": "Die frühen Anzeichen — im Gewand einer Führungskraft"
+      }
     },
     {
-      "type": "p",
-      "text": "Überforderung in Führungsrollen sieht nicht immer wie ein Zusammenbruch aus. Häufiger zeigt sie sich als langsame Erosion dessen, was die Arbeit einmal bedeutsam gemacht hat — ein wachsender Zynismus gegenüber Menschen, an die man einst geglaubt hat, eine kürzere Zündschnur, das Gefühl, nur noch zu funktionieren. Entscheidungen, die einmal klar waren, werden mühsam. Kleine Ärgernisse treffen härter, als sie sollten. Einiges davon sind vertraute [frühe Anzeichen von Überforderung](/de/blog/running-on-empty-early-signs-of-burnout), nur eben im Gewand einer Führungskraft."
+      "discriminant": "p",
+      "value": {
+        "text": "Überforderung in Führungsrollen sieht nicht immer wie ein Zusammenbruch aus. Häufiger zeigt sie sich als langsame Erosion dessen, was die Arbeit einmal bedeutsam gemacht hat — ein wachsender Zynismus gegenüber Menschen, an die man einst geglaubt hat, eine kürzere Zündschnur, das Gefühl, nur noch zu funktionieren. Entscheidungen, die einmal klar waren, werden mühsam. Kleine Ärgernisse treffen härter, als sie sollten. Einiges davon sind vertraute [frühe Anzeichen von Überforderung](/de/blog/running-on-empty-early-signs-of-burnout), nur eben im Gewand einer Führungskraft."
+      }
     },
     {
-      "type": "p",
-      "text": "Das Heikle daran ist, dass die Kompetenz den Rückgang verdeckt. Weil Sie noch funktionieren, die Arbeit noch abliefern, liegt der Schluss nahe — für Sie wie für alle um Sie herum —, dass nichts Ernstes im Gange ist. Bis eines Tages die Anstrengung, alles zusammenzuhalten, mehr kostet als die Arbeit selbst."
+      "discriminant": "p",
+      "value": {
+        "text": "Das Heikle daran ist, dass die Kompetenz den Rückgang verdeckt. Weil Sie noch funktionieren, die Arbeit noch abliefern, liegt der Schluss nahe — für Sie wie für alle um Sie herum —, dass nichts Ernstes im Gange ist. Bis eines Tages die Anstrengung, alles zusammenzuhalten, mehr kostet als die Arbeit selbst."
+      }
     },
     {
-      "type": "h2",
-      "text": "Warum Unterstützung an der Spitze wichtig ist"
+      "discriminant": "h2",
+      "value": {
+        "text": "Warum Unterstützung an der Spitze wichtig ist"
+      }
     },
     {
-      "type": "p",
-      "text": "Wenn eine Führungskraft erschöpft ist, bleibt die Wirkung nicht bei ihr. Teams orientieren sich emotional an denen, die sie führen; eine überdehnte, zynische oder abwesende Führungskraft prägt die Kultur um sich herum, oft ohne es zu wollen. Führungskräfte gut zu begleiten ist deshalb kein nettes Extra — es ist eine der praktischsten Investitionen, die eine Organisation in das Wohlbefinden aller macht, die darunter stehen."
+      "discriminant": "p",
+      "value": {
+        "text": "Wenn eine Führungskraft erschöpft ist, bleibt die Wirkung nicht bei ihr. Teams orientieren sich emotional an denen, die sie führen; eine überdehnte, zynische oder abwesende Führungskraft prägt die Kultur um sich herum, oft ohne es zu wollen. Führungskräfte gut zu begleiten ist deshalb kein nettes Extra — es ist eine der praktischsten Investitionen, die eine Organisation in das Wohlbefinden aller macht, die darunter stehen."
+      }
     },
     {
-      "type": "p",
-      "text": "Das ist einer der Gründe, warum ich [Beratung für Führungskräfte innerhalb der Organisationen anbiete, mit denen ich zusammenarbeite](/de/fuer-unternehmen) — einen vertraulichen Raum außerhalb der Berichtslinie, in dem eine Führungskraft das ruhige Gesicht für eine Stunde ablegen und einfach ehrlich sagen kann, wie es ihr geht. Nicht, um repariert zu werden, und nicht, um Erholung vorzuspielen, sondern um mit jemandem klar zu denken, dem es einzig um ihr Wohlbefinden geht."
+      "discriminant": "p",
+      "value": {
+        "text": "Das ist einer der Gründe, warum ich [Beratung für Führungskräfte innerhalb der Organisationen anbiete, mit denen ich zusammenarbeite](/de/fuer-unternehmen) — einen vertraulichen Raum außerhalb der Berichtslinie, in dem eine Führungskraft das ruhige Gesicht für eine Stunde ablegen und einfach ehrlich sagen kann, wie es ihr geht. Nicht, um repariert zu werden, und nicht, um Erholung vorzuspielen, sondern um mit jemandem klar zu denken, dem es einzig um ihr Wohlbefinden geht."
+      }
     },
     {
-      "type": "quote",
-      "text": "Das Stärkste, was eine Führungskraft vorleben kann, ist nicht Durchhalten. Es ist die Bereitschaft, menschlich zu sein — und sich um diese Menschlichkeit bewusst zu kümmern."
+      "discriminant": "quote",
+      "value": {
+        "text": "Das Stärkste, was eine Führungskraft vorleben kann, ist nicht Durchhalten. Es ist die Bereitschaft, menschlich zu sein — und sich um diese Menschlichkeit bewusst zu kümmern."
+      }
     },
     {
-      "type": "p",
-      "text": "Wenn Ihnen etwas davon vertraut vorkommt, heißt das nicht, dass Sie als Führungskraft versagen. Es kann schlicht bedeuten, dass die Rolle Ihnen still und über lange Zeit sehr viel abverlangt hat — und dass nun Sie an der Reihe sind, Unterstützung zu bekommen. Sie sind herzlich eingeladen, [ein Gespräch über Führungskräfte-Coaching zu beginnen](/de/fuer-unternehmen/fuehrungskraefte-coaching), wann immer der Zeitpunkt sich stimmig anfühlt."
+      "discriminant": "p",
+      "value": {
+        "text": "Wenn Ihnen etwas davon vertraut vorkommt, heißt das nicht, dass Sie als Führungskraft versagen. Es kann schlicht bedeuten, dass die Rolle Ihnen still und über lange Zeit sehr viel abverlangt hat — und dass nun Sie an der Reihe sind, Unterstützung zu bekommen. Sie sind herzlich eingeladen, [ein Gespräch über Führungskräfte-Coaching zu beginnen](/de/fuer-unternehmen/fuehrungskraefte-coaching), wann immer der Zeitpunkt sich stimmig anfühlt."
+      }
     }
   ]
 }

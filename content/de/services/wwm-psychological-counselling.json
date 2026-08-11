@@ -1,6 +1,4 @@
 {
-  "metaTitle": "Psychologische Beratung — Theresa Frische",
-  "metaDescription": "Psychologische Beratung online auf Deutsch und Englisch: ein vertraulicher Raum für Reflexion, Klarheit und Veränderung. Kostenloses 15-minütiges Erstgespräch.",
   "eyebrow": "Angebot",
   "heading": "Psychologische Beratung",
   "lead": "Ein vertraulicher Raum, um innezuhalten, zu reflektieren und mehr Klarheit über das zu gewinnen, was Sie bewegt.",
@@ -36,5 +34,7 @@
       "label": "Wie Online-Beratung funktioniert",
       "href": "/de/blog/how-online-counselling-works"
     }
-  ]
+  ],
+  "metaTitle": "Psychologische Beratung — Theresa Frische",
+  "metaDescription": "Psychologische Beratung online auf Deutsch und Englisch: ein vertraulicher Raum für Reflexion, Klarheit und Veränderung. Kostenloses 15-minütiges Erstgespräch."
 }

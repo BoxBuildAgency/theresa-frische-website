@@ -1,6 +1,4 @@
 {
-  "metaTitle": "Impressum — Theresa Frische",
-  "metaDescription": "Impressum für die Beratungspraxis von Theresa Frische.",
   "heading": "Impressum",
   "blocks": [
     {
@@ -64,5 +62,7 @@
         "Die durch die Seitenbetreiberin erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechts bedürfen der schriftlichen Zustimmung der jeweiligen Autorin bzw. Urheberin. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet."
       ]
     }
-  ]
+  ],
+  "metaTitle": "Impressum — Theresa Frische",
+  "metaDescription": "Impressum für die Beratungspraxis von Theresa Frische."
 }

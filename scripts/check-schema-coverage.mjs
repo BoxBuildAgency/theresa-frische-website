@@ -121,7 +121,57 @@ for (const abs of walk(path.join(ROOT, "content"))) {
   if (missing.length) problems.push({ rel, missing });
 }
 
+/**
+ * Blog body blocks must be stored the way Keystatic stores a `fields.conditional`:
+ * exactly `{ discriminant, value }`.
+ *
+ * This is not cosmetic. Keystatic refuses to OPEN an entry whose conditional
+ * blocks are shaped differently — "Must only contain keys discriminant and
+ * value" — so a post in the wrong shape is not editable at all. The top-level
+ * check above cannot see this, because `body` is a valid top-level key either
+ * way; that is exactly how it went unnoticed until every post was affected.
+ */
+const BLOCK_FIELDS = {
+  p: ["text"],
+  h2: ["text"],
+  ul: ["items"],
+  quote: ["text", "attribution"],
+};
+
+const blockProblems = [];
+for (const abs of walk(path.join(ROOT, "content"))) {
+  const rel = path.relative(ROOT, abs).split(path.sep).join("/");
+  if (!/\/posts\/[^/]+\.json$/.test(rel)) continue;
+  const body = JSON.parse(readFileSync(abs, "utf8")).body;
+  if (!Array.isArray(body)) continue;
+  body.forEach((block, i) => {
+    const keys = Object.keys(block ?? {}).sort();
+    if (keys.length !== 2 || keys[0] !== "discriminant" || keys[1] !== "value") {
+      blockProblems.push(`${rel} — block ${i} has keys [${keys}], expected [discriminant, value]`);
+      return;
+    }
+    const allowed = BLOCK_FIELDS[block.discriminant];
+    if (!allowed) {
+      blockProblems.push(`${rel} — block ${i} has unknown type "${block.discriminant}"`);
+      return;
+    }
+    const extra = Object.keys(block.value ?? {}).filter((k) => !allowed.includes(k));
+    if (extra.length) {
+      blockProblems.push(`${rel} — block ${i} (${block.discriminant}) has unknown field(s): ${extra}`);
+    }
+  });
+}
+
+if (blockProblems.length) {
+  console.error("\n✗ Blog post bodies are not in the shape Keystatic requires.");
+  console.error("  Posts in this state cannot be opened in the admin at all.\n");
+  for (const p of blockProblems.slice(0, 20)) console.error(`  ${p}`);
+  if (blockProblems.length > 20) console.error(`  … and ${blockProblems.length - 20} more`);
+  process.exit(1);
+}
+
 console.log(`Schema coverage: ${checked} file(s) exposed in the admin, ${notExposed} not exposed yet.`);
+console.log(`Blog body blocks: all conditional blocks stored as { discriminant, value }.`);
 if (!problems.length) {
   console.log("✓ Every field of every exposed file is declared — saving cannot drop content.");
   process.exit(0);

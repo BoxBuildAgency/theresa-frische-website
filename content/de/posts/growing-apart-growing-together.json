@@ -6,83 +6,117 @@
   "excerpt": "Emotionale Distanz in Paaren verstehen — und erste, praktische Schritte zurück zueinander.",
   "body": [
     {
-      "type": "p",
-      "text": "Nur wenige Paare entfernen sich mit Absicht voneinander. Es passiert nach und nach, in den Lücken zwischen vollen Wochen und geteilter Organisation, bis Sie eines Tages über den Tisch schauen und merken: Sie führen viel eher gemeinsam einen Haushalt, als dass Sie einander wirklich begegnen."
+      "discriminant": "p",
+      "value": {
+        "text": "Nur wenige Paare entfernen sich mit Absicht voneinander. Es passiert nach und nach, in den Lücken zwischen vollen Wochen und geteilter Organisation, bis Sie eines Tages über den Tisch schauen und merken: Sie führen viel eher gemeinsam einen Haushalt, als dass Sie einander wirklich begegnen."
+      }
     },
     {
-      "type": "p",
-      "text": "Emotionale Distanz in einer langen Beziehung ist etwas ganz Verbreitetes, und für sich genommen ist sie kein Zeichen dafür, dass etwas zerbrochen wäre. Oft heißt sie schlicht, dass zwei Menschen sich weiterentwickelt haben, manchmal in unterschiedliche Richtungen, ohne zwischendurch innezuhalten und nachzuholen, wie gut sie einander eigentlich noch kennen."
+      "discriminant": "p",
+      "value": {
+        "text": "Emotionale Distanz in einer langen Beziehung ist etwas ganz Verbreitetes, und für sich genommen ist sie kein Zeichen dafür, dass etwas zerbrochen wäre. Oft heißt sie schlicht, dass zwei Menschen sich weiterentwickelt haben, manchmal in unterschiedliche Richtungen, ohne zwischendurch innezuhalten und nachzuholen, wie gut sie einander eigentlich noch kennen."
+      }
     },
     {
-      "type": "h2",
-      "text": "Wie sich Distanz leise einschleicht"
+      "discriminant": "h2",
+      "value": {
+        "text": "Wie sich Distanz leise einschleicht"
+      }
     },
     {
-      "type": "p",
-      "text": "Distanz kündigt sich selten an. Sie sammelt sich in lauter kleinen Auslassungen: die Gespräche, die Sie gar nicht erst anfangen, die Gefühle, die Sie lieber nicht ansprechen, weil es schon spät ist, die Annahme, der oder die andere wisse ohnehin, was Sie meinen. Mit der Zeit verfestigen sich diese Lücken zu einem höflichen Nebeneinanderher."
+      "discriminant": "p",
+      "value": {
+        "text": "Distanz kündigt sich selten an. Sie sammelt sich in lauter kleinen Auslassungen: die Gespräche, die Sie gar nicht erst anfangen, die Gefühle, die Sie lieber nicht ansprechen, weil es schon spät ist, die Annahme, der oder die andere wisse ohnehin, was Sie meinen. Mit der Zeit verfestigen sich diese Lücken zu einem höflichen Nebeneinanderher."
+      }
     },
     {
-      "type": "ul",
-      "items": [
-        "Gespräche, die an der Oberfläche von Terminen und To-do-Listen bleiben",
-        "Das Gefühl, eher ein eingespieltes Organisationsteam zu sein als ein vertrautes Paar",
-        "Bestimmte Themen zu meiden, weil sie scheinbar zu nichts Gutem führen",
-        "Einander zu vermissen, obwohl Sie im selben Raum sitzen"
-      ]
+      "discriminant": "ul",
+      "value": {
+        "items": [
+          "Gespräche, die an der Oberfläche von Terminen und To-do-Listen bleiben",
+          "Das Gefühl, eher ein eingespieltes Organisationsteam zu sein als ein vertrautes Paar",
+          "Bestimmte Themen zu meiden, weil sie scheinbar zu nichts Gutem führen",
+          "Einander zu vermissen, obwohl Sie im selben Raum sitzen"
+        ]
+      }
     },
     {
-      "type": "p",
-      "text": "Nichts davon heißt, dass die Verbindung weg ist. Es heißt, dass sie leise geworden ist — und Leises lässt sich mit Aufmerksamkeit wieder lauter stellen."
+      "discriminant": "p",
+      "value": {
+        "text": "Nichts davon heißt, dass die Verbindung weg ist. Es heißt, dass sie leise geworden ist — und Leises lässt sich mit Aufmerksamkeit wieder lauter stellen."
+      }
     },
     {
-      "type": "h2",
-      "text": "Auseinanderwachsen und zusammenwachsen sind keine Gegensätze"
+      "discriminant": "h2",
+      "value": {
+        "text": "Auseinanderwachsen und zusammenwachsen sind keine Gegensätze"
+      }
     },
     {
-      "type": "p",
-      "text": "Es ist ein Irrglaube, dass sich gute Paare nie verändern. Menschen entwickeln sich nun einmal weiter, und lange Beziehungen verlangen, dass Sie einander immer wieder neu kennenlernen — den Menschen, der oder die nicht mehr dieselbe Person ist wie vor fünf Jahren. Schwierig wird es weniger durch die Veränderung selbst als dadurch, dass man ihr keinen Raum lässt, sodass man am Ende eine Erinnerung liebt statt den Menschen, der einem gegenübersitzt."
+      "discriminant": "p",
+      "value": {
+        "text": "Es ist ein Irrglaube, dass sich gute Paare nie verändern. Menschen entwickeln sich nun einmal weiter, und lange Beziehungen verlangen, dass Sie einander immer wieder neu kennenlernen — den Menschen, der oder die nicht mehr dieselbe Person ist wie vor fünf Jahren. Schwierig wird es weniger durch die Veränderung selbst als dadurch, dass man ihr keinen Raum lässt, sodass man am Ende eine Erinnerung liebt statt den Menschen, der einem gegenübersitzt."
+      }
     },
     {
-      "type": "p",
-      "text": "Wieder zueinanderzufinden ist deshalb zum Teil eine Sache der Neugier. Es heißt, sich erneut dafür zu interessieren, wer der oder die andere heute ist — und ihn oder sie neugierig darauf werden zu lassen, wer Sie geworden sind."
+      "discriminant": "p",
+      "value": {
+        "text": "Wieder zueinanderzufinden ist deshalb zum Teil eine Sache der Neugier. Es heißt, sich erneut dafür zu interessieren, wer der oder die andere heute ist — und ihn oder sie neugierig darauf werden zu lassen, wer Sie geworden sind."
+      }
     },
     {
-      "type": "h2",
-      "text": "Erste praktische Schritte zurück zueinander"
+      "discriminant": "h2",
+      "value": {
+        "text": "Erste praktische Schritte zurück zueinander"
+      }
     },
     {
-      "type": "p",
-      "text": "Sie brauchen keine große Geste, um anzufangen. Kleine, verlässliche Schritte aufeinander zu bewirken meist mehr als ein einziges dramatisches Gespräch. Ein paar Ansätze, die viele Paare hilfreich finden:"
+      "discriminant": "p",
+      "value": {
+        "text": "Sie brauchen keine große Geste, um anzufangen. Kleine, verlässliche Schritte aufeinander zu bewirken meist mehr als ein einziges dramatisches Gespräch. Ein paar Ansätze, die viele Paare hilfreich finden:"
+      }
     },
     {
-      "type": "ul",
-      "items": [
-        "Nehmen Sie sich bewusst kurze, geschützte Zeit zum Reden — ohne Handys und ohne Organisatorisches",
-        "Stellen Sie täglich eine wirklich offene Frage und hören Sie dann einfach zu, ohne gleich eine Lösung zu suchen",
-        "Sagen Sie laut, was Sie aneinander schätzen, auch wenn es selbstverständlich scheint",
-        "Achten Sie auf die leisen Signale, mit denen Ihr Gegenüber um Zuwendung bittet, und gehen Sie darauf ein"
-      ]
+      "discriminant": "ul",
+      "value": {
+        "items": [
+          "Nehmen Sie sich bewusst kurze, geschützte Zeit zum Reden — ohne Handys und ohne Organisatorisches",
+          "Stellen Sie täglich eine wirklich offene Frage und hören Sie dann einfach zu, ohne gleich eine Lösung zu suchen",
+          "Sagen Sie laut, was Sie aneinander schätzen, auch wenn es selbstverständlich scheint",
+          "Achten Sie auf die leisen Signale, mit denen Ihr Gegenüber um Zuwendung bittet, und gehen Sie darauf ein"
+        ]
+      }
     },
     {
-      "type": "p",
-      "text": "Wenn kulturelle oder sprachliche Unterschiede zu Ihrer Geschichte gehören, drücken Sie Nähe vielleicht unterschiedlicher aus, als Ihnen bewusst ist. Unsere Gedanken über die [Liebe über Kulturen hinweg](/de/blog/love-across-cultures) sind dazu vielleicht eine hilfreiche Ergänzung."
+      "discriminant": "p",
+      "value": {
+        "text": "Wenn kulturelle oder sprachliche Unterschiede zu Ihrer Geschichte gehören, drücken Sie Nähe vielleicht unterschiedlicher aus, als Ihnen bewusst ist. Unsere Gedanken über die [Liebe über Kulturen hinweg](/de/blog/love-across-cultures) sind dazu vielleicht eine hilfreiche Ergänzung."
+      }
     },
     {
-      "type": "quote",
-      "text": "Sie müssen nicht mehr die sein, die Sie früher waren, um sich wieder nah zu sein. Sie müssen nur bereit sein, den Menschen zu begegnen, die Sie geworden sind.",
-      "attribution": "Theresa Frische"
+      "discriminant": "quote",
+      "value": {
+        "text": "Sie müssen nicht mehr die sein, die Sie früher waren, um sich wieder nah zu sein. Sie müssen nur bereit sein, den Menschen zu begegnen, die Sie geworden sind.",
+        "attribution": "Theresa Frische"
+      }
     },
     {
-      "type": "h2",
-      "text": "Wann gemeinsame Unterstützung sinnvoll ist"
+      "discriminant": "h2",
+      "value": {
+        "text": "Wann gemeinsame Unterstützung sinnvoll ist"
+      }
     },
     {
-      "type": "p",
-      "text": "Manchmal sind gerade die Gespräche, die Sie am dringendsten führen müssten, allein am schwersten zu beginnen. Ein neutraler, warmer Raum kann es möglich machen, das auszusprechen, was immer wieder stecken bleibt, und einander ohne die üblichen Abwehrhaltungen zuzuhören. Genau das bietet die Paarberatung."
+      "discriminant": "p",
+      "value": {
+        "text": "Manchmal sind gerade die Gespräche, die Sie am dringendsten führen müssten, allein am schwersten zu beginnen. Ein neutraler, warmer Raum kann es möglich machen, das auszusprechen, was immer wieder stecken bleibt, und einander ohne die üblichen Abwehrhaltungen zuzuhören. Genau das bietet die Paarberatung."
+      }
     },
     {
-      "type": "p",
-      "text": "Wenn Sie das gemeinsam erkunden möchten, erfahren Sie mehr darüber, wie wir [zusammenarbeiten](/de/angebot), oder [buchen Sie einfach ein kostenloses Kennenlerngespräch](/de/contact). Antworten auf häufige Fragen zur Paarberatung finden Sie in den [FAQ](/de/faq). Sich Unterstützung zu holen, ist kein Eingeständnis, dass die Beziehung gescheitert ist. Es ist eine gemeinsame Entscheidung, weiterzuwachsen — zusammen."
+      "discriminant": "p",
+      "value": {
+        "text": "Wenn Sie das gemeinsam erkunden möchten, erfahren Sie mehr darüber, wie wir [zusammenarbeiten](/de/angebot), oder [buchen Sie einfach ein kostenloses Kennenlerngespräch](/de/contact). Antworten auf häufige Fragen zur Paarberatung finden Sie in den [FAQ](/de/faq). Sich Unterstützung zu holen, ist kein Eingeständnis, dass die Beziehung gescheitert ist. Es ist eine gemeinsame Entscheidung, weiterzuwachsen — zusammen."
+      }
     }
   ]
 }

@@ -1,6 +1,4 @@
 {
-  "metaTitle": "Datenschutzerklärung — Theresa Frische",
-  "metaDescription": "Wie personenbezogene Daten auf dieser Website verarbeitet werden, im Einklang mit der DSGVO und dem Schweizer nDSG.",
   "heading": "Datenschutzerklärung",
   "intro": "Ihre Privatsphäre ist wichtig. Diese Erklärung beschreibt, welche personenbezogenen Daten bei der Nutzung dieser Website erhoben werden, warum und welche Rechte Sie haben. Sie ist so verfasst, dass sie den Anforderungen der EU-Datenschutz-Grundverordnung (DSGVO) und des Schweizer Bundesgesetzes über den Datenschutz (nDSG / DSG) entspricht.",
   "sections": [
@@ -85,5 +83,7 @@
         "Die für Beratungsleistungen geltenden Bedingungen — unter anderem zu Sitzungen, Zahlung, Absage, Vertraulichkeit und Widerrufsrecht — finden Sie in den [Allgemeinen Geschäftsbedingungen](/de/agb)."
       ]
     }
-  ]
+  ],
+  "metaTitle": "Datenschutzerklärung — Theresa Frische",
+  "metaDescription": "Wie personenbezogene Daten auf dieser Website verarbeitet werden, im Einklang mit der DSGVO und dem Schweizer nDSG."
 }

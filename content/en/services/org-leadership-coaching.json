@@ -1,6 +1,4 @@
 {
-  "metaTitle": "Leadership Coaching — Theresa Frische",
-  "metaDescription": "Individual online coaching for leaders: self-leadership, healthy boundaries and a sustainable way of carrying pressure and responsibility. 60 minutes, EN or DE.",
   "eyebrow": "For Organisations",
   "heading": "Leadership coaching",
   "lead": "Individual coaching for leaders who want to strengthen their self-leadership, set healthy boundaries and develop a sustainable way of handling pressure and responsibility.",
@@ -34,5 +32,7 @@
       "label": "Switching off in an always-on job",
       "href": "/blog/switching-off-always-on-job"
     }
-  ]
+  ],
+  "metaTitle": "Leadership Coaching — Theresa Frische",
+  "metaDescription": "Individual online coaching for leaders: self-leadership, healthy boundaries and a sustainable way of carrying pressure and responsibility. 60 minutes, EN or DE."
 }

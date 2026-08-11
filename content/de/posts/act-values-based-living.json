@@ -6,83 +6,119 @@
   "excerpt": "Oft entscheiden wir aus Sorge, andere zu enttäuschen. Die Gedanken hinter ACT eröffnen einen anderen Weg: die eigenen Werte benennen, Raum schaffen für das, was sich dazwischenstellt, und aus dem handeln, was wirklich zählt.",
   "body": [
     {
-      "type": "p",
-      "text": "Viele unserer Entscheidungen sind weniger davon geprägt, was wir wollen, als davon, was wir vermeiden möchten. Wir übernehmen das Projekt, weil ein Nein undankbar wirken würde. Wir bleiben, weil ein Weggehen jemanden enttäuschen würde. Und dann wundern wir uns, warum sich ein Leben voller guter Dinge so eigenartig luftlos anfühlen kann. Von außen ist alles in Ordnung. Von innen ist es die Ordnung anderer Menschen."
+      "discriminant": "p",
+      "value": {
+        "text": "Viele unserer Entscheidungen sind weniger davon geprägt, was wir wollen, als davon, was wir vermeiden möchten. Wir übernehmen das Projekt, weil ein Nein undankbar wirken würde. Wir bleiben, weil ein Weggehen jemanden enttäuschen würde. Und dann wundern wir uns, warum sich ein Leben voller guter Dinge so eigenartig luftlos anfühlen kann. Von außen ist alles in Ordnung. Von innen ist es die Ordnung anderer Menschen."
+      }
     },
     {
-      "type": "p",
-      "text": "Acceptance and Commitment Therapy, meist zu ACT abgekürzt, setzt an einer anderen Stelle an. ACT ist ein Modell, das aus der Forschung der klinischen Psychologie hervorgegangen ist; ich lasse mich in der Beratung von seinen Ideen leiten, biete es aber nicht als fertiges Programm an. Statt zu verlangen, dass Sie erst anders fühlen, bevor Sie handeln dürfen, stellt es eine einfachere Frage: Wenn Zweifel und alte Gewohnheiten ohnehin mitfahren — in welche Richtung wollen Sie eigentlich unterwegs sein? Diese Richtung nennt ACT Werte, und die eigenen zu finden ist ein großer Teil dessen, was innere Klarheit bedeutet."
+      "discriminant": "p",
+      "value": {
+        "text": "Acceptance and Commitment Therapy, meist zu ACT abgekürzt, setzt an einer anderen Stelle an. ACT ist ein Modell, das aus der Forschung der klinischen Psychologie hervorgegangen ist; ich lasse mich in der Beratung von seinen Ideen leiten, biete es aber nicht als fertiges Programm an. Statt zu verlangen, dass Sie erst anders fühlen, bevor Sie handeln dürfen, stellt es eine einfachere Frage: Wenn Zweifel und alte Gewohnheiten ohnehin mitfahren — in welche Richtung wollen Sie eigentlich unterwegs sein? Diese Richtung nennt ACT Werte, und die eigenen zu finden ist ein großer Teil dessen, was innere Klarheit bedeutet."
+      }
     },
     {
-      "type": "h2",
-      "text": "Werte sind Richtungen, keine Ziele"
+      "discriminant": "h2",
+      "value": {
+        "text": "Werte sind Richtungen, keine Ziele"
+      }
     },
     {
-      "type": "p",
-      "text": "Ein Ziel kann man erreichen und abhaken: die Beförderung, den Halbmarathon, den Umzug ins Ausland. Ein Wert ist eine Qualität des Handelns, für die Sie sich Ihr ganzes Leben lang immer wieder entscheiden können — Ehrlichkeit, Neugier, Mut, für die Menschen an Ihrer Seite verlässlich da zu sein. Ziele sind Orte auf einer Landkarte. Werte sind die Himmelsrichtung, in die Sie gehen."
+      "discriminant": "p",
+      "value": {
+        "text": "Ein Ziel kann man erreichen und abhaken: die Beförderung, den Halbmarathon, den Umzug ins Ausland. Ein Wert ist eine Qualität des Handelns, für die Sie sich Ihr ganzes Leben lang immer wieder entscheiden können — Ehrlichkeit, Neugier, Mut, für die Menschen an Ihrer Seite verlässlich da zu sein. Ziele sind Orte auf einer Landkarte. Werte sind die Himmelsrichtung, in die Sie gehen."
+      }
     },
     {
-      "type": "p",
-      "text": "Das befreit auf stille Weise. Ziele können scheitern; ein Wert lässt sich nur vernachlässigen, aber nicht wegnehmen. Wenn Ihnen Verbundenheit wichtig ist und eine Freundschaft endet, steht Verbundenheit Ihnen morgen weiterhin offen. Wer sein Selbstbild ausschließlich auf Ziele baut, erlebt jeden Rückschlag als Identitätskrise. Ruht es auf Werten, tun Rückschläge weiterhin weh — sie lassen Sie aber nicht ohne Richtung zurück."
+      "discriminant": "p",
+      "value": {
+        "text": "Das befreit auf stille Weise. Ziele können scheitern; ein Wert lässt sich nur vernachlässigen, aber nicht wegnehmen. Wenn Ihnen Verbundenheit wichtig ist und eine Freundschaft endet, steht Verbundenheit Ihnen morgen weiterhin offen. Wer sein Selbstbild ausschließlich auf Ziele baut, erlebt jeden Rückschlag als Identitätskrise. Ruht es auf Werten, tun Rückschläge weiterhin weh — sie lassen Sie aber nicht ohne Richtung zurück."
+      }
     },
     {
-      "type": "p",
-      "text": "Die eigenen Werte zu finden heißt weniger, sie zu erfinden, als zu bemerken, was längst da ist:"
+      "discriminant": "p",
+      "value": {
+        "text": "Die eigenen Werte zu finden heißt weniger, sie zu erfinden, als zu bemerken, was längst da ist:"
+      }
     },
     {
-      "type": "ul",
-      "items": [
-        "Die Momente, in denen Sie sich am meisten wie Sie selbst fühlen — mit welcher Haltung waren Sie da?",
-        "Was Sie an anderen leise beneiden; oft zeigt es auf etwas, das Sie beiseitegelegt haben.",
-        "Was Sie zuverlässig wütend macht; Ärger hält häufig Wache vor einem Wert, der übergangen wurde.",
-        "Die kleinen Entscheidungen, auf die Sie stolz sind, obwohl niemand sie bemerkt hat.",
-        "Wofür Sie in Erinnerung bleiben möchten: für Ihre Art, mit Menschen umzugehen, nicht für Ihre Erfolge."
-      ]
+      "discriminant": "ul",
+      "value": {
+        "items": [
+          "Die Momente, in denen Sie sich am meisten wie Sie selbst fühlen — mit welcher Haltung waren Sie da?",
+          "Was Sie an anderen leise beneiden; oft zeigt es auf etwas, das Sie beiseitegelegt haben.",
+          "Was Sie zuverlässig wütend macht; Ärger hält häufig Wache vor einem Wert, der übergangen wurde.",
+          "Die kleinen Entscheidungen, auf die Sie stolz sind, obwohl niemand sie bemerkt hat.",
+          "Wofür Sie in Erinnerung bleiben möchten: für Ihre Art, mit Menschen umzugehen, nicht für Ihre Erfolge."
+        ]
+      }
     },
     {
-      "type": "h2",
-      "text": "Sich von Gedanken lösen, die das Ruder führen"
+      "discriminant": "h2",
+      "value": {
+        "text": "Sich von Gedanken lösen, die das Ruder führen"
+      }
     },
     {
-      "type": "p",
-      "text": "ACT verwendet den Begriff kognitive Defusion. Das klingt technisch und meint etwas ziemlich Gewöhnliches: die eigenen Gedanken lockerer zu halten. Gedanken treten den ganzen Tag über im Tonfall von Tatsachen auf. \"So jemand bin ich nicht.\" \"Wenn ich sie enttäusche, ist das unverzeihlich.\" Wir prüfen diese Sätze selten. Wir gehorchen ihnen einfach."
+      "discriminant": "p",
+      "value": {
+        "text": "ACT verwendet den Begriff kognitive Defusion. Das klingt technisch und meint etwas ziemlich Gewöhnliches: die eigenen Gedanken lockerer zu halten. Gedanken treten den ganzen Tag über im Tonfall von Tatsachen auf. \"So jemand bin ich nicht.\" \"Wenn ich sie enttäusche, ist das unverzeihlich.\" Wir prüfen diese Sätze selten. Wir gehorchen ihnen einfach."
+      }
     },
     {
-      "type": "p",
-      "text": "Defusion ist der Wechsel davon, in einem Gedanken zu stecken, dahin, zu bemerken, dass man einen Gedanken hat. In der Praxis kann das so klein sein wie drei zusätzliche Worte: nicht \"Ich werde mich blamieren\", sondern \"Ich habe den Gedanken, dass ich mich blamieren werde.\" Am Inhalt ändert sich nichts. Was sich ändert, ist der Raum darum herum — und genau diesen Raum brauchen Sie, um wählen zu können. Es geht nie darum, mit dem Gedanken zu streiten oder ihn gegen einen freundlicheren zu tauschen, sondern nur darum, ihn nicht mehr lenken zu lassen."
+      "discriminant": "p",
+      "value": {
+        "text": "Defusion ist der Wechsel davon, in einem Gedanken zu stecken, dahin, zu bemerken, dass man einen Gedanken hat. In der Praxis kann das so klein sein wie drei zusätzliche Worte: nicht \"Ich werde mich blamieren\", sondern \"Ich habe den Gedanken, dass ich mich blamieren werde.\" Am Inhalt ändert sich nichts. Was sich ändert, ist der Raum darum herum — und genau diesen Raum brauchen Sie, um wählen zu können. Es geht nie darum, mit dem Gedanken zu streiten oder ihn gegen einen freundlicheren zu tauschen, sondern nur darum, ihn nicht mehr lenken zu lassen."
+      }
     },
     {
-      "type": "h2",
-      "text": "Raum schaffen für das, was sich nicht wegdiskutieren lässt"
+      "discriminant": "h2",
+      "value": {
+        "text": "Raum schaffen für das, was sich nicht wegdiskutieren lässt"
+      }
     },
     {
-      "type": "p",
-      "text": "Die andere Hälfte des Modells ist Bereitschaft, manchmal Akzeptanz genannt, und sie wird am häufigsten missverstanden. Sie bedeutet nicht, schwierige Gefühle gut zu finden oder sich in eine Situation zu fügen, die sich ändern müsste. Sie bedeutet, den zweiten, zehrenden Kampf loszulassen: den Kampf gegen die Tatsache, dass Sie fühlen, was Sie fühlen."
+      "discriminant": "p",
+      "value": {
+        "text": "Die andere Hälfte des Modells ist Bereitschaft, manchmal Akzeptanz genannt, und sie wird am häufigsten missverstanden. Sie bedeutet nicht, schwierige Gefühle gut zu finden oder sich in eine Situation zu fügen, die sich ändern müsste. Sie bedeutet, den zweiten, zehrenden Kampf loszulassen: den Kampf gegen die Tatsache, dass Sie fühlen, was Sie fühlen."
+      }
     },
     {
-      "type": "p",
-      "text": "Die meisten von uns stecken enorme Energie in diesen zweiten Kampf — anspannen, ablenken, überbereiten, um drei Uhr morgens Gespräche im Kopf führen. Das Paradox, auf das ACT zeigt: Die Anstrengung, etwas nicht zu fühlen, hält es meist länger im Raum. Raum schaffen ist nichts Passives; es ist ein bewusstes Lockern des Griffs, und es setzt Energie frei, die vorher ins Leere lief. Wenn Sie die körperliche Seite davon interessiert, passt mein [Leitfaden zum Nervensystem in einfachen Worten](/de/blog/nervous-system-plain-english-guide) gut dazu."
+      "discriminant": "p",
+      "value": {
+        "text": "Die meisten von uns stecken enorme Energie in diesen zweiten Kampf — anspannen, ablenken, überbereiten, um drei Uhr morgens Gespräche im Kopf führen. Das Paradox, auf das ACT zeigt: Die Anstrengung, etwas nicht zu fühlen, hält es meist länger im Raum. Raum schaffen ist nichts Passives; es ist ein bewusstes Lockern des Griffs, und es setzt Energie frei, die vorher ins Leere lief. Wenn Sie die körperliche Seite davon interessiert, passt mein [Leitfaden zum Nervensystem in einfachen Worten](/de/blog/nervous-system-plain-english-guide) gut dazu."
+      }
     },
     {
-      "type": "h2",
-      "text": "Kleine Schritte und Entscheidungen, die endlich klar sind"
+      "discriminant": "h2",
+      "value": {
+        "text": "Kleine Schritte und Entscheidungen, die endlich klar sind"
+      }
     },
     {
-      "type": "p",
-      "text": "Werte ohne Handeln bleiben Dekoration. Engagiertes Handeln heißt, eine Richtung in Schritte zu übersetzen, die klein genug sind, dass Sie sie diese Woche wirklich gehen: ein klar ausgesprochener Satz in einer Besprechung, das Notebook an einem einzigen Abend im anderen Zimmer, die Nachricht, die Sie seit einem Monat im Kopf formulieren. Zehn kleine, an Werten ausgerichtete Schritte tun mehr für das Gefühl innerer Stimmigkeit als eine heldenhafte Geste und danach drei Monate nichts. Genau hier beginnt sich oft der Abstand zwischen [gut funktionieren und sich gut fühlen](/de/blog/functioning-well-vs-feeling-well) zu schließen."
+      "discriminant": "p",
+      "value": {
+        "text": "Werte ohne Handeln bleiben Dekoration. Engagiertes Handeln heißt, eine Richtung in Schritte zu übersetzen, die klein genug sind, dass Sie sie diese Woche wirklich gehen: ein klar ausgesprochener Satz in einer Besprechung, das Notebook an einem einzigen Abend im anderen Zimmer, die Nachricht, die Sie seit einem Monat im Kopf formulieren. Zehn kleine, an Werten ausgerichtete Schritte tun mehr für das Gefühl innerer Stimmigkeit als eine heldenhafte Geste und danach drei Monate nichts. Genau hier beginnt sich oft der Abstand zwischen [gut funktionieren und sich gut fühlen](/de/blog/functioning-well-vs-feeling-well) zu schließen."
+      }
     },
     {
-      "type": "p",
-      "text": "Wenn Menschen mit einer Entscheidung kommen, die sie nicht treffen können, liegt es selten daran, dass die Möglichkeiten wirklich gleichwertig sind. Es liegt daran, dass jede Möglichkeit stillschweigend zu einer Frage darüber umgeschrieben wurde, wer enttäuscht sein wird. Sobald die Frage sich ändert — von \"Welche Wahl hält alle bei Laune?\" zu \"Welche Wahl bewegt mich in Richtung dessen, was mir wichtig ist?\" — wird das Entscheiden selten leicht, aber meist klar. Klarheit und Leichtigkeit sind nicht dasselbe, und Klarheit ist das, was bleibt."
+      "discriminant": "p",
+      "value": {
+        "text": "Wenn Menschen mit einer Entscheidung kommen, die sie nicht treffen können, liegt es selten daran, dass die Möglichkeiten wirklich gleichwertig sind. Es liegt daran, dass jede Möglichkeit stillschweigend zu einer Frage darüber umgeschrieben wurde, wer enttäuscht sein wird. Sobald die Frage sich ändert — von \"Welche Wahl hält alle bei Laune?\" zu \"Welche Wahl bewegt mich in Richtung dessen, was mir wichtig ist?\" — wird das Entscheiden selten leicht, aber meist klar. Klarheit und Leichtigkeit sind nicht dasselbe, und Klarheit ist das, was bleibt."
+      }
     },
     {
-      "type": "quote",
-      "text": "Sie müssen sich nicht bereit fühlen, um in die gewählte Richtung zu gehen. Die Bereitschaft kommt meist hinterher, wenn überhaupt.",
-      "attribution": "Theresa Frische"
+      "discriminant": "quote",
+      "value": {
+        "text": "Sie müssen sich nicht bereit fühlen, um in die gewählte Richtung zu gehen. Die Bereitschaft kommt meist hinterher, wenn überhaupt.",
+        "attribution": "Theresa Frische"
+      }
     },
     {
-      "type": "p",
-      "text": "Genau darum geht es in einem großen Teil unserer gemeinsamen Arbeit in der [psychologischen Beratung](/de/angebot/psychologische-beratung): die eigenen Werte von den übernommenen Erwartungen zu trennen und dann zu klären, was ein Leben, das sich an den ersten ausrichtet, tatsächlich von Ihnen verlangen würde. Besonders hilfreich ist das mitten in einem Übergang, weshalb ich darüber geschrieben habe, [warum große Lebensveränderungen schwerer wiegen, als sie sollten](/de/blog/why-big-life-changes-feel-harder). Wenn Ihnen etwas davon vertraut vorkommt, lesen Sie gern, [wie ich arbeite](/de/ueber-mich), oder nehmen Sie einfach [Kontakt auf](/de/contact) — Sie müssen nicht mit fertig sortierten Werten kommen."
+      "discriminant": "p",
+      "value": {
+        "text": "Genau darum geht es in einem großen Teil unserer gemeinsamen Arbeit in der [psychologischen Beratung](/de/angebot/psychologische-beratung): die eigenen Werte von den übernommenen Erwartungen zu trennen und dann zu klären, was ein Leben, das sich an den ersten ausrichtet, tatsächlich von Ihnen verlangen würde. Besonders hilfreich ist das mitten in einem Übergang, weshalb ich darüber geschrieben habe, [warum große Lebensveränderungen schwerer wiegen, als sie sollten](/de/blog/why-big-life-changes-feel-harder). Wenn Ihnen etwas davon vertraut vorkommt, lesen Sie gern, [wie ich arbeite](/de/ueber-mich), oder nehmen Sie einfach [Kontakt auf](/de/contact) — Sie müssen nicht mit fertig sortierten Werten kommen."
+      }
     }
   ]
 }

@@ -6,74 +6,106 @@
   "excerpt": "Warum Stress bei Menschen, die weiter gut funktionieren, oft übersehen wird und wie sich die ersten Anzeichen von Überforderung von innen anfühlen.",
   "body": [
     {
-      "type": "p",
-      "text": "Von außen wirkt alles in Ordnung. Sie halten Ihre Termine ein, Sie sind für die Menschen da, die auf Sie zählen, Sie halten alle Bälle in der Luft. Und doch stimmt irgendwo unter der ruhigen Oberfläche etwas nicht — eine leise, dauernde Müdigkeit, gegen die auch Schlaf nicht ankommt, eine Leere dort, wo früher Begeisterung war, das Gefühl, das eigene Leben eher zu verwalten als zu leben."
+      "discriminant": "p",
+      "value": {
+        "text": "Von außen wirkt alles in Ordnung. Sie halten Ihre Termine ein, Sie sind für die Menschen da, die auf Sie zählen, Sie halten alle Bälle in der Luft. Und doch stimmt irgendwo unter der ruhigen Oberfläche etwas nicht — eine leise, dauernde Müdigkeit, gegen die auch Schlaf nicht ankommt, eine Leere dort, wo früher Begeisterung war, das Gefühl, das eigene Leben eher zu verwalten als zu leben."
+      }
     },
     {
-      "type": "p",
-      "text": "Das ist das stille Paradox: Wer nach außen bestens funktioniert, steht innerlich oft unter enormem Druck. Gerade die Tüchtigkeit, für die man Anerkennung bekommt, verbirgt, wie erschöpft man längst ist. Wer gut damit umgehen kann, dem trauen die anderen — und oft auch man selbst — zu, dass alles in Ordnung ist. Ob es einem wirklich gut geht, ist damit aber noch lange nicht gesagt."
+      "discriminant": "p",
+      "value": {
+        "text": "Das ist das stille Paradox: Wer nach außen bestens funktioniert, steht innerlich oft unter enormem Druck. Gerade die Tüchtigkeit, für die man Anerkennung bekommt, verbirgt, wie erschöpft man längst ist. Wer gut damit umgehen kann, dem trauen die anderen — und oft auch man selbst — zu, dass alles in Ordnung ist. Ob es einem wirklich gut geht, ist damit aber noch lange nicht gesagt."
+      }
     },
     {
-      "type": "h2",
-      "text": "Funktionieren ist ein Verhalten. Fühlen ist ein Erleben."
+      "discriminant": "h2",
+      "value": {
+        "text": "Funktionieren ist ein Verhalten. Fühlen ist ein Erleben."
+      }
     },
     {
-      "type": "p",
-      "text": "Funktionieren beschreibt, was Sie noch schaffen: zur Arbeit gehen, die E-Mails beantworten, die Gespräche führen. Fühlen beschreibt, was es Sie kostet. Bei vielen fähigen, gewissenhaften Menschen können diese beiden weit auseinandergehen, bevor es überhaupt jemandem auffällt. Man kann bestens funktionieren und dabei still auf dem Zahnfleisch gehen."
+      "discriminant": "p",
+      "value": {
+        "text": "Funktionieren beschreibt, was Sie noch schaffen: zur Arbeit gehen, die E-Mails beantworten, die Gespräche führen. Fühlen beschreibt, was es Sie kostet. Bei vielen fähigen, gewissenhaften Menschen können diese beiden weit auseinandergehen, bevor es überhaupt jemandem auffällt. Man kann bestens funktionieren und dabei still auf dem Zahnfleisch gehen."
+      }
     },
     {
-      "type": "p",
-      "text": "Der Abstand wächst meist ganz allmählich. Bewältigungsstrategien, die sich einmal tragfähig anfühlten — durchhalten, sich beschäftigt halten, die eigenen Bedürfnisse hintanstellen — tragen gerade so weit, dass es nie einen klaren Moment zum Innehalten gibt. Bis irgendwann die Mühe, weiterzumachen, mehr wird, als man noch aufbringen kann."
+      "discriminant": "p",
+      "value": {
+        "text": "Der Abstand wächst meist ganz allmählich. Bewältigungsstrategien, die sich einmal tragfähig anfühlten — durchhalten, sich beschäftigt halten, die eigenen Bedürfnisse hintanstellen — tragen gerade so weit, dass es nie einen klaren Moment zum Innehalten gibt. Bis irgendwann die Mühe, weiterzumachen, mehr wird, als man noch aufbringen kann."
+      }
     },
     {
-      "type": "h2",
-      "text": "Frühe Anzeichen, die man leicht übergeht"
+      "discriminant": "h2",
+      "value": {
+        "text": "Frühe Anzeichen, die man leicht übergeht"
+      }
     },
     {
-      "type": "p",
-      "text": "Überforderung kündigt sich selten mit Getöse an. Häufiger zeigt sie sich in kleinen, leicht zu übergehenden Dingen — Signale, die man nur zu gern als vorübergehend stressige Phase abtut."
+      "discriminant": "p",
+      "value": {
+        "text": "Überforderung kündigt sich selten mit Getöse an. Häufiger zeigt sie sich in kleinen, leicht zu übergehenden Dingen — Signale, die man nur zu gern als vorübergehend stressige Phase abtut."
+      }
     },
     {
-      "type": "ul",
-      "items": [
-        "Ruhe, die nicht erholt — man wacht müde auf, Wochenenden füllen die Reserven nicht wieder auf.",
-        "Eine schrumpfende Gefühlswelt — weniger Freude, weniger Ärger, ein allgemeines „ist mir alles einerlei\".",
-        "Kleine Aufgaben, die sich unverhältnismäßig schwer anfühlen.",
-        "Der Rückzug von den Menschen und Dingen, die einem sonst Halt geben.",
-        "Ein Körper, der Buch führt — Anspannung, unruhiger Schlaf, ein Magen, der sich schon vor Wochenbeginn verkrampft."
-      ]
+      "discriminant": "ul",
+      "value": {
+        "items": [
+          "Ruhe, die nicht erholt — man wacht müde auf, Wochenenden füllen die Reserven nicht wieder auf.",
+          "Eine schrumpfende Gefühlswelt — weniger Freude, weniger Ärger, ein allgemeines „ist mir alles einerlei\".",
+          "Kleine Aufgaben, die sich unverhältnismäßig schwer anfühlen.",
+          "Der Rückzug von den Menschen und Dingen, die einem sonst Halt geben.",
+          "Ein Körper, der Buch führt — Anspannung, unruhiger Schlaf, ein Magen, der sich schon vor Wochenbeginn verkrampft."
+        ]
+      }
     },
     {
-      "type": "p",
-      "text": "Nichts davon ist ein Versagen. Es sind Hinweise. Körper und Nervensystem haben ihre Wege zu zeigen, wenn die Last zu lange zu groß ist — und diese Zeichen früh zu erkennen, ist weit gütiger, als zu warten, bis sie sich nicht mehr übersehen lassen."
+      "discriminant": "p",
+      "value": {
+        "text": "Nichts davon ist ein Versagen. Es sind Hinweise. Körper und Nervensystem haben ihre Wege zu zeigen, wenn die Last zu lange zu groß ist — und diese Zeichen früh zu erkennen, ist weit gütiger, als zu warten, bis sie sich nicht mehr übersehen lassen."
+      }
     },
     {
-      "type": "h2",
-      "text": "Warum „ich sollte das doch hinkriegen\" so viele festhält"
+      "discriminant": "h2",
+      "value": {
+        "text": "Warum „ich sollte das doch hinkriegen\" so viele festhält"
+      }
     },
     {
-      "type": "p",
-      "text": "Einer der Sätze, die ich am häufigsten höre, geht ungefähr so: „Andere schaffen das doch auch, also sollte ich das auch.\" Doch wie viel Sie gerade zu tragen haben, sagt nichts über Ihre Stärke aus, und weiter durchzuhalten heißt noch nicht, dass es Ihnen gut geht. Die Überzeugung, dass eigentlich alles in Ordnung sein müsste, kann Sie gerade davon abhalten, sich Unterstützung zu holen, solange das noch mit wenig Aufwand möglich wäre."
+      "discriminant": "p",
+      "value": {
+        "text": "Einer der Sätze, die ich am häufigsten höre, geht ungefähr so: „Andere schaffen das doch auch, also sollte ich das auch.\" Doch wie viel Sie gerade zu tragen haben, sagt nichts über Ihre Stärke aus, und weiter durchzuhalten heißt noch nicht, dass es Ihnen gut geht. Die Überzeugung, dass eigentlich alles in Ordnung sein müsste, kann Sie gerade davon abhalten, sich Unterstützung zu holen, solange das noch mit wenig Aufwand möglich wäre."
+      }
     },
     {
-      "type": "p",
-      "text": "Es gibt noch einen leiseren Preis. Wenn Sie über lange Zeit die eigenen Signale übergehen — ruhig bleiben, obwohl Sie es nicht sind, Ja sagen, wenn Sie Nein meinen —, verlieren Sie womöglich den Kontakt zu sich selbst. Diese Entfremdung, die viele beschreiben, ist oft genau das: ein leises Sich-fremd-Werden gegenüber dem eigenen Innenleben."
+      "discriminant": "p",
+      "value": {
+        "text": "Es gibt noch einen leiseren Preis. Wenn Sie über lange Zeit die eigenen Signale übergehen — ruhig bleiben, obwohl Sie es nicht sind, Ja sagen, wenn Sie Nein meinen —, verlieren Sie womöglich den Kontakt zu sich selbst. Diese Entfremdung, die viele beschreiben, ist oft genau das: ein leises Sich-fremd-Werden gegenüber dem eigenen Innenleben."
+      }
     },
     {
-      "type": "h2",
-      "text": "Ein anderer Anfang"
+      "discriminant": "h2",
+      "value": {
+        "text": "Ein anderer Anfang"
+      }
     },
     {
-      "type": "p",
-      "text": "Wieder in Verbindung zu kommen, beginnt meist nicht damit, mehr zu tun, sondern damit, wahrzunehmen. Sich selbst zu erlauben, eine einfache, ehrliche Frage zu stellen: Wie geht es mir eigentlich? Nicht wie funktioniere ich, nicht wie halte ich durch — sondern wie es mir geht."
+      "discriminant": "p",
+      "value": {
+        "text": "Wieder in Verbindung zu kommen, beginnt meist nicht damit, mehr zu tun, sondern damit, wahrzunehmen. Sich selbst zu erlauben, eine einfache, ehrliche Frage zu stellen: Wie geht es mir eigentlich? Nicht wie funktioniere ich, nicht wie halte ich durch — sondern wie es mir geht."
+      }
     },
     {
-      "type": "p",
-      "text": "Genau hier kann [die Einzelberatung](/de/angebot/psychologische-beratung) helfen — ein verlässlicher Raum zum Nachdenken, um zur Ruhe zu kommen und dem zuzuhören, was bisher unausgesprochen blieb. Manchmal geht es darum, zu verstehen, wie sich die Belastung aufgebaut hat. Manchmal darum, behutsam neue Wege auszuprobieren, mit den eigenen Bedürfnissen, den Beziehungen und dem Tempo des eigenen Lebens umzugehen. Das Ziel ist nicht, dass Sie noch besser funktionieren, sondern dass Sie sich wieder mehr wie Sie selbst fühlen."
+      "discriminant": "p",
+      "value": {
+        "text": "Genau hier kann [die Einzelberatung](/de/angebot/psychologische-beratung) helfen — ein verlässlicher Raum zum Nachdenken, um zur Ruhe zu kommen und dem zuzuhören, was bisher unausgesprochen blieb. Manchmal geht es darum, zu verstehen, wie sich die Belastung aufgebaut hat. Manchmal darum, behutsam neue Wege auszuprobieren, mit den eigenen Bedürfnissen, den Beziehungen und dem Tempo des eigenen Lebens umzugehen. Das Ziel ist nicht, dass Sie noch besser funktionieren, sondern dass Sie sich wieder mehr wie Sie selbst fühlen."
+      }
     },
     {
-      "type": "p",
-      "text": "Wenn Sie sich in irgendetwas davon wiedererkennen, heißt das nicht, dass mit Ihnen etwas nicht stimmt. Es kann schlicht heißen, dass sich etwas verschoben hat und dass die Bewältigungsweisen, die Sie bis hierher getragen haben, ein Update brauchen. Wenn Ihnen diese Muster bekannt vorkommen, hilft Ihnen vielleicht auch der Beitrag über [die frühen Anzeichen von Burnout](/de/blog/running-on-empty-early-signs-of-burnout). Das ist kein Zusammenbruch. Es ist eine Einladung, wieder in Beziehung zu sich selbst zu treten."
+      "discriminant": "p",
+      "value": {
+        "text": "Wenn Sie sich in irgendetwas davon wiedererkennen, heißt das nicht, dass mit Ihnen etwas nicht stimmt. Es kann schlicht heißen, dass sich etwas verschoben hat und dass die Bewältigungsweisen, die Sie bis hierher getragen haben, ein Update brauchen. Wenn Ihnen diese Muster bekannt vorkommen, hilft Ihnen vielleicht auch der Beitrag über [die frühen Anzeichen von Burnout](/de/blog/running-on-empty-early-signs-of-burnout). Das ist kein Zusammenbruch. Es ist eine Einladung, wieder in Beziehung zu sich selbst zu treten."
+      }
     }
   ]
 }

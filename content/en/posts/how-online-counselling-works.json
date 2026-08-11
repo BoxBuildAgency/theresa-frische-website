@@ -6,74 +6,106 @@
   "excerpt": "What to expect from online counselling, whether it really works, and practical tips for a good session.",
   "body": [
     {
-      "type": "p",
-      "text": "For a long time, counselling meant travelling to an office, sitting in a waiting room, and meeting in person. That still has its place. But for a growing number of people — especially those living international lives, working across time zones, or simply short on time — online counselling has become the way they get support. If you are wondering how it works and whether it is really as good, this guide is for you."
+      "discriminant": "p",
+      "value": {
+        "text": "For a long time, counselling meant travelling to an office, sitting in a waiting room, and meeting in person. That still has its place. But for a growing number of people — especially those living international lives, working across time zones, or simply short on time — online counselling has become the way they get support. If you are wondering how it works and whether it is really as good, this guide is for you."
+      }
     },
     {
-      "type": "p",
-      "text": "The honest answer is that online counselling can be every bit as meaningful as meeting in a room together. What matters most in counselling is the quality of the relationship and the attention you receive — and both of those travel surprisingly well through a screen."
+      "discriminant": "p",
+      "value": {
+        "text": "The honest answer is that online counselling can be every bit as meaningful as meeting in a room together. What matters most in counselling is the quality of the relationship and the attention you receive — and both of those travel surprisingly well through a screen."
+      }
     },
     {
-      "type": "h2",
-      "text": "What actually happens in an online session"
+      "discriminant": "h2",
+      "value": {
+        "text": "What actually happens in an online session"
+      }
     },
     {
-      "type": "p",
-      "text": "In practice, an online session looks a lot like an in-person one, just held over a secure video call. We agree a time, you find a quiet and private spot, and we meet face to face on screen for the session. We talk, we pause, we notice what comes up — the same reflective, unhurried process, simply in a different setting."
+      "discriminant": "p",
+      "value": {
+        "text": "In practice, an online session looks a lot like an in-person one, just held over a secure video call. We agree a time, you find a quiet and private spot, and we meet face to face on screen for the session. We talk, we pause, we notice what comes up — the same reflective, unhurried process, simply in a different setting."
+      }
     },
     {
-      "type": "p",
-      "text": "Because my work is often body-aware, drawing on approaches like Somatic Experiencing, we can still pay attention to what is happening in your body as we talk — the tightness in your shoulders, the pace of your breath, the moment something eases. You can learn more about that side of the work in [what is Somatic Experiencing](/blog/what-is-somatic-experiencing). None of that depends on being in the same room."
+      "discriminant": "p",
+      "value": {
+        "text": "Because my work is often body-aware, drawing on approaches like Somatic Experiencing, we can still pay attention to what is happening in your body as we talk — the tightness in your shoulders, the pace of your breath, the moment something eases. You can learn more about that side of the work in [what is Somatic Experiencing](/blog/what-is-somatic-experiencing). None of that depends on being in the same room."
+      }
     },
     {
-      "type": "h2",
-      "text": "Does online counselling really work?"
+      "discriminant": "h2",
+      "value": {
+        "text": "Does online counselling really work?"
+      }
     },
     {
-      "type": "p",
-      "text": "This is the question people ask most, and it is a fair one. Many people are surprised by how natural it feels once they begin. Being in your own space can actually help you settle and speak more openly than you might in an unfamiliar office. There is no commute afterwards, no rush back to your day — just a little time to let the session land."
+      "discriminant": "p",
+      "value": {
+        "text": "This is the question people ask most, and it is a fair one. Many people are surprised by how natural it feels once they begin. Being in your own space can actually help you settle and speak more openly than you might in an unfamiliar office. There is no commute afterwards, no rush back to your day — just a little time to let the session land."
+      }
     },
     {
-      "type": "p",
-      "text": "Online counselling also removes some very real barriers. It makes support possible when you have moved abroad, when there is no counsellor nearby who speaks your language, when your schedule is unpredictable, or when leaving the house on a hard day feels like too much. For people building a life across borders, that accessibility can be the difference between getting support and going without. If that is your situation, you may find [finding an English-speaking counsellor when you live abroad](/blog/english-speaking-counsellor-abroad) helpful too."
+      "discriminant": "p",
+      "value": {
+        "text": "Online counselling also removes some very real barriers. It makes support possible when you have moved abroad, when there is no counsellor nearby who speaks your language, when your schedule is unpredictable, or when leaving the house on a hard day feels like too much. For people building a life across borders, that accessibility can be the difference between getting support and going without. If that is your situation, you may find [finding an English-speaking counsellor when you live abroad](/blog/english-speaking-counsellor-abroad) helpful too."
+      }
     },
     {
-      "type": "h2",
-      "text": "Setting yourself up for a good session"
+      "discriminant": "h2",
+      "value": {
+        "text": "Setting yourself up for a good session"
+      }
     },
     {
-      "type": "p",
-      "text": "A little preparation goes a long way. You do not need anything fancy — just a few simple conditions that let you be present:"
+      "discriminant": "p",
+      "value": {
+        "text": "A little preparation goes a long way. You do not need anything fancy — just a few simple conditions that let you be present:"
+      }
     },
     {
-      "type": "ul",
-      "items": [
-        "A quiet, private space where you will not be overheard or interrupted for the length of the session.",
-        "A stable internet connection, and headphones if you have them — they help the conversation feel more intimate.",
-        "A comfortable seat, a glass of water, and perhaps a blanket or something grounding within reach.",
-        "A few minutes beforehand to arrive properly — closing other tabs, silencing your phone, taking a breath.",
-        "A small buffer afterwards, if you can, rather than jumping straight into your next meeting."
-      ]
+      "discriminant": "ul",
+      "value": {
+        "items": [
+          "A quiet, private space where you will not be overheard or interrupted for the length of the session.",
+          "A stable internet connection, and headphones if you have them — they help the conversation feel more intimate.",
+          "A comfortable seat, a glass of water, and perhaps a blanket or something grounding within reach.",
+          "A few minutes beforehand to arrive properly — closing other tabs, silencing your phone, taking a breath.",
+          "A small buffer afterwards, if you can, rather than jumping straight into your next meeting."
+        ]
+      }
     },
     {
-      "type": "p",
-      "text": "If privacy at home is difficult, we can think about that together — some people take their session in a parked car, in a booked room, or with headphones and a white-noise app running by the door. There is almost always a workable solution."
+      "discriminant": "p",
+      "value": {
+        "text": "If privacy at home is difficult, we can think about that together — some people take their session in a parked car, in a booked room, or with headphones and a white-noise app running by the door. There is almost always a workable solution."
+      }
     },
     {
-      "type": "h2",
-      "text": "Getting the most from the work"
+      "discriminant": "h2",
+      "value": {
+        "text": "Getting the most from the work"
+      }
     },
     {
-      "type": "p",
-      "text": "The technology is only the container. What fills it is your willingness to be honest — with me and with yourself — and to let the session be whatever it needs to be that day. Some sessions are full of words; others are quieter and more reflective. Both are useful."
+      "discriminant": "p",
+      "value": {
+        "text": "The technology is only the container. What fills it is your willingness to be honest — with me and with yourself — and to let the session be whatever it needs to be that day. Some sessions are full of words; others are quieter and more reflective. Both are useful."
+      }
     },
     {
-      "type": "p",
-      "text": "It also helps to let things continue gently between sessions: noticing what stayed with you, giving yourself permission to feel it, sometimes jotting down a thought to bring back. Counselling is not only the hour we spend together; it is the slower shift that unfolds around it."
+      "discriminant": "p",
+      "value": {
+        "text": "It also helps to let things continue gently between sessions: noticing what stayed with you, giving yourself permission to feel it, sometimes jotting down a thought to bring back. Counselling is not only the hour we spend together; it is the slower shift that unfolds around it."
+      }
     },
     {
-      "type": "p",
-      "text": "If you are curious whether online counselling could work for you, the easiest next step is a short conversation. You can [book a discovery call](/contact) to talk it through, [get in touch](/contact) with any practical questions, or read the [frequently asked questions](/faq) if you would like more detail first. There is no pressure — just a chance to see how it feels."
+      "discriminant": "p",
+      "value": {
+        "text": "If you are curious whether online counselling could work for you, the easiest next step is a short conversation. You can [book a discovery call](/contact) to talk it through, [get in touch](/contact) with any practical questions, or read the [frequently asked questions](/faq) if you would like more detail first. There is no pressure — just a chance to see how it feels."
+      }
     }
   ]
 }

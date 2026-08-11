@@ -1,6 +1,4 @@
 {
-  "metaTitle": "Allgemeine Geschäftsbedingungen — Theresa Frische",
-  "metaDescription": "Die Allgemeinen Geschäftsbedingungen für Beratungsleistungen von Theresa Frische: Geltungsbereich, Art der Leistung, Sitzungen, Zahlung, Absage, Vertraulichkeit, Widerruf und Haftung.",
   "heading": "Allgemeine Geschäftsbedingungen",
   "sections": [
     {
@@ -80,5 +78,7 @@
       ]
     }
   ],
-  "version": "Stand: 30. Juli 2026"
+  "version": "Stand: 30. Juli 2026",
+  "metaTitle": "Allgemeine Geschäftsbedingungen — Theresa Frische",
+  "metaDescription": "Die Allgemeinen Geschäftsbedingungen für Beratungsleistungen von Theresa Frische: Geltungsbereich, Art der Leistung, Sitzungen, Zahlung, Absage, Vertraulichkeit, Widerruf und Haftung."
 }

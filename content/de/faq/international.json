@@ -1,5 +1,6 @@
 {
   "title": "International & Expat-Leben",
+  "order": 6,
   "items": [
     {
       "q": "Arbeiten Sie mit Expats und Internationals?",
@@ -21,6 +22,5 @@
       "q": "Arbeiten Sie mit interkulturellen Paaren?",
       "a": "Ja. Interkulturelle Paare begegnen oft Unterschieden in Sprache, familiären Erwartungen und Vorstellungen von Zuhause, was eine Beziehung ebenso bereichern wie belasten kann. Ich arbeite mit Paaren auf Deutsch und auf Englisch und kann Sie online über verschiedene Orte und Zeitzonen hinweg begleiten. Mir ist wichtig, dass Sie einander tiefer verstehen und eine gemeinsame Art zu leben finden, die Sie beide würdigt."
     }
-  ],
-  "order": 6
+  ]
 }

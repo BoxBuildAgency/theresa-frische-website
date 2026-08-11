@@ -1,6 +1,4 @@
 {
-  "metaTitle": "Organisations — Workplace Wellbeing | Theresa Frische",
-  "metaDescription": "Workplace wellbeing, keynotes, workshops, and employee counselling support for organisations in Germany and Switzerland. Over eight years of experience.",
   "eyebrow": "For Organisations",
   "heading": "Corporate mental health & workplace wellbeing",
   "lead": "Mental health at work is not a luxury — it is the foundation for high-performing, engaged, and resilient teams.",
@@ -17,6 +15,23 @@
     {
       "label": "Delivery",
       "value": "Online or on-site, Germany & Switzerland"
+    }
+  ],
+  "cards": [
+    {
+      "title": "Talks, Workshops & Courses",
+      "body": "Keynotes, workshops, in-depth trainings and 8-week programmes.",
+      "href": "/organisations/talks-workshops-courses"
+    },
+    {
+      "title": "Leadership Coaching",
+      "body": "Individual coaching for leaders on self-leadership and sustainable pressure.",
+      "href": "/organisations/leadership-coaching"
+    },
+    {
+      "title": "Employee Counselling",
+      "body": "Confidential one-to-one support, embedded in your workplace health management.",
+      "href": "/organisations/employee-counselling"
     }
   ],
   "formats": {
@@ -104,21 +119,6 @@
     "heading": "Let's talk about your organisation",
     "body": "For enquiries about workshops, programmes, or leadership support, please reach out directly. I'm happy to discuss what would be most useful for your context."
   },
-  "cards": [
-    {
-      "title": "Talks, Workshops & Courses",
-      "body": "Keynotes, workshops, in-depth trainings and 8-week programmes.",
-      "href": "/organisations/talks-workshops-courses"
-    },
-    {
-      "title": "Leadership Coaching",
-      "body": "Individual coaching for leaders on self-leadership and sustainable pressure.",
-      "href": "/organisations/leadership-coaching"
-    },
-    {
-      "title": "Employee Counselling",
-      "body": "Confidential one-to-one support, embedded in your workplace health management.",
-      "href": "/organisations/employee-counselling"
-    }
-  ]
+  "metaTitle": "Organisations — Workplace Wellbeing | Theresa Frische",
+  "metaDescription": "Workplace wellbeing, keynotes, workshops, and employee counselling support for organisations in Germany and Switzerland. Over eight years of experience."
 }

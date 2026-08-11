@@ -1,15 +1,13 @@
 {
-  "metaTitle": "Weekly Wellbeing Community — Theresa Frische",
-  "metaDescription": "A calm weekly online space for mindfulness, stress reduction, and community connection. Tuesdays 20:30–21:30, in English.",
   "eyebrow": "Weekly Wellbeing",
   "heading": "Weekly online mindfulness & wellbeing community",
   "lead": "A calm online space for mindfulness, stress reduction, and community connection.",
+  "imageAlt": "A woman sitting quietly on a wooden dock beside still water at dusk.",
   "intro": [
     "The Weekly Wellbeing Community is your weekly invitation to self-care — a calm, protected space to arrive back with yourself and strengthen your emotional wellbeing for the long term.",
     "In our weekly 60-minute meetings, we spend around 30 to 45 minutes on guided mindfulness practices and nervous system regulation. Afterwards, there is room for a compassionate, judgment-free exchange.",
     "No pressure to perform and no obligation to share: here you are welcome exactly as you are. The aim is a deeper, more authentic sense of connection — with yourself and with a supportive community."
   ],
-  "imageAlt": "A woman sitting quietly on a wooden dock beside still water at dusk.",
   "facts": [
     {
       "label": "When",
@@ -55,5 +53,7 @@
   "closing": {
     "heading": "You are welcome to join",
     "body": "If you'd like to receive more information about the Weekly Wellbeing Community, you are warmly welcome to get in touch."
-  }
+  },
+  "metaTitle": "Weekly Wellbeing Community — Theresa Frische",
+  "metaDescription": "A calm weekly online space for mindfulness, stress reduction, and community connection. Tuesdays 20:30–21:30, in English."
 }

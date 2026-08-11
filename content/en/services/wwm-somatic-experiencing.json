@@ -1,6 +1,4 @@
 {
-  "metaTitle": "Somatic Experiencing® — Theresa Frische",
-  "metaDescription": "Somatic Experiencing® counselling online in English and German: body-oriented work with stress, overwhelm and difficult experiences. Free discovery call.",
   "eyebrow": "Work With Me",
   "heading": "Somatic Experiencing®",
   "lead": "A body-oriented approach to processing stress, overwhelm, and difficult experiences.",
@@ -36,5 +34,7 @@
       "label": "A plain-English guide to your nervous system",
       "href": "/blog/nervous-system-plain-english-guide"
     }
-  ]
+  ],
+  "metaTitle": "Somatic Experiencing® — Theresa Frische",
+  "metaDescription": "Somatic Experiencing® counselling online in English and German: body-oriented work with stress, overwhelm and difficult experiences. Free discovery call."
 }

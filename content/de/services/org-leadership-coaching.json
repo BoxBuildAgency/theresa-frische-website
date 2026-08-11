@@ -1,6 +1,4 @@
 {
-  "metaTitle": "Führungskräfte-Coaching — Theresa Frische",
-  "metaDescription": "Individuelles Online-Coaching für Führungskräfte: Selbstführung, gesunde Grenzen und ein nachhaltiger Umgang mit Belastung und Verantwortung. 60 Minuten, DE/EN.",
   "eyebrow": "Für Unternehmen",
   "heading": "Führungskräfte-Coaching",
   "lead": "Individuelles Coaching für Führungskräfte, die ihre Selbstführung stärken, gesunde Grenzen setzen und einen nachhaltigen Umgang mit Belastung und Verantwortung entwickeln möchten.",
@@ -34,5 +32,7 @@
       "label": "Abschalten in einem Always-on-Job",
       "href": "/de/blog/switching-off-always-on-job"
     }
-  ]
+  ],
+  "metaTitle": "Führungskräfte-Coaching — Theresa Frische",
+  "metaDescription": "Individuelles Online-Coaching für Führungskräfte: Selbstführung, gesunde Grenzen und ein nachhaltiger Umgang mit Belastung und Verantwortung. 60 Minuten, DE/EN."
 }

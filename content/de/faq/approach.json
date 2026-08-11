@@ -1,5 +1,6 @@
 {
   "title": "Ansatz & Methoden",
+  "order": 7,
   "items": [
     {
       "q": "Wie sieht Ihr grundsätzlicher Ansatz aus?",
@@ -25,6 +26,5 @@
       "q": "Wie setzen Sie Achtsamkeit ein?",
       "a": "Ich greife auf achtsamkeitsbasierte Praxis zurück, um Ihnen zu helfen, Ihre Gedanken und automatischen Reaktionen bewusster wahrzunehmen. Wächst dieses Bewusstsein, entsteht ein wenig mehr Raum und damit mehr Freiheit, wie Sie reagieren. Mit der Zeit kann daraus ein ruhigeres, stabileres Verhältnis zum Alltag werden."
     }
-  ],
-  "order": 7
+  ]
 }

@@ -6,65 +6,93 @@
   "excerpt": "Eine leicht verständliche Einführung in Somatic Experiencing, das Nervensystem und warum der Körper wichtig ist, wenn wir unter Stress stehen.",
   "body": [
     {
-      "type": "p",
-      "text": "Die meisten von uns denken bei Stress zuerst an etwas, das im Kopf passiert — an Gedanken, Sorgen und To-do-Listen. Das stimmt auch. Aber Stress sitzt genauso im Körper. Ihr Herzschlag, Ihre Atmung, die verspannten Schultern, der Knoten im Magen: Das sind keine Nebenwirkungen eines stressigen Lebens. So wirkt Stress tatsächlich."
+      "discriminant": "p",
+      "value": {
+        "text": "Die meisten von uns denken bei Stress zuerst an etwas, das im Kopf passiert — an Gedanken, Sorgen und To-do-Listen. Das stimmt auch. Aber Stress sitzt genauso im Körper. Ihr Herzschlag, Ihre Atmung, die verspannten Schultern, der Knoten im Magen: Das sind keine Nebenwirkungen eines stressigen Lebens. So wirkt Stress tatsächlich."
+      }
     },
     {
-      "type": "p",
-      "text": "Somatic Experiencing (SE) ist ein körperorientierter Ansatz, den Dr. Peter Levine entwickelt hat und der genau das ernst nimmt. Er arbeitet mit dem Nervensystem und dem, was der Körper spürt, um Menschen dabei zu begleiten, durch Stress und überwältigende Erfahrungen hindurchzufinden — nicht, indem man sie aus der Distanz analysiert, sondern indem der Körper behutsam nachholen darf, was ihm damals nicht möglich war."
+      "discriminant": "p",
+      "value": {
+        "text": "Somatic Experiencing (SE) ist ein körperorientierter Ansatz, den Dr. Peter Levine entwickelt hat und der genau das ernst nimmt. Er arbeitet mit dem Nervensystem und dem, was der Körper spürt, um Menschen dabei zu begleiten, durch Stress und überwältigende Erfahrungen hindurchzufinden — nicht, indem man sie aus der Distanz analysiert, sondern indem der Körper behutsam nachholen darf, was ihm damals nicht möglich war."
+      }
     },
     {
-      "type": "h2",
-      "text": "Ein kurzer Blick auf das Nervensystem"
+      "discriminant": "h2",
+      "value": {
+        "text": "Ein kurzer Blick auf das Nervensystem"
+      }
     },
     {
-      "type": "p",
-      "text": "Ihr autonomes Nervensystem prüft ständig und ganz leise, ob gerade Sicherheit oder Gefahr herrscht — lange bevor bewusstes Denken einsetzt. Nimmt es eine Anforderung als zu groß wahr, macht es mobil: der vertraute Energieschub von Kampf oder Flucht. Fühlt sich etwas überwältigend oder ausweglos an, kann es das Gegenteil tun — herunterfahren, abstumpfen, erstarren."
+      "discriminant": "p",
+      "value": {
+        "text": "Ihr autonomes Nervensystem prüft ständig und ganz leise, ob gerade Sicherheit oder Gefahr herrscht — lange bevor bewusstes Denken einsetzt. Nimmt es eine Anforderung als zu groß wahr, macht es mobil: der vertraute Energieschub von Kampf oder Flucht. Fühlt sich etwas überwältigend oder ausweglos an, kann es das Gegenteil tun — herunterfahren, abstumpfen, erstarren."
+      }
     },
     {
-      "type": "p",
-      "text": "Diese Reaktionen sind klug und schützen uns. Das Schwierige ist nur: Unter anhaltendem Druck kann das Nervensystem in hoher Anspannung oder im Herunterfahren stecken bleiben, auch wenn die Anforderung längst vorüber ist. Das kann sich so anfühlen, als stünden Sie dauernd unter Strom, angespannt, erschöpft oder seltsam leer — als hätte der Körper nie ganz mitbekommen, dass er sich wieder beruhigen darf."
+      "discriminant": "p",
+      "value": {
+        "text": "Diese Reaktionen sind klug und schützen uns. Das Schwierige ist nur: Unter anhaltendem Druck kann das Nervensystem in hoher Anspannung oder im Herunterfahren stecken bleiben, auch wenn die Anforderung längst vorüber ist. Das kann sich so anfühlen, als stünden Sie dauernd unter Strom, angespannt, erschöpft oder seltsam leer — als hätte der Körper nie ganz mitbekommen, dass er sich wieder beruhigen darf."
+      }
     },
     {
-      "type": "h2",
-      "text": "Was bei Somatic Experiencing wirklich geschieht"
+      "discriminant": "h2",
+      "value": {
+        "text": "Was bei Somatic Experiencing wirklich geschieht"
+      }
     },
     {
-      "type": "p",
-      "text": "SE geht behutsam und in kleinen Schritten vor. Statt Sie zu bitten, schwierige Erlebnisse noch einmal in allen Einzelheiten zu durchleben, richtet sich die Aufmerksamkeit sorgfältig darauf, was der Körper im Augenblick spürt — Empfindungen, kleine Impulse, feine Wechsel zwischen Anspannung und Leichtigkeit."
+      "discriminant": "p",
+      "value": {
+        "text": "SE geht behutsam und in kleinen Schritten vor. Statt Sie zu bitten, schwierige Erlebnisse noch einmal in allen Einzelheiten zu durchleben, richtet sich die Aufmerksamkeit sorgfältig darauf, was der Körper im Augenblick spürt — Empfindungen, kleine Impulse, feine Wechsel zwischen Anspannung und Leichtigkeit."
+      }
     },
     {
-      "type": "ul",
-      "items": [
-        "Nach und nach ein Gespür für Körperempfindungen entwickeln, immer nur so viel, wie sich gut aushalten lässt.",
-        "Wahrnehmen, wo Anspannung oder Aktivierung sitzt — und ebenso wichtig, wo Halt und Leichtigkeit sind.",
-        "Dem Nervensystem erlauben, gebundene Energie langsam abzugeben, sodass sich das Zur-Ruhe-Kommen sicher anfühlt und nicht überschwemmend.",
-        "Das Gefühl innerer Erdung stärken, damit Ihnen Regulation im Alltag leichter zur Verfügung steht."
-      ]
+      "discriminant": "ul",
+      "value": {
+        "items": [
+          "Nach und nach ein Gespür für Körperempfindungen entwickeln, immer nur so viel, wie sich gut aushalten lässt.",
+          "Wahrnehmen, wo Anspannung oder Aktivierung sitzt — und ebenso wichtig, wo Halt und Leichtigkeit sind.",
+          "Dem Nervensystem erlauben, gebundene Energie langsam abzugeben, sodass sich das Zur-Ruhe-Kommen sicher anfühlt und nicht überschwemmend.",
+          "Das Gefühl innerer Erdung stärken, damit Ihnen Regulation im Alltag leichter zur Verfügung steht."
+        ]
+      }
     },
     {
-      "type": "p",
-      "text": "Ein wichtiger Grundsatz lautet: Mehr ist nicht besser. SE bleibt im Rahmen dessen, was ein Mensch tragen kann, und pendelt zwischen Anspannung und Ruhe hin und her, sodass das System aus eigener Erfahrung lernt, dass es aus dem Stress heraus und wieder ins Gleichgewicht zurückfinden kann. Mit der Zeit überträgt sich diese Beweglichkeit auf den Alltag — Sie erholen sich etwas schneller, kommen etwas leichter zur Ruhe."
+      "discriminant": "p",
+      "value": {
+        "text": "Ein wichtiger Grundsatz lautet: Mehr ist nicht besser. SE bleibt im Rahmen dessen, was ein Mensch tragen kann, und pendelt zwischen Anspannung und Ruhe hin und her, sodass das System aus eigener Erfahrung lernt, dass es aus dem Stress heraus und wieder ins Gleichgewicht zurückfinden kann. Mit der Zeit überträgt sich diese Beweglichkeit auf den Alltag — Sie erholen sich etwas schneller, kommen etwas leichter zur Ruhe."
+      }
     },
     {
-      "type": "h2",
-      "text": "Warum der Körper wichtig ist, wenn wir unter Stress stehen"
+      "discriminant": "h2",
+      "value": {
+        "text": "Warum der Körper wichtig ist, wenn wir unter Stress stehen"
+      }
     },
     {
-      "type": "p",
-      "text": "Einsicht allein — zu verstehen, warum es Ihnen so geht, wie es Ihnen geht — ist wertvoll, ändert aber nicht immer, wie der Körper reagiert. Sie können ganz rational wissen, dass Sie sicher sind, und trotzdem spüren, wie sich Ihre Brust zusammenzieht, sobald eine bestimmte E-Mail eintrifft. Genau da kann körperorientierte Arbeit ansetzen. Indem SE das Nervensystem unmittelbar einbezieht, unterstützt es Veränderung dort, wo Stress tatsächlich sitzt."
+      "discriminant": "p",
+      "value": {
+        "text": "Einsicht allein — zu verstehen, warum es Ihnen so geht, wie es Ihnen geht — ist wertvoll, ändert aber nicht immer, wie der Körper reagiert. Sie können ganz rational wissen, dass Sie sicher sind, und trotzdem spüren, wie sich Ihre Brust zusammenzieht, sobald eine bestimmte E-Mail eintrifft. Genau da kann körperorientierte Arbeit ansetzen. Indem SE das Nervensystem unmittelbar einbezieht, unterstützt es Veränderung dort, wo Stress tatsächlich sitzt."
+      }
     },
     {
-      "type": "p",
-      "text": "In meiner Arbeit ist Somatic Experiencing eine Sichtweise unter mehreren. Ich greife darauf neben systemischen und achtsamkeitsbasierten Ansätzen zurück, je nachdem, was dem Menschen vor mir gerade guttut — wie eine [Zusammenarbeit](/de/angebot/somatic-experiencing) aussehen könnte, erfahren Sie, wenn Sie diese Arbeitsweise anspricht. Für manche ist die Aufmerksamkeit für den Körper das fehlende Stück; für andere ist sie ein Faden in einer umfassenderen Auseinandersetzung. Wenn Sie ein umfassenderes Bild davon möchten, wie diese Zustände wirken, passt meine [verständliche Einführung in das Nervensystem](/de/blog/nervous-system-plain-english-guide) eng dazu. Häufige Fragen dazu, wie Somatic Experiencing in den Sitzungen zum Einsatz kommt, beantworte ich in den [FAQ](/de/faq)."
+      "discriminant": "p",
+      "value": {
+        "text": "In meiner Arbeit ist Somatic Experiencing eine Sichtweise unter mehreren. Ich greife darauf neben systemischen und achtsamkeitsbasierten Ansätzen zurück, je nachdem, was dem Menschen vor mir gerade guttut — wie eine [Zusammenarbeit](/de/angebot/somatic-experiencing) aussehen könnte, erfahren Sie, wenn Sie diese Arbeitsweise anspricht. Für manche ist die Aufmerksamkeit für den Körper das fehlende Stück; für andere ist sie ein Faden in einer umfassenderen Auseinandersetzung. Wenn Sie ein umfassenderes Bild davon möchten, wie diese Zustände wirken, passt meine [verständliche Einführung in das Nervensystem](/de/blog/nervous-system-plain-english-guide) eng dazu. Häufige Fragen dazu, wie Somatic Experiencing in den Sitzungen zum Einsatz kommt, beantworte ich in den [FAQ](/de/faq)."
+      }
     },
     {
-      "type": "h2",
-      "text": "Ein freundlicherer Umgang mit den eigenen Reaktionen"
+      "discriminant": "h2",
+      "value": {
+        "text": "Ein freundlicherer Umgang mit den eigenen Reaktionen"
+      }
     },
     {
-      "type": "p",
-      "text": "Das vielleicht am stillsten Wirksame an SE ist, dass sich Ihr Verhältnis zu den eigenen Reaktionen verändert. Statt gegen Ihre Anspannung anzukämpfen oder vor Ihrer Erschöpfung zu erschrecken, beginnen Sie, diesen Zuständen mit Neugier zu begegnen — als bedeutsame Signale eines Systems, das nach Kräften versucht hat, Sie zu schützen. Von hier aus haben Erdung und innerer Halt Raum zu wachsen."
+      "discriminant": "p",
+      "value": {
+        "text": "Das vielleicht am stillsten Wirksame an SE ist, dass sich Ihr Verhältnis zu den eigenen Reaktionen verändert. Statt gegen Ihre Anspannung anzukämpfen oder vor Ihrer Erschöpfung zu erschrecken, beginnen Sie, diesen Zuständen mit Neugier zu begegnen — als bedeutsame Signale eines Systems, das nach Kräften versucht hat, Sie zu schützen. Von hier aus haben Erdung und innerer Halt Raum zu wachsen."
+      }
     }
   ]
 }

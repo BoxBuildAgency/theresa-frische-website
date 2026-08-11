@@ -6,77 +6,111 @@
   "excerpt": "The particular pressures leaders face, and why psychological support matters at every level.",
   "body": [
     {
-      "type": "p",
-      "text": "There is a quiet assumption built into most leadership roles: that the person at the front is the one who holds steady while everyone else wobbles. Leaders are the ones who absorb the uncertainty, carry the difficult decisions, and keep a calm face in the meeting after the meeting. It is exactly this expectation — to be the steady one — that makes leadership burnout so easy to miss, and so slow to be named."
+      "discriminant": "p",
+      "value": {
+        "text": "There is a quiet assumption built into most leadership roles: that the person at the front is the one who holds steady while everyone else wobbles. Leaders are the ones who absorb the uncertainty, carry the difficult decisions, and keep a calm face in the meeting after the meeting. It is exactly this expectation — to be the steady one — that makes leadership burnout so easy to miss, and so slow to be named."
+      }
     },
     {
-      "type": "p",
-      "text": "In my work with organisations, some of the most depleted people I meet are the ones who look, from the outside, as though they are managing beautifully. They are still delivering. They are still holding the team together. And underneath, they are running on reserves that ran out some time ago."
+      "discriminant": "p",
+      "value": {
+        "text": "In my work with organisations, some of the most depleted people I meet are the ones who look, from the outside, as though they are managing beautifully. They are still delivering. They are still holding the team together. And underneath, they are running on reserves that ran out some time ago."
+      }
     },
     {
-      "type": "h2",
-      "text": "The particular weight leaders carry"
+      "discriminant": "h2",
+      "value": {
+        "text": "The particular weight leaders carry"
+      }
     },
     {
-      "type": "p",
-      "text": "Leadership comes with pressures that are not always visible in a job description. There is the emotional labour of absorbing everyone else's unease — being the one others come to when they are worried, without always having somewhere to take your own concerns in turn. There is the loneliness of decisions that affect livelihoods. And there is the constant, low-level sense of being watched, of setting the tone whether or not you feel like setting it."
+      "discriminant": "p",
+      "value": {
+        "text": "Leadership comes with pressures that are not always visible in a job description. There is the emotional labour of absorbing everyone else's unease — being the one others come to when they are worried, without always having somewhere to take your own concerns in turn. There is the loneliness of decisions that affect livelihoods. And there is the constant, low-level sense of being watched, of setting the tone whether or not you feel like setting it."
+      }
     },
     {
-      "type": "ul",
-      "items": [
-        "Carrying responsibility for outcomes that depend on factors well outside your control.",
-        "Being the emotional shock absorber for a team, while your own strain has nowhere to go.",
-        "A blurred line between the role and the self, so that a hard week at work feels like a personal failing.",
-        "Fewer peers to be honest with, and a worry that candour might be read as weakness."
-      ]
+      "discriminant": "ul",
+      "value": {
+        "items": [
+          "Carrying responsibility for outcomes that depend on factors well outside your control.",
+          "Being the emotional shock absorber for a team, while your own strain has nowhere to go.",
+          "A blurred line between the role and the self, so that a hard week at work feels like a personal failing.",
+          "Fewer peers to be honest with, and a worry that candour might be read as weakness."
+        ]
+      }
     },
     {
-      "type": "p",
-      "text": "None of this makes leaders fragile. It makes them human beings doing an unusually demanding job — one that rarely comes with built-in permission to be tired."
+      "discriminant": "p",
+      "value": {
+        "text": "None of this makes leaders fragile. It makes them human beings doing an unusually demanding job — one that rarely comes with built-in permission to be tired."
+      }
     },
     {
-      "type": "h2",
-      "text": "Why leaders hide it longest"
+      "discriminant": "h2",
+      "value": {
+        "text": "Why leaders hide it longest"
+      }
     },
     {
-      "type": "p",
-      "text": "The reasons leaders conceal their exhaustion are often the very qualities that got them the role. Conscientiousness. A strong sense of duty. Not wanting to let people down. When your identity is bound up with being the reliable one, admitting that you are struggling can feel less like honesty and more like a betrayal of the people counting on you."
+      "discriminant": "p",
+      "value": {
+        "text": "The reasons leaders conceal their exhaustion are often the very qualities that got them the role. Conscientiousness. A strong sense of duty. Not wanting to let people down. When your identity is bound up with being the reliable one, admitting that you are struggling can feel less like honesty and more like a betrayal of the people counting on you."
+      }
     },
     {
-      "type": "p",
-      "text": "There is also a real fear that vulnerability at the top has consequences. A leader who says \"I am overwhelmed\" may worry about unsettling the team, or about how it will be read further up the chain. So the strain gets managed privately — earlier mornings, later nights, a smile held in place — until the gap between how things look and how they feel becomes very wide indeed. If you recognise this pattern, you may find it useful to read about [the difference between functioning well and feeling well](/blog/functioning-well-vs-feeling-well)."
+      "discriminant": "p",
+      "value": {
+        "text": "There is also a real fear that vulnerability at the top has consequences. A leader who says \"I am overwhelmed\" may worry about unsettling the team, or about how it will be read further up the chain. So the strain gets managed privately — earlier mornings, later nights, a smile held in place — until the gap between how things look and how they feel becomes very wide indeed. If you recognise this pattern, you may find it useful to read about [the difference between functioning well and feeling well](/blog/functioning-well-vs-feeling-well)."
+      }
     },
     {
-      "type": "h2",
-      "text": "The early signs, in a leadership shape"
+      "discriminant": "h2",
+      "value": {
+        "text": "The early signs, in a leadership shape"
+      }
     },
     {
-      "type": "p",
-      "text": "Burnout in leadership does not always look like collapse. More often it shows up as a slow erosion of the things that made the work meaningful — a growing cynicism about people you used to believe in, a shortening fuse, a sense of going through the motions. Decisions that once felt clear become effortful. Small irritations land harder than they should. Some of these are familiar [early signs of burnout](/blog/running-on-empty-early-signs-of-burnout), simply wearing a manager's clothes."
+      "discriminant": "p",
+      "value": {
+        "text": "Burnout in leadership does not always look like collapse. More often it shows up as a slow erosion of the things that made the work meaningful — a growing cynicism about people you used to believe in, a shortening fuse, a sense of going through the motions. Decisions that once felt clear become effortful. Small irritations land harder than they should. Some of these are familiar [early signs of burnout](/blog/running-on-empty-early-signs-of-burnout), simply wearing a manager's clothes."
+      }
     },
     {
-      "type": "p",
-      "text": "The tricky part is that competence masks the decline. Because you are still functioning, still shipping the work, it is easy — for you and for everyone around you — to conclude that nothing serious is happening. Until, one day, the effort of holding it together starts to cost more than the work itself."
+      "discriminant": "p",
+      "value": {
+        "text": "The tricky part is that competence masks the decline. Because you are still functioning, still shipping the work, it is easy — for you and for everyone around you — to conclude that nothing serious is happening. Until, one day, the effort of holding it together starts to cost more than the work itself."
+      }
     },
     {
-      "type": "h2",
-      "text": "Why support at the top matters"
+      "discriminant": "h2",
+      "value": {
+        "text": "Why support at the top matters"
+      }
     },
     {
-      "type": "p",
-      "text": "When a leader is depleted, the effect does not stay contained. Teams take their emotional cue from the people who lead them; a stretched, cynical, or absent leader shapes the culture around them, often without meaning to. Supporting leaders well is therefore not a perk — it is one of the most practical investments an organisation can make in the wellbeing of everyone downstream."
+      "discriminant": "p",
+      "value": {
+        "text": "When a leader is depleted, the effect does not stay contained. Teams take their emotional cue from the people who lead them; a stretched, cynical, or absent leader shapes the culture around them, often without meaning to. Supporting leaders well is therefore not a perk — it is one of the most practical investments an organisation can make in the wellbeing of everyone downstream."
+      }
     },
     {
-      "type": "p",
-      "text": "This is part of why I offer [leadership counselling within the organisations I work with](/organisations) — a confidential space, outside the reporting line, where a leader can set down the steady face for an hour and simply be honest about how they are. Not to be fixed, and not to perform recovery, but to think clearly with someone whose only agenda is their wellbeing."
+      "discriminant": "p",
+      "value": {
+        "text": "This is part of why I offer [leadership counselling within the organisations I work with](/organisations) — a confidential space, outside the reporting line, where a leader can set down the steady face for an hour and simply be honest about how they are. Not to be fixed, and not to perform recovery, but to think clearly with someone whose only agenda is their wellbeing."
+      }
     },
     {
-      "type": "quote",
-      "text": "The strongest thing a leader can model is not endurance. It is the willingness to be human, and to look after that humanity on purpose."
+      "discriminant": "quote",
+      "value": {
+        "text": "The strongest thing a leader can model is not endurance. It is the willingness to be human, and to look after that humanity on purpose."
+      }
     },
     {
-      "type": "p",
-      "text": "If any of this feels familiar, it does not mean you are failing at leadership. It may simply mean the role has been asking a great deal of you, quietly, for a long time — and that it is your turn to be supported. You are welcome to [start a conversation about leadership coaching](/organisations/leadership-coaching) whenever the timing feels right."
+      "discriminant": "p",
+      "value": {
+        "text": "If any of this feels familiar, it does not mean you are failing at leadership. It may simply mean the role has been asking a great deal of you, quietly, for a long time — and that it is your turn to be supported. You are welcome to [start a conversation about leadership coaching](/organisations/leadership-coaching) whenever the timing feels right."
+      }
     }
   ]
 }

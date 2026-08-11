@@ -1,6 +1,4 @@
 {
-  "metaTitle": "Burnout-Prävention — Theresa Frische",
-  "metaDescription": "Burnout-Prävention online auf Deutsch und Englisch: Stressmuster erkennen und Erholung finden, bevor Erschöpfung übernimmt. Kostenloses Erstgespräch möglich.",
   "eyebrow": "Angebot",
   "heading": "Burnout-Prävention",
   "lead": "Stressmuster erkennen, bevor aus anhaltender Erschöpfung ein Zusammenbruch wird.",
@@ -36,5 +34,7 @@
       "label": "Frühe Anzeichen von Burnout erkennen",
       "href": "/de/blog/running-on-empty-early-signs-of-burnout"
     }
-  ]
+  ],
+  "metaTitle": "Burnout-Prävention — Theresa Frische",
+  "metaDescription": "Burnout-Prävention online auf Deutsch und Englisch: Stressmuster erkennen und Erholung finden, bevor Erschöpfung übernimmt. Kostenloses Erstgespräch möglich."
 }

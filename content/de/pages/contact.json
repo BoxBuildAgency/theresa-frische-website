@@ -1,9 +1,11 @@
 {
-  "metaTitle": "Kontakt — Kennenlerngespräch buchen | Theresa Frische",
-  "metaDescription": "Melden Sie sich, um ein kostenloses Kennenlerngespräch (15 Minuten) zu buchen oder Fragen zur Beratung, zur Weekly Wellbeing Community oder zur Zusammenarbeit mit Ihrer Organisation zu stellen.",
   "eyebrow": "Kontakt",
   "heading": "Kostenloses Kennenlerngespräch buchen",
   "lead": "Schreiben Sie mir kurz, was Sie herführt, und ich melde mich bei Ihnen. Sie müssen nicht ins Detail gehen — ein paar Zeilen genügen. In der Regel antworte ich innerhalb von 2–3 Werktagen.",
+  "directHeading": "Lieber direkt schreiben?",
+  "directBody": "Sie erreichen mich auch gerne per E-Mail oder telefonisch.",
+  "emailLabel": "E-Mail",
+  "phoneLabel": "Telefon",
   "form": {
     "nameLabel": "Name",
     "namePlaceholder": "Ihr Name",
@@ -25,8 +27,6 @@
       "consent": "Bitte bestätigen Sie, dass Sie die Datenschutzerklärung gelesen haben."
     }
   },
-  "directHeading": "Lieber direkt schreiben?",
-  "directBody": "Sie erreichen mich auch gerne per E-Mail oder telefonisch.",
-  "emailLabel": "E-Mail",
-  "phoneLabel": "Telefon"
+  "metaTitle": "Kontakt — Kennenlerngespräch buchen | Theresa Frische",
+  "metaDescription": "Melden Sie sich, um ein kostenloses Kennenlerngespräch (15 Minuten) zu buchen oder Fragen zur Beratung, zur Weekly Wellbeing Community oder zur Zusammenarbeit mit Ihrer Organisation zu stellen."
 }

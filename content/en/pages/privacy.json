@@ -1,6 +1,4 @@
 {
-  "metaTitle": "Privacy Policy — Theresa Frische",
-  "metaDescription": "How personal data is handled on this website, in accordance with the GDPR and the Swiss FADP (nDSG).",
   "heading": "Privacy Policy",
   "intro": "Your privacy matters. This policy explains what personal data is collected when you use this website, why, and what rights you have. It is written to meet the requirements of the EU General Data Protection Regulation (GDPR) and the Swiss Federal Act on Data Protection (nDSG / FADP).",
   "sections": [
@@ -85,5 +83,7 @@
         "The terms governing counselling services — including sessions, payment, cancellation, confidentiality and the right of withdrawal — are set out in the [Terms & Conditions](/terms)."
       ]
     }
-  ]
+  ],
+  "metaTitle": "Privacy Policy — Theresa Frische",
+  "metaDescription": "How personal data is handled on this website, in accordance with the GDPR and the Swiss FADP (nDSG)."
 }

@@ -6,74 +6,106 @@
   "excerpt": "Was Sie von Online-Beratung erwarten können, ob sie wirklich wirkt und praktische Tipps für eine gute Sitzung.",
   "body": [
     {
-      "type": "p",
-      "text": "Lange Zeit hieß Beratung, in eine Praxis zu fahren, im Wartezimmer zu sitzen und sich persönlich zu treffen. Das hat nach wie vor seinen Platz. Doch für immer mehr Menschen — besonders für jene, die international leben, über Zeitzonen hinweg arbeiten oder schlicht wenig Zeit haben — ist Online-Beratung zu dem Weg geworden, auf dem sie Unterstützung finden. Wenn Sie sich fragen, wie das funktioniert und ob es wirklich genauso gut ist, ist dieser Überblick für Sie."
+      "discriminant": "p",
+      "value": {
+        "text": "Lange Zeit hieß Beratung, in eine Praxis zu fahren, im Wartezimmer zu sitzen und sich persönlich zu treffen. Das hat nach wie vor seinen Platz. Doch für immer mehr Menschen — besonders für jene, die international leben, über Zeitzonen hinweg arbeiten oder schlicht wenig Zeit haben — ist Online-Beratung zu dem Weg geworden, auf dem sie Unterstützung finden. Wenn Sie sich fragen, wie das funktioniert und ob es wirklich genauso gut ist, ist dieser Überblick für Sie."
+      }
     },
     {
-      "type": "p",
-      "text": "Die ehrliche Antwort lautet: Online-Beratung kann genauso bedeutsam sein wie ein Treffen in einem gemeinsamen Raum. Worauf es in der Beratung am meisten ankommt, ist die Qualität der Beziehung und die Aufmerksamkeit, die Sie erfahren — und beides überträgt sich erstaunlich gut über einen Bildschirm."
+      "discriminant": "p",
+      "value": {
+        "text": "Die ehrliche Antwort lautet: Online-Beratung kann genauso bedeutsam sein wie ein Treffen in einem gemeinsamen Raum. Worauf es in der Beratung am meisten ankommt, ist die Qualität der Beziehung und die Aufmerksamkeit, die Sie erfahren — und beides überträgt sich erstaunlich gut über einen Bildschirm."
+      }
     },
     {
-      "type": "h2",
-      "text": "Was in einer Online-Sitzung tatsächlich passiert"
+      "discriminant": "h2",
+      "value": {
+        "text": "Was in einer Online-Sitzung tatsächlich passiert"
+      }
     },
     {
-      "type": "p",
-      "text": "In der Praxis sieht eine Online-Sitzung einer vor Ort sehr ähnlich, nur findet sie über einen sicheren Videoanruf statt. Wir vereinbaren einen Termin, Sie suchen sich einen ruhigen, geschützten Ort, und wir begegnen uns für die Sitzung von Angesicht zu Angesicht auf dem Bildschirm. Wir sprechen, wir halten inne, wir nehmen wahr, was auftaucht — derselbe reflektierende Prozess, ganz ohne Eile, nur eben in einem anderen Rahmen."
+      "discriminant": "p",
+      "value": {
+        "text": "In der Praxis sieht eine Online-Sitzung einer vor Ort sehr ähnlich, nur findet sie über einen sicheren Videoanruf statt. Wir vereinbaren einen Termin, Sie suchen sich einen ruhigen, geschützten Ort, und wir begegnen uns für die Sitzung von Angesicht zu Angesicht auf dem Bildschirm. Wir sprechen, wir halten inne, wir nehmen wahr, was auftaucht — derselbe reflektierende Prozess, ganz ohne Eile, nur eben in einem anderen Rahmen."
+      }
     },
     {
-      "type": "p",
-      "text": "Da meine Arbeit oft körperbewusst ist und auf Ansätze wie Somatic Experiencing zurückgreift, können wir auch weiterhin darauf achten, was in Ihrem Körper vorgeht, während wir sprechen — die Enge in den Schultern, das Tempo Ihres Atems, der Moment, in dem sich etwas löst. Mehr über diese Seite der Arbeit erfahren Sie in [Was ist Somatic Experiencing](/de/blog/what-is-somatic-experiencing). Nichts davon setzt voraus, im selben Raum zu sein."
+      "discriminant": "p",
+      "value": {
+        "text": "Da meine Arbeit oft körperbewusst ist und auf Ansätze wie Somatic Experiencing zurückgreift, können wir auch weiterhin darauf achten, was in Ihrem Körper vorgeht, während wir sprechen — die Enge in den Schultern, das Tempo Ihres Atems, der Moment, in dem sich etwas löst. Mehr über diese Seite der Arbeit erfahren Sie in [Was ist Somatic Experiencing](/de/blog/what-is-somatic-experiencing). Nichts davon setzt voraus, im selben Raum zu sein."
+      }
     },
     {
-      "type": "h2",
-      "text": "Wirkt Online-Beratung wirklich?"
+      "discriminant": "h2",
+      "value": {
+        "text": "Wirkt Online-Beratung wirklich?"
+      }
     },
     {
-      "type": "p",
-      "text": "Das ist die Frage, die am häufigsten gestellt wird, und sie ist berechtigt. Viele sind überrascht, wie natürlich es sich anfühlt, sobald sie erst einmal begonnen haben. In der eigenen Umgebung zu sein kann Ihnen sogar helfen, anzukommen und offener zu sprechen, als Sie es in einer fremden Praxis vielleicht täten. Danach gibt es keinen Heimweg, keine Eile zurück in den Alltag — nur ein wenig Zeit, die Sitzung nachklingen zu lassen."
+      "discriminant": "p",
+      "value": {
+        "text": "Das ist die Frage, die am häufigsten gestellt wird, und sie ist berechtigt. Viele sind überrascht, wie natürlich es sich anfühlt, sobald sie erst einmal begonnen haben. In der eigenen Umgebung zu sein kann Ihnen sogar helfen, anzukommen und offener zu sprechen, als Sie es in einer fremden Praxis vielleicht täten. Danach gibt es keinen Heimweg, keine Eile zurück in den Alltag — nur ein wenig Zeit, die Sitzung nachklingen zu lassen."
+      }
     },
     {
-      "type": "p",
-      "text": "Online-Beratung räumt auch einige ganz reale Hürden aus dem Weg. Sie macht Unterstützung möglich, wenn Sie ins Ausland gezogen sind, wenn es in der Nähe keine Beraterin gibt, die Ihre Sprache spricht, wenn Ihr Terminkalender unberechenbar ist oder wenn es an einem schweren Tag zu viel ist, das Haus zu verlassen. Für Menschen, die sich ein Leben über Grenzen hinweg aufbauen, kann diese Zugänglichkeit den Unterschied machen zwischen Unterstützung bekommen und ganz ohne bleiben. Falls das Ihre Situation ist, finden Sie vielleicht auch [Eine englischsprachige Beraterin finden, wenn Sie im Ausland leben](/de/blog/english-speaking-counsellor-abroad) hilfreich."
+      "discriminant": "p",
+      "value": {
+        "text": "Online-Beratung räumt auch einige ganz reale Hürden aus dem Weg. Sie macht Unterstützung möglich, wenn Sie ins Ausland gezogen sind, wenn es in der Nähe keine Beraterin gibt, die Ihre Sprache spricht, wenn Ihr Terminkalender unberechenbar ist oder wenn es an einem schweren Tag zu viel ist, das Haus zu verlassen. Für Menschen, die sich ein Leben über Grenzen hinweg aufbauen, kann diese Zugänglichkeit den Unterschied machen zwischen Unterstützung bekommen und ganz ohne bleiben. Falls das Ihre Situation ist, finden Sie vielleicht auch [Eine englischsprachige Beraterin finden, wenn Sie im Ausland leben](/de/blog/english-speaking-counsellor-abroad) hilfreich."
+      }
     },
     {
-      "type": "h2",
-      "text": "So schaffen Sie gute Bedingungen für die Sitzung"
+      "discriminant": "h2",
+      "value": {
+        "text": "So schaffen Sie gute Bedingungen für die Sitzung"
+      }
     },
     {
-      "type": "p",
-      "text": "Ein wenig Vorbereitung bewirkt viel. Sie brauchen nichts Aufwendiges — nur ein paar einfache Voraussetzungen, die es Ihnen erlauben, ganz präsent zu sein:"
+      "discriminant": "p",
+      "value": {
+        "text": "Ein wenig Vorbereitung bewirkt viel. Sie brauchen nichts Aufwendiges — nur ein paar einfache Voraussetzungen, die es Ihnen erlauben, ganz präsent zu sein:"
+      }
     },
     {
-      "type": "ul",
-      "items": [
-        "Einen ruhigen, geschützten Ort, an dem Sie für die Dauer der Sitzung nicht mitgehört oder unterbrochen werden.",
-        "Eine stabile Internetverbindung und, falls vorhanden, Kopfhörer — sie lassen das Gespräch vertrauter wirken.",
-        "Einen bequemen Sitzplatz, ein Glas Wasser und vielleicht eine Decke oder etwas Erdendes in Reichweite.",
-        "Ein paar Minuten vorher, um wirklich anzukommen — andere Tabs schließen, das Handy stummschalten, durchatmen.",
-        "Nach Möglichkeit einen kleinen Puffer danach, statt gleich in den nächsten Termin zu hetzen."
-      ]
+      "discriminant": "ul",
+      "value": {
+        "items": [
+          "Einen ruhigen, geschützten Ort, an dem Sie für die Dauer der Sitzung nicht mitgehört oder unterbrochen werden.",
+          "Eine stabile Internetverbindung und, falls vorhanden, Kopfhörer — sie lassen das Gespräch vertrauter wirken.",
+          "Einen bequemen Sitzplatz, ein Glas Wasser und vielleicht eine Decke oder etwas Erdendes in Reichweite.",
+          "Ein paar Minuten vorher, um wirklich anzukommen — andere Tabs schließen, das Handy stummschalten, durchatmen.",
+          "Nach Möglichkeit einen kleinen Puffer danach, statt gleich in den nächsten Termin zu hetzen."
+        ]
+      }
     },
     {
-      "type": "p",
-      "text": "Wenn Privatsphäre zu Hause schwierig ist, überlegen wir gemeinsam — manche halten ihre Sitzung im geparkten Auto, in einem gebuchten Raum oder mit Kopfhörern und einer White-Noise-App an der Tür. Fast immer findet sich eine praktikable Lösung."
+      "discriminant": "p",
+      "value": {
+        "text": "Wenn Privatsphäre zu Hause schwierig ist, überlegen wir gemeinsam — manche halten ihre Sitzung im geparkten Auto, in einem gebuchten Raum oder mit Kopfhörern und einer White-Noise-App an der Tür. Fast immer findet sich eine praktikable Lösung."
+      }
     },
     {
-      "type": "h2",
-      "text": "So holen Sie das Beste aus der Arbeit heraus"
+      "discriminant": "h2",
+      "value": {
+        "text": "So holen Sie das Beste aus der Arbeit heraus"
+      }
     },
     {
-      "type": "p",
-      "text": "Die Technik ist nur das Gefäß. Was es füllt, ist Ihre Bereitschaft, ehrlich zu sein — mit mir und mit sich selbst — und die Sitzung das sein zu lassen, was sie an diesem Tag sein muss. Manche Sitzungen sind voller Worte; andere sind stiller und nachdenklicher. Beides ist wertvoll."
+      "discriminant": "p",
+      "value": {
+        "text": "Die Technik ist nur das Gefäß. Was es füllt, ist Ihre Bereitschaft, ehrlich zu sein — mit mir und mit sich selbst — und die Sitzung das sein zu lassen, was sie an diesem Tag sein muss. Manche Sitzungen sind voller Worte; andere sind stiller und nachdenklicher. Beides ist wertvoll."
+      }
     },
     {
-      "type": "p",
-      "text": "Es hilft auch, das Ganze zwischen den Sitzungen sanft weiterwirken zu lassen: wahrzunehmen, was bei Ihnen nachklingt, sich zu erlauben, es zu fühlen, manchmal einen Gedanken zu notieren, um ihn beim nächsten Mal mitzubringen. Beratung ist nicht nur die Stunde, die wir miteinander verbringen; sie ist die langsamere Entwicklung, die sich darum herum entfaltet."
+      "discriminant": "p",
+      "value": {
+        "text": "Es hilft auch, das Ganze zwischen den Sitzungen sanft weiterwirken zu lassen: wahrzunehmen, was bei Ihnen nachklingt, sich zu erlauben, es zu fühlen, manchmal einen Gedanken zu notieren, um ihn beim nächsten Mal mitzubringen. Beratung ist nicht nur die Stunde, die wir miteinander verbringen; sie ist die langsamere Entwicklung, die sich darum herum entfaltet."
+      }
     },
     {
-      "type": "p",
-      "text": "Wenn Sie neugierig sind, ob Online-Beratung für Sie infrage kommt, ist der einfachste nächste Schritt ein kurzes Gespräch. Sie können ein [Kennenlerngespräch buchen](/de/contact), um es zu besprechen, mit praktischen Fragen [Kontakt aufnehmen](/de/contact) oder vorab die [häufigen Fragen](/de/faq) lesen, wenn Sie erst mehr erfahren möchten. Es gibt keinen Druck — nur die Gelegenheit, zu spüren, wie es sich anfühlt."
+      "discriminant": "p",
+      "value": {
+        "text": "Wenn Sie neugierig sind, ob Online-Beratung für Sie infrage kommt, ist der einfachste nächste Schritt ein kurzes Gespräch. Sie können ein [Kennenlerngespräch buchen](/de/contact), um es zu besprechen, mit praktischen Fragen [Kontakt aufnehmen](/de/contact) oder vorab die [häufigen Fragen](/de/faq) lesen, wenn Sie erst mehr erfahren möchten. Es gibt keinen Druck — nur die Gelegenheit, zu spüren, wie es sich anfühlt."
+      }
     }
   ]
 }

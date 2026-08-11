@@ -1,6 +1,4 @@
 {
-  "metaTitle": "Impressum — Theresa Frische",
-  "metaDescription": "Legal disclosure (Impressum) for the counselling practice of Theresa Frische.",
   "heading": "Impressum",
   "blocks": [
     {
@@ -64,5 +62,7 @@
         "The content and works on these pages created by the site operator are subject to copyright law. Duplication, processing, distribution, and any form of commercialisation beyond the scope of copyright require the written consent of the respective author or creator. Downloads and copies of this site are permitted for private, non-commercial use only."
       ]
     }
-  ]
+  ],
+  "metaTitle": "Impressum — Theresa Frische",
+  "metaDescription": "Legal disclosure (Impressum) for the counselling practice of Theresa Frische."
 }

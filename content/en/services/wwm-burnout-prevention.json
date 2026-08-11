@@ -1,6 +1,4 @@
 {
-  "metaTitle": "Burnout Prevention — Theresa Frische",
-  "metaDescription": "Online burnout prevention counselling in English and German: recognise your stress patterns and recover before exhaustion takes over. Free discovery call.",
   "eyebrow": "Work With Me",
   "heading": "Burnout Prevention",
   "lead": "Recognising your stress patterns before sustained exhaustion turns into collapse.",
@@ -36,5 +34,7 @@
       "label": "Early signs of burnout",
       "href": "/blog/running-on-empty-early-signs-of-burnout"
     }
-  ]
+  ],
+  "metaTitle": "Burnout Prevention — Theresa Frische",
+  "metaDescription": "Online burnout prevention counselling in English and German: recognise your stress patterns and recover before exhaustion takes over. Free discovery call."
 }

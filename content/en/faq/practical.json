@@ -1,5 +1,6 @@
 {
   "title": "Practical & Logistics",
+  "order": 3,
   "items": [
     {
       "q": "Are sessions online or in person?",
@@ -41,6 +42,5 @@
       "q": "Do you offer flexible or evening times?",
       "a": "I do my best to be flexible and to find appointment times that fit around your life, including across different time zones. All sessions are online and arranged by appointment, so we have room to find something that works for you. The best thing is to let me know what suits you when you get in touch. We will do our best to find a good time together."
     }
-  ],
-  "order": 3
+  ]
 }

@@ -1,6 +1,4 @@
 {
-  "metaTitle": "Terms & Conditions — Theresa Frische",
-  "metaDescription": "The terms governing counselling services provided by Theresa Frische: scope, nature of the service, sessions, payment, cancellation, confidentiality, withdrawal and liability.",
   "heading": "Terms & Conditions",
   "sections": [
     {
@@ -80,5 +78,7 @@
       ]
     }
   ],
-  "version": "Version: 30 July 2026"
+  "version": "Version: 30 July 2026",
+  "metaTitle": "Terms & Conditions — Theresa Frische",
+  "metaDescription": "The terms governing counselling services provided by Theresa Frische: scope, nature of the service, sessions, payment, cancellation, confidentiality, withdrawal and liability."
 }

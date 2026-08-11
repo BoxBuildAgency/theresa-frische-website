@@ -1,5 +1,6 @@
 {
   "title": "Für Einzelpersonen",
+  "order": 4,
   "items": [
     {
       "q": "Bei welchen Themen unterstützen Sie Einzelpersonen?",
@@ -25,6 +26,5 @@
       "q": "Kann Beratung mir helfen, mit Stress umzugehen?",
       "a": "Ja. Wenn sich Stress über längere Zeit anstaut, kann er beeinflussen, wie Sie schlafen, denken, mit anderen umgehen und sich im Alltag fühlen. In der Beratung schauen wir, was Ihren Stress nährt, und finden praktische, tragfähige Wege, wieder zur Ruhe zu kommen. Mit der Zeit erleben viele Klient:innen, dass sie ruhiger und klarer werden und dem Leben eher gelassen begegnen, statt nur zu reagieren."
     }
-  ],
-  "order": 4
+  ]
 }

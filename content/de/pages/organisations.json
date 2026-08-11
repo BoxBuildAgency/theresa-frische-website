@@ -1,6 +1,4 @@
 {
-  "metaTitle": "Für Unternehmen — Wohlbefinden am Arbeitsplatz | Theresa Frische",
-  "metaDescription": "Wohlbefinden am Arbeitsplatz, Keynotes, Workshops und Beratungsangebote für Mitarbeitende von Organisationen in Deutschland und der Schweiz. Über acht Jahre Erfahrung.",
   "eyebrow": "Für Unternehmen",
   "heading": "Mentale Gesundheit & Wohlbefinden am Arbeitsplatz",
   "lead": "Mentale Gesundheit am Arbeitsplatz ist kein Luxus — sie ist die Grundlage für leistungsfähige, engagierte und widerstandsfähige Teams.",
@@ -17,6 +15,23 @@
     {
       "label": "Durchführung",
       "value": "Online oder vor Ort, Deutschland & Schweiz"
+    }
+  ],
+  "cards": [
+    {
+      "title": "Vorträge, Workshops & Kurse",
+      "body": "Keynotes, Workshops, vertiefende Trainings und 8-Wochen-Programme.",
+      "href": "/de/fuer-unternehmen/vortraege-workshops-kurse"
+    },
+    {
+      "title": "Führungskräfte-Coaching",
+      "body": "Einzelcoaching für Führungskräfte zu Selbstführung und tragfähigem Umgang mit Druck.",
+      "href": "/de/fuer-unternehmen/fuehrungskraefte-coaching"
+    },
+    {
+      "title": "Beratung für Mitarbeitende",
+      "body": "Vertrauliche Einzelbegleitung, eingebettet in Ihr betriebliches Gesundheitsmanagement.",
+      "href": "/de/fuer-unternehmen/beratung-mitarbeitende"
     }
   ],
   "formats": {
@@ -104,21 +119,6 @@
     "heading": "Sprechen wir über Ihre Organisation",
     "body": "Für Anfragen zu Workshops, Programmen oder der Begleitung von Führungskräften melden Sie sich gerne direkt. Gemeinsam finden wir heraus, was für Ihren Kontext am hilfreichsten ist."
   },
-  "cards": [
-    {
-      "title": "Vorträge, Workshops & Kurse",
-      "body": "Keynotes, Workshops, vertiefende Trainings und 8-Wochen-Programme.",
-      "href": "/de/fuer-unternehmen/vortraege-workshops-kurse"
-    },
-    {
-      "title": "Führungskräfte-Coaching",
-      "body": "Einzelcoaching für Führungskräfte zu Selbstführung und tragfähigem Umgang mit Druck.",
-      "href": "/de/fuer-unternehmen/fuehrungskraefte-coaching"
-    },
-    {
-      "title": "Beratung für Mitarbeitende",
-      "body": "Vertrauliche Einzelbegleitung, eingebettet in Ihr betriebliches Gesundheitsmanagement.",
-      "href": "/de/fuer-unternehmen/beratung-mitarbeitende"
-    }
-  ]
+  "metaTitle": "Für Unternehmen — Wohlbefinden am Arbeitsplatz | Theresa Frische",
+  "metaDescription": "Wohlbefinden am Arbeitsplatz, Keynotes, Workshops und Beratungsangebote für Mitarbeitende von Organisationen in Deutschland und der Schweiz. Über acht Jahre Erfahrung."
 }

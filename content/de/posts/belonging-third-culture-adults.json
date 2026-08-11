@@ -6,70 +6,100 @@
   "excerpt": "Für Erwachsene, die zwischen Kulturen aufgewachsen sind: warum Zugehörigkeit sich so schwer greifen lässt und wie Sie in sich selbst ein festeres Zuhause finden.",
   "body": [
     {
-      "type": "p",
-      "text": "\"Woher kommen Sie?\" — für die meisten Menschen eine harmlose Frage, für Sie eine erstaunlich verzwickte. Nennen Sie das Land in Ihrem Pass? Den Ort, an dem Sie geboren wurden? Die Stadt, in der Sie zur Schule gingen? Oder die, die man Ihrem Akzent anhört? Bis Sie sich für eine Antwort entschieden haben, ist das Gespräch meist längst weitergezogen — und zurück bleibt das vertraute Gefühl, von überall und zugleich von nirgendwo zu sein."
+      "discriminant": "p",
+      "value": {
+        "text": "\"Woher kommen Sie?\" — für die meisten Menschen eine harmlose Frage, für Sie eine erstaunlich verzwickte. Nennen Sie das Land in Ihrem Pass? Den Ort, an dem Sie geboren wurden? Die Stadt, in der Sie zur Schule gingen? Oder die, die man Ihrem Akzent anhört? Bis Sie sich für eine Antwort entschieden haben, ist das Gespräch meist längst weitergezogen — und zurück bleibt das vertraute Gefühl, von überall und zugleich von nirgendwo zu sein."
+      }
     },
     {
-      "type": "p",
-      "text": "Wenn Sie zwischen Kulturen aufgewachsen sind — dem Beruf eines Elternteils hinterhergezogen, zwischen Sprachen gelebt, sich aus vielen Orten ein Ich zusammengesetzt haben —, kennen Sie dieses Gefühl vermutlich gut. Fast überall können Sie sich einfügen, und doch fühlen Sie sich fast nirgends ganz zu Hause. Das ist kein Makel. Es ist die natürliche Gestalt eines Lebens, das über Grenzen hinweg entstanden ist, und es hat es verdient, verstanden statt still weitergetragen zu werden."
+      "discriminant": "p",
+      "value": {
+        "text": "Wenn Sie zwischen Kulturen aufgewachsen sind — dem Beruf eines Elternteils hinterhergezogen, zwischen Sprachen gelebt, sich aus vielen Orten ein Ich zusammengesetzt haben —, kennen Sie dieses Gefühl vermutlich gut. Fast überall können Sie sich einfügen, und doch fühlen Sie sich fast nirgends ganz zu Hause. Das ist kein Makel. Es ist die natürliche Gestalt eines Lebens, das über Grenzen hinweg entstanden ist, und es hat es verdient, verstanden statt still weitergetragen zu werden."
+      }
     },
     {
-      "type": "h2",
-      "text": "Warum Zugehörigkeit Ihnen schwerer fällt"
+      "discriminant": "h2",
+      "value": {
+        "text": "Warum Zugehörigkeit Ihnen schwerer fällt"
+      }
     },
     {
-      "type": "p",
-      "text": "Die meisten Menschen entwickeln Zugehörigkeit, indem sie lange genug an einem Ort bleiben, bis er vertraut wird — dieselben Straßen, dieselben Jahreszeiten, dieselben gemeinsamen Anspielungen. War Ihre Kindheit über mehrere Länder verteilt, konnte dieser feste Hintergrund nie ganz entstehen. Dafür haben Sie etwas Kostbares gewonnen: Anpassungsfähigkeit, Neugier, ein Gespür für das Fremde. Doch Anpassungsfähigkeit hat ihren Preis. Überall dazuzupassen kann unmerklich dasselbe werden wie nirgends dazuzugehören."
+      "discriminant": "p",
+      "value": {
+        "text": "Die meisten Menschen entwickeln Zugehörigkeit, indem sie lange genug an einem Ort bleiben, bis er vertraut wird — dieselben Straßen, dieselben Jahreszeiten, dieselben gemeinsamen Anspielungen. War Ihre Kindheit über mehrere Länder verteilt, konnte dieser feste Hintergrund nie ganz entstehen. Dafür haben Sie etwas Kostbares gewonnen: Anpassungsfähigkeit, Neugier, ein Gespür für das Fremde. Doch Anpassungsfähigkeit hat ihren Preis. Überall dazuzupassen kann unmerklich dasselbe werden wie nirgends dazuzugehören."
+      }
     },
     {
-      "type": "p",
-      "text": "Darunter liegt oft eine Trauer, auch wenn sie selten zur Sprache kommt. Jeder Umzug hieß, Menschen, Orte und Versionen von sich selbst zurückzulassen. Wenn Verluste häufig sind und als Abenteuer verkauft werden, bleibt kaum Raum, sie zu betrauern. Jahre später meldet sich diese unbetrauerte Trauer dann als vage Ruhelosigkeit, als Schwierigkeit, irgendwo anzukommen, oder als das Gefühl, alle anderen hätten eine Landkarte zur Zugehörigkeit erhalten, die man Ihnen irgendwie vorenthalten hat."
+      "discriminant": "p",
+      "value": {
+        "text": "Darunter liegt oft eine Trauer, auch wenn sie selten zur Sprache kommt. Jeder Umzug hieß, Menschen, Orte und Versionen von sich selbst zurückzulassen. Wenn Verluste häufig sind und als Abenteuer verkauft werden, bleibt kaum Raum, sie zu betrauern. Jahre später meldet sich diese unbetrauerte Trauer dann als vage Ruhelosigkeit, als Schwierigkeit, irgendwo anzukommen, oder als das Gefühl, alle anderen hätten eine Landkarte zur Zugehörigkeit erhalten, die man Ihnen irgendwie vorenthalten hat."
+      }
     },
     {
-      "type": "h2",
-      "text": "Der Mythos vom einen wahren Zuhause"
+      "discriminant": "h2",
+      "value": {
+        "text": "Der Mythos vom einen wahren Zuhause"
+      }
     },
     {
-      "type": "p",
-      "text": "Durch vieles an diesem Schmerz zieht sich eine leise Überzeugung: dass es irgendwo da draußen den einen Ort gibt, aus dem Sie wirklich stammen, und dass der Schmerz sich auflösen würde, könnten Sie ihn nur finden — oder dorthin zurückkehren. Für Menschen, die zwischen Kulturen aufgewachsen sind, gibt es diesen Ort meist nicht. Es gibt kein einziges Zuhause, das alles fasst, was Sie ausmacht, denn wer Sie sind, hat sich aus vielem zusammengefügt."
+      "discriminant": "p",
+      "value": {
+        "text": "Durch vieles an diesem Schmerz zieht sich eine leise Überzeugung: dass es irgendwo da draußen den einen Ort gibt, aus dem Sie wirklich stammen, und dass der Schmerz sich auflösen würde, könnten Sie ihn nur finden — oder dorthin zurückkehren. Für Menschen, die zwischen Kulturen aufgewachsen sind, gibt es diesen Ort meist nicht. Es gibt kein einziges Zuhause, das alles fasst, was Sie ausmacht, denn wer Sie sind, hat sich aus vielem zusammengefügt."
+      }
     },
     {
-      "type": "p",
-      "text": "Sich vom Mythos des einen wahren Zuhauses zu verabschieden, mag zunächst wie ein Verlust wirken. Es kann auch eine stille Erleichterung sein. Wenn kein einzelner Ort Sie je ganz hätte fassen können, dann sind Sie nie daran gescheitert, ihn zu finden. Sie haben von Anfang an eine Zugehörigkeit in sich getragen, die immer vielfältig sein würde — verteilt über Menschen und Orte, statt in einem einzigen verwurzelt."
+      "discriminant": "p",
+      "value": {
+        "text": "Sich vom Mythos des einen wahren Zuhauses zu verabschieden, mag zunächst wie ein Verlust wirken. Es kann auch eine stille Erleichterung sein. Wenn kein einzelner Ort Sie je ganz hätte fassen können, dann sind Sie nie daran gescheitert, ihn zu finden. Sie haben von Anfang an eine Zugehörigkeit in sich getragen, die immer vielfältig sein würde — verteilt über Menschen und Orte, statt in einem einzigen verwurzelt."
+      }
     },
     {
-      "type": "h2",
-      "text": "Ein Zuhause in sich selbst aufbauen"
+      "discriminant": "h2",
+      "value": {
+        "text": "Ein Zuhause in sich selbst aufbauen"
+      }
     },
     {
-      "type": "p",
-      "text": "Wenn die äußere Landschaft sich ständig ändert, muss ein festeres Gefühl von Zuhause dort wachsen, wo es Sie begleitet: in Ihnen selbst. Das heißt nicht, auf die Verbindung zu Orten oder Menschen zu verzichten. Es heißt, in sich eine Basis wachsen zu lassen, die nicht allein davon abhängt, wo Sie dieses Jahr gerade leben."
+      "discriminant": "p",
+      "value": {
+        "text": "Wenn die äußere Landschaft sich ständig ändert, muss ein festeres Gefühl von Zuhause dort wachsen, wo es Sie begleitet: in Ihnen selbst. Das heißt nicht, auf die Verbindung zu Orten oder Menschen zu verzichten. Es heißt, in sich eine Basis wachsen zu lassen, die nicht allein davon abhängt, wo Sie dieses Jahr gerade leben."
+      }
     },
     {
-      "type": "ul",
-      "items": [
-        "Benennen Sie die Verluste. Lassen Sie die Abschiede, die Sie nie betrauert haben, als echte Verluste gelten, nicht bloß als Kapitel, die eben zu Ende gingen.",
-        "Setzen Sie Ihre Zugehörigkeit aus vielen Teilen zusammen. Eine Freundschaft über Zeitzonen hinweg, eine Sprache, ein Gericht, ein Ritual — Zugehörigkeit darf ein Mosaik sein und muss nicht ein einziger Stein.",
-        "Achten Sie darauf, wo Sie sich schon wohlfühlen. Das ruhige Gefühl, nach dem Sie suchen, stellt sich vermutlich hin und wieder ein; lernen Sie kennen, was es begünstigt.",
-        "Nehmen Sie sich den Druck, sauber zu antworten. \"Das ist kompliziert — ich bin an mehreren Orten aufgewachsen\" ist eine ganze und ehrliche Antwort.",
-        "Machen Sie Ihre Geschichte zu einer Stärke. Genau die Perspektive, die Sie sich als Außenseiterin fühlen ließ, lässt Sie oft über Unterschiede hinweg mit anderen in Kontakt kommen."
-      ]
+      "discriminant": "ul",
+      "value": {
+        "items": [
+          "Benennen Sie die Verluste. Lassen Sie die Abschiede, die Sie nie betrauert haben, als echte Verluste gelten, nicht bloß als Kapitel, die eben zu Ende gingen.",
+          "Setzen Sie Ihre Zugehörigkeit aus vielen Teilen zusammen. Eine Freundschaft über Zeitzonen hinweg, eine Sprache, ein Gericht, ein Ritual — Zugehörigkeit darf ein Mosaik sein und muss nicht ein einziger Stein.",
+          "Achten Sie darauf, wo Sie sich schon wohlfühlen. Das ruhige Gefühl, nach dem Sie suchen, stellt sich vermutlich hin und wieder ein; lernen Sie kennen, was es begünstigt.",
+          "Nehmen Sie sich den Druck, sauber zu antworten. \"Das ist kompliziert — ich bin an mehreren Orten aufgewachsen\" ist eine ganze und ehrliche Antwort.",
+          "Machen Sie Ihre Geschichte zu einer Stärke. Genau die Perspektive, die Sie sich als Außenseiterin fühlen ließ, lässt Sie oft über Unterschiede hinweg mit anderen in Kontakt kommen."
+        ]
+      }
     },
     {
-      "type": "p",
-      "text": "Nichts davon geschieht an einem einzigen Nachmittag. Doch die Richtung zählt. Statt draußen nach einem Zuhause zu suchen, das nie gepasst hätte, beginnen Sie, ein Gefühl von Zuhause zu pflegen, das Sie in sich tragen — eines, das Ihnen Halt gibt, wohin der nächste Umzug Sie auch führt."
+      "discriminant": "p",
+      "value": {
+        "text": "Nichts davon geschieht an einem einzigen Nachmittag. Doch die Richtung zählt. Statt draußen nach einem Zuhause zu suchen, das nie gepasst hätte, beginnen Sie, ein Gefühl von Zuhause zu pflegen, das Sie in sich tragen — eines, das Ihnen Halt gibt, wohin der nächste Umzug Sie auch führt."
+      }
     },
     {
-      "type": "h2",
-      "text": "Sie müssen das nicht allein sortieren"
+      "discriminant": "h2",
+      "value": {
+        "text": "Sie müssen das nicht allein sortieren"
+      }
     },
     {
-      "type": "p",
-      "text": "Manches lässt sich leichter im Gespräch mit jemandem entwirren, der dieses Gelände kennt. Ein großer Teil meines eigenen Lebens hat zwischen Kulturen und Sprachen stattgefunden, und genau deshalb arbeite ich mit internationalen und interkulturellen Erwachsenen — ein wenig über diesen Hintergrund können Sie auf meiner [Seite über mich](/de/ueber-mich) lesen oder darüber, wie eine [Zusammenarbeit](/de/angebot) aussehen könnte. Zugehörigkeit ist kein Rätsel mit einer einzig richtigen Lösung; sie ist eine Beziehung zu sich selbst, die man pflegen und wachsen lassen kann."
+      "discriminant": "p",
+      "value": {
+        "text": "Manches lässt sich leichter im Gespräch mit jemandem entwirren, der dieses Gelände kennt. Ein großer Teil meines eigenen Lebens hat zwischen Kulturen und Sprachen stattgefunden, und genau deshalb arbeite ich mit internationalen und interkulturellen Erwachsenen — ein wenig über diesen Hintergrund können Sie auf meiner [Seite über mich](/de/ueber-mich) lesen oder darüber, wie eine [Zusammenarbeit](/de/angebot) aussehen könnte. Zugehörigkeit ist kein Rätsel mit einer einzig richtigen Lösung; sie ist eine Beziehung zu sich selbst, die man pflegen und wachsen lassen kann."
+      }
     },
     {
-      "type": "p",
-      "text": "Wenn die Frage, wohin Sie gehören, Sie seit Jahren still begleitet, dürfen Sie sie gern dorthin bringen, wo sie ernst genommen wird. Sie können jederzeit [mit mir Kontakt aufnehmen](/de/contact), um darüber zu sprechen. Von überall und nirgendwo zu sein ist kein Problem, das gelöst werden muss — es ist eine Geschichte, die verstanden werden möchte, und Sie müssen sie nicht allein tragen."
+      "discriminant": "p",
+      "value": {
+        "text": "Wenn die Frage, wohin Sie gehören, Sie seit Jahren still begleitet, dürfen Sie sie gern dorthin bringen, wo sie ernst genommen wird. Sie können jederzeit [mit mir Kontakt aufnehmen](/de/contact), um darüber zu sprechen. Von überall und nirgendwo zu sein ist kein Problem, das gelöst werden muss — es ist eine Geschichte, die verstanden werden möchte, und Sie müssen sie nicht allein tragen."
+      }
     }
   ]
 }

@@ -1,5 +1,6 @@
 {
   "title": "Für Organisationen",
+  "order": 9,
   "items": [
     {
       "q": "Arbeiten Sie mit Unternehmen?",
@@ -25,6 +26,5 @@
       "q": "Welche Themen decken Sie für Teams ab?",
       "a": "Zu den Themen gehören Stress- und Burnout-Prävention, Emotionsregulation, Achtsamkeit am Arbeitsplatz, Kommunikation und Teamdynamik, positive Psychologie, Resilienz und Veränderung sowie die Regulation des Nervensystems. Sie fördern die mentale Gesundheit am Arbeitsplatz und das alltägliche Wohlbefinden im Team. Den Schwerpunkt stimmen wir gern darauf ab, was Ihre Mitarbeitenden am meisten brauchen."
     }
-  ],
-  "order": 9
+  ]
 }

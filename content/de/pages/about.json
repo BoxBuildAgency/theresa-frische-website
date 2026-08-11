@@ -1,16 +1,14 @@
 {
-  "metaTitle": "Über mich — Theresa Frische",
-  "metaDescription": "Theresa Frische ist Systemische & Integrative Beraterin und begleitet Internationals, Expats und Paare durch Veränderung. M.Sc. Klinische Psychologie · Somatic Experiencing® Practitioner.",
   "eyebrow": "Über mich",
   "name": "Theresa Frische",
   "subtitle": "Eine Beraterin für Menschen im Übergang.",
   "credentials": "M.Sc. Klinische Psychologie · Somatic Experiencing® Practitioner · Systemische & Integrative Beraterin",
   "lead": "Seit über acht Jahren begleite ich Menschen und Organisationen durch bedeutsame Veränderungsprozesse — mit tiefer Aufmerksamkeit für die gesamte menschliche Erfahrung.",
+  "imageAlt": "Porträt von Theresa Frische, Systemische & Integrative Beraterin, lächelnd am Fenster.",
   "intro": [
     "Ich weiß, wie es sich anfühlt, wenn das Leben zu viel wird — wenn sich Stress aufbaut, Beziehungen belastet sind oder man das Gefühl hat, den Boden unter den Füßen zu verlieren.",
     "Mit der Zeit habe ich verstanden, wie eng Nervensystem, Beziehungen und Lebensumstände miteinander verwoben sind. Ist ein Bereich überlastet, wirkt sich das oft auf alles andere aus — wie wir fühlen, wie wir in Verbindung gehen, wie wir uns durch die Welt bewegen. Dieses Verständnis steht im Zentrum meiner Arbeit."
   ],
-  "imageAlt": "Porträt von Theresa Frische, Systemische & Integrative Beraterin, lächelnd am Fenster.",
   "lived": {
     "heading": "Ein Leben zwischen Welten",
     "body": [
@@ -61,7 +59,6 @@
       ]
     }
   ],
-  "psyCoNote": "Die Anerkennung dieses Hochschulabschlusses durch die Psychologieberufekommission (PsyKo) ist beantragt und derzeit pendent.",
   "quotes": [
     {
       "text": "Das Leben ist ein Gleichgewicht aus Festhalten und Loslassen.",
@@ -96,5 +93,8 @@
         "body": "HfMDK Frankfurt & CODARTS Rotterdam"
       }
     ]
-  }
+  },
+  "psyCoNote": "Die Anerkennung dieses Hochschulabschlusses durch die Psychologieberufekommission (PsyKo) ist beantragt und derzeit pendent.",
+  "metaTitle": "Über mich — Theresa Frische",
+  "metaDescription": "Theresa Frische ist Systemische & Integrative Beraterin und begleitet Internationals, Expats und Paare durch Veränderung. M.Sc. Klinische Psychologie · Somatic Experiencing® Practitioner."
 }

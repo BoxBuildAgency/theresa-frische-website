@@ -1,5 +1,6 @@
 {
   "title": "Approach & Methods",
+  "order": 7,
   "items": [
     {
       "q": "What is your overall approach?",
@@ -25,6 +26,5 @@
       "q": "How do you use mindfulness?",
       "a": "I draw on Mindfulness-Based Practice to help you develop awareness of your thoughts and reactivity. As that awareness grows, it creates a little more space and, with it, more choice in how you respond. Over time this can bring a calmer, steadier relationship with everyday life."
     }
-  ],
-  "order": 7
+  ]
 }

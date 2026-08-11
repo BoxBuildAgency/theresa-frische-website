@@ -6,78 +6,112 @@
   "excerpt": "Wie nachhaltige Kulturen des Wohlbefindens entstehen — über einmalige Aktionen hinaus.",
   "body": [
     {
-      "type": "p",
-      "text": "Die meisten Organisationen wünschen sich, dass es ihren Mitarbeitenden gut geht. Die Absicht ist aufrichtig, und oft steht auch ein Budget bereit. Und doch verpufft vieles, was unter dem Etikett Wohlbefinden angeboten wird — der Obstkorb, das einmalige Resilienz-Webinar, die Achtsamkeits-App, die niemand mehr öffnet — leise, ohne etwas zu bewegen. Nicht, weil die Ideen schlecht wären, sondern weil Wohlbefinden als einmalige Aktion behandelt wird statt als Kultur."
+      "discriminant": "p",
+      "value": {
+        "text": "Die meisten Organisationen wünschen sich, dass es ihren Mitarbeitenden gut geht. Die Absicht ist aufrichtig, und oft steht auch ein Budget bereit. Und doch verpufft vieles, was unter dem Etikett Wohlbefinden angeboten wird — der Obstkorb, das einmalige Resilienz-Webinar, die Achtsamkeits-App, die niemand mehr öffnet — leise, ohne etwas zu bewegen. Nicht, weil die Ideen schlecht wären, sondern weil Wohlbefinden als einmalige Aktion behandelt wird statt als Kultur."
+      }
     },
     {
-      "type": "p",
-      "text": "Die Frage, die sich zu stellen lohnt, lautet nicht \"Welche Aktion sollen wir durchführen?\", sondern \"Was sorgt eigentlich dafür, dass davon etwas hängen bleibt?\" Nach Jahren der Arbeit mit Teams bin ich überzeugt, dass die Antwort weniger mit dem Programm selbst zu tun hat als mit den Bedingungen drumherum."
+      "discriminant": "p",
+      "value": {
+        "text": "Die Frage, die sich zu stellen lohnt, lautet nicht \"Welche Aktion sollen wir durchführen?\", sondern \"Was sorgt eigentlich dafür, dass davon etwas hängen bleibt?\" Nach Jahren der Arbeit mit Teams bin ich überzeugt, dass die Antwort weniger mit dem Programm selbst zu tun hat als mit den Bedingungen drumherum."
+      }
     },
     {
-      "type": "h2",
-      "text": "Warum einmalige Aktionen selten etwas verändern"
+      "discriminant": "h2",
+      "value": {
+        "text": "Warum einmalige Aktionen selten etwas verändern"
+      }
     },
     {
-      "type": "p",
-      "text": "Ein einzelner Gesundheitstag kann wirklich guttun — ein Moment des Innehaltens, ein nützlicher Gedanke, das Gefühl, dass man sich kümmert. Doch wenn die Menschen danach zur selben unerbittlichen Arbeitslast zurückkehren, zur selben unausgesprochenen Erwartung, immer erreichbar zu sein, und zur selben Führungskraft, die nie abschaltet, ist der Tag binnen einer Woche verpufft. Schlimmer noch: Er kann stillen Zynismus nähren — das Gefühl, dass die Organisation über Wohlbefinden redet, statt es zu leben."
+      "discriminant": "p",
+      "value": {
+        "text": "Ein einzelner Gesundheitstag kann wirklich guttun — ein Moment des Innehaltens, ein nützlicher Gedanke, das Gefühl, dass man sich kümmert. Doch wenn die Menschen danach zur selben unerbittlichen Arbeitslast zurückkehren, zur selben unausgesprochenen Erwartung, immer erreichbar zu sein, und zur selben Führungskraft, die nie abschaltet, ist der Tag binnen einer Woche verpufft. Schlimmer noch: Er kann stillen Zynismus nähren — das Gefühl, dass die Organisation über Wohlbefinden redet, statt es zu leben."
+      }
     },
     {
-      "type": "p",
-      "text": "Nachhaltiges Wohlbefinden ist keine Maßnahme, die man erschöpften Menschen verabreicht. Es ist ein Geflecht alltäglicher Bedingungen, die es Menschen überhaupt erst ermöglichen, gar nicht erst zu erschöpfen."
+      "discriminant": "p",
+      "value": {
+        "text": "Nachhaltiges Wohlbefinden ist keine Maßnahme, die man erschöpften Menschen verabreicht. Es ist ein Geflecht alltäglicher Bedingungen, die es Menschen überhaupt erst ermöglichen, gar nicht erst zu erschöpfen."
+      }
     },
     {
-      "type": "h2",
-      "text": "Die Grundlagen, auf die es wirklich ankommt"
+      "discriminant": "h2",
+      "value": {
+        "text": "Die Grundlagen, auf die es wirklich ankommt"
+      }
     },
     {
-      "type": "p",
-      "text": "Wenn Wohlbefinden in einer Organisation wirklich Wurzeln schlägt, sind darunter meist ein paar Dinge wahr. Sie sind weniger glanzvoll als eine große Aktion, aber sie machen den Unterschied."
+      "discriminant": "p",
+      "value": {
+        "text": "Wenn Wohlbefinden in einer Organisation wirklich Wurzeln schlägt, sind darunter meist ein paar Dinge wahr. Sie sind weniger glanzvoll als eine große Aktion, aber sie machen den Unterschied."
+      }
     },
     {
-      "type": "ul",
-      "items": [
-        "Führungskräfte, die es vorleben — Teams achten weit mehr darauf, was Führungskräfte tun, als darauf, was sie verkünden; wer die eigenen Grenzen schützt, gibt allen anderen die Erlaubnis, es ebenso zu tun.",
-        "Eine ehrliche Arbeitslast — kein noch so gutes Resilienztraining gleicht eine Aufgabe aus, die strukturell nicht zu schaffen ist.",
-        "Psychologische Sicherheit — Menschen nehmen Unterstützung nur an, wenn sie darauf vertrauen, dass ihnen ein eingestandenes Ringen nicht zum Nachteil wird.",
-        "Kontinuität — regelmäßige, vertraute Berührungspunkte statt eines einzelnen großen Vorstoßes.",
-        "Ein echtes Mitspracherecht — Wohlbefinden, das mit den Menschen gestaltet und von dem geformt wird, was sie wirklich brauchen, statt ihnen übergestülpt zu werden."
-      ]
+      "discriminant": "ul",
+      "value": {
+        "items": [
+          "Führungskräfte, die es vorleben — Teams achten weit mehr darauf, was Führungskräfte tun, als darauf, was sie verkünden; wer die eigenen Grenzen schützt, gibt allen anderen die Erlaubnis, es ebenso zu tun.",
+          "Eine ehrliche Arbeitslast — kein noch so gutes Resilienztraining gleicht eine Aufgabe aus, die strukturell nicht zu schaffen ist.",
+          "Psychologische Sicherheit — Menschen nehmen Unterstützung nur an, wenn sie darauf vertrauen, dass ihnen ein eingestandenes Ringen nicht zum Nachteil wird.",
+          "Kontinuität — regelmäßige, vertraute Berührungspunkte statt eines einzelnen großen Vorstoßes.",
+          "Ein echtes Mitspracherecht — Wohlbefinden, das mit den Menschen gestaltet und von dem geformt wird, was sie wirklich brauchen, statt ihnen übergestülpt zu werden."
+        ]
+      }
     },
     {
-      "type": "p",
-      "text": "Achten Sie darauf, wie wenige dieser Punkte eine bestimmte Aktivität betreffen. Die Aktivität ist nur die sichtbare Spitze; getragen wird sie von der Kultur."
+      "discriminant": "p",
+      "value": {
+        "text": "Achten Sie darauf, wie wenige dieser Punkte eine bestimmte Aktivität betreffen. Die Aktivität ist nur die sichtbare Spitze; getragen wird sie von der Kultur."
+      }
     },
     {
-      "type": "h2",
-      "text": "Von der Aktion zum Rhythmus"
+      "discriminant": "h2",
+      "value": {
+        "text": "Von der Aktion zum Rhythmus"
+      }
     },
     {
-      "type": "p",
-      "text": "Eine der verlässlichsten Veränderungen, die ich erlebe, tritt ein, wenn Organisationen aufhören, in Kampagnen zu denken, und anfangen, in Rhythmus zu denken. Ein kurzer, regelmäßiger Berührungspunkt — etwas, das in die gewöhnliche Woche eingewoben ist — bewirkt meist weit mehr als eine gelegentliche große Geste. Er macht das Für-sich-selbst-Sorgen selbstverständlich, hält Wohlbefinden im Blick, ohne viel Aufhebens darum zu machen, und baut die kleinen, wiederkehrenden Gewohnheiten auf, die eine einzelne Aktion nie schaffen kann. Das ist der Gedanke hinter den [wöchentlichen Wohlfühl-Sitzungen](/de/weekly-wellbeing), die ich in Teams anbiete."
+      "discriminant": "p",
+      "value": {
+        "text": "Eine der verlässlichsten Veränderungen, die ich erlebe, tritt ein, wenn Organisationen aufhören, in Kampagnen zu denken, und anfangen, in Rhythmus zu denken. Ein kurzer, regelmäßiger Berührungspunkt — etwas, das in die gewöhnliche Woche eingewoben ist — bewirkt meist weit mehr als eine gelegentliche große Geste. Er macht das Für-sich-selbst-Sorgen selbstverständlich, hält Wohlbefinden im Blick, ohne viel Aufhebens darum zu machen, und baut die kleinen, wiederkehrenden Gewohnheiten auf, die eine einzelne Aktion nie schaffen kann. Das ist der Gedanke hinter den [wöchentlichen Wohlfühl-Sitzungen](/de/weekly-wellbeing), die ich in Teams anbiete."
+      }
     },
     {
-      "type": "p",
-      "text": "Rhythmus schützt auch vor dem größten Feind des Wohlbefindens am Arbeitsplatz: der Kultur der ständigen Erreichbarkeit, die pausenlose Verfügbarkeit mit Engagement gleichsetzt. Wenn Ihr Team nie wirklich abschaltet, hält kein Programm. Es lohnt sich, im Rahmen jeder ernsthaften Bemühung um Wohlbefinden mehr darüber zu lesen, [wie man in einem Job mit ständiger Erreichbarkeit abschaltet](/de/blog/switching-off-always-on-job)."
+      "discriminant": "p",
+      "value": {
+        "text": "Rhythmus schützt auch vor dem größten Feind des Wohlbefindens am Arbeitsplatz: der Kultur der ständigen Erreichbarkeit, die pausenlose Verfügbarkeit mit Engagement gleichsetzt. Wenn Ihr Team nie wirklich abschaltet, hält kein Programm. Es lohnt sich, im Rahmen jeder ernsthaften Bemühung um Wohlbefinden mehr darüber zu lesen, [wie man in einem Job mit ständiger Erreichbarkeit abschaltet](/de/blog/switching-off-always-on-job)."
+      }
     },
     {
-      "type": "h2",
-      "text": "Die Gruppe und den Einzelnen erreichen"
+      "discriminant": "h2",
+      "value": {
+        "text": "Die Gruppe und den Einzelnen erreichen"
+      }
     },
     {
-      "type": "p",
-      "text": "Gutes Wohlbefinden am Arbeitsplatz wirkt auf zwei Ebenen zugleich. Da ist das Kollektive — die Kultur, die Normen, die gemeinsamen Bedingungen — und da ist der Einzelne, denn in jedem Team tragen manche im Stillen mehr als andere. Ein Programm, das immer nur die Gruppe anspricht, kann die Person übersehen, die einen vertraulichen Raum am dringendsten braucht; und eines, das nur Einzelunterstützung bietet, lässt womöglich die Kultur unberührt, die sie zermürbt hat."
+      "discriminant": "p",
+      "value": {
+        "text": "Gutes Wohlbefinden am Arbeitsplatz wirkt auf zwei Ebenen zugleich. Da ist das Kollektive — die Kultur, die Normen, die gemeinsamen Bedingungen — und da ist der Einzelne, denn in jedem Team tragen manche im Stillen mehr als andere. Ein Programm, das immer nur die Gruppe anspricht, kann die Person übersehen, die einen vertraulichen Raum am dringendsten braucht; und eines, das nur Einzelunterstützung bietet, lässt womöglich die Kultur unberührt, die sie zermürbt hat."
+      }
     },
     {
-      "type": "p",
-      "text": "In der Praxis heißt das, Gruppenformate, die die Kultur bewegen, mit der Möglichkeit vertraulicher Einzelberatung für alle zu verbinden, die sie sich wünschen. Wie ich beides zusammenhalte, sehen Sie in [der Arbeit, die ich mit Organisationen mache](/de/fuer-unternehmen)."
+      "discriminant": "p",
+      "value": {
+        "text": "In der Praxis heißt das, Gruppenformate, die die Kultur bewegen, mit der Möglichkeit vertraulicher Einzelberatung für alle zu verbinden, die sie sich wünschen. Wie ich beides zusammenhalte, sehen Sie in [der Arbeit, die ich mit Organisationen mache](/de/fuer-unternehmen)."
+      }
     },
     {
-      "type": "quote",
-      "text": "Wohlbefinden ist nichts, was man einem belastenden Arbeitsplatz nachträglich anfügt. Es ist etwas, das man in die Art einbaut, wie der Arbeitsplatz funktioniert."
+      "discriminant": "quote",
+      "value": {
+        "text": "Wohlbefinden ist nichts, was man einem belastenden Arbeitsplatz nachträglich anfügt. Es ist etwas, das man in die Art einbaut, wie der Arbeitsplatz funktioniert."
+      }
     },
     {
-      "type": "p",
-      "text": "Wenn Ihre Organisation die einmaligen Aktionen ausprobiert und dabei gespürt hat, dass etwas Tieferes nötig ist, dann ist diesem Gespür zu trauen. Die wirksamsten Programme sind selten die schillerndsten — es sind die, die geduldig genug sind, Teil der Kultur zu werden. Das ist die langsamere Arbeit, aber es ist die, die bleibt."
+      "discriminant": "p",
+      "value": {
+        "text": "Wenn Ihre Organisation die einmaligen Aktionen ausprobiert und dabei gespürt hat, dass etwas Tieferes nötig ist, dann ist diesem Gespür zu trauen. Die wirksamsten Programme sind selten die schillerndsten — es sind die, die geduldig genug sind, Teil der Kultur zu werden. Das ist die langsamere Arbeit, aber es ist die, die bleibt."
+      }
     }
   ]
 }

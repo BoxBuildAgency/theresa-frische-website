@@ -6,77 +6,111 @@
   "excerpt": "Ein klarer, verständlicher Überblick, wie sich Beratung, Psychotherapie und Coaching unterscheiden — und wie Sie das Passende für sich finden.",
   "body": [
     {
-      "type": "p",
-      "text": "Wenn Sie schon einmal Unterstützung für eine schwierige Phase in Ihrem Leben gesucht haben, kennen Sie vielleicht die Verwirrung um die Begriffe. Beratung, Psychotherapie, Coaching — sie klingen ähnlich, überschneiden sich stellenweise, und wer sie anbietet, erklärt den Unterschied nicht immer. Dieser Überblick soll für Klarheit sorgen, in verständlicher Sprache, damit Sie wählen können, was wirklich zu Ihrer Situation passt."
+      "discriminant": "p",
+      "value": {
+        "text": "Wenn Sie schon einmal Unterstützung für eine schwierige Phase in Ihrem Leben gesucht haben, kennen Sie vielleicht die Verwirrung um die Begriffe. Beratung, Psychotherapie, Coaching — sie klingen ähnlich, überschneiden sich stellenweise, und wer sie anbietet, erklärt den Unterschied nicht immer. Dieser Überblick soll für Klarheit sorgen, in verständlicher Sprache, damit Sie wählen können, was wirklich zu Ihrer Situation passt."
+      }
     },
     {
-      "type": "p",
-      "text": "Kurz gesagt: Es sind verwandte, aber unterschiedliche Formen der Unterstützung, angeboten von verschiedenen Fachpersonen und mit verschiedenen Zielen. Wenn Sie wissen, wofür jede gedacht ist, sparen Sie viel Zeit — und können sicher sein, dass Sie nach dem Richtigen fragen."
+      "discriminant": "p",
+      "value": {
+        "text": "Kurz gesagt: Es sind verwandte, aber unterschiedliche Formen der Unterstützung, angeboten von verschiedenen Fachpersonen und mit verschiedenen Zielen. Wenn Sie wissen, wofür jede gedacht ist, sparen Sie viel Zeit — und können sicher sein, dass Sie nach dem Richtigen fragen."
+      }
     },
     {
-      "type": "h2",
-      "text": "Was Beratung ist"
+      "discriminant": "h2",
+      "value": {
+        "text": "Was Beratung ist"
+      }
     },
     {
-      "type": "p",
-      "text": "Beratung ist ein strukturierter, vertraulicher Raum, um über das nachzudenken, was in Ihrem Leben geschieht, und darüber, wie Sie sich dazu verhalten. Sie eignet sich gut für das Alltägliche und doch Fordernde des Menschseins: Stress, Überforderung, Erschöpfung, das Gefühl festzustecken, die Entfremdung von sich selbst oder den Menschen um Sie herum und die Verunsicherung, die große Lebensveränderungen mit sich bringen. Der Fokus liegt auf der Gegenwart und der nahen Zukunft — zu verstehen, wo Sie stehen, und sanftere, tragfähigere Wege nach vorn zu finden."
+      "discriminant": "p",
+      "value": {
+        "text": "Beratung ist ein strukturierter, vertraulicher Raum, um über das nachzudenken, was in Ihrem Leben geschieht, und darüber, wie Sie sich dazu verhalten. Sie eignet sich gut für das Alltägliche und doch Fordernde des Menschseins: Stress, Überforderung, Erschöpfung, das Gefühl festzustecken, die Entfremdung von sich selbst oder den Menschen um Sie herum und die Verunsicherung, die große Lebensveränderungen mit sich bringen. Der Fokus liegt auf der Gegenwart und der nahen Zukunft — zu verstehen, wo Sie stehen, und sanftere, tragfähigere Wege nach vorn zu finden."
+      }
     },
     {
-      "type": "p",
-      "text": "Als systemische und integrative Beraterin ist dies die Unterstützung, die ich anbiete. Systemisch heißt, dass ich die Beziehungen und Zusammenhänge in den Blick nehme, in denen Sie leben, nicht nur das, was in Ihnen vorgeht. Integrativ heißt, dass ich auf mehr als einen Ansatz zurückgreife — darunter körperorientierte Arbeit wie Somatic Experiencing —, je nachdem, was Ihnen guttut. Mehr darüber, wie ich denke und arbeite, lesen Sie auf meiner [Über-mich-Seite](/de/ueber-mich) und über den Ablauf der Sitzungen auf der [Seite zur Zusammenarbeit](/de/angebot)."
+      "discriminant": "p",
+      "value": {
+        "text": "Als systemische und integrative Beraterin ist dies die Unterstützung, die ich anbiete. Systemisch heißt, dass ich die Beziehungen und Zusammenhänge in den Blick nehme, in denen Sie leben, nicht nur das, was in Ihnen vorgeht. Integrativ heißt, dass ich auf mehr als einen Ansatz zurückgreife — darunter körperorientierte Arbeit wie Somatic Experiencing —, je nachdem, was Ihnen guttut. Mehr darüber, wie ich denke und arbeite, lesen Sie auf meiner [Über-mich-Seite](/de/ueber-mich) und über den Ablauf der Sitzungen auf der [Seite zur Zusammenarbeit](/de/angebot)."
+      }
     },
     {
-      "type": "h2",
-      "text": "Was Psychotherapie ist — und wo sie sich unterscheidet"
+      "discriminant": "h2",
+      "value": {
+        "text": "Was Psychotherapie ist — und wo sie sich unterscheidet"
+      }
     },
     {
-      "type": "p",
-      "text": "Psychotherapie ist ein eigenständiges, reguliertes Fachgebiet. In vielen Ländern ist sie eine geschützte, medizinische oder klinische Leistung, die von approbierten Psychotherapeut:innen, klinischen Psycholog:innen oder Psychiater:innen erbracht wird. Sie umfasst in der Regel die Abklärung und Behandlung diagnostizierter psychischer Erkrankungen, oft über einen längeren Zeitraum und in größerer Tiefe, und sie kann Teil einer medizinischen Versorgung sein."
+      "discriminant": "p",
+      "value": {
+        "text": "Psychotherapie ist ein eigenständiges, reguliertes Fachgebiet. In vielen Ländern ist sie eine geschützte, medizinische oder klinische Leistung, die von approbierten Psychotherapeut:innen, klinischen Psycholog:innen oder Psychiater:innen erbracht wird. Sie umfasst in der Regel die Abklärung und Behandlung diagnostizierter psychischer Erkrankungen, oft über einen längeren Zeitraum und in größerer Tiefe, und sie kann Teil einer medizinischen Versorgung sein."
+      }
     },
     {
-      "type": "p",
-      "text": "Das ist eine wichtige Grenze, und ich möchte sie klar benennen: Ich biete keine Psychotherapie, keine Behandlung und keine Diagnose an. Das gehört zu einem anderen, regulierten Berufsfeld. Beratung und Psychotherapie teilen manche Werkzeuge und eine zugewandte, aufmerksame Haltung, aber sie sind nicht dieselbe Leistung — und wo ein klinisches Anliegen abgeklärt oder behandelt werden muss, ist das Sache approbierter Psychotherapeut:innen oder Ärzt:innen, nicht einer Beraterin."
+      "discriminant": "p",
+      "value": {
+        "text": "Das ist eine wichtige Grenze, und ich möchte sie klar benennen: Ich biete keine Psychotherapie, keine Behandlung und keine Diagnose an. Das gehört zu einem anderen, regulierten Berufsfeld. Beratung und Psychotherapie teilen manche Werkzeuge und eine zugewandte, aufmerksame Haltung, aber sie sind nicht dieselbe Leistung — und wo ein klinisches Anliegen abgeklärt oder behandelt werden muss, ist das Sache approbierter Psychotherapeut:innen oder Ärzt:innen, nicht einer Beraterin."
+      }
     },
     {
-      "type": "p",
-      "text": "Nichts davon ist eine Rangordnung. Das eine ist nicht \"tiefer\" oder \"besser\" als das andere; sie erfüllen einfach unterschiedliche Aufgaben. Viele Menschen wechseln im Lauf ihres Lebens zwischen ihnen, und eine gute Beraterin sagt Ihnen immer ehrlich, wenn das, was Sie brauchen, über den Rahmen der Beratung hinausgeht."
+      "discriminant": "p",
+      "value": {
+        "text": "Nichts davon ist eine Rangordnung. Das eine ist nicht \"tiefer\" oder \"besser\" als das andere; sie erfüllen einfach unterschiedliche Aufgaben. Viele Menschen wechseln im Lauf ihres Lebens zwischen ihnen, und eine gute Beraterin sagt Ihnen immer ehrlich, wenn das, was Sie brauchen, über den Rahmen der Beratung hinausgeht."
+      }
     },
     {
-      "type": "h2",
-      "text": "Was Coaching ist"
+      "discriminant": "h2",
+      "value": {
+        "text": "Was Coaching ist"
+      }
     },
     {
-      "type": "p",
-      "text": "Coaching ist eine weitere eigenständige Leistung, die meist von Coaches angeboten wird und in der Regel ziel- und leistungsorientiert ausgerichtet ist. Denken Sie an berufliche Orientierung, Führung, Produktivität, ein bestimmtes Projekt oder einen Übergang, den Sie meistern möchten. Coaching blickt in der Regel nach vorn — Ziele klären und Strategien entwickeln, um sie zu erreichen — und kümmert sich weniger um die emotionale Vorgeschichte hinter Ihrer aktuellen Lage."
+      "discriminant": "p",
+      "value": {
+        "text": "Coaching ist eine weitere eigenständige Leistung, die meist von Coaches angeboten wird und in der Regel ziel- und leistungsorientiert ausgerichtet ist. Denken Sie an berufliche Orientierung, Führung, Produktivität, ein bestimmtes Projekt oder einen Übergang, den Sie meistern möchten. Coaching blickt in der Regel nach vorn — Ziele klären und Strategien entwickeln, um sie zu erreichen — und kümmert sich weniger um die emotionale Vorgeschichte hinter Ihrer aktuellen Lage."
+      }
     },
     {
-      "type": "p",
-      "text": "Mit der Beratung gibt es echte Überschneidungen, besonders bei Lebensrichtung und Veränderung. Der Unterschied liegt in der Gewichtung. Coaching fragt: \"Wohin möchten Sie, und wie kommen Sie dorthin?\" Beratung schafft mehr Raum für: \"Wie geht es Ihnen wirklich, und was fordert diese Erfahrung von Ihnen?\" — samt der Gefühle, Muster und Belastungen unter den Zielen."
+      "discriminant": "p",
+      "value": {
+        "text": "Mit der Beratung gibt es echte Überschneidungen, besonders bei Lebensrichtung und Veränderung. Der Unterschied liegt in der Gewichtung. Coaching fragt: \"Wohin möchten Sie, und wie kommen Sie dorthin?\" Beratung schafft mehr Raum für: \"Wie geht es Ihnen wirklich, und was fordert diese Erfahrung von Ihnen?\" — samt der Gefühle, Muster und Belastungen unter den Zielen."
+      }
     },
     {
-      "type": "h2",
-      "text": "Wie Sie das Passende für sich finden"
+      "discriminant": "h2",
+      "value": {
+        "text": "Wie Sie das Passende für sich finden"
+      }
     },
     {
-      "type": "p",
-      "text": "Sie müssen Ihre eigene Situation nicht perfekt einordnen, bevor Sie sich melden. Doch ein paar behutsame Fragen können Ihnen die Richtung weisen:"
+      "discriminant": "p",
+      "value": {
+        "text": "Sie müssen Ihre eigene Situation nicht perfekt einordnen, bevor Sie sich melden. Doch ein paar behutsame Fragen können Ihnen die Richtung weisen:"
+      }
     },
     {
-      "type": "ul",
-      "items": [
-        "Wenn Sie mit einer diagnostizierten psychischen Erkrankung leben oder das Gefühl haben, dass eine klinische Abklärung oder Behandlung nötig sein könnte, sind Psychotherapie oder medizinische Versorgung der richtige Ausgangspunkt.",
-        "Wenn Sie Stress, Überforderung, Erschöpfung oder das Gefühl festzustecken mit sich tragen und einen reflektierenden Raum suchen, um das zu verstehen und wieder Halt zu finden, ist Beratung wahrscheinlich gut geeignet.",
-        "Wenn Sie ein klares äußeres Ziel haben und strukturierte Unterstützung wünschen, um es zu erreichen, ist Coaching womöglich am besten für Sie.",
-        "Und wenn Sie schlicht unsicher sind, ist es völlig in Ordnung, das so zu sagen — ein kurzes Gespräch macht das Bild meist deutlich klarer."
-      ]
+      "discriminant": "ul",
+      "value": {
+        "items": [
+          "Wenn Sie mit einer diagnostizierten psychischen Erkrankung leben oder das Gefühl haben, dass eine klinische Abklärung oder Behandlung nötig sein könnte, sind Psychotherapie oder medizinische Versorgung der richtige Ausgangspunkt.",
+          "Wenn Sie Stress, Überforderung, Erschöpfung oder das Gefühl festzustecken mit sich tragen und einen reflektierenden Raum suchen, um das zu verstehen und wieder Halt zu finden, ist Beratung wahrscheinlich gut geeignet.",
+          "Wenn Sie ein klares äußeres Ziel haben und strukturierte Unterstützung wünschen, um es zu erreichen, ist Coaching womöglich am besten für Sie.",
+          "Und wenn Sie schlicht unsicher sind, ist es völlig in Ordnung, das so zu sagen — ein kurzes Gespräch macht das Bild meist deutlich klarer."
+        ]
+      }
     },
     {
-      "type": "p",
-      "text": "Genau dafür ist ein erstes, unverbindliches Gespräch da. Wenn Sie herausfinden möchten, ob Beratung zu dem passt, was Sie gerade durchleben, können Sie gern ein [Kennenlerngespräch buchen](/de/contact) oder vorab die [häufigen Fragen](/de/faq) durchsehen. Und falls sich zeigt, dass das, was Sie brauchen, woanders liegt, sage ich Ihnen das offen und weise Ihnen eine hilfreichere Richtung."
+      "discriminant": "p",
+      "value": {
+        "text": "Genau dafür ist ein erstes, unverbindliches Gespräch da. Wenn Sie herausfinden möchten, ob Beratung zu dem passt, was Sie gerade durchleben, können Sie gern ein [Kennenlerngespräch buchen](/de/contact) oder vorab die [häufigen Fragen](/de/faq) durchsehen. Und falls sich zeigt, dass das, was Sie brauchen, woanders liegt, sage ich Ihnen das offen und weise Ihnen eine hilfreichere Richtung."
+      }
     },
     {
-      "type": "p",
-      "text": "Das Wichtigste ist nicht, gleich beim ersten Versuch das richtige Etikett zu treffen. Es ist der Schritt, um Unterstützung zu bitten — und darauf zu vertrauen, dass sich die passende Hilfe finden lässt."
+      "discriminant": "p",
+      "value": {
+        "text": "Das Wichtigste ist nicht, gleich beim ersten Versuch das richtige Etikett zu treffen. Es ist der Schritt, um Unterstützung zu bitten — und darauf zu vertrauen, dass sich die passende Hilfe finden lässt."
+      }
     }
   ]
 }

@@ -1,5 +1,6 @@
 {
   "title": "Understanding Counselling",
+  "order": 2,
   "items": [
     {
       "q": "What is counselling?",
@@ -33,6 +34,5 @@
       "q": "Can counselling help even if I'm not in crisis?",
       "a": "Yes, absolutely. You do not need to be in crisis or at a low point to benefit from counselling. Many people value a reflective space to grow, gain clarity, strengthen relationships, or simply understand themselves better. Wherever you are in life, you are welcome."
     }
-  ],
-  "order": 2
+  ]
 }

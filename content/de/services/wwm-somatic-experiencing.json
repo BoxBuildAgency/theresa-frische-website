@@ -1,6 +1,4 @@
 {
-  "metaTitle": "Somatic Experiencing® — Theresa Frische",
-  "metaDescription": "Somatic Experiencing® online auf Deutsch und Englisch: körperorientierte Arbeit mit Stress, Überforderung und belastenden Erfahrungen. Kostenloses Erstgespräch.",
   "eyebrow": "Angebot",
   "heading": "Somatic Experiencing®",
   "lead": "Ein körperorientierter Ansatz zur Verarbeitung von Stress, Überforderung und belastenden Erfahrungen.",
@@ -36,5 +34,7 @@
       "label": "Ihr Nervensystem einfach erklärt",
       "href": "/de/blog/nervous-system-plain-english-guide"
     }
-  ]
+  ],
+  "metaTitle": "Somatic Experiencing® — Theresa Frische",
+  "metaDescription": "Somatic Experiencing® online auf Deutsch und Englisch: körperorientierte Arbeit mit Stress, Überforderung und belastenden Erfahrungen. Kostenloses Erstgespräch."
 }

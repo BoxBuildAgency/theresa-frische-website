@@ -1,6 +1,4 @@
 {
-  "metaTitle": "Counselling for Employees — Theresa Frische",
-  "metaDescription": "Confidential online counselling for employees under stress or strain — 60-minute sessions, English or German, arranged via your workplace health management.",
   "eyebrow": "For Organisations",
   "heading": "Psychological counselling for employees",
   "lead": "Confidential one-to-one counselling for mental health at work — online, by arrangement, and embedded in your organisation's workplace health management.",
@@ -38,5 +36,7 @@
       "label": "Early signs of burnout",
       "href": "/blog/running-on-empty-early-signs-of-burnout"
     }
-  ]
+  ],
+  "metaTitle": "Counselling for Employees — Theresa Frische",
+  "metaDescription": "Confidential online counselling for employees under stress or strain — 60-minute sessions, English or German, arranged via your workplace health management."
 }

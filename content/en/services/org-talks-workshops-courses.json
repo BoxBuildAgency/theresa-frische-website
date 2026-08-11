@@ -1,6 +1,4 @@
 {
-  "metaTitle": "Talks, Workshops & Courses — Theresa Frische",
-  "metaDescription": "Keynotes, workshops, in-depth trainings and 8-week programmes on mental health, resilience and mindfulness — online or on-site in Germany and Switzerland.",
   "eyebrow": "For Organisations",
   "heading": "Talks, workshops & courses",
   "lead": "Four formats for bringing mental health, resilience and mindfulness into your organisation — from a single keynote to a structured eight-week programme.",
@@ -52,5 +50,7 @@
       "label": "Resilience isn't about toughing it out",
       "href": "/blog/resilience-is-not-toughing-it-out"
     }
-  ]
+  ],
+  "metaTitle": "Talks, Workshops & Courses — Theresa Frische",
+  "metaDescription": "Keynotes, workshops, in-depth trainings and 8-week programmes on mental health, resilience and mindfulness — online or on-site in Germany and Switzerland."
 }

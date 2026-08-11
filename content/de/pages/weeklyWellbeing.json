@@ -1,15 +1,13 @@
 {
-  "metaTitle": "Weekly Wellbeing Community — Theresa Frische",
-  "metaDescription": "Ein ruhiger wöchentlicher Online-Raum für Achtsamkeit, Stressreduktion und Verbundenheit in Gemeinschaft. Dienstags 20:30–21:30, auf Englisch.",
   "eyebrow": "Weekly Wellbeing",
   "heading": "Wöchentliche Online-Community für Achtsamkeit & Wohlbefinden",
   "lead": "Ein ruhiger Online-Raum für Achtsamkeit, Stressreduktion und Verbundenheit in Gemeinschaft.",
+  "imageAlt": "Eine Frau sitzt in der Abenddämmerung still auf einem hölzernen Steg neben ruhigem Wasser.",
   "intro": [
     "Die Weekly Wellbeing Community ist Ihre wöchentliche Einladung zur Selbstfürsorge — ein ruhiger, geschützter Raum, um wieder bei sich anzukommen und Ihr emotionales Wohlbefinden nachhaltig zu stärken.",
     "In unseren wöchentlichen 60-minütigen Treffen widmen wir uns etwa 30 bis 45 Minuten geleiteten Achtsamkeitsübungen sowie der Regulation des Nervensystems. Anschließend bleibt Raum für einen mitfühlenden, bewertungsfreien Austausch.",
     "Ohne Leistungsdruck und ohne Zwang zum Teilen: Hier dürfen Sie einfach so sein, wie Sie gerade sind. Ziel ist eine tiefere, authentische Verbundenheit — mit sich selbst und mit einer unterstützenden Gemeinschaft."
   ],
-  "imageAlt": "Eine Frau sitzt in der Abenddämmerung still auf einem hölzernen Steg neben ruhigem Wasser.",
   "facts": [
     {
       "label": "Wann",
@@ -55,5 +53,7 @@
   "closing": {
     "heading": "Sie sind herzlich willkommen",
     "body": "Wenn Sie mehr über die Weekly Wellbeing Community erfahren möchten, melden Sie sich gerne bei mir."
-  }
+  },
+  "metaTitle": "Weekly Wellbeing Community — Theresa Frische",
+  "metaDescription": "Ein ruhiger wöchentlicher Online-Raum für Achtsamkeit, Stressreduktion und Verbundenheit in Gemeinschaft. Dienstags 20:30–21:30, auf Englisch."
 }

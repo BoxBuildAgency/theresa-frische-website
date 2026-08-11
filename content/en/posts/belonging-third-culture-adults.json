@@ -6,70 +6,100 @@
   "excerpt": "For adults who grew up across cultures: why belonging can feel elusive, and how to build a steadier sense of home within.",
   "body": [
     {
-      "type": "p",
-      "text": "\"Where are you from?\" is a small question for most people and a strangely complicated one for you. Do you name the country on your passport, the place you were born, the city where you went to school, or the one your accent gives away? By the time you have chosen an answer, the conversation has usually moved on — and you are left with the familiar sense of being from everywhere and nowhere at once."
+      "discriminant": "p",
+      "value": {
+        "text": "\"Where are you from?\" is a small question for most people and a strangely complicated one for you. Do you name the country on your passport, the place you were born, the city where you went to school, or the one your accent gives away? By the time you have chosen an answer, the conversation has usually moved on — and you are left with the familiar sense of being from everywhere and nowhere at once."
+      }
     },
     {
-      "type": "p",
-      "text": "If you grew up across cultures — moving with a parent's job, living between languages, forming a self out of several places — you may know this feeling well. You can fit in almost anywhere and yet feel fully at home almost nowhere. That is not a flaw in you. It is the natural shape of a life that was built across borders, and it deserves to be understood rather than quietly carried."
+      "discriminant": "p",
+      "value": {
+        "text": "If you grew up across cultures — moving with a parent's job, living between languages, forming a self out of several places — you may know this feeling well. You can fit in almost anywhere and yet feel fully at home almost nowhere. That is not a flaw in you. It is the natural shape of a life that was built across borders, and it deserves to be understood rather than quietly carried."
+      }
     },
     {
-      "type": "h2",
-      "text": "Why belonging feels harder for you"
+      "discriminant": "h2",
+      "value": {
+        "text": "Why belonging feels harder for you"
+      }
     },
     {
-      "type": "p",
-      "text": "Most people develop a sense of belonging by staying long enough in one place for it to become familiar — the same streets, the same seasons, the same shared references. When your childhood was spread across countries, that steady backdrop never fully formed. You gained something precious instead: adaptability, curiosity, an ear for difference. But adaptability has a cost. Fitting in everywhere can quietly become the same thing as belonging nowhere."
+      "discriminant": "p",
+      "value": {
+        "text": "Most people develop a sense of belonging by staying long enough in one place for it to become familiar — the same streets, the same seasons, the same shared references. When your childhood was spread across countries, that steady backdrop never fully formed. You gained something precious instead: adaptability, curiosity, an ear for difference. But adaptability has a cost. Fitting in everywhere can quietly become the same thing as belonging nowhere."
+      }
     },
     {
-      "type": "p",
-      "text": "There is often grief underneath this, even if it rarely gets named. Each move meant leaving people, places, and versions of yourself behind. When the losses are frequent and framed as exciting, they seldom get mourned. Years later, that unmourned grief can surface as a vague restlessness, a difficulty settling, or a sense that everyone else received a map to belonging that you somehow missed."
+      "discriminant": "p",
+      "value": {
+        "text": "There is often grief underneath this, even if it rarely gets named. Each move meant leaving people, places, and versions of yourself behind. When the losses are frequent and framed as exciting, they seldom get mourned. Years later, that unmourned grief can surface as a vague restlessness, a difficulty settling, or a sense that everyone else received a map to belonging that you somehow missed."
+      }
     },
     {
-      "type": "h2",
-      "text": "The myth of the one true home"
+      "discriminant": "h2",
+      "value": {
+        "text": "The myth of the one true home"
+      }
     },
     {
-      "type": "p",
-      "text": "A quiet belief runs through a lot of this pain: that somewhere out there is the one place you are really from, and that if you could just find it — or return to it — the ache would resolve. For people who grew up across cultures, that place usually does not exist. There is no single home that holds all of who you are, because who you are was assembled from many."
+      "discriminant": "p",
+      "value": {
+        "text": "A quiet belief runs through a lot of this pain: that somewhere out there is the one place you are really from, and that if you could just find it — or return to it — the ache would resolve. For people who grew up across cultures, that place usually does not exist. There is no single home that holds all of who you are, because who you are was assembled from many."
+      }
     },
     {
-      "type": "p",
-      "text": "Letting go of the one-true-home myth can feel like a loss at first. It can also be a quiet relief. If no single place was ever going to hold all of you, then you were never failing to find it. You were carrying a kind of belonging that was always going to be plural — spread across people and places rather than rooted in one."
+      "discriminant": "p",
+      "value": {
+        "text": "Letting go of the one-true-home myth can feel like a loss at first. It can also be a quiet relief. If no single place was ever going to hold all of you, then you were never failing to find it. You were carrying a kind of belonging that was always going to be plural — spread across people and places rather than rooted in one."
+      }
     },
     {
-      "type": "h2",
-      "text": "Building a home within"
+      "discriminant": "h2",
+      "value": {
+        "text": "Building a home within"
+      }
     },
     {
-      "type": "p",
-      "text": "When the outer landscape keeps changing, a steadier sense of home has to be built somewhere that travels with you: inside. That does not mean giving up on connection to places or people. It means growing an inner base that does not depend entirely on where you happen to be living this year."
+      "discriminant": "p",
+      "value": {
+        "text": "When the outer landscape keeps changing, a steadier sense of home has to be built somewhere that travels with you: inside. That does not mean giving up on connection to places or people. It means growing an inner base that does not depend entirely on where you happen to be living this year."
+      }
     },
     {
-      "type": "ul",
-      "items": [
-        "Name the losses. Let the goodbyes you never grieved count as real losses, not just chapters that ended.",
-        "Gather your belonging in pieces. A friendship across time zones, a language, a food, a ritual — belonging can be a mosaic rather than a single tile.",
-        "Notice where you already feel at ease. The settled feeling you are looking for probably visits you sometimes; learn its conditions.",
-        "Loosen the pressure to answer neatly. \"It's complicated — I grew up in a few places\" is a whole and honest reply.",
-        "Let your history be an asset. The perspective that made you feel like an outsider is often exactly what lets you connect across difference."
-      ]
+      "discriminant": "ul",
+      "value": {
+        "items": [
+          "Name the losses. Let the goodbyes you never grieved count as real losses, not just chapters that ended.",
+          "Gather your belonging in pieces. A friendship across time zones, a language, a food, a ritual — belonging can be a mosaic rather than a single tile.",
+          "Notice where you already feel at ease. The settled feeling you are looking for probably visits you sometimes; learn its conditions.",
+          "Loosen the pressure to answer neatly. \"It's complicated — I grew up in a few places\" is a whole and honest reply.",
+          "Let your history be an asset. The perspective that made you feel like an outsider is often exactly what lets you connect across difference."
+        ]
+      }
     },
     {
-      "type": "p",
-      "text": "None of this happens in an afternoon. But the direction matters. Instead of searching outside for a home that was never going to fit, you begin cultivating a sense of home you can carry — one that steadies you wherever the next move takes you."
+      "discriminant": "p",
+      "value": {
+        "text": "None of this happens in an afternoon. But the direction matters. Instead of searching outside for a home that was never going to fit, you begin cultivating a sense of home you can carry — one that steadies you wherever the next move takes you."
+      }
     },
     {
-      "type": "h2",
-      "text": "You don't have to make sense of it alone"
+      "discriminant": "h2",
+      "value": {
+        "text": "You don't have to make sense of it alone"
+      }
     },
     {
-      "type": "p",
-      "text": "Some of this is easier to untangle in conversation with someone who understands the terrain. Much of my own life has been lived between cultures and languages, and I work with internationals and cross-cultural adults for exactly this reason — you can read a little about that background on my [about page](/about), or about how we might [work together](/work-with-me). Belonging is not a puzzle with one right answer; it is a relationship with yourself that can be tended and grown."
+      "discriminant": "p",
+      "value": {
+        "text": "Some of this is easier to untangle in conversation with someone who understands the terrain. Much of my own life has been lived between cultures and languages, and I work with internationals and cross-cultural adults for exactly this reason — you can read a little about that background on my [about page](/about), or about how we might [work together](/work-with-me). Belonging is not a puzzle with one right answer; it is a relationship with yourself that can be tended and grown."
+      }
     },
     {
-      "type": "p",
-      "text": "If the question of where you belong has quietly followed you for years, you are welcome to bring it somewhere it can be taken seriously. You can always [get in touch](/contact) to talk it through. Being from everywhere and nowhere is not a problem to be solved — it is a story to be understood, and you do not have to hold it by yourself."
+      "discriminant": "p",
+      "value": {
+        "text": "If the question of where you belong has quietly followed you for years, you are welcome to bring it somewhere it can be taken seriously. You can always [get in touch](/contact) to talk it through. Being from everywhere and nowhere is not a problem to be solved — it is a story to be understood, and you do not have to hold it by yourself."
+      }
     }
   ]
 }

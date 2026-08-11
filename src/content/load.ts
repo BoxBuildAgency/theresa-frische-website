@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import type {
+  BlogBlock,
   BlogPost,
   FaqCategory,
   Locale,
@@ -49,13 +50,33 @@ function readDir<T>(keyAs: string, ...segments: string[]): T[] {
 
 type PageBag = Record<string, unknown>;
 
+/**
+ * Blog body blocks, as Keystatic stores them.
+ *
+ * The body is a `fields.conditional`, and Keystatic requires every entry on disk
+ * to be exactly `{ discriminant, value }` — it refuses to open an entry whose
+ * blocks are shaped any other way. The renderer, meanwhile, wants the flat
+ * discriminated union `{ type, ...fields }` declared in types.ts.
+ *
+ * Converting here keeps both happy: the files stay in the only shape the admin
+ * accepts, and `BlogBlock` (and every component using it) is untouched.
+ */
+type StoredBlock = { discriminant: BlogBlock["type"]; value: Record<string, unknown> };
+type RawPost = Omit<BlogPost, "body"> & { body?: StoredBlock[] };
+
+function toBlock(b: StoredBlock): BlogBlock {
+  return { type: b.discriminant, ...(b.value ?? {}) } as BlogBlock;
+}
+
 export function loadContent(locale: Locale): SiteContent {
   const site = readJson<PageBag>(locale, "site.json");
   const page = <T>(name: string) => readJson<T>(locale, "pages", `${name}.json`);
 
   // Blog posts: display order is applied in content/index.ts (newest first), so
   // a new post added in the admin appears without any code change.
-  const posts = readDir<BlogPost>("slug", locale, "posts");
+  const posts = readDir<RawPost>("slug", locale, "posts").map(
+    (p): BlogPost => ({ ...p, body: (p.body ?? []).map(toBlock) }),
+  );
 
   // FAQ categories carry an editable `order` field — it drives the jump-nav
   // sequence, so it must not depend on filename or on read order.

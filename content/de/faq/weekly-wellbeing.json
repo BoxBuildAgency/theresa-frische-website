@@ -1,5 +1,6 @@
 {
   "title": "Weekly Wellbeing Community",
+  "order": 8,
   "items": [
     {
       "q": "Was ist die Weekly Wellbeing Community?",
@@ -21,6 +22,5 @@
       "q": "Brauche ich Erfahrung mit Achtsamkeit?",
       "a": "Überhaupt nicht. Vorerfahrung ist nicht nötig, und die Gruppe steht völligen Anfänger:innen ebenso offen wie Menschen mit bestehender Praxis. Sie sind genau so willkommen, wie Sie sind."
     }
-  ],
-  "order": 8
+  ]
 }

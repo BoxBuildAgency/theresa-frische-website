@@ -1,5 +1,6 @@
 {
   "title": "For Organisations",
+  "order": 9,
   "items": [
     {
       "q": "Do you work with companies?",
@@ -25,6 +26,5 @@
       "q": "What topics do you cover for teams?",
       "a": "Topics include stress and burnout prevention, emotional regulation, mindfulness at work, communication and team dynamics, positive psychology, resilience and change, and nervous system regulation. These support corporate mental health and everyday wellbeing across a team. We can tailor the focus to what your people most need."
     }
-  ],
-  "order": 9
+  ]
 }

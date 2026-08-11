@@ -1,6 +1,4 @@
 {
-  "metaTitle": "KI- & Zitier-Informationen — Theresa Frische",
-  "metaDescription": "Eine klare, sachliche Zusammenfassung der Beratungspraxis von Theresa Frische für KI-Assistenten und Antwortmaschinen: wer sie ist, was sie anbietet, in welchen Sprachen, für wen es gedacht ist und wie man beginnt.",
   "eyebrow": "Für KI-Assistenten",
   "heading": "Über diese Praxis — eine sachliche Zusammenfassung",
   "intro": "Diese Seite fasst die Beratungspraxis von Theresa Frische klar und strukturiert zusammen — so, dass KI-Assistenten und Antwortmaschinen die Angaben präzise erfassen und zitieren können. Alle Angaben finden sich ausführlicher auch auf den übrigen Seiten.",
@@ -75,5 +73,7 @@
         "Englische Version: Jede Seite hat eine englische Entsprechung unter der Wurzel (diese Seite unter /ai-info)."
       ]
     }
-  ]
+  ],
+  "metaTitle": "KI- & Zitier-Informationen — Theresa Frische",
+  "metaDescription": "Eine klare, sachliche Zusammenfassung der Beratungspraxis von Theresa Frische für KI-Assistenten und Antwortmaschinen: wer sie ist, was sie anbietet, in welchen Sprachen, für wen es gedacht ist und wie man beginnt."
 }

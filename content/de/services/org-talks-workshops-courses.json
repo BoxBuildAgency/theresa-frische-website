@@ -1,6 +1,4 @@
 {
-  "metaTitle": "Vorträge, Workshops & Kurse — Theresa Frische",
-  "metaDescription": "Keynotes, Workshops, Trainings und 8-Wochen-Programme zu mentaler Gesundheit, Resilienz und Achtsamkeit — online oder vor Ort in Deutschland und der Schweiz.",
   "eyebrow": "Für Unternehmen",
   "heading": "Vorträge, Workshops & Kurse",
   "lead": "Vier Formate, um mentale Gesundheit, Resilienz und Achtsamkeit in Ihre Organisation zu tragen — von der einzelnen Keynote bis zum strukturierten Acht-Wochen-Programm.",
@@ -52,5 +50,7 @@
       "label": "Resilienz heißt nicht Zähnezusammenbeißen",
       "href": "/de/blog/resilience-is-not-toughing-it-out"
     }
-  ]
+  ],
+  "metaTitle": "Vorträge, Workshops & Kurse — Theresa Frische",
+  "metaDescription": "Keynotes, Workshops, Trainings und 8-Wochen-Programme zu mentaler Gesundheit, Resilienz und Achtsamkeit — online oder vor Ort in Deutschland und der Schweiz."
 }

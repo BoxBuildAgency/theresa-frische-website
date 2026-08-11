@@ -1,5 +1,6 @@
 {
   "title": "Weekly Wellbeing Community",
+  "order": 8,
   "items": [
     {
       "q": "What is the Weekly Wellbeing Community?",
@@ -21,6 +22,5 @@
       "q": "Do I need any experience with mindfulness?",
       "a": "Not at all. No experience is needed, and the group is open to complete beginners as well as those who already have a practice. You are welcome exactly as you are."
     }
-  ],
-  "order": 8
+  ]
 }

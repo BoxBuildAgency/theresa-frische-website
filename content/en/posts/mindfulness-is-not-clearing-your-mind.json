@@ -6,75 +6,105 @@
   "excerpt": "Debunking common myths and how a regular practice supports emotional regulation.",
   "body": [
     {
-      "type": "p",
-      "text": "If you have ever tried to meditate, given up after ninety seconds, and concluded that your mind is simply too busy for this, you are in very good company. The belief that mindfulness means emptying your head is probably the single most common reason people decide they are bad at it."
+      "discriminant": "p",
+      "value": {
+        "text": "If you have ever tried to meditate, given up after ninety seconds, and concluded that your mind is simply too busy for this, you are in very good company. The belief that mindfulness means emptying your head is probably the single most common reason people decide they are bad at it."
+      }
     },
     {
-      "type": "p",
-      "text": "The relief is this: mindfulness was never about clearing your mind. A mind that produces thoughts is a mind that is working correctly. The practice is not about stopping the thoughts. It is about changing your relationship to them."
+      "discriminant": "p",
+      "value": {
+        "text": "The relief is this: mindfulness was never about clearing your mind. A mind that produces thoughts is a mind that is working correctly. The practice is not about stopping the thoughts. It is about changing your relationship to them."
+      }
     },
     {
-      "type": "h2",
-      "text": "The myths worth letting go of"
+      "discriminant": "h2",
+      "value": {
+        "text": "The myths worth letting go of"
+      }
     },
     {
-      "type": "p",
-      "text": "A handful of misunderstandings keep people from a practice that could genuinely help them. It is worth naming them plainly."
+      "discriminant": "p",
+      "value": {
+        "text": "A handful of misunderstandings keep people from a practice that could genuinely help them. It is worth naming them plainly."
+      }
     },
     {
-      "type": "ul",
-      "items": [
-        "Myth: your mind should go blank. In reality, you simply notice when it wanders and gently return.",
-        "Myth: you must feel calm and blissful. In reality, you are learning to be present with whatever is here, including restlessness.",
-        "Myth: it takes an hour a day. In reality, a few honest minutes, done regularly, do more than an occasional long session.",
-        "Myth: you are doing it wrong if you get distracted. In reality, noticing the distraction is the practice."
-      ]
+      "discriminant": "ul",
+      "value": {
+        "items": [
+          "Myth: your mind should go blank. In reality, you simply notice when it wanders and gently return.",
+          "Myth: you must feel calm and blissful. In reality, you are learning to be present with whatever is here, including restlessness.",
+          "Myth: it takes an hour a day. In reality, a few honest minutes, done regularly, do more than an occasional long session.",
+          "Myth: you are doing it wrong if you get distracted. In reality, noticing the distraction is the practice."
+        ]
+      }
     },
     {
-      "type": "h2",
-      "text": "So what is it, actually?"
+      "discriminant": "h2",
+      "value": {
+        "text": "So what is it, actually?"
+      }
     },
     {
-      "type": "p",
-      "text": "Mindfulness is the simple, repeatable act of paying attention to the present moment without immediately judging it. You notice a thought, a sensation, a feeling. You let it be there. You come back to your breath or your body. You do this again, and again, and each return is a small rep that strengthens your capacity to stay with your own experience."
+      "discriminant": "p",
+      "value": {
+        "text": "Mindfulness is the simple, repeatable act of paying attention to the present moment without immediately judging it. You notice a thought, a sensation, a feeling. You let it be there. You come back to your breath or your body. You do this again, and again, and each return is a small rep that strengthens your capacity to stay with your own experience."
+      }
     },
     {
-      "type": "p",
-      "text": "That is the whole thing. It is far less mystical than it sounds and far more useful than it seems."
+      "discriminant": "p",
+      "value": {
+        "text": "That is the whole thing. It is far less mystical than it sounds and far more useful than it seems."
+      }
     },
     {
-      "type": "h2",
-      "text": "How it supports emotional regulation"
+      "discriminant": "h2",
+      "value": {
+        "text": "How it supports emotional regulation"
+      }
     },
     {
-      "type": "p",
-      "text": "The everyday payoff is a bit more space between what happens and how you respond. When you can notice a wave of stress or frustration as it rises, rather than being swept off by it, you gain a moment of choice you did not have before. Over time, that small pause reshapes how you move through difficult days."
+      "discriminant": "p",
+      "value": {
+        "text": "The everyday payoff is a bit more space between what happens and how you respond. When you can notice a wave of stress or frustration as it rises, rather than being swept off by it, you gain a moment of choice you did not have before. Over time, that small pause reshapes how you move through difficult days."
+      }
     },
     {
-      "type": "ul",
-      "items": [
-        "You catch tension in the body earlier, before it becomes overwhelm",
-        "You respond to stress with a little more room and a little less reactivity",
-        "You steady low mood by staying with it kindly instead of fighting it",
-        "You recover your footing faster after a hard moment"
-      ]
+      "discriminant": "ul",
+      "value": {
+        "items": [
+          "You catch tension in the body earlier, before it becomes overwhelm",
+          "You respond to stress with a little more room and a little less reactivity",
+          "You steady low mood by staying with it kindly instead of fighting it",
+          "You recover your footing faster after a hard moment"
+        ]
+      }
     },
     {
-      "type": "quote",
-      "text": "The goal is not a quiet mind. The goal is a friendlier relationship with the mind you already have.",
-      "attribution": "Theresa Frische"
+      "discriminant": "quote",
+      "value": {
+        "text": "The goal is not a quiet mind. The goal is a friendlier relationship with the mind you already have.",
+        "attribution": "Theresa Frische"
+      }
     },
     {
-      "type": "h2",
-      "text": "Starting small and staying with it"
+      "discriminant": "h2",
+      "value": {
+        "text": "Starting small and staying with it"
+      }
     },
     {
-      "type": "p",
-      "text": "You do not need special equipment or an empty schedule. You need a minute or two, a willingness to begin again each time your attention drifts, and enough gentleness with yourself to keep the practice sustainable. If you would value support in building that gentler relationship with yourself, you can read about how we might [work together](/work-with-me). Consistency matters far more than duration."
+      "discriminant": "p",
+      "value": {
+        "text": "You do not need special equipment or an empty schedule. You need a minute or two, a willingness to begin again each time your attention drifts, and enough gentleness with yourself to keep the practice sustainable. If you would value support in building that gentler relationship with yourself, you can read about how we might [work together](/work-with-me). Consistency matters far more than duration."
+      }
     },
     {
-      "type": "p",
-      "text": "If you would like a supported, gentle way to build this into your life, our [weekly wellbeing](/weekly-wellbeing) programme offers exactly that kind of regular, unhurried rhythm. And if you are curious to go deeper into the body-based side of presence, you may enjoy our reflections on [what somatic experiencing is](/blog/what-is-somatic-experiencing). Whichever way you start, remember that a wandering mind is not a failure. It is simply your invitation to begin again."
+      "discriminant": "p",
+      "value": {
+        "text": "If you would like a supported, gentle way to build this into your life, our [weekly wellbeing](/weekly-wellbeing) programme offers exactly that kind of regular, unhurried rhythm. And if you are curious to go deeper into the body-based side of presence, you may enjoy our reflections on [what somatic experiencing is](/blog/what-is-somatic-experiencing). Whichever way you start, remember that a wandering mind is not a failure. It is simply your invitation to begin again."
+      }
     }
   ]
 }

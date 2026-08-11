@@ -1,5 +1,6 @@
 {
   "title": "Erste Schritte",
+  "order": 1,
   "items": [
     {
       "q": "Wie fange ich an?",
@@ -29,6 +30,5 @@
       "q": "Wie oft würden wir uns treffen?",
       "a": "Den Rhythmus gestalten wir gemeinsam so, dass er zu Ihnen passt. Viele beginnen mit wöchentlichen oder zweiwöchentlichen Sitzungen und passen die Abstände später an, wenn sich die Bedürfnisse verändern. Alle Sitzungen finden online und nach Vereinbarung statt. Wir finden einen Abstand, der Sie gut trägt und im Alltag machbar bleibt."
     }
-  ],
-  "order": 1
+  ]
 }

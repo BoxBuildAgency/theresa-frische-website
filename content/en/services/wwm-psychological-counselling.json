@@ -1,6 +1,4 @@
 {
-  "metaTitle": "Psychological Counselling — Theresa Frische",
-  "metaDescription": "Online psychological counselling in English and German for individuals: a confidential space for reflection, clarity and change. Free 15-minute discovery call.",
   "eyebrow": "Work With Me",
   "heading": "Psychological Counselling",
   "lead": "A confidential space to pause, reflect, and gain greater clarity about what is moving you.",
@@ -36,5 +34,7 @@
       "label": "How online counselling works",
       "href": "/blog/how-online-counselling-works"
     }
-  ]
+  ],
+  "metaTitle": "Psychological Counselling — Theresa Frische",
+  "metaDescription": "Online psychological counselling in English and German for individuals: a confidential space for reflection, clarity and change. Free 15-minute discovery call."
 }

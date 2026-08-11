@@ -6,65 +6,93 @@
   "excerpt": "Warum Übergänge emotional fordern, selbst wenn sie positiv sind — und was hilft, wenn Ihnen mitten in der Veränderung der Boden schwankt.",
   "body": [
     {
-      "type": "p",
-      "text": "Ein neuer Job. Ein Umzug in eine Stadt, für die Sie sich selbst entschieden haben. Eine Beziehung, die beginnt, oder ein lang gehegter Traum, der endlich wahr wird. Nach allen äußeren Maßstäben läuft es gut — und trotzdem fühlen Sie sich unerwartet haltlos, müde oder seltsam traurig. Wenn ein Teil von Ihnen leise fragt, warum das so schwer ist, obwohl doch nichts falsch läuft, dann geht es Ihnen wie vielen."
+      "discriminant": "p",
+      "value": {
+        "text": "Ein neuer Job. Ein Umzug in eine Stadt, für die Sie sich selbst entschieden haben. Eine Beziehung, die beginnt, oder ein lang gehegter Traum, der endlich wahr wird. Nach allen äußeren Maßstäben läuft es gut — und trotzdem fühlen Sie sich unerwartet haltlos, müde oder seltsam traurig. Wenn ein Teil von Ihnen leise fragt, warum das so schwer ist, obwohl doch nichts falsch läuft, dann geht es Ihnen wie vielen."
+      }
     },
     {
-      "type": "p",
-      "text": "Wir gehen meist davon aus, dass schwere Gefühle zu schweren Ereignissen gehören. Wirft uns also eine positive Veränderung aus der Bahn, legen wir gern noch eine zweite Last auf die erste: So sollte ich mich doch nicht fühlen. Doch Übergänge fordern von Natur aus — nicht, weil etwas schiefgelaufen wäre, sondern weil Veränderung uns viel abverlangt, selbst wenn sie willkommen ist."
+      "discriminant": "p",
+      "value": {
+        "text": "Wir gehen meist davon aus, dass schwere Gefühle zu schweren Ereignissen gehören. Wirft uns also eine positive Veränderung aus der Bahn, legen wir gern noch eine zweite Last auf die erste: So sollte ich mich doch nicht fühlen. Doch Übergänge fordern von Natur aus — nicht, weil etwas schiefgelaufen wäre, sondern weil Veränderung uns viel abverlangt, selbst wenn sie willkommen ist."
+      }
     },
     {
-      "type": "h2",
-      "text": "In jedem Gewinn steckt ein Verlust"
+      "discriminant": "h2",
+      "value": {
+        "text": "In jedem Gewinn steckt ein Verlust"
+      }
     },
     {
-      "type": "p",
-      "text": "Unter fast jeder bedeutsamen Veränderung liegt etwas, das zurückbleibt. Eine neue Rolle heißt, die vertraute Sicherheit loszulassen, die man in der alten hatte. Ein Schritt nach vorn kann leise die Tür zu einer früheren Version Ihrer selbst oder zu einer Lebensweise schließen, an der Sie hingen. Solche Verluste bleiben oft unsichtbar — auch für uns selbst —, und das ist mit ein Grund, warum die Gefühle, die sie begleiten, so verwirrend sein können."
+      "discriminant": "p",
+      "value": {
+        "text": "Unter fast jeder bedeutsamen Veränderung liegt etwas, das zurückbleibt. Eine neue Rolle heißt, die vertraute Sicherheit loszulassen, die man in der alten hatte. Ein Schritt nach vorn kann leise die Tür zu einer früheren Version Ihrer selbst oder zu einer Lebensweise schließen, an der Sie hingen. Solche Verluste bleiben oft unsichtbar — auch für uns selbst —, und das ist mit ein Grund, warum die Gefühle, die sie begleiten, so verwirrend sein können."
+      }
     },
     {
-      "type": "p",
-      "text": "Den Verlust im Gewinn zu benennen, ist oft eine Erleichterung. Es erklärt die Trauer, die unversehens neben echter Vorfreude sitzen kann. Sie sind nicht undankbar. Sie verarbeiten eine echte Veränderung."
+      "discriminant": "p",
+      "value": {
+        "text": "Den Verlust im Gewinn zu benennen, ist oft eine Erleichterung. Es erklärt die Trauer, die unversehens neben echter Vorfreude sitzen kann. Sie sind nicht undankbar. Sie verarbeiten eine echte Veränderung."
+      }
     },
     {
-      "type": "h2",
-      "text": "Übergänge verlangen dem Nervensystem eine Neuausrichtung ab"
+      "discriminant": "h2",
+      "value": {
+        "text": "Übergänge verlangen dem Nervensystem eine Neuausrichtung ab"
+      }
     },
     {
-      "type": "p",
-      "text": "Vertrautheit ist eine Form von Sicherheit. Selbst Routinen, über die wir schimpfen, geben ein Gerüst ab, auf das sich das Nervensystem verlässt. Wenn dieses Gerüst sich ändert — neue Umgebung, neue Menschen, neue Erwartungen —, muss der Körper mehr leisten und sich in allem neu zurechtfinden. Diese zusätzliche Anstrengung ist real, und sie ermüdet. Deshalb geht mit Übergängen so oft eine Erschöpfung einher, für die es keine rein logische Erklärung gibt."
+      "discriminant": "p",
+      "value": {
+        "text": "Vertrautheit ist eine Form von Sicherheit. Selbst Routinen, über die wir schimpfen, geben ein Gerüst ab, auf das sich das Nervensystem verlässt. Wenn dieses Gerüst sich ändert — neue Umgebung, neue Menschen, neue Erwartungen —, muss der Körper mehr leisten und sich in allem neu zurechtfinden. Diese zusätzliche Anstrengung ist real, und sie ermüdet. Deshalb geht mit Übergängen so oft eine Erschöpfung einher, für die es keine rein logische Erklärung gibt."
+      }
     },
     {
-      "type": "ul",
-      "items": [
-        "Das Gefühl, dazwischen zu hängen — nicht mehr, wer Sie waren, noch nicht, wer Sie werden.",
-        "Größere Empfindsamkeit, Selbstzweifel oder ein kürzerer Geduldsfaden als sonst.",
-        "Müdigkeit, die auch mit Ruhe nicht ganz verschwindet.",
-        "Gefühlswellen, die in keinem Verhältnis zu dem stehen, was gerade passiert."
-      ]
+      "discriminant": "ul",
+      "value": {
+        "items": [
+          "Das Gefühl, dazwischen zu hängen — nicht mehr, wer Sie waren, noch nicht, wer Sie werden.",
+          "Größere Empfindsamkeit, Selbstzweifel oder ein kürzerer Geduldsfaden als sonst.",
+          "Müdigkeit, die auch mit Ruhe nicht ganz verschwindet.",
+          "Gefühlswellen, die in keinem Verhältnis zu dem stehen, was gerade passiert."
+        ]
+      }
     },
     {
-      "type": "h2",
-      "text": "Das Dazwischen ist kein Fehler"
+      "discriminant": "h2",
+      "value": {
+        "text": "Das Dazwischen ist kein Fehler"
+      }
     },
     {
-      "type": "p",
-      "text": "Viele Traditionen beschreiben den Übergang als Schwelle — als Zwischenraum zwischen einer alten Ordnung und einer neuen. Gerade weil er noch ungeformt ist, fühlt er sich unbequem an. Aber genau hier geschieht echte Neuorientierung. Wer sich drängt, möglichst rasch wieder festen Boden zu spüren, bringt womöglich genau den Prozess durcheinander, der es etwas Neuem erlaubt, Gestalt anzunehmen."
+      "discriminant": "p",
+      "value": {
+        "text": "Viele Traditionen beschreiben den Übergang als Schwelle — als Zwischenraum zwischen einer alten Ordnung und einer neuen. Gerade weil er noch ungeformt ist, fühlt er sich unbequem an. Aber genau hier geschieht echte Neuorientierung. Wer sich drängt, möglichst rasch wieder festen Boden zu spüren, bringt womöglich genau den Prozess durcheinander, der es etwas Neuem erlaubt, Gestalt anzunehmen."
+      }
     },
     {
-      "type": "p",
-      "text": "Was meist hilft, ist Erlaubnis: sich haltlos fühlen zu dürfen, ohne es als Problem zu behandeln, das gelöst werden muss; sich in einem menschlichen Tempo zu bewegen; in Kontakt mit den eigenen Werten zu bleiben, während sich die äußeren Dinge neu ordnen."
+      "discriminant": "p",
+      "value": {
+        "text": "Was meist hilft, ist Erlaubnis: sich haltlos fühlen zu dürfen, ohne es als Problem zu behandeln, das gelöst werden muss; sich in einem menschlichen Tempo zu bewegen; in Kontakt mit den eigenen Werten zu bleiben, während sich die äußeren Dinge neu ordnen."
+      }
     },
     {
-      "type": "h2",
-      "text": "Begleitung durch das Dazwischen"
+      "discriminant": "h2",
+      "value": {
+        "text": "Begleitung durch das Dazwischen"
+      }
     },
     {
-      "type": "p",
-      "text": "Genau hier hilft oft [die Beratung](/de/angebot) — ein verlässlicher Bezugspunkt, während sich alles andere verschiebt, ein Raum zum Nachdenken, um zu verstehen, was zurückbleibt, was von Ihnen verlangt wird und was am meisten zählt, während Sie weitergehen. Nicht, um den Übergang zu beschleunigen, sondern um Ihnen zu helfen, ihn mit mehr Halt und mehr Verständnis für sich selbst zu durchleben. Wenn zu Ihrer Veränderung ein Umzug in ein neues Land gehört, erkennen Sie sich vielleicht auch in diesem Beitrag über [den Stress, in einem neuen Land anzukommen](/de/blog/relocation-stress-adjusting-new-country), wieder."
+      "discriminant": "p",
+      "value": {
+        "text": "Genau hier hilft oft [die Beratung](/de/angebot) — ein verlässlicher Bezugspunkt, während sich alles andere verschiebt, ein Raum zum Nachdenken, um zu verstehen, was zurückbleibt, was von Ihnen verlangt wird und was am meisten zählt, während Sie weitergehen. Nicht, um den Übergang zu beschleunigen, sondern um Ihnen zu helfen, ihn mit mehr Halt und mehr Verständnis für sich selbst zu durchleben. Wenn zu Ihrer Veränderung ein Umzug in ein neues Land gehört, erkennen Sie sich vielleicht auch in diesem Beitrag über [den Stress, in einem neuen Land anzukommen](/de/blog/relocation-stress-adjusting-new-country), wieder."
+      }
     },
     {
-      "type": "p",
-      "text": "Wenn eine Veränderung, die sich eigentlich gut anfühlen sollte, Sie verletzlicher macht, als Sie erwartet haben, dann nehmen Sie das als Zeichen dafür, wie viel dieser Moment Ihnen abverlangt — und wie sehr er zählt. Das ist keine Schwäche. Es ist die ganz gewöhnliche, fordernde Arbeit des Werdens."
+      "discriminant": "p",
+      "value": {
+        "text": "Wenn eine Veränderung, die sich eigentlich gut anfühlen sollte, Sie verletzlicher macht, als Sie erwartet haben, dann nehmen Sie das als Zeichen dafür, wie viel dieser Moment Ihnen abverlangt — und wie sehr er zählt. Das ist keine Schwäche. Es ist die ganz gewöhnliche, fordernde Arbeit des Werdens."
+      }
     }
   ]
 }

@@ -1,5 +1,6 @@
 {
   "title": "Praktisches & Organisatorisches",
+  "order": 3,
   "items": [
     {
       "q": "Finden die Sitzungen online oder in Präsenz statt?",
@@ -41,6 +42,5 @@
       "q": "Bieten Sie flexible Zeiten oder Abendtermine an?",
       "a": "Ich bemühe mich um Flexibilität und um Termine, die sich gut in Ihren Alltag einfügen, auch über verschiedene Zeitzonen hinweg. Alle Sitzungen finden online und nach Vereinbarung statt, sodass wir genug Spielraum haben, etwas Passendes für Sie zu finden. Sagen Sie mir am besten gleich, was Ihnen passt, wenn Sie sich melden. Wir finden gemeinsam eine gute Zeit."
     }
-  ],
-  "order": 3
+  ]
 }

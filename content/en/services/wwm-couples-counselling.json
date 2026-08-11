@@ -1,6 +1,4 @@
 {
-  "metaTitle": "Couples Counselling — Theresa Frische",
-  "metaDescription": "Online couples counselling in English and German: a protected space for honest encounter, communication and fresh momentum. Free 15-minute discovery call.",
   "eyebrow": "Work With Me",
   "heading": "Couples Counselling",
   "lead": "A protected space for honest encounter, mutual understanding, and fresh momentum for your relationship.",
@@ -36,5 +34,7 @@
       "label": "Love across cultures",
       "href": "/blog/love-across-cultures"
     }
-  ]
+  ],
+  "metaTitle": "Couples Counselling — Theresa Frische",
+  "metaDescription": "Online couples counselling in English and German: a protected space for honest encounter, communication and fresh momentum. Free 15-minute discovery call."
 }

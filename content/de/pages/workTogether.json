@@ -1,9 +1,29 @@
 {
-  "metaTitle": "Angebot — Psychologische Beratung & Paarberatung | Theresa Frische",
-  "metaDescription": "Online-Beratung für Einzelpersonen und Paare auf Deutsch und Englisch: psychologische Beratung, Paarberatung, Burnout-Prävention und Somatic Experiencing®. Beginnen Sie mit einem kostenlosen Kennenlerngespräch (15 Minuten).",
   "eyebrow": "Angebot",
   "heading": "So beginnen wir",
   "intro": "Die Sitzungen finden online statt, auf Deutsch und Englisch, für Einzelpersonen und Paare weltweit. Der einfachste erste Schritt ist ein kostenloses, unverbindliches Kennenlerngespräch.",
+  "cards": [
+    {
+      "title": "Psychologische Beratung",
+      "body": "Ein vertraulicher Raum für Reflexion und Klarheit — für Einzelpersonen.",
+      "href": "/de/angebot/psychologische-beratung"
+    },
+    {
+      "title": "Paarberatung",
+      "body": "Ein geschützter Raum für echte Begegnung und neue Bewegung in der Beziehung.",
+      "href": "/de/angebot/paarberatung"
+    },
+    {
+      "title": "Burnout-Prävention",
+      "body": "Stressmuster erkennen, bevor Erschöpfung zum Zusammenbruch führt.",
+      "href": "/de/angebot/burnout-praevention"
+    },
+    {
+      "title": "Somatic Experiencing®",
+      "body": "Körperorientierte Verarbeitung von Stress und belastenden Erfahrungen.",
+      "href": "/de/angebot/somatic-experiencing"
+    }
+  ],
   "discovery": {
     "heading": "Kostenloses Kennenlerngespräch (15 Minuten)",
     "intro": "Ein kurzes, entspanntes Gespräch, in dem Sie erzählen können, was Sie herführt, und wir gemeinsam spüren, ob eine Zusammenarbeit stimmig ist — ganz unverbindlich.",
@@ -64,33 +84,6 @@
       }
     ]
   },
-  "closing": {
-    "heading": "Bereit für den ersten Schritt?",
-    "body": "Buchen Sie Ihr kostenloses Kennenlerngespräch (15 Minuten) — ein entspannter, unverbindlicher Einstieg.",
-    "note": "Sitzungen sind Selbstzahlerleistungen — das Honorar wird individuell im kostenlosen Kennenlerngespräch vereinbart; eine Abrechnung mit oder Erstattung durch die Krankenkasse erfolgt nicht · Antwort innerhalb von 2–3 Werktagen."
-  },
-  "cards": [
-    {
-      "title": "Psychologische Beratung",
-      "body": "Ein vertraulicher Raum für Reflexion und Klarheit — für Einzelpersonen.",
-      "href": "/de/angebot/psychologische-beratung"
-    },
-    {
-      "title": "Paarberatung",
-      "body": "Ein geschützter Raum für echte Begegnung und neue Bewegung in der Beziehung.",
-      "href": "/de/angebot/paarberatung"
-    },
-    {
-      "title": "Burnout-Prävention",
-      "body": "Stressmuster erkennen, bevor Erschöpfung zum Zusammenbruch führt.",
-      "href": "/de/angebot/burnout-praevention"
-    },
-    {
-      "title": "Somatic Experiencing®",
-      "body": "Körperorientierte Verarbeitung von Stress und belastenden Erfahrungen.",
-      "href": "/de/angebot/somatic-experiencing"
-    }
-  ],
   "switzerland": {
     "heading": "Begleitung in der Schweiz, in Deutschland und international",
     "paras": [
@@ -98,5 +91,12 @@
       "Dieses Format passt besonders zu Internationals und Expats, die beruflich umgezogen sind: Sie können die Begleitung beibehalten, auch wenn sich der Wohnort, das Land oder die Arbeitssituation wieder verändert. Paare, die an unterschiedlichen Orten leben, können ebenfalls gemeinsam teilnehmen.",
       "Termine vergebe ich nach Vereinbarung; Zeitzonen außerhalb Mitteleuropas lassen sich in vielen Fällen einrichten. Die Sitzungen sind Selbstzahlerleistungen — es braucht keine Überweisung und keine Meldung an eine Versicherung."
     ]
-  }
+  },
+  "closing": {
+    "heading": "Bereit für den ersten Schritt?",
+    "body": "Buchen Sie Ihr kostenloses Kennenlerngespräch (15 Minuten) — ein entspannter, unverbindlicher Einstieg.",
+    "note": "Sitzungen sind Selbstzahlerleistungen — das Honorar wird individuell im kostenlosen Kennenlerngespräch vereinbart; eine Abrechnung mit oder Erstattung durch die Krankenkasse erfolgt nicht · Antwort innerhalb von 2–3 Werktagen."
+  },
+  "metaTitle": "Angebot — Psychologische Beratung & Paarberatung | Theresa Frische",
+  "metaDescription": "Online-Beratung für Einzelpersonen und Paare auf Deutsch und Englisch: psychologische Beratung, Paarberatung, Burnout-Prävention und Somatic Experiencing®. Beginnen Sie mit einem kostenlosen Kennenlerngespräch (15 Minuten)."
 }

@@ -1,5 +1,6 @@
 {
   "title": "Beratung verstehen",
+  "order": 2,
   "items": [
     {
       "q": "Was ist Beratung?",
@@ -33,6 +34,5 @@
       "q": "Kann Beratung auch helfen, wenn ich nicht in einer Krise bin?",
       "a": "Ja, unbedingt. Sie müssen weder in einer Krise noch an einem Tiefpunkt sein, um von einer Beratung zu profitieren. Viele Menschen schätzen einen reflektierenden Raum, um sich weiterzuentwickeln, Klarheit zu gewinnen, Beziehungen zu stärken oder sich selbst besser zu verstehen. Wo auch immer Sie gerade im Leben stehen: Sie sind willkommen."
     }
-  ],
-  "order": 2
+  ]
 }

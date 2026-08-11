@@ -6,74 +6,106 @@
   "excerpt": "Why emotional loneliness can persist in a new country, and how subtle disconnection shows up in everyday expat life.",
   "body": [
     {
-      "type": "p",
-      "text": "On paper, everything is working. You have the apartment, the job, the routine, perhaps the partner and the friends you meet for dinner. You have learned where to buy the good bread and how to complain about the weather like a local. And yet, somewhere underneath all of that competence, there is a quiet sense that you are still standing slightly outside your own life."
+      "discriminant": "p",
+      "value": {
+        "text": "On paper, everything is working. You have the apartment, the job, the routine, perhaps the partner and the friends you meet for dinner. You have learned where to buy the good bread and how to complain about the weather like a local. And yet, somewhere underneath all of that competence, there is a quiet sense that you are still standing slightly outside your own life."
+      }
     },
     {
-      "type": "p",
-      "text": "This is one of the most common experiences internationals bring into counselling, and one of the least talked about. Emotional loneliness in a new country is not the same as being alone. You can be surrounded by people and still feel that no one quite knows you, and that you no longer quite know yourself."
+      "discriminant": "p",
+      "value": {
+        "text": "This is one of the most common experiences internationals bring into counselling, and one of the least talked about. Emotional loneliness in a new country is not the same as being alone. You can be surrounded by people and still feel that no one quite knows you, and that you no longer quite know yourself."
+      }
     },
     {
-      "type": "h2",
-      "text": "Functioning well is not the same as feeling at home"
+      "discriminant": "h2",
+      "value": {
+        "text": "Functioning well is not the same as feeling at home"
+      }
     },
     {
-      "type": "p",
-      "text": "Most high-functioning internationals are very good at building a life. You arrive, you organise, you adapt. Competence, though, can quietly become a mask. It is entirely possible to run a full, successful life abroad while feeling disconnected inside it. If that gap between how you function and how you feel sounds familiar, you might find it helpful to read more about [the difference between functioning well and feeling well](/blog/functioning-well-vs-feeling-well)."
+      "discriminant": "p",
+      "value": {
+        "text": "Most high-functioning internationals are very good at building a life. You arrive, you organise, you adapt. Competence, though, can quietly become a mask. It is entirely possible to run a full, successful life abroad while feeling disconnected inside it. If that gap between how you function and how you feel sounds familiar, you might find it helpful to read more about [the difference between functioning well and feeling well](/blog/functioning-well-vs-feeling-well)."
+      }
     },
     {
-      "type": "p",
-      "text": "The loneliness that persists here is rarely about a lack of activity. It is about a lack of effortless belonging: the friendships that came without scheduling, the shared references, the sense that you could be understood without first explaining your whole context."
+      "discriminant": "p",
+      "value": {
+        "text": "The loneliness that persists here is rarely about a lack of activity. It is about a lack of effortless belonging: the friendships that came without scheduling, the shared references, the sense that you could be understood without first explaining your whole context."
+      }
     },
     {
-      "type": "h2",
-      "text": "The small daily disconnections"
+      "discriminant": "h2",
+      "value": {
+        "text": "The small daily disconnections"
+      }
     },
     {
-      "type": "p",
-      "text": "Emotional distance abroad tends to show up not in dramatic moments but in small, cumulative ones. A joke that lands differently. A form you cannot read. A conversation where you can follow every word and still miss the meaning underneath. Each is minor. Together, over months, they add up to a low-grade fatigue that many people cannot quite name."
+      "discriminant": "p",
+      "value": {
+        "text": "Emotional distance abroad tends to show up not in dramatic moments but in small, cumulative ones. A joke that lands differently. A form you cannot read. A conversation where you can follow every word and still miss the meaning underneath. Each is minor. Together, over months, they add up to a low-grade fatigue that many people cannot quite name."
+      }
     },
     {
-      "type": "ul",
-      "items": [
-        "Noticing you rehearse ordinary conversations in your head before you have them",
-        "Feeling most yourself only when speaking your first language, which you now rarely do",
-        "Sensing that your closest people back home no longer fully understand your daily life",
-        "Being competent everywhere and comforted nowhere"
-      ]
+      "discriminant": "ul",
+      "value": {
+        "items": [
+          "Noticing you rehearse ordinary conversations in your head before you have them",
+          "Feeling most yourself only when speaking your first language, which you now rarely do",
+          "Sensing that your closest people back home no longer fully understand your daily life",
+          "Being competent everywhere and comforted nowhere"
+        ]
+      }
     },
     {
-      "type": "p",
-      "text": "Language and culture fatigue is real. Operating in a second language all day is quietly effortful, even when you are fluent. It uses energy that used to be free, and that spare capacity was often what you spent on connection."
+      "discriminant": "p",
+      "value": {
+        "text": "Language and culture fatigue is real. Operating in a second language all day is quietly effortful, even when you are fluent. It uses energy that used to be free, and that spare capacity was often what you spent on connection."
+      }
     },
     {
-      "type": "h2",
-      "text": "Rebuilding connection, slowly"
+      "discriminant": "h2",
+      "value": {
+        "text": "Rebuilding connection, slowly"
+      }
     },
     {
-      "type": "p",
-      "text": "The good news is that belonging can be rebuilt, though usually not by trying harder to socialise. It grows from smaller, more honest contact: relationships where you can be tired, unsure, or homesick without performing. It also grows from your relationship with yourself, and from restoring the everyday habits that keep you steady."
+      "discriminant": "p",
+      "value": {
+        "text": "The good news is that belonging can be rebuilt, though usually not by trying harder to socialise. It grows from smaller, more honest contact: relationships where you can be tired, unsure, or homesick without performing. It also grows from your relationship with yourself, and from restoring the everyday habits that keep you steady."
+      }
     },
     {
-      "type": "p",
-      "text": "Practices that regulate your nervous system, rather than just fill your calendar, tend to help most. Simple, repeatable moments of grounding can make a new place feel less like a stage and more like a home. If you would like structured support with this, our [weekly wellbeing](/weekly-wellbeing) programme is built around exactly these gentle, sustainable rhythms."
+      "discriminant": "p",
+      "value": {
+        "text": "Practices that regulate your nervous system, rather than just fill your calendar, tend to help most. Simple, repeatable moments of grounding can make a new place feel less like a stage and more like a home. If you would like structured support with this, our [weekly wellbeing](/weekly-wellbeing) programme is built around exactly these gentle, sustainable rhythms."
+      }
     },
     {
-      "type": "quote",
-      "text": "Belonging is not something you arrange. It is something you allow, one honest conversation at a time.",
-      "attribution": "Theresa Frische"
+      "discriminant": "quote",
+      "value": {
+        "text": "Belonging is not something you arrange. It is something you allow, one honest conversation at a time.",
+        "attribution": "Theresa Frische"
+      }
     },
     {
-      "type": "h2",
-      "text": "When it might be time for support"
+      "discriminant": "h2",
+      "value": {
+        "text": "When it might be time for support"
+      }
     },
     {
-      "type": "p",
-      "text": "There is no threshold you have to reach before reaching out. But if the disconnection has become persistent, if it is dampening your mood, your sleep, or your sense of hope, it can help to talk it through with someone who understands the terrain. Counselling offers a space to make sense of the loneliness rather than pushing past it."
+      "discriminant": "p",
+      "value": {
+        "text": "There is no threshold you have to reach before reaching out. But if the disconnection has become persistent, if it is dampening your mood, your sleep, or your sense of hope, it can help to talk it through with someone who understands the terrain. Counselling offers a space to make sense of the loneliness rather than pushing past it."
+      }
     },
     {
-      "type": "p",
-      "text": "If any of this resonates, you are welcome to [book a free discovery call](/contact) and see whether [individual counselling](/work-with-me/psychological-counselling) feels right. Feeling out of place after building a whole life abroad is not a failure of adaptation. It is a very human signal that connection, not just competence, deserves your attention."
+      "discriminant": "p",
+      "value": {
+        "text": "If any of this resonates, you are welcome to [book a free discovery call](/contact) and see whether [individual counselling](/work-with-me/psychological-counselling) feels right. Feeling out of place after building a whole life abroad is not a failure of adaptation. It is a very human signal that connection, not just competence, deserves your attention."
+      }
     }
   ]
 }

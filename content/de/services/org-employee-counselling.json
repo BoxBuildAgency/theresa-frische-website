@@ -1,6 +1,4 @@
 {
-  "metaTitle": "Beratung für Mitarbeitende — Theresa Frische",
-  "metaDescription": "Vertrauliche Online-Beratung für Mitarbeitende in Belastungsphasen — 60 Minuten, deutsch oder englisch, eingebettet in Ihr betriebliches Gesundheitsmanagement.",
   "eyebrow": "Für Unternehmen",
   "heading": "Psychologische Beratung für Mitarbeitende",
   "lead": "Vertrauliche Einzelbegleitung zur mentalen Gesundheitsförderung — online, nach Vereinbarung und eingebettet in das betriebliche Gesundheitsmanagement Ihrer Organisation.",
@@ -38,5 +36,7 @@
       "label": "Frühe Anzeichen von Burnout",
       "href": "/de/blog/running-on-empty-early-signs-of-burnout"
     }
-  ]
+  ],
+  "metaTitle": "Beratung für Mitarbeitende — Theresa Frische",
+  "metaDescription": "Vertrauliche Online-Beratung für Mitarbeitende in Belastungsphasen — 60 Minuten, deutsch oder englisch, eingebettet in Ihr betriebliches Gesundheitsmanagement."
 }

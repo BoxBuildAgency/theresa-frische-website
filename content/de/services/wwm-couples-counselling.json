@@ -1,6 +1,4 @@
 {
-  "metaTitle": "Paarberatung — Theresa Frische",
-  "metaDescription": "Paarberatung online auf Deutsch und Englisch: ein geschützter Raum für ehrliche Begegnung, bessere Kommunikation und neue Impulse. Kostenloses Erstgespräch.",
   "eyebrow": "Angebot",
   "heading": "Paarberatung",
   "lead": "Ein geschützter Raum für ehrliche Begegnung, gegenseitiges Verstehen und neue Impulse für Ihre Beziehung.",
@@ -36,5 +34,7 @@
       "label": "Liebe über Kulturen hinweg",
       "href": "/de/blog/love-across-cultures"
     }
-  ]
+  ],
+  "metaTitle": "Paarberatung — Theresa Frische",
+  "metaDescription": "Paarberatung online auf Deutsch und Englisch: ein geschützter Raum für ehrliche Begegnung, bessere Kommunikation und neue Impulse. Kostenloses Erstgespräch."
 }

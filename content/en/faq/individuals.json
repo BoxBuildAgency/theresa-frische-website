@@ -1,5 +1,6 @@
 {
   "title": "For Individuals",
+  "order": 4,
   "items": [
     {
       "q": "What challenges do you support individuals with?",
@@ -25,6 +26,5 @@
       "q": "Can counselling help me manage stress?",
       "a": "Yes. When stress builds up over time it can affect how you sleep, think, relate to others, and feel day to day. In counselling we look at what is fuelling your stress and explore practical, sustainable ways to steady yourself. Over time many clients find they feel calmer, clearer, and more able to respond to life rather than simply react to it."
     }
-  ],
-  "order": 4
+  ]
 }

@@ -1,5 +1,6 @@
 {
   "title": "For Couples",
+  "order": 5,
   "items": [
     {
       "q": "How does couples counselling work?",
@@ -25,6 +26,5 @@
       "q": "Is couples counselling only for relationships in crisis?",
       "a": "No. Couples counselling is not only for relationships that are struggling. Many couples come to strengthen an already good relationship, deepen their connection, or navigate a shared transition together. It can be a caring, proactive way to invest in your relationship at any stage."
     }
-  ],
-  "order": 5
+  ]
 }

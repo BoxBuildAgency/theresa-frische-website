@@ -1,16 +1,14 @@
 {
-  "metaTitle": "About — Theresa Frische",
-  "metaDescription": "Theresa Frische is a Systemic & Integrative Counsellor supporting internationals, expats, and couples through change. M.Sc. Clinical Psychology · Somatic Experiencing® Practitioner.",
   "eyebrow": "About",
   "name": "Theresa Frische",
   "subtitle": "A counsellor for people in transition.",
   "credentials": "M.Sc. Clinical Psychology · Somatic Experiencing® Practitioner · Systemic & Integrative Counsellor",
   "lead": "For over eight years, I have supported individuals and organisations through meaningful processes of change — with deep attention to the whole of human experience.",
+  "imageAlt": "Portrait of Theresa Frische, Systemic & Integrative Counsellor, smiling by a window.",
   "intro": [
     "I know what it feels like when life becomes too much — when stress builds up, relationships feel strained, or the ground beneath you seems to give way.",
     "Over time, I've come to understand how closely the nervous system, relationships, and life circumstances are interwoven. When one area becomes overloaded, it often affects everything else — how we feel, how we connect, and how we move through the world. This understanding sits at the centre of my work."
   ],
-  "imageAlt": "Portrait of Theresa Frische, Systemic & Integrative Counsellor, smiling by a window.",
   "lived": {
     "heading": "A life between worlds",
     "body": [
@@ -25,41 +23,6 @@
       "I firmly believe that everyone already carries within them the capacity for change, regulation and growth. My work isn't about \"fixing\" you or handing you ready-made advice — it's about creating the conditions in which lasting development can unfold.",
       "I bring together evidence-based psychology, systemic counselling, body-oriented approaches (Somatic Experiencing®), parts work, and mindfulness into an integrative process that meets you on every level — mental, emotional, physical, relational, and in matters of existential meaning. Rather than thinking in categories, I look at the underlying connections — how life history, the nervous system, relationship patterns and life context all shape our experience.",
       "My aim is to support people in developing greater inner stability, flexibility, and resilience — and in building a fulfilling, value-oriented life in connection with themselves and others."
-    ]
-  },
-  "quotes": [
-    {
-      "text": "Life is a balance of holding on and letting go.",
-      "attribution": "Rumi"
-    },
-    {
-      "text": "Her empathic way of working makes it easy to open up. Her broad psychological knowledge across different approaches helped me understand and make sense of so much — having her as a companion in my life is of immeasurable value to me.",
-      "attribution": "Client"
-    }
-  ],
-  "education": {
-    "heading": "Qualifications & foundation",
-    "items": [
-      {
-        "title": "Systemic training",
-        "body": "IF Weinheim/Mannheim, in progress since 2023"
-      },
-      {
-        "title": "Somatic approaches",
-        "body": "Somatic Experiencing® (SE), certified practitioner; further training in Ego State, Hakomi, and body-oriented methods for working with stress and overwhelm"
-      },
-      {
-        "title": "M.Sc. Clinical Psychology",
-        "body": "University of Witten/Herdecke"
-      },
-      {
-        "title": "B.Sc. Psychology",
-        "body": "University of Cologne"
-      },
-      {
-        "title": "Classical & Contemporary Dance",
-        "body": "HfMDK Frankfurt & CODARTS Rotterdam"
-      }
     ]
   },
   "philosophySections": [
@@ -96,5 +59,42 @@
       ]
     }
   ],
-  "psyCoNote": "Recognition of this degree by the Swiss Psychology Professions Commission (PsyCo) has been applied for and is currently pending."
+  "quotes": [
+    {
+      "text": "Life is a balance of holding on and letting go.",
+      "attribution": "Rumi"
+    },
+    {
+      "text": "Her empathic way of working makes it easy to open up. Her broad psychological knowledge across different approaches helped me understand and make sense of so much — having her as a companion in my life is of immeasurable value to me.",
+      "attribution": "Client"
+    }
+  ],
+  "education": {
+    "heading": "Qualifications & foundation",
+    "items": [
+      {
+        "title": "Systemic training",
+        "body": "IF Weinheim/Mannheim, in progress since 2023"
+      },
+      {
+        "title": "Somatic approaches",
+        "body": "Somatic Experiencing® (SE), certified practitioner; further training in Ego State, Hakomi, and body-oriented methods for working with stress and overwhelm"
+      },
+      {
+        "title": "M.Sc. Clinical Psychology",
+        "body": "University of Witten/Herdecke"
+      },
+      {
+        "title": "B.Sc. Psychology",
+        "body": "University of Cologne"
+      },
+      {
+        "title": "Classical & Contemporary Dance",
+        "body": "HfMDK Frankfurt & CODARTS Rotterdam"
+      }
+    ]
+  },
+  "psyCoNote": "Recognition of this degree by the Swiss Psychology Professions Commission (PsyCo) has been applied for and is currently pending.",
+  "metaTitle": "About — Theresa Frische",
+  "metaDescription": "Theresa Frische is a Systemic & Integrative Counsellor supporting internationals, expats, and couples through change. M.Sc. Clinical Psychology · Somatic Experiencing® Practitioner."
 }
