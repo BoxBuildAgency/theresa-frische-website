@@ -1,0 +1,8 @@
+{
+  "title": "This page couldn't be found",
+  "body": "The page you're looking for may have moved. Let's get you back to a good starting point.",
+  "cta": {
+    "label": "Return home",
+    "href": "/"
+  }
+}

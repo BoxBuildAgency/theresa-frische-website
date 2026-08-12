@@ -1,0 +1,209 @@
+{
+  "locale": "de",
+  "htmlLang": "de",
+  "brand": {
+    "name": "Theresa Frische",
+    "tagline": "Systemische Beratung",
+    "title": "Systemische & Integrative Beraterin"
+  },
+  "nav": [
+    {
+      "label": "Über mich",
+      "href": "/de/ueber-mich",
+      "children": []
+    },
+    {
+      "label": "Angebot",
+      "href": "/de/angebot",
+      "children": [
+        {
+          "label": "Psychologische Beratung",
+          "href": "/de/angebot/psychologische-beratung"
+        },
+        {
+          "label": "Paarberatung",
+          "href": "/de/angebot/paarberatung"
+        },
+        {
+          "label": "Burnout-Prävention",
+          "href": "/de/angebot/burnout-praevention"
+        },
+        {
+          "label": "Somatic Experiencing®",
+          "href": "/de/angebot/somatic-experiencing"
+        }
+      ]
+    },
+    {
+      "label": "Für Unternehmen",
+      "href": "/de/fuer-unternehmen",
+      "children": [
+        {
+          "label": "Vorträge, Workshops & Kurse",
+          "href": "/de/fuer-unternehmen/vortraege-workshops-kurse"
+        },
+        {
+          "label": "Führungskräfte-Coaching",
+          "href": "/de/fuer-unternehmen/fuehrungskraefte-coaching"
+        },
+        {
+          "label": "Beratung für Mitarbeitende",
+          "href": "/de/fuer-unternehmen/beratung-mitarbeitende"
+        }
+      ]
+    },
+    {
+      "label": "Weekly Wellbeing",
+      "href": "/de/weekly-wellbeing",
+      "children": []
+    },
+    {
+      "label": "Blog",
+      "href": "/de/blog",
+      "children": []
+    },
+    {
+      "label": "FAQ",
+      "href": "/de/faq",
+      "children": []
+    }
+  ],
+  "header": {
+    "bookCta": {
+      "label": "Kennenlerngespräch buchen",
+      "href": "/de/contact"
+    },
+    "menuOpen": "Menü öffnen",
+    "menuClose": "Menü schließen",
+    "langToggleLabel": "Sprache wechseln",
+    "otherLangCode": "EN",
+    "otherLangName": "English"
+  },
+  "footer": {
+    "line": "Theresa Frische · Systemische & Integrative Beraterin · Online-Praxis — international",
+    "nav": [
+      {
+        "label": "Startseite",
+        "href": "/de"
+      },
+      {
+        "label": "Über mich",
+        "href": "/de/ueber-mich"
+      },
+      {
+        "label": "Angebot",
+        "href": "/de/angebot"
+      },
+      {
+        "label": "Psychologische Beratung",
+        "href": "/de/angebot/psychologische-beratung"
+      },
+      {
+        "label": "Paarberatung",
+        "href": "/de/angebot/paarberatung"
+      },
+      {
+        "label": "Burnout-Prävention",
+        "href": "/de/angebot/burnout-praevention"
+      },
+      {
+        "label": "Somatic Experiencing®",
+        "href": "/de/angebot/somatic-experiencing"
+      },
+      {
+        "label": "Für Unternehmen",
+        "href": "/de/fuer-unternehmen"
+      },
+      {
+        "label": "Vorträge, Workshops & Kurse",
+        "href": "/de/fuer-unternehmen/vortraege-workshops-kurse"
+      },
+      {
+        "label": "Führungskräfte-Coaching",
+        "href": "/de/fuer-unternehmen/fuehrungskraefte-coaching"
+      },
+      {
+        "label": "Beratung für Mitarbeitende",
+        "href": "/de/fuer-unternehmen/beratung-mitarbeitende"
+      },
+      {
+        "label": "Weekly Wellbeing",
+        "href": "/de/weekly-wellbeing"
+      },
+      {
+        "label": "Blog",
+        "href": "/de/blog"
+      },
+      {
+        "label": "FAQ",
+        "href": "/de/faq"
+      },
+      {
+        "label": "KI-Informationen",
+        "href": "/de/ai-info"
+      }
+    ],
+    "legalNav": [
+      {
+        "label": "Kontakt",
+        "href": "/de/contact"
+      },
+      {
+        "label": "KI-Info",
+        "href": "/de/ai-info"
+      },
+      {
+        "label": "Impressum",
+        "href": "/de/impressum"
+      },
+      {
+        "label": "Datenschutz",
+        "href": "/de/datenschutz"
+      },
+      {
+        "label": "AGB",
+        "href": "/de/agb"
+      }
+    ],
+    "rights": "Alle Rechte vorbehalten.",
+    "builtNote": "Online-Beratung auf Deutsch & Englisch, weltweit."
+  },
+  "cta": {
+    "primary": {
+      "label": "Kostenloses Kennenlerngespräch buchen",
+      "href": "/de/contact"
+    },
+    "secondaryLabel": "Angebote entdecken"
+  },
+  "disclaimer": {
+    "heading": "Ein wichtiger Hinweis",
+    "body": "Dies ist eine Beratungspraxis. Beratung ist keine Psychotherapie, keine medizinische Versorgung und kein Ersatz für eine von beiden. Wenn Sie sich in einer Krise befinden oder dringende Unterstützung brauchen, wenden Sie sich bitte an den örtlichen Notruf oder an eine Krisenhotline."
+  },
+  "blogDisclaimer": "Dieser Artikel dient ausschließlich der allgemeinen Information und Reflexion. Er ist keine Psychotherapie, keine medizinische Beratung und kein Ersatz für eine von beiden. Wenn Sie sich in einer Krise befinden oder dringende Unterstützung brauchen, wenden Sie sich bitte an den örtlichen Notruf oder an eine Krisenhotline.",
+  "crisis": {
+    "heading": "Wenn Sie dringend Unterstützung brauchen",
+    "intro": "Beratung ist kein Krisendienst. Wenn Sie sich in einer Krise befinden oder sofortige Hilfe brauchen, wenden Sie sich bitte an eine der folgenden Stellen.",
+    "items": [
+      {
+        "label": "Notruf (EU)",
+        "value": "112",
+        "href": ""
+      },
+      {
+        "label": "Telefonseelsorge (DE) — kostenlos, 24 h",
+        "value": "0800 111 0 111 · 0800 111 0 222",
+        "href": ""
+      },
+      {
+        "label": "Die Dargebotene Hand (CH)",
+        "value": "143",
+        "href": ""
+      },
+      {
+        "label": "Internationales Verzeichnis",
+        "value": "findahelpline.com",
+        "href": "https://findahelpline.com"
+      }
+    ]
+  }
+}

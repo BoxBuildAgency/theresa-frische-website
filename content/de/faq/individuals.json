@@ -1,0 +1,30 @@
+{
+  "title": "Für Einzelpersonen",
+  "order": 4,
+  "items": [
+    {
+      "q": "Bei welchen Themen unterstützen Sie Einzelpersonen?",
+      "a": "Ich begleite Menschen bei Stress, Überforderung und Erschöpfung, in Lebensübergängen, in Beziehungen, bei Fragen zu Identität und Orientierung, in den Herausforderungen eines internationalen Lebens und in ihrer persönlichen Entwicklung. Viele meiner Klient:innen sind sehr leistungsfähige Menschen, die nach außen alles im Griff zu haben scheinen und sich innerlich dennoch am Limit fühlen. Die Beratung bietet Ihnen einen ruhigen, vertraulichen Raum, um innezuhalten, das Erlebte zu ordnen und mit mehr Klarheit weiterzugehen."
+    },
+    {
+      "q": "Kann Beratung bei Erschöpfung und Überforderung helfen?",
+      "a": "Ja. Sich dauerhaft ausgelaugt zu fühlen, ständig auf Reserve zu laufen oder nicht mehr abschalten zu können, kennen viele leistungsfähige Menschen, und das sollte man ernst nehmen. In der Beratung schauen wir behutsam, was Sie auslaugt, was Ihre Überforderung Ihnen sagen möchte und wie Sie Ihre Energie und Ihre Grenzen wieder aufbauen können. Ziel ist, dass Sie sich geerdeter und gestärkter fühlen und wieder mehr im Einklang mit dem sind, was Ihnen wichtig ist."
+    },
+    {
+      "q": "Ich funktioniere gut, bin aber erschöpft — ist das etwas für mich?",
+      "a": "Auf jeden Fall. Viele Menschen, die zu mir kommen, wirken nach außen erfolgreich und verlässlich, fühlen sich innerlich aber müde, ausgelaugt oder abgeschnitten. Sie müssen nicht in einer Krise sein, um von einer Beratung zu profitieren. Hier ist ein Raum, in dem Sie den Druck, immer weiter funktionieren zu müssen, ablegen und sich einmal ganz auf Ihr eigenes Wohlbefinden konzentrieren dürfen."
+    },
+    {
+      "q": "Kann Beratung bei einem großen Lebensübergang helfen?",
+      "a": "Ja. Große Veränderungen wie eine neue Aufgabe, ein Umzug ins Ausland, ein Kind, das Ende einer Beziehung oder ein ungewisser nächster Abschnitt können verunsichern, selbst wenn die Veränderung eine positive ist. Beratung bietet verlässliche Begleitung, während Sie wieder Boden unter den Füßen und Ihre eigene Richtung finden. Gemeinsam schaffen wir Raum, um nachzudenken, anzukommen und in Ihrem eigenen Tempo weiterzugehen."
+    },
+    {
+      "q": "Kann Beratung mir bei Identität und Orientierung helfen?",
+      "a": "Ja. Fragen wie „Wer bin ich jetzt?“, „Was will ich wirklich?“ und „Wo gehöre ich hin?“ tauchen häufig auf, besonders in Übergängen oder nachdem man jahrelang andere an die erste Stelle gesetzt hat. Beratung gibt Ihnen Raum, diesen Fragen ehrlich und ohne Druck nachzugehen. Mir ist wichtig, dass Sie wieder Zugang zu Ihren eigenen Werten und Ihrer Richtung finden, damit sich Ihre Entscheidungen wieder wie Ihre eigenen anfühlen."
+    },
+    {
+      "q": "Kann Beratung mir helfen, mit Stress umzugehen?",
+      "a": "Ja. Wenn sich Stress über längere Zeit anstaut, kann er beeinflussen, wie Sie schlafen, denken, mit anderen umgehen und sich im Alltag fühlen. In der Beratung schauen wir, was Ihren Stress nährt, und finden praktische, tragfähige Wege, wieder zur Ruhe zu kommen. Mit der Zeit erleben viele Klient:innen, dass sie ruhiger und klarer werden und dem Leben eher gelassen begegnen, statt nur zu reagieren."
+    }
+  ]
+}

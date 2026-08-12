@@ -1,0 +1,30 @@
+{
+  "title": "For Organisations",
+  "order": 9,
+  "items": [
+    {
+      "q": "Do you work with companies?",
+      "a": "Yes. I work with companies and institutions in Germany and Switzerland, both online and on-site. My focus is on wellbeing at work, supporting people and teams to feel steadier, more resourced and more connected."
+    },
+    {
+      "q": "What formats do you offer for organisations?",
+      "a": "I offer keynote talks of 30 to 60 minutes, workshops and seminars of 2 to 4 hours, in-depth trainings of 1 to 3 days, and structured 8-week programmes. Alongside these, I provide confidential employee counselling and leadership counselling as part of an employee assistance programme. We can shape the right format together to suit your organisation."
+    },
+    {
+      "q": "Can you deliver a one-off workshop or keynote?",
+      "a": "Yes. One-off keynotes and workshops are very welcome, as are longer programmes if you would like something more in-depth. We can start with a single session and build from there if it feels useful."
+    },
+    {
+      "q": "Do you offer employee or leadership support (EAP)?",
+      "a": "Yes. As part of an employee assistance programme, I offer confidential employee counselling and leadership counselling. This gives your people a supportive, private space to talk things through and find steadier footing."
+    },
+    {
+      "q": "Are organisational sessions online or on-site?",
+      "a": "Both. I work with organisations online or on-site, whichever suits you best. We can choose the setting that fits your team, your location and the format you have in mind."
+    },
+    {
+      "q": "What topics do you cover for teams?",
+      "a": "Topics include stress and burnout prevention, emotional regulation, mindfulness at work, communication and team dynamics, positive psychology, resilience and change, and nervous system regulation. These support corporate mental health and everyday wellbeing across a team. We can tailor the focus to what your people most need."
+    }
+  ]
+}

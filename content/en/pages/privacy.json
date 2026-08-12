@@ -1,0 +1,99 @@
+{
+  "heading": "Privacy Policy",
+  "intro": "Your privacy matters. This policy explains what personal data is collected when you use this website, why, and what rights you have. It is written to meet the requirements of the EU General Data Protection Regulation (GDPR) and the Swiss Federal Act on Data Protection (nDSG / FADP).",
+  "sections": [
+    {
+      "heading": "Controller",
+      "paras": [
+        "The controller responsible for data processing on this website is:",
+        "Theresa Frische — Systemic & Integrative Counsellor. Scheffelstraße 23, 79102 Freiburg im Breisgau, Germany. Email: info@theresafrische.com. Phone: +49 157 38920374."
+      ],
+      "bullets": []
+    },
+    {
+      "heading": "Principle of data minimisation",
+      "paras": [
+        "This website is designed to collect as little personal data as possible. There is no user tracking, no analytics, no advertising pixels, and no cookies are set for marketing or analytics purposes. No special categories of data (such as health data) are requested through this website, and you are asked not to share sensitive details such as health information through the contact form."
+      ],
+      "bullets": []
+    },
+    {
+      "heading": "Contact form",
+      "paras": [
+        "When you use the contact form, the following data is processed: your name, your email address, and the content of your message. This information is used solely to respond to your enquiry.",
+        "Legal basis: Art. 6 (1)(b) GDPR (steps prior to entering into a contract) where your enquiry relates to counselling services, and Art. 6 (1)(a) GDPR (consent) for processing your message, which you give by submitting the form. You can withdraw your consent at any time with effect for the future.",
+        "Your submission is delivered to me by email and is not stored in a database on this website."
+      ],
+      "bullets": []
+    },
+    {
+      "heading": "Email delivery processor (Resend)",
+      "paras": [
+        "Contact form messages are transmitted using Resend, an email delivery service provided by Resend, Inc. Resend processes the data contained in your message (name, email address, message text) on my behalf solely for the purpose of delivering the email to me.",
+        "Resend acts as a processor under Art. 28 GDPR, and a data processing agreement is in place. Where data is transferred to servers outside the EU/EEA, the transfer is safeguarded by appropriate measures such as the EU Standard Contractual Clauses."
+      ],
+      "bullets": []
+    },
+    {
+      "heading": "Hosting (Netlify)",
+      "paras": [
+        "This website is hosted by Netlify (Netlify, Inc.). When you visit the site, Netlify automatically collects and stores information that your browser transmits in server log files. This may include your IP address, the date and time of the request, the page accessed, the referrer URL, and your browser and operating system.",
+        "Legal basis: Art. 6 (1)(f) GDPR (legitimate interest in the secure, stable, and efficient provision of the website). Netlify acts as a processor under Art. 28 GDPR. As Netlify is based in the United States, data may be transferred there; such transfers are safeguarded by appropriate measures such as the EU Standard Contractual Clauses."
+      ],
+      "bullets": []
+    },
+    {
+      "heading": "Retention",
+      "paras": [
+        "Personal data is retained only for as long as necessary for the purpose for which it was collected. Enquiries received by email are kept for as long as needed to handle your request and, where applicable, to meet statutory retention obligations, and are then deleted. Server log files are retained by the hosting provider for a limited period for security purposes."
+      ],
+      "bullets": []
+    },
+    {
+      "heading": "Cookies and analytics",
+      "paras": [
+        "This website does not use analytics or tracking cookies and does not embed third-party advertising or social media tracking. Only technically necessary functions required to operate the site are used. Should analytics ever be introduced in future, this policy will be updated and, where required, your consent will be obtained beforehand."
+      ],
+      "bullets": []
+    },
+    {
+      "heading": "Your rights",
+      "paras": [
+        "Under the GDPR and the Swiss FADP, you have the following rights regarding your personal data:"
+      ],
+      "bullets": [
+        "The right to access the personal data held about you.",
+        "The right to rectification of inaccurate or incomplete data.",
+        "The right to erasure (\"the right to be forgotten\").",
+        "The right to restriction of processing.",
+        "The right to data portability.",
+        "The right to object to processing based on legitimate interests.",
+        "The right to withdraw consent at any time, with effect for the future.",
+        "The right to lodge a complaint with a supervisory authority."
+      ]
+    },
+    {
+      "heading": "Right to complain",
+      "paras": [
+        "If you believe that the processing of your personal data infringes data protection law, you have the right to lodge a complaint with a supervisory authority — in particular in the EU member state of your residence, place of work, or the place of the alleged infringement, or, for Switzerland, with the Federal Data Protection and Information Commissioner (FDPIC)."
+      ],
+      "bullets": []
+    },
+    {
+      "heading": "Updates to this policy",
+      "paras": [
+        "This privacy policy may be updated to reflect changes to the website or to legal requirements. The current version always applies."
+      ],
+      "bullets": []
+    },
+    {
+      "heading": "Terms & Conditions",
+      "paras": [
+        "The terms governing counselling services — including sessions, payment, cancellation, confidentiality and the right of withdrawal — are set out in the [Terms & Conditions](/terms)."
+      ],
+      "bullets": []
+    }
+  ],
+  "metaTitle": "Privacy Policy — Theresa Frische",
+  "metaDescription": "How personal data is handled on this website, in accordance with the GDPR and the Swiss FADP (nDSG)."
+}

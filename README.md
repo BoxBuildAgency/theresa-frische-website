@@ -71,25 +71,21 @@ src/
     ui/               buttons, container, cards, etc.
   content/
     types.ts          the SiteContent shape both locales implement
-    en.ts             English copy (source of truth) — imports blog + faq modules
-    de.ts             German translation — imports blog + faq modules
+    load.ts           reads content/<locale>/*.json and rebuilds SiteContent
+    en.ts / de.ts     thin adapters: `loadContent("en" | "de")`
     index.ts          getContent() / blog helpers (posts sorted newest-first)
-    blog/             blog posts, split out of en.ts/de.ts
-      set-existing.ts, set-a.ts … set-f.ts   post batches (each exports *En / *De)
-      posts.en.ts / posts.de.ts              assemble all 23 posts in order
-      related.ts                             cluster map: RELATED + PAGE_POSTS
-    services/         long-form Work With Me / For Organisations child pages
-      work-with-me.ts                        wwmChildrenEn / wwmChildrenDe
-      organisations.ts                       orgChildrenEn / orgChildrenDe
-    faq/              FAQ, grouped into categories
-      faq-1.ts, faq-2.ts, faq-3.ts           category batches (*En / *De)
-      faq.en.ts / faq.de.ts                  assemble all 9 categories
+    blog/related.ts   cluster map: RELATED + PAGE_POSTS (link architecture, not copy)
   lib/
     site.ts           routes table + EN↔DE path mapping
     seo.ts            per-page metadata (canonical + hreflang + OG)
     fonts.ts          next/font (Cormorant Garamond + Inter)
 public/
   images/             her 8 photographs + og-default.jpg (see Images below)
+content/              THE EDITABLE CONTENT (Keystatic writes here)
+  en/ , de/           site.json, pages/*.json, posts/*.json, faq/*.json, services/*.json
+keystatic.config.ts   the admin's forms and labels
+keystatic/fields.ts   shared field builders (SEO, blog body, facts tables)
+scripts/              compliance-sweep.mjs, check-schema-coverage.mjs
 ```
 
 The two locales render the **same** presentational components, fed by `content/en.ts` and
@@ -141,9 +137,13 @@ design, so the language attribute is always correct). Path mapping lives in `cou
 
 ## Editing content
 
-- **Page copy:** edit `src/content/en.ts` and the matching keys in `src/content/de.ts`. The shape
-  is enforced by `src/content/types.ts`, so TypeScript will flag anything missing.
-- **Keep both languages in sync** and keep the compliance rules above.
+Day to day, edit in the admin at **`/keystatic`** — see "Editing the site" below. Under the
+hood the copy is JSON in `content/en/` and `content/de/`, which you can also edit by hand.
+The shape is enforced by `src/content/types.ts`, so TypeScript flags anything missing, and
+`npm run check:schema` flags anything the admin does not yet know about.
+
+**Keep both languages in sync**, keep the same slug/id for a page in EN and DE (the language
+toggle and hreflang depend on it), and keep the compliance rules above.
 
 ### Blog & FAQ content
 
@@ -152,50 +152,10 @@ manageable, blog posts and the FAQ live in their own modules under `src/content/
 `src/content/faq/`, assembled by `posts.en.ts` / `posts.de.ts` and `faq.en.ts` / `faq.de.ts` and
 imported into `en.ts` / `de.ts`. Posts are shown newest-first (sorted by `date`).
 
-**Add a blog post:** add an entry to one of the `set-*.ts` files in `src/content/blog/` (in the
-`*En` array), and the **same post** (same `slug`) translated into the matching `*De` array:
-
-```ts
-{
-  slug: "my-new-post",          // URL slug — identical in the En and De arrays
-  title: "My New Post",
-  category: "Mindfulness",
-  date: "2026-07-01",           // ISO date (controls ordering)
-  readingTime: "5",
-  excerpt: "One-sentence summary.",
-  body: [
-    { type: "p", text: "A paragraph, with an [internal link](/work-together)." },
-    { type: "h2", text: "A subheading" },
-    { type: "ul", items: ["point one", "point two"] },
-    { type: "quote", text: "A quote.", attribution: "Author" },
-  ],
-}
-```
-
-Inside `p` and `ul` text you can embed internal links as markdown — `[label](/path)` — EN posts use
-`/path`, DE posts use `/de/path`. The index card, `/blog/[slug]` page, sitemap, and Article JSON-LD
-all update automatically. (A post may optionally carry `draft: true` with `body: []` to hide it
-until finished.)
-
-**Add / edit an FAQ:** each category is `{ id, title, items: [{ q, a }] }` in a `faq-*.ts` file
-(`*En` + `*De`). Keep the same `id` across EN/DE — it powers the jump-nav anchor. Answers may
-contain the same `[label](/path)` internal links as posts (EN `/path`, DE `/de/path`); the FAQPage
-JSON-LD strips them so the schema stays plain text.
-
-### Internal linking
-
-The internal-link architecture lives in `src/content/blog/related.ts`:
-
-- `RELATED` — for each post, the 3 hand-picked, same-cluster posts shown in the "Continue reading"
-  block (never random, never self; rendered in the current locale).
-- `PAGE_POSTS` — which posts each service/pillar page (`work-together`, `organisations`, `about`,
-  `weekly-wellbeing`) links out to via the **Further reading** band (`FurtherReading` component).
-
-Every post carries an in-body link to a service page plus the recurring discovery-call CTA; blog
-posts and the main content pages render **breadcrumbs** (`Breadcrumbs` component) with
-`BreadcrumbList` JSON-LD. All internal links stay within their own locale (EN → `/…`, DE →
-`/de/…`); only the language toggle crosses locales. To re-audit the link graph, crawl the running
-site and check for broken links, orphans, and cross-locale links.
+**Add a blog post:** in the admin, open **Blog articles — EN**, click *New*, and create the
+matching German entry under **Blog articles — DE** using the *same slug*. The index card, the
+`/blog/[slug]` page, the sitemap and the Article JSON-LD all follow automatically. Tick "Hide
+this article" to keep a draft out of the site.
 
 ---
 
@@ -233,6 +193,124 @@ The contact form collects **name, email, and a short message only** — no healt
    live on Netlify before then.
 
 ---
+
+## Editing the site (Keystatic admin)
+
+**What it is, in two sentences.** Keystatic is a small admin panel built into the
+website at `/keystatic`. When Theresa saves an edit it writes the change straight into
+the project's files on GitHub and Netlify rebuilds the site — so there is no database,
+no extra monthly cost, and every change has a full history that can be undone.
+
+Content lives as JSON under `content/en/` and `content/de/`. `src/content/load.ts`
+reads those files at build time and rebuilds the exact same `SiteContent` shape the
+components already used, so the rendered pages are unchanged.
+
+### What José must do before Theresa can log in
+
+1. **Create a GitHub OAuth app** — GitHub → Settings → Developer settings → OAuth Apps
+   → *New OAuth App*:
+   - Application name: `Theresa Frische site admin`
+   - Homepage URL: `https://theresafrische.com`
+   - **Authorization callback URL:** `https://theresafrische.com/api/keystatic/github/oauth/callback`
+   - After creating it, also add a second callback for the staging domain if you want
+     to test there: `https://<site>.netlify.app/api/keystatic/github/oauth/callback`
+2. **Set these environment variables in Netlify** (Site settings → Environment variables):
+   | Variable | Value |
+   | --- | --- |
+   | `NEXT_PUBLIC_KEYSTATIC_GITHUB_APP_SLUG` | the app slug from the OAuth app's URL |
+   | `KEYSTATIC_GITHUB_CLIENT_ID` | from the OAuth app |
+   | `KEYSTATIC_GITHUB_CLIENT_SECRET` | from the OAuth app |
+   | `KEYSTATIC_SECRET` | any long random string (`openssl rand -hex 32`) |
+   Without `NEXT_PUBLIC_KEYSTATIC_GITHUB_APP_SLUG` the admin falls back to local mode,
+   which is what you want for `npm run dev`.
+3. **Give Theresa access to the repo** — invite her GitHub account to
+   `BoxBuildAgency/theresa-frische-website` with **Write** access. Keystatic commits as
+   the signed-in user, so she needs write permission for saves to work.
+
+### The compliance check (why full editing is safe)
+
+Every push — including the commits Keystatic makes when Theresa saves — runs
+`.github/workflows/checks.yml`, which runs:
+
+```bash
+npm run check:compliance   # counselling-only wording, EN + DE
+npm run check:schema       # the admin cannot silently drop a field
+npm run build
+npm run lint
+```
+
+If the wording check fails, **the build fails and the change never reaches the live
+site**. The failure message is written for a non-developer and names the word and the
+file, e.g. *"The word 'Psychotherapie' was found in content/de/pages/home.json (line 7).
+… reword the sentence and save again."* Nothing is lost when this happens — the live
+site simply stays as it was until the wording is fixed.
+
+To run it yourself before pushing: `npm run check:compliance`.
+
+### Undoing a bad edit
+
+Every save is a normal git commit, so:
+
+```bash
+git log --oneline -- content/          # find the commit
+git revert <commit>                    # undo it, keeping history
+git push
+```
+
+Or on github.com: open the commit → **Revert**. Netlify rebuilds automatically.
+
+### Adding a new field or collection later
+
+1. Add the field to `keystatic.config.ts` (give it a plain-English `label` and a
+   `description` saying where it appears).
+2. Add the same key to the matching type in `src/content/types.ts`.
+3. Add it to `DECLARED` in `scripts/check-schema-coverage.mjs`.
+4. Run `npm run check:schema` — it fails if a content file has a key the admin does not
+   declare, which is the situation that would silently delete content on save.
+
+### What is in the admin today
+
+**Everything.** `npm run check:schema` reports 106 content files exposed, 0 not exposed,
+and 0 undeclared fields — so there is no page Theresa can open, save, and accidentally
+strip. Grouped in the sidebar by how often she will need them:
+
+- **Blog articles** (EN + DE) — all 23, with the article body built block by block
+- **Questions & answers** (EN + DE) — all 9 categories, their questions, and page order
+- **Service pages** (EN + DE) — the four Work With Me and three For Organisations children
+- **Main pages** (EN + DE) — Home, About, Work With Me overview, For Organisations
+  overview, Weekly Wellbeing, Contact, Blog page, FAQ page, AI info, and the
+  "page not found" message
+- **Site-wide text** (EN + DE) — menus, footer, the discovery-call button, the disclaimer
+  and the crisis resources (the last two flagged as safety-critical in the form)
+- **Legal pages** (EN + DE) — Impressum, Privacy/Datenschutz, Terms/AGB, each flagged as
+  legally consequential
+
+Every page also has its own **Page title** and **Search description** fields for Google.
+Canonical URLs and hreflang stay generated in code from the routes table — making them
+editable would break the EN/DE pairing.
+
+A few fields carry warnings rather than being locked: the About qualifications and the
+recognition note (worded deliberately for regulatory reasons), the disclaimer and crisis
+resources, and the legal pages. They are editable, but the form says to check with José.
+
+### A note on the lockfile
+
+**`package-lock.json` is generated on Linux, not on macOS. Keep it that way.**
+
+CI and Netlify both build on Linux, and both install with `npm ci`, which demands an exact
+lockfile/tree match. npm resolves that tree differently per platform: adding Keystatic
+brought in `tinyglobby`, and its `fdir` dependency hoists to `node_modules/fdir` on macOS
+but stays nested at `node_modules/tinyglobby/node_modules/fdir` on Linux. A macOS-resolved
+lockfile therefore fails `npm ci` on both. (npm reports the mismatch against `picomatch`,
+which is a downstream symptom, not the cause — don't chase it.)
+
+The Linux lockfile installs cleanly on macOS too, so local development is unaffected: just
+`npm ci` as normal.
+
+If you add or upgrade a dependency, regenerate the lockfile on Linux rather than committing
+whatever macOS produced. `.github/workflows/lockfile.yml` does this: run it from the Actions
+tab, and it regenerates the lockfile on `ubuntu-latest`, proves `npm ci` accepts its own
+output, and uploads it as an artifact for you to download and commit.
 
 ## Go-live checklist
 

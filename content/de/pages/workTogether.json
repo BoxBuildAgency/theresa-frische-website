@@ -1,0 +1,102 @@
+{
+  "eyebrow": "Angebot",
+  "heading": "So beginnen wir",
+  "intro": "Die Sitzungen finden online statt, auf Deutsch und Englisch, für Einzelpersonen und Paare weltweit. Der einfachste erste Schritt ist ein kostenloses, unverbindliches Kennenlerngespräch.",
+  "cards": [
+    {
+      "title": "Psychologische Beratung",
+      "body": "Ein vertraulicher Raum für Reflexion und Klarheit — für Einzelpersonen.",
+      "href": "/de/angebot/psychologische-beratung"
+    },
+    {
+      "title": "Paarberatung",
+      "body": "Ein geschützter Raum für echte Begegnung und neue Bewegung in der Beziehung.",
+      "href": "/de/angebot/paarberatung"
+    },
+    {
+      "title": "Burnout-Prävention",
+      "body": "Stressmuster erkennen, bevor Erschöpfung zum Zusammenbruch führt.",
+      "href": "/de/angebot/burnout-praevention"
+    },
+    {
+      "title": "Somatic Experiencing®",
+      "body": "Körperorientierte Verarbeitung von Stress und belastenden Erfahrungen.",
+      "href": "/de/angebot/somatic-experiencing"
+    }
+  ],
+  "discovery": {
+    "heading": "Kostenloses Kennenlerngespräch (15 Minuten)",
+    "intro": "Ein kurzes, entspanntes Gespräch, in dem Sie erzählen können, was Sie herführt, und wir gemeinsam spüren, ob eine Zusammenarbeit stimmig ist — ganz unverbindlich.",
+    "steps": [
+      {
+        "title": "Kostenloses Kennenlerngespräch buchen",
+        "body": "Wählen Sie einen Zeitpunkt, der Ihnen passt. Wir sprechen kurz darüber, was Sie herführt."
+      },
+      {
+        "title": "Spüren, ob es passt",
+        "body": "Ganz ohne Druck — dieses Gespräch ist einfach eine Gelegenheit, ein Gefühl für die Zusammenarbeit zu bekommen."
+      },
+      {
+        "title": "Mit den Sitzungen beginnen",
+        "body": "Wenn es sich stimmig anfühlt, vereinbaren wir regelmäßige Sitzungen in einem Tempo, das zu Ihnen passt."
+      }
+    ]
+  },
+  "quote": {
+    "text": "Wir können nicht das werden, was wir sein wollen, wenn wir bleiben, was wir sind.",
+    "attribution": "Max DePree"
+  },
+  "individual": {
+    "heading": "Einzelsitzungen",
+    "subheading": "Beratung im Einzelsetting",
+    "body": "Die Einzelberatung bietet einen vertraulichen, verlässlichen Raum, um zur Ruhe zu kommen und dem, was Sie gerade beschäftigt, einen Sinn zu geben. Die Sitzungen schöpfen aus systemischen, somatischen, teileorientierten und achtsamkeitsbasierten Ansätzen — ausgerichtet an dem, was gerade bei Ihnen ansteht.",
+    "meta": [
+      {
+        "label": "Dauer",
+        "value": "60 Minuten"
+      },
+      {
+        "label": "Format",
+        "value": "Online (Video)"
+      },
+      {
+        "label": "Sprachen",
+        "value": "Deutsch & Englisch"
+      }
+    ]
+  },
+  "couples": {
+    "heading": "Paarsitzungen",
+    "subheading": "Paarberatung",
+    "body": "Die Paarberatung unterstützt Partner:innen dabei, Muster der Entfremdung zu verstehen, wieder besser miteinander ins Gespräch zu kommen und zurück zu emotionaler Nähe zu finden. Die Sitzungen bieten einen geschützten Rahmen, in dem sich beide gehört fühlen und einander neu zuhören können.",
+    "meta": [
+      {
+        "label": "Dauer",
+        "value": "60–120 Minuten"
+      },
+      {
+        "label": "Format",
+        "value": "Online (Video)"
+      },
+      {
+        "label": "Sprachen",
+        "value": "Deutsch & Englisch"
+      }
+    ]
+  },
+  "switzerland": {
+    "heading": "Begleitung in der Schweiz, in Deutschland und international",
+    "paras": [
+      "Die Beratung findet ausschließlich online per Video statt — auf Deutsch und Englisch, für Klient:innen in der Schweiz, in Deutschland und international. Wer in Zürich, Zug oder einer anderen Schweizer Region lebt, arbeitet mit mir also von dort aus, ohne Anfahrt und ohne Wartezimmer.",
+      "Dieses Format passt besonders zu Internationals und Expats, die beruflich umgezogen sind: Sie können die Begleitung beibehalten, auch wenn sich der Wohnort, das Land oder die Arbeitssituation wieder verändert. Paare, die an unterschiedlichen Orten leben, können ebenfalls gemeinsam teilnehmen.",
+      "Termine vergebe ich nach Vereinbarung; Zeitzonen außerhalb Mitteleuropas lassen sich in vielen Fällen einrichten. Die Sitzungen sind Selbstzahlerleistungen — es braucht keine Überweisung und keine Meldung an eine Versicherung."
+    ]
+  },
+  "closing": {
+    "heading": "Bereit für den ersten Schritt?",
+    "body": "Buchen Sie Ihr kostenloses Kennenlerngespräch (15 Minuten) — ein entspannter, unverbindlicher Einstieg.",
+    "note": "Sitzungen sind Selbstzahlerleistungen — das Honorar wird individuell im kostenlosen Kennenlerngespräch vereinbart; eine Abrechnung mit oder Erstattung durch die Krankenkasse erfolgt nicht · Antwort innerhalb von 2–3 Werktagen."
+  },
+  "metaTitle": "Angebot — Psychologische Beratung & Paarberatung | Theresa Frische",
+  "metaDescription": "Online-Beratung für Einzelpersonen und Paare auf Deutsch und Englisch: psychologische Beratung, Paarberatung, Burnout-Prävention und Somatic Experiencing®. Beginnen Sie mit einem kostenlosen Kennenlerngespräch (15 Minuten)."
+}
