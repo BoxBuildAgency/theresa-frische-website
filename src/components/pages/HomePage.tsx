@@ -159,9 +159,14 @@ export function HomePage({ locale }: { locale: Locale }) {
       <Section tone="sand">
         <div className="grid items-center gap-12 lg:grid-cols-[0.7fr_1fr]">
           <div className="relative mx-auto aspect-[4/5] w-full max-w-xs overflow-hidden rounded-3xl border border-line bg-cream">
+            {/* Her portrait now leads the hero, so this block carries mood
+                imagery instead — the two-column rhythm survives without the
+                same photograph appearing twice on one page. Decorative, so it
+                is hidden from screen readers rather than described. */}
             <Image
-              src="/images/about-theresa.jpg"
-              alt={c.about.imageAlt}
+              src="/images/band-meadow.jpg"
+              alt=""
+              aria-hidden="true"
               fill
               sizes="(max-width: 1024px) 70vw, 320px"
               className="object-cover"
