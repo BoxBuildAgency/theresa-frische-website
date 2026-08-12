@@ -144,10 +144,6 @@ export async function POST(req: NextRequest) {
     });
     data = result.data;
     error = result.error;
-
-    // TEMPORARY debug logging — remove once the production send is confirmed.
-    // Shows the full Resend response in the Netlify function logs.
-    console.log(`${TAG} Resend response: ${JSON.stringify({ data, error })}`);
   } catch (err) {
     console.error(`${TAG} Resend threw:`, err);
     return NextResponse.json(
