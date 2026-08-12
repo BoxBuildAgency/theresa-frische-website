@@ -12,6 +12,10 @@
     "label": "Explore services",
     "href": "/work-with-me"
   },
+  "heroPortrait": {
+    "src": "/images/about-theresa.jpg",
+    "alt": "Theresa Frische, smiling, in a bright room with a plant behind her."
+  },
   "heroParas": [
     "Life rarely changes in clear or linear ways. More often, it shifts gradually — until something begins to feel different within yourself.",
     "Sometimes life keeps moving on the outside while something no longer feels right on the inside. Outwardly, you may still be functioning, while inwardly there is exhaustion, inner restlessness, overwhelm, or the quiet sense of no longer feeling like yourself.",

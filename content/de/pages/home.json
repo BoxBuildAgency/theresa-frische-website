@@ -12,6 +12,10 @@
     "label": "Angebote entdecken",
     "href": "/de/angebot"
   },
+  "heroPortrait": {
+    "src": "/images/about-theresa.jpg",
+    "alt": "Theresa Frische, lächelnd, in einem hellen Raum mit einer Pflanze im Hintergrund."
+  },
   "heroParas": [
     "Das Leben verändert sich selten geradlinig. Meist verschiebt sich etwas ganz allmählich — bis sich in Ihnen etwas anders anfühlt als zuvor.",
     "Manchmal läuft im Außen alles weiter, während innen Erschöpfung, innere Unruhe oder Überforderung wachsen — oder das leise Gefühl, sich selbst fremd geworden zu sein.",

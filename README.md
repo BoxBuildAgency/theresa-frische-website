@@ -352,8 +352,8 @@ were overwritten with her photographs, so no code references changed.
 
 | File | Source photograph | Placement |
 | --- | --- | --- |
-| `hero.jpg` | Blonde Haare am Strand | Home hero, full-bleed behind the headline (`priority`) |
-| `about-theresa.jpg` | Headshot | About portrait (4:5) and the Home about block |
+| `hero.jpg` | Blonde Haare am Strand | Home hero — soft background texture only (25% opacity under a cream scrim) |
+| `about-theresa.jpg` | Headshot | About portrait (4:5), the Home about block, and the default Home **hero portrait** |
 | `weekly-wellbeing.jpg` | Weekly Wellbeing | Weekly Wellbeing hero (`priority`) |
 | `organisations.jpg` | Organisation Page | For Organisations, her delivering a seminar |
 | `band-quote.jpg` | Schattenspiel | Home testimonials band (under a Pine scrim) |
@@ -363,9 +363,39 @@ were overwritten with her photographs, so no code references changed.
 | `og-default.jpg` | generated | Open Graph / social card |
 
 To swap a photograph, replace the file **keeping the same filename and roughly the same aspect
-ratio**; nothing else needs editing. The hero scrim is tuned for a light image — the headline
-measures ~12.6:1 against it (AA needs 4.5:1). If a darker hero is ever used, lighten the scrim
-gradient in `HomePage.tsx`.
+ratio**; nothing else needs editing.
+
+### The home hero portrait
+
+The home page opens with a portrait of Theresa beside the headline — her face is the first thing a
+visitor sees, rather than an atmospheric photograph. `hero.jpg` remains behind it as a warm texture
+at 25% opacity, so it reads as tone rather than as a second, competing image.
+
+The portrait is **editable in the admin**, separately from the About photograph, under
+*Main pages → Home page → Hero portrait*. It has two fields:
+
+| Field | What it takes |
+| --- | --- |
+| Image file | A path to a file already in `public/images/`, e.g. `/images/about-theresa.jpg` |
+| Photo description | The alt text, for screen readers |
+
+**Recommended dimensions: upright (portrait) 4:5, around 1200 × 1500px**, long edge 2000px max,
+JPEG q82 to match the rest of the set. It is used at up to 420px wide on desktop and full-width on
+mobile, so anything from 1000px wide up is comfortable.
+
+Uploading is deliberately not part of the admin — Theresa writes a path, and new files are added to
+`public/images/` by a developer. That keeps image optimisation and file naming consistent.
+
+**Framing.** The crop is anchored with `object-position` at 58% / 28–32%, tuned to the current
+headshot, where the face sits slightly right of centre and high in the frame. The box is 5:4 on
+mobile, 4:3 from `sm`, and 4:5 from `lg` — where it matches the source ratio exactly, so no crop is
+applied at all. A replacement portrait with the face in a very different position may need those
+percentages adjusted in `HomePage.tsx`.
+
+**Contrast.** Measured against the hero background by compositing the texture with the scrim: the
+headline is 13.3:1 and the lead paragraph 6.7:1 at worst (AA needs 4.5:1). The small grey line under
+the lead uses `--color-ink-muted`, which is 3.6–3.8:1 *everywhere it is used on the site* and does
+not meet AA — see the note in Design tokens.
 
 ## Design tokens (v2)
 
@@ -379,6 +409,14 @@ pairing (see the comments in `src/app/globals.css`):
 - **Clay Ink `#7A5F2C`** — added because the 12px uppercase eyebrow is *small* text and needs
   4.5:1, which Clay Deep does not reach. 5.6:1 on cream. (This also fixed the previous sage
   eyebrow, which failed at 3.4:1.)
+
+> **Known contrast gap — `--color-ink-muted` (`#857c70`).** Measured at **3.84:1 on cream** and
+> **3.58:1 on sand**, against the 4.5:1 AA needs for text below 18pt. It is used at 12–14px for the
+> reach line under the hero lead, the language toggle, and the `MetaList` labels, so it currently
+> fails AA everywhere it appears. This predates the hero redesign and was found while verifying it.
+> Darkening the token to **`#746c61`** clears it — 4.51:1 on sand, 4.83:1 on cream — and is a ~13%
+> change, small enough to keep the palette's warmth. Not applied, because it shifts a colour Theresa
+> signed off across the whole site; it is a one-line change in `globals.css` when approved.
 
 Typography stays Cormorant Garamond + Inter (not Fraunces), and the primary button stays
 forest-on-cream (10.1:1) rather than her Clay Deep fill, which would fail AA for button text.

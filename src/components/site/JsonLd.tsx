@@ -23,7 +23,9 @@ export function PersonServiceJsonLd({ content }: { content: SiteContent }) {
     name: content.brand.name,
     jobTitle: content.brand.title,
     url: SITE_URL,
-    image: `${SITE_URL}/images/about-theresa.jpg`,
+    // The hero portrait is the canonical picture of her, and it is editable in
+    // the admin — so follow it rather than hard-coding a filename.
+    image: `${SITE_URL}${content.home.heroPortrait.src}`,
     description: content.about.metaDescription,
     knowsLanguage: ["en", "de"],
   };

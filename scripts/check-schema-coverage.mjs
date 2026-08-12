@@ -63,7 +63,7 @@ const DECLARED = {
   impressum: ["heading", "blocks", "metaTitle", "metaDescription"],
   privacy: ["heading", "intro", "sections", "metaTitle", "metaDescription"],
   terms: ["heading", "sections", "version", "metaTitle", "metaDescription"],
-  home: ["metaTitle", "metaDescription", "eyebrow", "heroTitle", "heroTitleAccent", "heroLead", "heroParas", "heroEmphasis", "heroPrimary", "heroSecondary", "testimonial", "audience", "practical", "reachLine", "trustPillars", "steps", "privatePay", "aboutBlock", "testimonials"],
+  home: ["metaTitle", "metaDescription", "eyebrow", "heroTitle", "heroTitleAccent", "heroLead", "heroParas", "heroEmphasis", "heroPrimary", "heroSecondary", "heroPortrait", "testimonial", "audience", "practical", "reachLine", "trustPillars", "steps", "privatePay", "aboutBlock", "testimonials"],
   about: ["metaTitle", "metaDescription", "eyebrow", "name", "subtitle", "credentials", "lead", "intro", "imageAlt", "lived", "philosophy", "quotes", "education", "philosophySections", "psyCoNote"],
   workTogether: ["metaTitle", "metaDescription", "eyebrow", "heading", "intro", "discovery", "quote", "individual", "couples", "closing", "cards", "switzerland"],
   organisations: ["metaTitle", "metaDescription", "eyebrow", "heading", "lead", "intro", "facts", "formats", "individual", "topics", "approach", "testimonials", "closing", "cards"],

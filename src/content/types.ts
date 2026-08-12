@@ -147,6 +147,11 @@ export interface SiteContent {
     heroEmphasis: string;
     heroPrimary: CtaLink;
     heroSecondary: CtaLink;
+    /**
+     * The portrait that leads the home hero. Kept separate from the About
+     * photograph so the two can be changed independently in the admin.
+     */
+    heroPortrait: { src: string; alt: string };
     testimonial: Quote;
     audience: {
       eyebrow: string;

@@ -67,6 +67,28 @@ export const homePage = (locale: Loc) =>
       }),
       heroPrimary: ctaLink("Main button", "The dark green button in the hero."),
       heroSecondary: ctaLink("Second button", "The outlined button beside it."),
+      heroPortrait: fields.object(
+        {
+          src: fields.text({
+            label: "Image file",
+            description:
+              "A photo already in the site's images folder, written as /images/filename.jpg. " +
+              "Upright (portrait) photos work best — around 1200 × 1500 pixels. " +
+              "To use a new photo, send it to José to add first.",
+          }),
+          alt: fields.text({
+            label: "Photo description (for screen readers)",
+            multiline: true,
+            description: "Describe the photo for someone who cannot see it.",
+          }),
+        },
+        {
+          label: "Hero portrait",
+          description:
+            "The photo of you beside the headline at the top of the home page. " +
+            "This is separate from the About page photo, so you can change one without the other.",
+        },
+      ),
       heroParas: paragraphs(
         "Introduction paragraphs",
         "The section directly under the hero, one paragraph per box.",

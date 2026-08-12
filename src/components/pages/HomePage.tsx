@@ -18,43 +18,59 @@ export function HomePage({ locale }: { locale: Locale }) {
     <>
       <PersonServiceJsonLd content={c} />
 
-      {/* HERO */}
+      {/* HERO — her portrait leads, headline beside it.
+          The atmospheric photograph stays as a warm texture under a near-opaque
+          scrim, so it reads as tone rather than as a second image competing
+          with the portrait. */}
       <section className="relative isolate overflow-hidden bg-sand">
-        {/* Full-bleed background image: soft, warm dried grasses. */}
         <Image
           src="/images/hero.jpg"
           alt=""
           aria-hidden="true"
           fill
-          priority
           sizes="100vw"
-          className="-z-20 object-cover object-center"
-        />
-        {/* Warm cream scrim — strongest on the left so the headline keeps
-            WCAG-AA contrast, softening to the right where there is no text. */}
-        <div
-          aria-hidden="true"
-          className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-r from-cream/95 via-cream/80 to-cream/45"
+          className="-z-20 object-cover object-center opacity-25"
         />
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-t from-cream/70 via-transparent to-cream/30"
+          className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-b from-cream/90 via-cream/85 to-sand/90"
         />
-        <Container className="relative py-24 sm:py-32">
-          <div className="max-w-3xl">
-            <Eyebrow>{h.eyebrow}</Eyebrow>
-            <h1 className="mt-6 font-serif text-4xl font-light leading-[1.08] text-ink sm:text-6xl">
-              {h.heroTitle} <span className="accent">{h.heroTitleAccent}</span>
-            </h1>
-            <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink-soft">{h.heroLead}</p>
-            <p className="mt-3 max-w-xl text-sm text-ink-muted">{h.reachLine}</p>
-            <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:items-center">
-              <ButtonLink href={h.heroPrimary.href} variant="primary" size="lg">
-                {h.heroPrimary.label}
-              </ButtonLink>
-              <ButtonLink href={h.heroSecondary.href} variant="outline" size="lg">
-                {h.heroSecondary.label}
-              </ButtonLink>
+        <Container className="relative py-16 sm:py-24 lg:py-28">
+          <div className="grid items-center gap-12 lg:grid-cols-[0.85fr_1fr] lg:gap-16">
+            {/* Portrait first in the DOM so it leads on mobile and is the first
+                thing a screen reader meets. On desktop it moves to the right,
+                keeping the headline on the natural reading edge. */}
+            <div className="lg:order-2">
+              <div className="relative mx-auto aspect-[5/4] w-full max-w-md overflow-hidden rounded-3xl border border-line bg-cream shadow-[0_1px_40px_-12px] shadow-forest/15 sm:aspect-[4/3] sm:max-w-lg lg:aspect-[4/5] lg:ml-auto lg:mr-0 lg:max-w-[420px]">
+                <Image
+                  src={h.heroPortrait.src}
+                  alt={h.heroPortrait.alt}
+                  fill
+                  priority
+                  sizes="(max-width: 640px) 92vw, (max-width: 1024px) 70vw, 46vw"
+                  /* The face sits slightly right of centre and high in the
+                     frame, so the crop is anchored there and stays safe when
+                     the aspect ratio widens on smaller screens. */
+                  className="object-cover object-[58%_28%] lg:object-[58%_32%]"
+                />
+              </div>
+            </div>
+
+            <div className="lg:order-1">
+              <Eyebrow>{h.eyebrow}</Eyebrow>
+              <h1 className="mt-5 font-serif text-4xl font-light leading-[1.08] text-ink sm:text-5xl lg:text-6xl">
+                {h.heroTitle} <span className="accent">{h.heroTitleAccent}</span>
+              </h1>
+              <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink-soft">{h.heroLead}</p>
+              <p className="mt-3 max-w-xl text-sm text-ink-muted">{h.reachLine}</p>
+              <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
+                <ButtonLink href={h.heroPrimary.href} variant="primary" size="lg">
+                  {h.heroPrimary.label}
+                </ButtonLink>
+                <ButtonLink href={h.heroSecondary.href} variant="outline" size="lg">
+                  {h.heroSecondary.label}
+                </ButtonLink>
+              </div>
             </div>
           </div>
         </Container>
