@@ -37,7 +37,7 @@ export function AboutPage({ locale }: { locale: Locale }) {
           <div className="order-1 lg:order-2">
             <div className="relative mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden rounded-3xl border border-line bg-cream shadow-sm">
               <Image
-                src="/images/about-theresa.jpg"
+                src="/images/about-theresa-2026.jpg"
                 alt={a.imageAlt}
                 fill
                 priority

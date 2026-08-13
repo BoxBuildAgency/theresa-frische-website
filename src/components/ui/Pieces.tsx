@@ -2,9 +2,23 @@ import type { FeatureItem, MetaPair, Quote } from "@/content/types";
 import { clsx } from "@/lib/clsx";
 
 /** Soft editorial card for an "area of focus" / approach item. */
-export function FeatureCard({ item, index }: { item: FeatureItem; index?: number }) {
+export function FeatureCard({
+  item,
+  index,
+  className,
+}: {
+  item: FeatureItem;
+  index?: number;
+  /** Optional fill override, so a page can lift the cards off its background. */
+  className?: string;
+}) {
   return (
-    <article className="group rounded-2xl border border-line bg-cream p-7 transition-colors hover:border-line-strong">
+    <article
+      className={clsx(
+        "group rounded-2xl border border-line bg-cream p-7 transition-colors hover:border-line-strong",
+        className,
+      )}
+    >
       {typeof index === "number" && (
         <span className="font-serif text-2xl text-sage">
           {String(index + 1).padStart(2, "0")}

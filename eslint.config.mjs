@@ -12,6 +12,10 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Netlify CLI build output, created by `netlify deploy --build`. Ignored by
+    // git, but ESLint would otherwise lint the compiled bundles inside it and
+    // report thousands of problems in generated code.
+    ".netlify/**",
   ]),
 ]);
 

@@ -159,6 +159,12 @@ export interface SiteContent {
       intro: string;
       items: FeatureItem[];
     };
+    /**
+     * A single sentence in her voice, over a full-width photograph, sitting
+     * between the focus areas and the four steps — a deliberate pause in a long
+     * stretch of text.
+     */
+    pauseBand: { text: string };
     // NOTE: the duplicate `approach` block was removed in v3 (§1.3) — the home
     // page has a single approach section, `steps` below (01–04).
     practical: {
