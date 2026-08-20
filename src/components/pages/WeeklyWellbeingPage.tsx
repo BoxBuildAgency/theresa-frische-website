@@ -19,7 +19,7 @@ export function WeeklyWellbeingPage({ locale }: { locale: Locale }) {
       {/* HERO with lake image */}
       <section className="relative isolate overflow-hidden">
         <Image
-          src="/images/weekly-wellbeing.jpg"
+          src="/images/weekly-wellbeing.webp"
           alt={w.imageAlt}
           fill
           priority

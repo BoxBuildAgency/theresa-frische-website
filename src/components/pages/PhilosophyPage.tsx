@@ -3,7 +3,7 @@ import type { Locale } from "@/content/types";
 import { getContent } from "@/content";
 import { Section } from "@/components/ui/Section";
 import { Container } from "@/components/ui/Container";
-import { QuoteBlock, SectionHeader } from "@/components/ui/Pieces";
+import { QuoteBlock } from "@/components/ui/Pieces";
 import { CtaBand } from "@/components/sections/CtaBand";
 import { FurtherReading } from "@/components/sections/FurtherReading";
 import { PersonServiceJsonLd } from "@/components/site/JsonLd";
@@ -85,7 +85,7 @@ export function PhilosophyPage({ locale }: { locale: Locale }) {
       {/* The client testimonial that used to sit under 01 (§4b.4) */}
       <section className="relative isolate overflow-hidden bg-pine py-14 sm:py-24">
         <Image
-          src="/images/band-olive.jpg"
+          src="/images/band-olive.webp"
           alt=""
           aria-hidden="true"
           fill

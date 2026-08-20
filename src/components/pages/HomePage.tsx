@@ -34,17 +34,20 @@ export function HomePage({ locale }: { locale: Locale }) {
                 thing a screen reader meets. On desktop it moves to the right,
                 keeping the headline on the natural reading edge. */}
             <div className="lg:order-2">
-              <div className="relative mx-auto aspect-[5/4] w-full max-w-md overflow-hidden rounded-3xl border border-line bg-cream shadow-[0_1px_40px_-12px] shadow-forest/15 sm:aspect-[4/3] sm:max-w-lg lg:aspect-[4/5] lg:ml-auto lg:mr-0 lg:max-w-[420px]">
+              <div className="relative mx-auto aspect-[4/5] max-h-[62vh] w-full max-w-[19rem] overflow-hidden rounded-3xl border border-line bg-cream shadow-[0_1px_40px_-12px] shadow-forest/15 sm:max-w-sm lg:ml-auto lg:mr-0 lg:max-h-none lg:max-w-[420px]">
                 <Image
                   src={h.heroPortrait.src}
                   alt={h.heroPortrait.alt}
                   fill
                   priority
                   sizes="(max-width: 640px) 92vw, (max-width: 1024px) 70vw, 46vw"
-                  /* The face sits slightly right of centre and high in the
-                     frame, so the crop is anchored there and stays safe when
-                     the aspect ratio widens on smaller screens. */
-                  className="object-cover object-[58%_28%] lg:object-[58%_32%]"
+                  /* The box is 4:5 at every breakpoint, matching the source, so
+                     nothing is cropped and the whole photograph shows — that was
+                     Theresa's question. object-position still matters if she
+                     swaps in a portrait of a different shape: the face sits
+                     slightly right of centre and high in the frame, so the crop
+                     is anchored there. */
+                  className="object-cover object-[58%_30%]"
                 />
               </div>
             </div>
@@ -103,7 +106,7 @@ export function HomePage({ locale }: { locale: Locale }) {
       {/* TESTIMONIALS — her photograph under a deep pine scrim */}
       <section className="relative isolate overflow-hidden bg-pine py-14 sm:py-24">
         <Image
-          src="/images/band-quote.jpg"
+          src="/images/band-quote.webp"
           alt=""
           aria-hidden="true"
           fill
@@ -138,7 +141,7 @@ export function HomePage({ locale }: { locale: Locale }) {
           identical photo strips. */}
       <section className="relative isolate overflow-hidden bg-sand">
         <Image
-          src="/images/hero.jpg"
+          src="/images/hero.webp"
           alt=""
           aria-hidden="true"
           fill
@@ -211,7 +214,7 @@ export function HomePage({ locale }: { locale: Locale }) {
                 same photograph appearing twice on one page. Decorative, so it
                 is hidden from screen readers rather than described. */}
             <Image
-              src="/images/band-meadow.jpg"
+              src="/images/band-meadow.webp"
               alt=""
               aria-hidden="true"
               fill

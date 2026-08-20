@@ -2,8 +2,7 @@ import Image from "next/image";
 import type { Locale } from "@/content/types";
 import { getContent } from "@/content";
 import { Section, Eyebrow } from "@/components/ui/Section";
-import { Container } from "@/components/ui/Container";
-import { QuoteBlock, SectionHeader } from "@/components/ui/Pieces";
+import { SectionHeader } from "@/components/ui/Pieces";
 import { CtaBand } from "@/components/sections/CtaBand";
 import { FurtherReading } from "@/components/sections/FurtherReading";
 import { PersonServiceJsonLd } from "@/components/site/JsonLd";
@@ -35,7 +34,7 @@ export function AboutPage({ locale }: { locale: Locale }) {
             </p>
           </div>
           <div className="order-1 lg:order-2">
-            <div className="relative mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden rounded-3xl border border-line bg-cream shadow-sm">
+            <div className="relative mx-auto aspect-[3/4] w-full max-w-sm overflow-hidden rounded-3xl border border-line bg-cream shadow-sm">
               <Image
                 src="/images/about-theresa-2026.webp"
                 alt={a.imageAlt}

@@ -251,7 +251,12 @@ export const aboutPage = (locale: Loc) =>
         label: "Qualifications line",
         multiline: true,
         description:
-          "⚠️ The wording here was chosen deliberately for regulatory reasons — the site describes counselling only. Please check with José before changing it.",
+          "Shown in full here, and in a shortened form at the top of the home page — the home " +
+          "page shortens it automatically, so there is only one place to edit. Around 85 " +
+          "characters is the most that fits neatly on a phone; longer than that and the home " +
+          "page trims it at the last '·'. The full version always shows here. " +
+          "⚠️ The wording was chosen deliberately for regulatory reasons — the site describes " +
+          "counselling only. Please check with José before changing it.",
       }),
       lead: fields.text({ label: "Opening sentence (in the box with the green line)", multiline: true }),
       imageAlt: fields.text({

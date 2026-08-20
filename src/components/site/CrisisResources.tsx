@@ -18,6 +18,8 @@ import type { SiteContent } from "@/content/types";
 export function CrisisResources({ crisis }: { crisis: SiteContent["crisis"] }) {
   return (
     <section
+      /* The sticky mobile CTA hides while this block is on screen. */
+      data-sticky-cta-blocker="true"
       aria-label={crisis.heading}
       className="rounded-2xl border border-clay/25 bg-pine p-6 text-cream sm:p-8"
     >

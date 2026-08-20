@@ -381,7 +381,7 @@ The portrait is **editable in the admin**, separately from the About photograph,
 
 | Field | What it takes |
 | --- | --- |
-| Image file | A path to a file already in `public/images/`, e.g. `/images/about-theresa.jpg` |
+| Image file | A path to a file already in `public/images/`, e.g. `/images/about-theresa.webp` |
 | Photo description | The alt text, for screen readers |
 
 **Recommended dimensions: upright (portrait) 4:5, around 1200 × 1500px**, long edge 2000px max,

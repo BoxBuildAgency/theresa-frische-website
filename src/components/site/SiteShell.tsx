@@ -2,6 +2,7 @@ import type { Locale } from "@/content/types";
 import { getContent } from "@/content";
 import { Header } from "./Header";
 import { Footer } from "./Footer";
+import { StickyMobileCta } from "./StickyMobileCta";
 import { localizedPath } from "@/lib/site";
 
 /**
@@ -43,6 +44,10 @@ export function SiteShell({
       <main id="main">{children}</main>
 
       <Footer content={content} year={2026} />
+
+      {/* Mobile-only booking bar (§2.4). Rendered last so it sits above the
+          page, and it hides itself over the footer and the crisis block. */}
+      <StickyMobileCta cta={content.cta.primary} />
     </>
   );
 }

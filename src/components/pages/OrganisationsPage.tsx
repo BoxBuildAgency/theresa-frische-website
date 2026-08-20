@@ -53,7 +53,7 @@ export function OrganisationsPage({ locale }: { locale: Locale }) {
       {/* HER PHOTOGRAPH — delivering a seminar */}
       <div className="relative aspect-[3/2] w-full sm:aspect-[21/9]">
         <Image
-          src="/images/organisations.jpg"
+          src="/images/organisations.webp"
           alt={locale === "de"
             ? "Theresa Frische bei einem Seminar zu Wohlbefinden am Arbeitsplatz."
             : "Theresa Frische delivering a workplace wellbeing seminar."}

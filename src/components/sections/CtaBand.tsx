@@ -24,7 +24,7 @@ export function CtaBand({ locale }: { locale: Locale }) {
         <div className="relative isolate flex flex-col items-start gap-8 overflow-hidden rounded-3xl bg-pine px-8 py-14 text-cream sm:px-14 sm:py-16 lg:flex-row lg:items-center lg:justify-between">
           {/* Subtle warm-sand texture behind the deep forest panel */}
           <Image
-            src="/images/band-cta.jpg"
+            src="/images/band-cta.webp"
             alt=""
             aria-hidden="true"
             fill
