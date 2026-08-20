@@ -2,8 +2,7 @@ import Image from "next/image";
 import type { Locale } from "@/content/types";
 import { getContent } from "@/content";
 import { Section, Eyebrow } from "@/components/ui/Section";
-import { Container } from "@/components/ui/Container";
-import { QuoteBlock, SectionHeader } from "@/components/ui/Pieces";
+import { SectionHeader } from "@/components/ui/Pieces";
 import { CtaBand } from "@/components/sections/CtaBand";
 import { FurtherReading } from "@/components/sections/FurtherReading";
 import { PersonServiceJsonLd } from "@/components/site/JsonLd";
@@ -35,9 +34,9 @@ export function AboutPage({ locale }: { locale: Locale }) {
             </p>
           </div>
           <div className="order-1 lg:order-2">
-            <div className="relative mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden rounded-3xl border border-line bg-cream shadow-sm">
+            <div className="relative mx-auto aspect-[3/4] w-full max-w-sm overflow-hidden rounded-3xl border border-line bg-cream shadow-sm">
               <Image
-                src="/images/about-theresa.jpg"
+                src="/images/about-theresa-2026.webp"
                 alt={a.imageAlt}
                 fill
                 priority
@@ -75,60 +74,10 @@ export function AboutPage({ locale }: { locale: Locale }) {
         </p>
       </Section>
 
-      {/* PHILOSOPHY */}
-      <Section tone="cream" containerSize="narrow">
-        <SectionHeader heading={a.philosophy.heading} eyebrow={locale === "de" ? "Meine Haltung" : "My philosophy"} />
-        <div className="mt-8 space-y-6">
-          {a.philosophy.body.map((p, i) => (
-            <p key={i} className="text-lg leading-relaxed text-ink-soft">
-              {p}
-            </p>
-          ))}
-        </div>
-      </Section>
-
-      {/* PHILOSOPHY 01–04 */}
-      <Section tone="sand" containerSize="narrow">
-        <ol className="space-y-14">
-          {a.philosophySections.map((sec) => (
-            <li key={sec.number}>
-              <div className="flex items-baseline gap-4">
-                <span className="font-serif text-3xl font-light text-clay-deep">{sec.number}</span>
-                <h3 className="font-serif text-2xl font-light leading-snug text-ink">
-                  {sec.heading}
-                </h3>
-              </div>
-              <div className="mt-4 space-y-4">
-                {sec.paras.map((para, i) => (
-                  <p key={i} className="leading-relaxed text-ink-soft">
-                    {para}
-                  </p>
-                ))}
-              </div>
-            </li>
-          ))}
-        </ol>
-      </Section>
-
-      {/* QUOTES */}
-      <section className="relative isolate overflow-hidden bg-pine py-14 sm:py-24">
-        <Image
-          src="/images/band-olive.jpg"
-          alt=""
-          aria-hidden="true"
-          fill
-          sizes="100vw"
-          className="-z-20 object-cover object-center"
-        />
-        <div aria-hidden="true" className="absolute inset-0 -z-10 bg-pine/85" />
-        <Container size="narrow" className="relative">
-          <div className="space-y-14">
-            {a.quotes.map((q, i) => (
-              <QuoteBlock key={i} quote={q} tone="forest" />
-            ))}
-          </div>
-        </Container>
-      </section>
+      {/* Philosophy, the numbered 01–04 sections and the quotes band moved to
+          /about/philosophy in August 2026 (§4). About Me now reads as an
+          introduction; the depth lives one click away and is linked from the
+          About nav dropdown and from the card below. */}
 
       {/* EDUCATION */}
       <Section tone="sand" containerSize="narrow">
@@ -140,11 +89,19 @@ export function AboutPage({ locale }: { locale: Locale }) {
           {a.education.items.map((item) => (
             <li key={item.title} className="grid gap-1 py-5 sm:grid-cols-[0.9fr_1.4fr] sm:gap-6">
               <h3 className="font-serif text-lg text-ink">{item.title}</h3>
-              <p className="text-sm leading-relaxed text-ink-soft">{item.body}</p>
+              <div>
+                <p className="text-sm leading-relaxed text-ink-soft">{item.body}</p>
+                {/* The PsyCo recognition note belongs to the master's degree, not
+                    to the systemic training it used to sit beneath. Rendered from
+                    the same single field, so the wording is unchanged and there is
+                    still only one place to edit it. */}
+                {item.title.startsWith("M.Sc.") && (
+                  <p className="mt-2 text-sm leading-relaxed text-ink-soft">{a.psyCoNote}</p>
+                )}
+              </div>
             </li>
           ))}
         </ul>
-        <p className="mt-6 text-sm leading-relaxed text-ink-muted">{a.psyCoNote}</p>
 
         {/* ---------------------------------------------------------------
             ASSOCIATION LOGOS — placeholder, intentionally empty (v3 §2.3).

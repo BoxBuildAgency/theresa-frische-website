@@ -126,12 +126,46 @@ export const homePage = (locale: Loc) =>
         },
         { label: "'Who this space is for' section" },
       ),
+      pauseBand: fields.object(
+        {
+          text: fields.text({
+            label: "The sentence",
+            multiline: true,
+            description: "One sentence, in your voice. Keep it short — it sits alone over a photograph.",
+          }),
+        },
+        {
+          label: "Pause band (photo strip between the focus areas and the four steps)",
+          description:
+            "A full-width photograph with a single line over it, giving the eye somewhere to rest " +
+            "between two long sections. The photograph itself is set in the code.",
+        },
+      ),
       steps: fields.object(
         {
           eyebrow: fields.text({ label: "Small label above the heading" }),
           heading: fields.text({ label: "Section heading" }),
           intro: fields.text({ label: "Intro paragraph", multiline: true }),
           items: cards("The four steps", "Numbered 01–04 in the headings."),
+          modalities: fields.object(
+            {
+              heading: fields.text({ label: "Heading above the list" }),
+              items: fields.array(fields.text({ label: "Approach" }), {
+                label: "The approaches",
+                description: "One per line. Keep the ® on Somatic Experiencing®.",
+                itemLabel: (p) => p.value || "Empty",
+              }),
+              note: fields.text({
+                label: "The line underneath",
+                multiline: true,
+                description:
+                  "⚠️ This sentence says the work is counselling and that you are not a " +
+                  "psychotherapist. It is what makes naming these approaches safe. Please " +
+                  "leave it in place — check with José before changing it.",
+              }),
+            },
+            { label: "Modalities I draw from" },
+          ),
           closing: fields.text({ label: "Closing sentence", multiline: true }),
           ctaLabel: fields.text({ label: "Button text under the closing sentence" }),
         },
@@ -167,6 +201,42 @@ export const homePage = (locale: Loc) =>
     },
   });
 
+/* ----------------------------------------------------------- PHILOSOPHY */
+export const philosophyPage = (locale: Loc) =>
+  singleton({
+    label: `My Philosophy page — ${locale.toUpperCase()}`,
+    path: at(locale, "philosophy"),
+    format: { data: "json" },
+    schema: {
+      eyebrow: fields.text({ label: "Small label above the heading" }),
+      heading: fields.text({ label: "Page heading" }),
+      body: paragraphs("Opening paragraphs", "The prose before the numbered sections."),
+      bandAlt: fields.text({
+        label: "Photo description for the wide photo strip",
+        multiline: true,
+        description:
+          "Leave empty if the photo is decorative — screen readers will then skip it, " +
+          "which is usually right for mood photography.",
+      }),
+      sections: fields.array(
+        fields.object({
+          number: fields.text({ label: "Number", description: "e.g. 01" }),
+          heading: fields.text({ label: "Heading" }),
+          paras: paragraphs("Paragraphs", ""),
+        }),
+        { label: "The numbered sections", itemLabel: (p) => p.fields.heading.value || "Section" },
+      ),
+      testimonial: fields.object(
+        {
+          text: fields.text({ label: "Quote", multiline: true }),
+          attribution: fields.text({ label: "Who said it" }),
+        },
+        { label: "Client quote (shown on the dark green band)" },
+      ),
+      ...seoFields(),
+    },
+  });
+
 /* ---------------------------------------------------------------- ABOUT */
 export const aboutPage = (locale: Loc) =>
   singleton({
@@ -181,7 +251,12 @@ export const aboutPage = (locale: Loc) =>
         label: "Qualifications line",
         multiline: true,
         description:
-          "⚠️ The wording here was chosen deliberately for regulatory reasons — the site describes counselling only. Please check with José before changing it.",
+          "Shown in full here, and in a shortened form at the top of the home page — the home " +
+          "page shortens it automatically, so there is only one place to edit. Around 85 " +
+          "characters is the most that fits neatly on a phone; longer than that and the home " +
+          "page trims it at the last '·'. The full version always shows here. " +
+          "⚠️ The wording was chosen deliberately for regulatory reasons — the site describes " +
+          "counselling only. Please check with José before changing it.",
       }),
       lead: fields.text({ label: "Opening sentence (in the box with the green line)", multiline: true }),
       imageAlt: fields.text({
@@ -196,35 +271,6 @@ export const aboutPage = (locale: Loc) =>
           emphasis: fields.text({ label: "Highlighted closing sentence", multiline: true }),
         },
         { label: "'A life between worlds' section" },
-      ),
-      philosophy: fields.object(
-        {
-          heading: fields.text({ label: "Heading" }),
-          body: paragraphs("Paragraphs", ""),
-        },
-        { label: "'Seeing the whole person' section" },
-      ),
-      philosophySections: fields.array(
-        fields.object({
-          number: fields.text({ label: "Number", description: "e.g. 01" }),
-          heading: fields.text({ label: "Heading" }),
-          paras: paragraphs("Paragraphs", ""),
-        }),
-        {
-          label: "The four numbered philosophy sections",
-          itemLabel: (p) => `${p.fields.number.value} ${p.fields.heading.value}`,
-        },
-      ),
-      quotes: quotes("Quotes on the dark green band", ""),
-      education: fields.object(
-        {
-          heading: fields.text({ label: "Heading" }),
-          items: cards(
-            "Qualifications",
-            "⚠️ These entries were worded deliberately for regulatory reasons — the site describes counselling only, and the training is named factually. Please check with José before changing them.",
-          ),
-        },
-        { label: "Qualifications section" },
       ),
       psyCoNote: fields.text({
         label: "Recognition note under the qualifications",

@@ -19,17 +19,12 @@
 ## Postal address  ⟨PENDING⟩
 > Render in the Impressum as:
 > `Anschrift: [Adresse wird ergänzt]`  /  EN: `Address: [to be added]`
-> (Required by DDG §5 — to be supplied by Theresa before go-live.)
 
 ## VAT / tax status  ⟨PENDING⟩
 > Render as:
-> `[Kleinunternehmer gemäß § 19 UStG — USt-Status wird bestätigt]`
-> (Confirm whether she is a Kleinunternehmer per §19 UStG or holds a USt-IdNr.
-> If Kleinunternehmer, add the standard "Kein Ausweis der Umsatzsteuer" note; if a USt-IdNr
 > exists, list it. To be confirmed by Theresa.)
 
 ## Roles for legal text
-- **Content responsibility (§ 18 Abs. 2 MStV):** Theresa Frische
 - **Data controller (GDPR Art. 4 / nDSG):** Theresa Frische (contact as above)
 
 ## Notes
@@ -37,3 +32,11 @@
   if so, update the Impressum, privacy page, and `CONTACT_TO_EMAIL`.
 - Contact form `from` sender must be a domain verified in Theresa's own Resend account before
   production; for the interim preview, an unverified-sender fallback is acceptable.
+
+## Swiss status (August 2026)
+
+- Sole proprietorship under Swiss law; not entered in the commercial register.
+- Not liable for Swiss MWST.
+- Swiss tax residence from August 2026.
+- No employees, no analytics, no cookies, no tracking.
+- No GDPR Article 27 EU representative appointed.

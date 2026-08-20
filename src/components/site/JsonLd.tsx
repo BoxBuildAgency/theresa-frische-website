@@ -36,7 +36,15 @@ export function PersonServiceJsonLd({ content }: { content: SiteContent }) {
     serviceType: "Counselling",
     name: content.brand.title,
     provider: { "@type": "Person", name: content.brand.name, url: SITE_URL },
-    areaServed: "Worldwide",
+    // Zug switched on (2.2). Kept as Person + Service — deliberately NOT
+    // MedicalBusiness, which would imply regulated medical care.
+    areaServed: [
+      { "@type": "AdministrativeArea", name: "Zug" },
+      { "@type": "AdministrativeArea", name: "Zürich" },
+      { "@type": "Country", name: "Switzerland" },
+      "Online",
+      "Worldwide",
+    ],
     availableLanguage: ["English", "German"],
     audience: { "@type": "Audience", audienceType: "Individuals and couples" },
     url: SITE_URL,

@@ -118,6 +118,7 @@ export function loadContent(locale: Locale): SiteContent {
     >),
     home: page<SiteContent["home"]>("home"),
     about: page<SiteContent["about"]>("about"),
+    philosophyPage: page<SiteContent["philosophyPage"]>("philosophy"),
     workTogether: page<SiteContent["workTogether"]>("workTogether"),
     organisations: page<SiteContent["organisations"]>("organisations"),
     weeklyWellbeing: page<SiteContent["weeklyWellbeing"]>("weeklyWellbeing"),

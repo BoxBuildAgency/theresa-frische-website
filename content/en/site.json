@@ -3,14 +3,23 @@
   "htmlLang": "en",
   "brand": {
     "name": "Theresa Frische",
-    "tagline": "Systemic Counselling",
+    "tagline": "Psychological Counselling",
     "title": "Systemic & Integrative Counsellor"
   },
   "nav": [
     {
       "label": "About",
       "href": "/about",
-      "children": []
+      "children": [
+        {
+          "label": "About Me",
+          "href": "/about"
+        },
+        {
+          "label": "My Philosophy",
+          "href": "/about/philosophy"
+        }
+      ]
     },
     {
       "label": "Work With Me",
@@ -89,6 +98,10 @@
       {
         "label": "About",
         "href": "/about"
+      },
+      {
+        "label": "My Philosophy",
+        "href": "/about/philosophy"
       },
       {
         "label": "Work With Me",
@@ -185,6 +198,16 @@
     "intro": "Counselling is not a crisis service. If you are in crisis or need immediate help, please reach out to one of the resources below.",
     "items": [
       {
+        "label": "Emergency (CH)",
+        "value": "144",
+        "href": ""
+      },
+      {
+        "label": "Die Dargebotene Hand (CH) — free, 24h",
+        "value": "143",
+        "href": ""
+      },
+      {
         "label": "Emergency (EU)",
         "value": "112",
         "href": ""
@@ -192,11 +215,6 @@
       {
         "label": "Telefonseelsorge (DE) — free, 24h",
         "value": "0800 111 0 111 · 0800 111 0 222",
-        "href": ""
-      },
-      {
-        "label": "Die Dargebotene Hand (CH)",
-        "value": "143",
         "href": ""
       },
       {

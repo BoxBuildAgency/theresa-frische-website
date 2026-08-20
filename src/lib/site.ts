@@ -20,6 +20,9 @@ export interface RouteDef {
 export const ROUTES: RouteDef[] = [
   { key: "home", en: "/", de: "/de" },
   { key: "about", en: "/about", de: "/de/ueber-mich" },
+  // About Me split into two pages, August 2026 (§4). The German slug follows the
+  // existing convention: keyword-rich, no possessive, mirroring the EN segment.
+  { key: "about-philosophy", en: "/about/philosophy", de: "/de/ueber-mich/philosophie" },
   // Work With Me (v2: renamed from /work-together) + its four child pages
   { key: "work-with-me", en: "/work-with-me", de: "/de/angebot" },
   {

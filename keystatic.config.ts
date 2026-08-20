@@ -1,7 +1,7 @@
 import { config, collection, singleton, fields } from "@keystatic/core";
 import { blogBody, ctaLink, metaPair, paragraphs } from "./keystatic/fields";
 import {
-  aboutPage,
+  aboutPage, philosophyPage,
   aiInfoPage,
   blogIndexPage,
   contactPage,
@@ -421,11 +421,13 @@ export default config({
         "org-employee-counselling_de",
       ],
       "Main pages — English": [
-        "homeEn", "aboutEn", "workWithMeEn", "organisationsEn", "weeklyWellbeingEn",
+        "homeEn", "aboutEn",
+        "philosophyEn", "workWithMeEn", "organisationsEn", "weeklyWellbeingEn",
         "contactEn", "blogIndexEn", "faqIndexEn", "aiInfoEn", "notFoundEn",
       ],
       "Main pages — German": [
-        "homeDe", "aboutDe", "workWithMeDe", "organisationsDe", "weeklyWellbeingDe",
+        "homeDe", "aboutDe",
+        "philosophyDe", "workWithMeDe", "organisationsDe", "weeklyWellbeingDe",
         "contactDe", "blogIndexDe", "faqIndexDe", "aiInfoDe", "notFoundDe",
       ],
       "Site-wide text": ["siteEn", "siteDe"],
@@ -442,7 +444,9 @@ export default config({
     homeEn: homePage("en"),
     homeDe: homePage("de"),
     aboutEn: aboutPage("en"),
+    philosophyEn: philosophyPage("en"),
     aboutDe: aboutPage("de"),
+    philosophyDe: philosophyPage("de"),
     workWithMeEn: workWithMePage("en"),
     workWithMeDe: workWithMePage("de"),
     organisationsEn: organisationsPage("en"),

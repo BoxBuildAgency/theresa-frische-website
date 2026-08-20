@@ -4,7 +4,15 @@ import { Container } from "@/components/ui/Container";
 import { ButtonLink } from "@/components/ui/Button";
 import { Disclaimer } from "./Disclaimer";
 
-export function Footer({ content, year }: { content: SiteContent; year: number }) {
+/**
+ * No year in the copyright line, deliberately.
+ *
+ * The site is statically generated, so any year — hard-coded or read from the
+ * clock at build time — freezes at the last deploy. If nothing is published for
+ * a year the footer quietly says the wrong thing, and nobody notices. A bare
+ * "© Theresa Frische" is always correct and never needs maintaining.
+ */
+export function Footer({ content }: { content: SiteContent }) {
   const { footer, brand, cta, disclaimer } = content;
 
   return (
@@ -67,7 +75,7 @@ export function Footer({ content, year }: { content: SiteContent; year: number }
         <div className="mt-10 flex flex-col gap-2 border-t border-line pt-6 text-xs text-ink-muted sm:flex-row sm:items-center sm:justify-between">
           <p>{footer.line}</p>
           <p>
-            © {year} {brand.name}. {footer.rights}
+            © {brand.name}. {footer.rights}
           </p>
         </div>
       </Container>

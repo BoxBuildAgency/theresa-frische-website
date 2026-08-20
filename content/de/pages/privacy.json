@@ -1,99 +1,88 @@
 {
   "heading": "Datenschutzerklärung",
-  "intro": "Ihre Privatsphäre ist wichtig. Diese Erklärung beschreibt, welche personenbezogenen Daten bei der Nutzung dieser Website erhoben werden, warum und welche Rechte Sie haben. Sie ist so verfasst, dass sie den Anforderungen der EU-Datenschutz-Grundverordnung (DSGVO) und des Schweizer Bundesgesetzes über den Datenschutz (nDSG / DSG) entspricht.",
+  "intro": "Theresa Frische, Gimenenstrasse 1, 6300 Zug, Schweiz, info@theresafrische.com, ist verantwortlich für die hier beschriebene Bearbeitung von Personendaten.",
   "sections": [
     {
-      "heading": "Verantwortlicher",
+      "heading": "Verantwortliche Stelle",
       "paras": [
-        "Verantwortliche für die Datenverarbeitung auf dieser Website im Sinne der DSGVO ist:",
-        "Theresa Frische — Systemische & Integrative Beraterin. Scheffelstraße 23, 79102 Freiburg im Breisgau, Deutschland. E-Mail: info@theresafrische.com. Telefon: +49 157 38920374."
-      ],
-      "bullets": []
+        "Theresa Frische, Gimenenstrasse 1, 6300 Zug, Schweiz, info@theresafrische.com, ist verantwortlich für die hier beschriebene Bearbeitung von Personendaten.",
+        "Diese Erklärung stützt sich auf das revidierte Schweizer Datenschutzgesetz (revDSG). Soweit die Datenschutz-Grundverordnung (DSGVO) anwendbar ist, weil Sie sich im Europäischen Wirtschaftsraum befinden, gilt diese zusätzlich, und die unten genannten weitergehenden Rechte stehen Ihnen zu."
+      ]
     },
     {
-      "heading": "Grundsatz der Datenminimierung",
+      "heading": "Kurzfassung",
       "paras": [
-        "Diese Website ist darauf ausgelegt, so wenige personenbezogene Daten wie möglich zu erheben. Es gibt kein Nutzer-Tracking, keine Analyse, keine Werbe-Pixel, und es werden keine Cookies zu Marketing- oder Analysezwecken gesetzt. Über diese Website werden keine besonderen Kategorien von Daten (etwa Gesundheitsdaten) erfragt, und Sie werden gebeten, über das Kontaktformular keine sensiblen Angaben wie Gesundheitsinformationen zu teilen."
-      ],
-      "bullets": []
+        "Diese Website setzt keine Cookies, verwendet keine Analysewerkzeuge und verfolgt Sie nicht. Die einzigen Personendaten, die erhoben werden, sind jene, die Sie in das Kontaktformular eingeben, sowie die technischen Aufzeichnungen, die der Hosting-Anbieter aus Sicherheitsgründen führt. Es werden keine Daten verkauft und keine Daten zu Werbezwecken weitergegeben."
+      ]
     },
     {
-      "heading": "Kontaktformular",
+      "heading": "Das Kontaktformular",
       "paras": [
-        "Wenn Sie das Kontaktformular nutzen, werden folgende Daten verarbeitet: Ihr Name, Ihre E-Mail-Adresse und der Inhalt Ihrer Nachricht. Diese Informationen werden ausschließlich zur Beantwortung Ihrer Anfrage verwendet.",
-        "Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO (vorvertragliche Maßnahmen), soweit sich Ihre Anfrage auf Beratungsleistungen bezieht, sowie Art. 6 Abs. 1 lit. a DSGVO (Einwilligung) für die Verarbeitung Ihrer Nachricht, die Sie durch das Absenden des Formulars erteilen. Sie können Ihre Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen.",
-        "Ihre Übermittlung wird mir per E-Mail zugestellt und nicht in einer Datenbank auf dieser Website gespeichert."
-      ],
-      "bullets": []
+        "Bei Nutzung des Kontaktformulars werden bearbeitet: Ihr Name, Ihre E-Mail-Adresse und der Inhalt Ihrer Nachricht.",
+        "Zweck: Beantwortung Ihrer Anfrage und gegebenenfalls Anbahnung einer Beratung.",
+        "Rechtsgrundlage, soweit die DSGVO anwendbar ist: vorvertragliche Massnahmen auf Ihre Anfrage hin, Art. 6 Abs. 1 lit. b, sowie das berechtigte Interesse an der Beantwortung von Anfragen, Art. 6 Abs. 1 lit. f.",
+        "Aufbewahrung: Anfragen werden so lange aufbewahrt, wie es zu ihrer Bearbeitung nötig ist, und danach für höchstens 24 Monate, anschliessend gelöscht. Kommt eine Beratung zustande, gelten stattdessen die unten genannten Fristen für Klientenunterlagen.",
+        "Bitte senden Sie keine Gesundheitsdaten über das Formular. Das Formular ist bewusst so gebaut, dass es nicht danach fragt. Ein Vorname und ein Satz zu Ihrem Anliegen genügen. Alles Sensible gehört in ein Gespräch und nicht in eine E-Mail."
+      ]
     },
     {
-      "heading": "Auftragsverarbeiter für den E-Mail-Versand (Resend)",
+      "heading": "Server-Protokolle",
       "paras": [
-        "Nachrichten aus dem Kontaktformular werden über Resend übermittelt, einen E-Mail-Versanddienst der Resend, Inc. Resend verarbeitet die in Ihrer Nachricht enthaltenen Daten (Name, E-Mail-Adresse, Nachrichtentext) in meinem Auftrag ausschließlich zum Zweck der Zustellung der E-Mail an mich.",
-        "Resend handelt als Auftragsverarbeiter nach Art. 28 DSGVO, und es besteht ein Auftragsverarbeitungsvertrag. Soweit Daten an Server außerhalb der EU/des EWR übertragen werden, ist die Übertragung durch geeignete Maßnahmen wie die EU-Standardvertragsklauseln abgesichert."
-      ],
-      "bullets": []
+        "Der Hosting-Anbieter zeichnet beim Aufruf der Website technische Daten auf, darunter die IP-Adresse, den Zeitpunkt der Anfrage, die aufgerufene Seite und den Browsertyp. Diese Daten dienen dem sicheren Betrieb der Website und der Fehlersuche. Sie werden nicht zur Identifizierung verwendet und nicht mit anderen Daten zusammengeführt. Sie werden nach kurzer Zeit gelöscht."
+      ]
     },
     {
-      "heading": "Hosting (Netlify)",
+      "heading": "Klientenunterlagen",
       "paras": [
-        "Diese Website wird von Netlify (Netlify, Inc.) gehostet. Wenn Sie die Website besuchen, erhebt und speichert Netlify automatisch Informationen, die Ihr Browser in Server-Logdateien übermittelt. Dazu können Ihre IP-Adresse, Datum und Uhrzeit der Anfrage, die aufgerufene Seite, die Referrer-URL sowie Ihr Browser und Betriebssystem gehören.",
-        "Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der sicheren, stabilen und effizienten Bereitstellung der Website). Netlify handelt als Auftragsverarbeiter nach Art. 28 DSGVO. Da Netlify in den Vereinigten Staaten ansässig ist, können Daten dorthin übertragen werden; solche Übertragungen sind durch geeignete Maßnahmen wie die EU-Standardvertragsklauseln abgesichert."
-      ],
-      "bullets": []
+        "Kommt eine Beratung zustande, entstehen Notizen und administrative Unterlagen. Diese werden vertraulich behandelt, sicher aufbewahrt und sind ausschliesslich Theresa Frische zugänglich. Sie werden für die Dauer der Beratung und für höchstens zehn Jahre danach aufbewahrt, was der allgemeinen Verjährungsfrist nach schweizerischem Recht entspricht, und anschliessend vernichtet."
+      ]
     },
     {
-      "heading": "Speicherdauer",
+      "heading": "Weitere Bearbeiter",
       "paras": [
-        "Personenbezogene Daten werden nur so lange aufbewahrt, wie es für den Zweck, zu dem sie erhoben wurden, erforderlich ist. Per E-Mail eingegangene Anfragen werden so lange aufbewahrt, wie es zur Bearbeitung Ihres Anliegens und gegebenenfalls zur Erfüllung gesetzlicher Aufbewahrungspflichten nötig ist, und anschließend gelöscht. Server-Logdateien werden vom Hosting-Anbieter zu Sicherheitszwecken für einen begrenzten Zeitraum aufbewahrt."
+        "Drei Dienstleister bearbeiten Daten im Auftrag:",
+        "Alle drei sind Unternehmen mit Sitz in den Vereinigten Staaten. Daten können daher in den Vereinigten Staaten bearbeitet werden. Die Übermittlung stützt sich auf das Swiss United States Data Privacy Framework und das EU United States Data Privacy Framework, soweit der Empfänger zertifiziert ist, und im Übrigen auf die Standardvertragsklauseln. Eine Weitergabe an weitere Dritte erfolgt nicht, ausser wo gesetzlich vorgeschrieben."
       ],
-      "bullets": []
+      "bullets": [
+        "Netlify, für das Hosting und die Auslieferung der Website an Ihren Browser.",
+        "Resend, für den Versand der aus dem Kontaktformular erzeugten E-Mails.",
+        "Google Workspace, für das Postfach, das diese E-Mails empfängt."
+      ]
     },
     {
-      "heading": "Cookies und Analyse",
+      "heading": "Keine Cookies, keine Analyse, keine Werbung",
       "paras": [
-        "Diese Website verwendet keine Analyse- oder Tracking-Cookies und bindet keine Werbung oder Social-Media-Tracking Dritter ein. Es werden nur technisch notwendige Funktionen genutzt, die für den Betrieb der Website erforderlich sind. Sollte künftig jemals eine Analyse eingeführt werden, wird diese Erklärung aktualisiert und, soweit erforderlich, vorab Ihre Einwilligung eingeholt."
-      ],
-      "bullets": []
+        "Keine Tracking-Cookies, keine Analysewerkzeuge, keine Werbepixel, keine Social-Media-Plugins, die Inhalte Dritter nachladen. Es gibt nichts einzuwilligen, weshalb Sie auch nicht gefragt werden."
+      ]
+    },
+    {
+      "heading": "Keine automatisierte Einzelentscheidung",
+      "paras": [
+        "Es werden keine Sie betreffenden Entscheidungen automatisiert oder mittels Profiling getroffen."
+      ]
     },
     {
       "heading": "Ihre Rechte",
       "paras": [
-        "Nach der DSGVO und dem Schweizer nDSG haben Sie folgende Rechte hinsichtlich Ihrer personenbezogenen Daten:"
-      ],
-      "bullets": [
-        "Das Recht auf Auskunft über die zu Ihnen gespeicherten personenbezogenen Daten.",
-        "Das Recht auf Berichtigung unrichtiger oder unvollständiger Daten.",
-        "Das Recht auf Löschung („Recht auf Vergessenwerden\").",
-        "Das Recht auf Einschränkung der Verarbeitung.",
-        "Das Recht auf Datenübertragbarkeit.",
-        "Das Recht, der auf berechtigten Interessen beruhenden Verarbeitung zu widersprechen.",
-        "Das Recht, eine Einwilligung jederzeit mit Wirkung für die Zukunft zu widerrufen.",
-        "Das Recht, Beschwerde bei einer Aufsichtsbehörde einzulegen."
+        "Sie können Auskunft über die zu Ihrer Person bearbeiteten Daten verlangen, deren Berichtigung oder Löschung fordern, der Bearbeitung widersprechen und die Herausgabe oder Übertragung der Daten verlangen. Soweit die DSGVO anwendbar ist, können Sie zusätzlich die Einschränkung der Bearbeitung verlangen und erteilte Einwilligungen mit Wirkung für die Zukunft widerrufen.",
+        "Wenden Sie sich an info@theresafrische.com. Vor einer Auskunft wird um eine Bestätigung Ihrer Identität gebeten, damit keine Daten an die falsche Person gelangen.",
+        "Wenn Sie der Ansicht sind, dass Ihre Daten unrechtmässig bearbeitet wurden, können Sie sich in der Schweiz an den Eidgenössischen Datenschutz- und Öffentlichkeitsbeauftragten wenden, im Europäischen Wirtschaftsraum an die Aufsichtsbehörde Ihres Landes."
       ]
     },
     {
-      "heading": "Beschwerderecht",
+      "heading": "Kinder und Jugendliche",
       "paras": [
-        "Wenn Sie der Auffassung sind, dass die Verarbeitung Ihrer personenbezogenen Daten gegen das Datenschutzrecht verstößt, haben Sie das Recht, Beschwerde bei einer Aufsichtsbehörde einzulegen — insbesondere in dem EU-Mitgliedstaat Ihres Aufenthaltsorts, Ihres Arbeitsplatzes oder des Orts der mutmaßlichen Verletzung, oder für die Schweiz beim Eidgenössischen Datenschutz- und Öffentlichkeitsbeauftragten (EDÖB)."
-      ],
-      "bullets": []
+        "Die Beratung richtet sich an Erwachsene. Die Website richtet sich nicht an Kinder, und es werden wissentlich keine Daten von Kindern erhoben."
+      ]
     },
     {
-      "heading": "Aktualisierungen dieser Erklärung",
+      "heading": "Änderungen",
       "paras": [
-        "Diese Datenschutzerklärung kann aktualisiert werden, um Änderungen an der Website oder an gesetzlichen Anforderungen Rechnung zu tragen. Es gilt stets die aktuelle Fassung."
-      ],
-      "bullets": []
-    },
-    {
-      "heading": "Allgemeine Geschäftsbedingungen",
-      "paras": [
-        "Die für Beratungsleistungen geltenden Bedingungen — unter anderem zu Sitzungen, Zahlung, Absage, Vertraulichkeit und Widerrufsrecht — finden Sie in den [Allgemeinen Geschäftsbedingungen](/de/agb)."
-      ],
-      "bullets": []
+        "Diese Erklärung wird angepasst, wenn sich die Leistung oder die dahinterliegende Technik ändert. Massgebend ist stets die hier veröffentlichte Fassung.",
+        "Stand: August 2026."
+      ]
     }
   ],
-  "metaTitle": "Datenschutzerklärung — Theresa Frische",
-  "metaDescription": "Wie personenbezogene Daten auf dieser Website verarbeitet werden, im Einklang mit der DSGVO und dem Schweizer nDSG."
+  "metaTitle": "Datenschutzerklärung | Theresa Frische",
+  "metaDescription": "Wie auf theresafrische.com mit Personendaten umgegangen wird. Keine Cookies, keine Analyse, kein Tracking. revDSG, ergänzend DSGVO für Klient:innen im EWR."
 }

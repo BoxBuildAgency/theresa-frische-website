@@ -1,3 +1,14 @@
+> **SUPERSEDED — August 2026.**
+> This draft was written for German residency and German law. Theresa moved to Zug in
+> August 2026, and the Terms and AGB were replaced wholesale under the August 2026 brief
+> (§6.6 and §6.7). The live text is in `content/en/pages/terms.json` and
+> `content/de/pages/terms.json`.
+>
+> Kept for the record. **Do not implement from this file** — its VAT, withdrawal-right and
+> jurisdiction clauses are no longer correct.
+
+---
+
 # Terms & Conditions / AGB, Draft for Theresa Frische
 
 Working draft for the counselling practice (Beratung, private-pay, online, based in Germany).

@@ -1,9 +1,9 @@
 {
-  "eyebrow": "I'm Theresa Frische · Psychological Counselling",
-  "heroTitle": "A space for what is",
-  "heroTitleAccent": "shifting within you",
-  "heroLead": "Confidential support for stress, burnout, overwhelm and life transitions — for individuals and couples who carry a great deal, give a great deal, and want to feel connected to themselves again.",
-  "reachLine": "Online counselling in German and English, for clients in Switzerland, Germany and internationally.",
+  "eyebrow": "Psychological Counselling in Zug, Zürich & Online",
+  "heroTitle": "A Space to Regain Inner Clarity,",
+  "heroTitleAccent": "Stability, and Direction",
+  "heroLead": "Confidential, tailored support through burnout, anxiety, emotional overload, and complex life transitions, for individuals and couples who carry a lot.",
+  "reachLine": "In German and English, for clients in Switzerland and internationally.",
   "heroPrimary": {
     "label": "Book a discovery call",
     "href": "/contact"
@@ -13,14 +13,12 @@
     "href": "/work-with-me"
   },
   "heroPortrait": {
-    "src": "/images/about-theresa.jpg",
+    "src": "/images/about-theresa.webp",
     "alt": "Theresa Frische, smiling, in a bright room with a plant behind her."
   },
   "heroParas": [
-    "Life rarely changes in clear or linear ways. More often, it shifts gradually — until something begins to feel different within yourself.",
-    "Sometimes life keeps moving on the outside while something no longer feels right on the inside. Outwardly, you may still be functioning, while inwardly there is exhaustion, inner restlessness, overwhelm, or the quiet sense of no longer feeling like yourself.",
-    "Many people seek support not because something has broken, but because something has shifted — and familiar ways of coping no longer feel fully sufficient.",
-    "This practice offers you a confidential space to understand yourself more clearly, strengthen your inner resources, and build a life that fits your needs and values."
+    "Sometimes life keeps moving while something inside no longer feels right. Outwardly, you may be functioning, while inwardly navigating exhaustion, restlessness, or a quiet sense of losing touch with yourself.",
+    "I guide individuals and couples through emotionally demanding times, helping you regulate your nervous system, break through entrenched patterns, and reconnect with what truly matters to you."
   ],
   "heroEmphasis": "This work is not about fixing what is broken. It is about creating a reflective space to better understand yourself and move toward a life aligned with your values.",
   "trustPillars": [
@@ -82,6 +80,9 @@
       }
     ]
   },
+  "pauseBand": {
+    "text": "There is no single way through. What matters is that you do not have to work it out on your own."
+  },
   "steps": {
     "eyebrow": "My approach",
     "heading": "Systemic. Somatic. Integrative.",
@@ -104,6 +105,17 @@
         "body": "Realign your actions and decisions with what truly matters to you."
       }
     ],
+    "modalities": {
+      "heading": "Modalities I draw from",
+      "items": [
+        "Systemic Therapy",
+        "Somatic Experiencing®",
+        "Internal Family Systems",
+        "Acceptance & Commitment Therapy",
+        "Mindfulness & Compassion-based approaches"
+      ],
+      "note": "I draw on these approaches within psychological counselling. I do not offer psychotherapy and I am not a psychotherapist."
+    },
     "closing": "Psychological counselling is a shared process. You remain the expert on your own life; I accompany you with professional expertise, empathy, and fresh perspectives.",
     "ctaLabel": "Learn more about my philosophy"
   },
@@ -115,7 +127,7 @@
   },
   "privatePay": {
     "eyebrow": "Private-pay practice",
-    "heading": "Your advantages as a private-pay client",
+    "heading": "Why clients choose private-pay counselling",
     "items": [
       {
         "title": "Complete Discretion & Privacy",
@@ -127,7 +139,7 @@
       },
       {
         "title": "Maximum Flexibility",
-        "body": "Location-independent online, in English and German — for a life that spans more than one country."
+        "body": "Location-independent online, in English and German — for a life that spans more than one country. Sessions are online, and in person in Zug by arrangement."
       }
     ]
   },
@@ -137,7 +149,7 @@
     "items": [
       {
         "label": "Format",
-        "value": "Online, worldwide"
+        "value": "Online, and in person in Zug by arrangement"
       },
       {
         "label": "Languages",
@@ -158,6 +170,6 @@
     ],
     "closing": "Ready to take the first step? Book a free 15-minute discovery call — a relaxed, no-obligation way to begin."
   },
-  "metaTitle": "Theresa Frische — Systemic & Integrative Counsellor",
-  "metaDescription": "Online counselling in English and German for individuals and couples navigating change, transition, burnout, and life across borders. Book a free 15-minute discovery call."
+  "metaTitle": "Psychological Counselling in Zug, Zürich & Online | Theresa Frische",
+  "metaDescription": "Psychological counselling in Zug and Zürich, and online worldwide. Support through burnout, anxiety, emotional overload and life transitions, in English and German. Book a free discovery call."
 }

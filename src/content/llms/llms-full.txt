@@ -70,7 +70,7 @@ Enquiries go through the contact page at https://theresafrische.com/contact. The
 
 Email: info@theresafrische.com
 Phone: +49 157 38920374
-Address: Scheffelstraße 23, 79102 Freiburg im Breisgau, Germany
+Address: Gimenenstrasse 1, 6300 Zug, Switzerland
 
 ## Site structure
 
@@ -82,3 +82,9 @@ https://theresafrische.com/organisations (Talks Workshops & Courses, Leadership 
 Weekly Wellbeing https://theresafrische.com/weekly-wellbeing · Blog https://theresafrische.com/blog (23 articles) · FAQ https://theresafrische.com/faq
 (around 59 questions in 9 categories) · Contact https://theresafrische.com/contact · AI Info https://theresafrische.com/ai-info ·
 Impressum https://theresafrische.com/impressum · Privacy https://theresafrische.com/privacy · Terms & Conditions https://theresafrische.com/terms
+
+## My Philosophy
+
+https://theresafrische.com/about/philosophy
+How she works: systemic context, the nervous system, inner parts, and values.
+German: https://theresafrische.com/de/ueber-mich/philosophie

@@ -159,6 +159,12 @@ export interface SiteContent {
       intro: string;
       items: FeatureItem[];
     };
+    /**
+     * A single sentence in her voice, over a full-width photograph, sitting
+     * between the focus areas and the four steps — a deliberate pause in a long
+     * stretch of text.
+     */
+    pauseBand: { text: string };
     // NOTE: the duplicate `approach` block was removed in v3 (§1.3) — the home
     // page has a single approach section, `steps` below (01–04).
     practical: {
@@ -178,6 +184,16 @@ export interface SiteContent {
       heading: string;
       intro: string;
       items: FeatureItem[];
+      /**
+       * The approaches she draws on, named plainly.
+       *
+       * `note` is load-bearing: it states that this is counselling and that she
+       * is not a psychotherapist. That sentence, together with the same
+       * statement in the Impressum and in section 2 of the Terms, is what keeps
+       * naming these modalities safe now that the wording check only warns.
+       * Do not remove it.
+       */
+      modalities: { heading: string; items: string[]; note: string };
       closing: string;
       ctaLabel: string;
     };
@@ -200,14 +216,29 @@ export interface SiteContent {
     intro: string[];
     imageAlt: string;
     lived: { heading: string; body: string[]; emphasis: string };
-    philosophy: { heading: string; body: string[] };
-    quotes: Quote[];
     education: { heading: string; items: FeatureItem[] };
-    // ---- v2 additions ----
-    /** Expanded philosophy sections 01–04. */
-    philosophySections: { number: string; heading: string; paras: string[] }[];
     /** Factual, neutral PsyKo/PsyCo recognition line (application pending). */
     psyCoNote: string;
+  };
+
+  /**
+   * My Philosophy — split out of About in August 2026 (§4).
+   *
+   * `/about/philosophy` and `/de/ueber-mich/philosophie`. The prose and the
+   * numbered 01–04 sections used to live on the About page; they were long
+   * enough to deserve their own route, and About Me now reads as an
+   * introduction rather than an essay.
+   */
+  philosophyPage: {
+    metaTitle: string;
+    metaDescription: string;
+    eyebrow: string;
+    heading: string;
+    body: string[];
+    /** Alt text for the softening band; empty means decorative. */
+    bandAlt: string;
+    sections: { number: string; heading: string; paras: string[] }[];
+    testimonial: Quote;
   };
 
   workTogether: {

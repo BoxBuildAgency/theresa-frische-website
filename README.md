@@ -11,23 +11,28 @@ on **Netlify**.
 
 ---
 
-## ⚠️ Compliance: counselling, not psychotherapy
+## Wording: what is protected, and what is not
 
-Theresa is not (yet) licensed to offer psychotherapy in Switzerland, so **the service is described
-as counselling only**, in both languages. When editing copy, never reintroduce these words to
-describe the service:
+**The blocklist was retired in August 2026.** Theresa writes what she judges right.
 
-- **English:** therapy, psychotherapy, psychotherapist, treatment, treat, diagnosis, diagnose,
-  clinical work, patient, heal/healing, cure, symptoms, disorder, mental illness, disease.
-- **German:** Therapie, Psychotherapie, Psychotherapeut:in, Behandlung, behandeln, Diagnose,
-  diagnostizieren, Patient:in, heilen/Heilung, Symptome, Störung, psychische Krankheit.
+The Swiss line is not the word "therapy". It is claiming or implying the protected title
+*Psychotherapeutin*, and practising psychotherapy — treating people who are ill, using
+psychotherapeutic methods — without a cantonal *Berufsausübungsbewilligung*. Counselling of
+people who are not ill sits outside the permit requirement. Naming a modality she draws on is
+fine; describing herself as a psychotherapist, or the service as psychotherapy, is not.
 
-Use instead: counselling / **Beratung**, support / Unterstützung, Begleitung, clients /
-Klient:innen, navigating, exploring, overwhelm / Überforderung, strain / Belastung. The public
-title is always **"Systemic & Integrative Counsellor" / "Systemische & Integrative Beraterin."**
-(These terms are allowed where the copy explicitly says the service is *not* psychotherapy — e.g.
-the disclaimers — and "corporate mental health" / "Krankenkasse" are kept as standard industry
-terms on the Organisations and FAQ pages.)
+`npm run check:compliance` still watches the same terms in both languages, but it now **warns and
+exits 0**. It never fails the build, and Keystatic saves and Netlify deploys regardless. It exists
+to tell her something, not to stop her.
+
+What actually carries the safety are three sentences, and they must not be edited away:
+
+- the note under the modality list on the home page (`home.steps.modalities.note`),
+- "Nature of the service" in the Impressum,
+- section 2 of the Terms.
+
+All three state plainly that this is counselling, that she is not an authorised psychotherapist,
+and that she holds no cantonal licence.
 
 ---
 
@@ -376,7 +381,7 @@ The portrait is **editable in the admin**, separately from the About photograph,
 
 | Field | What it takes |
 | --- | --- |
-| Image file | A path to a file already in `public/images/`, e.g. `/images/about-theresa.jpg` |
+| Image file | A path to a file already in `public/images/`, e.g. `/images/about-theresa.webp` |
 | Photo description | The alt text, for screen readers |
 
 **Recommended dimensions: upright (portrait) 4:5, around 1200 × 1500px**, long edge 2000px max,
@@ -441,7 +446,8 @@ forest-on-cream (10.1:1) rather than her Clay Deep fill, which would fail AA for
 - **Legal pages — two fields pending Theresa:** the **postal address** and **VAT status** were
   marked pending in `business-details.md`, which explicitly instructed to ship clearly-marked
   placeholders and continue. They render as `Address: [to be added]` / `Anschrift: [Adresse wird
-  ergänzt]` and the §19 UStG Kleinunternehmer note. **Replace these in `src/content/en.ts` and
+  The legal pages were replaced wholesale in August 2026 for Swiss residency (Zug); see
+  `content/*/pages/{impressum,privacy,terms}.json`.
   `de.ts` (the `impressum` and `privacy` keys) before go-live.** Everything else in the legal pages
   is final.
 - **Partner logos (AXA / Siemens / Trusted Shops / Cornings):** named testimonials are included as

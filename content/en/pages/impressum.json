@@ -1,68 +1,61 @@
 {
-  "heading": "Impressum",
+  "heading": "Legal Notice",
   "blocks": [
     {
-      "heading": "Information pursuant to § 5 DDG",
+      "heading": "Responsible for this website",
       "lines": [
         "Theresa Frische",
-        "Systemic & Integrative Counsellor (Beratung)",
-        "Scheffelstraße 23",
-        "79102 Freiburg im Breisgau",
-        "Germany"
+        "Gimenenstrasse 1",
+        "6300 Zug",
+        "Switzerland",
+        "",
+        "Email: info@theresafrische.com",
+        "Website: www.theresafrische.com"
       ]
     },
     {
-      "heading": "Contact",
+      "heading": "Legal form",
       "lines": [
-        "Phone: +49 157 38920374",
-        "Email: info@theresafrische.com"
+        "Sole proprietorship under Swiss law. Not entered in the commercial register, as the turnover threshold requiring registration has not been reached. Not liable for Swiss value added tax (MWST), as the turnover threshold for tax liability has not been reached."
       ]
     },
     {
-      "heading": "VAT / tax status",
+      "heading": "Responsible for content",
       "lines": [
-        "Small business owner pursuant to § 19 UStG. In accordance with § 19 UStG, no VAT is charged."
+        "Theresa Frische, at the address above."
       ]
     },
     {
-      "heading": "Responsible for content pursuant to § 18 (2) MStV",
+      "heading": "Nature of the service",
       "lines": [
-        "Theresa Frische",
-        "Scheffelstraße 23, 79102 Freiburg im Breisgau, Germany"
-      ]
-    },
-    {
-      "heading": "Nature of the practice",
-      "lines": [
-        "This is a counselling (Beratung) practice. The services offered are counselling, supervision-style support, workshops, and wellbeing programmes. This practice does not offer psychotherapy or medical treatment."
-      ]
-    },
-    {
-      "heading": "EU online dispute resolution",
-      "lines": [
-        "The European Commission provides a platform for online dispute resolution (ODR): https://ec.europa.eu/consumers/odr.",
-        "I am neither obliged nor willing to participate in dispute resolution proceedings before a consumer arbitration board."
+        "Psychological counselling. This is not psychotherapy, medical treatment, or a substitute for either. Theresa Frische is not an authorised psychotherapist and does not hold a cantonal licence to practise psychotherapy. Counselling is offered online and, by arrangement, in person."
       ]
     },
     {
       "heading": "Liability for content",
       "lines": [
-        "As a service provider, I am responsible for my own content on these pages in accordance with general law. However, I am not obliged to monitor transmitted or stored third-party information, or to investigate circumstances that indicate unlawful activity. Obligations to remove or block the use of information under general law remain unaffected. Liability in this respect is only possible from the point in time at which a concrete infringement of the law becomes known. Upon becoming aware of such infringements, I will remove the content in question immediately."
+        "This website is maintained with care, but no guarantee is given as to the accuracy, completeness or currency of the information it contains. Liability for material or immaterial loss arising from the use or non use of the information is excluded to the extent permitted by law."
       ]
     },
     {
-      "heading": "Liability for links",
+      "heading": "Liability for external links",
       "lines": [
-        "This site may contain links to external websites of third parties, over whose content I have no influence. Therefore, I cannot accept any liability for this third-party content. The respective provider or operator of the linked pages is always responsible for their content. The linked pages were checked for possible legal violations at the time of linking; no unlawful content was discernible. Permanent monitoring of the content of linked pages is not reasonable without concrete evidence of an infringement. Upon becoming aware of legal violations, I will remove such links immediately."
+        "This website contains links to third party websites over whose content there is no control. No responsibility is accepted for that content. Responsibility for linked pages lies with their respective operators."
       ]
     },
     {
       "heading": "Copyright",
       "lines": [
-        "The content and works on these pages created by the site operator are subject to copyright law. Duplication, processing, distribution, and any form of commercialisation beyond the scope of copyright require the written consent of the respective author or creator. Downloads and copies of this site are permitted for private, non-commercial use only."
+        "The content and works on this website are protected by Swiss copyright law. Reproduction, adaptation, distribution or any form of use beyond the limits of copyright requires written consent."
+      ]
+    },
+    {
+      "heading": "In an emergency",
+      "lines": [
+        "This website is not an emergency service and enquiries are not monitored around the clock. If you are in acute crisis, contact the emergency services on 144 in Switzerland or 112 in the European Union. Die Dargebotene Hand is available in Switzerland day and night on 143. Telefonseelsorge is available in Germany on 0800 111 0 111."
       ]
     }
   ],
-  "metaTitle": "Impressum — Theresa Frische",
-  "metaDescription": "Legal disclosure (Impressum) for the counselling practice of Theresa Frische."
+  "metaTitle": "Legal Notice | Theresa Frische",
+  "metaDescription": "Legal notice for theresafrische.com — Theresa Frische, psychological counselling, Zug, Switzerland."
 }

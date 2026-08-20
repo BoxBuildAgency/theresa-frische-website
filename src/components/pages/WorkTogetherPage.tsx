@@ -20,14 +20,40 @@ export function WorkTogetherPage({ locale }: { locale: Locale }) {
     <>
       <PageHero eyebrow={w.eyebrow} title={w.heading} lead={w.intro} crumbs={crumbs} />
 
-      {/* FOUR SERVICE CARDS -> child pages */}
+      {/* WELCOME IMAGE (Aug 2026 §5.1) — reads as a greeting, so it sits before
+          the service cards.
+
+          The source is square and she is standing: her head sits near the top of
+          the frame and the handshake near the bottom. A full-width band cropped
+          to 16:7 showed only 44% of the height starting at 20%, which cut her
+          forehead. This is a contained 4:3 instead — 75% of the height, anchored
+          so both the face and the handshake stay in frame. Contained rather than
+          full-bleed because a square source in a wide band can only be one or
+          the other: short, or whole. Decorative, so screen readers skip it. */}
+      <Section tone="cream" className="!pb-0">
+        <div className="relative mx-auto aspect-[4/3] w-full max-w-2xl overflow-hidden rounded-3xl border border-line bg-sand">
+          <Image
+            src="/images/work-with-me-welcome.webp"
+            alt=""
+            aria-hidden="true"
+            fill
+            priority
+            sizes="(max-width: 768px) 92vw, 672px"
+            className="object-cover object-[50%_15%]"
+          />
+        </div>
+      </Section>
+
+      {/* FOUR SERVICE CARDS -> child pages.
+          Aug 2026 §2.3 — sand fill plus a firmer border, so the cards lift off
+          the cream section instead of dissolving into it. */}
       <Section tone="cream">
         <ul className="grid gap-5 sm:grid-cols-2">
           {w.cards.map((card) => (
             <li key={card.href}>
               <Link
                 href={card.href}
-                className="group flex h-full flex-col rounded-2xl border border-line bg-cream p-8 transition-colors hover:border-clay-deep/50"
+                className="group flex h-full flex-col rounded-2xl border border-line-strong bg-sand p-8 transition-colors hover:border-clay-deep/50"
               >
                 <h2 className="font-serif text-2xl font-light text-ink transition-colors group-hover:text-forest">
                   {card.title}
@@ -88,7 +114,7 @@ export function WorkTogetherPage({ locale }: { locale: Locale }) {
       {/* SWITZERLAND / INTERNATIONAL — online reach, no location claim */}
       <section className="relative isolate overflow-hidden border-y border-line">
         <Image
-          src="/images/band-meadow.jpg"
+          src="/images/band-meadow.webp"
           alt=""
           aria-hidden="true"
           fill

@@ -1,17 +1,23 @@
 #!/usr/bin/env node
 /**
- * Compliance sweep — the safety net that makes full CMS editing safe.
+ * Wording check — advisory, not a gate.
  *
- * Theresa can edit every word on the site. This check exists to stop exactly one
- * class of mistake reaching the public site: describing the service as
- * psychotherapy, medical treatment, or diagnosis. She is not licensed for that in
- * Switzerland, so the site must describe counselling only.
+ * This used to fail the build. It no longer does, and that is deliberate:
+ * Theresa has taken advice and writes what she judges right. The check now
+ * exists to tell her something, not to stop her. It always exits 0, so
+ * Keystatic saves and Netlify deploys regardless.
  *
- * It scans the content files (content/**.json) in both languages and fails the
- * build if a prohibited term is used. Terms are allowed where the copy explicitly
- * says the service is NOT psychotherapy (the disclaimers, the legal pages, and
- * the article that compares counselling with psychotherapy and coaching) — those
- * are listed as exceptions below.
+ * What it watches for is unchanged, and the list is worth keeping. The Swiss
+ * line is not the word "therapy" — it is claiming the protected title
+ * Psychotherapeutin, or practising psychotherapy (treating people who are ill,
+ * using psychotherapeutic methods) without a cantonal
+ * Berufsausübungsbewilligung. Naming a method she draws on is fine. Describing
+ * herself as a psychotherapist, or the service as psychotherapy, is not.
+ *
+ * The sentences that actually carry the safety now are the ones under the
+ * modality list, in the Impressum, and in section 2 of the Terms. Those say
+ * plainly that she is not an authorised psychotherapist and offers no
+ * psychotherapy. Do not edit them away.
  *
  * Run locally with:  npm run check:compliance
  */
@@ -55,6 +61,15 @@ const ALLOWED_FILES = [
 const ALLOWED_PHRASES = [
   // Explicit negations — the copy is saying the service is NOT these things.
   /\bnot psychotherapy\b/i,
+  // The modality note, the Impressum and Terms section 2 all say plainly that
+  // she does NOT offer psychotherapy. Those sentences are the safety net; the
+  // check must not spend its credibility warning about them.
+  /\bdo(?:es)? not offer psychotherapy\b/i,
+  /\b(?:am|is) not a psychotherapist\b/i,
+  /\bnot an authorised psychotherapist\b/i,
+  /\bkeine Psychotherapie an\b/i,
+  /\bkeine Psychotherapeutin\b/i,
+  /\bkeine eidgenössisch anerkannte Psychotherapeutin\b/i,
   /\bkeine Psychotherapie\b/i,
   /nicht.{0,25}Psychotherapie/i,
   /\bno diagnosis\b|\bwithout a diagnosis\b|\bno diagnoses\b|\bdo(?:es)? not (?:involve|provide) (?:any )?diagnos/i,
@@ -106,34 +121,22 @@ function findings() {
 const hits = findings();
 
 if (hits.length === 0) {
-  console.log("✓ Compliance check passed — no prohibited wording found in the content.");
+  console.log("✓ Wording check: nothing on the watch list appears in the content.");
   process.exit(0);
 }
 
-// Plain-language failure, written for a non-developer.
-console.error("");
-console.error("──────────────────────────────────────────────────────────────────");
-console.error("  YOUR CHANGE HAS NOT BEEN PUBLISHED");
-console.error("──────────────────────────────────────────────────────────────────");
-console.error("");
-console.error("  This website describes counselling only. A few words are not");
-console.error("  allowed, because using them would describe the service as");
-console.error("  psychotherapy or medical care.");
-console.error("");
+// Advisory note, written for a non-developer. Never fails the build.
+console.log("");
 for (const h of hits) {
-  console.error(`  • The word "${h.term}" was found in ${h.file} (line ${h.line}).`);
-  console.error(`    …${h.context.slice(0, 150)}…`);
-  console.error("");
+  console.log(`Heads up: the word "${h.term}" appears in ${h.file}.`);
 }
-console.error("  What to do: open the admin at /keystatic, reword the sentence");
-console.error("  above without that word, and save again. As a guide, use:");
-console.error("");
-console.error("    counselling / Beratung        instead of therapy / Therapie");
-console.error("    support, working together     instead of treatment / Behandlung");
-console.error("    overwhelm, stress, strain     instead of anxiety / Ängste");
-console.error("    clients / Klient:innen        instead of patients / Patient:innen");
-console.error("");
-console.error("  Nothing is broken and nothing is lost — the live site is unchanged");
-console.error("  until this is fixed. If you are unsure, send this message to José.");
-console.error("");
-process.exit(1);
+console.log("");
+console.log("Switzerland protects the title psychotherapist and the practice of psychotherapy.");
+console.log("Naming a method you draw on is fine. Describing yourself as a psychotherapist,");
+console.log("or your service as psychotherapy, is not. This has been published anyway.");
+console.log("");
+console.log(`(${hits.length} ${hits.length === 1 ? "mention" : "mentions"} in total. If you are unsure about any of them, send this to José.)`);
+console.log("");
+
+// Always succeed. The check informs; it does not block.
+process.exit(0);

@@ -1,3 +1,13 @@
+> **SUPERSEDED in part — August 2026.**
+> The business details in this brief (Freiburg address, § 19 UStG note, § 18 Abs. 2 MStV
+> content responsibility) described German residency and no longer apply. Theresa is
+> resident in Zug; the current details are in `business-details.md` and in the legal pages.
+>
+> The structural parts of this brief were implemented and remain accurate. Kept for the
+> record.
+
+---
+
 # Claude Code Brief: Theresa Frische Website, v2 Merge
 
 **Governing principle: ADD and OPTIMISE. Do not remove anything already built.**
