@@ -43,7 +43,7 @@ export function SiteShell({
 
       <main id="main">{children}</main>
 
-      <Footer content={content} year={2026} />
+      <Footer content={content} />
 
       {/* Mobile-only booking bar (§2.4). Rendered last so it sits above the
           page, and it hides itself over the footer and the crisis block. */}
