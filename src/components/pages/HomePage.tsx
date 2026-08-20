@@ -19,21 +19,13 @@ export function HomePage({ locale }: { locale: Locale }) {
       <PersonServiceJsonLd content={c} />
 
       {/* HERO — her portrait leads, headline beside it.
-          The atmospheric photograph stays as a warm texture under a near-opaque
-          scrim, so it reads as tone rather than as a second image competing
-          with the portrait. */}
+          hero.jpg used to sit here as a 25% texture; it has been promoted to a
+          full section further down the page, so the hero is now a plain warm
+          wash and the photograph appears exactly once. */}
       <section className="relative isolate overflow-hidden bg-sand">
-        <Image
-          src="/images/hero.jpg"
-          alt=""
-          aria-hidden="true"
-          fill
-          sizes="100vw"
-          className="-z-20 object-cover object-center opacity-25"
-        />
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-b from-cream/90 via-cream/85 to-sand/90"
+          className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-b from-cream via-cream/95 to-sand"
         />
         <Container className="relative py-16 sm:py-24 lg:py-28">
           <div className="grid items-center gap-12 lg:grid-cols-[0.85fr_1fr] lg:gap-16">
@@ -61,6 +53,17 @@ export function HomePage({ locale }: { locale: Locale }) {
               <h1 className="mt-5 font-serif text-4xl font-light leading-[1.08] text-ink sm:text-5xl lg:text-6xl">
                 {h.heroTitle} <span className="accent">{h.heroTitleAccent}</span>
               </h1>
+              {/* Her background, as its own line rather than inside the eyebrow.
+                  As an eyebrow the full credential string ran to 3–4 lines of
+                  12px uppercase at 320–375px, which wrecked the calm; here it
+                  reads as a byline, mirroring the About page order of
+                  headline → credentials → lead.
+
+                  Sourced from the About page content so the two can never drift
+                  apart — Theresa edits her qualifications in one place. */}
+              <p className="eyebrow mt-5 max-w-xl normal-case tracking-normal text-ink-soft">
+                {c.about.credentials}
+              </p>
               <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink-soft">{h.heroLead}</p>
               <p className="mt-3 max-w-xl text-sm text-ink-muted">{h.reachLine}</p>
               <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
@@ -127,19 +130,49 @@ export function HomePage({ locale }: { locale: Locale }) {
       {/* AUDIENCE */}
       <Section tone="cream">
         <SectionHeader eyebrow={h.audience.eyebrow} heading={h.audience.heading} intro={h.audience.intro} />
+        {/* Sand fill on a cream section, so the tiles lift instead of vanishing
+            into the background. */}
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {h.audience.items.map((item) => (
-            <FeatureCard key={item.title} item={item} />
+            <FeatureCard key={item.title} item={item} className="bg-sand" />
           ))}
         </div>
       </Section>
 
-      {/* FOUR-STEP APPROACH (01–04) */}
-      <Section tone="cream">
+      {/* PAUSE BAND — a full-width photograph and one line, between two long
+          sections. Deliberately light, because the testimonials band above is
+          dark pine; alternating tone keeps the page from reading as a stack of
+          identical photo strips. */}
+      <section className="relative isolate overflow-hidden bg-sand">
+        <Image
+          src="/images/hero.jpg"
+          alt=""
+          aria-hidden="true"
+          fill
+          sizes="100vw"
+          /* She sits right of centre, so the crop is anchored there and the
+             pale water on the left is left clear for the sentence. */
+          className="-z-20 object-cover object-[68%_center]"
+        />
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-r from-cream/95 via-cream/85 to-cream/40"
+        />
+        <Container className="relative py-20 sm:py-28 lg:py-32">
+          <p className="quote-rule max-w-xl font-serif text-2xl font-light italic leading-snug text-forest sm:text-3xl">
+            {h.pauseBand.text}
+          </p>
+        </Container>
+      </section>
+
+      {/* FOUR-STEP APPROACH (01–04) — sand section with cream cards, the
+          inverse of the focus tiles above, so the two groups read as different
+          without introducing a new colour. */}
+      <Section tone="sand">
         <SectionHeader eyebrow={h.steps.eyebrow} heading={h.steps.heading} intro={h.steps.intro} />
         <ol className="mt-12 grid gap-5 sm:grid-cols-2">
           {h.steps.items.map((step) => (
-            <li key={step.title} className="rounded-2xl border border-line bg-cream p-7">
+            <li key={step.title} className="rounded-2xl border border-line-strong bg-cream p-7">
               <h3 className="font-serif text-xl text-ink">{step.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-ink-soft">{step.body}</p>
             </li>

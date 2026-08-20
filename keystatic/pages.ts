@@ -126,6 +126,21 @@ export const homePage = (locale: Loc) =>
         },
         { label: "'Who this space is for' section" },
       ),
+      pauseBand: fields.object(
+        {
+          text: fields.text({
+            label: "The sentence",
+            multiline: true,
+            description: "One sentence, in your voice. Keep it short — it sits alone over a photograph.",
+          }),
+        },
+        {
+          label: "Pause band (photo strip between the focus areas and the four steps)",
+          description:
+            "A full-width photograph with a single line over it, giving the eye somewhere to rest " +
+            "between two long sections. The photograph itself is set in the code.",
+        },
+      ),
       steps: fields.object(
         {
           eyebrow: fields.text({ label: "Small label above the heading" }),

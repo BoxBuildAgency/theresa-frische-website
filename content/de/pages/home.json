@@ -81,6 +81,9 @@
       }
     ]
   },
+  "pauseBand": {
+    "text": "Es gibt nicht den einen Weg. Wichtig ist, dass Sie ihn nicht allein finden müssen."
+  },
   "steps": {
     "eyebrow": "Mein Ansatz",
     "heading": "Systemisch. Körperorientiert. Integrativ.",
