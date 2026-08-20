@@ -45,7 +45,7 @@ if (/path: `content\/\$\{locale\}\/site`/.test(cfg)) exposed.push(/^content\/(en
 // `at(locale, "name")` helper in keystatic/pages.ts.
 const PAGE_NAMES = [
   "home", "about", "workTogether", "organisations", "weeklyWellbeing",
-  "blog", "faq", "contact", "aiInfo", "notFound", "impressum", "privacy", "terms",
+  "philosophy", "blog", "faq", "contact", "aiInfo", "notFound", "impressum", "privacy", "terms",
 ];
 for (const name of PAGE_NAMES) {
   const literal = new RegExp("path: `content/\\$\\{locale\\}/pages/" + name + "`");
@@ -64,7 +64,8 @@ const DECLARED = {
   privacy: ["heading", "intro", "sections", "metaTitle", "metaDescription"],
   terms: ["heading", "sections", "version", "metaTitle", "metaDescription"],
   home: ["metaTitle", "metaDescription", "eyebrow", "heroTitle", "heroTitleAccent", "heroLead", "heroParas", "heroEmphasis", "heroPrimary", "heroSecondary", "heroPortrait", "testimonial", "audience", "pauseBand", "practical", "reachLine", "trustPillars", "steps", "privatePay", "aboutBlock", "testimonials"],
-  about: ["metaTitle", "metaDescription", "eyebrow", "name", "subtitle", "credentials", "lead", "intro", "imageAlt", "lived", "philosophy", "quotes", "education", "philosophySections", "psyCoNote"],
+  about: ["metaTitle", "metaDescription", "eyebrow", "name", "subtitle", "credentials", "lead", "intro", "imageAlt", "lived", "education", "psyCoNote"],
+  philosophy: ["metaTitle", "metaDescription", "eyebrow", "heading", "body", "bandAlt", "sections", "testimonial"],
   workTogether: ["metaTitle", "metaDescription", "eyebrow", "heading", "intro", "discovery", "quote", "individual", "couples", "closing", "cards", "switzerland"],
   organisations: ["metaTitle", "metaDescription", "eyebrow", "heading", "lead", "intro", "facts", "formats", "individual", "topics", "approach", "testimonials", "closing", "cards"],
   weeklyWellbeing: ["metaTitle", "metaDescription", "eyebrow", "heading", "lead", "intro", "imageAlt", "facts", "why", "quotes", "closing"],
@@ -79,7 +80,7 @@ function shapeOf(rel) {
   if (/\/posts\//.test(rel)) return "posts";
   // pages/faq.json is the FAQ *page* chrome; faq/*.json are the categories.
   if (/\/pages\/faq\.json$/.test(rel)) return "faqPage";
-  for (const p of ["home", "about", "workTogether", "organisations", "weeklyWellbeing", "blog", "contact", "aiInfo", "notFound"]) {
+  for (const p of ["home", "about", "philosophy", "workTogether", "organisations", "weeklyWellbeing", "blog", "contact", "aiInfo", "notFound"]) {
     if (new RegExp(`/pages/${p}\\.json$`).test(rel)) return p;
   }
   if (/\/faq\//.test(rel)) return "faq";

@@ -41,6 +41,13 @@ const nextConfig: NextConfig = {
       { source: "/de/work-together", destination: "/de/angebot", permanent: true },
       { source: "/de/about", destination: "/de/ueber-mich", permanent: true },
       { source: "/de/organisations", destination: "/de/fuer-unternehmen", permanent: true },
+      // About split, August 2026 (§4). There was no deep route under /about
+      // before, but the philosophy content used to live on the About page and
+      // may have been linked with a fragment; these catch the plausible guesses.
+      { source: "/about/my-philosophy", destination: "/about/philosophy", permanent: true },
+      { source: "/philosophy", destination: "/about/philosophy", permanent: true },
+      { source: "/de/ueber-mich/meine-haltung", destination: "/de/ueber-mich/philosophie", permanent: true },
+      { source: "/de/philosophie", destination: "/de/ueber-mich/philosophie", permanent: true },
       // Note: /llm.txt is kept as a real duplicate of /llms.txt, not a
       // redirect, so both paths serve content directly. Both are served by
       // route handlers under src/app/, not from public/ — see

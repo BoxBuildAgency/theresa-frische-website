@@ -216,14 +216,29 @@ export interface SiteContent {
     intro: string[];
     imageAlt: string;
     lived: { heading: string; body: string[]; emphasis: string };
-    philosophy: { heading: string; body: string[] };
-    quotes: Quote[];
     education: { heading: string; items: FeatureItem[] };
-    // ---- v2 additions ----
-    /** Expanded philosophy sections 01–04. */
-    philosophySections: { number: string; heading: string; paras: string[] }[];
     /** Factual, neutral PsyKo/PsyCo recognition line (application pending). */
     psyCoNote: string;
+  };
+
+  /**
+   * My Philosophy — split out of About in August 2026 (§4).
+   *
+   * `/about/philosophy` and `/de/ueber-mich/philosophie`. The prose and the
+   * numbered 01–04 sections used to live on the About page; they were long
+   * enough to deserve their own route, and About Me now reads as an
+   * introduction rather than an essay.
+   */
+  philosophyPage: {
+    metaTitle: string;
+    metaDescription: string;
+    eyebrow: string;
+    heading: string;
+    body: string[];
+    /** Alt text for the softening band; empty means decorative. */
+    bandAlt: string;
+    sections: { number: string; heading: string; paras: string[] }[];
+    testimonial: Quote;
   };
 
   workTogether: {

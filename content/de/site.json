@@ -10,7 +10,16 @@
     {
       "label": "Über mich",
       "href": "/de/ueber-mich",
-      "children": []
+      "children": [
+        {
+          "label": "Über mich",
+          "href": "/de/ueber-mich"
+        },
+        {
+          "label": "Meine Haltung",
+          "href": "/de/ueber-mich/philosophie"
+        }
+      ]
     },
     {
       "label": "Angebot",
@@ -89,6 +98,10 @@
       {
         "label": "Über mich",
         "href": "/de/ueber-mich"
+      },
+      {
+        "label": "Meine Haltung",
+        "href": "/de/ueber-mich/philosophie"
       },
       {
         "label": "Angebot",

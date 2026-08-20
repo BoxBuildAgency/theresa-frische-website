@@ -201,6 +201,42 @@ export const homePage = (locale: Loc) =>
     },
   });
 
+/* ----------------------------------------------------------- PHILOSOPHY */
+export const philosophyPage = (locale: Loc) =>
+  singleton({
+    label: `My Philosophy page — ${locale.toUpperCase()}`,
+    path: at(locale, "philosophy"),
+    format: { data: "json" },
+    schema: {
+      eyebrow: fields.text({ label: "Small label above the heading" }),
+      heading: fields.text({ label: "Page heading" }),
+      body: paragraphs("Opening paragraphs", "The prose before the numbered sections."),
+      bandAlt: fields.text({
+        label: "Photo description for the wide photo strip",
+        multiline: true,
+        description:
+          "Leave empty if the photo is decorative — screen readers will then skip it, " +
+          "which is usually right for mood photography.",
+      }),
+      sections: fields.array(
+        fields.object({
+          number: fields.text({ label: "Number", description: "e.g. 01" }),
+          heading: fields.text({ label: "Heading" }),
+          paras: paragraphs("Paragraphs", ""),
+        }),
+        { label: "The numbered sections", itemLabel: (p) => p.fields.heading.value || "Section" },
+      ),
+      testimonial: fields.object(
+        {
+          text: fields.text({ label: "Quote", multiline: true }),
+          attribution: fields.text({ label: "Who said it" }),
+        },
+        { label: "Client quote (shown on the dark green band)" },
+      ),
+      ...seoFields(),
+    },
+  });
+
 /* ---------------------------------------------------------------- ABOUT */
 export const aboutPage = (locale: Loc) =>
   singleton({
@@ -230,35 +266,6 @@ export const aboutPage = (locale: Loc) =>
           emphasis: fields.text({ label: "Highlighted closing sentence", multiline: true }),
         },
         { label: "'A life between worlds' section" },
-      ),
-      philosophy: fields.object(
-        {
-          heading: fields.text({ label: "Heading" }),
-          body: paragraphs("Paragraphs", ""),
-        },
-        { label: "'Seeing the whole person' section" },
-      ),
-      philosophySections: fields.array(
-        fields.object({
-          number: fields.text({ label: "Number", description: "e.g. 01" }),
-          heading: fields.text({ label: "Heading" }),
-          paras: paragraphs("Paragraphs", ""),
-        }),
-        {
-          label: "The four numbered philosophy sections",
-          itemLabel: (p) => `${p.fields.number.value} ${p.fields.heading.value}`,
-        },
-      ),
-      quotes: quotes("Quotes on the dark green band", ""),
-      education: fields.object(
-        {
-          heading: fields.text({ label: "Heading" }),
-          items: cards(
-            "Qualifications",
-            "⚠️ These entries were worded deliberately for regulatory reasons — the site describes counselling only, and the training is named factually. Please check with José before changing them.",
-          ),
-        },
-        { label: "Qualifications section" },
       ),
       psyCoNote: fields.text({
         label: "Recognition note under the qualifications",

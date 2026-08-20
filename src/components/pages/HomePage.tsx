@@ -8,6 +8,7 @@ import { FeatureCard, MetaList, QuoteBlock, SectionHeader } from "@/components/u
 import { CtaBand } from "@/components/sections/CtaBand";
 import { PersonServiceJsonLd } from "@/components/site/JsonLd";
 import { localizedPath } from "@/lib/site";
+import { shortCredentials } from "@/lib/credentials";
 
 export function HomePage({ locale }: { locale: Locale }) {
   const c = getContent(locale);
@@ -60,9 +61,11 @@ export function HomePage({ locale }: { locale: Locale }) {
                   headline → credentials → lead.
 
                   Sourced from the About page content so the two can never drift
-                  apart — Theresa edits her qualifications in one place. */}
+                  apart — Theresa edits her qualifications in one place. The hero
+                  shows a shortened form of that same string; see
+                  lib/credentials.ts. */}
               <p className="eyebrow mt-5 max-w-xl normal-case tracking-normal text-ink-soft">
-                {c.about.credentials}
+                {shortCredentials(c.about.credentials, locale)}
               </p>
               <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink-soft">{h.heroLead}</p>
               <p className="mt-3 max-w-xl text-sm text-ink-muted">{h.reachLine}</p>
