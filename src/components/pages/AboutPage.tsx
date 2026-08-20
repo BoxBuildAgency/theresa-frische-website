@@ -37,7 +37,7 @@ export function AboutPage({ locale }: { locale: Locale }) {
           <div className="order-1 lg:order-2">
             <div className="relative mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden rounded-3xl border border-line bg-cream shadow-sm">
               <Image
-                src="/images/about-theresa-2026.jpg"
+                src="/images/about-theresa-2026.webp"
                 alt={a.imageAlt}
                 fill
                 priority
@@ -140,11 +140,19 @@ export function AboutPage({ locale }: { locale: Locale }) {
           {a.education.items.map((item) => (
             <li key={item.title} className="grid gap-1 py-5 sm:grid-cols-[0.9fr_1.4fr] sm:gap-6">
               <h3 className="font-serif text-lg text-ink">{item.title}</h3>
-              <p className="text-sm leading-relaxed text-ink-soft">{item.body}</p>
+              <div>
+                <p className="text-sm leading-relaxed text-ink-soft">{item.body}</p>
+                {/* The PsyCo recognition note belongs to the master's degree, not
+                    to the systemic training it used to sit beneath. Rendered from
+                    the same single field, so the wording is unchanged and there is
+                    still only one place to edit it. */}
+                {item.title.startsWith("M.Sc.") && (
+                  <p className="mt-2 text-sm leading-relaxed text-ink-soft">{a.psyCoNote}</p>
+                )}
+              </div>
             </li>
           ))}
         </ul>
-        <p className="mt-6 text-sm leading-relaxed text-ink-muted">{a.psyCoNote}</p>
 
         {/* ---------------------------------------------------------------
             ASSOCIATION LOGOS — placeholder, intentionally empty (v3 §2.3).

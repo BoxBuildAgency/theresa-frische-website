@@ -3,7 +3,7 @@
   "htmlLang": "de",
   "brand": {
     "name": "Theresa Frische",
-    "tagline": "Systemische Beratung",
+    "tagline": "Psychologische Beratung",
     "title": "Systemische & Integrative Beraterin"
   },
   "nav": [
@@ -185,6 +185,16 @@
     "intro": "Beratung ist kein Krisendienst. Wenn Sie sich in einer Krise befinden oder sofortige Hilfe brauchen, wenden Sie sich bitte an eine der folgenden Stellen.",
     "items": [
       {
+        "label": "Notruf (CH)",
+        "value": "144",
+        "href": ""
+      },
+      {
+        "label": "Die Dargebotene Hand (CH) — kostenlos, 24 h",
+        "value": "143",
+        "href": ""
+      },
+      {
         "label": "Notruf (EU)",
         "value": "112",
         "href": ""
@@ -192,11 +202,6 @@
       {
         "label": "Telefonseelsorge (DE) — kostenlos, 24 h",
         "value": "0800 111 0 111 · 0800 111 0 222",
-        "href": ""
-      },
-      {
-        "label": "Die Dargebotene Hand (CH)",
-        "value": "143",
         "href": ""
       },
       {

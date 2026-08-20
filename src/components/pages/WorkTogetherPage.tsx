@@ -20,14 +20,34 @@ export function WorkTogetherPage({ locale }: { locale: Locale }) {
     <>
       <PageHero eyebrow={w.eyebrow} title={w.heading} lead={w.intro} crumbs={crumbs} />
 
-      {/* FOUR SERVICE CARDS -> child pages */}
+      {/* WELCOME IMAGE (Aug 2026 §5.1) — reads as a greeting, so it sits before
+          the service cards. The source is square; rather than letterbox it, the
+          container is a wide 16:7 and the crop is anchored high so heads and
+          shoulders survive. Decorative, so screen readers skip it. */}
+      <Section tone="cream" className="!pb-0">
+        <div className="relative aspect-[4/3] w-full overflow-hidden rounded-3xl border border-line bg-sand sm:aspect-[16/9] lg:aspect-[16/7]">
+          <Image
+            src="/images/work-with-me-welcome.webp"
+            alt=""
+            aria-hidden="true"
+            fill
+            priority
+            sizes="(max-width: 1024px) 92vw, 1120px"
+            className="object-cover object-[50%_35%]"
+          />
+        </div>
+      </Section>
+
+      {/* FOUR SERVICE CARDS -> child pages.
+          Aug 2026 §2.3 — sand fill plus a firmer border, so the cards lift off
+          the cream section instead of dissolving into it. */}
       <Section tone="cream">
         <ul className="grid gap-5 sm:grid-cols-2">
           {w.cards.map((card) => (
             <li key={card.href}>
               <Link
                 href={card.href}
-                className="group flex h-full flex-col rounded-2xl border border-line bg-cream p-8 transition-colors hover:border-clay-deep/50"
+                className="group flex h-full flex-col rounded-2xl border border-line-strong bg-sand p-8 transition-colors hover:border-clay-deep/50"
               >
                 <h2 className="font-serif text-2xl font-light text-ink transition-colors group-hover:text-forest">
                   {card.title}

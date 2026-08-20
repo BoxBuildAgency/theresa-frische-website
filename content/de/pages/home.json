@@ -1,9 +1,9 @@
 {
-  "eyebrow": "Ich bin Theresa Frische · Psychologische Beratung",
-  "heroTitle": "Ein Raum für das, was",
-  "heroTitleAccent": "sich in Ihnen verändert",
-  "heroLead": "Vertrauliche Begleitung bei Stress, Burnout, Überforderung und Lebensübergängen — für Menschen, die viel geben, viel tragen und wieder mehr Verbindung zu sich selbst finden möchten.",
-  "reachLine": "Online-Beratung auf Deutsch und Englisch — für Klient:innen in der Schweiz, in Deutschland und international.",
+  "eyebrow": "Psychologische Beratung in Zug, Zürich & Online",
+  "heroTitle": "Ein Raum, um Klarheit, Halt",
+  "heroTitleAccent": "und Richtung zurückzugewinnen",
+  "heroLead": "Vertrauliche, individuell zugeschnittene Begleitung bei Burnout, Ängsten, emotionaler Überlastung und komplexen Lebensübergängen — für Einzelpersonen und Paare, die viel tragen.",
+  "reachLine": "Auf Deutsch und Englisch, für Klient:innen in der Schweiz und international.",
   "heroPrimary": {
     "label": "Kennenlerngespräch buchen",
     "href": "/de/contact"
@@ -106,6 +106,17 @@
         "body": "Handeln und Entscheidungen wieder an dem ausrichten, was Ihnen wirklich wichtig ist."
       }
     ],
+    "modalities": {
+      "heading": "Methoden, aus denen ich schöpfe",
+      "items": [
+        "Systemische Therapie",
+        "Somatic Experiencing®",
+        "Internal Family Systems",
+        "Akzeptanz- und Commitmenttherapie",
+        "Achtsamkeits- und mitgefühlsbasierte Ansätze"
+      ],
+      "note": "Ich beziehe diese Ansätze in die psychologische Beratung ein. Ich biete keine Psychotherapie an und bin keine Psychotherapeutin."
+    },
     "closing": "Psychologische Beratung ist ein gemeinsamer Prozess. Sie bleiben Expert:in für Ihr eigenes Leben; ich begleite Sie mit fachlicher Expertise, Empathie und neuen Perspektiven.",
     "ctaLabel": "Mehr über meine Philosophie"
   },
@@ -117,7 +128,7 @@
   },
   "privatePay": {
     "eyebrow": "Selbstzahler-Praxis",
-    "heading": "Ihre Vorteile als Selbstzahler:in",
+    "heading": "Warum Klient:innen sich für Beratung als Selbstzahlende entscheiden",
     "items": [
       {
         "title": "Volle Diskretion & Privatsphäre",
@@ -129,7 +140,7 @@
       },
       {
         "title": "Maximale Flexibilität",
-        "body": "Ortsunabhängig online, auf Deutsch und Englisch — für ein Leben, das sich über mehr als ein Land erstreckt."
+        "body": "Ortsunabhängig online, auf Deutsch und Englisch — für ein Leben, das sich über mehr als ein Land erstreckt. Die Sitzungen finden online statt und nach Absprache vor Ort in Zug."
       }
     ]
   },
@@ -139,7 +150,7 @@
     "items": [
       {
         "label": "Format",
-        "value": "Online, weltweit"
+        "value": "Online und nach Absprache vor Ort in Zug"
       },
       {
         "label": "Sprachen",
@@ -160,6 +171,6 @@
     ],
     "closing": "Bereit für den ersten Schritt? Buchen Sie Ihr kostenloses Kennenlerngespräch (15 Minuten) — ein entspannter, unverbindlicher Einstieg."
   },
-  "metaTitle": "Theresa Frische — Systemische & Integrative Beraterin",
-  "metaDescription": "Online-Beratung auf Deutsch und Englisch für Einzelpersonen und Paare in Zeiten von Veränderung, Umbruch, Überforderung und einem Leben zwischen Ländern und Kulturen. Buchen Sie Ihr kostenloses Kennenlerngespräch (15 Minuten)."
+  "metaTitle": "Psychologische Beratung in Zug, Zürich & Online | Theresa Frische",
+  "metaDescription": "Psychologische Beratung in Zug und Zürich sowie online. Begleitung bei Burnout, Ängsten, Überforderung und Lebensübergängen, auf Deutsch und Englisch. Kostenloses Kennenlerngespräch."
 }

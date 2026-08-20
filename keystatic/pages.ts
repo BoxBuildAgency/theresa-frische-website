@@ -147,6 +147,25 @@ export const homePage = (locale: Loc) =>
           heading: fields.text({ label: "Section heading" }),
           intro: fields.text({ label: "Intro paragraph", multiline: true }),
           items: cards("The four steps", "Numbered 01–04 in the headings."),
+          modalities: fields.object(
+            {
+              heading: fields.text({ label: "Heading above the list" }),
+              items: fields.array(fields.text({ label: "Approach" }), {
+                label: "The approaches",
+                description: "One per line. Keep the ® on Somatic Experiencing®.",
+                itemLabel: (p) => p.value || "Empty",
+              }),
+              note: fields.text({
+                label: "The line underneath",
+                multiline: true,
+                description:
+                  "⚠️ This sentence says the work is counselling and that you are not a " +
+                  "psychotherapist. It is what makes naming these approaches safe. Please " +
+                  "leave it in place — check with José before changing it.",
+              }),
+            },
+            { label: "Modalities I draw from" },
+          ),
           closing: fields.text({ label: "Closing sentence", multiline: true }),
           ctaLabel: fields.text({ label: "Button text under the closing sentence" }),
         },

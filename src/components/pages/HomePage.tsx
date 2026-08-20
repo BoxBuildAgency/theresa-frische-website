@@ -79,19 +79,9 @@ export function HomePage({ locale }: { locale: Locale }) {
         </Container>
       </section>
 
-      {/* TRUST PILLARS — Discreet · Evidence-based · Flexible */}
-      <section className="border-b border-line bg-sand">
-        <Container className="py-14">
-          <ul className="grid gap-8 sm:grid-cols-3">
-            {h.trustPillars.map((pillar) => (
-              <li key={pillar.title} className="border-t border-clay-deep/40 pt-5">
-                <h2 className="font-serif text-xl text-ink">{pillar.title}</h2>
-                <p className="mt-2 text-sm leading-relaxed text-ink-soft">{pillar.body}</p>
-              </li>
-            ))}
-          </ul>
-        </Container>
-      </section>
+      {/* TRUST PILLARS — removed from the page (Aug 2026 §3.5): the trio
+          duplicated the three points further down. The content field is kept so
+          nothing is lost and the copy can be restored, but it is not rendered. */}
 
       {/* INTRO PARAGRAPHS */}
       <Section tone="cream" containerSize="narrow">
@@ -178,6 +168,27 @@ export function HomePage({ locale }: { locale: Locale }) {
             </li>
           ))}
         </ol>
+        {/* MODALITIES — named plainly, with the sentence that frames them.
+            The note is not decoration: it states that this is counselling and
+            that she is not a psychotherapist, which is what makes naming these
+            approaches safe now that the wording check only warns. It also
+            appears in the Impressum and in section 2 of the Terms. */}
+        <div className="mt-12 rounded-2xl border border-line-strong bg-cream p-7 sm:p-8">
+          <h3 className="eyebrow normal-case tracking-normal text-ink">
+            {h.steps.modalities.heading}
+          </h3>
+          <ul className="mt-4 flex flex-wrap gap-x-6 gap-y-2">
+            {h.steps.modalities.items.map((m) => (
+              <li key={m} className="font-serif text-lg text-ink">
+                {m}
+              </li>
+            ))}
+          </ul>
+          <p className="mt-5 border-t border-line pt-4 text-sm leading-relaxed text-ink-soft">
+            {h.steps.modalities.note}
+          </p>
+        </div>
+
         <div className="mt-10 max-w-2xl">
           <p className="quote-rule font-serif text-xl font-light italic leading-snug text-forest">
             {h.steps.closing}
@@ -223,7 +234,7 @@ export function HomePage({ locale }: { locale: Locale }) {
         <SectionHeader eyebrow={h.privatePay.eyebrow} heading={h.privatePay.heading} />
         <ul className="mt-12 grid gap-5 sm:grid-cols-3">
           {h.privatePay.items.map((item) => (
-            <li key={item.title} className="rounded-2xl border border-line bg-sand/50 p-7">
+            <li key={item.title} className="rounded-2xl border border-line-strong bg-sand p-7">
               <h3 className="font-serif text-xl text-ink">{item.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-ink-soft">{item.body}</p>
             </li>
@@ -233,14 +244,13 @@ export function HomePage({ locale }: { locale: Locale }) {
 
       {/* PRACTICAL INFO */}
       <Section tone="cream">
-        <div className="grid items-center gap-12 lg:grid-cols-2">
-          <div>
-            <SectionHeader eyebrow={h.practical.eyebrow} heading={h.practical.heading} />
-            <p className="mt-8 max-w-md text-lg leading-relaxed text-ink-soft">{h.practical.closing}</p>
-            <ButtonLink href={c.cta.primary.href} variant="primary" size="lg" className="mt-8">
-              {c.cta.primary.label}
-            </ButtonLink>
-          </div>
+        {/* Aug 2026 §3.10 — the upper CTA paragraph and button are gone. The
+            discovery-call band immediately below already makes that ask, and two
+            CTAs this close together competed with each other. The facts table
+            stays; the closing sentence remains in the content files so nothing
+            is lost and it can be restored. */}
+        <div className="grid items-start gap-12 lg:grid-cols-2">
+          <SectionHeader eyebrow={h.practical.eyebrow} heading={h.practical.heading} />
           <div className="rounded-3xl border border-line bg-sand/50 p-8 sm:p-10">
             <MetaList items={h.practical.items} />
           </div>

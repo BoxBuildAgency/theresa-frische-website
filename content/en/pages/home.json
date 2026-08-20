@@ -1,9 +1,9 @@
 {
-  "eyebrow": "I'm Theresa Frische · Psychological Counselling",
-  "heroTitle": "A space for what is",
-  "heroTitleAccent": "shifting within you",
-  "heroLead": "Confidential support for stress, burnout, overwhelm and life transitions — for individuals and couples who carry a great deal, give a great deal, and want to feel connected to themselves again.",
-  "reachLine": "Online counselling in German and English, for clients in Switzerland, Germany and internationally.",
+  "eyebrow": "Psychological Counselling in Zug, Zürich & Online",
+  "heroTitle": "A Space to Regain Inner Clarity,",
+  "heroTitleAccent": "Stability, and Direction",
+  "heroLead": "Confidential, tailored support through burnout, anxiety, emotional overload, and complex life transitions, for individuals and couples who carry a lot.",
+  "reachLine": "In German and English, for clients in Switzerland and internationally.",
   "heroPrimary": {
     "label": "Book a discovery call",
     "href": "/contact"
@@ -107,6 +107,17 @@
         "body": "Realign your actions and decisions with what truly matters to you."
       }
     ],
+    "modalities": {
+      "heading": "Modalities I draw from",
+      "items": [
+        "Systemic Therapy",
+        "Somatic Experiencing®",
+        "Internal Family Systems",
+        "Acceptance & Commitment Therapy",
+        "Mindfulness & Compassion-based approaches"
+      ],
+      "note": "I draw on these approaches within psychological counselling. I do not offer psychotherapy and I am not a psychotherapist."
+    },
     "closing": "Psychological counselling is a shared process. You remain the expert on your own life; I accompany you with professional expertise, empathy, and fresh perspectives.",
     "ctaLabel": "Learn more about my philosophy"
   },
@@ -118,7 +129,7 @@
   },
   "privatePay": {
     "eyebrow": "Private-pay practice",
-    "heading": "Your advantages as a private-pay client",
+    "heading": "Why clients choose private-pay counselling",
     "items": [
       {
         "title": "Complete Discretion & Privacy",
@@ -130,7 +141,7 @@
       },
       {
         "title": "Maximum Flexibility",
-        "body": "Location-independent online, in English and German — for a life that spans more than one country."
+        "body": "Location-independent online, in English and German — for a life that spans more than one country. Sessions are online, and in person in Zug by arrangement."
       }
     ]
   },
@@ -140,7 +151,7 @@
     "items": [
       {
         "label": "Format",
-        "value": "Online, worldwide"
+        "value": "Online, and in person in Zug by arrangement"
       },
       {
         "label": "Languages",
@@ -161,6 +172,6 @@
     ],
     "closing": "Ready to take the first step? Book a free 15-minute discovery call — a relaxed, no-obligation way to begin."
   },
-  "metaTitle": "Theresa Frische — Systemic & Integrative Counsellor",
-  "metaDescription": "Online counselling in English and German for individuals and couples navigating change, transition, burnout, and life across borders. Book a free 15-minute discovery call."
+  "metaTitle": "Psychological Counselling in Zug, Zürich & Online | Theresa Frische",
+  "metaDescription": "Psychological counselling in Zug and Zürich, and online worldwide. Support through burnout, anxiety, emotional overload and life transitions, in English and German. Book a free discovery call."
 }

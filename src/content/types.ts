@@ -184,6 +184,16 @@ export interface SiteContent {
       heading: string;
       intro: string;
       items: FeatureItem[];
+      /**
+       * The approaches she draws on, named plainly.
+       *
+       * `note` is load-bearing: it states that this is counselling and that she
+       * is not a psychotherapist. That sentence, together with the same
+       * statement in the Impressum and in section 2 of the Terms, is what keeps
+       * naming these modalities safe now that the wording check only warns.
+       * Do not remove it.
+       */
+      modalities: { heading: string; items: string[]; note: string };
       closing: string;
       ctaLabel: string;
     };
