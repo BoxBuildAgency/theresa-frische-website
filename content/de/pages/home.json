@@ -1,8 +1,8 @@
 {
-  "eyebrow": "Psychologische Beratung in Zug, Zürich & Online",
+  "eyebrow": "Psychologische Beratung in Zug & Online",
   "heroTitle": "Ein Raum, um Klarheit, Halt",
   "heroTitleAccent": "und Richtung zurückzugewinnen",
-  "heroLead": "Vertrauliche, individuell zugeschnittene Begleitung bei Burnout, Ängsten, emotionaler Überlastung und komplexen Lebensübergängen — für Einzelpersonen und Paare, die viel tragen.",
+  "heroLead": "Vertrauliche, individuell zugeschnittene Begleitung bei Burnout, Ängsten, emotionaler Überlastung und komplexen Lebensübergängen — für Einzelpersonen und Paare",
   "reachLine": "Auf Deutsch und Englisch, für Klient:innen in der Schweiz und international.",
   "heroPrimary": {
     "label": "Kennenlerngespräch buchen",
@@ -86,25 +86,8 @@
   "steps": {
     "eyebrow": "Mein Ansatz",
     "heading": "Systemisch. Körperorientiert. Integrativ.",
-    "intro": "Ich verbinde wissenschaftlich fundierte Perspektiven — Systemische Beratung, Somatic Experiencing®, Anteilearbeit sowie achtsamkeitsbasierte Ansätze — mit einer integrativen Haltung und tiefem Respekt für die individuelle Geschichte und die inneren Ressourcen jedes Menschen.",
-    "items": [
-      {
-        "title": "01 Muster verstehen",
-        "body": "Wiederkehrende Verhaltens- und Beziehungsmuster verstehen und Raum für Neues schaffen."
-      },
-      {
-        "title": "02 Nervensystem regulieren",
-        "body": "Stress im Körper sanft lösen, um wieder ruhiger und präsenter sein zu können."
-      },
-      {
-        "title": "03 Innere Konflikte lösen",
-        "body": "Widersprüchliche Bedürfnisse und innere Anteile in Einklang bringen."
-      },
-      {
-        "title": "04 Leben und Werte in Einklang bringen",
-        "body": "Handeln und Entscheidungen wieder an dem ausrichten, was Ihnen wirklich wichtig ist."
-      }
-    ],
+    "intro": "Ich verbinde wissenschaftlich fundierte Methoden mit einer integrativen Haltung und tiefem Respekt für die individuelle Geschichte und die inneren Ressourcen jedes Menschen.",
+    "items": [],
     "modalities": {
       "heading": "Methoden, aus denen ich schöpfe",
       "items": [
@@ -170,6 +153,6 @@
     ],
     "closing": "Bereit für den ersten Schritt? Buchen Sie Ihr kostenloses Kennenlerngespräch (15 Minuten) — ein entspannter, unverbindlicher Einstieg."
   },
-  "metaTitle": "Psychologische Beratung in Zug, Zürich & Online | Theresa Frische",
-  "metaDescription": "Psychologische Beratung in Zug und Zürich sowie online. Begleitung bei Burnout, Ängsten, Überforderung und Lebensübergängen, auf Deutsch und Englisch. Kostenloses Kennenlerngespräch."
+  "metaTitle": "Psychologische Beratung in Zug & Online | Theresa Frische",
+  "metaDescription": "Psychologische Beratung in Zug sowie online. Begleitung bei Burnout, Ängsten, Überforderung und Lebensübergängen, auf Deutsch und Englisch. Kostenloses Kennenlerngespräch."
 }
