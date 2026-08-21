@@ -1,5 +1,5 @@
 {
-  "eyebrow": "Psychological Counselling in Zug, Zürich & Online",
+  "eyebrow": "Psychological Counselling in Zug & Online",
   "heroTitle": "A Space to Regain Inner Clarity,",
   "heroTitleAccent": "Stability, and Direction",
   "heroLead": "Confidential, tailored support through burnout, anxiety, emotional overload, and complex life transitions, for individuals and couples who carry a lot.",
@@ -86,25 +86,8 @@
   "steps": {
     "eyebrow": "My approach",
     "heading": "Systemic. Somatic. Integrative.",
-    "intro": "I combine scientifically grounded perspectives — systemic counselling, Somatic Experiencing®, parts work, and mindfulness-based approaches — with an integrative stance and deep respect for each person's individual story and inner resources.",
-    "items": [
-      {
-        "title": "01 Understand Patterns",
-        "body": "Understand recurring behavioural and relational patterns, and create room for something new."
-      },
-      {
-        "title": "02 Regulate the Nervous System",
-        "body": "Gently release stress held in the body, to become calmer and more present again."
-      },
-      {
-        "title": "03 Resolve Inner Conflict",
-        "body": "Bring conflicting needs and inner parts into alignment."
-      },
-      {
-        "title": "04 Align Life & Values",
-        "body": "Realign your actions and decisions with what truly matters to you."
-      }
-    ],
+    "intro": "I combine evidence-based methods with an integrative stance and deep respect for each person's individual story and inner resources.",
+    "items": [],
     "modalities": {
       "heading": "Modalities I draw from",
       "items": [
@@ -170,6 +153,6 @@
     ],
     "closing": "Ready to take the first step? Book a free 15-minute discovery call — a relaxed, no-obligation way to begin."
   },
-  "metaTitle": "Psychological Counselling in Zug, Zürich & Online | Theresa Frische",
-  "metaDescription": "Psychological counselling in Zug and Zürich, and online worldwide. Support through burnout, anxiety, emotional overload and life transitions, in English and German. Book a free discovery call."
+  "metaTitle": "Psychological Counselling in Zug & Online | Theresa Frische",
+  "metaDescription": "Psychological counselling in Zug and online worldwide. Support through burnout, anxiety, emotional overload and life transitions, in English and German. Book a free discovery call."
 }
