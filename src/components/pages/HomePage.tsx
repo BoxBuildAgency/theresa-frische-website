@@ -53,7 +53,14 @@ export function HomePage({ locale }: { locale: Locale }) {
             </div>
 
             <div className="lg:order-1">
-              <Eyebrow>{h.eyebrow}</Eyebrow>
+              {/* Held to one line on desktop with the longest string she is likely to
+                  use, "…in Zug, Zürich & Online". At the site's default eyebrow
+                  size and tracking that needs 476px against a 405px column at
+                  1024, so it wrapped. 11px at 0.145em fits both languages with
+                  room, stays above the 10px floor for uppercase, and still reads
+                  as the same eyebrow family. Mobile keeps the default and is
+                  allowed to wrap. */}
+              <Eyebrow className="lg:text-[11px] lg:tracking-[0.145em]">{h.eyebrow}</Eyebrow>
               <h1 className="mt-5 font-serif text-4xl font-light leading-[1.08] text-ink sm:text-5xl lg:text-6xl">
                 {h.heroTitle} <span className="accent">{h.heroTitleAccent}</span>
               </h1>

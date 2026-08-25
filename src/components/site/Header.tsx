@@ -60,13 +60,25 @@ export function Header(props: HeaderProps) {
       <Container size="wide">
         <div className="flex h-20 items-center justify-between gap-4">
           {/* Wordmark */}
-          <Link href={home} className="group flex flex-col leading-none" aria-label={brandName}>
+          {/* shrink-0 and nowrap together fix a pre-existing wrap: the row was
+              compressing the lockup to the width of the name, so a tagline wider
+              than it broke onto a second line at 1024. The tagline is
+              CMS-editable, so relying on the current string being short would
+              only hide the bug until it is next edited. */}
+          <Link
+            href={home}
+            className="group flex shrink-0 flex-col leading-none"
+            aria-label={brandName}
+          >
             <span className="font-serif text-xl text-ink sm:text-2xl">{brandName}</span>
-            <span className="eyebrow mt-1 text-[0.62rem]">{brandTagline}</span>
+            <span className="eyebrow mt-1 whitespace-nowrap text-[0.62rem]">{brandTagline}</span>
           </Link>
 
           {/* Desktop nav, with dropdowns */}
-          <nav className="hidden items-center gap-6 lg:flex" aria-label="Primary">
+          {/* Tighter gap at lg, where seven nav items and the lockup compete for
+              the row. Restored at xl. This is what gives the CMS-editable
+              tagline usable headroom at 1024 rather than two characters. */}
+          <nav className="hidden items-center gap-4 lg:flex xl:gap-6" aria-label="Primary">
             {nav.map((item) => {
               const active = isActive(item);
               if (!item.children?.length) {
