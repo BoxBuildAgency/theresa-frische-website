@@ -225,7 +225,13 @@ export interface SiteContent {
     lead: string;
     intro: string[];
     imageAlt: string;
-    lived: { heading: string; body: string[]; emphasis: string };
+    lived: {
+      heading: string;
+      body: string[];
+      emphasis: string;
+      /** The sentence she asked to sit after the pull quote, not inside it. */
+      closing: string;
+    };
     education: { heading: string; items: FeatureItem[] };
     /** Factual, neutral PsyKo/PsyCo recognition line (application pending). */
     psyCoNote: string;
