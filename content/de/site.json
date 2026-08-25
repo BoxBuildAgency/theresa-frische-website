@@ -92,7 +92,7 @@
     "otherLangName": "English"
   },
   "footer": {
-    "line": "Theresa Frische · Systemische & Integrative Beraterin · Online-Praxis — international",
+    "line": "Theresa Frische · Systemische & Integrative Beraterin · {location}",
     "nav": [
       {
         "label": "Startseite",
@@ -182,7 +182,7 @@
       }
     ],
     "rights": "Alle Rechte vorbehalten.",
-    "builtNote": "Online-Beratung auf Deutsch & Englisch, weltweit."
+    "builtNote": "{location}. Auf Deutsch & Englisch, für Klient:innen weltweit."
   },
   "cta": {
     "primary": {

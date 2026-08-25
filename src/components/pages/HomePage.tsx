@@ -14,7 +14,10 @@ import { shortCredentials } from "@/lib/credentials";
 export function HomePage({ locale }: { locale: Locale }) {
   const c = getContent(locale);
   const h = c.home;
-  const aboutHref = localizedPath(locale, "/about");
+  // The button under My Approach is labelled "Learn more about my philosophy",
+  // so it goes to My Philosophy. It pointed at About Me, which is a different
+  // page and one the nav already links to twice.
+  const philosophyHref = localizedPath(locale, "/about/philosophy");
 
   return (
     <>
@@ -204,7 +207,7 @@ export function HomePage({ locale }: { locale: Locale }) {
             <p className="quote-rule mt-8 font-serif text-xl font-light italic leading-snug text-forest">
               {h.steps.closing}
             </p>
-            <ButtonLink href={aboutHref} variant="outline" className="mt-8">
+            <ButtonLink href={philosophyHref} variant="outline" className="mt-8">
               {h.steps.ctaLabel}
             </ButtonLink>
           </div>

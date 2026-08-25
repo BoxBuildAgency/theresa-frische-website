@@ -92,7 +92,7 @@
     "otherLangName": "Deutsch"
   },
   "footer": {
-    "line": "Theresa Frische · Systemic & Integrative Counsellor · Online Practice — International",
+    "line": "Theresa Frische · Systemic & Integrative Counsellor · {location}",
     "nav": [
       {
         "label": "Home",
@@ -182,7 +182,7 @@
       }
     ],
     "rights": "All rights reserved.",
-    "builtNote": "Online counselling in English & German, worldwide."
+    "builtNote": "{location}. In English & German, for clients worldwide."
   },
   "cta": {
     "primary": {
