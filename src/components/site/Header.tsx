@@ -78,7 +78,15 @@ export function Header(props: HeaderProps) {
           {/* Tighter gap at lg, where seven nav items and the lockup compete for
               the row. Restored at xl. This is what gives the CMS-editable
               tagline usable headroom at 1024 rather than two characters. */}
-          <nav className="hidden items-center gap-4 lg:flex xl:gap-6" aria-label="Primary">
+          {/* At lg the lockup, seven nav items and the CTA all compete for one row,
+              and the longer labels were wrapping to two lines. Dropping to 13px
+              with a tighter gap at lg only buys enough width to hold every label
+              on one line; xl restores the normal 14px and gap. No label is
+              shortened and the CTA stays. */}
+          <nav
+            className="hidden items-center gap-4 text-[13px] lg:flex xl:gap-6 xl:text-sm"
+            aria-label="Primary"
+          >
             {nav.map((item) => {
               const active = isActive(item);
               if (!item.children?.length) {
@@ -87,7 +95,7 @@ export function Header(props: HeaderProps) {
                     key={item.href}
                     href={item.href}
                     className={clsx(
-                      "text-sm transition-colors hover:text-forest",
+                      "whitespace-nowrap transition-colors hover:text-forest",
                       active ? "text-forest" : "text-ink-soft",
                     )}
                   >
@@ -116,7 +124,7 @@ export function Header(props: HeaderProps) {
                     <Link
                       href={item.href}
                       className={clsx(
-                        "text-sm transition-colors hover:text-forest",
+                        "whitespace-nowrap transition-colors hover:text-forest",
                         active ? "text-forest" : "text-ink-soft",
                       )}
                     >

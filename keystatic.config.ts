@@ -298,7 +298,13 @@ const site = (locale: "en" | "de") =>
       brand: fields.object(
         {
           name: fields.text({ label: "Name in the header" }),
-          tagline: fields.text({ label: "Small line under the name" }),
+          tagline: fields.text({
+            label: "Small line under the name",
+            description:
+              "Shown in the header on every page. Keep it to about 18 characters: " +
+              "on a tablet-width screen the header runs out of room beyond that and " +
+              "the menu starts to squash up. It will not wrap onto a second line.",
+          }),
           title: fields.text({ label: "Professional title" }),
         },
         { label: "Brand" },
