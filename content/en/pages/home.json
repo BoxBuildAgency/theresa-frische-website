@@ -132,7 +132,7 @@
     "items": [
       {
         "label": "Format",
-        "value": "Online, and in person in Zug by arrangement"
+        "value": "{location}"
       },
       {
         "label": "Languages",

@@ -57,7 +57,7 @@
       },
       {
         "label": "Format",
-        "value": "Online (video)"
+        "value": "{location}"
       },
       {
         "label": "Languages",
@@ -76,7 +76,7 @@
       },
       {
         "label": "Format",
-        "value": "Online (video)"
+        "value": "{location}"
       },
       {
         "label": "Languages",

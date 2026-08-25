@@ -98,6 +98,16 @@ export interface SiteContent {
     title: string; // "Systemic & Integrative Counsellor"
   };
 
+  practice: {
+    /**
+     * Where sessions take place, written once. Any content field may contain
+     * `{location}`; the loader replaces it with this string. That is what keeps
+     * the eighteen places this sentence appears from drifting apart when she
+     * changes where she works.
+     */
+    locationLine: string;
+  };
+
   nav: NavItem[];
 
   header: {

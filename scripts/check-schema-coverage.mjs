@@ -59,7 +59,7 @@ const DECLARED = {
   posts: ["title", "category", "date", "readingTime", "excerpt", "body", "draft"],
   faq: ["title", "order", "items"],
   services: ["eyebrow", "heading", "lead", "paras", "numbered", "facts", "crossLinks", "metaTitle", "metaDescription"],
-  site: ["locale", "htmlLang", "brand", "nav", "header", "footer", "cta", "disclaimer", "blogDisclaimer", "crisis"],
+  site: ["locale", "htmlLang", "brand", "practice", "nav", "header", "footer", "cta", "disclaimer", "blogDisclaimer", "crisis"],
   impressum: ["heading", "blocks", "metaTitle", "metaDescription"],
   privacy: ["heading", "intro", "sections", "metaTitle", "metaDescription"],
   terms: ["heading", "sections", "version", "metaTitle", "metaDescription"],

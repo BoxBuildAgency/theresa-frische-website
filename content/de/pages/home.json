@@ -132,7 +132,7 @@
     "items": [
       {
         "label": "Format",
-        "value": "Online und nach Absprache vor Ort in Zug"
+        "value": "{location}"
       },
       {
         "label": "Sprachen",

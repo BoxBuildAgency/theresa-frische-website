@@ -309,6 +309,20 @@ const site = (locale: "en" | "de") =>
         },
         { label: "Brand" },
       ),
+      practice: fields.object(
+        {
+          locationLine: fields.text({
+            label: "Where sessions take place",
+            description:
+              "Written once here, and used in eighteen places: the Format row on " +
+              "every service page, both rows on Work With Me, and the practical " +
+              "table on the home page. Change it here and it changes everywhere. " +
+              "If one page needs to say something different, type the wording " +
+              "into that page instead of {location} and it will be left alone.",
+          }),
+        },
+        { label: "Practice" },
+      ),
       nav: navItem(),
       header: fields.object(
         {
