@@ -68,6 +68,33 @@ function toBlock(b: StoredBlock): BlogBlock {
   return { type: b.discriminant, ...(b.value ?? {}) } as BlogBlock;
 }
 
+/**
+ * Expand `{location}` wherever it appears in the content.
+ *
+ * Where Theresa works is stated in eighteen places: the Format row on each
+ * service page, the two rows on Work With Me, and the home page facts table.
+ * They were separate strings and had already drifted — some still said sessions
+ * were online only, after she started seeing people in Zug. Rather than bind a
+ * component to a fixed row index (the rows are free-form label/value pairs and
+ * she can reorder them), any field may contain the token and the loader
+ * substitutes the one value from Site settings.
+ *
+ * A field that has no token is left exactly as written, so a page that genuinely
+ * differs can still say something of its own.
+ */
+function expandTokens<T>(node: T, location: string): T {
+  if (typeof node === "string") {
+    return (node.includes("{location}") ? node.replaceAll("{location}", location) : node) as T;
+  }
+  if (Array.isArray(node)) return node.map((v) => expandTokens(v, location)) as T;
+  if (node && typeof node === "object") {
+    const out: Record<string, unknown> = {};
+    for (const [k, v] of Object.entries(node)) out[k] = expandTokens(v, location);
+    return out as T;
+  }
+  return node;
+}
+
 export function loadContent(locale: Locale): SiteContent {
   const site = readJson<PageBag>(locale, "site.json");
   const page = <T>(name: string) => readJson<T>(locale, "pages", `${name}.json`);
@@ -102,12 +129,13 @@ export function loadContent(locale: Locale): SiteContent {
     }
   }
 
-  return {
+  const content: SiteContent = {
     ...(site as unknown as Pick<
       SiteContent,
       | "locale"
       | "htmlLang"
       | "brand"
+      | "practice"
       | "nav"
       | "header"
       | "footer"
@@ -132,4 +160,6 @@ export function loadContent(locale: Locale): SiteContent {
     terms: page<SiteContent["terms"]>("terms"),
     notFound: page<SiteContent["notFound"]>("notFound"),
   };
+
+  return expandTokens(content, content.practice.locationLine);
 }

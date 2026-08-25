@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import type { Locale } from "@/content/types";
 import { getContent } from "@/content";
@@ -16,7 +15,18 @@ export function OrganisationsPage({ locale }: { locale: Locale }) {
 
   return (
     <>
-      <PageHero eyebrow={o.eyebrow} title={o.heading} lead={o.lead} crumbs={crumbs} />
+      {/* 4 — same treatment as Work With Me: the seminar photograph becomes
+          the banner behind the heading instead of a separate band lower down.
+          The source is 3:2 and she stands slightly left of centre, so the crop
+          is anchored just above the middle to keep her head clear of the top
+          edge at wide viewports. */}
+      <PageHero
+        eyebrow={o.eyebrow}
+        title={o.heading}
+        lead={o.lead}
+        crumbs={crumbs}
+        image={{ src: "/images/organisations.webp", position: "object-[50%_35%]" }}
+      />
 
       {/* INTRO + facts */}
       <Section tone="cream">
@@ -49,19 +59,6 @@ export function OrganisationsPage({ locale }: { locale: Locale }) {
           ))}
         </ul>
       </Section>
-
-      {/* HER PHOTOGRAPH — delivering a seminar */}
-      <div className="relative aspect-[3/2] w-full sm:aspect-[21/9]">
-        <Image
-          src="/images/organisations.webp"
-          alt={locale === "de"
-            ? "Theresa Frische bei einem Seminar zu Wohlbefinden am Arbeitsplatz."
-            : "Theresa Frische delivering a workplace wellbeing seminar."}
-          fill
-          sizes="100vw"
-          className="object-cover"
-        />
-      </div>
 
       {/* FORMATS */}
       <Section tone="sand">

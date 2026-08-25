@@ -29,7 +29,11 @@ export function HomePage({ locale }: { locale: Locale }) {
           className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-b from-cream via-cream/95 to-sand"
         />
         <Container className="relative py-16 sm:py-24 lg:py-28">
-          <div className="grid items-center gap-12 lg:grid-cols-[0.85fr_1fr] lg:gap-16">
+          {/* Text column widened from 0.85fr to 1fr against a 0.75fr portrait column
+                (Aug 25 §1.4). The headline ran to four lines in a 470px measure; it
+                needs a wider measure, not smaller type, to reach three. The portrait
+                is capped at 420px so its column had slack to give. */}
+          <div className="grid items-center gap-12 lg:grid-cols-[1fr_0.75fr] lg:gap-16">
             {/* Portrait first in the DOM so it leads on mobile and is the first
                 thing a screen reader meets. On desktop it moves to the right,
                 keeping the headline on the natural reading edge. */}
@@ -53,7 +57,17 @@ export function HomePage({ locale }: { locale: Locale }) {
             </div>
 
             <div className="lg:order-1">
-              <Eyebrow>{h.eyebrow}</Eyebrow>
+              {/* Measured at 1024, where the lg column is 503px wide.
+                  At the default eyebrow size the longest string she is likely to
+                  use, "Psychological Counselling in Zug, Zürich & Online",
+                  needs 503px — it fits by nothing at all, and a font-load or
+                  subpixel difference would break it onto a second line. One
+                  step down in size and tracking, at lg only, brings it to 396px
+                  and leaves real headroom. 1280 and up have a wider column and
+                  keep the default. Mobile may wrap, as the brief allows. */}
+              <Eyebrow className="lg:text-[11px] lg:tracking-[0.145em] xl:text-xs xl:tracking-[0.22em]">
+                {h.eyebrow}
+              </Eyebrow>
               <h1 className="mt-5 font-serif text-4xl font-light leading-[1.08] text-ink sm:text-5xl lg:text-6xl">
                 {h.heroTitle} <span className="accent">{h.heroTitleAccent}</span>
               </h1>
@@ -161,79 +175,65 @@ export function HomePage({ locale }: { locale: Locale }) {
         </Container>
       </section>
 
-      {/* FOUR-STEP APPROACH (01–04) — sand section with cream cards, the
-          inverse of the focus tiles above, so the two groups read as different
-          without introducing a new colour. */}
-      <Section tone="sand">
-        <SectionHeader eyebrow={h.steps.eyebrow} heading={h.steps.heading} intro={h.steps.intro} />
-        <ol className="mt-12 grid gap-5 sm:grid-cols-2">
-          {h.steps.items.map((step) => (
-            <li key={step.title} className="rounded-2xl border border-line-strong bg-cream p-7">
-              <h3 className="font-serif text-xl text-ink">{step.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-ink-soft">{step.body}</p>
-            </li>
-          ))}
-        </ol>
-        {/* MODALITIES — named plainly, with the sentence that frames them.
-            The note is not decoration: it states that this is counselling and
-            that she is not a psychotherapist, which is what makes naming these
-            approaches safe now that the wording check only warns. It also
-            appears in the Impressum and in section 2 of the Terms. */}
-        <div className="mt-12 rounded-2xl border border-line-strong bg-cream p-7 sm:p-8">
-          <h3 className="eyebrow normal-case tracking-normal text-ink">
-            {h.steps.modalities.heading}
-          </h3>
-          <ul className="mt-4 flex flex-wrap gap-x-6 gap-y-2">
-            {h.steps.modalities.items.map((m) => (
-              <li key={m} className="font-serif text-lg text-ink">
-                {m}
-              </li>
-            ))}
-          </ul>
-          <p className="mt-5 border-t border-line pt-4 text-sm leading-relaxed text-ink-soft">
-            {h.steps.modalities.note}
-          </p>
-        </div>
+      {/* MY APPROACH — two columns (Aug 25 §1.6).
+          Left: eyebrow, heading, the shortened intro and the pull quote.
+          Right: a second eyebrow over a vertical stack of modality cards.
+          The 01–04 cards are gone; Theresa removed their content herself and the
+          modalities now carry that job.
 
-        <div className="mt-10 max-w-2xl">
-          <p className="quote-rule font-serif text-xl font-light italic leading-snug text-forest">
-            {h.steps.closing}
-          </p>
-          <ButtonLink href={aboutHref} variant="outline" className="mt-8">
-            {h.steps.ctaLabel}
-          </ButtonLink>
-        </div>
-      </Section>
-
-      {/* ABOUT BLOCK — her portrait + short intro */}
+          Structure follows the reference she gave. Palette, type and card
+          treatment are this site's own: cream cards on the sand section, the
+          same border and radius as the focus tiles above. Cards carry the
+          modality name alone — she has not supplied descriptions, so none are
+          invented. */}
       <Section tone="sand">
-        <div className="grid items-center gap-12 lg:grid-cols-[0.7fr_1fr]">
-          <div className="relative mx-auto aspect-[4/5] w-full max-w-xs overflow-hidden rounded-3xl border border-line bg-cream">
-            {/* Her portrait now leads the hero, so this block carries mood
-                imagery instead — the two-column rhythm survives without the
-                same photograph appearing twice on one page. Decorative, so it
-                is hidden from screen readers rather than described. */}
-            <Image
-              src="/images/band-meadow.webp"
-              alt=""
-              aria-hidden="true"
-              fill
-              sizes="(max-width: 1024px) 70vw, 320px"
-              className="object-cover"
-            />
-          </div>
+        <div className="grid gap-12 lg:grid-cols-[45fr_55fr] lg:gap-20">
+          {/* Left column */}
           <div>
-            <Eyebrow>{h.aboutBlock.eyebrow}</Eyebrow>
-            <h2 className="mt-4 font-serif text-3xl font-light text-ink sm:text-4xl">
-              {h.aboutBlock.heading}
+            <Eyebrow>{h.steps.eyebrow}</Eyebrow>
+            <h2 className="mt-4 font-serif text-3xl font-light leading-tight text-ink sm:text-4xl">
+              {h.steps.heading}
             </h2>
-            <p className="mt-5 text-lg leading-relaxed text-ink-soft">{h.aboutBlock.body}</p>
+            <p className="mt-6 text-lg leading-relaxed text-ink-soft">{h.steps.intro}</p>
+            <p className="quote-rule mt-8 font-serif text-xl font-light italic leading-snug text-forest">
+              {h.steps.closing}
+            </p>
             <ButtonLink href={aboutHref} variant="outline" className="mt-8">
-              {h.aboutBlock.ctaLabel}
+              {h.steps.ctaLabel}
             </ButtonLink>
           </div>
+
+          {/* Right column: the modality stack */}
+          <div>
+            <Eyebrow>{h.steps.modalities.heading}</Eyebrow>
+            <ul className="mt-5 space-y-3">
+              {h.steps.modalities.items.map((m) => (
+                <li
+                  key={m}
+                  className="rounded-2xl border border-line-strong bg-cream px-6 py-5 font-serif text-lg text-ink"
+                >
+                  {m}
+                </li>
+              ))}
+            </ul>
+            {/* Not decoration. This states that the work is counselling and that
+                she is not a psychotherapist, which is what keeps naming these
+                approaches safe now the wording check only warns. The same
+                statement appears in the Impressum and in section 2 of the Terms.
+                Her optional second footnote was deliberately not added. */}
+            <p className="mt-5 text-sm leading-relaxed text-ink-soft">
+              {h.steps.modalities.note}
+            </p>
+          </div>
         </div>
       </Section>
+
+      {/* The standalone About Me band was removed (Aug 25 §1.7): it duplicated
+          the About Me page, which is one click away in the nav. The aboutBlock
+          content field is kept so nothing is lost and it can be restored, and
+          band-meadow-morning.webp stays in the repo because My Philosophy uses
+          it. */}
+
 
       {/* PRIVATE-PAY ADVANTAGES */}
       <Section tone="cream">

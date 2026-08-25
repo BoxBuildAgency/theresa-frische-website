@@ -2,7 +2,7 @@
   "eyebrow": "Psychologische Beratung in Zug & Online",
   "heroTitle": "Ein Raum, um Klarheit, Halt",
   "heroTitleAccent": "und Richtung zurückzugewinnen",
-  "heroLead": "Vertrauliche, individuell zugeschnittene Begleitung bei Burnout, Ängsten, emotionaler Überlastung und komplexen Lebensübergängen — für Einzelpersonen und Paare",
+  "heroLead": "Vertrauliche, individuell zugeschnittene Begleitung bei Burnout, Ängsten, emotionaler Überlastung und komplexen Lebensübergängen — für Einzelpersonen und Paare.",
   "reachLine": "Auf Deutsch und Englisch, für Klient:innen in der Schweiz und international.",
   "heroPrimary": {
     "label": "Kennenlerngespräch buchen",
@@ -17,10 +17,10 @@
     "alt": "Theresa Frische, lächelnd, in einem hellen Raum mit einer Pflanze im Hintergrund."
   },
   "heroParas": [
-    "Manchmal geht das Leben weiter, während sich innen etwas nicht mehr stimmig anfühlt. Nach aussen funktionieren Sie vielleicht, während Sie innerlich mit Erschöpfung, Unruhe oder dem leisen Gefühl zu tun haben, den Bezug zu sich selbst zu verlieren.",
+    "Manchmal läuft das Leben äusserlich weiter, während innerlich längst etwas nicht mehr stimmt. Nach aussen funktionieren Sie vielleicht, doch innerlich haben Sie mit Erschöpfung, Unruhe oder dem leisen Gefühl zu tun, die Verbindung zu sich selbst verloren zu haben.",
     "Ich begleite Einzelpersonen und Paare durch emotional fordernde Zeiten und unterstütze Sie dabei, Ihr Nervensystem zu regulieren, festgefahrene Muster zu durchbrechen und wieder in Verbindung mit dem zu kommen, was Ihnen wirklich wichtig ist."
   ],
-  "heroEmphasis": "In dieser Arbeit geht es nicht darum, etwas zu reparieren, das nicht mehr funktioniert. Es geht darum, einen vertraulichen Raum zu schaffen, in dem Sie sich selbst besser verstehen lernen, Ihre Ressourcen stärken und ein Leben gestalten, das zu Ihren Bedürfnissen und Werten passt.",
+  "heroEmphasis": "In dieser Arbeit geht es nicht darum, etwas zu reparieren, das nicht mehr funktioniert. Es geht darum, einen vertraulichen Raum zu schaffen, in dem Sie sich selbst klarer verstehen lernen, Ihre Ressourcen stärken und ein Leben gestalten, das zu Ihren Bedürfnissen und Werten passt.",
   "trustPillars": [
     {
       "title": "Diskret",
@@ -89,12 +89,12 @@
     "intro": "Ich verbinde wissenschaftlich fundierte Methoden mit einer integrativen Haltung und tiefem Respekt für die individuelle Geschichte und die inneren Ressourcen jedes Menschen.",
     "items": [],
     "modalities": {
-      "heading": "Methoden, aus denen ich schöpfe",
+      "heading": "Methoden, aus denen ich schöpfe:",
       "items": [
         "Systemische Therapie",
         "Somatic Experiencing®",
-        "Internal Family Systems",
-        "Akzeptanz- und Commitmenttherapie",
+        "Internal Family Systems (IFS)",
+        "Akzeptanz- und Commitmenttherapie (ACT)",
         "Achtsamkeits- und mitgefühlsbasierte Ansätze"
       ],
       "note": "Ich beziehe diese Ansätze in die psychologische Beratung ein. Ich biete keine Psychotherapie an und bin keine Psychotherapeutin."
@@ -132,7 +132,7 @@
     "items": [
       {
         "label": "Format",
-        "value": "Online und nach Absprache vor Ort in Zug"
+        "value": "{location}"
       },
       {
         "label": "Sprachen",
@@ -153,6 +153,6 @@
     ],
     "closing": "Bereit für den ersten Schritt? Buchen Sie Ihr kostenloses Kennenlerngespräch (15 Minuten) — ein entspannter, unverbindlicher Einstieg."
   },
-  "metaTitle": "Psychologische Beratung in Zug & Online | Theresa Frische",
-  "metaDescription": "Psychologische Beratung in Zug sowie online. Begleitung bei Burnout, Ängsten, Überforderung und Lebensübergängen, auf Deutsch und Englisch. Kostenloses Kennenlerngespräch."
+  "metaTitle": "Psychologische Beratung in Zug, Zürich & Online | Theresa Frische",
+  "metaDescription": "Psychologische Beratung in Zug und Zürich sowie online. Begleitung bei Burnout, Ängsten, Überforderung und Lebensübergängen, auf Deutsch und Englisch. Kostenloses Kennenlerngespräch."
 }

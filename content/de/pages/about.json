@@ -1,21 +1,25 @@
 {
   "eyebrow": "Über mich",
   "name": "Theresa Frische",
-  "subtitle": "Eine Beraterin für Menschen im Übergang.",
+  "subtitle": "Eine psychologische Beraterin für Menschen im Übergang.",
   "credentials": "M.Sc. Klinische Psychologie · Somatic Experiencing® Practitioner · Systemische & Integrative Beraterin",
   "lead": "Seit über acht Jahren begleite ich Menschen und Organisationen durch bedeutsame Veränderungsprozesse — mit tiefer Aufmerksamkeit für die gesamte menschliche Erfahrung.",
   "imageAlt": "Porträt von Theresa Frische, Systemische & Integrative Beraterin, lächelnd am Fenster.",
   "intro": [
-    "Ich weiß, wie es sich anfühlt, wenn das Leben zu viel wird — wenn sich Stress aufbaut, Beziehungen belastet sind oder man das Gefühl hat, den Boden unter den Füßen zu verlieren.",
-    "Mit der Zeit habe ich verstanden, wie eng Nervensystem, Beziehungen und Lebensumstände miteinander verwoben sind. Ist ein Bereich überlastet, wirkt sich das oft auf alles andere aus — wie wir fühlen, wie wir in Verbindung gehen, wie wir uns durch die Welt bewegen. Dieses Verständnis steht im Zentrum meiner Arbeit."
+    "Ich weiß, wie es sich anfühlt, wenn das Leben zu viel wird: wenn sich Stress aufbaut, Beziehungen belastet sind oder man den Boden unter den Füßen zu verlieren scheint.",
+    "Lange Zeit habe ich versucht, die Wendungen des Lebens so zu bewältigen, wie es viele wache und reflektierte Menschen tun: vom Kopf her. Durch meinen eigenen Weg und durch Jahre der Praxis habe ich erkannt, dass unsere Schwierigkeiten selten aus einem Mangel an Einsicht entstehen. Sie entstehen daraus, wie eng Nervensystem, Beziehungen und Lebensumstände miteinander verwoben sind.",
+    "Ist ein Bereich überlastet, wirkt sich das oft auf alles andere aus: wie wir fühlen, wie wir in Verbindung gehen und wie wir uns durch die Welt bewegen. Sicherheit lässt sich nicht herbeidenken, und was im Nervensystem geschieht, lässt sich nicht trennen von dem, was in den eigenen Beziehungen und im eigenen Leben geschieht.",
+    "Nachhaltige Veränderung beginnt selten mit dem Verstand allein. Sie beginnt dort, wo Nervensystem, Beziehungen und die Form des eigenen Lebens gleichermaßen Raum bekommen, sich neu auszurichten. Dieses Verständnis steht im Zentrum meiner Arbeit."
   ],
   "lived": {
     "heading": "Ein Leben zwischen Welten",
     "body": [
-      "Mein eigenes Leben hat sich zwischen verschiedenen Ländern, Kulturen und Identitäten bewegt — geprägt von Fernbeziehungen und interkulturellen Partnerschaften sowie dem wiederholten Ankommen in neuen beruflichen Umfeldern. Bevor ich mich der Psychologie widmete, habe ich zeitgenössischen Tanz und klassisches Ballett studiert und mich intensiv mit kontemplativer Praxis auseinandergesetzt.",
-      "Diese Erfahrungen haben mir ein tiefes Verständnis dafür gegeben, was es bedeutet, im Übergang zu sein — nicht nur äußerlich, sondern innerlich: die Unsicherheit, die Orientierungslosigkeit, das Bedürfnis, inmitten von Veränderung Halt zu finden."
+      "Mein eigener Weg hat sich zwischen Ländern, Kulturen und Identitäten bewegt, geprägt von interkulturellen Partnerschaften und Fernbeziehungen und davon, immer wieder an unvertrauten Orten neu anzufangen. Bevor ich mich der Psychologie zuwandte, habe ich jahrelang klassisches Ballett und zeitgenössischen Tanz getanzt und mich intensiv mit kontemplativer Praxis beschäftigt.",
+      "Die Bewegung hat mich gelehrt, was die klassische Gesprächstherapie oft übersieht: Der Körper hält und verarbeitet Erfahrung längst, bevor der Verstand ihr einen Sinn geben kann.",
+      "Durch meine eigenen Lebensübergänge kenne ich die Orientierungslosigkeit, wenn einem der Halt abhandenkommt, und die stille Erschöpfung, körperliche Überforderung mit dem Verstand lösen zu wollen."
     ],
-    "emphasis": "So einzigartig die Geschichte jedes Menschen auch ist — ich verstehe die emotionale Landschaft, die große Lebensübergänge und komplexe Beziehungen oft mit sich bringen."
+    "emphasis": "So einzigartig die Geschichte jedes Menschen auch ist — ich verstehe die emotionale Landschaft, die große Lebensübergänge und komplexe Beziehungen oft mit sich bringen.",
+    "closing": "Echte Veränderung, so meine Erfahrung, denkt man sich nicht herbei. Sie ist etwas, das Nervensystem, Beziehungen und Leben gemeinsam finden müssen."
   },
   "education": {
     "heading": "Qualifikationen & Fundament",

@@ -17,10 +17,10 @@
     "alt": "Theresa Frische, smiling, in a bright room with a plant behind her."
   },
   "heroParas": [
-    "Sometimes life keeps moving while something inside no longer feels right. Outwardly, you may be functioning, while inwardly navigating exhaustion, restlessness, or a quiet sense of losing touch with yourself.",
+    "Sometimes life keeps moving on the outside, while something inside no longer feels right. Outwardly, you may be functioning, while inwardly navigating exhaustion, restlessness, or a quiet sense of losing touch with yourself.",
     "I guide individuals and couples through emotionally demanding times, helping you regulate your nervous system, break through entrenched patterns, and reconnect with what truly matters to you."
   ],
-  "heroEmphasis": "This work is not about fixing what is broken. It is about creating a reflective space to better understand yourself and move toward a life aligned with your values.",
+  "heroEmphasis": "This work is not about fixing what is broken. It is about creating a confidential space where you can understand yourself more clearly, strengthen your resources, and build a life that fits your needs and values.",
   "trustPillars": [
     {
       "title": "Discreet",
@@ -89,13 +89,13 @@
     "intro": "I combine evidence-based methods with an integrative stance and deep respect for each person's individual story and inner resources.",
     "items": [],
     "modalities": {
-      "heading": "Modalities I draw from",
+      "heading": "Modalities I draw from:",
       "items": [
         "Systemic Therapy",
         "Somatic Experiencing®",
-        "Internal Family Systems",
-        "Acceptance & Commitment Therapy",
-        "Mindfulness & Compassion-based approaches"
+        "Internal Family Systems (IFS)",
+        "Acceptance & Commitment Therapy (ACT)",
+        "Mindfulness- and Compassion-based Approaches"
       ],
       "note": "I draw on these approaches within psychological counselling. I do not offer psychotherapy and I am not a psychotherapist."
     },
@@ -132,7 +132,7 @@
     "items": [
       {
         "label": "Format",
-        "value": "Online, and in person in Zug by arrangement"
+        "value": "{location}"
       },
       {
         "label": "Languages",
@@ -153,6 +153,6 @@
     ],
     "closing": "Ready to take the first step? Book a free 15-minute discovery call — a relaxed, no-obligation way to begin."
   },
-  "metaTitle": "Psychological Counselling in Zug & Online | Theresa Frische",
-  "metaDescription": "Psychological counselling in Zug and online worldwide. Support through burnout, anxiety, emotional overload and life transitions, in English and German. Book a free discovery call."
+  "metaTitle": "Psychological Counselling in Zug, Zürich & Online | Theresa Frische",
+  "metaDescription": "Psychological counselling in Zug and Zürich, and online worldwide. Support through burnout, anxiety, emotional overload and life transitions, in English and German. Book a free discovery call."
 }

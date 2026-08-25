@@ -72,6 +72,10 @@ export function AboutPage({ locale }: { locale: Locale }) {
         <p className="mt-8 font-serif text-2xl font-light italic leading-snug text-forest">
           {a.lived.emphasis}
         </p>
+        {/* Set back in body type rather than continuing the pull quote: she
+            asked for the quote to stay as it is, and this sentence to follow
+            it. Two consecutive italic serif lines would read as one quote. */}
+        <p className="mt-6 text-lg leading-relaxed text-ink-soft">{a.lived.closing}</p>
       </Section>
 
       {/* Philosophy, the numbered 01–04 sections and the quotes band moved to

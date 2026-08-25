@@ -98,6 +98,16 @@ export interface SiteContent {
     title: string; // "Systemic & Integrative Counsellor"
   };
 
+  practice: {
+    /**
+     * Where sessions take place, written once. Any content field may contain
+     * `{location}`; the loader replaces it with this string. That is what keeps
+     * the eighteen places this sentence appears from drifting apart when she
+     * changes where she works.
+     */
+    locationLine: string;
+  };
+
   nav: NavItem[];
 
   header: {
@@ -215,7 +225,13 @@ export interface SiteContent {
     lead: string;
     intro: string[];
     imageAlt: string;
-    lived: { heading: string; body: string[]; emphasis: string };
+    lived: {
+      heading: string;
+      body: string[];
+      emphasis: string;
+      /** The sentence she asked to sit after the pull quote, not inside it. */
+      closing: string;
+    };
     education: { heading: string; items: FeatureItem[] };
     /** Factual, neutral PsyKo/PsyCo recognition line (application pending). */
     psyCoNote: string;

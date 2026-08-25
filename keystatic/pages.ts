@@ -269,6 +269,11 @@ export const aboutPage = (locale: Loc) =>
           heading: fields.text({ label: "Heading" }),
           body: paragraphs("Paragraphs", ""),
           emphasis: fields.text({ label: "Highlighted closing sentence", multiline: true }),
+          closing: fields.text({
+            label: "Sentence after the highlighted one",
+            description: "Plain body text, printed under the highlighted sentence above.",
+            multiline: true,
+          }),
         },
         { label: "'A life between worlds' section" },
       ),
