@@ -4,7 +4,7 @@ import type { Locale } from "@/content/types";
 import { getContent } from "@/content";
 import { Section } from "@/components/ui/Section";
 import { Container } from "@/components/ui/Container";
-import { MetaList, QuoteBlock, SectionHeader } from "@/components/ui/Pieces";
+import { QuoteBlock, SectionHeader } from "@/components/ui/Pieces";
 import { PageHero } from "@/components/sections/PageHero";
 import { CtaBand } from "@/components/sections/CtaBand";
 import { FurtherReading } from "@/components/sections/FurtherReading";
@@ -18,31 +18,21 @@ export function WorkTogetherPage({ locale }: { locale: Locale }) {
 
   return (
     <>
-      <PageHero eyebrow={w.eyebrow} title={w.heading} lead={w.intro} crumbs={crumbs} />
+      {/* 3.1 — the welcome photograph is now the banner behind the heading,
+          rather than a separate picture below the intro. Same file, moved.
 
-      {/* WELCOME IMAGE (Aug 2026 §5.1) — reads as a greeting, so it sits before
-          the service cards.
-
-          The source is square and she is standing: her head sits near the top of
-          the frame and the handshake near the bottom. A full-width band cropped
-          to 16:7 showed only 44% of the height starting at 20%, which cut her
-          forehead. This is a contained 4:3 instead — 75% of the height, anchored
-          so both the face and the handshake stay in frame. Contained rather than
-          full-bleed because a square source in a wide band can only be one or
-          the other: short, or whole. Decorative, so screen readers skip it. */}
-      <Section tone="cream" className="!pb-0">
-        <div className="relative mx-auto aspect-[4/3] w-full max-w-2xl overflow-hidden rounded-3xl border border-line bg-sand">
-          <Image
-            src="/images/work-with-me-welcome.webp"
-            alt=""
-            aria-hidden="true"
-            fill
-            priority
-            sizes="(max-width: 768px) 92vw, 672px"
-            className="object-cover object-[50%_15%]"
-          />
-        </div>
-      </Section>
+          The source is square (1600x1600) and she is standing, so a banner this
+          wide can only show a horizontal slice of it. object-[50%_22%] keeps her
+          face and the handshake in frame and crops the empty floor; the previous
+          contained 4:3 treatment was solving the same problem a different way,
+          and its notes are worth reading if this ever needs revisiting. */}
+      <PageHero
+        eyebrow={w.eyebrow}
+        title={w.heading}
+        lead={w.intro}
+        crumbs={crumbs}
+        image={{ src: "/images/work-with-me-welcome.webp", position: "object-[50%_22%]" }}
+      />
 
       {/* FOUR SERVICE CARDS -> child pages.
           Aug 2026 §2.3 — sand fill plus a firmer border, so the cards lift off
@@ -87,19 +77,11 @@ export function WorkTogetherPage({ locale }: { locale: Locale }) {
         <QuoteBlock quote={w.quote} tone="forest" className="mx-auto max-w-2xl" />
       </Section>
 
-      {/* SESSION TYPES */}
-      <Section tone="sand">
-        <div className="grid gap-6 lg:grid-cols-2">
-          {[w.individual, w.couples].map((s) => (
-            <article key={s.heading} className="flex flex-col rounded-3xl border border-line bg-cream p-8 sm:p-10">
-              <p className="eyebrow">{s.subheading}</p>
-              <h3 className="mt-3 font-serif text-2xl text-ink">{s.heading}</h3>
-              <p className="mt-4 flex-1 leading-relaxed text-ink-soft">{s.body}</p>
-              <MetaList items={s.meta} className="mt-6" />
-            </article>
-          ))}
-        </div>
-      </Section>
+      {/* SESSION TYPES — removed (25 Aug §3.2). The two panels restated the
+          Psychological Counselling and Couples Counselling cards above, which
+          link to the full pages where the same detail lives at greater length.
+          The `individual` and `couples` content fields are kept so nothing is
+          lost and the panels can be restored. */}
 
       {/* CLOSING */}
       <Section tone="cream" containerSize="narrow" className="text-center">
