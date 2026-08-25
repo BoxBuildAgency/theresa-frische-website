@@ -4,8 +4,9 @@ import { getContent } from "@/content";
 import { Section, Eyebrow } from "@/components/ui/Section";
 import { Container } from "@/components/ui/Container";
 import { ButtonLink } from "@/components/ui/Button";
-import { FeatureCard, MetaList, QuoteBlock, SectionHeader } from "@/components/ui/Pieces";
+import { FeatureCard, MetaList, SectionHeader } from "@/components/ui/Pieces";
 import { CtaBand } from "@/components/sections/CtaBand";
+import { TestimonialCarousel } from "@/components/sections/TestimonialCarousel";
 import { PersonServiceJsonLd } from "@/components/site/JsonLd";
 import { localizedPath } from "@/lib/site";
 import { shortCredentials } from "@/lib/credentials";
@@ -117,8 +118,17 @@ export function HomePage({ locale }: { locale: Locale }) {
         </p>
       </Section>
 
-      {/* TESTIMONIALS — her photograph under a deep pine scrim */}
-      <section className="relative isolate overflow-hidden bg-pine py-14 sm:py-24">
+      {/* TESTIMONIALS — a fixed-height band she can keep adding to (§1.8).
+          The two-column grid is gone: with two testimonials it looked fine, but
+          it grew the page every time she added one, which is the thing she
+          asked to stop. See TestimonialCarousel for how the height is pinned.
+
+          The photograph was invisible here, for the same reason it was on the
+          new page banners: `bg-pine` on a section that also sets `isolate`
+          paints over every negative-z child, so band-quote.webp has never
+          actually been seen. The fallback colour is now its own layer. */}
+      <section className="relative isolate overflow-hidden py-14 sm:py-24">
+        <div aria-hidden="true" className="absolute inset-0 -z-30 bg-pine" />
         <Image
           src="/images/band-quote.webp"
           alt=""
@@ -129,11 +139,7 @@ export function HomePage({ locale }: { locale: Locale }) {
         />
         <div aria-hidden="true" className="absolute inset-0 -z-10 bg-pine/85" />
         <Container className="relative">
-          <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
-            {h.testimonials.map((t) => (
-              <QuoteBlock key={t.attribution} quote={t} tone="forest" className="!text-xl" />
-            ))}
-          </div>
+          <TestimonialCarousel items={h.testimonials} locale={locale} />
         </Container>
       </section>
 
