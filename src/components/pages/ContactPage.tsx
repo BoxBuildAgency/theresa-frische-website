@@ -55,7 +55,7 @@ export function ContactPage({ locale }: { locale: Locale }) {
 
             <CrisisResources crisis={c.crisis} />
 
-            <Disclaimer disclaimer={c.disclaimer} variant="card" />
+            <Disclaimer disclaimer={c.disclaimer} locale={locale} variant="card" />
           </div>
         </div>
       </Container>

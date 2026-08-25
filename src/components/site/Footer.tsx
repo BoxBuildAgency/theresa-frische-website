@@ -13,7 +13,7 @@ import { Disclaimer } from "./Disclaimer";
  * "© Theresa Frische" is always correct and never needs maintaining.
  */
 export function Footer({ content }: { content: SiteContent }) {
-  const { footer, brand, cta, disclaimer } = content;
+  const { footer, brand, cta, disclaimer, locale } = content;
 
   return (
     <footer className="border-t border-line bg-sand">
@@ -68,7 +68,7 @@ export function Footer({ content }: { content: SiteContent }) {
 
         {/* Disclaimer */}
         <div className="mt-14 border-t border-line pt-10">
-          <Disclaimer disclaimer={disclaimer} variant="footer" />
+          <Disclaimer disclaimer={disclaimer} locale={locale} variant="footer" />
         </div>
 
         {/* Baseline */}
