@@ -26,7 +26,13 @@ export function WeeklyWellbeingPage({ locale }: { locale: Locale }) {
           sizes="100vw"
           className="-z-10 object-cover"
         />
-        <div aria-hidden className="absolute inset-0 -z-10 bg-gradient-to-r from-pine/85 via-pine/60 to-pine/30" />
+        {/* Same scrim as PageHero, and for the same measured reason: the
+            inherited 85/60/30 measured 2.71:1 here, the worst of the three
+            banners. See the note in PageHero before changing it. */}
+        <div
+          aria-hidden
+          className="absolute inset-0 -z-10 bg-gradient-to-r from-pine/88 via-pine/78 to-pine/62"
+        />
         <Container className="py-28 sm:py-36">
           <div className="max-w-2xl text-cream">
             <Eyebrow className="!text-cream/80">{w.eyebrow}</Eyebrow>

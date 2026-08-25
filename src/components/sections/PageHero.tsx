@@ -59,13 +59,20 @@ export function PageHero({
             sizes="100vw"
             className={clsx("-z-20 object-cover", image.position ?? "object-center")}
           />
-          {/* Same gradient as Weekly Wellbeing: heaviest under the text on the
-              left, lightest on the right where the photograph is left to read.
-              Measured against the actual pixels — see the contrast note in the
-              commit. */}
+          {/* Heaviest under the start of the text, lightest at the right edge
+              where the photograph is left to read.
+
+              Measured against the real pixels, compositing each image under the
+              actual scrim alpha at that x position, worst case over the area the
+              text occupies at 375, 768, 1024 and 1440. The inherited 85/60/30
+              failed at every one of those widths (as low as 2.71:1) because the
+              ramp keeps lightening past its midpoint, and the heading is still
+              over it. 88/78/62 is the lightest ramp that clears AA everywhere,
+              so it gives up the least of the photograph. Do not lighten it
+              without re-running that measurement. */}
           <div
             aria-hidden="true"
-            className="absolute inset-0 -z-10 bg-gradient-to-r from-pine/85 via-pine/60 to-pine/30"
+            className="absolute inset-0 -z-10 bg-gradient-to-r from-pine/88 via-pine/78 to-pine/62"
           />
         </>
       )}
