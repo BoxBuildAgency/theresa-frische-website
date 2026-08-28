@@ -10,7 +10,8 @@
   package = "@netlify/plugin-nextjs"
 
 [build.environment]
-  NODE_VERSION = "20"
+  # Node 20 reached end of life in April 2026. 22 is the active LTS.
+  NODE_VERSION = "22"
 
 # Long-cache the optimised, fingerprinted static assets.
 [[headers]]
