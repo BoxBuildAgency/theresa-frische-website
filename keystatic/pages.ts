@@ -277,6 +277,21 @@ export const aboutPage = (locale: Loc) =>
         },
         { label: "'A life between worlds' section" },
       ),
+      // Restored. This was deleted in c5935c1 along with the three fields that
+      // genuinely moved to My Philosophy, but Qualifications never moved: the
+      // data stayed in about.json and AboutPage still renders it. Deleting the
+      // field only made the entry unopenable, because Keystatic refuses an
+      // entry holding a key its schema does not declare.
+      education: fields.object(
+        {
+          heading: fields.text({ label: "Heading" }),
+          items: cards(
+            "Qualifications",
+            "⚠️ These entries were worded deliberately for regulatory reasons — the site describes counselling only, and the training is named factually. Please check with José before changing them.",
+          ),
+        },
+        { label: "Qualifications section" },
+      ),
       psyCoNote: fields.text({
         label: "Recognition note under the qualifications",
         multiline: true,

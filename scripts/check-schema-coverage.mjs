@@ -2,183 +2,242 @@
 /**
  * Schema-coverage guard.
  *
- * Keystatic writes back only the fields its schema knows about. If a content
- * file has a key the schema does not declare, that key is silently DROPPED the
- * first time Theresa saves that page — which would quietly delete live content.
+ * Keystatic writes back only the fields its schema knows about, and it refuses
+ * to open an entry that holds a key the schema does not declare. Either way an
+ * undeclared key is a live bug: the page becomes uneditable, or the key is
+ * silently dropped the first time Theresa saves and live content disappears.
  *
- * This check compares the top-level keys of every content file against the
- * fields declared in keystatic.config.ts, and fails if a file is exposed in the
- * admin with an incomplete schema. Files not yet exposed are reported as
- * "not in the admin yet" and are safe, because nothing can save over them.
+ * WHY THIS WAS REWRITTEN
+ *
+ * The previous version kept its own hand-written list of the declared fields
+ * and compared the content against that. It was therefore a second copy of the
+ * schema, and it could disagree with the real one without anyone noticing —
+ * which is exactly what happened. `education` was removed from the About
+ * singleton in c5935c1 but left in this script's list, so the guard went on
+ * reporting "0 undeclared fields" while the About page had already become
+ * unopenable in the admin, in both locales, on the live site.
+ *
+ * A guard that keeps its own copy of the thing it is checking cannot catch that
+ * class of bug at all. So this version imports keystatic.config.ts and walks
+ * the real field objects. There is now one source of truth, and no list here to
+ * fall out of date.
+ *
+ * It also walks the whole tree rather than only the top level: objects, arrays,
+ * and conditionals, at any depth. The blog-body breakage that had to be found
+ * by hand — 744 blocks stored in a shape Keystatic would not open — is caught
+ * by the conditional case below.
  *
  * Run with:  npm run check:schema
  */
 
-import { readFileSync, readdirSync, statSync } from "node:fs";
+import { readFileSync, readdirSync, statSync, mkdtempSync, mkdirSync, writeFileSync, rmSync } from "node:fs";
 import path from "node:path";
+import { pathToFileURL } from "node:url";
+import ts from "typescript";
 
 const ROOT = process.cwd();
+const CONTENT = path.join(ROOT, "content");
 
 /**
- * Read every Keystatic source file, so exposure is detected wherever the
- * singleton/collection is declared (keystatic.config.ts or keystatic/*.ts).
+ * Import the Keystatic config from a Node script.
+ *
+ * Three obstacles, all of them boring: the config is TypeScript; @keystatic/core
+ * is ESM-only with no `require` condition, so it cannot be loaded from CommonJS;
+ * and CI and Netlify both run Node 20, which has neither type stripping nor
+ * module.registerHooks. So the three self-contained schema files are transpiled
+ * to .mjs and imported from there. tsc leaves relative specifiers
+ * extensionless, which ESM will not resolve, so they are rewritten.
+ *
+ * The output goes under node_modules/.cache rather than the system temp dir so
+ * that `@keystatic/core` still resolves: from /tmp there is no node_modules to
+ * walk up into.
  */
-const cfg = [
-  path.join(ROOT, "keystatic.config.ts"),
-  ...readdirSync(path.join(ROOT, "keystatic"))
-    .filter((f) => f.endsWith(".ts"))
-    .map((f) => path.join(ROOT, "keystatic", f)),
-]
-  .map((f) => readFileSync(f, "utf8"))
-  .join("\n");
-
-/** Which content files does the admin expose for editing? */
-const exposed = [];
-const collectionPath = (dir) => new RegExp("path: `content/\\$\\{locale\\}/" + dir + "/\\*`");
-if (collectionPath("posts").test(cfg)) exposed.push(/^content\/(en|de)\/posts\/[^/]+\.json$/);
-if (collectionPath("faq").test(cfg)) exposed.push(/^content\/(en|de)\/faq\/[^/]+\.json$/);
-if (/path: `content\/\$\{locale\}\/services\/\$\{key\}`/.test(cfg))
-  exposed.push(/^content\/(en|de)\/services\/[^/]+\.json$/);
-if (/path: `content\/\$\{locale\}\/site`/.test(cfg)) exposed.push(/^content\/(en|de)\/site\.json$/);
-
-// Page singletons are declared either with a literal path template or via the
-// `at(locale, "name")` helper in keystatic/pages.ts.
-const PAGE_NAMES = [
-  "home", "about", "workTogether", "organisations", "weeklyWellbeing",
-  "philosophy", "blog", "faq", "contact", "aiInfo", "notFound", "impressum", "privacy", "terms",
-];
-for (const name of PAGE_NAMES) {
-  const literal = new RegExp("path: `content/\\$\\{locale\\}/pages/" + name + "`");
-  const viaHelper = new RegExp('at\\(locale, "' + name + '"\\)');
-  if (literal.test(cfg) || viaHelper.test(cfg))
-    exposed.push(new RegExp("^content/(en|de)/pages/" + name + "\\.json$"));
-}
-
-/** Declared field names per content shape, read from the config source. */
-const DECLARED = {
-  posts: ["title", "category", "date", "readingTime", "excerpt", "body", "draft"],
-  faq: ["title", "order", "items"],
-  services: ["eyebrow", "heading", "lead", "paras", "numbered", "facts", "crossLinks", "metaTitle", "metaDescription"],
-  site: ["locale", "htmlLang", "brand", "practice", "nav", "header", "footer", "cta", "disclaimer", "blogDisclaimer", "crisis"],
-  impressum: ["heading", "blocks", "metaTitle", "metaDescription"],
-  privacy: ["heading", "intro", "sections", "metaTitle", "metaDescription"],
-  terms: ["heading", "sections", "version", "metaTitle", "metaDescription"],
-  home: ["metaTitle", "metaDescription", "eyebrow", "heroTitle", "heroTitleAccent", "heroLead", "heroParas", "heroEmphasis", "heroPrimary", "heroSecondary", "heroPortrait", "testimonial", "audience", "pauseBand", "practical", "reachLine", "trustPillars", "steps", "privatePay", "aboutBlock", "testimonials"],
-  about: ["metaTitle", "metaDescription", "eyebrow", "name", "subtitle", "credentials", "lead", "intro", "imageAlt", "lived", "education", "psyCoNote"],
-  philosophy: ["metaTitle", "metaDescription", "eyebrow", "heading", "body", "bandAlt", "sections", "testimonial"],
-  workTogether: ["metaTitle", "metaDescription", "eyebrow", "heading", "intro", "discovery", "quote", "individual", "couples", "closing", "cards", "switzerland"],
-  organisations: ["metaTitle", "metaDescription", "eyebrow", "heading", "lead", "intro", "facts", "formats", "individual", "topics", "approach", "testimonials", "closing", "cards"],
-  weeklyWellbeing: ["metaTitle", "metaDescription", "eyebrow", "heading", "lead", "intro", "imageAlt", "facts", "why", "quotes", "closing"],
-  blog: ["metaTitle", "metaDescription", "eyebrow", "heading", "intro", "allLabel", "readMore", "backToBlog", "relatedHeading", "authorHeading", "authorBody", "minRead"],
-  faqPage: ["metaTitle", "metaDescription", "eyebrow", "heading", "intro", "jumpLabel"],
-  contact: ["metaTitle", "metaDescription", "eyebrow", "heading", "lead", "form", "directHeading", "directBody", "emailLabel", "phoneLabel"],
-  aiInfo: ["metaTitle", "metaDescription", "eyebrow", "heading", "intro", "updated", "sections"],
-  notFound: ["title", "body", "cta"],
-};
-
-function shapeOf(rel) {
-  if (/\/posts\//.test(rel)) return "posts";
-  // pages/faq.json is the FAQ *page* chrome; faq/*.json are the categories.
-  if (/\/pages\/faq\.json$/.test(rel)) return "faqPage";
-  for (const p of ["home", "about", "philosophy", "workTogether", "organisations", "weeklyWellbeing", "blog", "contact", "aiInfo", "notFound"]) {
-    if (new RegExp(`/pages/${p}\\.json$`).test(rel)) return p;
+async function loadKeystaticConfig() {
+  const sources = ["keystatic.config.ts", "keystatic/fields.ts", "keystatic/pages.ts"];
+  const cache = path.join(ROOT, "node_modules", ".cache");
+  mkdirSync(cache, { recursive: true });
+  const dir = mkdtempSync(path.join(cache, "keystatic-schema-"));
+  try {
+    for (const rel of sources) {
+      const { outputText } = ts.transpileModule(readFileSync(path.join(ROOT, rel), "utf8"), {
+        fileName: rel,
+        compilerOptions: { module: ts.ModuleKind.ESNext, target: ts.ScriptTarget.ES2022 },
+      });
+      const js = outputText.replace(
+        /(from\s*["'])(\.\.?\/[^"']+?)(["'])/g,
+        (whole, before, spec, after) =>
+          /\.[a-z]+$/.test(spec) ? whole : `${before}${spec}.mjs${after}`,
+      );
+      const dest = path.join(dir, rel.replace(/\.ts$/, ".mjs"));
+      mkdirSync(path.dirname(dest), { recursive: true });
+      writeFileSync(dest, js);
+    }
+    const mod = await import(pathToFileURL(path.join(dir, "keystatic.config.mjs")).href);
+    return mod.default ?? mod.config;
+  } finally {
+    rmSync(dir, { recursive: true, force: true });
   }
-  if (/\/faq\//.test(rel)) return "faq";
-  if (/\/services\//.test(rel)) return "services";
-  if (/\/site\.json$/.test(rel)) return "site";
-  if (/\/pages\/impressum\.json$/.test(rel)) return "impressum";
-  if (/\/pages\/privacy\.json$/.test(rel)) return "privacy";
-  if (/\/pages\/terms\.json$/.test(rel)) return "terms";
-  return null;
 }
 
-function walk(dir) {
+/* ------------------------------------------------------------------ walking */
+
+const problems = [];
+const note = (file, where, message) => problems.push({ file, where, message });
+
+/** A Keystatic field object: `kind` is object | array | conditional | form. */
+function checkValue(value, field, file, where) {
+  switch (field?.kind) {
+    case "object":
+      checkObject(value, field.fields, file, where);
+      break;
+
+    case "array":
+      if (!Array.isArray(value)) {
+        note(file, where, `declared as a list, but the file holds ${typeName(value)}`);
+        break;
+      }
+      value.forEach((item, i) => checkValue(item, field.element, file, `${where}[${i}]`));
+      break;
+
+    case "conditional": {
+      // The one shape Keystatic will open a conditional from. This is the check
+      // the blog bodies failed: they were stored as { type, text }.
+      if (value === null || typeof value !== "object" || Array.isArray(value)) {
+        note(file, where, `declared as a conditional block, but the file holds ${typeName(value)}`);
+        break;
+      }
+      const keys = Object.keys(value).sort();
+      if (keys.length !== 2 || keys[0] !== "discriminant" || keys[1] !== "value") {
+        note(
+          file,
+          where,
+          `conditional blocks must hold exactly { discriminant, value }; this holds { ${Object.keys(value).join(", ")} }`,
+        );
+        break;
+      }
+      const inner = field.values?.[value.discriminant];
+      if (!inner) {
+        note(
+          file,
+          where,
+          `unknown block type "${value.discriminant}" — the schema allows ${Object.keys(field.values ?? {}).join(", ")}`,
+        );
+        break;
+      }
+      checkValue(value.value, inner, file, `${where}.value`);
+      break;
+    }
+
+    default:
+      // A leaf (text, select, image, ...). Keystatic coerces these, so there is
+      // nothing here that would make an entry refuse to open.
+      break;
+  }
+}
+
+function checkObject(value, fields, file, where) {
+  if (value === null || typeof value !== "object" || Array.isArray(value)) {
+    note(file, where || "(root)", `declared as a group of fields, but the file holds ${typeName(value)}`);
+    return;
+  }
+  for (const key of Object.keys(value)) {
+    const at = where ? `${where}.${key}` : key;
+    if (!(key in fields)) {
+      note(file, at, "present in the file, not declared in the admin schema");
+      continue;
+    }
+    checkValue(value[key], fields[key], file, at);
+  }
+}
+
+const typeName = (v) =>
+  v === null ? "null" : Array.isArray(v) ? "a list" : typeof v === "object" ? "a group" : `a ${typeof v}`;
+
+/* -------------------------------------------------------------------- files */
+
+function walkDir(dir) {
   const out = [];
-  for (const n of readdirSync(dir)) {
-    const p = path.join(dir, n);
-    if (statSync(p).isDirectory()) out.push(...walk(p));
-    else if (n.endsWith(".json")) out.push(p);
+  for (const entry of readdirSync(dir)) {
+    const full = path.join(dir, entry);
+    if (statSync(full).isDirectory()) out.push(...walkDir(full));
+    else if (entry.endsWith(".json")) out.push(full);
   }
   return out;
 }
 
-const problems = [];
-let checked = 0;
-let notExposed = 0;
+const rel = (abs) => path.relative(ROOT, abs).split(path.sep).join("/");
 
-for (const abs of walk(path.join(ROOT, "content"))) {
-  const rel = path.relative(ROOT, abs).split(path.sep).join("/");
-  const isExposed = exposed.some((re) => re.test(rel));
-  if (!isExposed) {
-    notExposed++;
+/* --------------------------------------------------------------------- main */
+
+const config = await loadKeystaticConfig();
+
+// Every content file the admin can write, mapped to the schema that governs it.
+// Derived from the config, so adding a page to the admin needs no edit here.
+const governed = new Map();
+for (const entry of Object.values(config.singletons ?? {})) {
+  governed.set(`${entry.path}.json`, { fields: entry.schema });
+}
+// The slug field is deliberately NOT excluded. Keystatic names the file from
+// the slug and still stores the field itself, which is why every post carries a
+// "title" and still opens; excluding it here flagged all 46 of them.
+const collections = Object.values(config.collections ?? {}).map((c) => ({
+  prefix: c.path.replace(/\*$/, ""),
+  fields: c.schema,
+}));
+
+const files = walkDir(CONTENT).sort();
+let checked = 0;
+const unexposed = [];
+
+for (const abs of files) {
+  const r = rel(abs);
+  let schema = governed.get(r);
+  if (!schema) {
+    const c = collections.find((c) => r.startsWith(c.prefix));
+    if (c) schema = { fields: c.fields };
+  }
+  if (!schema) {
+    unexposed.push(r);
     continue;
   }
-  const shape = shapeOf(rel);
-  const declared = DECLARED[shape];
-  if (!declared) continue;
-  checked++;
-  const keys = Object.keys(JSON.parse(readFileSync(abs, "utf8")));
-  const missing = keys.filter((k) => !declared.includes(k));
-  if (missing.length) problems.push({ rel, missing });
+  let data;
+  try {
+    data = JSON.parse(readFileSync(abs, "utf8"));
+  } catch (e) {
+    note(r, "(file)", `is not valid JSON: ${e.message}`);
+    continue;
+  }
+  checkObject(data, schema.fields, r, "");
+  checked += 1;
 }
 
-/**
- * Blog body blocks must be stored the way Keystatic stores a `fields.conditional`:
- * exactly `{ discriminant, value }`.
- *
- * This is not cosmetic. Keystatic refuses to OPEN an entry whose conditional
- * blocks are shaped differently — "Must only contain keys discriminant and
- * value" — so a post in the wrong shape is not editable at all. The top-level
- * check above cannot see this, because `body` is a valid top-level key either
- * way; that is exactly how it went unnoticed until every post was affected.
- */
-const BLOCK_FIELDS = {
-  p: ["text"],
-  h2: ["text"],
-  ul: ["items"],
-  quote: ["text", "attribution"],
-};
+/* ------------------------------------------------------------------- report */
 
-const blockProblems = [];
-for (const abs of walk(path.join(ROOT, "content"))) {
-  const rel = path.relative(ROOT, abs).split(path.sep).join("/");
-  if (!/\/posts\/[^/]+\.json$/.test(rel)) continue;
-  const body = JSON.parse(readFileSync(abs, "utf8")).body;
-  if (!Array.isArray(body)) continue;
-  body.forEach((block, i) => {
-    const keys = Object.keys(block ?? {}).sort();
-    if (keys.length !== 2 || keys[0] !== "discriminant" || keys[1] !== "value") {
-      blockProblems.push(`${rel} — block ${i} has keys [${keys}], expected [discriminant, value]`);
-      return;
-    }
-    const allowed = BLOCK_FIELDS[block.discriminant];
-    if (!allowed) {
-      blockProblems.push(`${rel} — block ${i} has unknown type "${block.discriminant}"`);
-      return;
-    }
-    const extra = Object.keys(block.value ?? {}).filter((k) => !allowed.includes(k));
-    if (extra.length) {
-      blockProblems.push(`${rel} — block ${i} (${block.discriminant}) has unknown field(s): ${extra}`);
-    }
-  });
+console.log(
+  `Schema coverage: ${checked} file(s) checked against the live admin schema, ${unexposed.length} not exposed yet.`,
+);
+
+if (unexposed.length) {
+  console.log("\nNot in the admin yet (safe — nothing can save over them):");
+  for (const f of unexposed) console.log(`  ${f}`);
 }
 
-if (blockProblems.length) {
-  console.error("\n✗ Blog post bodies are not in the shape Keystatic requires.");
-  console.error("  Posts in this state cannot be opened in the admin at all.\n");
-  for (const p of blockProblems.slice(0, 20)) console.error(`  ${p}`);
-  if (blockProblems.length > 20) console.error(`  … and ${blockProblems.length - 20} more`);
+if (problems.length) {
+  console.error(`\n✗ ${problems.length} problem(s). Keystatic will refuse to open these entries:\n`);
+  const byFile = new Map();
+  for (const p of problems) {
+    if (!byFile.has(p.file)) byFile.set(p.file, []);
+    byFile.get(p.file).push(p);
+  }
+  for (const [file, list] of byFile) {
+    console.error(`  ${file}`);
+    for (const p of list) console.error(`     ${p.where}\n        ${p.message}`);
+  }
+  console.error(
+    "\nEither declare the field in keystatic/pages.ts, or remove it from the file.\n" +
+      "Do not remove it without checking whether a component still renders it.",
+  );
   process.exit(1);
 }
 
-console.log(`Schema coverage: ${checked} file(s) exposed in the admin, ${notExposed} not exposed yet.`);
-console.log(`Blog body blocks: all conditional blocks stored as { discriminant, value }.`);
-if (!problems.length) {
-  console.log("✓ Every field of every exposed file is declared — saving cannot drop content.");
-  process.exit(0);
-}
-console.error("\n✗ These files are editable in the admin but have undeclared fields.");
-console.error("  Saving them in Keystatic would DELETE the fields listed. Add them to");
-console.error("  keystatic.config.ts (and to DECLARED in this script) before shipping.\n");
-for (const p of problems) console.error(`  ${p.rel}\n     undeclared: ${p.missing.join(", ")}`);
-process.exit(1);
+console.log("✓ Every value in every exposed file matches the admin schema — entries open, and saving cannot drop content.");
