@@ -7,13 +7,15 @@
       "paras": [
         "Theresa Frische, Gimenenstrasse 1, 6300 Zug, Switzerland, info@theresafrische.com, is the controller for the processing of personal data described here.",
         "This notice is based on the Swiss Federal Act on Data Protection (revDSG). Where the General Data Protection Regulation (GDPR) applies, because you are in the European Economic Area, it applies alongside it and the additional rights set out below are yours."
-      ]
+      ],
+      "bullets": []
     },
     {
       "heading": "The short version",
       "paras": [
         "This website sets no cookies, runs no analytics, and does not track you. The only personal data it collects is what you type into the contact form, plus the technical records the hosting provider keeps for security. Nothing is sold, and nothing is shared for advertising."
-      ]
+      ],
+      "bullets": []
     },
     {
       "heading": "The contact form",
@@ -23,19 +25,22 @@
         "Legal basis, where the GDPR applies: steps taken at your request prior to entering into a contract, Article 6(1)(b), and the legitimate interest in responding to enquiries, Article 6(1)(f).",
         "Retention: enquiries are kept for as long as needed to deal with them and for up to 24 months afterwards, then deleted. If an engagement begins, the retention rules for client records below apply instead.",
         "Please do not send health information through the form. The form is deliberately built not to ask for it. A first name and a sentence about what you are looking for is enough. Anything sensitive belongs in a conversation, not in an email."
-      ]
+      ],
+      "bullets": []
     },
     {
       "heading": "Server records",
       "paras": [
         "The hosting provider records technical data when the site is accessed, including the IP address, the time of the request, the page requested, and the browser type. This is used to operate the site securely and to diagnose faults. It is not used to identify you or combined with other data. These records are kept for a short period and then deleted."
-      ]
+      ],
+      "bullets": []
     },
     {
       "heading": "Client records",
       "paras": [
         "If a counselling engagement begins, notes and administrative records are created. They are kept confidential, stored securely, and accessible only to Theresa Frische. They are retained for the duration of the engagement and for up to ten years afterwards, which reflects the general limitation period under Swiss law, and are then destroyed."
-      ]
+      ],
+      "bullets": []
     },
     {
       "heading": "Who else processes data",
@@ -53,13 +58,15 @@
       "heading": "No cookies, no analytics, no advertising",
       "paras": [
         "No tracking cookies, no analytics tools, no advertising pixels, no social media plugins that load third party content. There is nothing to consent to, which is why you are not asked."
-      ]
+      ],
+      "bullets": []
     },
     {
       "heading": "No automated decision making",
       "paras": [
         "No decisions affecting you are made automatically or by profiling."
-      ]
+      ],
+      "bullets": []
     },
     {
       "heading": "Your rights",
@@ -67,20 +74,23 @@
         "You may request information about the data held about you, ask for it to be corrected or deleted, object to processing, and request that it be released or transferred to you. Where the GDPR applies, you may additionally request restriction of processing and withdraw any consent given, with effect for the future.",
         "Write to info@theresafrische.com. You will be asked to confirm your identity before information is released, so that data is not disclosed to the wrong person.",
         "If you believe your data has been handled improperly, you may complain to the Federal Data Protection and Information Commissioner in Switzerland, or, in the European Economic Area, to the supervisory authority in your country."
-      ]
+      ],
+      "bullets": []
     },
     {
       "heading": "Children",
       "paras": [
         "The counselling service is offered to adults. The website is not directed at children and no data is knowingly collected from them."
-      ]
+      ],
+      "bullets": []
     },
     {
       "heading": "Changes",
       "paras": [
         "This notice may be updated when the service or the technology behind it changes. The current version is always the one published here.",
         "Last updated: August 2026."
-      ]
+      ],
+      "bullets": []
     }
   ],
   "metaTitle": "Privacy Notice | Theresa Frische",

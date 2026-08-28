@@ -7,13 +7,15 @@
       "paras": [
         "Theresa Frische, Gimenenstrasse 1, 6300 Zug, Schweiz, info@theresafrische.com, ist verantwortlich für die hier beschriebene Bearbeitung von Personendaten.",
         "Diese Erklärung stützt sich auf das revidierte Schweizer Datenschutzgesetz (revDSG). Soweit die Datenschutz-Grundverordnung (DSGVO) anwendbar ist, weil Sie sich im Europäischen Wirtschaftsraum befinden, gilt diese zusätzlich, und die unten genannten weitergehenden Rechte stehen Ihnen zu."
-      ]
+      ],
+      "bullets": []
     },
     {
       "heading": "Kurzfassung",
       "paras": [
         "Diese Website setzt keine Cookies, verwendet keine Analysewerkzeuge und verfolgt Sie nicht. Die einzigen Personendaten, die erhoben werden, sind jene, die Sie in das Kontaktformular eingeben, sowie die technischen Aufzeichnungen, die der Hosting-Anbieter aus Sicherheitsgründen führt. Es werden keine Daten verkauft und keine Daten zu Werbezwecken weitergegeben."
-      ]
+      ],
+      "bullets": []
     },
     {
       "heading": "Das Kontaktformular",
@@ -23,19 +25,22 @@
         "Rechtsgrundlage, soweit die DSGVO anwendbar ist: vorvertragliche Massnahmen auf Ihre Anfrage hin, Art. 6 Abs. 1 lit. b, sowie das berechtigte Interesse an der Beantwortung von Anfragen, Art. 6 Abs. 1 lit. f.",
         "Aufbewahrung: Anfragen werden so lange aufbewahrt, wie es zu ihrer Bearbeitung nötig ist, und danach für höchstens 24 Monate, anschliessend gelöscht. Kommt eine Beratung zustande, gelten stattdessen die unten genannten Fristen für Klientenunterlagen.",
         "Bitte senden Sie keine Gesundheitsdaten über das Formular. Das Formular ist bewusst so gebaut, dass es nicht danach fragt. Ein Vorname und ein Satz zu Ihrem Anliegen genügen. Alles Sensible gehört in ein Gespräch und nicht in eine E-Mail."
-      ]
+      ],
+      "bullets": []
     },
     {
       "heading": "Server-Protokolle",
       "paras": [
         "Der Hosting-Anbieter zeichnet beim Aufruf der Website technische Daten auf, darunter die IP-Adresse, den Zeitpunkt der Anfrage, die aufgerufene Seite und den Browsertyp. Diese Daten dienen dem sicheren Betrieb der Website und der Fehlersuche. Sie werden nicht zur Identifizierung verwendet und nicht mit anderen Daten zusammengeführt. Sie werden nach kurzer Zeit gelöscht."
-      ]
+      ],
+      "bullets": []
     },
     {
       "heading": "Klientenunterlagen",
       "paras": [
         "Kommt eine Beratung zustande, entstehen Notizen und administrative Unterlagen. Diese werden vertraulich behandelt, sicher aufbewahrt und sind ausschliesslich Theresa Frische zugänglich. Sie werden für die Dauer der Beratung und für höchstens zehn Jahre danach aufbewahrt, was der allgemeinen Verjährungsfrist nach schweizerischem Recht entspricht, und anschliessend vernichtet."
-      ]
+      ],
+      "bullets": []
     },
     {
       "heading": "Weitere Bearbeiter",
@@ -53,13 +58,15 @@
       "heading": "Keine Cookies, keine Analyse, keine Werbung",
       "paras": [
         "Keine Tracking-Cookies, keine Analysewerkzeuge, keine Werbepixel, keine Social-Media-Plugins, die Inhalte Dritter nachladen. Es gibt nichts einzuwilligen, weshalb Sie auch nicht gefragt werden."
-      ]
+      ],
+      "bullets": []
     },
     {
       "heading": "Keine automatisierte Einzelentscheidung",
       "paras": [
         "Es werden keine Sie betreffenden Entscheidungen automatisiert oder mittels Profiling getroffen."
-      ]
+      ],
+      "bullets": []
     },
     {
       "heading": "Ihre Rechte",
@@ -67,20 +74,23 @@
         "Sie können Auskunft über die zu Ihrer Person bearbeiteten Daten verlangen, deren Berichtigung oder Löschung fordern, der Bearbeitung widersprechen und die Herausgabe oder Übertragung der Daten verlangen. Soweit die DSGVO anwendbar ist, können Sie zusätzlich die Einschränkung der Bearbeitung verlangen und erteilte Einwilligungen mit Wirkung für die Zukunft widerrufen.",
         "Wenden Sie sich an info@theresafrische.com. Vor einer Auskunft wird um eine Bestätigung Ihrer Identität gebeten, damit keine Daten an die falsche Person gelangen.",
         "Wenn Sie der Ansicht sind, dass Ihre Daten unrechtmässig bearbeitet wurden, können Sie sich in der Schweiz an den Eidgenössischen Datenschutz- und Öffentlichkeitsbeauftragten wenden, im Europäischen Wirtschaftsraum an die Aufsichtsbehörde Ihres Landes."
-      ]
+      ],
+      "bullets": []
     },
     {
       "heading": "Kinder und Jugendliche",
       "paras": [
         "Die Beratung richtet sich an Erwachsene. Die Website richtet sich nicht an Kinder, und es werden wissentlich keine Daten von Kindern erhoben."
-      ]
+      ],
+      "bullets": []
     },
     {
       "heading": "Änderungen",
       "paras": [
         "Diese Erklärung wird angepasst, wenn sich die Leistung oder die dahinterliegende Technik ändert. Massgebend ist stets die hier veröffentlichte Fassung.",
         "Stand: August 2026."
-      ]
+      ],
+      "bullets": []
     }
   ],
   "metaTitle": "Datenschutzerklärung | Theresa Frische",

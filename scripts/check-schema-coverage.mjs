@@ -27,6 +27,20 @@
  * by hand — 744 blocks stored in a shape Keystatic would not open — is caught
  * by the conditional case below.
  *
+ * Three failure modes are checked, because content, schema and renderer are
+ * three things that can disagree in three directions:
+ *
+ *   1  in the file, not in the schema   the entry refuses to open       (About)
+ *   2  in the schema, not in the file   the first save writes it empty  (Privacy)
+ *   3  in types.ts, not in the schema   the site renders what the CMS
+ *                                       cannot edit, and a save may drop it
+ *
+ * (3) is the one that actually caused the About outage: content and renderer
+ * agreed, and only the schema had lost the field. Because tsc will not let a
+ * component read a field SiteContent does not declare, types.ts is the list of
+ * everything a component could render, and comparing it with the schema is how
+ * that disagreement gets caught before she does.
+ *
  * Run with:  npm run check:schema
  */
 
@@ -140,6 +154,17 @@ function checkObject(value, fields, file, where) {
     note(file, where || "(root)", `declared as a group of fields, but the file holds ${typeName(value)}`);
     return;
   }
+  // Direction 2: declared but absent. Keystatic fills it with an empty default
+  // on save, so her first edit to the page carries an unrelated diff.
+  for (const key of Object.keys(fields)) {
+    if (!(key in value)) {
+      note(
+        file,
+        where ? `${where}.${key}` : key,
+        "declared in the schema but missing from the file — the first save will add it as empty",
+      );
+    }
+  }
   for (const key of Object.keys(value)) {
     const at = where ? `${where}.${key}` : key;
     if (!(key in fields)) {
@@ -152,6 +177,93 @@ function checkObject(value, fields, file, where) {
 
 const typeName = (v) =>
   v === null ? "null" : Array.isArray(v) ? "a list" : typeof v === "object" ? "a group" : `a ${typeof v}`;
+
+
+/* ------------------------------------- what components render vs the schema */
+
+/**
+ * SiteContent in src/content/types.ts is the contract between the content and
+ * the components: tsc will not let a component read a field it does not
+ * declare. So it is the complete list of what the site can render, and any
+ * field in it that the schema has lost is a field the site shows but the CMS
+ * cannot edit — the About/`education` failure, exactly.
+ *
+ * Compared structurally rather than by name matching, so a field nested three
+ * objects deep is caught the same as a top-level one.
+ */
+const PAGE_TO_SINGLETON = {
+  home: "homeEn",
+  about: "aboutEn",
+  philosophyPage: "philosophyEn",
+  workTogether: "workWithMeEn",
+  organisations: "organisationsEn",
+  weeklyWellbeing: "weeklyWellbeingEn",
+  blog: "blogIndexEn",
+  faq: "faqIndexEn",
+  contact: "contactEn",
+  aiInfo: "aiInfoEn",
+  impressum: "impressumEn",
+  privacy: "privacyEn",
+  terms: "termsEn",
+  notFound: "notFoundEn",
+};
+
+/**
+ * Legitimately in types.ts but not in the page singleton: these come from the
+ * posts and faq COLLECTIONS and are merged into the page shape by
+ * src/content/load.ts. They are editable, just not from this singleton.
+ */
+const FROM_COLLECTIONS = new Set(["blog.posts", "faq.categories"]);
+
+function checkTypesAgainstSchema(config) {
+  const typesFile = path.join(ROOT, "src/content/types.ts");
+  const program = ts.createProgram([typesFile], { noEmit: true });
+  const source = program.getSourceFile(typesFile);
+  if (!source) return;
+
+  const membersOf = (node) => {
+    const out = {};
+    node.members?.forEach((m) => {
+      if (ts.isPropertySignature(m) && m.name) out[m.name.getText(source)] = m.type;
+    });
+    return out;
+  };
+
+  const compare = (typeNode, fields, where) => {
+    if (!typeNode || !ts.isTypeLiteralNode(typeNode)) return;
+    for (const [name, sub] of Object.entries(membersOf(typeNode))) {
+      const at = `${where}.${name}`;
+      if (FROM_COLLECTIONS.has(at)) continue;
+      const field = fields?.[name];
+      if (!field) {
+        note(
+          "src/content/types.ts",
+          at,
+          "a component can render this, but the schema does not declare it — " +
+            "it is not editable in the admin, and the entry may refuse to open",
+        );
+        continue;
+      }
+      if (field.kind === "object") compare(sub, field.fields, at);
+      else if (field.kind === "array" && sub && ts.isArrayTypeNode(sub)) {
+        compare(sub.elementType, field.element?.fields, `${at}[]`);
+      }
+    }
+  };
+
+  source.forEachChild((node) => {
+    if (!ts.isInterfaceDeclaration(node) || node.name.getText(source) !== "SiteContent") return;
+    const members = membersOf(node);
+    for (const [key, singletonName] of Object.entries(PAGE_TO_SINGLETON)) {
+      const singleton = config.singletons?.[singletonName];
+      if (!singleton) {
+        note("keystatic.config.ts", key, `expected a singleton named "${singletonName}", found none`);
+        continue;
+      }
+      compare(members[key], singleton.schema, key);
+    }
+  });
+}
 
 /* -------------------------------------------------------------------- files */
 
@@ -210,6 +322,8 @@ for (const abs of files) {
   checkObject(data, schema.fields, r, "");
   checked += 1;
 }
+
+checkTypesAgainstSchema(config);
 
 /* ------------------------------------------------------------------- report */
 

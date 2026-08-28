@@ -1,8 +1,12 @@
 name: Site checks
 
 # Runs on every push and pull request, including the commits Keystatic makes when
-# Theresa saves an edit in the admin. If the compliance check fails, the build
-# fails and Netlify does not publish the change.
+# Theresa saves an edit in the admin.
+#
+# Every step here is blocking: GitHub fails the job on the first non-zero exit,
+# and a failed job means the commit is not safe to publish. The two schema steps
+# are the ones that matter for her being able to edit at all — a schema change
+# that would leave an entry unopenable cannot get past them.
 on:
   push:
   pull_request:
@@ -33,8 +37,15 @@ jobs:
       - name: Check the wording (counselling-only compliance)
         run: npm run check:compliance
 
-      # Guards against a Keystatic schema that would silently drop content on save.
-      - name: Check the admin cannot drop content
+      # Proves the guard below still fails on each breakage it claims to catch.
+      # It runs first: a guard that has quietly stopped working would otherwise
+      # report green over a real problem, which has now happened twice.
+      - name: Test the schema guard itself
+        run: npm run test:schema-guard
+
+      # Blocking. Fails if any entry would refuse to open in the admin, if a save
+      # would drop content, or if the site renders a field the CMS cannot edit.
+      - name: Check every admin entry opens and saves cleanly
         run: npm run check:schema
 
       - name: Build the site

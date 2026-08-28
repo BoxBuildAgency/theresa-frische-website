@@ -247,6 +247,14 @@ const terms = (locale: "en" | "de") =>
     format: { data: "json" },
     schema: {
       heading: fields.text({ label: "Page heading", description: LEGAL_WARNING }),
+      // `version` sits above `sections`, matching the order in terms.json.
+      // Keystatic rewrites a file in schema order on save, so a mismatch here
+      // meant her first edit to Terms would silently reorder two keys as well
+      // as making her change. It also reads better next to the heading.
+      version: fields.text({
+        label: "Version line",
+        description: "Shown at the foot of the page, e.g. 'Version: 30 July 2026'.",
+      }),
       sections: fields.array(
         fields.object({
           heading: fields.text({ label: "Clause heading (e.g. '1. Scope')" }),
@@ -254,10 +262,6 @@ const terms = (locale: "en" | "de") =>
         }),
         { label: "Clauses", itemLabel: (props) => props.fields.heading.value || "Clause" },
       ),
-      version: fields.text({
-        label: "Version line",
-        description: "Shown at the foot of the page, e.g. 'Version: 30 July 2026'.",
-      }),
       metaTitle: fields.text({ label: "Page title (browser tab and Google)" }),
       metaDescription: fields.text({ label: "Search description", multiline: true }),
     },
