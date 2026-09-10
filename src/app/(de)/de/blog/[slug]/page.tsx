@@ -25,7 +25,7 @@ export async function generateMetadata({
     }),
     alternates: {
       canonical: `/de/blog/${slug}`,
-      languages: { en: `/blog/${slug}`, "de-DE": `/de/blog/${slug}`, "x-default": `/blog/${slug}` },
+      languages: { en: `/blog/${slug}`, de: `/de/blog/${slug}`, "x-default": `/blog/${slug}` },
     },
   };
 }

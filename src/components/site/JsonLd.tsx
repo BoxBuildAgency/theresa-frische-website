@@ -1,6 +1,18 @@
 import type { Locale, SiteContent } from "@/content/types";
-import { SITE_URL } from "@/lib/site";
+import { SITE_URL, localizedPath } from "@/lib/site";
 import { stripInlineLinks } from "@/lib/inline";
+
+/**
+ * The site's home URL for a locale: the English root, or /de.
+ *
+ * The trailing slash is trimmed because localizedPath returns "/" for English,
+ * and `${SITE_URL}/` would disagree with the canonical and the hreflang
+ * alternates, which both use the bare origin. Two spellings of the same URL in
+ * the same page's metadata is exactly the ambiguity this is meant to remove.
+ */
+function localeHomeUrl(locale: Locale): string {
+  return (SITE_URL + localizedPath(locale, "/")).replace(/\/$/, "");
+}
 
 function Script({ data }: { data: object }) {
   return (
@@ -17,12 +29,18 @@ function Script({ data }: { data: object }) {
  * deliberately NOT MedicalBusiness / Physician.
  */
 export function PersonServiceJsonLd({ content }: { content: SiteContent }) {
+  // The entity's own home page, which differs per locale: the German pages
+  // describe her at /de, not at the English root. Derived from the content's
+  // own locale and the ROUTES table rather than written out, so a third locale
+  // would be correct here without anyone remembering to come back.
+  const homeUrl = localeHomeUrl(content.locale);
+
   const person = {
     "@context": "https://schema.org",
     "@type": "Person",
     name: content.brand.name,
     jobTitle: content.brand.title,
-    url: SITE_URL,
+    url: homeUrl,
     // The hero portrait is the canonical picture of her, and it is editable in
     // the admin — so follow it rather than hard-coding a filename.
     image: `${SITE_URL}${content.home.heroPortrait.src}`,
@@ -35,7 +53,7 @@ export function PersonServiceJsonLd({ content }: { content: SiteContent }) {
     "@type": "Service",
     serviceType: "Counselling",
     name: content.brand.title,
-    provider: { "@type": "Person", name: content.brand.name, url: SITE_URL },
+    provider: { "@type": "Person", name: content.brand.name, url: homeUrl },
     // Zug switched on (2.2). Kept as Person + Service — deliberately NOT
     // MedicalBusiness, which would imply regulated medical care.
     areaServed: [
@@ -47,7 +65,7 @@ export function PersonServiceJsonLd({ content }: { content: SiteContent }) {
     ],
     availableLanguage: ["English", "German"],
     audience: { "@type": "Audience", audienceType: "Individuals and couples" },
-    url: SITE_URL,
+    url: homeUrl,
     description: content.home.metaDescription,
   };
 
@@ -97,8 +115,11 @@ export function ArticleJsonLd({
     description,
     datePublished: date,
     dateModified: date,
-    inLanguage: locale === "de" ? "de-DE" : "en",
-    author: { "@type": "Person", name: content.brand.name, url: SITE_URL },
+    // "de", matching the hreflang: German-speaking readers in Switzerland,
+    // Germany and Austria alike, not Germany specifically.
+    inLanguage: locale === "de" ? "de" : "en",
+    // Same locale rule as above: a German article should credit her German page.
+    author: { "@type": "Person", name: content.brand.name, url: localeHomeUrl(locale) },
     publisher: { "@type": "Person", name: content.brand.name },
     mainEntityOfPage: { "@type": "WebPage", "@id": url },
     url,

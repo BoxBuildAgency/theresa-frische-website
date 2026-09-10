@@ -30,7 +30,10 @@ export function buildMetadata(opts: {
       languages: alt
         ? {
             en: alt.en,
-            "de-DE": alt.de,
+            // "de", not "de-DE": she is in Zug, and the German pages are meant
+            // for German speakers in Switzerland, Germany and Austria alike.
+            // "de-DE" told Google these pages were for Germany specifically.
+            de: alt.de,
             "x-default": alt.en,
           }
         : undefined,
@@ -41,7 +44,9 @@ export function buildMetadata(opts: {
       title,
       description,
       siteName: "Theresa Frische",
-      locale: locale === "de" ? "de_DE" : "en_GB",
+      // de_CH: the practice is Swiss. og:locale takes a region, unlike
+      // hreflang above, so this one stays specific.
+      locale: locale === "de" ? "de_CH" : "en_GB",
       images: [{ url: ogImage, width: 1200, height: 630, alt: title }],
     },
     twitter: {
