@@ -3,11 +3,11 @@
   "htmlLang": "de",
   "brand": {
     "name": "Theresa Frische",
-    "tagline": "M.Sc. Psychologie",
+    "tagline": "Psychologin (M.Sc.)",
     "title": "Systemische & Integrative Beraterin"
   },
   "practice": {
-    "locationLine": "Online & in Zug"
+    "locationLine": "Zug, Zürich & Online"
   },
   "nav": [
     {
@@ -92,7 +92,7 @@
     "otherLangName": "English"
   },
   "footer": {
-    "line": "Theresa Frische · Systemische & Integrative Beraterin · {location}",
+    "line": "Theresa Frische · Psychologin · {location}",
     "nav": [
       {
         "label": "Startseite",
@@ -202,23 +202,19 @@
     "items": [
       {
         "label": "Notruf (CH)",
-        "value": "144",
-        "href": ""
+        "value": "144"
       },
       {
         "label": "Die Dargebotene Hand (CH) — kostenlos, 24 h",
-        "value": "143",
-        "href": ""
+        "value": "143"
       },
       {
         "label": "Notruf (EU)",
-        "value": "112",
-        "href": ""
+        "value": "112"
       },
       {
         "label": "Telefonseelsorge (DE) — kostenlos, 24 h",
-        "value": "0800 111 0 111 · 0800 111 0 222",
-        "href": ""
+        "value": "0800 111 0 111 · 0800 111 0 222"
       },
       {
         "label": "Internationales Verzeichnis",
