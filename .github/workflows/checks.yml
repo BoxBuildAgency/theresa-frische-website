@@ -77,7 +77,7 @@ jobs:
       issues: write
     env:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      LABEL: ci-failure
+      TITLE: "Site checks are failing on main"
       RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
       SHA: ${{ github.sha }}
       RESULT: ${{ needs.verify.result }}
@@ -85,11 +85,19 @@ jobs:
       - name: Open an issue on failure, close it on recovery
         run: |
           set -euo pipefail
-          gh label create "$LABEL" --color B60205 \
-            --description "Site checks are failing on main" --force >/dev/null 2>&1 || true
 
-          existing="$(gh issue list --repo "$GITHUB_REPOSITORY" --state open \
-            --label "$LABEL" --limit 1 --json number --jq '.[0].number // empty')"
+          # Keyed on the title, not a label. The first version created the
+          # label with `gh label create --force || true`, the flag was not
+          # supported, the `|| true` swallowed it, and `gh issue create
+          # --label` then failed with "'ci-failure' not found" — so the very
+          # first real failure raised no alarm at all. One less moving part.
+          find_issue() {
+            gh issue list --repo "$GITHUB_REPOSITORY" --state open --limit 50 \
+              --json number,title \
+              --jq "[.[] | select(.title == \"$TITLE\")] | .[0].number // empty"
+          }
+
+          existing="$(find_issue)"
 
           if [ "$RESULT" = "success" ]; then
             if [ -n "$existing" ]; then
@@ -98,7 +106,7 @@ jobs:
               gh issue close "$existing" --repo "$GITHUB_REPOSITORY"
               echo "closed issue #$existing"
             else
-              echo "green, nothing to clear"
+              echo "green, and no alarm was open"
             fi
             exit 0
           fi
@@ -107,10 +115,9 @@ jobs:
 
           **The run:** ${RUN_URL}
 
-          Until this is fixed, the site may not be deploying, and a Keystatic
-          save may be failing a gate rather than anything being wrong with what
-          was written. Check the failing step before assuming the content is at
-          fault.
+          Until this is fixed the site may not be deploying, and a Keystatic save
+          may be failing a gate rather than anything being wrong with what was
+          written. Check the failing step before assuming the content is at fault.
 
           This issue closes itself when a later push to \`main\` passes."
 
@@ -118,6 +125,6 @@ jobs:
             gh issue comment "$existing" --repo "$GITHUB_REPOSITORY" --body "$body"
             echo "commented on existing issue #$existing"
           else
-            gh issue create --repo "$GITHUB_REPOSITORY" --label "$LABEL" \
-              --title "Site checks are failing on main" --body "$body"
+            gh issue create --repo "$GITHUB_REPOSITORY" \
+              --title "$TITLE" --body "$body"
           fi
