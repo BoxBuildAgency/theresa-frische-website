@@ -225,11 +225,8 @@ export function HomePage({ locale }: { locale: Locale }) {
                 </li>
               ))}
             </ul>
-            {/* Not decoration. This states that the work is counselling and that
-                she is not a psychotherapist, which is what keeps naming these
-                approaches safe now the wording check only warns. The same
-                statement appears in the Impressum and in section 2 of the Terms.
-                Her optional second footnote was deliberately not added. */}
+            {/* Editable content, like everything else on this page. Clearing the
+                field in the admin hides the line. */}
             <p className="mt-5 text-sm leading-relaxed text-ink-soft">
               {h.steps.modalities.note}
             </p>

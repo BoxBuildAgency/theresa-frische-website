@@ -7,7 +7,6 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "check:compliance": "node scripts/compliance-sweep.mjs",
     "check:schema": "node scripts/check-schema-coverage.mjs",
     "test:schema-guard": "node scripts/check-schema-coverage.test.mjs"
   },

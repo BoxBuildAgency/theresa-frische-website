@@ -1,5 +1,7 @@
 # theresafrische.com
 
+[![Site checks](https://github.com/BoxBuildAgency/theresa-frische-website/actions/workflows/checks.yml/badge.svg?branch=main)](https://github.com/BoxBuildAgency/theresa-frische-website/actions/workflows/checks.yml)
+
 A bilingual marketing site for a counselling practice. English at `/`, German at `/de`, with
 full parity between the two: every page exists in both languages and the language toggle maps
 each URL to its counterpart.
@@ -28,7 +30,6 @@ because GitHub App callbacks cannot use `localhost`.
 | `npm run start` | Serve the production build |
 | `npm run lint` | ESLint |
 | `npm run check:schema` | Verifies the CMS schema covers every field on disk (see below) |
-| `npm run check:compliance` | Advisory wording check. Never fails the build. |
 
 The contact form needs the Resend variables below to send. Without them the form renders and
 the API route returns a configuration error rather than failing silently.
@@ -65,7 +66,7 @@ content/              The editable content. Keystatic writes here.
   en/ , de/           site.json, pages/*.json, posts/*.json, faq/*.json, services/*.json
 keystatic.config.ts   Admin configuration
 keystatic/            Field builders and the page singletons
-scripts/              check-schema-coverage.mjs, compliance-sweep.mjs
+scripts/              check-schema-coverage.mjs and its tests
 ```
 
 Both locales render the **same** presentational components, fed by different content. Only text
@@ -96,7 +97,7 @@ from disk during the build is safe and keeps the whole content API synchronous.
 In development the content is re-read on every request, so a save in the admin shows up on the
 next page load. In production it is read once at build time.
 
-### Two guards worth understanding
+### The guard worth understanding
 
 **`npm run check:schema` is a hard gate.** Keystatic writes back only the fields its schema
 declares, so a field present on disk but missing from the schema would be silently deleted the
@@ -104,8 +105,10 @@ first time that page is saved. This check compares the two and fails if they dri
 verifies that blog post bodies are stored as `{ discriminant, value }`, which is the only shape
 Keystatic will open a conditional field from.
 
-**`npm run check:compliance` is advisory and always exits 0.** It reports where certain words
-appear in the content so the author can see them. It does not block a save or a deploy.
+There is deliberately **no wording check**. An earlier version of this repo scanned the content
+for particular words; it was removed in October 2026. Theresa's PsyCo recognition has come
+through, and the wording of her own site is her professional judgement. Nothing in this repo
+inspects, warns about, or blocks her prose.
 
 ### Adding a field
 

@@ -136,6 +136,8 @@ export interface SiteContent {
   disclaimer: {
     heading: string;
     body: string;
+    /** Emergency numbers under the footer disclaimer. Empty hides the line. */
+    crisisLine: string;
   };
 
   blogDisclaimer: string;
@@ -194,15 +196,7 @@ export interface SiteContent {
       heading: string;
       intro: string;
       items: FeatureItem[];
-      /**
-       * The approaches she draws on, named plainly.
-       *
-       * `note` is load-bearing: it states that this is counselling and that she
-       * is not a psychotherapist. That sentence, together with the same
-       * statement in the Impressum and in section 2 of the Terms, is what keeps
-       * naming these modalities safe now that the wording check only warns.
-       * Do not remove it.
-       */
+    /** Sits under the list of approaches. Empty hides it. */
       modalities: { heading: string; items: string[]; note: string };
       closing: string;
       ctaLabel: string;
@@ -234,7 +228,6 @@ export interface SiteContent {
     };
     education: { heading: string; items: FeatureItem[] };
     /** Factual, neutral PsyKo/PsyCo recognition line (application pending). */
-    psyCoNote: string;
   };
 
   /**
@@ -376,7 +369,13 @@ export interface SiteContent {
     metaTitle: string;
     metaDescription: string;
     heading: string;
-    blocks: { heading: string; lines: string[] }[];
+    /**
+     * A blank line is stored as null rather than "": that is what Keystatic
+     * writes when a list entry is left empty, and the blank line separating the
+     * address from the contact details is deliberate. Either way the renderer
+     * prints an empty paragraph.
+     */
+    blocks: { heading: string; lines: (string | null)[] }[];
   };
 
   privacy: {

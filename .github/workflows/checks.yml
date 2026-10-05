@@ -3,6 +3,10 @@ name: Site checks
 # Runs on every push and pull request, including the commits Keystatic makes when
 # Theresa saves an edit in the admin.
 #
+# These checks protect her content from being silently deleted. None of them
+# restrict what she may write: the wording sweep was removed on 5 October, and
+# nothing here inspects her prose.
+#
 # Every step here is blocking: GitHub fails the job on the first non-zero exit,
 # and a failed job means the commit is not safe to publish. The two schema steps
 # are the ones that matter for her being able to edit at all — a schema change
@@ -13,7 +17,7 @@ on:
 
 jobs:
   verify:
-    name: Compliance, build and lint
+    name: Content, build and lint
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
@@ -32,11 +36,6 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      # This one comes first, and on purpose: if the wording is wrong we want to
-      # say so in plain language before anything else has a chance to fail.
-      - name: Check the wording (counselling-only compliance)
-        run: npm run check:compliance
-
       # Proves the guard below still fails on each breakage it claims to catch.
       # It runs first: a guard that has quietly stopped working would otherwise
       # report green over a real problem, which has now happened twice.
@@ -53,3 +52,72 @@ jobs:
 
       - name: Lint
         run: npm run lint
+
+  # ------------------------------------------------------------------ alarm
+  #
+  # CI went red on 2 October and stayed red for three days without either of us
+  # noticing, because noticing required opening the Actions tab. GitHub's own
+  # failure email goes to whoever pushed — which for a CMS save is Theresa, not
+  # the person who can fix it.
+  #
+  # So a failure now opens an issue. Issues email everyone watching the repo,
+  # show a count on the repo home page, and stay open until the problem is
+  # actually fixed. A later green run closes the issue again, so the open/closed
+  # state always reflects main right now. One issue is reused rather than a new
+  # one per failed run.
+  #
+  # Chosen over Slack or email actions because it needs no secrets, no external
+  # service and no account that can lapse.
+  alarm:
+    name: Raise or clear the alarm
+    needs: verify
+    if: always() && github.ref == 'refs/heads/main' && github.event_name == 'push'
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      LABEL: ci-failure
+      RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+      SHA: ${{ github.sha }}
+      RESULT: ${{ needs.verify.result }}
+    steps:
+      - name: Open an issue on failure, close it on recovery
+        run: |
+          set -euo pipefail
+          gh label create "$LABEL" --color B60205 \
+            --description "Site checks are failing on main" --force >/dev/null 2>&1 || true
+
+          existing="$(gh issue list --repo "$GITHUB_REPOSITORY" --state open \
+            --label "$LABEL" --limit 1 --json number --jq '.[0].number // empty')"
+
+          if [ "$RESULT" = "success" ]; then
+            if [ -n "$existing" ]; then
+              gh issue comment "$existing" --repo "$GITHUB_REPOSITORY" \
+                --body "Checks are green again on \`${SHA:0:7}\`. Closing. ${RUN_URL}"
+              gh issue close "$existing" --repo "$GITHUB_REPOSITORY"
+              echo "closed issue #$existing"
+            else
+              echo "green, nothing to clear"
+            fi
+            exit 0
+          fi
+
+          body="Site checks failed on \`main\` at commit \`${SHA:0:7}\`.
+
+          **The run:** ${RUN_URL}
+
+          Until this is fixed, the site may not be deploying, and a Keystatic
+          save may be failing a gate rather than anything being wrong with what
+          was written. Check the failing step before assuming the content is at
+          fault.
+
+          This issue closes itself when a later push to \`main\` passes."
+
+          if [ -n "$existing" ]; then
+            gh issue comment "$existing" --repo "$GITHUB_REPOSITORY" --body "$body"
+            echo "commented on existing issue #$existing"
+          else
+            gh issue create --repo "$GITHUB_REPOSITORY" --label "$LABEL" \
+              --title "Site checks are failing on main" --body "$body"
+          fi

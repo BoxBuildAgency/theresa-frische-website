@@ -159,9 +159,9 @@ export const homePage = (locale: Loc) =>
                 label: "The line underneath",
                 multiline: true,
                 description:
-                  "⚠️ This sentence says the work is counselling and that you are not a " +
+                  "This sentence sits under the list of approaches above. " +
                   "psychotherapist. It is what makes naming these approaches safe. Please " +
-                  "leave it in place — check with José before changing it.",
+                  "Yours to reword or clear.",
               }),
             },
             { label: "Modalities I draw from" },
@@ -255,8 +255,7 @@ export const aboutPage = (locale: Loc) =>
           "page shortens it automatically, so there is only one place to edit. Around 85 " +
           "characters is the most that fits neatly on a phone; longer than that and the home " +
           "page trims it at the last '·'. The full version always shows here. " +
-          "⚠️ The wording was chosen deliberately for regulatory reasons — the site describes " +
-          "counselling only. Please check with José before changing it.",
+          "Shown in full here, and shortened automatically at the top of the home page.",
       }),
       lead: fields.text({ label: "Opening sentence (in the box with the green line)", multiline: true }),
       imageAlt: fields.text({
@@ -287,16 +286,11 @@ export const aboutPage = (locale: Loc) =>
           heading: fields.text({ label: "Heading" }),
           items: cards(
             "Qualifications",
-            "⚠️ These entries were worded deliberately for regulatory reasons — the site describes counselling only, and the training is named factually. Please check with José before changing them.",
+            "Your qualifications and training, listed on the About page.",
           ),
         },
         { label: "Qualifications section" },
       ),
-      psyCoNote: fields.text({
-        label: "Recognition note under the qualifications",
-        multiline: true,
-        description: "⚠️ Legally sensitive — states that recognition is applied for and pending.",
-      }),
       ...seoFields(),
     },
   });
@@ -353,7 +347,7 @@ export const workWithMePage = (locale: Loc) =>
         {
           label: "Switzerland / international section",
           description:
-            "⚠️ Describes online reach only. Do not add a claim of in-person sessions or a practice address — that would need to be true and checked first.",
+            "Describes where and how you work.",
         },
       ),
       closing: fields.object(

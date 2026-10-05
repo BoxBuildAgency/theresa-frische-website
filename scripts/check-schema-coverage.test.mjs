@@ -89,7 +89,7 @@ check(
   "a field on disk that the schema does not declare",
   "fails",
   (edit) =>
-    dropSchemaField(edit, "keystatic/pages.ts", "      education: fields.object(", "      psyCoNote: fields.text({"),
+    dropSchemaField(edit, "keystatic/pages.ts", "      education: fields.object(", "      ...seoFields(),"),
   "not declared in the admin schema",
 );
 
@@ -122,13 +122,31 @@ check("a schema field missing from the file", "fails", (edit) =>
 //    Uses a page whose field is NOT also removed from the JSON, so this can only
 //    be caught by the types-vs-schema comparison and not by check 1.
 check("a field types.ts declares that the schema has lost", "fails", (edit) => {
-  dropSchemaField(edit, "keystatic/pages.ts", "      education: fields.object(", "      psyCoNote: fields.text({");
+  dropSchemaField(edit, "keystatic/pages.ts", "      education: fields.object(", "      ...seoFields(),");
   editJson(edit, "content/en/pages/about.json", (d) => delete d.education);
   editJson(edit, "content/de/pages/about.json", (d) => delete d.education);
 },
   // Only the types-vs-schema comparison can see this: the field is gone from
   // the JSON too, so neither direction of the file check would fire.
   "a component can render this, but the schema does not declare it",
+);
+
+// 6  The admin's own output must not fail the gate. Clearing a text field in
+//    the editor removes the key entirely — Keystatic serialises "" as
+//    { value: undefined } and JSON.stringify drops it. This is what Theresa did
+//    to the PsyCo note and four empty crisis links on 2 October, and the gate
+//    called it a problem and stayed red for three days. It must pass.
+check("a text field cleared through the editor", "passes", (edit) =>
+  editJson(edit, "content/en/pages/about.json", (d) => {
+    delete d.credentials;
+  }),
+);
+
+// 7  The same, nested in an array of objects: the crisis links she cleared.
+check("empty text fields cleared inside an array", "passes", (edit) =>
+  editJson(edit, "content/en/site.json", (d) => {
+    for (const item of d.crisis.items) delete item.href;
+  }),
 );
 
 /* ------------------------------------------------------------------ verdict */

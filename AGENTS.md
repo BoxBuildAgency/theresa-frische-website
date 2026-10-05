@@ -54,3 +54,26 @@ Keystatic can refuse an entry.
 **Never hand-maintain a second copy of the schema.** The old guard did, the copy
 drifted from the real schema, and that is precisely why the About outage went
 unreported for eight days.
+
+# Her words are hers
+
+There is no wording gate in this repo and there must not be one again.
+
+A `check:compliance` sweep used to scan the content for particular words and
+print warnings about them. It was deleted in October 2026: Theresa's Swiss PsyCo
+recognition came through, and more fundamentally the wording of her own site is
+her professional responsibility, not something this repo should police. Do not
+add a wording check, a watched-word list, or a field description telling her to
+seek approval before changing her own copy.
+
+**Every user-facing sentence belongs in the CMS.** If a component needs prose,
+it goes in a Keystatic field with the current text as the default, so she can
+reword or clear it herself. Hard-coding a disclaimer, a safety note or a
+qualifying sentence takes it out of her hands, and it has happened more than
+once here. Where a string is genuinely chrome rather than content — a screen
+reader label, a "Skip to content" link — a locale map in the component is fine;
+anything a visitor reads as Theresa's voice is not.
+
+The checks that remain — `check:schema`, `test:schema-guard`, build and lint —
+exist to stop her content being silently deleted. None of them inspects her
+prose, and none should.

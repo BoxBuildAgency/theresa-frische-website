@@ -5,15 +5,8 @@ import type { SiteContent } from "@/content/types";
  * resident in Zug and most clients are here; 112 and Telefonseelsorge follow for
  * German and EU clients.
  *
- * Related, and easy to lose track of: the sentence stating that Theresa is not
- * an authorised psychotherapist and holds no cantonal licence appears in the
- * Impressum and in section 2 of the Terms, and the modality list on the home
- * page carries the same statement. Those sentences are what make naming
- * therapeutic modalities safe now that the wording check only warns rather than
- * blocks. They must not be edited away.
- *
- * Hard-coded crisis resources. Shown near the contact form and alongside the
- * disclaimer. Values are not editable content — they are safety information.
+ * Shown near the contact form and alongside the disclaimer. Every value here is
+ * CMS content, including the numbers: Theresa owns this wording like any other.
  */
 export function CrisisResources({ crisis }: { crisis: SiteContent["crisis"] }) {
   return (

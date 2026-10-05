@@ -96,7 +96,8 @@ async function loadKeystaticConfig() {
 /* ------------------------------------------------------------------ walking */
 
 const problems = [];
-const note = (file, where, message) => problems.push({ file, where, message });
+const note = (file, where, message, kind = "blocking") =>
+  problems.push({ file, where, message, kind });
 
 /** A Keystatic field object: `kind` is object | array | conditional | form. */
 function checkValue(value, field, file, where) {
@@ -149,21 +150,65 @@ function checkValue(value, field, file, where) {
   }
 }
 
+/**
+ * Would Keystatic write this field into the file when it holds its default?
+ *
+ * Leaf fields expose `serialize`. Keystatic's text field returns
+ * `{ value: undefined }` for the empty string and `{ value: "..." }` otherwise;
+ * JSON.stringify drops the undefined, so the key never reaches the file. Composite fields (object, array, conditional) have no serialize and
+ * are always written — an empty array lands as `[]`, which is why a missing
+ * `bullets` on the Privacy page was a real diff and a missing `psyCoNote` is
+ * not.
+ *
+ * Asking the field beats hard-coding the rule: it stays right if Keystatic
+ * changes how a type is serialised, and it covers field types this site does
+ * not use yet.
+ */
+function keystaticWouldWrite(field) {
+  if (!field) return false;
+  if (field.kind !== "form") return true;
+  if (typeof field.serialize !== "function") return true;
+  try {
+    const def = typeof field.defaultValue === "function" ? field.defaultValue() : field.defaultValue;
+    // Note `!== undefined` rather than `"value" in`: Keystatic's text field
+    // returns { value: undefined } for the empty string, and it is
+    // JSON.stringify dropping undefined that keeps the key out of the file.
+    // Testing for the key's presence says "yes" for every text field.
+    return field.serialize(def)?.value !== undefined;
+  } catch {
+    // A field that cannot serialise its own default is not something to fail a
+    // build over; the undeclared-key check above is the one that matters.
+    return false;
+  }
+}
+
 function checkObject(value, fields, file, where) {
   if (value === null || typeof value !== "object" || Array.isArray(value)) {
     note(file, where || "(root)", `declared as a group of fields, but the file holds ${typeName(value)}`);
     return;
   }
-  // Direction 2: declared but absent. Keystatic fills it with an empty default
-  // on save, so her first edit to the page carries an unrelated diff.
+  // Direction 2: declared but absent from the file.
+  //
+  // Only a problem when Keystatic would actually write the key. For a text
+  // field holding "", it would not: its own serialize("") returns {}, with no
+  // value key, so the key is left out of the JSON. That is Keystatic's
+  // canonical spelling of "empty", not damage — clearing a field in the editor
+  // removes the key, and saving again leaves it removed. It round-trips.
+  //
+  // This check used to flag that, which made the gate fail on the admin's own
+  // output: Theresa cleared the PsyCo note and four empty crisis links on
+  // 2 October and turned CI red for three days, having done nothing wrong.
+  // So rather than guess at the rule, ask the field: serialize its default and
+  // see whether a value comes back.
   for (const key of Object.keys(fields)) {
-    if (!(key in value)) {
-      note(
-        file,
-        where ? `${where}.${key}` : key,
-        "declared in the schema but missing from the file — the first save will add it as empty",
-      );
-    }
+    if (key in value) continue;
+    if (!keystaticWouldWrite(fields[key])) continue;
+    note(
+      file,
+      where ? `${where}.${key}` : key,
+      "declared in the schema but missing from the file — the first save will add it as empty",
+      "rewrite",
+    );
   }
   for (const key of Object.keys(value)) {
     const at = where ? `${where}.${key}` : key;
@@ -337,7 +382,15 @@ if (unexposed.length) {
 }
 
 if (problems.length) {
-  console.error(`\n✗ ${problems.length} problem(s). Keystatic will refuse to open these entries:\n`);
+  // Not every finding stops an entry opening. Saying so indiscriminately sent
+  // me looking for a lockout that was not there.
+  const blocking = problems.filter((p) => p.kind !== "rewrite");
+  console.error(
+    `\n✗ ${problems.length} problem(s)` +
+      (blocking.length
+        ? `, ${blocking.length} of which will stop an entry opening in the admin:\n`
+        : `. None stop an entry opening; each would make her next save rewrite more than she edited:\n`),
+  );
   const byFile = new Map();
   for (const p of problems) {
     if (!byFile.has(p.file)) byFile.set(p.file, []);

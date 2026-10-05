@@ -192,7 +192,7 @@ const servicePage = (locale: "en" | "de", key: string, label: string) =>
  * Legal pages. Editable, but clearly marked as consequential.
  * ------------------------------------------------------------------ */
 const LEGAL_WARNING =
-  "⚠️ LEGAL PAGE. This text has real-world legal consequences and the wording was chosen deliberately. You can edit it, but please check with José before changing anything beyond a typo.";
+  "This is a legal page, so the wording carries real-world consequences. It is yours to change; it is simply worth re-reading before you do.";
 
 const impressum = (locale: "en" | "de") =>
   singleton({
@@ -297,8 +297,14 @@ const site = (locale: "en" | "de") =>
     path: `content/${locale}/site`,
     format: { data: "json" },
     schema: {
-      locale: fields.text({ label: "Locale code", description: "Do not change." }),
-      htmlLang: fields.text({ label: "HTML language code", description: "Do not change." }),
+      locale: fields.text({
+        label: "Locale code",
+        description: "Used by the site to pick the right language. Changing it breaks the routing.",
+      }),
+      htmlLang: fields.text({
+        label: "HTML language code",
+        description: "Tells browsers and screen readers which language the page is in.",
+      }),
       brand: fields.object(
         {
           name: fields.text({ label: "Name in the header" }),
@@ -375,7 +381,13 @@ const site = (locale: "en" | "de") =>
             label: "Disclaimer text",
             multiline: true,
             description:
-              "⚠️ SAFETY-CRITICAL. This is the statement that counselling is not psychotherapy or medical treatment. It appears in the footer of every page. Please do not change the meaning — check with José first.",
+              "Shown in the footer of every page, and on the contact page. Yours to word as you see fit; clear it if you no longer want it shown.",
+          }),
+          crisisLine: fields.text({
+            label: "Emergency numbers under the disclaimer",
+            multiline: true,
+            description:
+              "Shown in the footer under the text above. These were previously fixed in the code and could not be edited here. Clearing this hides the line.",
           }),
         },
         { label: "Disclaimer (shown site-wide)" },
@@ -383,7 +395,7 @@ const site = (locale: "en" | "de") =>
       blogDisclaimer: fields.text({
         label: "Disclaimer at the end of each article",
         multiline: true,
-        description: "⚠️ SAFETY-CRITICAL — same rule as the disclaimer above.",
+        description: "Shown on blog articles, under the article text.",
       }),
       crisis: fields.object(
         {
@@ -404,7 +416,7 @@ const site = (locale: "en" | "de") =>
         {
           label: "Crisis resources",
           description:
-            "⚠️ SAFETY-CRITICAL. These phone numbers are shown to people who may be in crisis. Verify any number before changing it, and check with José.",
+            "Shown to people who may be in crisis, so it is worth checking a number is still right before you change it.",
         },
       ),
     },

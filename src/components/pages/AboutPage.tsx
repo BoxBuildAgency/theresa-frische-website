@@ -93,15 +93,13 @@ export function AboutPage({ locale }: { locale: Locale }) {
           {a.education.items.map((item) => (
             <li key={item.title} className="grid gap-1 py-5 sm:grid-cols-[0.9fr_1.4fr] sm:gap-6">
               <h3 className="font-serif text-lg text-ink">{item.title}</h3>
+              {/* The "recognition applied for and pending" note that used to hang
+                  off the M.Sc. entry is gone: her PsyCo recognition came through
+                  in October 2026, so the sentence was no longer true. Anything
+                  she wants to say about a qualification now goes in that
+                  qualification's own body text, which she can edit. */}
               <div>
                 <p className="text-sm leading-relaxed text-ink-soft">{item.body}</p>
-                {/* The PsyCo recognition note belongs to the master's degree, not
-                    to the systemic training it used to sit beneath. Rendered from
-                    the same single field, so the wording is unchanged and there is
-                    still only one place to edit it. */}
-                {item.title.startsWith("M.Sc.") && (
-                  <p className="mt-2 text-sm leading-relaxed text-ink-soft">{a.psyCoNote}</p>
-                )}
               </div>
             </li>
           ))}
