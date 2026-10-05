@@ -84,6 +84,9 @@ console.log("Schema guard regression tests\n");
 // The guard must be green before any of this means anything.
 check("baseline: the repository as committed", "passes", () => {});
 
+// TEMPORARY: deliberate failure to prove the CI alarm fires. Reverted immediately.
+check("TEMPORARY alarm test", "fails", () => {});
+
 // 1  In the file, not in the schema. The About outage: the entry will not open.
 check(
   "a field on disk that the schema does not declare",
